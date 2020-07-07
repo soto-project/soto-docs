@@ -14,7 +14,7 @@
     <a title="MongoDbSettings Structure Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../../index.html"> Docs</a> (55% documented)</p>
+        <p><a href="../../index.html"> Docs</a> (54% documented)</p>
         <p class="header-right"><a href="https://github.com/swift-aws/aws-sdk-swift"><img src="../../img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
@@ -135,6 +135,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../CloudWatchLogs.html">CloudWatchLogs</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../CodeArtifact.html">CodeArtifact</a>
           </li>
           <li class="nav-group-name">
             <a href="../../CodeBuild.html">CodeBuild</a>
@@ -326,6 +329,9 @@
             <a href="../../Health.html">Health</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../Honeycode.html">Honeycode</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../IAM.html">IAM</a>
           </li>
           <li class="nav-group-name">
@@ -363,6 +369,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../IoTSecureTunneling.html">IoTSecureTunneling</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../IoTSiteWise.html">IoTSiteWise</a>
           </li>
           <li class="nav-group-name">
             <a href="../../IoTThingsGraph.html">IoTThingsGraph</a>
@@ -426,6 +435,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../Macie.html">Macie</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../Macie2.html">Macie2</a>
           </li>
           <li class="nav-group-name">
             <a href="../../ManagedBlockchain.html">ManagedBlockchain</a>
@@ -653,6 +665,9 @@
             <a href="../../Support.html">Support</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../Synthetics.html">Synthetics</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../Textract.html">Textract</a>
           </li>
           <li class="nav-group-name">
@@ -709,6 +724,9 @@
           <li class="nav-group-name">
             <a href="../../Other%20Structs.html">Other Structures</a>
           </li>
+          <li class="nav-group-name">
+            <a href="../../Other%20Typealiases.html">Other Type Aliases</a>
+          </li>
         </ul>
       </nav>
       <article class="main-content">
@@ -717,7 +735,7 @@
             <h1>MongoDbSettings</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">MongoDbSettings</span> <span class="p">:</span> <span class="kt"><a href="../../Protocols/AWSEncodableShape.html">AWSEncodableShape</a></span> <span class="o">&amp;</span> <span class="kt"><a href="../../Other%20Protocols.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">MongoDbSettings</span> <span class="p">:</span> <span class="kt"><a href="../../Protocols/AWSEncodableShape.html">AWSEncodableShape</a></span> <span class="o">&amp;</span> <span class="kt"><a href="../../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                 </div>
               </div>
@@ -740,7 +758,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The authentication mechanism you use to access the MongoDB source endpoint. Valid values: DEFAULT, MONGODB_CR, SCRAM_SHA_1  DEFAULT – For MongoDB version 2.x, use MONGODB_CR. For MongoDB version 3.x, use SCRAM_SHA_1. This setting isn&rsquo;t used when authType=No.</p>
+                        <p>The authentication mechanism you use to access the MongoDB source endpoint. For the default value, in MongoDB version 2.x, &ldquo;default&rdquo; is &ldquo;mongodb_cr&rdquo;. For MongoDB version 3.x or later, &ldquo;default&rdquo; is &ldquo;scram_sha_1&rdquo;. This setting isn&rsquo;t used when AuthType is set to &ldquo;no&rdquo;.</p>
 
                       </div>
                       <div class="declaration">
@@ -767,7 +785,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The MongoDB database name. This setting isn&rsquo;t used when authType=NO.  The default is admin.</p>
+                        <p>The MongoDB database name. This setting isn&rsquo;t used when AuthType is set to &ldquo;no&rdquo;.  The default is &ldquo;admin&rdquo;.</p>
 
                       </div>
                       <div class="declaration">
@@ -794,7 +812,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The authentication type you use to access the MongoDB source endpoint. Valid values: NO, PASSWORD  When NO is selected, user name and password parameters are not used and can be empty.</p>
+                        <p>The authentication type you use to access the MongoDB source endpoint. When when set to &ldquo;no&rdquo;, user name and password parameters are not used and can be empty.</p>
 
                       </div>
                       <div class="declaration">
@@ -848,7 +866,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Indicates the number of documents to preview to determine the document organization. Use this setting when NestingLevel is set to ONE.  Must be a positive value greater than 0. Default value is 1000.</p>
+                        <p>Indicates the number of documents to preview to determine the document organization. Use this setting when NestingLevel is set to &ldquo;one&rdquo;.  Must be a positive value greater than 0. Default value is 1000.</p>
 
                       </div>
                       <div class="declaration">
@@ -875,7 +893,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Specifies the document ID. Use this setting when NestingLevel is set to NONE.  Default value is false.</p>
+                        <p>Specifies the document ID. Use this setting when NestingLevel is set to &ldquo;none&rdquo;.  Default value is &ldquo;false&rdquo;.</p>
 
                       </div>
                       <div class="declaration">
@@ -929,7 +947,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Specifies either document or table mode.  Valid values: NONE, ONE Default value is NONE. Specify NONE to use document mode. Specify ONE to use table mode.</p>
+                        <p>Specifies either document or table mode.  Default value is &ldquo;none&rdquo;. Specify &ldquo;none&rdquo; to use document mode. Specify &ldquo;one&rdquo; to use table mode.</p>
 
                       </div>
                       <div class="declaration">

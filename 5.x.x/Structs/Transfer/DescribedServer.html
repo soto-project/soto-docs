@@ -14,7 +14,7 @@
     <a title="DescribedServer Structure Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../../index.html"> Docs</a> (55% documented)</p>
+        <p><a href="../../index.html"> Docs</a> (54% documented)</p>
         <p class="header-right"><a href="https://github.com/swift-aws/aws-sdk-swift"><img src="../../img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
@@ -135,6 +135,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../CloudWatchLogs.html">CloudWatchLogs</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../CodeArtifact.html">CodeArtifact</a>
           </li>
           <li class="nav-group-name">
             <a href="../../CodeBuild.html">CodeBuild</a>
@@ -326,6 +329,9 @@
             <a href="../../Health.html">Health</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../Honeycode.html">Honeycode</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../IAM.html">IAM</a>
           </li>
           <li class="nav-group-name">
@@ -363,6 +369,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../IoTSecureTunneling.html">IoTSecureTunneling</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../IoTSiteWise.html">IoTSiteWise</a>
           </li>
           <li class="nav-group-name">
             <a href="../../IoTThingsGraph.html">IoTThingsGraph</a>
@@ -426,6 +435,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../Macie.html">Macie</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../Macie2.html">Macie2</a>
           </li>
           <li class="nav-group-name">
             <a href="../../ManagedBlockchain.html">ManagedBlockchain</a>
@@ -653,6 +665,9 @@
             <a href="../../Support.html">Support</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../Synthetics.html">Synthetics</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../Textract.html">Textract</a>
           </li>
           <li class="nav-group-name">
@@ -709,6 +724,9 @@
           <li class="nav-group-name">
             <a href="../../Other%20Structs.html">Other Structures</a>
           </li>
+          <li class="nav-group-name">
+            <a href="../../Other%20Typealiases.html">Other Type Aliases</a>
+          </li>
         </ul>
       </nav>
       <article class="main-content">
@@ -717,7 +735,7 @@
             <h1>DescribedServer</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DescribedServer</span> <span class="p">:</span> <span class="kt"><a href="../../Other%20Protocols.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DescribedServer</span> <span class="p">:</span> <span class="kt"><a href="../../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                 </div>
               </div>
@@ -740,7 +758,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Specifies the unique Amazon Resource Name (ARN) for the server to be described.</p>
+                        <p>Specifies the unique Amazon Resource Name (ARN) for a file transfer protocol-enabled server to be described.</p>
 
                       </div>
                       <div class="declaration">
@@ -748,6 +766,33 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">arn</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11AWSTransfer8TransferV15DescribedServerV11certificateSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/certificate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11AWSTransfer8TransferV15DescribedServerV11certificateSSSgvp">certificate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Specifies the ARN of the AWS Certificate Manager (ACM) certificate. Required when Protocols is set to FTPS.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">certificate</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
 
                         </div>
                       </div>
@@ -767,7 +812,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The virtual private cloud (VPC) endpoint settings that you configured for your SFTP server.</p>
+                        <p>Specifies the virtual private cloud (VPC) endpoint settings that you configured for your file transfer protocol-enabled server.</p>
 
                       </div>
                       <div class="declaration">
@@ -794,7 +839,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The type of endpoint that your SFTP server is connected to. If your SFTP server is connected to a VPC endpoint, your server isn&rsquo;t accessible over the public internet.</p>
+                        <p>Defines the type of endpoint that your file transfer protocol-enabled server is connected to. If your server is connected to a VPC endpoint, your server isn&rsquo;t accessible over the public internet.</p>
 
                       </div>
                       <div class="declaration">
@@ -821,7 +866,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>This value contains the message-digest algorithm (MD5) hash of the server&rsquo;s host key. This value is equivalent to the output of the ssh-keygen -l -E md5 -f my-new-server-key command.</p>
+                        <p>Specifies the Base64-encoded SHA256 fingerprint of the server&rsquo;s host key. This value is equivalent to the output of the ssh-keygen -l -f my-new-server-key command.</p>
 
                       </div>
                       <div class="declaration">
@@ -848,7 +893,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Specifies information to call a customer-supplied authentication API. This field is not populated when the IdentityProviderType of the server is SERVICE_MANAGED&gt;.</p>
+                        <p>Specifies information to call a customer-supplied authentication API. This field is not populated when the IdentityProviderType of a file transfer protocol-enabled server is SERVICE_MANAGED.</p>
 
                       </div>
                       <div class="declaration">
@@ -875,7 +920,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>This property defines the mode of authentication method enabled for this service. A value of SERVICE_MANAGED means that you are using this server to store and access SFTP user credentials within the service. A value of API_GATEWAY indicates that you have integrated an API Gateway endpoint that will be invoked for authenticating your user into the service.</p>
+                        <p>Specifies the mode of authentication method enabled for this service. A value of SERVICE_MANAGED means that you are using this file transfer protocol-enabled server to store and access user credentials within the service. A value of API_GATEWAY indicates that you have integrated an API Gateway endpoint that will be invoked for authenticating your user into the service.</p>
 
                       </div>
                       <div class="declaration">
@@ -902,7 +947,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>This property is an AWS Identity and Access Management (IAM) entity that allows the server to turn on Amazon CloudWatch logging for Amazon S3 events. When set, user activity can be viewed in your CloudWatch logs.</p>
+                        <p>Specifies the AWS Identity and Access Management (IAM) role that allows a file transfer protocol-enabled server to turn on Amazon CloudWatch logging for Amazon S3 events. When set, user activity can be viewed in your CloudWatch logs.</p>
 
                       </div>
                       <div class="declaration">
@@ -910,6 +955,33 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">loggingRole</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11AWSTransfer8TransferV15DescribedServerV9protocolsSayAC8ProtocolOGSgvp"></a>
+                    <a name="//apple_ref/swift/Property/protocols" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11AWSTransfer8TransferV15DescribedServerV9protocolsSayAC8ProtocolOGSgvp">protocols</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Specifies the file transfer protocol or protocols over which your file transfer protocol client can connect to your server&rsquo;s endpoint. The available protocols are:    SFTP (Secure Shell (SSH) File Transfer Protocol): File transfer over SSH    FTPS (File Transfer Protocol Secure): File transfer with TLS encryption    FTP (File Transfer Protocol): Unencrypted file transfer</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">protocols</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../../Structs/Transfer/Protocol.html">Protocol</a></span><span class="p">]?</span></code></pre>
 
                         </div>
                       </div>
@@ -929,7 +1001,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>This property is a unique system-assigned identifier for the SFTP server that you instantiate.</p>
+                        <p>Specifies the unique system-assigned identifier for a file transfer protocol-enabled server that you instantiate.</p>
 
                       </div>
                       <div class="declaration">
@@ -956,7 +1028,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The condition of the SFTP server for the server that was described. A value of ONLINE indicates that the server can accept jobs and transfer files. A State value of OFFLINE means that the server cannot perform file transfer operations. The states of STARTING and STOPPING indicate that the server is in an intermediate state, either not fully able to respond, or not fully offline. The values of START_FAILED or STOP_FAILED can indicate an error condition.</p>
+                        <p>Specifies the condition of a file transfer protocol-enabled server for the server that was described. A value of ONLINE indicates that the server can accept jobs and transfer files. A State value of OFFLINE means that the server cannot perform file transfer operations. The states of STARTING and STOPPING indicate that the server is in an intermediate state, either not fully able to respond, or not fully offline. The values of START_FAILED or STOP_FAILED can indicate an error condition.</p>
 
                       </div>
                       <div class="declaration">
@@ -983,7 +1055,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>This property contains the key-value pairs that you can use to search for and group servers that were assigned to the server that was described.</p>
+                        <p>Specifies the key-value pairs that you can use to search for and group file transfer protocol-enabled servers that were assigned to the server that was described.</p>
 
                       </div>
                       <div class="declaration">
@@ -1010,7 +1082,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The number of users that are assigned to the SFTP server you specified with the ServerId.</p>
+                        <p>Specifies the number of users that are assigned to a file transfer protocol-enabled server you specified with the ServerId.</p>
 
                       </div>
                       <div class="declaration">
@@ -1027,9 +1099,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:11AWSTransfer8TransferV15DescribedServerV3arn15endpointDetails0F4Type18hostKeyFingerprint016identityProviderG00lmH011loggingRole8serverId5state4tags9userCountAESS_AC08EndpointG0VSgAC0vH0OSgSSSgAC08IdentitymG0VSgAC0wmH0OSgA2wC5StateOSgSayAC3TagVGSgSiSgtcfc"></a>
-                    <a name="//apple_ref/swift/Method/init(arn:endpointDetails:endpointType:hostKeyFingerprint:identityProviderDetails:identityProviderType:loggingRole:serverId:state:tags:userCount:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11AWSTransfer8TransferV15DescribedServerV3arn15endpointDetails0F4Type18hostKeyFingerprint016identityProviderG00lmH011loggingRole8serverId5state4tags9userCountAESS_AC08EndpointG0VSgAC0vH0OSgSSSgAC08IdentitymG0VSgAC0wmH0OSgA2wC5StateOSgSayAC3TagVGSgSiSgtcfc">init(arn:endpointDetails:endpointType:hostKeyFingerprint:identityProviderDetails:identityProviderType:loggingRole:serverId:state:tags:userCount:)</a>
+                    <a name="/s:11AWSTransfer8TransferV15DescribedServerV3arn11certificate15endpointDetails0G4Type18hostKeyFingerprint016identityProviderH00mnI011loggingRole9protocols8serverId5state4tags9userCountAESS_SSSgAC08EndpointH0VSgAC0xI0OSgAsC08IdentitynH0VSgAC0ynI0OSgASSayAC8ProtocolOGSgAsC5StateOSgSayAC3TagVGSgSiSgtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(arn:certificate:endpointDetails:endpointType:hostKeyFingerprint:identityProviderDetails:identityProviderType:loggingRole:protocols:serverId:state:tags:userCount:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11AWSTransfer8TransferV15DescribedServerV3arn11certificate15endpointDetails0G4Type18hostKeyFingerprint016identityProviderH00mnI011loggingRole9protocols8serverId5state4tags9userCountAESS_SSSgAC08EndpointH0VSgAC0xI0OSgAsC08IdentitynH0VSgAC0ynI0OSgASSayAC8ProtocolOGSgAsC5StateOSgSayAC3TagVGSgSiSgtcfc">init(arn:certificate:endpointDetails:endpointType:hostKeyFingerprint:identityProviderDetails:identityProviderType:loggingRole:protocols:serverId:state:tags:userCount:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1044,7 +1116,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">arn</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">endpointDetails</span><span class="p">:</span> <span class="kt"><a href="../../Structs/Transfer/EndpointDetails.html">EndpointDetails</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">endpointType</span><span class="p">:</span> <span class="kt"><a href="../../Structs/Transfer/EndpointType.html">EndpointType</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">hostKeyFingerprint</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">identityProviderDetails</span><span class="p">:</span> <span class="kt"><a href="../../Structs/Transfer/IdentityProviderDetails.html">IdentityProviderDetails</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">identityProviderType</span><span class="p">:</span> <span class="kt"><a href="../../Structs/Transfer/IdentityProviderType.html">IdentityProviderType</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">loggingRole</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">serverId</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">state</span><span class="p">:</span> <span class="kt"><a href="../../Structs/Transfer/State.html">State</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">tags</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../../Structs/Transfer/Tag.html">Tag</a></span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">userCount</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">arn</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">certificate</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">endpointDetails</span><span class="p">:</span> <span class="kt"><a href="../../Structs/Transfer/EndpointDetails.html">EndpointDetails</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">endpointType</span><span class="p">:</span> <span class="kt"><a href="../../Structs/Transfer/EndpointType.html">EndpointType</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">hostKeyFingerprint</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">identityProviderDetails</span><span class="p">:</span> <span class="kt"><a href="../../Structs/Transfer/IdentityProviderDetails.html">IdentityProviderDetails</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">identityProviderType</span><span class="p">:</span> <span class="kt"><a href="../../Structs/Transfer/IdentityProviderType.html">IdentityProviderType</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">loggingRole</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">protocols</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../../Structs/Transfer/Protocol.html">Protocol</a></span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">serverId</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">state</span><span class="p">:</span> <span class="kt"><a href="../../Structs/Transfer/State.html">State</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">tags</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../../Structs/Transfer/Tag.html">Tag</a></span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">userCount</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>

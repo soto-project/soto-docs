@@ -14,7 +14,7 @@
     <a title="Other Classes  Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="index.html"> Docs</a> (55% documented)</p>
+        <p><a href="index.html"> Docs</a> (54% documented)</p>
         <p class="header-right"><a href="https://github.com/swift-aws/aws-sdk-swift"><img src="img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
@@ -135,6 +135,9 @@
           </li>
           <li class="nav-group-name">
             <a href="CloudWatchLogs.html">CloudWatchLogs</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="CodeArtifact.html">CodeArtifact</a>
           </li>
           <li class="nav-group-name">
             <a href="CodeBuild.html">CodeBuild</a>
@@ -326,6 +329,9 @@
             <a href="Health.html">Health</a>
           </li>
           <li class="nav-group-name">
+            <a href="Honeycode.html">Honeycode</a>
+          </li>
+          <li class="nav-group-name">
             <a href="IAM.html">IAM</a>
           </li>
           <li class="nav-group-name">
@@ -363,6 +369,9 @@
           </li>
           <li class="nav-group-name">
             <a href="IoTSecureTunneling.html">IoTSecureTunneling</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="IoTSiteWise.html">IoTSiteWise</a>
           </li>
           <li class="nav-group-name">
             <a href="IoTThingsGraph.html">IoTThingsGraph</a>
@@ -426,6 +435,9 @@
           </li>
           <li class="nav-group-name">
             <a href="Macie.html">Macie</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="Macie2.html">Macie2</a>
           </li>
           <li class="nav-group-name">
             <a href="ManagedBlockchain.html">ManagedBlockchain</a>
@@ -653,6 +665,9 @@
             <a href="Support.html">Support</a>
           </li>
           <li class="nav-group-name">
+            <a href="Synthetics.html">Synthetics</a>
+          </li>
+          <li class="nav-group-name">
             <a href="Textract.html">Textract</a>
           </li>
           <li class="nav-group-name">
@@ -709,6 +724,9 @@
           <li class="nav-group-name">
             <a href="Other%20Structs.html">Other Structures</a>
           </li>
+          <li class="nav-group-name">
+            <a href="Other%20Typealiases.html">Other Type Aliases</a>
+          </li>
         </ul>
       </nav>
       <article class="main-content">
@@ -721,6 +739,95 @@
           <section class="section task-group-section">
             <div class="task-group">
               <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:15AWSSDKSwiftCore16AWSServiceConfigC"></a>
+                    <a name="//apple_ref/swift/Class/AWSServiceConfig" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15AWSSDKSwiftCore16AWSServiceConfigC">AWSServiceConfig</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Configuration class defining an AWS service</p>
+
+                        <a href="Classes/AWSServiceConfig.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">AWSServiceConfig</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:15AWSSDKSwiftCore26DeferredCredentialProviderC"></a>
+                    <a name="//apple_ref/swift/Class/DeferredCredentialProvider" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15AWSSDKSwiftCore26DeferredCredentialProviderC">DeferredCredentialProvider</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Used for wrapping another credential provider whose <code>getCredential</code> method doesn&rsquo;t return instantly and
+it only needs to be called once. After the wrapped <code><a href="Protocols/CredentialProvider.html">CredentialProvider</a></code> has generated a credential this is
+returned instead of calling the wrapped <code>CredentialProvider&#39;s</code> <code>getCredentials</code> again.</p>
+
+                        <a href="Classes/DeferredCredentialProvider.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">DeferredCredentialProvider</span> <span class="p">:</span> <span class="kt"><a href="Protocols/CredentialProvider.html">CredentialProvider</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:15AWSSDKSwiftCore26RotatingCredentialProviderC"></a>
+                    <a name="//apple_ref/swift/Class/RotatingCredentialProvider" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15AWSSDKSwiftCore26RotatingCredentialProviderC">RotatingCredentialProvider</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The <code>RotatingCredentialProvider</code> shall be of help if you wish to implement your own provider
+strategy. If your Credential conforms to the <code><a href="Protocols/ExpiringCredential.html">ExpiringCredential</a></code> protocol, the <code>RotatingCredentialProvider</code>
+checks whether your <code>credential</code> is still valid before every request.
+If needed the <code>RotatingCrendentialProvider</code> requests a new credential from the provided <code>Client</code>.</p>
+
+                        <a href="Classes/RotatingCredentialProvider.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">final</span> <span class="kd">class</span> <span class="kt">RotatingCredentialProvider</span> <span class="p">:</span> <span class="kt"><a href="Protocols/CredentialProvider.html">CredentialProvider</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
                 <li class="item">
                   <div>
                     <code>
@@ -742,8 +849,9 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@available(OSX 10.14, iOS 12.0, tvOS 12.0, watchOS 6.0, *)</span>
+                          <pre class="highlight swift"><code><span class="kd">@available</span><span class="p">(</span><span class="kt">OSX</span> <span class="mf">10.14</span><span class="p">,</span> <span class="n">iOS</span> <span class="mf">12.0</span><span class="p">,</span> <span class="n">tvOS</span> <span class="mf">12.0</span><span class="p">,</span> <span class="n">watchOS</span> <span class="mf">6.0</span><span class="p">,</span> <span class="o">*</span><span class="p">)</span>
 <span class="kd">public</span> <span class="kd">final</span> <span class="kd">class</span> <span class="kt">NIOTSHTTPClient</span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">NIOTSHTTPClient</span><span class="p">:</span> <span class="kt"><a href="Protocols/AWSHTTPClient.html">AWSHTTPClient</a></span></code></pre>
 
                         </div>
                       </div>

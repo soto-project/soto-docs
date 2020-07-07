@@ -14,7 +14,7 @@
     <a title="ContainerOverride Structure Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../../index.html"> Docs</a> (55% documented)</p>
+        <p><a href="../../index.html"> Docs</a> (54% documented)</p>
         <p class="header-right"><a href="https://github.com/swift-aws/aws-sdk-swift"><img src="../../img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
@@ -135,6 +135,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../CloudWatchLogs.html">CloudWatchLogs</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../CodeArtifact.html">CodeArtifact</a>
           </li>
           <li class="nav-group-name">
             <a href="../../CodeBuild.html">CodeBuild</a>
@@ -326,6 +329,9 @@
             <a href="../../Health.html">Health</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../Honeycode.html">Honeycode</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../IAM.html">IAM</a>
           </li>
           <li class="nav-group-name">
@@ -363,6 +369,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../IoTSecureTunneling.html">IoTSecureTunneling</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../IoTSiteWise.html">IoTSiteWise</a>
           </li>
           <li class="nav-group-name">
             <a href="../../IoTThingsGraph.html">IoTThingsGraph</a>
@@ -426,6 +435,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../Macie.html">Macie</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../Macie2.html">Macie2</a>
           </li>
           <li class="nav-group-name">
             <a href="../../ManagedBlockchain.html">ManagedBlockchain</a>
@@ -653,6 +665,9 @@
             <a href="../../Support.html">Support</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../Synthetics.html">Synthetics</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../Textract.html">Textract</a>
           </li>
           <li class="nav-group-name">
@@ -709,6 +724,9 @@
           <li class="nav-group-name">
             <a href="../../Other%20Structs.html">Other Structures</a>
           </li>
+          <li class="nav-group-name">
+            <a href="../../Other%20Typealiases.html">Other Type Aliases</a>
+          </li>
         </ul>
       </nav>
       <article class="main-content">
@@ -717,7 +735,7 @@
             <h1>ContainerOverride</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ContainerOverride</span> <span class="p">:</span> <span class="kt"><a href="../../Protocols/AWSEncodableShape.html">AWSEncodableShape</a></span> <span class="o">&amp;</span> <span class="kt"><a href="../../Other%20Protocols.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ContainerOverride</span> <span class="p">:</span> <span class="kt"><a href="../../Protocols/AWSEncodableShape.html">AWSEncodableShape</a></span> <span class="o">&amp;</span> <span class="kt"><a href="../../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                 </div>
               </div>
@@ -802,6 +820,33 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">environment</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../../Structs/ECS/KeyValuePair.html">KeyValuePair</a></span><span class="p">]?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6AWSECS3ECSV17ContainerOverrideV16environmentFilesSayAC15EnvironmentFileVGSgvp"></a>
+                    <a name="//apple_ref/swift/Property/environmentFiles" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6AWSECS3ECSV17ContainerOverrideV16environmentFilesSayAC15EnvironmentFileVGSgvp">environmentFiles</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A list of files containing the environment variables to pass to a container, instead of the value from the container definition.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">environmentFiles</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../../Structs/ECS/EnvironmentFile.html">EnvironmentFile</a></span><span class="p">]?</span></code></pre>
 
                         </div>
                       </div>
@@ -919,9 +964,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6AWSECS3ECSV17ContainerOverrideV7command3cpu11environment6memory0H11Reservation4name20resourceRequirementsAESaySSGSg_SiSgSayAC12KeyValuePairVGSgA2OSSSgSayAC19ResourceRequirementVGSgtcfc"></a>
-                    <a name="//apple_ref/swift/Method/init(command:cpu:environment:memory:memoryReservation:name:resourceRequirements:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6AWSECS3ECSV17ContainerOverrideV7command3cpu11environment6memory0H11Reservation4name20resourceRequirementsAESaySSGSg_SiSgSayAC12KeyValuePairVGSgA2OSSSgSayAC19ResourceRequirementVGSgtcfc">init(command:cpu:environment:memory:memoryReservation:name:resourceRequirements:)</a>
+                    <a name="/s:6AWSECS3ECSV17ContainerOverrideV7command3cpu11environment0G5Files6memory0I11Reservation4name20resourceRequirementsAESaySSGSg_SiSgSayAC12KeyValuePairVGSgSayAC15EnvironmentFileVGSgA2PSSSgSayAC19ResourceRequirementVGSgtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(command:cpu:environment:environmentFiles:memory:memoryReservation:name:resourceRequirements:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6AWSECS3ECSV17ContainerOverrideV7command3cpu11environment0G5Files6memory0I11Reservation4name20resourceRequirementsAESaySSGSg_SiSgSayAC12KeyValuePairVGSgSayAC15EnvironmentFileVGSgA2PSSSgSayAC19ResourceRequirementVGSgtcfc">init(command:cpu:environment:environmentFiles:memory:memoryReservation:name:resourceRequirements:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -936,7 +981,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">command</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">cpu</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">environment</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../../Structs/ECS/KeyValuePair.html">KeyValuePair</a></span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">memory</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">memoryReservation</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">name</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">resourceRequirements</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../../Structs/ECS/ResourceRequirement.html">ResourceRequirement</a></span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">command</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">cpu</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">environment</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../../Structs/ECS/KeyValuePair.html">KeyValuePair</a></span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">environmentFiles</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../../Structs/ECS/EnvironmentFile.html">EnvironmentFile</a></span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">memory</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">memoryReservation</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">name</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">resourceRequirements</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../../Structs/ECS/ResourceRequirement.html">ResourceRequirement</a></span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>

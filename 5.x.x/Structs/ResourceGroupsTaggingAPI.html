@@ -14,7 +14,7 @@
     <a title="ResourceGroupsTaggingAPI Structure Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html"> Docs</a> (55% documented)</p>
+        <p><a href="../index.html"> Docs</a> (54% documented)</p>
         <p class="header-right"><a href="https://github.com/swift-aws/aws-sdk-swift"><img src="../img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
@@ -135,6 +135,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../CloudWatchLogs.html">CloudWatchLogs</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../CodeArtifact.html">CodeArtifact</a>
           </li>
           <li class="nav-group-name">
             <a href="../CodeBuild.html">CodeBuild</a>
@@ -326,6 +329,9 @@
             <a href="../Health.html">Health</a>
           </li>
           <li class="nav-group-name">
+            <a href="../Honeycode.html">Honeycode</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../IAM.html">IAM</a>
           </li>
           <li class="nav-group-name">
@@ -363,6 +369,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../IoTSecureTunneling.html">IoTSecureTunneling</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../IoTSiteWise.html">IoTSiteWise</a>
           </li>
           <li class="nav-group-name">
             <a href="../IoTThingsGraph.html">IoTThingsGraph</a>
@@ -426,6 +435,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../Macie.html">Macie</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Macie2.html">Macie2</a>
           </li>
           <li class="nav-group-name">
             <a href="../ManagedBlockchain.html">ManagedBlockchain</a>
@@ -653,6 +665,9 @@
             <a href="../Support.html">Support</a>
           </li>
           <li class="nav-group-name">
+            <a href="../Synthetics.html">Synthetics</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../Textract.html">Textract</a>
           </li>
           <li class="nav-group-name">
@@ -709,6 +724,9 @@
           <li class="nav-group-name">
             <a href="../Other%20Structs.html">Other Structures</a>
           </li>
+          <li class="nav-group-name">
+            <a href="../Other%20Typealiases.html">Other Type Aliases</a>
+          </li>
         </ul>
       </nav>
       <article class="main-content">
@@ -723,7 +741,7 @@
               </div>
             <p>Client object for interacting with AWS ResourceGroupsTaggingAPI service.</p>
 
-<p>Resource Groups Tagging API This guide describes the API operations for the resource groups tagging. A tag is a label that you assign to an AWS resource. A tag consists of a key and a value, both of which you define. For example, if you have two Amazon EC2 instances, you might assign both a tag key of &ldquo;Stack.&rdquo; But the value of &ldquo;Stack&rdquo; might be &ldquo;Testing&rdquo; for one and &ldquo;Production&rdquo; for the other. Tagging can help you organize your resources and enables you to simplify resource management, access management and cost allocation.  You can use the resource groups tagging API operations to complete the following tasks:   Tag and untag supported resources located in the specified Region for the AWS account.   Use tag-based filters to search for resources located in the specified Region for the AWS account.   List all existing tag keys in the specified Region for the AWS account.   List all existing values for the specified key in the specified Region for the AWS account.   To use resource groups tagging API operations, you must add the following permissions to your IAM policy:    tag:GetResources     tag:TagResources     tag:UntagResources     tag:GetTagKeys     tag:GetTagValues    You&rsquo;ll also need permissions to access the resources of individual services so that you can tag and untag those resources. For more information on IAM policies, see Managing IAM Policies in the IAM User Guide. You can use the Resource Groups Tagging API to tag resources for the following AWS services.   Alexa for Business (a4b)   API Gateway   Amazon AppStream   AWS AppSync   AWS App Mesh   Amazon Athena   Amazon Aurora   AWS Backup   AWS Certificate Manager   AWS Certificate Manager Private CA   Amazon Cloud Directory   AWS CloudFormation   Amazon CloudFront   AWS CloudHSM   AWS CloudTrail   Amazon CloudWatch (alarms only)   Amazon CloudWatch Events   Amazon CloudWatch Logs   AWS CodeBuild   AWS CodeCommit   AWS CodePipeline   AWS CodeStar   Amazon Cognito Identity   Amazon Cognito User Pools   Amazon Comprehend   AWS Config   AWS Data Exchange   AWS Data Pipeline   AWS Database Migration Service   AWS DataSync   AWS Device Farm   AWS Direct Connect   AWS Directory Service   Amazon DynamoDB   Amazon EBS   Amazon EC2   Amazon ECR   Amazon ECS   Amazon EKS   AWS Elastic Beanstalk   Amazon Elastic File System   Elastic Load Balancing   Amazon ElastiCache   Amazon Elasticsearch Service   AWS Elemental MediaLive   AWS Elemental MediaPackage   AWS Elemental MediaTailor   Amazon EMR   Amazon FSx   Amazon S3 Glacier   AWS Glue   Amazon GuardDuty   Amazon Inspector   AWS IoT Analytics   AWS IoT Core   AWS IoT Device Defender   AWS IoT Device Management   AWS IoT Events   AWS IoT Greengrass   AWS IoT 1-Click   AWS Key Management Service   Amazon Kinesis   Amazon Kinesis Data Analytics   Amazon Kinesis Data Firehose   AWS Lambda   AWS License Manager   Amazon Machine Learning   Amazon MQ   Amazon MSK   Amazon Neptune   AWS OpsWorks   AWS Organizations   Amazon Quantum Ledger Database (QLDB)   Amazon RDS   Amazon Redshift   AWS Resource Access Manager   AWS Resource Groups   AWS RoboMaker   Amazon Route 53   Amazon Route 53 Resolver   Amazon S3 (buckets only)   Amazon SageMaker   AWS Secrets Manager   AWS Security Hub   AWS Service Catalog   Amazon Simple Notification Service (SNS)   Amazon Simple Queue Service (SQS)   Amazon Simple Workflow Service   AWS Step Functions   AWS Storage Gateway   AWS Systems Manager   AWS Transfer for SFTP   Amazon VPC   Amazon WorkSpaces</p>
+<p>Resource Groups Tagging API This guide describes the API operations for the resource groups tagging. A tag is a label that you assign to an AWS resource. A tag consists of a key and a value, both of which you define. For example, if you have two Amazon EC2 instances, you might assign both a tag key of &ldquo;Stack.&rdquo; But the value of &ldquo;Stack&rdquo; might be &ldquo;Testing&rdquo; for one and &ldquo;Production&rdquo; for the other. Tagging can help you organize your resources and enables you to simplify resource management, access management and cost allocation.  You can use the resource groups tagging API operations to complete the following tasks:   Tag and untag supported resources located in the specified Region for the AWS account.   Use tag-based filters to search for resources located in the specified Region for the AWS account.   List all existing tag keys in the specified Region for the AWS account.   List all existing values for the specified key in the specified Region for the AWS account.   To use resource groups tagging API operations, you must add the following permissions to your IAM policy:    tag:GetResources     tag:TagResources     tag:UntagResources     tag:GetTagKeys     tag:GetTagValues    You&rsquo;ll also need permissions to access the resources of individual services so that you can tag and untag those resources. For more information on IAM policies, see Managing IAM Policies in the IAM User Guide. You can use the Resource Groups Tagging API to tag resources for the following AWS services.   Alexa for Business (a4b)   API Gateway   Amazon AppStream   AWS AppSync   AWS App Mesh   Amazon Athena   Amazon Aurora   AWS Backup   AWS Certificate Manager   AWS Certificate Manager Private CA   Amazon Cloud Directory   AWS CloudFormation   Amazon CloudFront   AWS CloudHSM   AWS CloudTrail   Amazon CloudWatch (alarms only)   Amazon CloudWatch Events   Amazon CloudWatch Logs   AWS CodeBuild   AWS CodeCommit   AWS CodePipeline   AWS CodeStar   Amazon Cognito Identity   Amazon Cognito User Pools   Amazon Comprehend   AWS Config   AWS Data Exchange   AWS Data Pipeline   AWS Database Migration Service   AWS DataSync   AWS Device Farm   AWS Direct Connect   AWS Directory Service   Amazon DynamoDB   Amazon EBS   Amazon EC2   Amazon ECR   Amazon ECS   Amazon EKS   AWS Elastic Beanstalk   Amazon Elastic File System   Elastic Load Balancing   Amazon ElastiCache   Amazon Elasticsearch Service   AWS Elemental MediaLive   AWS Elemental MediaPackage   AWS Elemental MediaTailor   Amazon EMR   Amazon FSx   Amazon S3 Glacier   AWS Glue   Amazon GuardDuty   Amazon Inspector   AWS IoT Analytics   AWS IoT Core   AWS IoT Device Defender   AWS IoT Device Management   AWS IoT Events   AWS IoT Greengrass   AWS IoT 1-Click   AWS IoT Things Graph   AWS Key Management Service   Amazon Kinesis   Amazon Kinesis Data Analytics   Amazon Kinesis Data Firehose   AWS Lambda   AWS License Manager   Amazon Machine Learning   Amazon MQ   Amazon MSK   Amazon Neptune   AWS OpsWorks   AWS Organizations   Amazon Quantum Ledger Database (QLDB)   Amazon RDS   Amazon Redshift   AWS Resource Access Manager   AWS Resource Groups   AWS RoboMaker   Amazon Route 53   Amazon Route 53 Resolver   Amazon S3 (buckets only)   Amazon SageMaker   AWS Secrets Manager   AWS Security Hub   AWS Service Catalog   Amazon Simple Email Service (SES)   Amazon Simple Notification Service (SNS)   Amazon Simple Queue Service (SQS)   Amazon Simple Workflow Service   AWS Step Functions   AWS Storage Gateway   AWS Systems Manager   AWS Transfer for SFTP   AWS WAF Regional   Amazon VPC   Amazon WorkSpaces</p>
 
           </section>
           <section class="section task-group-section">
@@ -763,6 +781,33 @@
                     </section>
                   </div>
                 </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:27AWSResourceGroupsTaggingAPI08ResourcebcD0V13serviceConfig15AWSSDKSwiftCore010AWSServiceG0Cvp"></a>
+                    <a name="//apple_ref/swift/Property/serviceConfig" class="dashAnchor"></a>
+                    <a class="token" href="#/s:27AWSResourceGroupsTaggingAPI08ResourcebcD0V13serviceConfig15AWSSDKSwiftCore010AWSServiceG0Cvp">serviceConfig</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">serviceConfig</span><span class="p">:</span> <span class="kt"><a href="../Classes/AWSServiceConfig.html">AWSServiceConfig</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
               </ul>
             </div>
             <div class="task-group">
@@ -777,9 +822,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:27AWSResourceGroupsTaggingAPI08ResourcebcD0V11accessKeyId012secretAccessG012sessionToken6region8endpoint11middlewares22eventLoopGroupProviderACSSSg_A2K15AWSSDKSwiftCore6RegionOSgAKSayAL20AWSServiceMiddleware_pGAL9AWSClientC05EventqrS0Otcfc"></a>
-                    <a name="//apple_ref/swift/Method/init(accessKeyId:secretAccessKey:sessionToken:region:endpoint:middlewares:eventLoopGroupProvider:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:27AWSResourceGroupsTaggingAPI08ResourcebcD0V11accessKeyId012secretAccessG012sessionToken6region8endpoint11middlewares22eventLoopGroupProviderACSSSg_A2K15AWSSDKSwiftCore6RegionOSgAKSayAL20AWSServiceMiddleware_pGAL9AWSClientC05EventqrS0Otcfc">init(accessKeyId:secretAccessKey:sessionToken:region:endpoint:middlewares:eventLoopGroupProvider:)</a>
+                    <a name="/s:27AWSResourceGroupsTaggingAPI08ResourcebcD0V6client6region9partition8endpointAC15AWSSDKSwiftCore9AWSClientC_AH6RegionVSgAH9PartitionVSSSgtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(client:region:partition:endpoint:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:27AWSResourceGroupsTaggingAPI08ResourcebcD0V6client6region9partition8endpointAC15AWSSDKSwiftCore9AWSClientC_AH6RegionVSgAH9PartitionVSSSgtcfc">init(client:region:partition:endpoint:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -794,7 +839,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">accessKeyId</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">secretAccessKey</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">sessionToken</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">region</span><span class="p">:</span> <span class="kt">AWSSDKSwiftCore</span><span class="o">.</span><span class="kt"><a href="../Enums/Region.html">Region</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">endpoint</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">middlewares</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Protocols/AWSServiceMiddleware.html">AWSServiceMiddleware</a></span><span class="p">]</span> <span class="o">=</span> <span class="p">[],</span> <span class="nv">eventLoopGroupProvider</span><span class="p">:</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="o">.</span><span class="kt">EventLoopGroupProvider</span> <span class="o">=</span> <span class="o">.</span><span class="n">useAWSClientShared</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span>
+    <span class="nv">client</span><span class="p">:</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="p">,</span>
+    <span class="nv">region</span><span class="p">:</span> <span class="kt">AWSSDKSwiftCore</span><span class="o">.</span><span class="kt"><a href="../Structs/Region.html">Region</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="nv">partition</span><span class="p">:</span> <span class="kt">AWSSDKSwiftCore</span><span class="o">.</span><span class="kt"><a href="../Structs/Partition.html">Partition</a></span> <span class="o">=</span> <span class="o">.</span><span class="n">aws</span><span class="p">,</span>
+    <span class="nv">endpoint</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span>
+<span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -805,36 +855,12 @@
                             <tr>
                               <td>
                                 <code>
-                                <em>accessKeyId</em>
+                                <em>client</em>
                                 </code>
                               </td>
                               <td>
                                 <div>
-                                  <p>Public access key provided by AWS</p>
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>secretAccessKey</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>Private access key provided by AWS</p>
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>sessionToken</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>Token provided by STS.AssumeRole() which allows access to another AWS account</p>
+                                  <p>AWSClient used to process requests</p>
                                 </div>
                               </td>
                             </tr>
@@ -846,7 +872,19 @@
                               </td>
                               <td>
                                 <div>
-                                  <p>Region of server you want to communicate with</p>
+                                  <p>Region of server you want to communicate with. This will override the partition parameter.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>partition</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>AWS partition where service resides, standard (.aws), china (.awscn), government (.awsusgov).</p>
                                 </div>
                               </td>
                             </tr>
@@ -859,30 +897,6 @@
                               <td>
                                 <div>
                                   <p>Custom endpoint URL to use instead of standard AWS servers</p>
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>middlewares</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>Array of middlewares to apply to requests and responses</p>
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>eventLoopGroupProvider</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>EventLoopGroup to use. Use <code>useAWSClientShared</code> if the client shall manage its own EventLoopGroup.</p>
                                 </div>
                               </td>
                             </tr>
@@ -906,9 +920,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:27AWSResourceGroupsTaggingAPI08ResourcebcD0V22describeReportCreationy3NIO15EventLoopFutureCyAC08DescribegH6OutputVGAC0mgH5InputVF"></a>
-                    <a name="//apple_ref/swift/Method/describeReportCreation(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:27AWSResourceGroupsTaggingAPI08ResourcebcD0V22describeReportCreationy3NIO15EventLoopFutureCyAC08DescribegH6OutputVGAC0mgH5InputVF">describeReportCreation(_:)</a>
+                    <a name="/s:27AWSResourceGroupsTaggingAPI08ResourcebcD0V22describeReportCreation_2on3NIO15EventLoopFutureCyAC08DescribegH6OutputVGAC0ngH5InputV_AF0kL0_pSgtF"></a>
+                    <a name="//apple_ref/swift/Method/describeReportCreation(_:on:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:27AWSResourceGroupsTaggingAPI08ResourcebcD0V22describeReportCreation_2on3NIO15EventLoopFutureCyAC08DescribegH6OutputVGAC0ngH5InputV_AF0kL0_pSgtF">describeReportCreation(_:on:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -923,7 +937,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">describeReportCreation</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/ResourceGroupsTaggingAPI/DescribeReportCreationInput.html">DescribeReportCreationInput</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/ResourceGroupsTaggingAPI/DescribeReportCreationOutput.html">DescribeReportCreationOutput</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">describeReportCreation</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/ResourceGroupsTaggingAPI/DescribeReportCreationInput.html">DescribeReportCreationInput</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/ResourceGroupsTaggingAPI/DescribeReportCreationOutput.html">DescribeReportCreationOutput</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
                       </div>
@@ -933,9 +947,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:27AWSResourceGroupsTaggingAPI08ResourcebcD0V20getComplianceSummaryy3NIO15EventLoopFutureCyAC03GetgH6OutputVGAC0mgH5InputVF"></a>
-                    <a name="//apple_ref/swift/Method/getComplianceSummary(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:27AWSResourceGroupsTaggingAPI08ResourcebcD0V20getComplianceSummaryy3NIO15EventLoopFutureCyAC03GetgH6OutputVGAC0mgH5InputVF">getComplianceSummary(_:)</a>
+                    <a name="/s:27AWSResourceGroupsTaggingAPI08ResourcebcD0V20getComplianceSummary_2on3NIO15EventLoopFutureCyAC03GetgH6OutputVGAC0ngH5InputV_AF0kL0_pSgtF"></a>
+                    <a name="//apple_ref/swift/Method/getComplianceSummary(_:on:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:27AWSResourceGroupsTaggingAPI08ResourcebcD0V20getComplianceSummary_2on3NIO15EventLoopFutureCyAC03GetgH6OutputVGAC0ngH5InputV_AF0kL0_pSgtF">getComplianceSummary(_:on:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -950,7 +964,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getComplianceSummary</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/ResourceGroupsTaggingAPI/GetComplianceSummaryInput.html">GetComplianceSummaryInput</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/ResourceGroupsTaggingAPI/GetComplianceSummaryOutput.html">GetComplianceSummaryOutput</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getComplianceSummary</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/ResourceGroupsTaggingAPI/GetComplianceSummaryInput.html">GetComplianceSummaryInput</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/ResourceGroupsTaggingAPI/GetComplianceSummaryOutput.html">GetComplianceSummaryOutput</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
                       </div>
@@ -960,9 +974,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:27AWSResourceGroupsTaggingAPI08ResourcebcD0V12getResourcesy3NIO15EventLoopFutureCyAC03GetG6OutputVGAC0lG5InputVF"></a>
-                    <a name="//apple_ref/swift/Method/getResources(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:27AWSResourceGroupsTaggingAPI08ResourcebcD0V12getResourcesy3NIO15EventLoopFutureCyAC03GetG6OutputVGAC0lG5InputVF">getResources(_:)</a>
+                    <a name="/s:27AWSResourceGroupsTaggingAPI08ResourcebcD0V12getResources_2on3NIO15EventLoopFutureCyAC03GetG6OutputVGAC0mG5InputV_AF0jK0_pSgtF"></a>
+                    <a name="//apple_ref/swift/Method/getResources(_:on:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:27AWSResourceGroupsTaggingAPI08ResourcebcD0V12getResources_2on3NIO15EventLoopFutureCyAC03GetG6OutputVGAC0mG5InputV_AF0jK0_pSgtF">getResources(_:on:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -977,7 +991,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getResources</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/ResourceGroupsTaggingAPI/GetResourcesInput.html">GetResourcesInput</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/ResourceGroupsTaggingAPI/GetResourcesOutput.html">GetResourcesOutput</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getResources</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/ResourceGroupsTaggingAPI/GetResourcesInput.html">GetResourcesInput</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/ResourceGroupsTaggingAPI/GetResourcesOutput.html">GetResourcesOutput</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
                       </div>
@@ -987,9 +1001,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:27AWSResourceGroupsTaggingAPI08ResourcebcD0V10getTagKeysy3NIO15EventLoopFutureCyAC03GetgH6OutputVGAC0mgH5InputVF"></a>
-                    <a name="//apple_ref/swift/Method/getTagKeys(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:27AWSResourceGroupsTaggingAPI08ResourcebcD0V10getTagKeysy3NIO15EventLoopFutureCyAC03GetgH6OutputVGAC0mgH5InputVF">getTagKeys(_:)</a>
+                    <a name="/s:27AWSResourceGroupsTaggingAPI08ResourcebcD0V10getTagKeys_2on3NIO15EventLoopFutureCyAC03GetgH6OutputVGAC0ngH5InputV_AF0kL0_pSgtF"></a>
+                    <a name="//apple_ref/swift/Method/getTagKeys(_:on:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:27AWSResourceGroupsTaggingAPI08ResourcebcD0V10getTagKeys_2on3NIO15EventLoopFutureCyAC03GetgH6OutputVGAC0ngH5InputV_AF0kL0_pSgtF">getTagKeys(_:on:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1004,7 +1018,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getTagKeys</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/ResourceGroupsTaggingAPI/GetTagKeysInput.html">GetTagKeysInput</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/ResourceGroupsTaggingAPI/GetTagKeysOutput.html">GetTagKeysOutput</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getTagKeys</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/ResourceGroupsTaggingAPI/GetTagKeysInput.html">GetTagKeysInput</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/ResourceGroupsTaggingAPI/GetTagKeysOutput.html">GetTagKeysOutput</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
                       </div>
@@ -1014,9 +1028,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:27AWSResourceGroupsTaggingAPI08ResourcebcD0V12getTagValuesy3NIO15EventLoopFutureCyAC03GetgH6OutputVGAC0mgH5InputVF"></a>
-                    <a name="//apple_ref/swift/Method/getTagValues(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:27AWSResourceGroupsTaggingAPI08ResourcebcD0V12getTagValuesy3NIO15EventLoopFutureCyAC03GetgH6OutputVGAC0mgH5InputVF">getTagValues(_:)</a>
+                    <a name="/s:27AWSResourceGroupsTaggingAPI08ResourcebcD0V12getTagValues_2on3NIO15EventLoopFutureCyAC03GetgH6OutputVGAC0ngH5InputV_AF0kL0_pSgtF"></a>
+                    <a name="//apple_ref/swift/Method/getTagValues(_:on:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:27AWSResourceGroupsTaggingAPI08ResourcebcD0V12getTagValues_2on3NIO15EventLoopFutureCyAC03GetgH6OutputVGAC0ngH5InputV_AF0kL0_pSgtF">getTagValues(_:on:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1031,7 +1045,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getTagValues</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/ResourceGroupsTaggingAPI/GetTagValuesInput.html">GetTagValuesInput</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/ResourceGroupsTaggingAPI/GetTagValuesOutput.html">GetTagValuesOutput</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getTagValues</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/ResourceGroupsTaggingAPI/GetTagValuesInput.html">GetTagValuesInput</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/ResourceGroupsTaggingAPI/GetTagValuesOutput.html">GetTagValuesOutput</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
                       </div>
@@ -1041,9 +1055,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:27AWSResourceGroupsTaggingAPI08ResourcebcD0V19startReportCreationy3NIO15EventLoopFutureCyAC05StartgH6OutputVGAC0mgH5InputVF"></a>
-                    <a name="//apple_ref/swift/Method/startReportCreation(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:27AWSResourceGroupsTaggingAPI08ResourcebcD0V19startReportCreationy3NIO15EventLoopFutureCyAC05StartgH6OutputVGAC0mgH5InputVF">startReportCreation(_:)</a>
+                    <a name="/s:27AWSResourceGroupsTaggingAPI08ResourcebcD0V19startReportCreation_2on3NIO15EventLoopFutureCyAC05StartgH6OutputVGAC0ngH5InputV_AF0kL0_pSgtF"></a>
+                    <a name="//apple_ref/swift/Method/startReportCreation(_:on:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:27AWSResourceGroupsTaggingAPI08ResourcebcD0V19startReportCreation_2on3NIO15EventLoopFutureCyAC05StartgH6OutputVGAC0ngH5InputV_AF0kL0_pSgtF">startReportCreation(_:on:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1058,7 +1072,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">startReportCreation</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/ResourceGroupsTaggingAPI/StartReportCreationInput.html">StartReportCreationInput</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/ResourceGroupsTaggingAPI/StartReportCreationOutput.html">StartReportCreationOutput</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">startReportCreation</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/ResourceGroupsTaggingAPI/StartReportCreationInput.html">StartReportCreationInput</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/ResourceGroupsTaggingAPI/StartReportCreationOutput.html">StartReportCreationOutput</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
                       </div>
@@ -1068,9 +1082,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:27AWSResourceGroupsTaggingAPI08ResourcebcD0V12tagResourcesy3NIO15EventLoopFutureCyAC03TagG6OutputVGAC0lG5InputVF"></a>
-                    <a name="//apple_ref/swift/Method/tagResources(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:27AWSResourceGroupsTaggingAPI08ResourcebcD0V12tagResourcesy3NIO15EventLoopFutureCyAC03TagG6OutputVGAC0lG5InputVF">tagResources(_:)</a>
+                    <a name="/s:27AWSResourceGroupsTaggingAPI08ResourcebcD0V12tagResources_2on3NIO15EventLoopFutureCyAC03TagG6OutputVGAC0mG5InputV_AF0jK0_pSgtF"></a>
+                    <a name="//apple_ref/swift/Method/tagResources(_:on:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:27AWSResourceGroupsTaggingAPI08ResourcebcD0V12tagResources_2on3NIO15EventLoopFutureCyAC03TagG6OutputVGAC0mG5InputV_AF0jK0_pSgtF">tagResources(_:on:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1085,7 +1099,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">tagResources</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/ResourceGroupsTaggingAPI/TagResourcesInput.html">TagResourcesInput</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/ResourceGroupsTaggingAPI/TagResourcesOutput.html">TagResourcesOutput</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">tagResources</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/ResourceGroupsTaggingAPI/TagResourcesInput.html">TagResourcesInput</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/ResourceGroupsTaggingAPI/TagResourcesOutput.html">TagResourcesOutput</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
                       </div>
@@ -1095,9 +1109,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:27AWSResourceGroupsTaggingAPI08ResourcebcD0V14untagResourcesy3NIO15EventLoopFutureCyAC05UntagG6OutputVGAC0lG5InputVF"></a>
-                    <a name="//apple_ref/swift/Method/untagResources(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:27AWSResourceGroupsTaggingAPI08ResourcebcD0V14untagResourcesy3NIO15EventLoopFutureCyAC05UntagG6OutputVGAC0lG5InputVF">untagResources(_:)</a>
+                    <a name="/s:27AWSResourceGroupsTaggingAPI08ResourcebcD0V14untagResources_2on3NIO15EventLoopFutureCyAC05UntagG6OutputVGAC0mG5InputV_AF0jK0_pSgtF"></a>
+                    <a name="//apple_ref/swift/Method/untagResources(_:on:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:27AWSResourceGroupsTaggingAPI08ResourcebcD0V14untagResources_2on3NIO15EventLoopFutureCyAC05UntagG6OutputVGAC0mG5InputV_AF0jK0_pSgtF">untagResources(_:on:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1112,7 +1126,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">untagResources</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/ResourceGroupsTaggingAPI/UntagResourcesInput.html">UntagResourcesInput</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/ResourceGroupsTaggingAPI/UntagResourcesOutput.html">UntagResourcesOutput</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">untagResources</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/ResourceGroupsTaggingAPI/UntagResourcesInput.html">UntagResourcesInput</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/ResourceGroupsTaggingAPI/UntagResourcesOutput.html">UntagResourcesOutput</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
                       </div>
@@ -1133,9 +1147,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:27AWSResourceGroupsTaggingAPI08ResourcebcD0V29getComplianceSummaryPaginator_6onPage3NIO15EventLoopFutureCyytGAC03GetgH5InputV_AHySbGAC0pgH6OutputV_AF0mN0_ptctF"></a>
-                    <a name="//apple_ref/swift/Method/getComplianceSummaryPaginator(_:onPage:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:27AWSResourceGroupsTaggingAPI08ResourcebcD0V29getComplianceSummaryPaginator_6onPage3NIO15EventLoopFutureCyytGAC03GetgH5InputV_AHySbGAC0pgH6OutputV_AF0mN0_ptctF">getComplianceSummaryPaginator(_:onPage:)</a>
+                    <a name="/s:27AWSResourceGroupsTaggingAPI08ResourcebcD0V29getComplianceSummaryPaginator_2on0J4Page3NIO15EventLoopFutureCyytGAC03GetgH5InputV_AG0mN0_pSgAIySbGAC0pgH6OutputV_AgM_ptctF"></a>
+                    <a name="//apple_ref/swift/Method/getComplianceSummaryPaginator(_:on:onPage:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:27AWSResourceGroupsTaggingAPI08ResourcebcD0V29getComplianceSummaryPaginator_2on0J4Page3NIO15EventLoopFutureCyytGAC03GetgH5InputV_AG0mN0_pSgAIySbGAC0pgH6OutputV_AgM_ptctF">getComplianceSummaryPaginator(_:on:onPage:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1152,6 +1166,7 @@
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getComplianceSummaryPaginator</span><span class="p">(</span>
     <span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/ResourceGroupsTaggingAPI/GetComplianceSummaryInput.html">GetComplianceSummaryInput</a></span><span class="p">,</span>
+    <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
     <span class="nv">onPage</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/ResourceGroupsTaggingAPI/GetComplianceSummaryOutput.html">GetComplianceSummaryOutput</a></span><span class="p">,</span>
     <span class="kt">EventLoop</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Bool</span><span class="o">&gt;</span>
 <span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Void</span><span class="o">&gt;</span></code></pre>
@@ -1164,9 +1179,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:27AWSResourceGroupsTaggingAPI08ResourcebcD0V21getResourcesPaginator_6onPage3NIO15EventLoopFutureCyytGAC03GetG5InputV_AHySbGAC0oG6OutputV_AF0lM0_ptctF"></a>
-                    <a name="//apple_ref/swift/Method/getResourcesPaginator(_:onPage:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:27AWSResourceGroupsTaggingAPI08ResourcebcD0V21getResourcesPaginator_6onPage3NIO15EventLoopFutureCyytGAC03GetG5InputV_AHySbGAC0oG6OutputV_AF0lM0_ptctF">getResourcesPaginator(_:onPage:)</a>
+                    <a name="/s:27AWSResourceGroupsTaggingAPI08ResourcebcD0V21getResourcesPaginator_2on0I4Page3NIO15EventLoopFutureCyytGAC03GetG5InputV_AG0lM0_pSgAIySbGAC0oG6OutputV_AgM_ptctF"></a>
+                    <a name="//apple_ref/swift/Method/getResourcesPaginator(_:on:onPage:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:27AWSResourceGroupsTaggingAPI08ResourcebcD0V21getResourcesPaginator_2on0I4Page3NIO15EventLoopFutureCyytGAC03GetG5InputV_AG0lM0_pSgAIySbGAC0oG6OutputV_AgM_ptctF">getResourcesPaginator(_:on:onPage:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1183,6 +1198,7 @@
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getResourcesPaginator</span><span class="p">(</span>
     <span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/ResourceGroupsTaggingAPI/GetResourcesInput.html">GetResourcesInput</a></span><span class="p">,</span>
+    <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
     <span class="nv">onPage</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/ResourceGroupsTaggingAPI/GetResourcesOutput.html">GetResourcesOutput</a></span><span class="p">,</span>
     <span class="kt">EventLoop</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Bool</span><span class="o">&gt;</span>
 <span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Void</span><span class="o">&gt;</span></code></pre>
@@ -1195,9 +1211,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:27AWSResourceGroupsTaggingAPI08ResourcebcD0V19getTagKeysPaginator_6onPage3NIO15EventLoopFutureCyytGAC03GetgH5InputV_AHySbGAC0pgH6OutputV_AF0mN0_ptctF"></a>
-                    <a name="//apple_ref/swift/Method/getTagKeysPaginator(_:onPage:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:27AWSResourceGroupsTaggingAPI08ResourcebcD0V19getTagKeysPaginator_6onPage3NIO15EventLoopFutureCyytGAC03GetgH5InputV_AHySbGAC0pgH6OutputV_AF0mN0_ptctF">getTagKeysPaginator(_:onPage:)</a>
+                    <a name="/s:27AWSResourceGroupsTaggingAPI08ResourcebcD0V19getTagKeysPaginator_2on0J4Page3NIO15EventLoopFutureCyytGAC03GetgH5InputV_AG0mN0_pSgAIySbGAC0pgH6OutputV_AgM_ptctF"></a>
+                    <a name="//apple_ref/swift/Method/getTagKeysPaginator(_:on:onPage:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:27AWSResourceGroupsTaggingAPI08ResourcebcD0V19getTagKeysPaginator_2on0J4Page3NIO15EventLoopFutureCyytGAC03GetgH5InputV_AG0mN0_pSgAIySbGAC0pgH6OutputV_AgM_ptctF">getTagKeysPaginator(_:on:onPage:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1214,6 +1230,7 @@
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getTagKeysPaginator</span><span class="p">(</span>
     <span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/ResourceGroupsTaggingAPI/GetTagKeysInput.html">GetTagKeysInput</a></span><span class="p">,</span>
+    <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
     <span class="nv">onPage</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/ResourceGroupsTaggingAPI/GetTagKeysOutput.html">GetTagKeysOutput</a></span><span class="p">,</span>
     <span class="kt">EventLoop</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Bool</span><span class="o">&gt;</span>
 <span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Void</span><span class="o">&gt;</span></code></pre>
@@ -1226,9 +1243,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:27AWSResourceGroupsTaggingAPI08ResourcebcD0V21getTagValuesPaginator_6onPage3NIO15EventLoopFutureCyytGAC03GetgH5InputV_AHySbGAC0pgH6OutputV_AF0mN0_ptctF"></a>
-                    <a name="//apple_ref/swift/Method/getTagValuesPaginator(_:onPage:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:27AWSResourceGroupsTaggingAPI08ResourcebcD0V21getTagValuesPaginator_6onPage3NIO15EventLoopFutureCyytGAC03GetgH5InputV_AHySbGAC0pgH6OutputV_AF0mN0_ptctF">getTagValuesPaginator(_:onPage:)</a>
+                    <a name="/s:27AWSResourceGroupsTaggingAPI08ResourcebcD0V21getTagValuesPaginator_2on0J4Page3NIO15EventLoopFutureCyytGAC03GetgH5InputV_AG0mN0_pSgAIySbGAC0pgH6OutputV_AgM_ptctF"></a>
+                    <a name="//apple_ref/swift/Method/getTagValuesPaginator(_:on:onPage:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:27AWSResourceGroupsTaggingAPI08ResourcebcD0V21getTagValuesPaginator_2on0J4Page3NIO15EventLoopFutureCyytGAC03GetgH5InputV_AG0mN0_pSgAIySbGAC0pgH6OutputV_AgM_ptctF">getTagValuesPaginator(_:on:onPage:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1245,6 +1262,7 @@
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getTagValuesPaginator</span><span class="p">(</span>
     <span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/ResourceGroupsTaggingAPI/GetTagValuesInput.html">GetTagValuesInput</a></span><span class="p">,</span>
+    <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
     <span class="nv">onPage</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/ResourceGroupsTaggingAPI/GetTagValuesOutput.html">GetTagValuesOutput</a></span><span class="p">,</span>
     <span class="kt">EventLoop</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Bool</span><span class="o">&gt;</span>
 <span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Void</span><span class="o">&gt;</span></code></pre>
@@ -1402,7 +1420,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ComplianceDetails</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ComplianceDetails</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
                       </div>
@@ -1458,7 +1476,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DescribeReportCreationOutput</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DescribeReportCreationOutput</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
                       </div>
@@ -1486,7 +1504,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">FailureInfo</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">FailureInfo</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
                       </div>
@@ -1514,7 +1532,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">GetComplianceSummaryOutput</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">GetComplianceSummaryOutput</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
                       </div>
@@ -1542,7 +1560,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">GetResourcesOutput</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">GetResourcesOutput</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
                       </div>
@@ -1570,7 +1588,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">GetTagKeysOutput</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">GetTagKeysOutput</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
                       </div>
@@ -1598,7 +1616,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">GetTagValuesOutput</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">GetTagValuesOutput</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
                       </div>
@@ -1626,7 +1644,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ResourceTagMapping</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ResourceTagMapping</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
                       </div>
@@ -1682,7 +1700,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">StartReportCreationOutput</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">StartReportCreationOutput</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
                       </div>
@@ -1710,7 +1728,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Summary</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Summary</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
                       </div>
@@ -1738,7 +1756,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Tag</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Tag</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
                       </div>
@@ -1822,7 +1840,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">TagResourcesOutput</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">TagResourcesOutput</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
                       </div>
@@ -1878,7 +1896,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">UntagResourcesOutput</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">UntagResourcesOutput</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
                       </div>

@@ -14,7 +14,7 @@
     <a title="CampaignResponse Structure Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../../index.html"> Docs</a> (55% documented)</p>
+        <p><a href="../../index.html"> Docs</a> (54% documented)</p>
         <p class="header-right"><a href="https://github.com/swift-aws/aws-sdk-swift"><img src="../../img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
@@ -135,6 +135,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../CloudWatchLogs.html">CloudWatchLogs</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../CodeArtifact.html">CodeArtifact</a>
           </li>
           <li class="nav-group-name">
             <a href="../../CodeBuild.html">CodeBuild</a>
@@ -326,6 +329,9 @@
             <a href="../../Health.html">Health</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../Honeycode.html">Honeycode</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../IAM.html">IAM</a>
           </li>
           <li class="nav-group-name">
@@ -363,6 +369,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../IoTSecureTunneling.html">IoTSecureTunneling</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../IoTSiteWise.html">IoTSiteWise</a>
           </li>
           <li class="nav-group-name">
             <a href="../../IoTThingsGraph.html">IoTThingsGraph</a>
@@ -426,6 +435,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../Macie.html">Macie</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../Macie2.html">Macie2</a>
           </li>
           <li class="nav-group-name">
             <a href="../../ManagedBlockchain.html">ManagedBlockchain</a>
@@ -653,6 +665,9 @@
             <a href="../../Support.html">Support</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../Synthetics.html">Synthetics</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../Textract.html">Textract</a>
           </li>
           <li class="nav-group-name">
@@ -709,6 +724,9 @@
           <li class="nav-group-name">
             <a href="../../Other%20Structs.html">Other Structures</a>
           </li>
+          <li class="nav-group-name">
+            <a href="../../Other%20Typealiases.html">Other Type Aliases</a>
+          </li>
         </ul>
       </nav>
       <article class="main-content">
@@ -717,7 +735,7 @@
             <h1>CampaignResponse</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">CampaignResponse</span> <span class="p">:</span> <span class="kt"><a href="../../Other%20Protocols.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">CampaignResponse</span> <span class="p">:</span> <span class="kt"><a href="../../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                 </div>
               </div>
@@ -838,6 +856,33 @@
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/s:11AWSPinpoint8PinpointV16CampaignResponseV27customDeliveryConfigurationAC06CustomfG0VSgvp"></a>
+                    <a name="//apple_ref/swift/Property/customDeliveryConfiguration" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11AWSPinpoint8PinpointV16CampaignResponseV27customDeliveryConfigurationAC06CustomfG0VSgvp">customDeliveryConfiguration</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The delivery configuration settings for sending the campaign through a custom channel.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">customDeliveryConfiguration</span><span class="p">:</span> <span class="kt"><a href="../../Structs/Pinpoint/CustomDeliveryConfiguration.html">CustomDeliveryConfiguration</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/s:11AWSPinpoint8PinpointV16CampaignResponseV12defaultStateAC0cF0VSgvp"></a>
                     <a name="//apple_ref/swift/Property/defaultState" class="dashAnchor"></a>
                     <a class="token" href="#/s:11AWSPinpoint8PinpointV16CampaignResponseV12defaultStateAC0cF0VSgvp">defaultState</a>
@@ -848,7 +893,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The current status of the campaign&rsquo;s default treatment. This value exists only for campaigns that have more than one treatment, to support A/B testing.</p>
+                        <p>The current status of the campaign&rsquo;s default treatment. This value exists only for campaigns that have more than one treatment.</p>
 
                       </div>
                       <div class="declaration">
@@ -929,7 +974,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The settings for the AWS Lambda function to use as a code hook for the campaign.</p>
+                        <p>The settings for the AWS Lambda function to use as a code hook for the campaign. You can use this hook to customize the segment that&rsquo;s used by the campaign.</p>
 
                       </div>
                       <div class="declaration">
@@ -1280,7 +1325,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The custom description of a variation of the campaign that&rsquo;s used for A/B testing.</p>
+                        <p>The custom description of the default treatment for the campaign.</p>
 
                       </div>
                       <div class="declaration">
@@ -1307,7 +1352,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The custom name of a variation of the campaign that&rsquo;s used for A/B testing.</p>
+                        <p>The custom name of the default treatment for the campaign, if the campaign has multiple treatments. A treatment is a variation of a campaign that&rsquo;s used for A/B testing.</p>
 
                       </div>
                       <div class="declaration">
@@ -1351,9 +1396,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:11AWSPinpoint8PinpointV16CampaignResponseV20additionalTreatments13applicationId3arn12creationDate12defaultState11description14holdoutPercent4hook2id8isPaused012lastModifiedK06limits20messageConfiguration4name8schedule07segmentH014segmentVersion5state4tags08templateY020treatmentDescription13treatmentName7versionAESayAC17TreatmentResourceVGSg_S3SAC0cM0VSgSSSgSiSgAC0C4HookVSgSSSbSgSSAC0C6LimitsVSgAC07MessageY0VSgA8_AC8ScheduleVSgSSSiA7_SDyS2SGSgAC08TemplateY0VSgA8_A8_A9_tcfc"></a>
-                    <a name="//apple_ref/swift/Method/init(additionalTreatments:applicationId:arn:creationDate:defaultState:description:holdoutPercent:hook:id:isPaused:lastModifiedDate:limits:messageConfiguration:name:schedule:segmentId:segmentVersion:state:tags:templateConfiguration:treatmentDescription:treatmentName:version:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11AWSPinpoint8PinpointV16CampaignResponseV20additionalTreatments13applicationId3arn12creationDate12defaultState11description14holdoutPercent4hook2id8isPaused012lastModifiedK06limits20messageConfiguration4name8schedule07segmentH014segmentVersion5state4tags08templateY020treatmentDescription13treatmentName7versionAESayAC17TreatmentResourceVGSg_S3SAC0cM0VSgSSSgSiSgAC0C4HookVSgSSSbSgSSAC0C6LimitsVSgAC07MessageY0VSgA8_AC8ScheduleVSgSSSiA7_SDyS2SGSgAC08TemplateY0VSgA8_A8_A9_tcfc">init(additionalTreatments:applicationId:arn:creationDate:defaultState:description:holdoutPercent:hook:id:isPaused:lastModifiedDate:limits:messageConfiguration:name:schedule:segmentId:segmentVersion:state:tags:templateConfiguration:treatmentDescription:treatmentName:version:)</a>
+                    <a name="/s:11AWSPinpoint8PinpointV16CampaignResponseV20additionalTreatments13applicationId3arn12creationDate27customDeliveryConfiguration12defaultState11description14holdoutPercent4hook2id8isPaused012lastModifiedK06limits07messageN04name8schedule07segmentH014segmentVersion5state4tags08templateN020treatmentDescription13treatmentName7versionAESayAC17TreatmentResourceVGSg_S3SAC06CustommN0VSgAC0cP0VSgSSSgSiSgAC0C4HookVSgSSSbSgSSAC0C6LimitsVSgAC07MessageN0VSgA12_AC8ScheduleVSgSSSiA11_SDyS2SGSgAC08TemplateN0VSgA12_A12_A13_tcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(additionalTreatments:applicationId:arn:creationDate:customDeliveryConfiguration:defaultState:description:holdoutPercent:hook:id:isPaused:lastModifiedDate:limits:messageConfiguration:name:schedule:segmentId:segmentVersion:state:tags:templateConfiguration:treatmentDescription:treatmentName:version:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11AWSPinpoint8PinpointV16CampaignResponseV20additionalTreatments13applicationId3arn12creationDate27customDeliveryConfiguration12defaultState11description14holdoutPercent4hook2id8isPaused012lastModifiedK06limits07messageN04name8schedule07segmentH014segmentVersion5state4tags08templateN020treatmentDescription13treatmentName7versionAESayAC17TreatmentResourceVGSg_S3SAC06CustommN0VSgAC0cP0VSgSSSgSiSgAC0C4HookVSgSSSbSgSSAC0C6LimitsVSgAC07MessageN0VSgA12_AC8ScheduleVSgSSSiA11_SDyS2SGSgAC08TemplateN0VSgA12_A12_A13_tcfc">init(additionalTreatments:applicationId:arn:creationDate:customDeliveryConfiguration:defaultState:description:holdoutPercent:hook:id:isPaused:lastModifiedDate:limits:messageConfiguration:name:schedule:segmentId:segmentVersion:state:tags:templateConfiguration:treatmentDescription:treatmentName:version:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1368,7 +1413,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">additionalTreatments</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../../Structs/Pinpoint/TreatmentResource.html">TreatmentResource</a></span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">applicationId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">arn</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">creationDate</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="n"><a href="../../Structs/Pinpoint/CampaignResponse.html#/s:11AWSPinpoint8PinpointV16CampaignResponseV12defaultStateAC0cF0VSgvp">defaultState</a></span><span class="p">:</span> <span class="kt"><a href="../../Structs/Pinpoint/CampaignState.html">CampaignState</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">description</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">holdoutPercent</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">hook</span><span class="p">:</span> <span class="kt"><a href="../../Structs/Pinpoint/CampaignHook.html">CampaignHook</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">id</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">isPaused</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">lastModifiedDate</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">limits</span><span class="p">:</span> <span class="kt"><a href="../../Structs/Pinpoint/CampaignLimits.html">CampaignLimits</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">messageConfiguration</span><span class="p">:</span> <span class="kt"><a href="../../Structs/Pinpoint/MessageConfiguration.html">MessageConfiguration</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">name</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">schedule</span><span class="p">:</span> <span class="kt"><a href="../../Structs/Pinpoint/Schedule.html">Schedule</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">segmentId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">segmentVersion</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">state</span><span class="p">:</span> <span class="kt"><a href="../../Structs/Pinpoint/CampaignState.html">CampaignState</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">tags</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt">String</span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">templateConfiguration</span><span class="p">:</span> <span class="kt"><a href="../../Structs/Pinpoint/TemplateConfiguration.html">TemplateConfiguration</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">treatmentDescription</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">treatmentName</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">version</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">additionalTreatments</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../../Structs/Pinpoint/TreatmentResource.html">TreatmentResource</a></span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">applicationId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">arn</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">creationDate</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">customDeliveryConfiguration</span><span class="p">:</span> <span class="kt"><a href="../../Structs/Pinpoint/CustomDeliveryConfiguration.html">CustomDeliveryConfiguration</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="n"><a href="../../Structs/Pinpoint/CampaignResponse.html#/s:11AWSPinpoint8PinpointV16CampaignResponseV12defaultStateAC0cF0VSgvp">defaultState</a></span><span class="p">:</span> <span class="kt"><a href="../../Structs/Pinpoint/CampaignState.html">CampaignState</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">description</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">holdoutPercent</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">hook</span><span class="p">:</span> <span class="kt"><a href="../../Structs/Pinpoint/CampaignHook.html">CampaignHook</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">id</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">isPaused</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">lastModifiedDate</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">limits</span><span class="p">:</span> <span class="kt"><a href="../../Structs/Pinpoint/CampaignLimits.html">CampaignLimits</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">messageConfiguration</span><span class="p">:</span> <span class="kt"><a href="../../Structs/Pinpoint/MessageConfiguration.html">MessageConfiguration</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">name</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">schedule</span><span class="p">:</span> <span class="kt"><a href="../../Structs/Pinpoint/Schedule.html">Schedule</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">segmentId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">segmentVersion</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">state</span><span class="p">:</span> <span class="kt"><a href="../../Structs/Pinpoint/CampaignState.html">CampaignState</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">tags</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt">String</span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">templateConfiguration</span><span class="p">:</span> <span class="kt"><a href="../../Structs/Pinpoint/TemplateConfiguration.html">TemplateConfiguration</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">treatmentDescription</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">treatmentName</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">version</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>

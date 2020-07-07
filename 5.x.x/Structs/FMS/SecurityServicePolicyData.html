@@ -14,7 +14,7 @@
     <a title="SecurityServicePolicyData Structure Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../../index.html"> Docs</a> (55% documented)</p>
+        <p><a href="../../index.html"> Docs</a> (54% documented)</p>
         <p class="header-right"><a href="https://github.com/swift-aws/aws-sdk-swift"><img src="../../img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
@@ -135,6 +135,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../CloudWatchLogs.html">CloudWatchLogs</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../CodeArtifact.html">CodeArtifact</a>
           </li>
           <li class="nav-group-name">
             <a href="../../CodeBuild.html">CodeBuild</a>
@@ -326,6 +329,9 @@
             <a href="../../Health.html">Health</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../Honeycode.html">Honeycode</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../IAM.html">IAM</a>
           </li>
           <li class="nav-group-name">
@@ -363,6 +369,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../IoTSecureTunneling.html">IoTSecureTunneling</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../IoTSiteWise.html">IoTSiteWise</a>
           </li>
           <li class="nav-group-name">
             <a href="../../IoTThingsGraph.html">IoTThingsGraph</a>
@@ -426,6 +435,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../Macie.html">Macie</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../Macie2.html">Macie2</a>
           </li>
           <li class="nav-group-name">
             <a href="../../ManagedBlockchain.html">ManagedBlockchain</a>
@@ -653,6 +665,9 @@
             <a href="../../Support.html">Support</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../Synthetics.html">Synthetics</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../Textract.html">Textract</a>
           </li>
           <li class="nav-group-name">
@@ -709,6 +724,9 @@
           <li class="nav-group-name">
             <a href="../../Other%20Structs.html">Other Structures</a>
           </li>
+          <li class="nav-group-name">
+            <a href="../../Other%20Typealiases.html">Other Type Aliases</a>
+          </li>
         </ul>
       </nav>
       <article class="main-content">
@@ -717,7 +735,7 @@
             <h1>SecurityServicePolicyData</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">SecurityServicePolicyData</span> <span class="p">:</span> <span class="kt"><a href="../../Protocols/AWSEncodableShape.html">AWSEncodableShape</a></span> <span class="o">&amp;</span> <span class="kt"><a href="../../Other%20Protocols.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">SecurityServicePolicyData</span> <span class="p">:</span> <span class="kt"><a href="../../Protocols/AWSEncodableShape.html">AWSEncodableShape</a></span> <span class="o">&amp;</span> <span class="kt"><a href="../../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                 </div>
               </div>
@@ -740,7 +758,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Details about the service that are specific to the service type, in JSON format. For service type SHIELD_ADVANCED, this is an empty string.   Example: WAFV2   &ldquo;SecurityServicePolicyData&rdquo;: &ldquo;{ \&quot;type\&rdquo;: \&ldquo;WAFV2\&rdquo;, \&ldquo;postProcessRuleGroups\&rdquo;: [ { \&ldquo;managedRuleGroupIdentifier\&rdquo;: { \&ldquo;managedRuleGroupName\&rdquo;: \&ldquo;AWSManagedRulesAdminProtectionRuleSet\&rdquo;, \&ldquo;vendor\&rdquo;: \&ldquo;AWS\&rdquo; } \&ldquo;ruleGroupARN\&rdquo;: \&ldquo;rule group arn&rdquo;, \&ldquo;overrideAction\&rdquo;: { \&ldquo;type\&rdquo;: \&ldquo;COUNT|\&rdquo; }, \&ldquo;excludedRules\&rdquo;: [ { \&ldquo;name\&rdquo; : \&ldquo;EntityName\&rdquo; } ], \&ldquo;type\&rdquo;: \&ldquo;ManagedRuleGroup|RuleGroup\&rdquo; } ], \&ldquo;preProcessRuleGroups\&rdquo;: [ { \&ldquo;managedRuleGroupIdentifier\&rdquo;: { \&ldquo;managedRuleGroupName\&rdquo;: \&ldquo;AWSManagedRulesAdminProtectionRuleSet\&rdquo;, \&ldquo;vendor\&rdquo;: \&ldquo;AWS\&rdquo; } \&ldquo;ruleGroupARN\&rdquo;: \&ldquo;rule group arn\&rdquo;, \&ldquo;overrideAction\&rdquo;: { \&ldquo;type\&rdquo;: \&ldquo;COUNT\&rdquo; }, \&ldquo;excludedRules\&rdquo;: [ { \&ldquo;name\&rdquo; : \&ldquo;EntityName\&rdquo; } ], \&ldquo;type\&rdquo;: \&ldquo;ManagedRuleGroup|RuleGroup\&rdquo; } ], \&ldquo;defaultAction\&rdquo;: { \&ldquo;type\&rdquo;: \&ldquo;BLOCK\&rdquo; }}&ldquo;     Example: WAF   &quot;ManagedServiceData&rdquo;: &ldquo;{\&quot;type\&rdquo;: \&ldquo;WAF\&rdquo;, \&ldquo;ruleGroups\&rdquo;: [{\&ldquo;id\&rdquo;: \&ldquo;12345678-1bcd-9012-efga-0987654321ab\&rdquo;, \&ldquo;overrideAction\&rdquo; : {\&ldquo;type\&rdquo;: \&ldquo;COUNT\&rdquo;}}], \&ldquo;defaultAction\&rdquo;: {\&ldquo;type\&rdquo;: \&ldquo;BLOCK\&rdquo;}}    Example: SECURITY_GROUPS_COMMON   &ldquo;SecurityServicePolicyData&rdquo;:{&ldquo;Type&rdquo;:&ldquo;SECURITY_GROUPS_COMMON&rdquo;,&ldquo;ManagedServiceData&rdquo;:&ldquo;{\&quot;type\&rdquo;:\&ldquo;SECURITY_GROUPS_COMMON\&rdquo;,\&ldquo;revertManualSecurityGroupChanges\&rdquo;:false,\&ldquo;exclusiveResourceSecurityGroupManagement\&rdquo;:false,\&ldquo;securityGroups\&rdquo;:[{\&ldquo;id\&rdquo;:\&ldquo; sg-000e55995d61a06bd\&rdquo;}]}&ldquo;},&quot;RemediationEnabled&rdquo;:false,&ldquo;ResourceType&rdquo;:&ldquo;AWS::EC2::NetworkInterface&rdquo;}    Example: SECURITY_GROUPS_CONTENT_AUDIT   &ldquo;SecurityServicePolicyData&rdquo;:{&ldquo;Type&rdquo;:&ldquo;SECURITY_GROUPS_CONTENT_AUDIT&rdquo;,&ldquo;ManagedServiceData&rdquo;:&ldquo;{\&quot;type\&rdquo;:\&ldquo;SECURITY_GROUPS_CONTENT_AUDIT\&rdquo;,\&ldquo;securityGroups\&rdquo;:[{\&ldquo;id\&rdquo;:\&ldquo; sg-000e55995d61a06bd \&rdquo;}],\&ldquo;securityGroupAction\&rdquo;:{\&ldquo;type\&rdquo;:\&ldquo;ALLOW\&rdquo;}}&ldquo;},&quot;RemediationEnabled&rdquo;:false,&ldquo;ResourceType&rdquo;:&ldquo;AWS::EC2::NetworkInterface&rdquo;}  The security group action for content audit can be ALLOW or DENY. For ALLOW, all in-scope security group rules must be within the allowed range of the policy&rsquo;s security group rules. For DENY, all in-scope security group rules must not contain a value or a range that matches a rule value or range in the policy security group.   Example: SECURITY_GROUPS_USAGE_AUDIT   &ldquo;SecurityServicePolicyData&rdquo;:{&ldquo;Type&rdquo;:&ldquo;SECURITY_GROUPS_USAGE_AUDIT&rdquo;,&ldquo;ManagedServiceData&rdquo;:&ldquo;{\&quot;type\&rdquo;:\&ldquo;SECURITY_GROUPS_USAGE_AUDIT\&rdquo;,\&ldquo;deleteUnusedSecurityGroups\&rdquo;:true,\&ldquo;coalesceRedundantSecurityGroups\&rdquo;:true}&ldquo;},&quot;RemediationEnabled&rdquo;:false,&ldquo;Resou rceType&rdquo;:&ldquo;AWS::EC2::SecurityGroup&rdquo;}</p>
+                        <p>Details about the service that are specific to the service type, in JSON format. For service type SHIELD_ADVANCED, this is an empty string.   Example: WAFV2   &ldquo;ManagedServiceData&rdquo;: &ldquo;{\&quot;type\&rdquo;:\&ldquo;WAFV2\&rdquo;,\&ldquo;defaultAction\&rdquo;:{\&ldquo;type\&rdquo;:\&ldquo;ALLOW\&rdquo;},\&ldquo;preProcessRuleGroups\&rdquo;:[{\&ldquo;managedRuleGroupIdentifier\&rdquo;:null,\&ldquo;ruleGroupArn\&rdquo;:\&ldquo;rulegrouparn\&rdquo;,\&ldquo;overrideAction\&rdquo;:{\&ldquo;type\&rdquo;:\&ldquo;COUNT\&rdquo;},\&ldquo;excludedRules\&rdquo;:[{\&ldquo;name\&rdquo;:\&ldquo;EntityName\&rdquo;}],\&ldquo;ruleGroupType\&rdquo;:\&ldquo;RuleGroup\&rdquo;}],\&ldquo;postProcessRuleGroups\&rdquo;:[{\&ldquo;managedRuleGroupIdentifier\&rdquo;:{\&ldquo;managedRuleGroupName\&rdquo;:\&ldquo;AWSManagedRulesAdminProtectionRuleSet\&rdquo;,\&ldquo;vendor\&rdquo;:\&ldquo;AWS\&rdquo;},\&ldquo;ruleGroupArn\&rdquo;:\&ldquo;rulegrouparn\&rdquo;,\&ldquo;overrideAction\&rdquo;:{\&ldquo;type\&rdquo;:\&ldquo;NONE\&rdquo;},\&ldquo;excludedRules\&rdquo;:[],\&ldquo;ruleGroupType\&rdquo;:\&ldquo;ManagedRuleGroup\&rdquo;}],\&ldquo;overrideCustomerWebACLAssociation\&rdquo;:false}&ldquo;    Example: WAF Classic   &quot;ManagedServiceData&rdquo;: &ldquo;{\&quot;type\&rdquo;: \&ldquo;WAF\&rdquo;, \&ldquo;ruleGroups\&rdquo;: [{\&ldquo;id\&rdquo;: \&ldquo;12345678-1bcd-9012-efga-0987654321ab\&rdquo;, \&ldquo;overrideAction\&rdquo; : {\&ldquo;type\&rdquo;: \&ldquo;COUNT\&rdquo;}}], \&ldquo;defaultAction\&rdquo;: {\&ldquo;type\&rdquo;: \&ldquo;BLOCK\&rdquo;}}    Example: SECURITY_GROUPS_COMMON   &ldquo;SecurityServicePolicyData&rdquo;:{&ldquo;Type&rdquo;:&ldquo;SECURITY_GROUPS_COMMON&rdquo;,&ldquo;ManagedServiceData&rdquo;:&ldquo;{\&quot;type\&rdquo;:\&ldquo;SECURITY_GROUPS_COMMON\&rdquo;,\&ldquo;revertManualSecurityGroupChanges\&rdquo;:false,\&ldquo;exclusiveResourceSecurityGroupManagement\&rdquo;:false, \&ldquo;applyToAllEC2InstanceENIs\&rdquo;:false,\&ldquo;securityGroups\&rdquo;:[{\&ldquo;id\&rdquo;:\&ldquo; sg-000e55995d61a06bd\&rdquo;}]}&ldquo;},&quot;RemediationEnabled&rdquo;:false,&ldquo;ResourceType&rdquo;:&ldquo;AWS::EC2::NetworkInterface&rdquo;}    Example: SECURITY_GROUPS_CONTENT_AUDIT   &ldquo;SecurityServicePolicyData&rdquo;:{&ldquo;Type&rdquo;:&ldquo;SECURITY_GROUPS_CONTENT_AUDIT&rdquo;,&ldquo;ManagedServiceData&rdquo;:&ldquo;{\&quot;type\&rdquo;:\&ldquo;SECURITY_GROUPS_CONTENT_AUDIT\&rdquo;,\&ldquo;securityGroups\&rdquo;:[{\&ldquo;id\&rdquo;:\&ldquo; sg-000e55995d61a06bd \&rdquo;}],\&ldquo;securityGroupAction\&rdquo;:{\&ldquo;type\&rdquo;:\&ldquo;ALLOW\&rdquo;}}&ldquo;},&quot;RemediationEnabled&rdquo;:false,&ldquo;ResourceType&rdquo;:&ldquo;AWS::EC2::NetworkInterface&rdquo;}  The security group action for content audit can be ALLOW or DENY. For ALLOW, all in-scope security group rules must be within the allowed range of the policy&rsquo;s security group rules. For DENY, all in-scope security group rules must not contain a value or a range that matches a rule value or range in the policy security group.   Example: SECURITY_GROUPS_USAGE_AUDIT   &ldquo;SecurityServicePolicyData&rdquo;:{&ldquo;Type&rdquo;:&ldquo;SECURITY_GROUPS_USAGE_AUDIT&rdquo;,&ldquo;ManagedServiceData&rdquo;:&ldquo;{\&quot;type\&rdquo;:\&ldquo;SECURITY_GROUPS_USAGE_AUDIT\&rdquo;,\&ldquo;deleteUnusedSecurityGroups\&rdquo;:true,\&ldquo;coalesceRedundantSecurityGroups\&rdquo;:true}&ldquo;},&quot;RemediationEnabled&rdquo;:false,&ldquo;Resou rceType&rdquo;:&ldquo;AWS::EC2::SecurityGroup&rdquo;}</p>
 
                       </div>
                       <div class="declaration">

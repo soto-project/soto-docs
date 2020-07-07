@@ -14,7 +14,7 @@
     <a title="Other Structures  Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="index.html"> Docs</a> (55% documented)</p>
+        <p><a href="index.html"> Docs</a> (54% documented)</p>
         <p class="header-right"><a href="https://github.com/swift-aws/aws-sdk-swift"><img src="img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
@@ -135,6 +135,9 @@
           </li>
           <li class="nav-group-name">
             <a href="CloudWatchLogs.html">CloudWatchLogs</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="CodeArtifact.html">CodeArtifact</a>
           </li>
           <li class="nav-group-name">
             <a href="CodeBuild.html">CodeBuild</a>
@@ -326,6 +329,9 @@
             <a href="Health.html">Health</a>
           </li>
           <li class="nav-group-name">
+            <a href="Honeycode.html">Honeycode</a>
+          </li>
+          <li class="nav-group-name">
             <a href="IAM.html">IAM</a>
           </li>
           <li class="nav-group-name">
@@ -363,6 +369,9 @@
           </li>
           <li class="nav-group-name">
             <a href="IoTSecureTunneling.html">IoTSecureTunneling</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="IoTSiteWise.html">IoTSiteWise</a>
           </li>
           <li class="nav-group-name">
             <a href="IoTThingsGraph.html">IoTThingsGraph</a>
@@ -426,6 +435,9 @@
           </li>
           <li class="nav-group-name">
             <a href="Macie.html">Macie</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="Macie2.html">Macie2</a>
           </li>
           <li class="nav-group-name">
             <a href="ManagedBlockchain.html">ManagedBlockchain</a>
@@ -653,6 +665,9 @@
             <a href="Support.html">Support</a>
           </li>
           <li class="nav-group-name">
+            <a href="Synthetics.html">Synthetics</a>
+          </li>
+          <li class="nav-group-name">
             <a href="Textract.html">Textract</a>
           </li>
           <li class="nav-group-name">
@@ -709,6 +724,9 @@
           <li class="nav-group-name">
             <a href="Other%20Structs.html">Other Structures</a>
           </li>
+          <li class="nav-group-name">
+            <a href="Other%20Typealiases.html">Other Type Aliases</a>
+          </li>
         </ul>
       </nav>
       <article class="main-content">
@@ -721,34 +739,6 @@
           <section class="section task-group-section">
             <div class="task-group">
               <ul>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:15AWSSDKSwiftCore10AWSPayloadV"></a>
-                    <a name="//apple_ref/swift/Struct/AWSPayload" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15AWSSDKSwiftCore10AWSPayloadV">AWSPayload</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Undocumented</p>
-
-                        <a href="Structs/AWSPayload.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">AWSPayload</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
                 <li class="item">
                   <div>
                     <code>
@@ -781,9 +771,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:15AWSSDKSwiftCore18ExpiringCredentialV"></a>
-                    <a name="//apple_ref/swift/Struct/ExpiringCredential" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15AWSSDKSwiftCore18ExpiringCredentialV">ExpiringCredential</a>
+                    <a name="/s:15AWSSDKSwiftCore25CredentialProviderFactoryV"></a>
+                    <a name="//apple_ref/swift/Struct/CredentialProviderFactory" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15AWSSDKSwiftCore25CredentialProviderFactoryV">CredentialProviderFactory</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -791,15 +781,15 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Provide AWS credentials directly</p>
+                        <p>A helper struct to defer the creation of a <code><a href="Protocols/CredentialProvider.html">CredentialProvider</a></code> until after the AWSClient has been created.</p>
 
-                        <a href="Structs/ExpiringCredential.html" class="slightly-smaller">See more</a>
+                        <a href="Structs/CredentialProviderFactory.html" class="slightly-smaller">See more</a>
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ExpiringCredential</span> <span class="p">:</span> <span class="kt">Credential</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">CredentialProviderFactory</span></code></pre>
 
                         </div>
                       </div>
@@ -809,9 +799,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:15AWSSDKSwiftCore16SharedCredentialV"></a>
-                    <a name="//apple_ref/swift/Struct/SharedCredential" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15AWSSDKSwiftCore16SharedCredentialV">SharedCredential</a>
+                    <a name="/s:15AWSSDKSwiftCore23CredentialProviderErrorV"></a>
+                    <a name="//apple_ref/swift/Struct/CredentialProviderError" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15AWSSDKSwiftCore23CredentialProviderErrorV">CredentialProviderError</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -819,15 +809,43 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Provide AWS credentials via the ~/.aws/credential file</p>
+                        <p>Undocumented</p>
 
-                        <a href="Structs/SharedCredential.html" class="slightly-smaller">See more</a>
+                        <a href="Structs/CredentialProviderError.html" class="slightly-smaller">See more</a>
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">SharedCredential</span> <span class="p">:</span> <span class="kt">Credential</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">CredentialProviderError</span> <span class="p">:</span> <span class="kt">Error</span><span class="p">,</span> <span class="kt">Equatable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:15AWSSDKSwiftCore22NullCredentialProviderV"></a>
+                    <a name="//apple_ref/swift/Struct/NullCredentialProvider" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15AWSSDKSwiftCore22NullCredentialProviderV">NullCredentialProvider</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Credential provider that always fails</p>
+
+                        <a href="Structs/NullCredentialProvider.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">NullCredentialProvider</span> <span class="p">:</span> <span class="kt"><a href="Protocols/CredentialProvider.html">CredentialProvider</a></span></code></pre>
 
                         </div>
                       </div>
@@ -847,17 +865,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Structure defining how to serialize member of AWSShape.
-Below is the list of possible encodings and how they are setup</p>
-
-<ul>
-<li>Encode in header (label set to member name in json model, location set to .header(header name))</li>
-<li>Encode as part of uri (label set to member name in json model, location set to .uri(uri part to replace))</li>
-<li>Encode as uri query (label set to member name in json model, location set to .querystring(query string name))</li>
-<li>While encoding a Collection as XML or query string define additional element names (label set to member name in json model,
-shapeEncoding set to one of collection encoding types, if codingkey is different to label then set it to .body(codingkey))</li>
-<li>When encoding payload data blob (label set to member name in json model, shapeEncoding set to .blob)</li>
-</ul>
+                        <p>Structure defining where to serialize member of AWSShape.</p>
 
                         <a href="Structs/AWSMemberEncoding.html" class="slightly-smaller">See more</a>
                       </div>
@@ -875,9 +883,37 @@ shapeEncoding set to one of collection encoding types, if codingkey is different
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:15AWSSDKSwiftCore15ServiceProtocolV"></a>
-                    <a name="//apple_ref/swift/Struct/ServiceProtocol" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15AWSSDKSwiftCore15ServiceProtocolV">ServiceProtocol</a>
+                    <a name="/s:15AWSSDKSwiftCore14PayloadOptionsV"></a>
+                    <a name="//apple_ref/swift/Struct/PayloadOptions" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15AWSSDKSwiftCore14PayloadOptionsV">PayloadOptions</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>AWSShapeWithPayload options.</p>
+
+                        <a href="Structs/PayloadOptions.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">PayloadOptions</span> <span class="p">:</span> <span class="kt">OptionSet</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:15AWSSDKSwiftCore9PartitionV"></a>
+                    <a name="//apple_ref/swift/Struct/Partition" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15AWSSDKSwiftCore9PartitionV">Partition</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -887,13 +923,328 @@ shapeEncoding set to one of collection encoding types, if codingkey is different
                       <div class="abstract">
                         <p>Undocumented</p>
 
-                        <a href="Structs/ServiceProtocol.html" class="slightly-smaller">See more</a>
+                        <a href="Structs/Partition.html" class="slightly-smaller">See more</a>
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ServiceProtocol</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Partition</span> <span class="p">:</span> <span class="kt">RawRepresentable</span><span class="p">,</span> <span class="kt">Equatable</span><span class="p">,</span> <span class="kt">Hashable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:15AWSSDKSwiftCore6CodingV"></a>
+                    <a name="//apple_ref/swift/Struct/Coding" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15AWSSDKSwiftCore6CodingV">Coding</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Property wrapper that applies a custom encoder and decoder to its wrapped value</p>
+
+                        <a href="Structs/Coding.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@propertyWrapper</span>
+<span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Coding</span><span class="o">&lt;</span><span class="kt">Coder</span><span class="o">&gt;</span> <span class="k">where</span> <span class="kt">Coder</span> <span class="p">:</span> <span class="kt"><a href="Protocols/CustomCoder.html">CustomCoder</a></span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">Coding</span><span class="p">:</span> <span class="kt">Decodable</span> <span class="k">where</span> <span class="kt">Coder</span><span class="p">:</span> <span class="kt"><a href="Protocols/CustomDecoder.html">CustomDecoder</a></span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">Coding</span><span class="p">:</span> <span class="kt">Encodable</span> <span class="k">where</span> <span class="kt">Coder</span><span class="p">:</span> <span class="kt"><a href="Protocols/CustomEncoder.html">CustomEncoder</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:15AWSSDKSwiftCore14OptionalCodingV"></a>
+                    <a name="//apple_ref/swift/Struct/OptionalCoding" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15AWSSDKSwiftCore14OptionalCodingV">OptionalCoding</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Property wrapper that applies a custom encoder and decoder to its wrapped optional value</p>
+
+                        <a href="Structs/OptionalCoding.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@propertyWrapper</span>
+<span class="kd">public</span> <span class="kd">struct</span> <span class="kt">OptionalCoding</span><span class="o">&lt;</span><span class="kt">Coder</span><span class="o">&gt;</span> <span class="k">where</span> <span class="kt">Coder</span> <span class="p">:</span> <span class="kt"><a href="Protocols/CustomCoder.html">CustomCoder</a></span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">OptionalCoding</span><span class="p">:</span> <span class="kt"><a href="Protocols/OptionalCodingWrapper.html">OptionalCodingWrapper</a></span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">OptionalCoding</span><span class="p">:</span> <span class="kt">Decodable</span> <span class="k">where</span> <span class="kt">Coder</span><span class="p">:</span> <span class="kt"><a href="Protocols/CustomDecoder.html">CustomDecoder</a></span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">OptionalCoding</span><span class="p">:</span> <span class="kt">Encodable</span> <span class="k">where</span> <span class="kt">Coder</span><span class="p">:</span> <span class="kt"><a href="Protocols/CustomEncoder.html">CustomEncoder</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Collection%20Coders"></a>
+                <a name="//apple_ref/swift/Section/Collection Coders" class="dashAnchor"></a>
+                <a href="#/Collection%20Coders">
+                  <h3 class="section-name">Collection Coders</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:15AWSSDKSwiftCore10ArrayCoderV"></a>
+                    <a name="//apple_ref/swift/Struct/ArrayCoder" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15AWSSDKSwiftCore10ArrayCoderV">ArrayCoder</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Coder for encoding/decoding Arrays. This is extended to support encoding and decoding based on whether <code>Element</code> is <code>Encodable</code> or <code>Decodable</code>.</p>
+
+                        <a href="Structs/ArrayCoder.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ArrayCoder</span><span class="o">&lt;</span><span class="kt">Properties</span><span class="p">,</span> <span class="kt">Element</span><span class="o">&gt;</span> <span class="p">:</span> <span class="kt"><a href="Protocols/CustomCoder.html">CustomCoder</a></span> <span class="k">where</span> <span class="kt">Properties</span> <span class="p">:</span> <span class="kt"><a href="Protocols/ArrayCoderProperties.html">ArrayCoderProperties</a></span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">ArrayCoder</span><span class="p">:</span> <span class="kt"><a href="Protocols/CustomDecoder.html">CustomDecoder</a></span> <span class="k">where</span> <span class="kt">Element</span><span class="p">:</span> <span class="kt">Decodable</span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">ArrayCoder</span><span class="p">:</span> <span class="kt"><a href="Protocols/CustomEncoder.html">CustomEncoder</a></span> <span class="k">where</span> <span class="kt">Element</span><span class="p">:</span> <span class="kt">Encodable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:15AWSSDKSwiftCore15DictionaryCoderV"></a>
+                    <a name="//apple_ref/swift/Struct/DictionaryCoder" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15AWSSDKSwiftCore15DictionaryCoderV">DictionaryCoder</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Coder for encoding/decoding Dictionaries. This is extended to support encoding and decoding based on whether <code>Key</code> and <code>Value</code> are <code>Encodable</code> or <code>Decodable</code>.</p>
+
+                        <a href="Structs/DictionaryCoder.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DictionaryCoder</span><span class="o">&lt;</span><span class="kt">Properties</span><span class="p">,</span> <span class="kt">Key</span><span class="p">,</span> <span class="kt">Value</span><span class="o">&gt;</span> <span class="p">:</span> <span class="kt"><a href="Protocols/CustomCoder.html">CustomCoder</a></span> <span class="k">where</span> <span class="kt">Properties</span> <span class="p">:</span> <span class="kt"><a href="Protocols/DictionaryCoderProperties.html">DictionaryCoderProperties</a></span><span class="p">,</span> <span class="kt">Key</span> <span class="p">:</span> <span class="kt">Hashable</span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">DictionaryCoder</span><span class="p">:</span> <span class="kt"><a href="Protocols/CustomDecoder.html">CustomDecoder</a></span> <span class="k">where</span> <span class="kt">Key</span><span class="p">:</span> <span class="kt">Decodable</span><span class="p">,</span> <span class="kt">Value</span><span class="p">:</span> <span class="kt">Decodable</span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">DictionaryCoder</span><span class="p">:</span> <span class="kt"><a href="Protocols/CustomEncoder.html">CustomEncoder</a></span> <span class="k">where</span> <span class="kt">Key</span><span class="p">:</span> <span class="kt">Encodable</span><span class="p">,</span> <span class="kt">Value</span><span class="p">:</span> <span class="kt">Encodable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:15AWSSDKSwiftCore27DefaultArrayCoderPropertiesV"></a>
+                    <a name="//apple_ref/swift/Struct/DefaultArrayCoderProperties" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15AWSSDKSwiftCore27DefaultArrayCoderPropertiesV">DefaultArrayCoderProperties</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The most common array encoding property is an element name &ldquo;member&rdquo;</p>
+
+                        <a href="Structs/DefaultArrayCoderProperties.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DefaultArrayCoderProperties</span> <span class="p">:</span> <span class="kt"><a href="Protocols/ArrayCoderProperties.html">ArrayCoderProperties</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:15AWSSDKSwiftCore32DefaultDictionaryCoderPropertiesV"></a>
+                    <a name="//apple_ref/swift/Struct/DefaultDictionaryCoderProperties" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15AWSSDKSwiftCore32DefaultDictionaryCoderPropertiesV">DefaultDictionaryCoderProperties</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The most common dictionary encoding properties are element name &ldquo;entry&rdquo;, key name &ldquo;key&rdquo;, value name &ldquo;value&rdquo;</p>
+
+                        <a href="Structs/DefaultDictionaryCoderProperties.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DefaultDictionaryCoderProperties</span> <span class="p">:</span> <span class="kt"><a href="Protocols/DictionaryCoderProperties.html">DictionaryCoderProperties</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/TimeStamp%20Coders"></a>
+                <a name="//apple_ref/swift/Section/TimeStamp Coders" class="dashAnchor"></a>
+                <a href="#/TimeStamp%20Coders">
+                  <h3 class="section-name">TimeStamp Coders</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:15AWSSDKSwiftCore21ISO8601TimeStampCoderV"></a>
+                    <a name="//apple_ref/swift/Struct/ISO8601TimeStampCoder" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15AWSSDKSwiftCore21ISO8601TimeStampCoderV">ISO8601TimeStampCoder</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Date coder for ISO8601 format</p>
+
+                        <a href="Structs/ISO8601TimeStampCoder.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ISO8601TimeStampCoder</span> <span class="p">:</span> <span class="kt"><a href="Protocols/TimeStampFormatterCoder.html">TimeStampFormatterCoder</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:15AWSSDKSwiftCore24HTTPHeaderTimeStampCoderV"></a>
+                    <a name="//apple_ref/swift/Struct/HTTPHeaderTimeStampCoder" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15AWSSDKSwiftCore24HTTPHeaderTimeStampCoderV">HTTPHeaderTimeStampCoder</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Date coder for HTTP header format</p>
+
+                        <a href="Structs/HTTPHeaderTimeStampCoder.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">HTTPHeaderTimeStampCoder</span> <span class="p">:</span> <span class="kt"><a href="Protocols/TimeStampFormatterCoder.html">TimeStampFormatterCoder</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:15AWSSDKSwiftCore23UnixEpochTimeStampCoderV"></a>
+                    <a name="//apple_ref/swift/Struct/UnixEpochTimeStampCoder" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15AWSSDKSwiftCore23UnixEpochTimeStampCoderV">UnixEpochTimeStampCoder</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Unix Epoch Date coder</p>
+
+                        <a href="Structs/UnixEpochTimeStampCoder.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">UnixEpochTimeStampCoder</span> <span class="p">:</span> <span class="kt"><a href="Protocols/CustomDecoder.html">CustomDecoder</a></span><span class="p">,</span> <span class="kt"><a href="Protocols/CustomEncoder.html">CustomEncoder</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:15AWSSDKSwiftCore14AWSClientErrorV"></a>
+                    <a name="//apple_ref/swift/Struct/AWSClientError" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15AWSSDKSwiftCore14AWSClientErrorV">AWSClientError</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="Structs/AWSClientError.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">AWSClientError</span> <span class="p">:</span> <span class="kt"><a href="Protocols/AWSErrorType.html">AWSErrorType</a></span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">AWSClientError</span><span class="p">:</span> <span class="kt">Equatable</span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">AWSClientError</span> <span class="p">:</span> <span class="kt">CustomStringConvertible</span></code></pre>
 
                         </div>
                       </div>
@@ -959,6 +1310,64 @@ shapeEncoding set to one of collection encoding types, if codingkey is different
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/s:15AWSSDKSwiftCore14AWSServerErrorV"></a>
+                    <a name="//apple_ref/swift/Struct/AWSServerError" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15AWSSDKSwiftCore14AWSServerErrorV">AWSServerError</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="Structs/AWSServerError.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">AWSServerError</span> <span class="p">:</span> <span class="kt"><a href="Protocols/AWSErrorType.html">AWSErrorType</a></span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">AWSServerError</span><span class="p">:</span> <span class="kt">Equatable</span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">AWSServerError</span> <span class="p">:</span> <span class="kt">CustomStringConvertible</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:15AWSSDKSwiftCore14AWSHTTPRequestV"></a>
+                    <a name="//apple_ref/swift/Struct/AWSHTTPRequest" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15AWSSDKSwiftCore14AWSHTTPRequestV">AWSHTTPRequest</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>HTTP Request</p>
+
+                        <a href="Structs/AWSHTTPRequest.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">AWSHTTPRequest</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/s:15AWSSDKSwiftCore7NoRetryV"></a>
                     <a name="//apple_ref/swift/Struct/NoRetry" class="dashAnchor"></a>
                     <a class="token" href="#/s:15AWSSDKSwiftCore7NoRetryV">NoRetry</a>
@@ -977,7 +1386,7 @@ shapeEncoding set to one of collection encoding types, if codingkey is different
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">NoRetry</span> <span class="p">:</span> <span class="kt"><a href="Protocols/RetryController.html">RetryController</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">NoRetry</span> <span class="p">:</span> <span class="kt"><a href="Protocols/RetryPolicy.html">RetryPolicy</a></span></code></pre>
 
                         </div>
                       </div>
@@ -1005,7 +1414,7 @@ shapeEncoding set to one of collection encoding types, if codingkey is different
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ExponentialRetry</span> <span class="p">:</span> <span class="kt"><a href="Protocols/StandardRetryController.html">StandardRetryController</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ExponentialRetry</span> <span class="p">:</span> <span class="kt"><a href="Protocols/StandardRetryPolicy.html">StandardRetryPolicy</a></span></code></pre>
 
                         </div>
                       </div>
@@ -1035,7 +1444,7 @@ where a large number of clients all hit the servers at the same time, jitter hel
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">JitterRetry</span> <span class="p">:</span> <span class="kt"><a href="Protocols/StandardRetryController.html">StandardRetryController</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">JitterRetry</span> <span class="p">:</span> <span class="kt"><a href="Protocols/StandardRetryPolicy.html">StandardRetryPolicy</a></span></code></pre>
 
                         </div>
                       </div>

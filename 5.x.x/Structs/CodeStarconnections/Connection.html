@@ -14,7 +14,7 @@
     <a title="Connection Structure Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../../index.html"> Docs</a> (55% documented)</p>
+        <p><a href="../../index.html"> Docs</a> (54% documented)</p>
         <p class="header-right"><a href="https://github.com/swift-aws/aws-sdk-swift"><img src="../../img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
@@ -135,6 +135,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../CloudWatchLogs.html">CloudWatchLogs</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../CodeArtifact.html">CodeArtifact</a>
           </li>
           <li class="nav-group-name">
             <a href="../../CodeBuild.html">CodeBuild</a>
@@ -326,6 +329,9 @@
             <a href="../../Health.html">Health</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../Honeycode.html">Honeycode</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../IAM.html">IAM</a>
           </li>
           <li class="nav-group-name">
@@ -363,6 +369,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../IoTSecureTunneling.html">IoTSecureTunneling</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../IoTSiteWise.html">IoTSiteWise</a>
           </li>
           <li class="nav-group-name">
             <a href="../../IoTThingsGraph.html">IoTThingsGraph</a>
@@ -426,6 +435,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../Macie.html">Macie</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../Macie2.html">Macie2</a>
           </li>
           <li class="nav-group-name">
             <a href="../../ManagedBlockchain.html">ManagedBlockchain</a>
@@ -653,6 +665,9 @@
             <a href="../../Support.html">Support</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../Synthetics.html">Synthetics</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../Textract.html">Textract</a>
           </li>
           <li class="nav-group-name">
@@ -709,6 +724,9 @@
           <li class="nav-group-name">
             <a href="../../Other%20Structs.html">Other Structures</a>
           </li>
+          <li class="nav-group-name">
+            <a href="../../Other%20Typealiases.html">Other Type Aliases</a>
+          </li>
         </ul>
       </nav>
       <article class="main-content">
@@ -717,7 +735,7 @@
             <h1>Connection</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Connection</span> <span class="p">:</span> <span class="kt"><a href="../../Other%20Protocols.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Connection</span> <span class="p">:</span> <span class="kt"><a href="../../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                 </div>
               </div>
@@ -811,6 +829,33 @@
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/s:22AWSCodeStarconnections04CodeB0V10ConnectionV7hostArnSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/hostArn" class="dashAnchor"></a>
+                    <a class="token" href="#/s:22AWSCodeStarconnections04CodeB0V10ConnectionV7hostArnSSSgvp">hostArn</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The Amazon Resource Name (ARN) of the host associated with the connection.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">hostArn</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/s:22AWSCodeStarconnections04CodeB0V10ConnectionV14ownerAccountIdSSSgvp"></a>
                     <a name="//apple_ref/swift/Property/ownerAccountId" class="dashAnchor"></a>
                     <a class="token" href="#/s:22AWSCodeStarconnections04CodeB0V10ConnectionV14ownerAccountIdSSSgvp">ownerAccountId</a>
@@ -821,7 +866,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The name of the external provider where your third-party code repository is configured. For Bitbucket, this is the account ID of the owner of the Bitbucket repository.</p>
+                        <p>The identifier of the external provider where your third-party code repository is configured. For Bitbucket, this is the account ID of the owner of the Bitbucket repository.</p>
 
                       </div>
                       <div class="declaration">
@@ -848,7 +893,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The name of the external provider where your third-party code repository is configured. Currently, the valid provider type is Bitbucket.</p>
+                        <p>The name of the external provider where your third-party code repository is configured. The valid provider type is Bitbucket.</p>
 
                       </div>
                       <div class="declaration">
@@ -865,9 +910,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:22AWSCodeStarconnections04CodeB0V10ConnectionV13connectionArn0E4Name0E6Status14ownerAccountId12providerTypeAESSSg_AkC0dH0OSgAkC08ProviderM0OSgtcfc"></a>
-                    <a name="//apple_ref/swift/Method/init(connectionArn:connectionName:connectionStatus:ownerAccountId:providerType:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:22AWSCodeStarconnections04CodeB0V10ConnectionV13connectionArn0E4Name0E6Status14ownerAccountId12providerTypeAESSSg_AkC0dH0OSgAkC08ProviderM0OSgtcfc">init(connectionArn:connectionName:connectionStatus:ownerAccountId:providerType:)</a>
+                    <a name="/s:22AWSCodeStarconnections04CodeB0V10ConnectionV13connectionArn0E4Name0E6Status04hostF014ownerAccountId12providerTypeAESSSg_AlC0dH0OSgA2lC08ProviderN0OSgtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(connectionArn:connectionName:connectionStatus:hostArn:ownerAccountId:providerType:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:22AWSCodeStarconnections04CodeB0V10ConnectionV13connectionArn0E4Name0E6Status04hostF014ownerAccountId12providerTypeAESSSg_AlC0dH0OSgA2lC08ProviderN0OSgtcfc">init(connectionArn:connectionName:connectionStatus:hostArn:ownerAccountId:providerType:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -882,7 +927,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">connectionArn</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">connectionName</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">connectionStatus</span><span class="p">:</span> <span class="kt"><a href="../../Structs/CodeStarconnections/ConnectionStatus.html">ConnectionStatus</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">ownerAccountId</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">providerType</span><span class="p">:</span> <span class="kt"><a href="../../Structs/CodeStarconnections/ProviderType.html">ProviderType</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">connectionArn</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">connectionName</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">connectionStatus</span><span class="p">:</span> <span class="kt"><a href="../../Structs/CodeStarconnections/ConnectionStatus.html">ConnectionStatus</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">hostArn</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">ownerAccountId</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">providerType</span><span class="p">:</span> <span class="kt"><a href="../../Structs/CodeStarconnections/ProviderType.html">ProviderType</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>

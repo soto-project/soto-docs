@@ -14,7 +14,7 @@
     <a title="OpsWorksCM Structure Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html"> Docs</a> (55% documented)</p>
+        <p><a href="../index.html"> Docs</a> (54% documented)</p>
         <p class="header-right"><a href="https://github.com/swift-aws/aws-sdk-swift"><img src="../img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
@@ -135,6 +135,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../CloudWatchLogs.html">CloudWatchLogs</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../CodeArtifact.html">CodeArtifact</a>
           </li>
           <li class="nav-group-name">
             <a href="../CodeBuild.html">CodeBuild</a>
@@ -326,6 +329,9 @@
             <a href="../Health.html">Health</a>
           </li>
           <li class="nav-group-name">
+            <a href="../Honeycode.html">Honeycode</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../IAM.html">IAM</a>
           </li>
           <li class="nav-group-name">
@@ -363,6 +369,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../IoTSecureTunneling.html">IoTSecureTunneling</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../IoTSiteWise.html">IoTSiteWise</a>
           </li>
           <li class="nav-group-name">
             <a href="../IoTThingsGraph.html">IoTThingsGraph</a>
@@ -426,6 +435,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../Macie.html">Macie</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Macie2.html">Macie2</a>
           </li>
           <li class="nav-group-name">
             <a href="../ManagedBlockchain.html">ManagedBlockchain</a>
@@ -653,6 +665,9 @@
             <a href="../Support.html">Support</a>
           </li>
           <li class="nav-group-name">
+            <a href="../Synthetics.html">Synthetics</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../Textract.html">Textract</a>
           </li>
           <li class="nav-group-name">
@@ -709,6 +724,9 @@
           <li class="nav-group-name">
             <a href="../Other%20Structs.html">Other Structures</a>
           </li>
+          <li class="nav-group-name">
+            <a href="../Other%20Typealiases.html">Other Type Aliases</a>
+          </li>
         </ul>
       </nav>
       <article class="main-content">
@@ -723,7 +741,7 @@
               </div>
             <p>Client object for interacting with AWS OpsWorksCM service.</p>
 
-<p>AWS OpsWorks CM AWS OpsWorks for configuration management (CM) is a service that runs and manages configuration management servers. You can use AWS OpsWorks CM to create and manage AWS OpsWorks for Chef Automate and AWS OpsWorks for Puppet Enterprise servers, and add or remove nodes for the servers to manage.  Glossary of terms     Server: A configuration management server that can be highly-available. The configuration management server runs on an Amazon Elastic Compute Cloud (EC2) instance, and may use various other AWS services, such as Amazon Relational Database Service (RDS) and Elastic Load Balancing. A server is a generic abstraction over the configuration manager that you want to use, much like Amazon RDS. In AWS OpsWorks CM, you do not start or stop servers. After you create servers, they continue to run until they are deleted.    Engine: The engine is the specific configuration manager that you want to use. Valid values in this release include ChefAutomate and Puppet.    Backup: This is an application-level backup of the data that the configuration manager stores. AWS OpsWorks CM creates an S3 bucket for backups when you launch the first server. A backup maintains a snapshot of a server&rsquo;s configuration-related attributes at the time the backup starts.    Events: Events are always related to a server. Events are written during server creation, when health checks run, when backups are created, when system maintenance is performed, etc. When you delete a server, the server&rsquo;s events are also deleted.    Account attributes: Every account has attributes that are assigned in the AWS OpsWorks CM database. These attributes store information about configuration limits (servers, backups, etc.) and your customer account.     Endpoints  AWS OpsWorks CM supports the following endpoints, all HTTPS. You must connect to one of the following endpoints. Your servers can only be accessed or managed within the endpoint in which they are created.   opsworks-cm.us-east-1.amazonaws.com   opsworks-cm.us-east-2.amazonaws.com   opsworks-cm.us-west-1.amazonaws.com   opsworks-cm.us-west-2.amazonaws.com   opsworks-cm.ap-northeast-1.amazonaws.com   opsworks-cm.ap-southeast-1.amazonaws.com   opsworks-cm.ap-southeast-2.amazonaws.com   opsworks-cm.eu-central-1.amazonaws.com   opsworks-cm.eu-west-1.amazonaws.com    Throttling limits  All API operations allow for five requests per second with a burst of 10 requests per second.</p>
+<p>AWS OpsWorks CM AWS OpsWorks for configuration management (CM) is a service that runs and manages configuration management servers. You can use AWS OpsWorks CM to create and manage AWS OpsWorks for Chef Automate and AWS OpsWorks for Puppet Enterprise servers, and add or remove nodes for the servers to manage.  Glossary of terms     Server: A configuration management server that can be highly-available. The configuration management server runs on an Amazon Elastic Compute Cloud (EC2) instance, and may use various other AWS services, such as Amazon Relational Database Service (RDS) and Elastic Load Balancing. A server is a generic abstraction over the configuration manager that you want to use, much like Amazon RDS. In AWS OpsWorks CM, you do not start or stop servers. After you create servers, they continue to run until they are deleted.    Engine: The engine is the specific configuration manager that you want to use. Valid values in this release include ChefAutomate and Puppet.    Backup: This is an application-level backup of the data that the configuration manager stores. AWS OpsWorks CM creates an S3 bucket for backups when you launch the first server. A backup maintains a snapshot of a server&rsquo;s configuration-related attributes at the time the backup starts.    Events: Events are always related to a server. Events are written during server creation, when health checks run, when backups are created, when system maintenance is performed, etc. When you delete a server, the server&rsquo;s events are also deleted.    Account attributes: Every account has attributes that are assigned in the AWS OpsWorks CM database. These attributes store information about configuration limits (servers, backups, etc.) and your customer account.     Endpoints  AWS OpsWorks CM supports the following endpoints, all HTTPS. You must connect to one of the following endpoints. Your servers can only be accessed or managed within the endpoint in which they are created.   opsworks-cm.us-east-1.amazonaws.com   opsworks-cm.us-east-2.amazonaws.com   opsworks-cm.us-west-1.amazonaws.com   opsworks-cm.us-west-2.amazonaws.com   opsworks-cm.ap-northeast-1.amazonaws.com   opsworks-cm.ap-southeast-1.amazonaws.com   opsworks-cm.ap-southeast-2.amazonaws.com   opsworks-cm.eu-central-1.amazonaws.com   opsworks-cm.eu-west-1.amazonaws.com   For more information, see AWS OpsWorks endpoints and quotas in the AWS General Reference.  Throttling limits  All API operations allow for five requests per second with a burst of 10 requests per second.</p>
 
           </section>
           <section class="section task-group-section">
@@ -763,6 +781,33 @@
                     </section>
                   </div>
                 </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13AWSOpsWorksCM03OpsbC0V13serviceConfig15AWSSDKSwiftCore010AWSServiceF0Cvp"></a>
+                    <a name="//apple_ref/swift/Property/serviceConfig" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13AWSOpsWorksCM03OpsbC0V13serviceConfig15AWSSDKSwiftCore010AWSServiceF0Cvp">serviceConfig</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">serviceConfig</span><span class="p">:</span> <span class="kt"><a href="../Classes/AWSServiceConfig.html">AWSServiceConfig</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
               </ul>
             </div>
             <div class="task-group">
@@ -777,9 +822,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:13AWSOpsWorksCM03OpsbC0V11accessKeyId012secretAccessF012sessionToken6region8endpoint11middlewares22eventLoopGroupProviderACSSSg_A2K15AWSSDKSwiftCore6RegionOSgAKSayAL20AWSServiceMiddleware_pGAL9AWSClientC05EventpqR0Otcfc"></a>
-                    <a name="//apple_ref/swift/Method/init(accessKeyId:secretAccessKey:sessionToken:region:endpoint:middlewares:eventLoopGroupProvider:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:13AWSOpsWorksCM03OpsbC0V11accessKeyId012secretAccessF012sessionToken6region8endpoint11middlewares22eventLoopGroupProviderACSSSg_A2K15AWSSDKSwiftCore6RegionOSgAKSayAL20AWSServiceMiddleware_pGAL9AWSClientC05EventpqR0Otcfc">init(accessKeyId:secretAccessKey:sessionToken:region:endpoint:middlewares:eventLoopGroupProvider:)</a>
+                    <a name="/s:13AWSOpsWorksCM03OpsbC0V6client6region9partition8endpointAC15AWSSDKSwiftCore9AWSClientC_AH6RegionVSgAH9PartitionVSSSgtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(client:region:partition:endpoint:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13AWSOpsWorksCM03OpsbC0V6client6region9partition8endpointAC15AWSSDKSwiftCore9AWSClientC_AH6RegionVSgAH9PartitionVSSSgtcfc">init(client:region:partition:endpoint:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -794,7 +839,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">accessKeyId</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">secretAccessKey</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">sessionToken</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">region</span><span class="p">:</span> <span class="kt">AWSSDKSwiftCore</span><span class="o">.</span><span class="kt"><a href="../Enums/Region.html">Region</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">endpoint</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">middlewares</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Protocols/AWSServiceMiddleware.html">AWSServiceMiddleware</a></span><span class="p">]</span> <span class="o">=</span> <span class="p">[],</span> <span class="nv">eventLoopGroupProvider</span><span class="p">:</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="o">.</span><span class="kt">EventLoopGroupProvider</span> <span class="o">=</span> <span class="o">.</span><span class="n">useAWSClientShared</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span>
+    <span class="nv">client</span><span class="p">:</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="p">,</span>
+    <span class="nv">region</span><span class="p">:</span> <span class="kt">AWSSDKSwiftCore</span><span class="o">.</span><span class="kt"><a href="../Structs/Region.html">Region</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="nv">partition</span><span class="p">:</span> <span class="kt">AWSSDKSwiftCore</span><span class="o">.</span><span class="kt"><a href="../Structs/Partition.html">Partition</a></span> <span class="o">=</span> <span class="o">.</span><span class="n">aws</span><span class="p">,</span>
+    <span class="nv">endpoint</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span>
+<span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -805,36 +855,12 @@
                             <tr>
                               <td>
                                 <code>
-                                <em>accessKeyId</em>
+                                <em>client</em>
                                 </code>
                               </td>
                               <td>
                                 <div>
-                                  <p>Public access key provided by AWS</p>
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>secretAccessKey</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>Private access key provided by AWS</p>
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>sessionToken</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>Token provided by STS.AssumeRole() which allows access to another AWS account</p>
+                                  <p>AWSClient used to process requests</p>
                                 </div>
                               </td>
                             </tr>
@@ -846,7 +872,19 @@
                               </td>
                               <td>
                                 <div>
-                                  <p>Region of server you want to communicate with</p>
+                                  <p>Region of server you want to communicate with. This will override the partition parameter.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>partition</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>AWS partition where service resides, standard (.aws), china (.awscn), government (.awsusgov).</p>
                                 </div>
                               </td>
                             </tr>
@@ -859,30 +897,6 @@
                               <td>
                                 <div>
                                   <p>Custom endpoint URL to use instead of standard AWS servers</p>
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>middlewares</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>Array of middlewares to apply to requests and responses</p>
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>eventLoopGroupProvider</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>EventLoopGroup to use. Use <code>useAWSClientShared</code> if the client shall manage its own EventLoopGroup.</p>
                                 </div>
                               </td>
                             </tr>
@@ -906,9 +920,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:13AWSOpsWorksCM03OpsbC0V13associateNodey3NIO15EventLoopFutureCyAC09AssociateF8ResponseVGAC0kF7RequestVF"></a>
-                    <a name="//apple_ref/swift/Method/associateNode(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:13AWSOpsWorksCM03OpsbC0V13associateNodey3NIO15EventLoopFutureCyAC09AssociateF8ResponseVGAC0kF7RequestVF">associateNode(_:)</a>
+                    <a name="/s:13AWSOpsWorksCM03OpsbC0V13associateNode_2on3NIO15EventLoopFutureCyAC09AssociateF8ResponseVGAC0lF7RequestV_AF0iJ0_pSgtF"></a>
+                    <a name="//apple_ref/swift/Method/associateNode(_:on:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13AWSOpsWorksCM03OpsbC0V13associateNode_2on3NIO15EventLoopFutureCyAC09AssociateF8ResponseVGAC0lF7RequestV_AF0iJ0_pSgtF">associateNode(_:on:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -916,14 +930,14 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Associates a new node with the server. For more information about how to disassociate a node, see DisassociateNode.  On a Chef server: This command is an alternative to knife bootstrap.  Example (Chef): aws opsworks-cm associate-node &ndash;server-name MyServer &ndash;node-name MyManagedNode &ndash;engine-attributes &ldquo;Name=CHEF_ORGANIZATION,Value=default&rdquo; &ldquo;Name=CHEF_NODE_PUBLIC_KEY,Value=public-key-pem&rdquo;   On a Puppet server, this command is an alternative to the puppet cert sign command that signs a Puppet node CSR.   Example (Chef): aws opsworks-cm associate-node &ndash;server-name MyServer &ndash;node-name MyManagedNode &ndash;engine-attributes &ldquo;Name=PUPPET_NODE_CSR,Value=csr-pem&rdquo;   A node can can only be associated with servers that are in a HEALTHY state. Otherwise, an InvalidStateException is thrown. A ResourceNotFoundException is thrown when the server does not exist. A ValidationException is raised when parameters of the request are not valid. The AssociateNode API call can be integrated into Auto Scaling configurations, AWS Cloudformation templates, or the user data of a server&rsquo;s instance.</p>
+                        <p>Associates a new node with the server. For more information about how to disassociate a node, see DisassociateNode.  On a Chef server: This command is an alternative to knife bootstrap.  Example (Chef): aws opsworks-cm associate-node &ndash;server-name MyServer &ndash;node-name MyManagedNode &ndash;engine-attributes &ldquo;Name=CHEF_ORGANIZATION,Value=default&rdquo; &ldquo;Name=CHEF_NODE_PUBLIC_KEY,Value=public-key-pem&rdquo;   On a Puppet server, this command is an alternative to the puppet cert sign command that signs a Puppet node CSR.   Example (Puppet): aws opsworks-cm associate-node &ndash;server-name MyServer &ndash;node-name MyManagedNode &ndash;engine-attributes &ldquo;Name=PUPPET_NODE_CSR,Value=csr-pem&rdquo;   A node can can only be associated with servers that are in a HEALTHY state. Otherwise, an InvalidStateException is thrown. A ResourceNotFoundException is thrown when the server does not exist. A ValidationException is raised when parameters of the request are not valid. The AssociateNode API call can be integrated into Auto Scaling configurations, AWS Cloudformation templates, or the user data of a server&rsquo;s instance.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">associateNode</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/OpsWorksCM/AssociateNodeRequest.html">AssociateNodeRequest</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/OpsWorksCM/AssociateNodeResponse.html">AssociateNodeResponse</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">associateNode</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/OpsWorksCM/AssociateNodeRequest.html">AssociateNodeRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/OpsWorksCM/AssociateNodeResponse.html">AssociateNodeResponse</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
                       </div>
@@ -933,9 +947,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:13AWSOpsWorksCM03OpsbC0V12createBackupy3NIO15EventLoopFutureCyAC06CreateF8ResponseVGAC0kF7RequestVF"></a>
-                    <a name="//apple_ref/swift/Method/createBackup(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:13AWSOpsWorksCM03OpsbC0V12createBackupy3NIO15EventLoopFutureCyAC06CreateF8ResponseVGAC0kF7RequestVF">createBackup(_:)</a>
+                    <a name="/s:13AWSOpsWorksCM03OpsbC0V12createBackup_2on3NIO15EventLoopFutureCyAC06CreateF8ResponseVGAC0lF7RequestV_AF0iJ0_pSgtF"></a>
+                    <a name="//apple_ref/swift/Method/createBackup(_:on:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13AWSOpsWorksCM03OpsbC0V12createBackup_2on3NIO15EventLoopFutureCyAC06CreateF8ResponseVGAC0lF7RequestV_AF0iJ0_pSgtF">createBackup(_:on:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -950,7 +964,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">createBackup</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/OpsWorksCM/CreateBackupRequest.html">CreateBackupRequest</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/OpsWorksCM/CreateBackupResponse.html">CreateBackupResponse</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">createBackup</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/OpsWorksCM/CreateBackupRequest.html">CreateBackupRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/OpsWorksCM/CreateBackupResponse.html">CreateBackupResponse</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
                       </div>
@@ -960,9 +974,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:13AWSOpsWorksCM03OpsbC0V12createServery3NIO15EventLoopFutureCyAC06CreateF8ResponseVGAC0kF7RequestVF"></a>
-                    <a name="//apple_ref/swift/Method/createServer(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:13AWSOpsWorksCM03OpsbC0V12createServery3NIO15EventLoopFutureCyAC06CreateF8ResponseVGAC0kF7RequestVF">createServer(_:)</a>
+                    <a name="/s:13AWSOpsWorksCM03OpsbC0V12createServer_2on3NIO15EventLoopFutureCyAC06CreateF8ResponseVGAC0lF7RequestV_AF0iJ0_pSgtF"></a>
+                    <a name="//apple_ref/swift/Method/createServer(_:on:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13AWSOpsWorksCM03OpsbC0V12createServer_2on3NIO15EventLoopFutureCyAC06CreateF8ResponseVGAC0lF7RequestV_AF0iJ0_pSgtF">createServer(_:on:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -977,7 +991,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">createServer</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/OpsWorksCM/CreateServerRequest.html">CreateServerRequest</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/OpsWorksCM/CreateServerResponse.html">CreateServerResponse</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">createServer</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/OpsWorksCM/CreateServerRequest.html">CreateServerRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/OpsWorksCM/CreateServerResponse.html">CreateServerResponse</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
                       </div>
@@ -987,9 +1001,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:13AWSOpsWorksCM03OpsbC0V12deleteBackupy3NIO15EventLoopFutureCyAC06DeleteF8ResponseVGAC0kF7RequestVF"></a>
-                    <a name="//apple_ref/swift/Method/deleteBackup(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:13AWSOpsWorksCM03OpsbC0V12deleteBackupy3NIO15EventLoopFutureCyAC06DeleteF8ResponseVGAC0kF7RequestVF">deleteBackup(_:)</a>
+                    <a name="/s:13AWSOpsWorksCM03OpsbC0V12deleteBackup_2on3NIO15EventLoopFutureCyAC06DeleteF8ResponseVGAC0lF7RequestV_AF0iJ0_pSgtF"></a>
+                    <a name="//apple_ref/swift/Method/deleteBackup(_:on:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13AWSOpsWorksCM03OpsbC0V12deleteBackup_2on3NIO15EventLoopFutureCyAC06DeleteF8ResponseVGAC0lF7RequestV_AF0iJ0_pSgtF">deleteBackup(_:on:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1004,7 +1018,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">deleteBackup</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/OpsWorksCM/DeleteBackupRequest.html">DeleteBackupRequest</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/OpsWorksCM/DeleteBackupResponse.html">DeleteBackupResponse</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">deleteBackup</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/OpsWorksCM/DeleteBackupRequest.html">DeleteBackupRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/OpsWorksCM/DeleteBackupResponse.html">DeleteBackupResponse</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
                       </div>
@@ -1014,9 +1028,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:13AWSOpsWorksCM03OpsbC0V12deleteServery3NIO15EventLoopFutureCyAC06DeleteF8ResponseVGAC0kF7RequestVF"></a>
-                    <a name="//apple_ref/swift/Method/deleteServer(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:13AWSOpsWorksCM03OpsbC0V12deleteServery3NIO15EventLoopFutureCyAC06DeleteF8ResponseVGAC0kF7RequestVF">deleteServer(_:)</a>
+                    <a name="/s:13AWSOpsWorksCM03OpsbC0V12deleteServer_2on3NIO15EventLoopFutureCyAC06DeleteF8ResponseVGAC0lF7RequestV_AF0iJ0_pSgtF"></a>
+                    <a name="//apple_ref/swift/Method/deleteServer(_:on:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13AWSOpsWorksCM03OpsbC0V12deleteServer_2on3NIO15EventLoopFutureCyAC06DeleteF8ResponseVGAC0lF7RequestV_AF0iJ0_pSgtF">deleteServer(_:on:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1031,7 +1045,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">deleteServer</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/OpsWorksCM/DeleteServerRequest.html">DeleteServerRequest</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/OpsWorksCM/DeleteServerResponse.html">DeleteServerResponse</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">deleteServer</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/OpsWorksCM/DeleteServerRequest.html">DeleteServerRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/OpsWorksCM/DeleteServerResponse.html">DeleteServerResponse</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
                       </div>
@@ -1041,9 +1055,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:13AWSOpsWorksCM03OpsbC0V25describeAccountAttributesy3NIO15EventLoopFutureCyAC08DescribefG8ResponseVGAC0lfG7RequestVF"></a>
-                    <a name="//apple_ref/swift/Method/describeAccountAttributes(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:13AWSOpsWorksCM03OpsbC0V25describeAccountAttributesy3NIO15EventLoopFutureCyAC08DescribefG8ResponseVGAC0lfG7RequestVF">describeAccountAttributes(_:)</a>
+                    <a name="/s:13AWSOpsWorksCM03OpsbC0V25describeAccountAttributes_2on3NIO15EventLoopFutureCyAC08DescribefG8ResponseVGAC0mfG7RequestV_AF0jK0_pSgtF"></a>
+                    <a name="//apple_ref/swift/Method/describeAccountAttributes(_:on:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13AWSOpsWorksCM03OpsbC0V25describeAccountAttributes_2on3NIO15EventLoopFutureCyAC08DescribefG8ResponseVGAC0mfG7RequestV_AF0jK0_pSgtF">describeAccountAttributes(_:on:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1058,7 +1072,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">describeAccountAttributes</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/OpsWorksCM/DescribeAccountAttributesRequest.html">DescribeAccountAttributesRequest</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/OpsWorksCM/DescribeAccountAttributesResponse.html">DescribeAccountAttributesResponse</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">describeAccountAttributes</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/OpsWorksCM/DescribeAccountAttributesRequest.html">DescribeAccountAttributesRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/OpsWorksCM/DescribeAccountAttributesResponse.html">DescribeAccountAttributesResponse</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
                       </div>
@@ -1068,9 +1082,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:13AWSOpsWorksCM03OpsbC0V15describeBackupsy3NIO15EventLoopFutureCyAC08DescribeF8ResponseVGAC0kF7RequestVF"></a>
-                    <a name="//apple_ref/swift/Method/describeBackups(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:13AWSOpsWorksCM03OpsbC0V15describeBackupsy3NIO15EventLoopFutureCyAC08DescribeF8ResponseVGAC0kF7RequestVF">describeBackups(_:)</a>
+                    <a name="/s:13AWSOpsWorksCM03OpsbC0V15describeBackups_2on3NIO15EventLoopFutureCyAC08DescribeF8ResponseVGAC0lF7RequestV_AF0iJ0_pSgtF"></a>
+                    <a name="//apple_ref/swift/Method/describeBackups(_:on:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13AWSOpsWorksCM03OpsbC0V15describeBackups_2on3NIO15EventLoopFutureCyAC08DescribeF8ResponseVGAC0lF7RequestV_AF0iJ0_pSgtF">describeBackups(_:on:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1085,7 +1099,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">describeBackups</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/OpsWorksCM/DescribeBackupsRequest.html">DescribeBackupsRequest</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/OpsWorksCM/DescribeBackupsResponse.html">DescribeBackupsResponse</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">describeBackups</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/OpsWorksCM/DescribeBackupsRequest.html">DescribeBackupsRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/OpsWorksCM/DescribeBackupsResponse.html">DescribeBackupsResponse</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
                       </div>
@@ -1095,9 +1109,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:13AWSOpsWorksCM03OpsbC0V14describeEventsy3NIO15EventLoopFutureCyAC08DescribeF8ResponseVGAC0kF7RequestVF"></a>
-                    <a name="//apple_ref/swift/Method/describeEvents(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:13AWSOpsWorksCM03OpsbC0V14describeEventsy3NIO15EventLoopFutureCyAC08DescribeF8ResponseVGAC0kF7RequestVF">describeEvents(_:)</a>
+                    <a name="/s:13AWSOpsWorksCM03OpsbC0V14describeEvents_2on3NIO15EventLoopFutureCyAC08DescribeF8ResponseVGAC0lF7RequestV_AF0iJ0_pSgtF"></a>
+                    <a name="//apple_ref/swift/Method/describeEvents(_:on:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13AWSOpsWorksCM03OpsbC0V14describeEvents_2on3NIO15EventLoopFutureCyAC08DescribeF8ResponseVGAC0lF7RequestV_AF0iJ0_pSgtF">describeEvents(_:on:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1112,7 +1126,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">describeEvents</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/OpsWorksCM/DescribeEventsRequest.html">DescribeEventsRequest</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/OpsWorksCM/DescribeEventsResponse.html">DescribeEventsResponse</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">describeEvents</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/OpsWorksCM/DescribeEventsRequest.html">DescribeEventsRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/OpsWorksCM/DescribeEventsResponse.html">DescribeEventsResponse</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
                       </div>
@@ -1122,9 +1136,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:13AWSOpsWorksCM03OpsbC0V29describeNodeAssociationStatusy3NIO15EventLoopFutureCyAC08DescribefgH8ResponseVGAC0mfgH7RequestVF"></a>
-                    <a name="//apple_ref/swift/Method/describeNodeAssociationStatus(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:13AWSOpsWorksCM03OpsbC0V29describeNodeAssociationStatusy3NIO15EventLoopFutureCyAC08DescribefgH8ResponseVGAC0mfgH7RequestVF">describeNodeAssociationStatus(_:)</a>
+                    <a name="/s:13AWSOpsWorksCM03OpsbC0V29describeNodeAssociationStatus_2on3NIO15EventLoopFutureCyAC08DescribefgH8ResponseVGAC0nfgH7RequestV_AF0kL0_pSgtF"></a>
+                    <a name="//apple_ref/swift/Method/describeNodeAssociationStatus(_:on:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13AWSOpsWorksCM03OpsbC0V29describeNodeAssociationStatus_2on3NIO15EventLoopFutureCyAC08DescribefgH8ResponseVGAC0nfgH7RequestV_AF0kL0_pSgtF">describeNodeAssociationStatus(_:on:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1139,7 +1153,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">describeNodeAssociationStatus</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/OpsWorksCM/DescribeNodeAssociationStatusRequest.html">DescribeNodeAssociationStatusRequest</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/OpsWorksCM/DescribeNodeAssociationStatusResponse.html">DescribeNodeAssociationStatusResponse</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">describeNodeAssociationStatus</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/OpsWorksCM/DescribeNodeAssociationStatusRequest.html">DescribeNodeAssociationStatusRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/OpsWorksCM/DescribeNodeAssociationStatusResponse.html">DescribeNodeAssociationStatusResponse</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
                       </div>
@@ -1149,9 +1163,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:13AWSOpsWorksCM03OpsbC0V15describeServersy3NIO15EventLoopFutureCyAC08DescribeF8ResponseVGAC0kF7RequestVF"></a>
-                    <a name="//apple_ref/swift/Method/describeServers(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:13AWSOpsWorksCM03OpsbC0V15describeServersy3NIO15EventLoopFutureCyAC08DescribeF8ResponseVGAC0kF7RequestVF">describeServers(_:)</a>
+                    <a name="/s:13AWSOpsWorksCM03OpsbC0V15describeServers_2on3NIO15EventLoopFutureCyAC08DescribeF8ResponseVGAC0lF7RequestV_AF0iJ0_pSgtF"></a>
+                    <a name="//apple_ref/swift/Method/describeServers(_:on:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13AWSOpsWorksCM03OpsbC0V15describeServers_2on3NIO15EventLoopFutureCyAC08DescribeF8ResponseVGAC0lF7RequestV_AF0iJ0_pSgtF">describeServers(_:on:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1166,7 +1180,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">describeServers</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/OpsWorksCM/DescribeServersRequest.html">DescribeServersRequest</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/OpsWorksCM/DescribeServersResponse.html">DescribeServersResponse</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">describeServers</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/OpsWorksCM/DescribeServersRequest.html">DescribeServersRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/OpsWorksCM/DescribeServersResponse.html">DescribeServersResponse</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
                       </div>
@@ -1176,9 +1190,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:13AWSOpsWorksCM03OpsbC0V16disassociateNodey3NIO15EventLoopFutureCyAC012DisassociateF8ResponseVGAC0kF7RequestVF"></a>
-                    <a name="//apple_ref/swift/Method/disassociateNode(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:13AWSOpsWorksCM03OpsbC0V16disassociateNodey3NIO15EventLoopFutureCyAC012DisassociateF8ResponseVGAC0kF7RequestVF">disassociateNode(_:)</a>
+                    <a name="/s:13AWSOpsWorksCM03OpsbC0V16disassociateNode_2on3NIO15EventLoopFutureCyAC012DisassociateF8ResponseVGAC0lF7RequestV_AF0iJ0_pSgtF"></a>
+                    <a name="//apple_ref/swift/Method/disassociateNode(_:on:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13AWSOpsWorksCM03OpsbC0V16disassociateNode_2on3NIO15EventLoopFutureCyAC012DisassociateF8ResponseVGAC0lF7RequestV_AF0iJ0_pSgtF">disassociateNode(_:on:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1193,7 +1207,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">disassociateNode</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/OpsWorksCM/DisassociateNodeRequest.html">DisassociateNodeRequest</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/OpsWorksCM/DisassociateNodeResponse.html">DisassociateNodeResponse</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">disassociateNode</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/OpsWorksCM/DisassociateNodeRequest.html">DisassociateNodeRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/OpsWorksCM/DisassociateNodeResponse.html">DisassociateNodeResponse</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
                       </div>
@@ -1203,9 +1217,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:13AWSOpsWorksCM03OpsbC0V27exportServerEngineAttributey3NIO15EventLoopFutureCyAC06ExportfgH8ResponseVGAC0mfgH7RequestVF"></a>
-                    <a name="//apple_ref/swift/Method/exportServerEngineAttribute(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:13AWSOpsWorksCM03OpsbC0V27exportServerEngineAttributey3NIO15EventLoopFutureCyAC06ExportfgH8ResponseVGAC0mfgH7RequestVF">exportServerEngineAttribute(_:)</a>
+                    <a name="/s:13AWSOpsWorksCM03OpsbC0V27exportServerEngineAttribute_2on3NIO15EventLoopFutureCyAC06ExportfgH8ResponseVGAC0nfgH7RequestV_AF0kL0_pSgtF"></a>
+                    <a name="//apple_ref/swift/Method/exportServerEngineAttribute(_:on:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13AWSOpsWorksCM03OpsbC0V27exportServerEngineAttribute_2on3NIO15EventLoopFutureCyAC06ExportfgH8ResponseVGAC0nfgH7RequestV_AF0kL0_pSgtF">exportServerEngineAttribute(_:on:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1220,7 +1234,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">exportServerEngineAttribute</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/OpsWorksCM/ExportServerEngineAttributeRequest.html">ExportServerEngineAttributeRequest</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/OpsWorksCM/ExportServerEngineAttributeResponse.html">ExportServerEngineAttributeResponse</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">exportServerEngineAttribute</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/OpsWorksCM/ExportServerEngineAttributeRequest.html">ExportServerEngineAttributeRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/OpsWorksCM/ExportServerEngineAttributeResponse.html">ExportServerEngineAttributeResponse</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
                       </div>
@@ -1230,9 +1244,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:13AWSOpsWorksCM03OpsbC0V19listTagsForResourcey3NIO15EventLoopFutureCyAC04ListfgH8ResponseVGAC0mfgH7RequestVF"></a>
-                    <a name="//apple_ref/swift/Method/listTagsForResource(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:13AWSOpsWorksCM03OpsbC0V19listTagsForResourcey3NIO15EventLoopFutureCyAC04ListfgH8ResponseVGAC0mfgH7RequestVF">listTagsForResource(_:)</a>
+                    <a name="/s:13AWSOpsWorksCM03OpsbC0V19listTagsForResource_2on3NIO15EventLoopFutureCyAC04ListfgH8ResponseVGAC0nfgH7RequestV_AF0kL0_pSgtF"></a>
+                    <a name="//apple_ref/swift/Method/listTagsForResource(_:on:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13AWSOpsWorksCM03OpsbC0V19listTagsForResource_2on3NIO15EventLoopFutureCyAC04ListfgH8ResponseVGAC0nfgH7RequestV_AF0kL0_pSgtF">listTagsForResource(_:on:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1247,7 +1261,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">listTagsForResource</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/OpsWorksCM/ListTagsForResourceRequest.html">ListTagsForResourceRequest</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/OpsWorksCM/ListTagsForResourceResponse.html">ListTagsForResourceResponse</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">listTagsForResource</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/OpsWorksCM/ListTagsForResourceRequest.html">ListTagsForResourceRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/OpsWorksCM/ListTagsForResourceResponse.html">ListTagsForResourceResponse</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
                       </div>
@@ -1257,9 +1271,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:13AWSOpsWorksCM03OpsbC0V13restoreServery3NIO15EventLoopFutureCyAC07RestoreF8ResponseVGAC0kF7RequestVF"></a>
-                    <a name="//apple_ref/swift/Method/restoreServer(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:13AWSOpsWorksCM03OpsbC0V13restoreServery3NIO15EventLoopFutureCyAC07RestoreF8ResponseVGAC0kF7RequestVF">restoreServer(_:)</a>
+                    <a name="/s:13AWSOpsWorksCM03OpsbC0V13restoreServer_2on3NIO15EventLoopFutureCyAC07RestoreF8ResponseVGAC0lF7RequestV_AF0iJ0_pSgtF"></a>
+                    <a name="//apple_ref/swift/Method/restoreServer(_:on:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13AWSOpsWorksCM03OpsbC0V13restoreServer_2on3NIO15EventLoopFutureCyAC07RestoreF8ResponseVGAC0lF7RequestV_AF0iJ0_pSgtF">restoreServer(_:on:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1274,7 +1288,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">restoreServer</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/OpsWorksCM/RestoreServerRequest.html">RestoreServerRequest</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/OpsWorksCM/RestoreServerResponse.html">RestoreServerResponse</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">restoreServer</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/OpsWorksCM/RestoreServerRequest.html">RestoreServerRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/OpsWorksCM/RestoreServerResponse.html">RestoreServerResponse</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
                       </div>
@@ -1284,9 +1298,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:13AWSOpsWorksCM03OpsbC0V16startMaintenancey3NIO15EventLoopFutureCyAC05StartF8ResponseVGAC0kF7RequestVF"></a>
-                    <a name="//apple_ref/swift/Method/startMaintenance(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:13AWSOpsWorksCM03OpsbC0V16startMaintenancey3NIO15EventLoopFutureCyAC05StartF8ResponseVGAC0kF7RequestVF">startMaintenance(_:)</a>
+                    <a name="/s:13AWSOpsWorksCM03OpsbC0V16startMaintenance_2on3NIO15EventLoopFutureCyAC05StartF8ResponseVGAC0lF7RequestV_AF0iJ0_pSgtF"></a>
+                    <a name="//apple_ref/swift/Method/startMaintenance(_:on:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13AWSOpsWorksCM03OpsbC0V16startMaintenance_2on3NIO15EventLoopFutureCyAC05StartF8ResponseVGAC0lF7RequestV_AF0iJ0_pSgtF">startMaintenance(_:on:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1301,7 +1315,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">startMaintenance</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/OpsWorksCM/StartMaintenanceRequest.html">StartMaintenanceRequest</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/OpsWorksCM/StartMaintenanceResponse.html">StartMaintenanceResponse</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">startMaintenance</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/OpsWorksCM/StartMaintenanceRequest.html">StartMaintenanceRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/OpsWorksCM/StartMaintenanceResponse.html">StartMaintenanceResponse</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
                       </div>
@@ -1311,9 +1325,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:13AWSOpsWorksCM03OpsbC0V11tagResourcey3NIO15EventLoopFutureCyAC03TagF8ResponseVGAC0kF7RequestVF"></a>
-                    <a name="//apple_ref/swift/Method/tagResource(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:13AWSOpsWorksCM03OpsbC0V11tagResourcey3NIO15EventLoopFutureCyAC03TagF8ResponseVGAC0kF7RequestVF">tagResource(_:)</a>
+                    <a name="/s:13AWSOpsWorksCM03OpsbC0V11tagResource_2on3NIO15EventLoopFutureCyAC03TagF8ResponseVGAC0lF7RequestV_AF0iJ0_pSgtF"></a>
+                    <a name="//apple_ref/swift/Method/tagResource(_:on:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13AWSOpsWorksCM03OpsbC0V11tagResource_2on3NIO15EventLoopFutureCyAC03TagF8ResponseVGAC0lF7RequestV_AF0iJ0_pSgtF">tagResource(_:on:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1328,7 +1342,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">tagResource</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/OpsWorksCM/TagResourceRequest.html">TagResourceRequest</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/OpsWorksCM/TagResourceResponse.html">TagResourceResponse</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">tagResource</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/OpsWorksCM/TagResourceRequest.html">TagResourceRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/OpsWorksCM/TagResourceResponse.html">TagResourceResponse</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
                       </div>
@@ -1338,9 +1352,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:13AWSOpsWorksCM03OpsbC0V13untagResourcey3NIO15EventLoopFutureCyAC05UntagF8ResponseVGAC0kF7RequestVF"></a>
-                    <a name="//apple_ref/swift/Method/untagResource(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:13AWSOpsWorksCM03OpsbC0V13untagResourcey3NIO15EventLoopFutureCyAC05UntagF8ResponseVGAC0kF7RequestVF">untagResource(_:)</a>
+                    <a name="/s:13AWSOpsWorksCM03OpsbC0V13untagResource_2on3NIO15EventLoopFutureCyAC05UntagF8ResponseVGAC0lF7RequestV_AF0iJ0_pSgtF"></a>
+                    <a name="//apple_ref/swift/Method/untagResource(_:on:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13AWSOpsWorksCM03OpsbC0V13untagResource_2on3NIO15EventLoopFutureCyAC05UntagF8ResponseVGAC0lF7RequestV_AF0iJ0_pSgtF">untagResource(_:on:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1355,7 +1369,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">untagResource</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/OpsWorksCM/UntagResourceRequest.html">UntagResourceRequest</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/OpsWorksCM/UntagResourceResponse.html">UntagResourceResponse</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">untagResource</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/OpsWorksCM/UntagResourceRequest.html">UntagResourceRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/OpsWorksCM/UntagResourceResponse.html">UntagResourceResponse</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
                       </div>
@@ -1365,9 +1379,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:13AWSOpsWorksCM03OpsbC0V12updateServery3NIO15EventLoopFutureCyAC06UpdateF8ResponseVGAC0kF7RequestVF"></a>
-                    <a name="//apple_ref/swift/Method/updateServer(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:13AWSOpsWorksCM03OpsbC0V12updateServery3NIO15EventLoopFutureCyAC06UpdateF8ResponseVGAC0kF7RequestVF">updateServer(_:)</a>
+                    <a name="/s:13AWSOpsWorksCM03OpsbC0V12updateServer_2on3NIO15EventLoopFutureCyAC06UpdateF8ResponseVGAC0lF7RequestV_AF0iJ0_pSgtF"></a>
+                    <a name="//apple_ref/swift/Method/updateServer(_:on:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13AWSOpsWorksCM03OpsbC0V12updateServer_2on3NIO15EventLoopFutureCyAC06UpdateF8ResponseVGAC0lF7RequestV_AF0iJ0_pSgtF">updateServer(_:on:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1382,7 +1396,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">updateServer</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/OpsWorksCM/UpdateServerRequest.html">UpdateServerRequest</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/OpsWorksCM/UpdateServerResponse.html">UpdateServerResponse</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">updateServer</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/OpsWorksCM/UpdateServerRequest.html">UpdateServerRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/OpsWorksCM/UpdateServerResponse.html">UpdateServerResponse</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
                       </div>
@@ -1392,9 +1406,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:13AWSOpsWorksCM03OpsbC0V28updateServerEngineAttributesy3NIO15EventLoopFutureCyAC06UpdatefgH8ResponseVGAC0mfgH7RequestVF"></a>
-                    <a name="//apple_ref/swift/Method/updateServerEngineAttributes(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:13AWSOpsWorksCM03OpsbC0V28updateServerEngineAttributesy3NIO15EventLoopFutureCyAC06UpdatefgH8ResponseVGAC0mfgH7RequestVF">updateServerEngineAttributes(_:)</a>
+                    <a name="/s:13AWSOpsWorksCM03OpsbC0V28updateServerEngineAttributes_2on3NIO15EventLoopFutureCyAC06UpdatefgH8ResponseVGAC0nfgH7RequestV_AF0kL0_pSgtF"></a>
+                    <a name="//apple_ref/swift/Method/updateServerEngineAttributes(_:on:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13AWSOpsWorksCM03OpsbC0V28updateServerEngineAttributes_2on3NIO15EventLoopFutureCyAC06UpdatefgH8ResponseVGAC0nfgH7RequestV_AF0kL0_pSgtF">updateServerEngineAttributes(_:on:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1409,7 +1423,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">updateServerEngineAttributes</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/OpsWorksCM/UpdateServerEngineAttributesRequest.html">UpdateServerEngineAttributesRequest</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/OpsWorksCM/UpdateServerEngineAttributesResponse.html">UpdateServerEngineAttributesResponse</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">updateServerEngineAttributes</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/OpsWorksCM/UpdateServerEngineAttributesRequest.html">UpdateServerEngineAttributesRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/OpsWorksCM/UpdateServerEngineAttributesResponse.html">UpdateServerEngineAttributesResponse</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
                       </div>
@@ -1430,9 +1444,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:13AWSOpsWorksCM03OpsbC0V24describeBackupsPaginator_6onPage3NIO15EventLoopFutureCyytGAC08DescribeF7RequestV_AHySbGAC0nF8ResponseV_AF0kL0_ptctF"></a>
-                    <a name="//apple_ref/swift/Method/describeBackupsPaginator(_:onPage:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:13AWSOpsWorksCM03OpsbC0V24describeBackupsPaginator_6onPage3NIO15EventLoopFutureCyytGAC08DescribeF7RequestV_AHySbGAC0nF8ResponseV_AF0kL0_ptctF">describeBackupsPaginator(_:onPage:)</a>
+                    <a name="/s:13AWSOpsWorksCM03OpsbC0V24describeBackupsPaginator_2on0H4Page3NIO15EventLoopFutureCyytGAC08DescribeF7RequestV_AG0kL0_pSgAIySbGAC0nF8ResponseV_AgM_ptctF"></a>
+                    <a name="//apple_ref/swift/Method/describeBackupsPaginator(_:on:onPage:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13AWSOpsWorksCM03OpsbC0V24describeBackupsPaginator_2on0H4Page3NIO15EventLoopFutureCyytGAC08DescribeF7RequestV_AG0kL0_pSgAIySbGAC0nF8ResponseV_AgM_ptctF">describeBackupsPaginator(_:on:onPage:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1449,6 +1463,7 @@
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">describeBackupsPaginator</span><span class="p">(</span>
     <span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/OpsWorksCM/DescribeBackupsRequest.html">DescribeBackupsRequest</a></span><span class="p">,</span>
+    <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
     <span class="nv">onPage</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/OpsWorksCM/DescribeBackupsResponse.html">DescribeBackupsResponse</a></span><span class="p">,</span>
     <span class="kt">EventLoop</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Bool</span><span class="o">&gt;</span>
 <span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Void</span><span class="o">&gt;</span></code></pre>
@@ -1461,9 +1476,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:13AWSOpsWorksCM03OpsbC0V23describeEventsPaginator_6onPage3NIO15EventLoopFutureCyytGAC08DescribeF7RequestV_AHySbGAC0nF8ResponseV_AF0kL0_ptctF"></a>
-                    <a name="//apple_ref/swift/Method/describeEventsPaginator(_:onPage:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:13AWSOpsWorksCM03OpsbC0V23describeEventsPaginator_6onPage3NIO15EventLoopFutureCyytGAC08DescribeF7RequestV_AHySbGAC0nF8ResponseV_AF0kL0_ptctF">describeEventsPaginator(_:onPage:)</a>
+                    <a name="/s:13AWSOpsWorksCM03OpsbC0V23describeEventsPaginator_2on0H4Page3NIO15EventLoopFutureCyytGAC08DescribeF7RequestV_AG0kL0_pSgAIySbGAC0nF8ResponseV_AgM_ptctF"></a>
+                    <a name="//apple_ref/swift/Method/describeEventsPaginator(_:on:onPage:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13AWSOpsWorksCM03OpsbC0V23describeEventsPaginator_2on0H4Page3NIO15EventLoopFutureCyytGAC08DescribeF7RequestV_AG0kL0_pSgAIySbGAC0nF8ResponseV_AgM_ptctF">describeEventsPaginator(_:on:onPage:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1480,6 +1495,7 @@
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">describeEventsPaginator</span><span class="p">(</span>
     <span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/OpsWorksCM/DescribeEventsRequest.html">DescribeEventsRequest</a></span><span class="p">,</span>
+    <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
     <span class="nv">onPage</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/OpsWorksCM/DescribeEventsResponse.html">DescribeEventsResponse</a></span><span class="p">,</span>
     <span class="kt">EventLoop</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Bool</span><span class="o">&gt;</span>
 <span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Void</span><span class="o">&gt;</span></code></pre>
@@ -1492,9 +1508,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:13AWSOpsWorksCM03OpsbC0V24describeServersPaginator_6onPage3NIO15EventLoopFutureCyytGAC08DescribeF7RequestV_AHySbGAC0nF8ResponseV_AF0kL0_ptctF"></a>
-                    <a name="//apple_ref/swift/Method/describeServersPaginator(_:onPage:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:13AWSOpsWorksCM03OpsbC0V24describeServersPaginator_6onPage3NIO15EventLoopFutureCyytGAC08DescribeF7RequestV_AHySbGAC0nF8ResponseV_AF0kL0_ptctF">describeServersPaginator(_:onPage:)</a>
+                    <a name="/s:13AWSOpsWorksCM03OpsbC0V24describeServersPaginator_2on0H4Page3NIO15EventLoopFutureCyytGAC08DescribeF7RequestV_AG0kL0_pSgAIySbGAC0nF8ResponseV_AgM_ptctF"></a>
+                    <a name="//apple_ref/swift/Method/describeServersPaginator(_:on:onPage:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13AWSOpsWorksCM03OpsbC0V24describeServersPaginator_2on0H4Page3NIO15EventLoopFutureCyytGAC08DescribeF7RequestV_AG0kL0_pSgAIySbGAC0nF8ResponseV_AgM_ptctF">describeServersPaginator(_:on:onPage:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1511,6 +1527,7 @@
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">describeServersPaginator</span><span class="p">(</span>
     <span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/OpsWorksCM/DescribeServersRequest.html">DescribeServersRequest</a></span><span class="p">,</span>
+    <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
     <span class="nv">onPage</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/OpsWorksCM/DescribeServersResponse.html">DescribeServersResponse</a></span><span class="p">,</span>
     <span class="kt">EventLoop</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Bool</span><span class="o">&gt;</span>
 <span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Void</span><span class="o">&gt;</span></code></pre>
@@ -1523,9 +1540,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:13AWSOpsWorksCM03OpsbC0V28listTagsForResourcePaginator_6onPage3NIO15EventLoopFutureCyytGAC04ListfgH7RequestV_AHySbGAC0pfgH8ResponseV_AF0mN0_ptctF"></a>
-                    <a name="//apple_ref/swift/Method/listTagsForResourcePaginator(_:onPage:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:13AWSOpsWorksCM03OpsbC0V28listTagsForResourcePaginator_6onPage3NIO15EventLoopFutureCyytGAC04ListfgH7RequestV_AHySbGAC0pfgH8ResponseV_AF0mN0_ptctF">listTagsForResourcePaginator(_:onPage:)</a>
+                    <a name="/s:13AWSOpsWorksCM03OpsbC0V28listTagsForResourcePaginator_2on0J4Page3NIO15EventLoopFutureCyytGAC04ListfgH7RequestV_AG0mN0_pSgAIySbGAC0pfgH8ResponseV_AgM_ptctF"></a>
+                    <a name="//apple_ref/swift/Method/listTagsForResourcePaginator(_:on:onPage:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13AWSOpsWorksCM03OpsbC0V28listTagsForResourcePaginator_2on0J4Page3NIO15EventLoopFutureCyytGAC04ListfgH7RequestV_AG0mN0_pSgAIySbGAC0pfgH8ResponseV_AgM_ptctF">listTagsForResourcePaginator(_:on:onPage:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1542,6 +1559,7 @@
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">listTagsForResourcePaginator</span><span class="p">(</span>
     <span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/OpsWorksCM/ListTagsForResourceRequest.html">ListTagsForResourceRequest</a></span><span class="p">,</span>
+    <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
     <span class="nv">onPage</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/OpsWorksCM/ListTagsForResourceResponse.html">ListTagsForResourceResponse</a></span><span class="p">,</span>
     <span class="kt">EventLoop</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Bool</span><span class="o">&gt;</span>
 <span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Void</span><span class="o">&gt;</span></code></pre>
@@ -1699,7 +1717,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">AccountAttribute</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">AccountAttribute</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
                       </div>
@@ -1755,7 +1773,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">AssociateNodeResponse</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">AssociateNodeResponse</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
                       </div>
@@ -1783,7 +1801,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Backup</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Backup</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
                       </div>
@@ -1839,7 +1857,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">CreateBackupResponse</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">CreateBackupResponse</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
                       </div>
@@ -1895,7 +1913,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">CreateServerResponse</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">CreateServerResponse</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
                       </div>
@@ -1951,7 +1969,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DeleteBackupResponse</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DeleteBackupResponse</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
                       </div>
@@ -2007,7 +2025,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DeleteServerResponse</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DeleteServerResponse</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
                       </div>
@@ -2063,7 +2081,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DescribeAccountAttributesResponse</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DescribeAccountAttributesResponse</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
                       </div>
@@ -2091,7 +2109,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DescribeBackupsResponse</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DescribeBackupsResponse</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
                       </div>
@@ -2119,7 +2137,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DescribeEventsResponse</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DescribeEventsResponse</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
                       </div>
@@ -2175,7 +2193,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DescribeNodeAssociationStatusResponse</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DescribeNodeAssociationStatusResponse</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
                       </div>
@@ -2203,7 +2221,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DescribeServersResponse</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DescribeServersResponse</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
                       </div>
@@ -2259,7 +2277,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DisassociateNodeResponse</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DisassociateNodeResponse</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
                       </div>
@@ -2287,7 +2305,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">EngineAttribute</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSEncodableShape.html">AWSEncodableShape</a></span> <span class="o">&amp;</span> <span class="kt"><a href="../Other%20Protocols.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">EngineAttribute</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSEncodableShape.html">AWSEncodableShape</a></span> <span class="o">&amp;</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
                       </div>
@@ -2343,7 +2361,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ExportServerEngineAttributeResponse</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ExportServerEngineAttributeResponse</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
                       </div>
@@ -2371,7 +2389,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ListTagsForResourceResponse</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ListTagsForResourceResponse</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
                       </div>
@@ -2427,7 +2445,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">RestoreServerResponse</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">RestoreServerResponse</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
                       </div>
@@ -2455,7 +2473,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Server</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Server</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
                       </div>
@@ -2483,7 +2501,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ServerEvent</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ServerEvent</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
                       </div>
@@ -2539,7 +2557,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">StartMaintenanceResponse</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">StartMaintenanceResponse</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
                       </div>
@@ -2567,7 +2585,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Tag</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSEncodableShape.html">AWSEncodableShape</a></span> <span class="o">&amp;</span> <span class="kt"><a href="../Other%20Protocols.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Tag</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSEncodableShape.html">AWSEncodableShape</a></span> <span class="o">&amp;</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
                       </div>
@@ -2623,7 +2641,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">TagResourceResponse</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">TagResourceResponse</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
                       </div>
@@ -2679,7 +2697,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">UntagResourceResponse</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">UntagResourceResponse</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
                       </div>
@@ -2735,7 +2753,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">UpdateServerEngineAttributesResponse</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">UpdateServerEngineAttributesResponse</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
                       </div>
@@ -2791,7 +2809,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">UpdateServerResponse</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">UpdateServerResponse</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
                       </div>

@@ -14,7 +14,7 @@
     <a title="DataSource Structure Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../../index.html"> Docs</a> (55% documented)</p>
+        <p><a href="../../index.html"> Docs</a> (54% documented)</p>
         <p class="header-right"><a href="https://github.com/swift-aws/aws-sdk-swift"><img src="../../img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
@@ -135,6 +135,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../CloudWatchLogs.html">CloudWatchLogs</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../CodeArtifact.html">CodeArtifact</a>
           </li>
           <li class="nav-group-name">
             <a href="../../CodeBuild.html">CodeBuild</a>
@@ -326,6 +329,9 @@
             <a href="../../Health.html">Health</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../Honeycode.html">Honeycode</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../IAM.html">IAM</a>
           </li>
           <li class="nav-group-name">
@@ -363,6 +369,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../IoTSecureTunneling.html">IoTSecureTunneling</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../IoTSiteWise.html">IoTSiteWise</a>
           </li>
           <li class="nav-group-name">
             <a href="../../IoTThingsGraph.html">IoTThingsGraph</a>
@@ -426,6 +435,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../Macie.html">Macie</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../Macie2.html">Macie2</a>
           </li>
           <li class="nav-group-name">
             <a href="../../ManagedBlockchain.html">ManagedBlockchain</a>
@@ -653,6 +665,9 @@
             <a href="../../Support.html">Support</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../Synthetics.html">Synthetics</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../Textract.html">Textract</a>
           </li>
           <li class="nav-group-name">
@@ -709,6 +724,9 @@
           <li class="nav-group-name">
             <a href="../../Other%20Structs.html">Other Structures</a>
           </li>
+          <li class="nav-group-name">
+            <a href="../../Other%20Typealiases.html">Other Type Aliases</a>
+          </li>
         </ul>
       </nav>
       <article class="main-content">
@@ -717,7 +735,7 @@
             <h1>DataSource</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DataSource</span> <span class="p">:</span> <span class="kt"><a href="../../Other%20Protocols.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DataSource</span> <span class="p">:</span> <span class="kt"><a href="../../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                 </div>
               </div>
@@ -727,6 +745,33 @@
           <section class="section task-group-section">
             <div class="task-group">
               <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13AWSQuickSight05QuickB0V10DataSourceV09alternatedE10ParametersSayAC0deG0VGSgvp"></a>
+                    <a name="//apple_ref/swift/Property/alternateDataSourceParameters" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13AWSQuickSight05QuickB0V10DataSourceV09alternatedE10ParametersSayAC0deG0VGSgvp">alternateDataSourceParameters</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A set of alternate data source parameters that you want to share for the credentials stored with this data source. The credentials are applied in tandem with the data source parameters when you copy a data source by using a create or update request. The API compares the DataSourceParameters structure that&rsquo;s in the request with the structures in the AlternateDataSourceParameters allowlist. If the structures are an exact match, the request is allowed to use the credentials from this existing data source. If the AlternateDataSourceParameters list is null, the Credentials originally used with this DataSourceParameters are automatically allowed.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">alternateDataSourceParameters</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../../Structs/QuickSight/DataSourceParameters.html">DataSourceParameters</a></span><span class="p">]?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
                 <li class="item">
                   <div>
                     <code>
@@ -1027,9 +1072,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:13AWSQuickSight05QuickB0V10DataSourceV3arn11createdTime04dataE2Id0iE10Parameters9errorInfo011lastUpdatedH04name13sslProperties6status4type013vpcConnectionR0AESSSg_15AWSSDKSwiftCore0H5StampVSgAqC0deK0VSgAC0de5ErrorM0VSgAuqC03SslR0VSgAC14ResourceStatusOSgAC0dE4TypeOSgAC03VpcvR0VSgtcfc"></a>
-                    <a name="//apple_ref/swift/Method/init(arn:createdTime:dataSourceId:dataSourceParameters:errorInfo:lastUpdatedTime:name:sslProperties:status:type:vpcConnectionProperties:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:13AWSQuickSight05QuickB0V10DataSourceV3arn11createdTime04dataE2Id0iE10Parameters9errorInfo011lastUpdatedH04name13sslProperties6status4type013vpcConnectionR0AESSSg_15AWSSDKSwiftCore0H5StampVSgAqC0deK0VSgAC0de5ErrorM0VSgAuqC03SslR0VSgAC14ResourceStatusOSgAC0dE4TypeOSgAC03VpcvR0VSgtcfc">init(arn:createdTime:dataSourceId:dataSourceParameters:errorInfo:lastUpdatedTime:name:sslProperties:status:type:vpcConnectionProperties:)</a>
+                    <a name="/s:13AWSQuickSight05QuickB0V10DataSourceV09alternatedE10Parameters3arn11createdTime04dataE2Id0keG09errorInfo011lastUpdatedJ04name13sslProperties6status4type013vpcConnectionS0AESayAC0deG0VGSg_SSSg15AWSSDKSwiftCore0J5StampVSgAvSSgAC0de5ErrorN0VSgAzvC03SslS0VSgAC14ResourceStatusOSgAC0dE4TypeOSgAC03VpcwS0VSgtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(alternateDataSourceParameters:arn:createdTime:dataSourceId:dataSourceParameters:errorInfo:lastUpdatedTime:name:sslProperties:status:type:vpcConnectionProperties:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13AWSQuickSight05QuickB0V10DataSourceV09alternatedE10Parameters3arn11createdTime04dataE2Id0keG09errorInfo011lastUpdatedJ04name13sslProperties6status4type013vpcConnectionS0AESayAC0deG0VGSg_SSSg15AWSSDKSwiftCore0J5StampVSgAvSSgAC0de5ErrorN0VSgAzvC03SslS0VSgAC14ResourceStatusOSgAC0dE4TypeOSgAC03VpcwS0VSgtcfc">init(alternateDataSourceParameters:arn:createdTime:dataSourceId:dataSourceParameters:errorInfo:lastUpdatedTime:name:sslProperties:status:type:vpcConnectionProperties:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1044,7 +1089,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">arn</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">createdTime</span><span class="p">:</span> <span class="kt"><a href="../../Structs/TimeStamp.html">TimeStamp</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">dataSourceId</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">dataSourceParameters</span><span class="p">:</span> <span class="kt"><a href="../../Structs/QuickSight/DataSourceParameters.html">DataSourceParameters</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">errorInfo</span><span class="p">:</span> <span class="kt"><a href="../../Structs/QuickSight/DataSourceErrorInfo.html">DataSourceErrorInfo</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">lastUpdatedTime</span><span class="p">:</span> <span class="kt"><a href="../../Structs/TimeStamp.html">TimeStamp</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">name</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">sslProperties</span><span class="p">:</span> <span class="kt"><a href="../../Structs/QuickSight/SslProperties.html">SslProperties</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">status</span><span class="p">:</span> <span class="kt"><a href="../../Structs/QuickSight/ResourceStatus.html">ResourceStatus</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">type</span><span class="p">:</span> <span class="kt"><a href="../../Structs/QuickSight/DataSourceType.html">DataSourceType</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">vpcConnectionProperties</span><span class="p">:</span> <span class="kt"><a href="../../Structs/QuickSight/VpcConnectionProperties.html">VpcConnectionProperties</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">alternateDataSourceParameters</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../../Structs/QuickSight/DataSourceParameters.html">DataSourceParameters</a></span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">arn</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">createdTime</span><span class="p">:</span> <span class="kt"><a href="../../Structs/TimeStamp.html">TimeStamp</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">dataSourceId</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">dataSourceParameters</span><span class="p">:</span> <span class="kt"><a href="../../Structs/QuickSight/DataSourceParameters.html">DataSourceParameters</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">errorInfo</span><span class="p">:</span> <span class="kt"><a href="../../Structs/QuickSight/DataSourceErrorInfo.html">DataSourceErrorInfo</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">lastUpdatedTime</span><span class="p">:</span> <span class="kt"><a href="../../Structs/TimeStamp.html">TimeStamp</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">name</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">sslProperties</span><span class="p">:</span> <span class="kt"><a href="../../Structs/QuickSight/SslProperties.html">SslProperties</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">status</span><span class="p">:</span> <span class="kt"><a href="../../Structs/QuickSight/ResourceStatus.html">ResourceStatus</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">type</span><span class="p">:</span> <span class="kt"><a href="../../Structs/QuickSight/DataSourceType.html">DataSourceType</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">vpcConnectionProperties</span><span class="p">:</span> <span class="kt"><a href="../../Structs/QuickSight/VpcConnectionProperties.html">VpcConnectionProperties</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>

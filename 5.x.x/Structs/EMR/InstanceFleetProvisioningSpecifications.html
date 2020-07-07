@@ -14,7 +14,7 @@
     <a title="InstanceFleetProvisioningSpecifications Structure Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../../index.html"> Docs</a> (55% documented)</p>
+        <p><a href="../../index.html"> Docs</a> (54% documented)</p>
         <p class="header-right"><a href="https://github.com/swift-aws/aws-sdk-swift"><img src="../../img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
@@ -135,6 +135,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../CloudWatchLogs.html">CloudWatchLogs</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../CodeArtifact.html">CodeArtifact</a>
           </li>
           <li class="nav-group-name">
             <a href="../../CodeBuild.html">CodeBuild</a>
@@ -326,6 +329,9 @@
             <a href="../../Health.html">Health</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../Honeycode.html">Honeycode</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../IAM.html">IAM</a>
           </li>
           <li class="nav-group-name">
@@ -363,6 +369,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../IoTSecureTunneling.html">IoTSecureTunneling</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../IoTSiteWise.html">IoTSiteWise</a>
           </li>
           <li class="nav-group-name">
             <a href="../../IoTThingsGraph.html">IoTThingsGraph</a>
@@ -426,6 +435,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../Macie.html">Macie</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../Macie2.html">Macie2</a>
           </li>
           <li class="nav-group-name">
             <a href="../../ManagedBlockchain.html">ManagedBlockchain</a>
@@ -653,6 +665,9 @@
             <a href="../../Support.html">Support</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../Synthetics.html">Synthetics</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../Textract.html">Textract</a>
           </li>
           <li class="nav-group-name">
@@ -709,6 +724,9 @@
           <li class="nav-group-name">
             <a href="../../Other%20Structs.html">Other Structures</a>
           </li>
+          <li class="nav-group-name">
+            <a href="../../Other%20Typealiases.html">Other Type Aliases</a>
+          </li>
         </ul>
       </nav>
       <article class="main-content">
@@ -717,7 +735,7 @@
             <h1>InstanceFleetProvisioningSpecifications</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">InstanceFleetProvisioningSpecifications</span> <span class="p">:</span> <span class="kt"><a href="../../Protocols/AWSEncodableShape.html">AWSEncodableShape</a></span> <span class="o">&amp;</span> <span class="kt"><a href="../../Other%20Protocols.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">InstanceFleetProvisioningSpecifications</span> <span class="p">:</span> <span class="kt"><a href="../../Protocols/AWSEncodableShape.html">AWSEncodableShape</a></span> <span class="o">&amp;</span> <span class="kt"><a href="../../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                 </div>
               </div>
@@ -730,9 +748,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6AWSEMR3EMRV39InstanceFleetProvisioningSpecificationsV17spotSpecificationAC04SpoteH0Vvp"></a>
-                    <a name="//apple_ref/swift/Property/spotSpecification" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6AWSEMR3EMRV39InstanceFleetProvisioningSpecificationsV17spotSpecificationAC04SpoteH0Vvp">spotSpecification</a>
+                    <a name="/s:6AWSEMR3EMRV39InstanceFleetProvisioningSpecificationsV21onDemandSpecificationAC02OnheI0VSgvp"></a>
+                    <a name="//apple_ref/swift/Property/onDemandSpecification" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6AWSEMR3EMRV39InstanceFleetProvisioningSpecificationsV21onDemandSpecificationAC02OnheI0VSgvp">onDemandSpecification</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -740,14 +758,14 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The launch specification for Spot instances in the fleet, which determines the defined duration and provisioning timeout behavior.</p>
+                        <p>The launch specification for On-Demand instances in the instance fleet, which determines the allocation strategy.   The instance fleet configuration is available only in Amazon EMR versions 4.8.0 and later, excluding 5.0.x versions. On-Demand instances allocation strategy is available in Amazon EMR version 5.12.1 and later.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">spotSpecification</span><span class="p">:</span> <span class="kt"><a href="../../Structs/EMR/SpotProvisioningSpecification.html">SpotProvisioningSpecification</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">onDemandSpecification</span><span class="p">:</span> <span class="kt"><a href="../../Structs/EMR/OnDemandProvisioningSpecification.html">OnDemandProvisioningSpecification</a></span><span class="p">?</span></code></pre>
 
                         </div>
                       </div>
@@ -757,9 +775,36 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6AWSEMR3EMRV39InstanceFleetProvisioningSpecificationsV17spotSpecificationAeC04SpoteH0V_tcfc"></a>
-                    <a name="//apple_ref/swift/Method/init(spotSpecification:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6AWSEMR3EMRV39InstanceFleetProvisioningSpecificationsV17spotSpecificationAeC04SpoteH0V_tcfc">init(spotSpecification:)</a>
+                    <a name="/s:6AWSEMR3EMRV39InstanceFleetProvisioningSpecificationsV17spotSpecificationAC04SpoteH0VSgvp"></a>
+                    <a name="//apple_ref/swift/Property/spotSpecification" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6AWSEMR3EMRV39InstanceFleetProvisioningSpecificationsV17spotSpecificationAC04SpoteH0VSgvp">spotSpecification</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The launch specification for Spot instances in the fleet, which determines the defined duration, provisioning timeout behavior, and allocation strategy.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">spotSpecification</span><span class="p">:</span> <span class="kt"><a href="../../Structs/EMR/SpotProvisioningSpecification.html">SpotProvisioningSpecification</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6AWSEMR3EMRV39InstanceFleetProvisioningSpecificationsV21onDemandSpecification04spotI0AeC02OnheI0VSg_AC04SpoteI0VSgtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(onDemandSpecification:spotSpecification:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6AWSEMR3EMRV39InstanceFleetProvisioningSpecificationsV21onDemandSpecification04spotI0AeC02OnheI0VSg_AC04SpoteI0VSgtcfc">init(onDemandSpecification:spotSpecification:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -774,7 +819,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">spotSpecification</span><span class="p">:</span> <span class="kt"><a href="../../Structs/EMR/SpotProvisioningSpecification.html">SpotProvisioningSpecification</a></span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">onDemandSpecification</span><span class="p">:</span> <span class="kt"><a href="../../Structs/EMR/OnDemandProvisioningSpecification.html">OnDemandProvisioningSpecification</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">spotSpecification</span><span class="p">:</span> <span class="kt"><a href="../../Structs/EMR/SpotProvisioningSpecification.html">SpotProvisioningSpecification</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>

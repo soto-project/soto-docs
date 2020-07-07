@@ -14,7 +14,7 @@
     <a title="CreateSubnetRequest Structure Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../../index.html"> Docs</a> (55% documented)</p>
+        <p><a href="../../index.html"> Docs</a> (54% documented)</p>
         <p class="header-right"><a href="https://github.com/swift-aws/aws-sdk-swift"><img src="../../img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
@@ -135,6 +135,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../CloudWatchLogs.html">CloudWatchLogs</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../CodeArtifact.html">CodeArtifact</a>
           </li>
           <li class="nav-group-name">
             <a href="../../CodeBuild.html">CodeBuild</a>
@@ -326,6 +329,9 @@
             <a href="../../Health.html">Health</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../Honeycode.html">Honeycode</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../IAM.html">IAM</a>
           </li>
           <li class="nav-group-name">
@@ -363,6 +369,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../IoTSecureTunneling.html">IoTSecureTunneling</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../IoTSiteWise.html">IoTSiteWise</a>
           </li>
           <li class="nav-group-name">
             <a href="../../IoTThingsGraph.html">IoTThingsGraph</a>
@@ -426,6 +435,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../Macie.html">Macie</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../Macie2.html">Macie2</a>
           </li>
           <li class="nav-group-name">
             <a href="../../ManagedBlockchain.html">ManagedBlockchain</a>
@@ -653,6 +665,9 @@
             <a href="../../Support.html">Support</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../Synthetics.html">Synthetics</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../Textract.html">Textract</a>
           </li>
           <li class="nav-group-name">
@@ -709,6 +724,9 @@
           <li class="nav-group-name">
             <a href="../../Other%20Structs.html">Other Structures</a>
           </li>
+          <li class="nav-group-name">
+            <a href="../../Other%20Typealiases.html">Other Type Aliases</a>
+          </li>
         </ul>
       </nav>
       <article class="main-content">
@@ -730,6 +748,34 @@
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/s:6AWSEC23EC2V19CreateSubnetRequestV26_TagSpecificationsEncodingV"></a>
+                    <a name="//apple_ref/swift/Struct/_TagSpecificationsEncoding" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6AWSEC23EC2V19CreateSubnetRequestV26_TagSpecificationsEncodingV">_TagSpecificationsEncoding</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../../Structs/EC2/CreateSubnetRequest/_TagSpecificationsEncoding.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="nv">_TagSpecificationsEncoding</span> <span class="p">:</span> <span class="kt"><a href="../../Protocols/ArrayCoderProperties.html">ArrayCoderProperties</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/s:6AWSEC23EC2V19CreateSubnetRequestV16availabilityZoneSSSgvp"></a>
                     <a name="//apple_ref/swift/Property/availabilityZone" class="dashAnchor"></a>
                     <a class="token" href="#/s:6AWSEC23EC2V19CreateSubnetRequestV16availabilityZoneSSSgvp">availabilityZone</a>
@@ -740,7 +786,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The Availability Zone or Local Zone for the subnet. Default: AWS selects one for you. If you create more than one subnet in your VPC, we do not necessarily select a different zone for each subnet. To create a subnet in a Local Zone, set this value to the Local Zone ID, for example us-west-2-lax-1a. For information about the Regions that support Local Zones, see Available Regions in the Amazon Elastic Compute Cloud User Guide.</p>
+                        <p>The Availability Zone or Local Zone for the subnet. Default: AWS selects one for you. If you create more than one subnet in your VPC, we do not necessarily select a different zone for each subnet. To create a subnet in a Local Zone, set this value to the Local Zone ID, for example us-west-2-lax-1a. For information about the Regions that support Local Zones, see Available Regions in the Amazon Elastic Compute Cloud User Guide. To create a subnet in an Outpost, set this value to the Availability Zone for the Outpost and specify the Outpost ARN.</p>
 
                       </div>
                       <div class="declaration">
@@ -794,7 +840,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The IPv4 network range for the subnet, in CIDR notation. For example, 10.0.0.0/24.</p>
+                        <p>The IPv4 network range for the subnet, in CIDR notation. For example, 10.0.0.0/24. We modify the specified CIDR block to its canonical form; for example, if you specify 100.68.0.18/18, we modify it to 100.68.0.0/18.</p>
 
                       </div>
                       <div class="declaration">
@@ -875,7 +921,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The Amazon Resource Name (ARN) of the Outpost.</p>
+                        <p>The Amazon Resource Name (ARN) of the Outpost. If you specify an Outpost ARN, you must also specify the Availability Zone of the Outpost subnet.</p>
 
                       </div>
                       <div class="declaration">
@@ -883,6 +929,34 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">outpostArn</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6AWSEC23EC2V19CreateSubnetRequestV17tagSpecificationsSayAC16TagSpecificationVGSgvp"></a>
+                    <a name="//apple_ref/swift/Property/tagSpecifications" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6AWSEC23EC2V19CreateSubnetRequestV17tagSpecificationsSayAC16TagSpecificationVGSgvp">tagSpecifications</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The tags to assign to the subnet.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@OptionalCoding</span>
+<span class="o">&lt;</span><span class="kt"><a href="../../Structs/EC2.html">EC2</a></span><span class="o">.</span><span class="kt"><a href="../../Structs/EC2/ArrayCoder.html">ArrayCoder</a></span><span class="o">&lt;</span><span class="kt"><a href="../../Structs/EC2.html">EC2</a></span><span class="o">.</span><span class="kt">CreateSubnetRequest</span><span class="o">.</span><span class="n"><a href="../../Structs/EC2/CreateSubnetRequest/_TagSpecificationsEncoding.html">_TagSpecificationsEncoding</a></span><span class="p">,</span> <span class="kt"><a href="../../Structs/EC2.html">EC2</a></span><span class="o">.</span><span class="kt"><a href="../../Structs/EC2/TagSpecification.html">TagSpecification</a></span><span class="o">&gt;&gt;</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">tagSpecifications</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../../Structs/EC2/TagSpecification.html">TagSpecification</a></span><span class="p">]?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
@@ -919,9 +993,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6AWSEC23EC2V19CreateSubnetRequestV16availabilityZone0fG2Id9cidrBlock6dryRun08ipv6CidrJ010outpostArn03vpcH0AESSSg_AMSSSbSgA2MSStcfc"></a>
-                    <a name="//apple_ref/swift/Method/init(availabilityZone:availabilityZoneId:cidrBlock:dryRun:ipv6CidrBlock:outpostArn:vpcId:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6AWSEC23EC2V19CreateSubnetRequestV16availabilityZone0fG2Id9cidrBlock6dryRun08ipv6CidrJ010outpostArn03vpcH0AESSSg_AMSSSbSgA2MSStcfc">init(availabilityZone:availabilityZoneId:cidrBlock:dryRun:ipv6CidrBlock:outpostArn:vpcId:)</a>
+                    <a name="/s:6AWSEC23EC2V19CreateSubnetRequestV16availabilityZone0fG2Id9cidrBlock6dryRun08ipv6CidrJ010outpostArn17tagSpecifications03vpcH0AESSSg_ANSSSbSgA2NSayAC16TagSpecificationVGSgSStcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(availabilityZone:availabilityZoneId:cidrBlock:dryRun:ipv6CidrBlock:outpostArn:tagSpecifications:vpcId:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6AWSEC23EC2V19CreateSubnetRequestV16availabilityZone0fG2Id9cidrBlock6dryRun08ipv6CidrJ010outpostArn17tagSpecifications03vpcH0AESSSg_ANSSSbSgA2NSayAC16TagSpecificationVGSgSStcfc">init(availabilityZone:availabilityZoneId:cidrBlock:dryRun:ipv6CidrBlock:outpostArn:tagSpecifications:vpcId:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -936,7 +1010,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">availabilityZone</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">availabilityZoneId</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">cidrBlock</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">dryRun</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">ipv6CidrBlock</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">outpostArn</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">vpcId</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">availabilityZone</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">availabilityZoneId</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">cidrBlock</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">dryRun</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">ipv6CidrBlock</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">outpostArn</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">tagSpecifications</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../../Structs/EC2/TagSpecification.html">TagSpecification</a></span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">vpcId</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>

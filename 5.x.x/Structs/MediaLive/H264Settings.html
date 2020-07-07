@@ -14,7 +14,7 @@
     <a title="H264Settings Structure Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../../index.html"> Docs</a> (55% documented)</p>
+        <p><a href="../../index.html"> Docs</a> (54% documented)</p>
         <p class="header-right"><a href="https://github.com/swift-aws/aws-sdk-swift"><img src="../../img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
@@ -135,6 +135,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../CloudWatchLogs.html">CloudWatchLogs</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../CodeArtifact.html">CodeArtifact</a>
           </li>
           <li class="nav-group-name">
             <a href="../../CodeBuild.html">CodeBuild</a>
@@ -326,6 +329,9 @@
             <a href="../../Health.html">Health</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../Honeycode.html">Honeycode</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../IAM.html">IAM</a>
           </li>
           <li class="nav-group-name">
@@ -363,6 +369,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../IoTSecureTunneling.html">IoTSecureTunneling</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../IoTSiteWise.html">IoTSiteWise</a>
           </li>
           <li class="nav-group-name">
             <a href="../../IoTThingsGraph.html">IoTThingsGraph</a>
@@ -426,6 +435,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../Macie.html">Macie</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../Macie2.html">Macie2</a>
           </li>
           <li class="nav-group-name">
             <a href="../../ManagedBlockchain.html">ManagedBlockchain</a>
@@ -653,6 +665,9 @@
             <a href="../../Support.html">Support</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../Synthetics.html">Synthetics</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../Textract.html">Textract</a>
           </li>
           <li class="nav-group-name">
@@ -709,6 +724,9 @@
           <li class="nav-group-name">
             <a href="../../Other%20Structs.html">Other Structures</a>
           </li>
+          <li class="nav-group-name">
+            <a href="../../Other%20Typealiases.html">Other Type Aliases</a>
+          </li>
         </ul>
       </nav>
       <article class="main-content">
@@ -717,7 +735,7 @@
             <h1>H264Settings</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">H264Settings</span> <span class="p">:</span> <span class="kt"><a href="../../Protocols/AWSEncodableShape.html">AWSEncodableShape</a></span> <span class="o">&amp;</span> <span class="kt"><a href="../../Other%20Protocols.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">H264Settings</span> <span class="p">:</span> <span class="kt"><a href="../../Protocols/AWSEncodableShape.html">AWSEncodableShape</a></span> <span class="o">&amp;</span> <span class="kt"><a href="../../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                 </div>
               </div>
@@ -946,6 +964,33 @@
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/s:12AWSMediaLive05MediaB0V12H264SettingsV06filterE0AC0d6FilterE0VSgvp"></a>
+                    <a name="//apple_ref/swift/Property/filterSettings" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12AWSMediaLive05MediaB0V12H264SettingsV06filterE0AC0d6FilterE0VSgvp">filterSettings</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Optional filters that you can apply to an encode.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">filterSettings</span><span class="p">:</span> <span class="kt"><a href="../../Structs/MediaLive/H264FilterSettings.html">H264FilterSettings</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/s:12AWSMediaLive05MediaB0V12H264SettingsV8fixedAfdAC05FixedG0OSgvp"></a>
                     <a name="//apple_ref/swift/Property/fixedAfd" class="dashAnchor"></a>
                     <a class="token" href="#/s:12AWSMediaLive05MediaB0V12H264SettingsV8fixedAfdAC05FixedG0OSgvp">fixedAfd</a>
@@ -1010,9 +1055,9 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>This setting applies only when scan type is &ldquo;interlaced.&rdquo; It controls whether coding is on a field basis or a frame basis. (When the video is progressive, the coding is always on a frame basis.)
-enabled: Always code on a field basis, so that odd and even sets of fields are coded separately.
-disabled: Code the two sets of fields separately (on a field basis) or together (on a frame basis, using PAFF or MBAFF), depending on what is most appropriate for the content.</p>
+                        <p>This setting applies only when scan type is &ldquo;interlaced.&rdquo; It controls whether coding is performed on a field basis or on a frame basis. (When the video is progressive, the coding is always performed on a frame basis.)
+enabled: Force MediaLive to code on a field basis, so that odd and even sets of fields are coded separately.
+disabled: Code the two sets of fields separately (on a field basis) or together (on a frame basis using PAFF), depending on what is most appropriate for the content.</p>
 
                       </div>
                       <div class="declaration">
@@ -1491,6 +1536,38 @@ For VBR: Set the maximum bitrate in order to accommodate expected spikes in the 
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/s:12AWSMediaLive05MediaB0V12H264SettingsV12qualityLevelAC0d7QualityG0OSgvp"></a>
+                    <a name="//apple_ref/swift/Property/qualityLevel" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12AWSMediaLive05MediaB0V12H264SettingsV12qualityLevelAC0d7QualityG0OSgvp">qualityLevel</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Leave as STANDARD_QUALITY or choose a different value (which might result in additional costs to run the channel).</p>
+
+<ul>
+<li>ENHANCED_QUALITY: Produces a slightly better video quality without an increase in the bitrate. Has an effect only when the Rate control mode is QVBR or CBR. If this channel is in a MediaLive multiplex, the value must be ENHANCED_QUALITY.</li>
+<li>STANDARD_QUALITY: Valid for any Rate control mode.</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">qualityLevel</span><span class="p">:</span> <span class="kt"><a href="../../Structs/MediaLive/H264QualityLevel.html">H264QualityLevel</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/s:12AWSMediaLive05MediaB0V12H264SettingsV16qvbrQualityLevelSiSgvp"></a>
                     <a name="//apple_ref/swift/Property/qvbrQualityLevel" class="dashAnchor"></a>
                     <a class="token" href="#/s:12AWSMediaLive05MediaB0V12H264SettingsV16qvbrQualityLevelSiSgvp">qvbrQualityLevel</a>
@@ -1814,9 +1891,9 @@ This field is optional; when no value is specified the encoder will choose the n
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:12AWSMediaLive05MediaB0V12H264SettingsV20adaptiveQuantization12afdSignaling7bitrate10bufFillPct0K4Size13colorMetadata0o5SpaceE015entropyEncoding8fixedAfd9flickerAq18forceFieldPictures16framerateControl20framerateDenominator18framerateNumerator13gopBReference16gopClosedCadence13gopNumBFrames03gopN003gopN5Units5level20lookAheadRateControl10maxBitrate12minIInterval12numRefFrames10parControl14parDenominator12parNumerator7profile16qvbrQualityLevel15rateControlMode8scanType17sceneChangeDetect6slices8softness07spatialW012subgopLength6syntax08temporalW017timecodeInsertionAeC0d8AdaptiveG0OSg_AC0uI0OSgSiSgA23_A23_AC0d5ColorP0OSgAC0d5ColorqE0VSgAC0d7EntropyS0OSgAC05FixedU0OSgAC0d7FlickerW0OSgAC0d5ForceyZ0OSgAC0D16FramerateControlOSgA23_A23_AC0D13GopBReferenceOSgA23_A23_SdSgAC0d3GopN5UnitsOSgAC0D5LevelOSgAC0D20LookAheadRateControlOSgA23_A23_A23_AC0D10ParControlOSgA23_A23_AC0D7ProfileOSgA23_AC0D15RateControlModeOSgAC0D8ScanTypeOSgAC0D17SceneChangeDetectOSgA23_A23_AC0d7SpatialW0OSgAC0D12SubGopLengthOSgAC0D6SyntaxOSgAC0d8TemporalW0OSgAC0D25TimecodeInsertionBehaviorOSgtcfc"></a>
-                    <a name="//apple_ref/swift/Method/init(adaptiveQuantization:afdSignaling:bitrate:bufFillPct:bufSize:colorMetadata:colorSpaceSettings:entropyEncoding:fixedAfd:flickerAq:forceFieldPictures:framerateControl:framerateDenominator:framerateNumerator:gopBReference:gopClosedCadence:gopNumBFrames:gopSize:gopSizeUnits:level:lookAheadRateControl:maxBitrate:minIInterval:numRefFrames:parControl:parDenominator:parNumerator:profile:qvbrQualityLevel:rateControlMode:scanType:sceneChangeDetect:slices:softness:spatialAq:subgopLength:syntax:temporalAq:timecodeInsertion:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:12AWSMediaLive05MediaB0V12H264SettingsV20adaptiveQuantization12afdSignaling7bitrate10bufFillPct0K4Size13colorMetadata0o5SpaceE015entropyEncoding8fixedAfd9flickerAq18forceFieldPictures16framerateControl20framerateDenominator18framerateNumerator13gopBReference16gopClosedCadence13gopNumBFrames03gopN003gopN5Units5level20lookAheadRateControl10maxBitrate12minIInterval12numRefFrames10parControl14parDenominator12parNumerator7profile16qvbrQualityLevel15rateControlMode8scanType17sceneChangeDetect6slices8softness07spatialW012subgopLength6syntax08temporalW017timecodeInsertionAeC0d8AdaptiveG0OSg_AC0uI0OSgSiSgA23_A23_AC0d5ColorP0OSgAC0d5ColorqE0VSgAC0d7EntropyS0OSgAC05FixedU0OSgAC0d7FlickerW0OSgAC0d5ForceyZ0OSgAC0D16FramerateControlOSgA23_A23_AC0D13GopBReferenceOSgA23_A23_SdSgAC0d3GopN5UnitsOSgAC0D5LevelOSgAC0D20LookAheadRateControlOSgA23_A23_A23_AC0D10ParControlOSgA23_A23_AC0D7ProfileOSgA23_AC0D15RateControlModeOSgAC0D8ScanTypeOSgAC0D17SceneChangeDetectOSgA23_A23_AC0d7SpatialW0OSgAC0D12SubGopLengthOSgAC0D6SyntaxOSgAC0d8TemporalW0OSgAC0D25TimecodeInsertionBehaviorOSgtcfc">init(adaptiveQuantization:afdSignaling:bitrate:bufFillPct:bufSize:colorMetadata:colorSpaceSettings:entropyEncoding:fixedAfd:flickerAq:forceFieldPictures:framerateControl:framerateDenominator:framerateNumerator:gopBReference:gopClosedCadence:gopNumBFrames:gopSize:gopSizeUnits:level:lookAheadRateControl:maxBitrate:minIInterval:numRefFrames:parControl:parDenominator:parNumerator:profile:qvbrQualityLevel:rateControlMode:scanType:sceneChangeDetect:slices:softness:spatialAq:subgopLength:syntax:temporalAq:timecodeInsertion:)</a>
+                    <a name="/s:12AWSMediaLive05MediaB0V12H264SettingsV20adaptiveQuantization12afdSignaling7bitrate10bufFillPct0K4Size13colorMetadata0o5SpaceE015entropyEncoding06filterE08fixedAfd9flickerAq18forceFieldPictures16framerateControl20framerateDenominator18framerateNumerator13gopBReference16gopClosedCadence13gopNumBFrames03gopN003gopN5Units5level20lookAheadRateControl10maxBitrate12minIInterval12numRefFrames10parControl14parDenominator12parNumerator7profile12qualityLevel16qvbrQualityLevel15rateControlMode8scanType17sceneChangeDetect6slices8softness07spatialX012subgopLength6syntax08temporalX017timecodeInsertionAeC0d8AdaptiveG0OSg_AC0vI0OSgSiSgA25_A25_AC0d5ColorP0OSgAC0d5ColorqE0VSgAC0d7EntropyS0OSgAC0d6FilterE0VSgAC05FixedV0OSgAC0d7FlickerX0OSgAC0d5ForceZ8PicturesOSgAC0D16FramerateControlOSgA25_A25_AC0D13GopBReferenceOSgA25_A25_SdSgAC0d3GopN5UnitsOSgAC0D5LevelOSgAC0D20LookAheadRateControlOSgA25_A25_A25_AC0D10ParControlOSgA25_A25_AC0D7ProfileOSgAC0D12QualityLevelOSgA25_AC0D15RateControlModeOSgAC0D8ScanTypeOSgAC0D17SceneChangeDetectOSgA25_A25_AC0d7SpatialX0OSgAC0D12SubGopLengthOSgAC0D6SyntaxOSgAC0d8TemporalX0OSgAC0D25TimecodeInsertionBehaviorOSgtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(adaptiveQuantization:afdSignaling:bitrate:bufFillPct:bufSize:colorMetadata:colorSpaceSettings:entropyEncoding:filterSettings:fixedAfd:flickerAq:forceFieldPictures:framerateControl:framerateDenominator:framerateNumerator:gopBReference:gopClosedCadence:gopNumBFrames:gopSize:gopSizeUnits:level:lookAheadRateControl:maxBitrate:minIInterval:numRefFrames:parControl:parDenominator:parNumerator:profile:qualityLevel:qvbrQualityLevel:rateControlMode:scanType:sceneChangeDetect:slices:softness:spatialAq:subgopLength:syntax:temporalAq:timecodeInsertion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12AWSMediaLive05MediaB0V12H264SettingsV20adaptiveQuantization12afdSignaling7bitrate10bufFillPct0K4Size13colorMetadata0o5SpaceE015entropyEncoding06filterE08fixedAfd9flickerAq18forceFieldPictures16framerateControl20framerateDenominator18framerateNumerator13gopBReference16gopClosedCadence13gopNumBFrames03gopN003gopN5Units5level20lookAheadRateControl10maxBitrate12minIInterval12numRefFrames10parControl14parDenominator12parNumerator7profile12qualityLevel16qvbrQualityLevel15rateControlMode8scanType17sceneChangeDetect6slices8softness07spatialX012subgopLength6syntax08temporalX017timecodeInsertionAeC0d8AdaptiveG0OSg_AC0vI0OSgSiSgA25_A25_AC0d5ColorP0OSgAC0d5ColorqE0VSgAC0d7EntropyS0OSgAC0d6FilterE0VSgAC05FixedV0OSgAC0d7FlickerX0OSgAC0d5ForceZ8PicturesOSgAC0D16FramerateControlOSgA25_A25_AC0D13GopBReferenceOSgA25_A25_SdSgAC0d3GopN5UnitsOSgAC0D5LevelOSgAC0D20LookAheadRateControlOSgA25_A25_A25_AC0D10ParControlOSgA25_A25_AC0D7ProfileOSgAC0D12QualityLevelOSgA25_AC0D15RateControlModeOSgAC0D8ScanTypeOSgAC0D17SceneChangeDetectOSgA25_A25_AC0d7SpatialX0OSgAC0D12SubGopLengthOSgAC0D6SyntaxOSgAC0d8TemporalX0OSgAC0D25TimecodeInsertionBehaviorOSgtcfc">init(adaptiveQuantization:afdSignaling:bitrate:bufFillPct:bufSize:colorMetadata:colorSpaceSettings:entropyEncoding:filterSettings:fixedAfd:flickerAq:forceFieldPictures:framerateControl:framerateDenominator:framerateNumerator:gopBReference:gopClosedCadence:gopNumBFrames:gopSize:gopSizeUnits:level:lookAheadRateControl:maxBitrate:minIInterval:numRefFrames:parControl:parDenominator:parNumerator:profile:qualityLevel:qvbrQualityLevel:rateControlMode:scanType:sceneChangeDetect:slices:softness:spatialAq:subgopLength:syntax:temporalAq:timecodeInsertion:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1831,7 +1908,7 @@ This field is optional; when no value is specified the encoder will choose the n
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">adaptiveQuantization</span><span class="p">:</span> <span class="kt"><a href="../../Structs/MediaLive/H264AdaptiveQuantization.html">H264AdaptiveQuantization</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">afdSignaling</span><span class="p">:</span> <span class="kt"><a href="../../Structs/MediaLive/AfdSignaling.html">AfdSignaling</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">bitrate</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">bufFillPct</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">bufSize</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">colorMetadata</span><span class="p">:</span> <span class="kt"><a href="../../Structs/MediaLive/H264ColorMetadata.html">H264ColorMetadata</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">colorSpaceSettings</span><span class="p">:</span> <span class="kt"><a href="../../Structs/MediaLive/H264ColorSpaceSettings.html">H264ColorSpaceSettings</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">entropyEncoding</span><span class="p">:</span> <span class="kt"><a href="../../Structs/MediaLive/H264EntropyEncoding.html">H264EntropyEncoding</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">fixedAfd</span><span class="p">:</span> <span class="kt"><a href="../../Structs/MediaLive/FixedAfd.html">FixedAfd</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">flickerAq</span><span class="p">:</span> <span class="kt"><a href="../../Structs/MediaLive/H264FlickerAq.html">H264FlickerAq</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">forceFieldPictures</span><span class="p">:</span> <span class="kt"><a href="../../Structs/MediaLive/H264ForceFieldPictures.html">H264ForceFieldPictures</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">framerateControl</span><span class="p">:</span> <span class="kt"><a href="../../Structs/MediaLive/H264FramerateControl.html">H264FramerateControl</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">framerateDenominator</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">framerateNumerator</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">gopBReference</span><span class="p">:</span> <span class="kt"><a href="../../Structs/MediaLive/H264GopBReference.html">H264GopBReference</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">gopClosedCadence</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">gopNumBFrames</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">gopSize</span><span class="p">:</span> <span class="kt">Double</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">gopSizeUnits</span><span class="p">:</span> <span class="kt"><a href="../../Structs/MediaLive/H264GopSizeUnits.html">H264GopSizeUnits</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">level</span><span class="p">:</span> <span class="kt"><a href="../../Structs/MediaLive/H264Level.html">H264Level</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">lookAheadRateControl</span><span class="p">:</span> <span class="kt"><a href="../../Structs/MediaLive/H264LookAheadRateControl.html">H264LookAheadRateControl</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">maxBitrate</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">minIInterval</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">numRefFrames</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">parControl</span><span class="p">:</span> <span class="kt"><a href="../../Structs/MediaLive/H264ParControl.html">H264ParControl</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">parDenominator</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">parNumerator</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">profile</span><span class="p">:</span> <span class="kt"><a href="../../Structs/MediaLive/H264Profile.html">H264Profile</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">qvbrQualityLevel</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">rateControlMode</span><span class="p">:</span> <span class="kt"><a href="../../Structs/MediaLive/H264RateControlMode.html">H264RateControlMode</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">scanType</span><span class="p">:</span> <span class="kt"><a href="../../Structs/MediaLive/H264ScanType.html">H264ScanType</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">sceneChangeDetect</span><span class="p">:</span> <span class="kt"><a href="../../Structs/MediaLive/H264SceneChangeDetect.html">H264SceneChangeDetect</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">slices</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">softness</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">spatialAq</span><span class="p">:</span> <span class="kt"><a href="../../Structs/MediaLive/H264SpatialAq.html">H264SpatialAq</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">subgopLength</span><span class="p">:</span> <span class="kt"><a href="../../Structs/MediaLive/H264SubGopLength.html">H264SubGopLength</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">syntax</span><span class="p">:</span> <span class="kt"><a href="../../Structs/MediaLive/H264Syntax.html">H264Syntax</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">temporalAq</span><span class="p">:</span> <span class="kt"><a href="../../Structs/MediaLive/H264TemporalAq.html">H264TemporalAq</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">timecodeInsertion</span><span class="p">:</span> <span class="kt"><a href="../../Structs/MediaLive/H264TimecodeInsertionBehavior.html">H264TimecodeInsertionBehavior</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">adaptiveQuantization</span><span class="p">:</span> <span class="kt"><a href="../../Structs/MediaLive/H264AdaptiveQuantization.html">H264AdaptiveQuantization</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">afdSignaling</span><span class="p">:</span> <span class="kt"><a href="../../Structs/MediaLive/AfdSignaling.html">AfdSignaling</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">bitrate</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">bufFillPct</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">bufSize</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">colorMetadata</span><span class="p">:</span> <span class="kt"><a href="../../Structs/MediaLive/H264ColorMetadata.html">H264ColorMetadata</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">colorSpaceSettings</span><span class="p">:</span> <span class="kt"><a href="../../Structs/MediaLive/H264ColorSpaceSettings.html">H264ColorSpaceSettings</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">entropyEncoding</span><span class="p">:</span> <span class="kt"><a href="../../Structs/MediaLive/H264EntropyEncoding.html">H264EntropyEncoding</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">filterSettings</span><span class="p">:</span> <span class="kt"><a href="../../Structs/MediaLive/H264FilterSettings.html">H264FilterSettings</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">fixedAfd</span><span class="p">:</span> <span class="kt"><a href="../../Structs/MediaLive/FixedAfd.html">FixedAfd</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">flickerAq</span><span class="p">:</span> <span class="kt"><a href="../../Structs/MediaLive/H264FlickerAq.html">H264FlickerAq</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">forceFieldPictures</span><span class="p">:</span> <span class="kt"><a href="../../Structs/MediaLive/H264ForceFieldPictures.html">H264ForceFieldPictures</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">framerateControl</span><span class="p">:</span> <span class="kt"><a href="../../Structs/MediaLive/H264FramerateControl.html">H264FramerateControl</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">framerateDenominator</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">framerateNumerator</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">gopBReference</span><span class="p">:</span> <span class="kt"><a href="../../Structs/MediaLive/H264GopBReference.html">H264GopBReference</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">gopClosedCadence</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">gopNumBFrames</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">gopSize</span><span class="p">:</span> <span class="kt">Double</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">gopSizeUnits</span><span class="p">:</span> <span class="kt"><a href="../../Structs/MediaLive/H264GopSizeUnits.html">H264GopSizeUnits</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">level</span><span class="p">:</span> <span class="kt"><a href="../../Structs/MediaLive/H264Level.html">H264Level</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">lookAheadRateControl</span><span class="p">:</span> <span class="kt"><a href="../../Structs/MediaLive/H264LookAheadRateControl.html">H264LookAheadRateControl</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">maxBitrate</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">minIInterval</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">numRefFrames</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">parControl</span><span class="p">:</span> <span class="kt"><a href="../../Structs/MediaLive/H264ParControl.html">H264ParControl</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">parDenominator</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">parNumerator</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">profile</span><span class="p">:</span> <span class="kt"><a href="../../Structs/MediaLive/H264Profile.html">H264Profile</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">qualityLevel</span><span class="p">:</span> <span class="kt"><a href="../../Structs/MediaLive/H264QualityLevel.html">H264QualityLevel</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">qvbrQualityLevel</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">rateControlMode</span><span class="p">:</span> <span class="kt"><a href="../../Structs/MediaLive/H264RateControlMode.html">H264RateControlMode</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">scanType</span><span class="p">:</span> <span class="kt"><a href="../../Structs/MediaLive/H264ScanType.html">H264ScanType</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">sceneChangeDetect</span><span class="p">:</span> <span class="kt"><a href="../../Structs/MediaLive/H264SceneChangeDetect.html">H264SceneChangeDetect</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">slices</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">softness</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">spatialAq</span><span class="p">:</span> <span class="kt"><a href="../../Structs/MediaLive/H264SpatialAq.html">H264SpatialAq</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">subgopLength</span><span class="p">:</span> <span class="kt"><a href="../../Structs/MediaLive/H264SubGopLength.html">H264SubGopLength</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">syntax</span><span class="p">:</span> <span class="kt"><a href="../../Structs/MediaLive/H264Syntax.html">H264Syntax</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">temporalAq</span><span class="p">:</span> <span class="kt"><a href="../../Structs/MediaLive/H264TemporalAq.html">H264TemporalAq</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">timecodeInsertion</span><span class="p">:</span> <span class="kt"><a href="../../Structs/MediaLive/H264TimecodeInsertionBehavior.html">H264TimecodeInsertionBehavior</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>

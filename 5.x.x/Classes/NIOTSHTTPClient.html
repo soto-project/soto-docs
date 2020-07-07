@@ -14,7 +14,7 @@
     <a title="NIOTSHTTPClient Class Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html"> Docs</a> (55% documented)</p>
+        <p><a href="../index.html"> Docs</a> (54% documented)</p>
         <p class="header-right"><a href="https://github.com/swift-aws/aws-sdk-swift"><img src="../img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
@@ -135,6 +135,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../CloudWatchLogs.html">CloudWatchLogs</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../CodeArtifact.html">CodeArtifact</a>
           </li>
           <li class="nav-group-name">
             <a href="../CodeBuild.html">CodeBuild</a>
@@ -326,6 +329,9 @@
             <a href="../Health.html">Health</a>
           </li>
           <li class="nav-group-name">
+            <a href="../Honeycode.html">Honeycode</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../IAM.html">IAM</a>
           </li>
           <li class="nav-group-name">
@@ -363,6 +369,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../IoTSecureTunneling.html">IoTSecureTunneling</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../IoTSiteWise.html">IoTSiteWise</a>
           </li>
           <li class="nav-group-name">
             <a href="../IoTThingsGraph.html">IoTThingsGraph</a>
@@ -426,6 +435,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../Macie.html">Macie</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Macie2.html">Macie2</a>
           </li>
           <li class="nav-group-name">
             <a href="../ManagedBlockchain.html">ManagedBlockchain</a>
@@ -653,6 +665,9 @@
             <a href="../Support.html">Support</a>
           </li>
           <li class="nav-group-name">
+            <a href="../Synthetics.html">Synthetics</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../Textract.html">Textract</a>
           </li>
           <li class="nav-group-name">
@@ -709,6 +724,9 @@
           <li class="nav-group-name">
             <a href="../Other%20Structs.html">Other Structures</a>
           </li>
+          <li class="nav-group-name">
+            <a href="../Other%20Typealiases.html">Other Type Aliases</a>
+          </li>
         </ul>
       </nav>
       <article class="main-content">
@@ -717,8 +735,9 @@
             <h1>NIOTSHTTPClient</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight swift"><code><span class="kd">@available(OSX 10.14, iOS 12.0, tvOS 12.0, watchOS 6.0, *)</span>
+                  <pre class="highlight swift"><code><span class="kd">@available</span><span class="p">(</span><span class="kt">OSX</span> <span class="mf">10.14</span><span class="p">,</span> <span class="n">iOS</span> <span class="mf">12.0</span><span class="p">,</span> <span class="n">tvOS</span> <span class="mf">12.0</span><span class="p">,</span> <span class="n">watchOS</span> <span class="mf">6.0</span><span class="p">,</span> <span class="o">*</span><span class="p">)</span>
 <span class="kd">public</span> <span class="kd">final</span> <span class="kd">class</span> <span class="kt">NIOTSHTTPClient</span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">NIOTSHTTPClient</span><span class="p">:</span> <span class="kt"><a href="../Protocols/AWSHTTPClient.html">AWSHTTPClient</a></span></code></pre>
 
                 </div>
               </div>
@@ -728,6 +747,34 @@
           <section class="section task-group-section">
             <div class="task-group">
               <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:15AWSSDKSwiftCore15NIOTSHTTPClientC22EventLoopGroupProviderO"></a>
+                    <a name="//apple_ref/swift/Enum/EventLoopGroupProvider" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15AWSSDKSwiftCore15NIOTSHTTPClientC22EventLoopGroupProviderO">EventLoopGroupProvider</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Specifies how <code>EventLoopGroup</code> will be created and establishes lifecycle ownership.</p>
+
+                        <a href="../Classes/NIOTSHTTPClient/EventLoopGroupProvider.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">EventLoopGroupProvider</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
                 <li class="item">
                   <div>
                     <code>
@@ -743,6 +790,7 @@
                       <div class="abstract">
                         <p>Request structure to send</p>
 
+                        <a href="../Classes/NIOTSHTTPClient/Request.html" class="slightly-smaller">See more</a>
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
@@ -770,12 +818,14 @@
                       <div class="abstract">
                         <p>Response structure received back</p>
 
+                        <a href="../Classes/NIOTSHTTPClient/Response.html" class="slightly-smaller">See more</a>
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Response</span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt"><a href="../Classes/NIOTSHTTPClient.html">NIOTSHTTPClient</a></span><span class="o">.</span><span class="kt">Response</span><span class="p">:</span> <span class="kt"><a href="../Protocols/AWSHTTPResponse.html">AWSHTTPResponse</a></span></code></pre>
 
                         </div>
                       </div>
@@ -813,9 +863,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:15AWSSDKSwiftCore15NIOTSHTTPClientC14eventLoopGroupAC20NIOTransportServices010NIOTSEventeF0C_tcfc"></a>
-                    <a name="//apple_ref/swift/Method/init(eventLoopGroup:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15AWSSDKSwiftCore15NIOTSHTTPClientC14eventLoopGroupAC20NIOTransportServices010NIOTSEventeF0C_tcfc">init(eventLoopGroup:)</a>
+                    <a name="/s:15AWSSDKSwiftCore15NIOTSHTTPClientC22eventLoopGroupProviderA2C05EventefG0O_tcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(eventLoopGroupProvider:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15AWSSDKSwiftCore15NIOTSHTTPClientC22eventLoopGroupProviderA2C05EventefG0O_tcfc">init(eventLoopGroupProvider:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -830,7 +880,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">eventLoopGroup</span><span class="p">:</span> <span class="kt">NIOTSEventLoopGroup</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">eventLoopGroupProvider</span><span class="p">:</span> <span class="kt"><a href="../Classes/NIOTSHTTPClient/EventLoopGroupProvider.html">EventLoopGroupProvider</a></span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -840,9 +890,36 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:15AWSSDKSwiftCore15NIOTSHTTPClientC7connect_7timeout3NIO15EventLoopFutureCyAC8ResponseVGAC7RequestV_AF10TimeAmountVtF"></a>
-                    <a name="//apple_ref/swift/Method/connect(_:timeout:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15AWSSDKSwiftCore15NIOTSHTTPClientC7connect_7timeout3NIO15EventLoopFutureCyAC8ResponseVGAC7RequestV_AF10TimeAmountVtF">connect(_:timeout:)</a>
+                    <a name="/s:15AWSSDKSwiftCore15NIOTSHTTPClientC12syncShutdownyyKF"></a>
+                    <a name="//apple_ref/swift/Method/syncShutdown()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15AWSSDKSwiftCore15NIOTSHTTPClientC12syncShutdownyyKF">syncShutdown()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Shuts down the client and <code>EventLoopGroup</code> if it was created by the client.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">syncShutdown</span><span class="p">()</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:15AWSSDKSwiftCore15NIOTSHTTPClientC7connect3url_7timeout2on3NIO15EventLoopFutureCyAC8ResponseVG10Foundation3URLV_AC7RequestVAH10TimeAmountVAH0iJ0_ptF"></a>
+                    <a name="//apple_ref/swift/Method/connect(url:_:timeout:on:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15AWSSDKSwiftCore15NIOTSHTTPClientC7connect3url_7timeout2on3NIO15EventLoopFutureCyAC8ResponseVG10Foundation3URLV_AC7RequestVAH10TimeAmountVAH0iJ0_ptF">connect(url:_:timeout:on:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -857,7 +934,59 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">connect</span><span class="p">(</span><span class="n">_</span> <span class="nv">request</span><span class="p">:</span> <span class="kt"><a href="../Classes/NIOTSHTTPClient.html#/s:15AWSSDKSwiftCore15NIOTSHTTPClientC7RequestV">Request</a></span><span class="p">,</span> <span class="nv">timeout</span><span class="p">:</span> <span class="kt">TimeAmount</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Classes/NIOTSHTTPClient.html#/s:15AWSSDKSwiftCore15NIOTSHTTPClientC8ResponseV">Response</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">connect</span><span class="p">(</span><span class="nv">url</span><span class="p">:</span> <span class="kt">URL</span><span class="p">,</span> <span class="n">_</span> <span class="nv">request</span><span class="p">:</span> <span class="kt"><a href="../Classes/NIOTSHTTPClient/Request.html">Request</a></span><span class="p">,</span> <span class="nv">timeout</span><span class="p">:</span> <span class="kt">TimeAmount</span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Classes/NIOTSHTTPClient/Response.html">Response</a></span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:15AWSSDKSwiftCore13AWSHTTPClientP14eventLoopGroup3NIO05EventeF0_pvp"></a>
+                    <a name="//apple_ref/swift/Property/eventLoopGroup" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15AWSSDKSwiftCore13AWSHTTPClientP14eventLoopGroup3NIO05EventeF0_pvp">eventLoopGroup</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">eventLoopGroup</span><span class="p">:</span> <span class="kt">EventLoopGroup</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:15AWSSDKSwiftCore13AWSHTTPClientP7execute7request7timeout2on3NIO15EventLoopFutureCyAA15AWSHTTPResponse_pGAA14AWSHTTPRequestV_AH10TimeAmountVAH0iJ0_ptF"></a>
+                    <a name="//apple_ref/swift/Method/execute(request:timeout:on:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15AWSSDKSwiftCore13AWSHTTPClientP7execute7request7timeout2on3NIO15EventLoopFutureCyAA15AWSHTTPResponse_pGAA14AWSHTTPRequestV_AH10TimeAmountVAH0iJ0_ptF">execute(request:timeout:on:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">execute</span><span class="p">(</span><span class="nv">request</span><span class="p">:</span> <span class="kt"><a href="../Structs/AWSHTTPRequest.html">AWSHTTPRequest</a></span><span class="p">,</span> <span class="nv">timeout</span><span class="p">:</span> <span class="kt">TimeAmount</span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Protocols/AWSHTTPResponse.html">AWSHTTPResponse</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
                       </div>

@@ -14,7 +14,7 @@
     <a title="TestIdentityProviderRequest Structure Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../../index.html"> Docs</a> (55% documented)</p>
+        <p><a href="../../index.html"> Docs</a> (54% documented)</p>
         <p class="header-right"><a href="https://github.com/swift-aws/aws-sdk-swift"><img src="../../img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
@@ -135,6 +135,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../CloudWatchLogs.html">CloudWatchLogs</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../CodeArtifact.html">CodeArtifact</a>
           </li>
           <li class="nav-group-name">
             <a href="../../CodeBuild.html">CodeBuild</a>
@@ -326,6 +329,9 @@
             <a href="../../Health.html">Health</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../Honeycode.html">Honeycode</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../IAM.html">IAM</a>
           </li>
           <li class="nav-group-name">
@@ -363,6 +369,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../IoTSecureTunneling.html">IoTSecureTunneling</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../IoTSiteWise.html">IoTSiteWise</a>
           </li>
           <li class="nav-group-name">
             <a href="../../IoTThingsGraph.html">IoTThingsGraph</a>
@@ -426,6 +435,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../Macie.html">Macie</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../Macie2.html">Macie2</a>
           </li>
           <li class="nav-group-name">
             <a href="../../ManagedBlockchain.html">ManagedBlockchain</a>
@@ -653,6 +665,9 @@
             <a href="../../Support.html">Support</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../Synthetics.html">Synthetics</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../Textract.html">Textract</a>
           </li>
           <li class="nav-group-name">
@@ -709,6 +724,9 @@
           <li class="nav-group-name">
             <a href="../../Other%20Structs.html">Other Structures</a>
           </li>
+          <li class="nav-group-name">
+            <a href="../../Other%20Typealiases.html">Other Type Aliases</a>
+          </li>
         </ul>
       </nav>
       <article class="main-content">
@@ -740,7 +758,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>A system-assigned identifier for a specific server. That server&rsquo;s user authentication method is tested with a user name and password.</p>
+                        <p>A system-assigned identifier for a specific file transfer protocol-enabled server. That server&rsquo;s user authentication method is tested with a user name and password.</p>
 
                       </div>
                       <div class="declaration">
@@ -748,6 +766,60 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">serverId</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11AWSTransfer8TransferV27TestIdentityProviderRequestV14serverProtocolAC0H0OSgvp"></a>
+                    <a name="//apple_ref/swift/Property/serverProtocol" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11AWSTransfer8TransferV27TestIdentityProviderRequestV14serverProtocolAC0H0OSgvp">serverProtocol</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The type of file transfer protocol to be tested. The available protocols are:   Secure Shell (SSH) File Transfer Protocol (SFTP)   File Transfer Protocol Secure (FTPS)   File Transfer Protocol (FTP)</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">serverProtocol</span><span class="p">:</span> <span class="kt"><a href="../../Structs/Transfer/Protocol.html">Protocol</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11AWSTransfer8TransferV27TestIdentityProviderRequestV8sourceIpSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/sourceIp" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11AWSTransfer8TransferV27TestIdentityProviderRequestV8sourceIpSSSgvp">sourceIp</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The source IP address of the user account to be tested.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">sourceIp</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
 
                         </div>
                       </div>
@@ -767,7 +839,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>This request parameter is the name of the user account to be tested.</p>
+                        <p>The name of the user account to be tested.</p>
 
                       </div>
                       <div class="declaration">
@@ -811,9 +883,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:11AWSTransfer8TransferV27TestIdentityProviderRequestV8serverId8userName0I8PasswordAESS_S2SSgtcfc"></a>
-                    <a name="//apple_ref/swift/Method/init(serverId:userName:userPassword:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11AWSTransfer8TransferV27TestIdentityProviderRequestV8serverId8userName0I8PasswordAESS_S2SSgtcfc">init(serverId:userName:userPassword:)</a>
+                    <a name="/s:11AWSTransfer8TransferV27TestIdentityProviderRequestV8serverId0G8Protocol8sourceIp8userName0L8PasswordAESS_AC0I0OSgSSSgSSANtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(serverId:serverProtocol:sourceIp:userName:userPassword:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11AWSTransfer8TransferV27TestIdentityProviderRequestV8serverId0G8Protocol8sourceIp8userName0L8PasswordAESS_AC0I0OSgSSSgSSANtcfc">init(serverId:serverProtocol:sourceIp:userName:userPassword:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -828,7 +900,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">serverId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">userName</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">userPassword</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">serverId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">serverProtocol</span><span class="p">:</span> <span class="kt"><a href="../../Structs/Transfer/Protocol.html">Protocol</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">sourceIp</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">userName</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">userPassword</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
