@@ -15,7 +15,7 @@
     <header>
       <div class="content-wrapper">
         <p><a href="../index.html"> Docs</a> (54% documented)</p>
-        <p class="header-right"><a href="https://github.com/swift-aws/aws-sdk-swift"><img src="../img/gh.png"/>View on GitHub</a></p>
+        <p class="header-right"><a href="https://github.com/soto-project/soto"><img src="../img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -28,6 +28,9 @@
     <div class="content-wrapper">
       <nav class="sidebar">
         <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../User%20Guides.html">User Guides</a>
+          </li>
           <li class="nav-group-name">
             <a href="../AWSSDKSwiftCore.html">AWSSDKSwiftCore</a>
           </li>
@@ -68,6 +71,9 @@
             <a href="../AppSync.html">AppSync</a>
           </li>
           <li class="nav-group-name">
+            <a href="../Appflow.html">Appflow</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../ApplicationAutoScaling.html">ApplicationAutoScaling</a>
           </li>
           <li class="nav-group-name">
@@ -93,6 +99,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../Batch.html">Batch</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Braket.html">Braket</a>
           </li>
           <li class="nav-group-name">
             <a href="../Budgets.html">Budgets</a>
@@ -335,6 +344,12 @@
             <a href="../IAM.html">IAM</a>
           </li>
           <li class="nav-group-name">
+            <a href="../IVS.html">IVS</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../IdentityStore.html">IdentityStore</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../Imagebuilder.html">Imagebuilder</a>
           </li>
           <li class="nav-group-name">
@@ -557,6 +572,9 @@
             <a href="../Redshift.html">Redshift</a>
           </li>
           <li class="nav-group-name">
+            <a href="../RedshiftDataAPIService.html">RedshiftDataAPIService</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../Rekognition.html">Rekognition</a>
           </li>
           <li class="nav-group-name">
@@ -606,6 +624,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../SSO.html">SSO</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../SSOAdmin.html">SSOAdmin</a>
           </li>
           <li class="nav-group-name">
             <a href="../SSOOIDC.html">SSOOIDC</a>
@@ -735,13 +756,12 @@
             <h1>IoTJobsDataPlane</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">IoTJobsDataPlane</span></code></pre>
+                  
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">IoTJobsDataPlane</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSService.html">AWSService</a></span></code></pre>
 
                 </div>
               </div>
-            <p>Client object for interacting with AWS IoTJobsDataPlane service.</p>
-
-<p>AWS IoT Jobs is a service that allows you to define a set of jobs — remote operations that are sent to and executed on one or more devices connected to AWS IoT. For example, you can define a job that instructs a set of devices to download and install application or firmware updates, reboot, rotate certificates, or perform remote troubleshooting operations.  To create a job, you make a job document which is a description of the remote operations to be performed, and you specify a list of targets that should perform the operations. The targets can be individual things, thing groups or both.  AWS IoT Jobs sends a message to inform the targets that a job is available. The target starts the execution of the job by downloading the job document, performing the operations it specifies, and reporting its progress to AWS IoT. The Jobs service provides commands to track the progress of a job on a specific target and for all the targets of the job</p>
+            <p>Undocumented</p>
 
           </section>
           <section class="section task-group-section">
@@ -749,17 +769,19 @@
               <div class="task-name-container">
                 <a name="/Member%20variables"></a>
                 <a name="//apple_ref/swift/Section/Member variables" class="dashAnchor"></a>
-                <a href="#/Member%20variables">
-                  <h3 class="section-name">Member variables</h3>
-                </a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Member%20variables"></a>
+                  <h3 class="section-name"><p>Member variables</p>
+</h3>
+                </div>
               </div>
               <ul>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:19AWSIoTJobsDataPlane02IobcD0V6client15AWSSDKSwiftCore9AWSClientCvp"></a>
+                    <a name="/s:8SotoCore10AWSServiceP6clientAA9AWSClientCvp"></a>
                     <a name="//apple_ref/swift/Property/client" class="dashAnchor"></a>
-                    <a class="token" href="#/s:19AWSIoTJobsDataPlane02IobcD0V6client15AWSSDKSwiftCore9AWSClientCvp">client</a>
+                    <a class="token" href="#/s:8SotoCore10AWSServiceP6clientAA9AWSClientCvp">client</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -767,8 +789,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
-
+                        
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
@@ -778,15 +799,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/IoTJobsDataPlane/IoTJobsDataPlane_API.swift#L19">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:19AWSIoTJobsDataPlane02IobcD0V13serviceConfig15AWSSDKSwiftCore010AWSServiceG0Cvp"></a>
-                    <a name="//apple_ref/swift/Property/serviceConfig" class="dashAnchor"></a>
-                    <a class="token" href="#/s:19AWSIoTJobsDataPlane02IobcD0V13serviceConfig15AWSSDKSwiftCore010AWSServiceG0Cvp">serviceConfig</a>
+                    <a name="/s:8SotoCore10AWSServiceP6configAA0C6ConfigCvp"></a>
+                    <a name="//apple_ref/swift/Property/config" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8SotoCore10AWSServiceP6configAA0C6ConfigCvp">config</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -794,16 +818,18 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
-
+                        
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">serviceConfig</span><span class="p">:</span> <span class="kt"><a href="../Classes/AWSServiceConfig.html">AWSServiceConfig</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">config</span><span class="p">:</span> <span class="kt"><a href="../Classes/AWSServiceConfig.html">AWSServiceConfig</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/IoTJobsDataPlane/IoTJobsDataPlane_API.swift#L21">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -814,17 +840,19 @@
               <div class="task-name-container">
                 <a name="/Initialization"></a>
                 <a name="//apple_ref/swift/Section/Initialization" class="dashAnchor"></a>
-                <a href="#/Initialization">
-                  <h3 class="section-name">Initialization</h3>
-                </a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Initialization"></a>
+                  <h3 class="section-name"><p>Initialization</p>
+</h3>
+                </div>
               </div>
               <ul>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:19AWSIoTJobsDataPlane02IobcD0V6client6region9partition8endpointAC15AWSSDKSwiftCore9AWSClientC_AH6RegionVSgAH9PartitionVSSSgtcfc"></a>
-                    <a name="//apple_ref/swift/Method/init(client:region:partition:endpoint:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:19AWSIoTJobsDataPlane02IobcD0V6client6region9partition8endpointAC15AWSSDKSwiftCore9AWSClientC_AH6RegionVSgAH9PartitionVSSSgtcfc">init(client:region:partition:endpoint:)</a>
+                    <a name="/s:20SotoIoTJobsDataPlane0bcdE0V6client6region9partition8endpoint7timeout19byteBufferAllocator7optionsAC0A4Core9AWSClientC_AK6RegionVSgAK12AWSPartitionVSSSg3NIO10TimeAmountVSgAT04BytelM0VAK16AWSServiceConfigC7OptionsVtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(client:region:partition:endpoint:timeout:byteBufferAllocator:options:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:20SotoIoTJobsDataPlane0bcdE0V6client6region9partition8endpoint7timeout19byteBufferAllocator7optionsAC0A4Core9AWSClientC_AK6RegionVSgAK12AWSPartitionVSSSg3NIO10TimeAmountVSgAT04BytelM0VAK16AWSServiceConfigC7OptionsVtcfc">init(client:<wbr>region:<wbr>partition:<wbr>endpoint:<wbr>timeout:<wbr>byteBufferAllocator:<wbr>options:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -841,9 +869,12 @@
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span>
     <span class="nv">client</span><span class="p">:</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="p">,</span>
-    <span class="nv">region</span><span class="p">:</span> <span class="kt">AWSSDKSwiftCore</span><span class="o">.</span><span class="kt"><a href="../Structs/Region.html">Region</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
-    <span class="nv">partition</span><span class="p">:</span> <span class="kt">AWSSDKSwiftCore</span><span class="o">.</span><span class="kt"><a href="../Structs/Partition.html">Partition</a></span> <span class="o">=</span> <span class="o">.</span><span class="n">aws</span><span class="p">,</span>
-    <span class="nv">endpoint</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span>
+    <span class="nv">region</span><span class="p">:</span> <span class="kt">SotoCore</span><span class="o">.</span><span class="kt"><a href="../Structs/Region.html">Region</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="nv">partition</span><span class="p">:</span> <span class="kt"><a href="../Structs/AWSPartition.html">AWSPartition</a></span> <span class="o">=</span> <span class="o">.</span><span class="n">aws</span><span class="p">,</span>
+    <span class="nv">endpoint</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="nv">timeout</span><span class="p">:</span> <span class="kt">TimeAmount</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="nv">byteBufferAllocator</span><span class="p">:</span> <span class="kt">ByteBufferAllocator</span> <span class="o">=</span> <span class="kt">ByteBufferAllocator</span><span class="p">(),</span>
+    <span class="nv">options</span><span class="p">:</span> <span class="kt"><a href="../Classes/AWSServiceConfig.html">AWSServiceConfig</a></span><span class="o">.</span><span class="kt">Options</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="p">)</span></code></pre>
 
                         </div>
@@ -900,8 +931,23 @@
                                 </div>
                               </td>
                             </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>timeout</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Timeout value for HTTP requests</p>
+                                </div>
+                              </td>
+                            </tr>
                           </tbody>
                         </table>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/IoTJobsDataPlane/IoTJobsDataPlane_API.swift#L39-L62">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -912,17 +958,19 @@
               <div class="task-name-container">
                 <a name="/API%20Calls"></a>
                 <a name="//apple_ref/swift/Section/API Calls" class="dashAnchor"></a>
-                <a href="#/API%20Calls">
-                  <h3 class="section-name">API Calls</h3>
-                </a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/API%20Calls"></a>
+                  <h3 class="section-name"><p>API Calls</p>
+</h3>
+                </div>
               </div>
               <ul>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:19AWSIoTJobsDataPlane02IobcD0V20describeJobExecution_2on3NIO15EventLoopFutureCyAC08DescribegH8ResponseVGAC0ngH7RequestV_AF0kL0_pSgtF"></a>
-                    <a name="//apple_ref/swift/Method/describeJobExecution(_:on:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:19AWSIoTJobsDataPlane02IobcD0V20describeJobExecution_2on3NIO15EventLoopFutureCyAC08DescribegH8ResponseVGAC0ngH7RequestV_AF0kL0_pSgtF">describeJobExecution(_:on:)</a>
+                    <a name="/s:20SotoIoTJobsDataPlane0bcdE0V20describeJobExecution_2on6logger3NIO15EventLoopFutureCyAC08DescribegH8ResponseVGAC0ogH7RequestV_AG0lM0_pSg7Logging6LoggerVtF"></a>
+                    <a name="//apple_ref/swift/Method/describeJobExecution(_:on:logger:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:20SotoIoTJobsDataPlane0bcdE0V20describeJobExecution_2on6logger3NIO15EventLoopFutureCyAC08DescribegH8ResponseVGAC0ogH7RequestV_AG0lM0_pSg7Logging6LoggerVtF">describeJobExecution(_:<wbr>on:<wbr>logger:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -937,9 +985,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">describeJobExecution</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/IoTJobsDataPlane/DescribeJobExecutionRequest.html">DescribeJobExecutionRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/IoTJobsDataPlane/DescribeJobExecutionResponse.html">DescribeJobExecutionResponse</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">describeJobExecution</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/IoTJobsDataPlane/DescribeJobExecutionRequest.html">DescribeJobExecutionRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">logger</span><span class="p">:</span> <span class="kt">Logger</span> <span class="o">=</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="o">.</span><span class="n">loggingDisabled</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/IoTJobsDataPlane/DescribeJobExecutionResponse.html">DescribeJobExecutionResponse</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/IoTJobsDataPlane/IoTJobsDataPlane_API.swift#L67-L69">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -947,9 +998,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:19AWSIoTJobsDataPlane02IobcD0V23getPendingJobExecutions_2on3NIO15EventLoopFutureCyAC03GetghI8ResponseVGAC0oghI7RequestV_AF0lM0_pSgtF"></a>
-                    <a name="//apple_ref/swift/Method/getPendingJobExecutions(_:on:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:19AWSIoTJobsDataPlane02IobcD0V23getPendingJobExecutions_2on3NIO15EventLoopFutureCyAC03GetghI8ResponseVGAC0oghI7RequestV_AF0lM0_pSgtF">getPendingJobExecutions(_:on:)</a>
+                    <a name="/s:20SotoIoTJobsDataPlane0bcdE0V23getPendingJobExecutions_2on6logger3NIO15EventLoopFutureCyAC03GetghI8ResponseVGAC0pghI7RequestV_AG0mN0_pSg7Logging6LoggerVtF"></a>
+                    <a name="//apple_ref/swift/Method/getPendingJobExecutions(_:on:logger:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:20SotoIoTJobsDataPlane0bcdE0V23getPendingJobExecutions_2on6logger3NIO15EventLoopFutureCyAC03GetghI8ResponseVGAC0pghI7RequestV_AG0mN0_pSg7Logging6LoggerVtF">getPendingJobExecutions(_:<wbr>on:<wbr>logger:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -964,9 +1015,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getPendingJobExecutions</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/IoTJobsDataPlane/GetPendingJobExecutionsRequest.html">GetPendingJobExecutionsRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/IoTJobsDataPlane/GetPendingJobExecutionsResponse.html">GetPendingJobExecutionsResponse</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getPendingJobExecutions</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/IoTJobsDataPlane/GetPendingJobExecutionsRequest.html">GetPendingJobExecutionsRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">logger</span><span class="p">:</span> <span class="kt">Logger</span> <span class="o">=</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="o">.</span><span class="n">loggingDisabled</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/IoTJobsDataPlane/GetPendingJobExecutionsResponse.html">GetPendingJobExecutionsResponse</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/IoTJobsDataPlane/IoTJobsDataPlane_API.swift#L72-L74">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -974,9 +1028,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:19AWSIoTJobsDataPlane02IobcD0V28startNextPendingJobExecution_2on3NIO15EventLoopFutureCyAC05StartghiJ8ResponseVGAC0pghiJ7RequestV_AF0mN0_pSgtF"></a>
-                    <a name="//apple_ref/swift/Method/startNextPendingJobExecution(_:on:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:19AWSIoTJobsDataPlane02IobcD0V28startNextPendingJobExecution_2on3NIO15EventLoopFutureCyAC05StartghiJ8ResponseVGAC0pghiJ7RequestV_AF0mN0_pSgtF">startNextPendingJobExecution(_:on:)</a>
+                    <a name="/s:20SotoIoTJobsDataPlane0bcdE0V28startNextPendingJobExecution_2on6logger3NIO15EventLoopFutureCyAC05StartghiJ8ResponseVGAC0qghiJ7RequestV_AG0nO0_pSg7Logging6LoggerVtF"></a>
+                    <a name="//apple_ref/swift/Method/startNextPendingJobExecution(_:on:logger:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:20SotoIoTJobsDataPlane0bcdE0V28startNextPendingJobExecution_2on6logger3NIO15EventLoopFutureCyAC05StartghiJ8ResponseVGAC0qghiJ7RequestV_AG0nO0_pSg7Logging6LoggerVtF">startNextPendingJobExecution(_:<wbr>on:<wbr>logger:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -991,9 +1045,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">startNextPendingJobExecution</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/IoTJobsDataPlane/StartNextPendingJobExecutionRequest.html">StartNextPendingJobExecutionRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/IoTJobsDataPlane/StartNextPendingJobExecutionResponse.html">StartNextPendingJobExecutionResponse</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">startNextPendingJobExecution</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/IoTJobsDataPlane/StartNextPendingJobExecutionRequest.html">StartNextPendingJobExecutionRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">logger</span><span class="p">:</span> <span class="kt">Logger</span> <span class="o">=</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="o">.</span><span class="n">loggingDisabled</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/IoTJobsDataPlane/StartNextPendingJobExecutionResponse.html">StartNextPendingJobExecutionResponse</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/IoTJobsDataPlane/IoTJobsDataPlane_API.swift#L77-L79">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1001,9 +1058,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:19AWSIoTJobsDataPlane02IobcD0V18updateJobExecution_2on3NIO15EventLoopFutureCyAC06UpdategH8ResponseVGAC0ngH7RequestV_AF0kL0_pSgtF"></a>
-                    <a name="//apple_ref/swift/Method/updateJobExecution(_:on:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:19AWSIoTJobsDataPlane02IobcD0V18updateJobExecution_2on3NIO15EventLoopFutureCyAC06UpdategH8ResponseVGAC0ngH7RequestV_AF0kL0_pSgtF">updateJobExecution(_:on:)</a>
+                    <a name="/s:20SotoIoTJobsDataPlane0bcdE0V18updateJobExecution_2on6logger3NIO15EventLoopFutureCyAC06UpdategH8ResponseVGAC0ogH7RequestV_AG0lM0_pSg7Logging6LoggerVtF"></a>
+                    <a name="//apple_ref/swift/Method/updateJobExecution(_:on:logger:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:20SotoIoTJobsDataPlane0bcdE0V18updateJobExecution_2on6logger3NIO15EventLoopFutureCyAC06UpdategH8ResponseVGAC0ogH7RequestV_AG0lM0_pSg7Logging6LoggerVtF">updateJobExecution(_:<wbr>on:<wbr>logger:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1018,9 +1075,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">updateJobExecution</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/IoTJobsDataPlane/UpdateJobExecutionRequest.html">UpdateJobExecutionRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/IoTJobsDataPlane/UpdateJobExecutionResponse.html">UpdateJobExecutionResponse</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">updateJobExecution</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/IoTJobsDataPlane/UpdateJobExecutionRequest.html">UpdateJobExecutionRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">logger</span><span class="p">:</span> <span class="kt">Logger</span> <span class="o">=</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="o">.</span><span class="n">loggingDisabled</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/IoTJobsDataPlane/UpdateJobExecutionResponse.html">UpdateJobExecutionResponse</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/IoTJobsDataPlane/IoTJobsDataPlane_API.swift#L82-L84">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1031,17 +1091,19 @@
               <div class="task-name-container">
                 <a name="/Enums"></a>
                 <a name="//apple_ref/swift/Section/Enums" class="dashAnchor"></a>
-                <a href="#/Enums">
-                  <h3 class="section-name">Enums</h3>
-                </a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Enums"></a>
+                  <h3 class="section-name"><p>Enums</p>
+</h3>
+                </div>
               </div>
               <ul>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:19AWSIoTJobsDataPlane02IobcD0V18JobExecutionStatusO"></a>
+                    <a name="/s:20SotoIoTJobsDataPlane0bcdE0V18JobExecutionStatusO"></a>
                     <a name="//apple_ref/swift/Enum/JobExecutionStatus" class="dashAnchor"></a>
-                    <a class="token" href="#/s:19AWSIoTJobsDataPlane02IobcD0V18JobExecutionStatusO">JobExecutionStatus</a>
+                    <a class="token" href="#/s:20SotoIoTJobsDataPlane0bcdE0V18JobExecutionStatusO">JobExecutionStatus</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1061,6 +1123,9 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/IoTJobsDataPlane/IoTJobsDataPlane_Shapes.swift#L23-L33">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
@@ -1070,17 +1135,19 @@
               <div class="task-name-container">
                 <a name="/Shapes"></a>
                 <a name="//apple_ref/swift/Section/Shapes" class="dashAnchor"></a>
-                <a href="#/Shapes">
-                  <h3 class="section-name">Shapes</h3>
-                </a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Shapes"></a>
+                  <h3 class="section-name"><p>Shapes</p>
+</h3>
+                </div>
               </div>
               <ul>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:19AWSIoTJobsDataPlane02IobcD0V27DescribeJobExecutionRequestV"></a>
+                    <a name="/s:20SotoIoTJobsDataPlane0bcdE0V27DescribeJobExecutionRequestV"></a>
                     <a name="//apple_ref/swift/Struct/DescribeJobExecutionRequest" class="dashAnchor"></a>
-                    <a class="token" href="#/s:19AWSIoTJobsDataPlane02IobcD0V27DescribeJobExecutionRequestV">DescribeJobExecutionRequest</a>
+                    <a class="token" href="#/s:20SotoIoTJobsDataPlane0bcdE0V27DescribeJobExecutionRequestV">DescribeJobExecutionRequest</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1100,15 +1167,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/IoTJobsDataPlane/IoTJobsDataPlane_Shapes.swift#L37-L69">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:19AWSIoTJobsDataPlane02IobcD0V28DescribeJobExecutionResponseV"></a>
+                    <a name="/s:20SotoIoTJobsDataPlane0bcdE0V28DescribeJobExecutionResponseV"></a>
                     <a name="//apple_ref/swift/Struct/DescribeJobExecutionResponse" class="dashAnchor"></a>
-                    <a class="token" href="#/s:19AWSIoTJobsDataPlane02IobcD0V28DescribeJobExecutionResponseV">DescribeJobExecutionResponse</a>
+                    <a class="token" href="#/s:20SotoIoTJobsDataPlane0bcdE0V28DescribeJobExecutionResponseV">DescribeJobExecutionResponse</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1124,9 +1194,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DescribeJobExecutionResponse</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DescribeJobExecutionResponse</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/IoTJobsDataPlane/IoTJobsDataPlane_Shapes.swift#L71-L82">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1134,9 +1207,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:19AWSIoTJobsDataPlane02IobcD0V30GetPendingJobExecutionsRequestV"></a>
+                    <a name="/s:20SotoIoTJobsDataPlane0bcdE0V30GetPendingJobExecutionsRequestV"></a>
                     <a name="//apple_ref/swift/Struct/GetPendingJobExecutionsRequest" class="dashAnchor"></a>
-                    <a class="token" href="#/s:19AWSIoTJobsDataPlane02IobcD0V30GetPendingJobExecutionsRequestV">GetPendingJobExecutionsRequest</a>
+                    <a class="token" href="#/s:20SotoIoTJobsDataPlane0bcdE0V30GetPendingJobExecutionsRequestV">GetPendingJobExecutionsRequest</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1156,15 +1229,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/IoTJobsDataPlane/IoTJobsDataPlane_Shapes.swift#L84-L103">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:19AWSIoTJobsDataPlane02IobcD0V31GetPendingJobExecutionsResponseV"></a>
+                    <a name="/s:20SotoIoTJobsDataPlane0bcdE0V31GetPendingJobExecutionsResponseV"></a>
                     <a name="//apple_ref/swift/Struct/GetPendingJobExecutionsResponse" class="dashAnchor"></a>
-                    <a class="token" href="#/s:19AWSIoTJobsDataPlane02IobcD0V31GetPendingJobExecutionsResponseV">GetPendingJobExecutionsResponse</a>
+                    <a class="token" href="#/s:20SotoIoTJobsDataPlane0bcdE0V31GetPendingJobExecutionsResponseV">GetPendingJobExecutionsResponse</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1180,9 +1256,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">GetPendingJobExecutionsResponse</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">GetPendingJobExecutionsResponse</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/IoTJobsDataPlane/IoTJobsDataPlane_Shapes.swift#L105-L120">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1190,9 +1269,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:19AWSIoTJobsDataPlane02IobcD0V12JobExecutionV"></a>
+                    <a name="/s:20SotoIoTJobsDataPlane0bcdE0V12JobExecutionV"></a>
                     <a name="//apple_ref/swift/Struct/JobExecution" class="dashAnchor"></a>
-                    <a class="token" href="#/s:19AWSIoTJobsDataPlane02IobcD0V12JobExecutionV">JobExecution</a>
+                    <a class="token" href="#/s:20SotoIoTJobsDataPlane0bcdE0V12JobExecutionV">JobExecution</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1208,9 +1287,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">JobExecution</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">JobExecution</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/IoTJobsDataPlane/IoTJobsDataPlane_Shapes.swift#L122-L173">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1218,9 +1300,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:19AWSIoTJobsDataPlane02IobcD0V17JobExecutionStateV"></a>
+                    <a name="/s:20SotoIoTJobsDataPlane0bcdE0V17JobExecutionStateV"></a>
                     <a name="//apple_ref/swift/Struct/JobExecutionState" class="dashAnchor"></a>
-                    <a class="token" href="#/s:19AWSIoTJobsDataPlane02IobcD0V17JobExecutionStateV">JobExecutionState</a>
+                    <a class="token" href="#/s:20SotoIoTJobsDataPlane0bcdE0V17JobExecutionStateV">JobExecutionState</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1236,9 +1318,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">JobExecutionState</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">JobExecutionState</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/IoTJobsDataPlane/IoTJobsDataPlane_Shapes.swift#L175-L194">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1246,9 +1331,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:19AWSIoTJobsDataPlane02IobcD0V19JobExecutionSummaryV"></a>
+                    <a name="/s:20SotoIoTJobsDataPlane0bcdE0V19JobExecutionSummaryV"></a>
                     <a name="//apple_ref/swift/Struct/JobExecutionSummary" class="dashAnchor"></a>
-                    <a class="token" href="#/s:19AWSIoTJobsDataPlane02IobcD0V19JobExecutionSummaryV">JobExecutionSummary</a>
+                    <a class="token" href="#/s:20SotoIoTJobsDataPlane0bcdE0V19JobExecutionSummaryV">JobExecutionSummary</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1264,9 +1349,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">JobExecutionSummary</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">JobExecutionSummary</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/IoTJobsDataPlane/IoTJobsDataPlane_Shapes.swift#L196-L227">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1274,9 +1362,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:19AWSIoTJobsDataPlane02IobcD0V35StartNextPendingJobExecutionRequestV"></a>
+                    <a name="/s:20SotoIoTJobsDataPlane0bcdE0V35StartNextPendingJobExecutionRequestV"></a>
                     <a name="//apple_ref/swift/Struct/StartNextPendingJobExecutionRequest" class="dashAnchor"></a>
-                    <a class="token" href="#/s:19AWSIoTJobsDataPlane02IobcD0V35StartNextPendingJobExecutionRequestV">StartNextPendingJobExecutionRequest</a>
+                    <a class="token" href="#/s:20SotoIoTJobsDataPlane0bcdE0V35StartNextPendingJobExecutionRequestV">StartNextPendingJobExecutionRequest</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1296,15 +1384,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/IoTJobsDataPlane/IoTJobsDataPlane_Shapes.swift#L229-L265">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:19AWSIoTJobsDataPlane02IobcD0V36StartNextPendingJobExecutionResponseV"></a>
+                    <a name="/s:20SotoIoTJobsDataPlane0bcdE0V36StartNextPendingJobExecutionResponseV"></a>
                     <a name="//apple_ref/swift/Struct/StartNextPendingJobExecutionResponse" class="dashAnchor"></a>
-                    <a class="token" href="#/s:19AWSIoTJobsDataPlane02IobcD0V36StartNextPendingJobExecutionResponseV">StartNextPendingJobExecutionResponse</a>
+                    <a class="token" href="#/s:20SotoIoTJobsDataPlane0bcdE0V36StartNextPendingJobExecutionResponseV">StartNextPendingJobExecutionResponse</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1320,9 +1411,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">StartNextPendingJobExecutionResponse</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">StartNextPendingJobExecutionResponse</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/IoTJobsDataPlane/IoTJobsDataPlane_Shapes.swift#L267-L278">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1330,9 +1424,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:19AWSIoTJobsDataPlane02IobcD0V25UpdateJobExecutionRequestV"></a>
+                    <a name="/s:20SotoIoTJobsDataPlane0bcdE0V25UpdateJobExecutionRequestV"></a>
                     <a name="//apple_ref/swift/Struct/UpdateJobExecutionRequest" class="dashAnchor"></a>
-                    <a class="token" href="#/s:19AWSIoTJobsDataPlane02IobcD0V25UpdateJobExecutionRequestV">UpdateJobExecutionRequest</a>
+                    <a class="token" href="#/s:20SotoIoTJobsDataPlane0bcdE0V25UpdateJobExecutionRequestV">UpdateJobExecutionRequest</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1352,15 +1446,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/IoTJobsDataPlane/IoTJobsDataPlane_Shapes.swift#L280-L343">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:19AWSIoTJobsDataPlane02IobcD0V26UpdateJobExecutionResponseV"></a>
+                    <a name="/s:20SotoIoTJobsDataPlane0bcdE0V26UpdateJobExecutionResponseV"></a>
                     <a name="//apple_ref/swift/Struct/UpdateJobExecutionResponse" class="dashAnchor"></a>
-                    <a class="token" href="#/s:19AWSIoTJobsDataPlane02IobcD0V26UpdateJobExecutionResponseV">UpdateJobExecutionResponse</a>
+                    <a class="token" href="#/s:20SotoIoTJobsDataPlane0bcdE0V26UpdateJobExecutionResponseV">UpdateJobExecutionResponse</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1376,9 +1473,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">UpdateJobExecutionResponse</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">UpdateJobExecutionResponse</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/IoTJobsDataPlane/IoTJobsDataPlane_Shapes.swift#L345-L360">Show on GitHub</a>
                       </div>
                     </section>
                   </div>

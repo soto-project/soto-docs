@@ -15,7 +15,7 @@
     <header>
       <div class="content-wrapper">
         <p><a href="../../index.html"> Docs</a> (54% documented)</p>
-        <p class="header-right"><a href="https://github.com/swift-aws/aws-sdk-swift"><img src="../../img/gh.png"/>View on GitHub</a></p>
+        <p class="header-right"><a href="https://github.com/soto-project/soto"><img src="../../img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -28,6 +28,9 @@
     <div class="content-wrapper">
       <nav class="sidebar">
         <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../../User%20Guides.html">User Guides</a>
+          </li>
           <li class="nav-group-name">
             <a href="../../AWSSDKSwiftCore.html">AWSSDKSwiftCore</a>
           </li>
@@ -68,6 +71,9 @@
             <a href="../../AppSync.html">AppSync</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../Appflow.html">Appflow</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../ApplicationAutoScaling.html">ApplicationAutoScaling</a>
           </li>
           <li class="nav-group-name">
@@ -93,6 +99,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../Batch.html">Batch</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../Braket.html">Braket</a>
           </li>
           <li class="nav-group-name">
             <a href="../../Budgets.html">Budgets</a>
@@ -335,6 +344,12 @@
             <a href="../../IAM.html">IAM</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../IVS.html">IVS</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../IdentityStore.html">IdentityStore</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../Imagebuilder.html">Imagebuilder</a>
           </li>
           <li class="nav-group-name">
@@ -557,6 +572,9 @@
             <a href="../../Redshift.html">Redshift</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../RedshiftDataAPIService.html">RedshiftDataAPIService</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../Rekognition.html">Rekognition</a>
           </li>
           <li class="nav-group-name">
@@ -606,6 +624,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../SSO.html">SSO</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../SSOAdmin.html">SSOAdmin</a>
           </li>
           <li class="nav-group-name">
             <a href="../../SSOOIDC.html">SSOOIDC</a>
@@ -735,7 +756,8 @@
             <h1>UserDefinedFunction</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">UserDefinedFunction</span> <span class="p">:</span> <span class="kt"><a href="../../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                  
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">UserDefinedFunction</span> <span class="p">:</span> <span class="kt"><a href="../../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                 </div>
               </div>
@@ -748,9 +770,39 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:7AWSGlue4GlueV19UserDefinedFunctionV9classNameSSSgvp"></a>
+                    <a name="/s:8SotoGlue0B0V19UserDefinedFunctionV9catalogIdSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/catalogId" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8SotoGlue0B0V19UserDefinedFunctionV9catalogIdSSSgvp">catalogId</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The ID of the Data Catalog in which the function resides.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">catalogId</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Glue/Glue_Shapes.swift#L10372">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8SotoGlue0B0V19UserDefinedFunctionV9classNameSSSgvp"></a>
                     <a name="//apple_ref/swift/Property/className" class="dashAnchor"></a>
-                    <a class="token" href="#/s:7AWSGlue4GlueV19UserDefinedFunctionV9classNameSSSgvp">className</a>
+                    <a class="token" href="#/s:8SotoGlue0B0V19UserDefinedFunctionV9classNameSSSgvp">className</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -769,15 +821,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Glue/Glue_Shapes.swift#L10374">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:7AWSGlue4GlueV19UserDefinedFunctionV10createTime15AWSSDKSwiftCore0G5StampVSgvp"></a>
+                    <a name="/s:8SotoGlue0B0V19UserDefinedFunctionV10createTime0A4Core0G5StampVSgvp"></a>
                     <a name="//apple_ref/swift/Property/createTime" class="dashAnchor"></a>
-                    <a class="token" href="#/s:7AWSGlue4GlueV19UserDefinedFunctionV10createTime15AWSSDKSwiftCore0G5StampVSgvp">createTime</a>
+                    <a class="token" href="#/s:8SotoGlue0B0V19UserDefinedFunctionV10createTime0A4Core0G5StampVSgvp">createTime</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -796,15 +851,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Glue/Glue_Shapes.swift#L10376">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:7AWSGlue4GlueV19UserDefinedFunctionV12databaseNameSSSgvp"></a>
+                    <a name="/s:8SotoGlue0B0V19UserDefinedFunctionV12databaseNameSSSgvp"></a>
                     <a name="//apple_ref/swift/Property/databaseName" class="dashAnchor"></a>
-                    <a class="token" href="#/s:7AWSGlue4GlueV19UserDefinedFunctionV12databaseNameSSSgvp">databaseName</a>
+                    <a class="token" href="#/s:8SotoGlue0B0V19UserDefinedFunctionV12databaseNameSSSgvp">databaseName</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -812,7 +870,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The name of the database where the function resides.</p>
+                        <p>The name of the catalog database that contains the function.</p>
 
                       </div>
                       <div class="declaration">
@@ -823,15 +881,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Glue/Glue_Shapes.swift#L10378">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:7AWSGlue4GlueV19UserDefinedFunctionV12functionNameSSSgvp"></a>
+                    <a name="/s:8SotoGlue0B0V19UserDefinedFunctionV12functionNameSSSgvp"></a>
                     <a name="//apple_ref/swift/Property/functionName" class="dashAnchor"></a>
-                    <a class="token" href="#/s:7AWSGlue4GlueV19UserDefinedFunctionV12functionNameSSSgvp">functionName</a>
+                    <a class="token" href="#/s:8SotoGlue0B0V19UserDefinedFunctionV12functionNameSSSgvp">functionName</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -850,15 +911,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Glue/Glue_Shapes.swift#L10380">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:7AWSGlue4GlueV19UserDefinedFunctionV9ownerNameSSSgvp"></a>
+                    <a name="/s:8SotoGlue0B0V19UserDefinedFunctionV9ownerNameSSSgvp"></a>
                     <a name="//apple_ref/swift/Property/ownerName" class="dashAnchor"></a>
-                    <a class="token" href="#/s:7AWSGlue4GlueV19UserDefinedFunctionV9ownerNameSSSgvp">ownerName</a>
+                    <a class="token" href="#/s:8SotoGlue0B0V19UserDefinedFunctionV9ownerNameSSSgvp">ownerName</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -877,15 +941,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Glue/Glue_Shapes.swift#L10382">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:7AWSGlue4GlueV19UserDefinedFunctionV9ownerTypeAC09PrincipalG0OSgvp"></a>
+                    <a name="/s:8SotoGlue0B0V19UserDefinedFunctionV9ownerTypeAC09PrincipalG0OSgvp"></a>
                     <a name="//apple_ref/swift/Property/ownerType" class="dashAnchor"></a>
-                    <a class="token" href="#/s:7AWSGlue4GlueV19UserDefinedFunctionV9ownerTypeAC09PrincipalG0OSgvp">ownerType</a>
+                    <a class="token" href="#/s:8SotoGlue0B0V19UserDefinedFunctionV9ownerTypeAC09PrincipalG0OSgvp">ownerType</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -904,15 +971,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Glue/Glue_Shapes.swift#L10384">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:7AWSGlue4GlueV19UserDefinedFunctionV12resourceUrisSayAC11ResourceUriVGSgvp"></a>
+                    <a name="/s:8SotoGlue0B0V19UserDefinedFunctionV12resourceUrisSayAC11ResourceUriVGSgvp"></a>
                     <a name="//apple_ref/swift/Property/resourceUris" class="dashAnchor"></a>
-                    <a class="token" href="#/s:7AWSGlue4GlueV19UserDefinedFunctionV12resourceUrisSayAC11ResourceUriVGSgvp">resourceUris</a>
+                    <a class="token" href="#/s:8SotoGlue0B0V19UserDefinedFunctionV12resourceUrisSayAC11ResourceUriVGSgvp">resourceUris</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -931,15 +1001,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Glue/Glue_Shapes.swift#L10386">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:7AWSGlue4GlueV19UserDefinedFunctionV9className10createTime08databaseG008functionG005ownerG00L4Type12resourceUrisAESSSg_15AWSSDKSwiftCore0I5StampVSgA3mC09PrincipalM0OSgSayAC11ResourceUriVGSgtcfc"></a>
-                    <a name="//apple_ref/swift/Method/init(className:createTime:databaseName:functionName:ownerName:ownerType:resourceUris:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:7AWSGlue4GlueV19UserDefinedFunctionV9className10createTime08databaseG008functionG005ownerG00L4Type12resourceUrisAESSSg_15AWSSDKSwiftCore0I5StampVSgA3mC09PrincipalM0OSgSayAC11ResourceUriVGSgtcfc">init(className:createTime:databaseName:functionName:ownerName:ownerType:resourceUris:)</a>
+                    <a name="/s:8SotoGlue0B0V19UserDefinedFunctionV9catalogId9className10createTime08databaseI008functionI005ownerI00N4Type12resourceUrisAESSSg_AN0A4Core0K5StampVSgA3nC09PrincipalO0OSgSayAC11ResourceUriVGSgtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(catalogId:className:createTime:databaseName:functionName:ownerName:ownerType:resourceUris:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8SotoGlue0B0V19UserDefinedFunctionV9catalogId9className10createTime08databaseI008functionI005ownerI00N4Type12resourceUrisAESSSg_AN0A4Core0K5StampVSgA3nC09PrincipalO0OSgSayAC11ResourceUriVGSgtcfc">init(catalogId:<wbr>className:<wbr>createTime:<wbr>databaseName:<wbr>functionName:<wbr>ownerName:<wbr>ownerType:<wbr>resourceUris:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -954,9 +1027,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">className</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">createTime</span><span class="p">:</span> <span class="kt"><a href="../../Structs/TimeStamp.html">TimeStamp</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">databaseName</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">functionName</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">ownerName</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">ownerType</span><span class="p">:</span> <span class="kt"><a href="../../Structs/Glue/PrincipalType.html">PrincipalType</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">resourceUris</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../../Structs/Glue/ResourceUri.html">ResourceUri</a></span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">catalogId</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">className</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">createTime</span><span class="p">:</span> <span class="kt"><a href="../../Structs/TimeStamp.html">TimeStamp</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">databaseName</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">functionName</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">ownerName</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">ownerType</span><span class="p">:</span> <span class="kt"><a href="../../Structs/Glue/PrincipalType.html">PrincipalType</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">resourceUris</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../../Structs/Glue/ResourceUri.html">ResourceUri</a></span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Glue/Glue_Shapes.swift#L10388-L10397">Show on GitHub</a>
                       </div>
                     </section>
                   </div>

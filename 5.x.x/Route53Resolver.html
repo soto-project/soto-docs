@@ -15,7 +15,7 @@
     <header>
       <div class="content-wrapper">
         <p><a href="index.html"> Docs</a> (54% documented)</p>
-        <p class="header-right"><a href="https://github.com/swift-aws/aws-sdk-swift"><img src="img/gh.png"/>View on GitHub</a></p>
+        <p class="header-right"><a href="https://github.com/soto-project/soto"><img src="img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -28,6 +28,9 @@
     <div class="content-wrapper">
       <nav class="sidebar">
         <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="User%20Guides.html">User Guides</a>
+          </li>
           <li class="nav-group-name">
             <a href="AWSSDKSwiftCore.html">AWSSDKSwiftCore</a>
           </li>
@@ -68,6 +71,9 @@
             <a href="AppSync.html">AppSync</a>
           </li>
           <li class="nav-group-name">
+            <a href="Appflow.html">Appflow</a>
+          </li>
+          <li class="nav-group-name">
             <a href="ApplicationAutoScaling.html">ApplicationAutoScaling</a>
           </li>
           <li class="nav-group-name">
@@ -93,6 +99,9 @@
           </li>
           <li class="nav-group-name">
             <a href="Batch.html">Batch</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="Braket.html">Braket</a>
           </li>
           <li class="nav-group-name">
             <a href="Budgets.html">Budgets</a>
@@ -335,6 +344,12 @@
             <a href="IAM.html">IAM</a>
           </li>
           <li class="nav-group-name">
+            <a href="IVS.html">IVS</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="IdentityStore.html">IdentityStore</a>
+          </li>
+          <li class="nav-group-name">
             <a href="Imagebuilder.html">Imagebuilder</a>
           </li>
           <li class="nav-group-name">
@@ -557,6 +572,9 @@
             <a href="Redshift.html">Redshift</a>
           </li>
           <li class="nav-group-name">
+            <a href="RedshiftDataAPIService.html">RedshiftDataAPIService</a>
+          </li>
+          <li class="nav-group-name">
             <a href="Rekognition.html">Rekognition</a>
           </li>
           <li class="nav-group-name">
@@ -606,6 +624,9 @@
           </li>
           <li class="nav-group-name">
             <a href="SSO.html">SSO</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="SSOAdmin.html">SSOAdmin</a>
           </li>
           <li class="nav-group-name">
             <a href="SSOOIDC.html">SSOOIDC</a>
@@ -741,9 +762,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:18AWSRoute53Resolver07Route53B0V"></a>
+                    <a name="/s:19SotoRoute53Resolver0bC0V"></a>
                     <a name="//apple_ref/swift/Struct/Route53Resolver" class="dashAnchor"></a>
-                    <a class="token" href="#/s:18AWSRoute53Resolver07Route53B0V">Route53Resolver</a>
+                    <a class="token" href="#/s:19SotoRoute53Resolver0bC0V">Route53Resolver</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -751,9 +772,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Client object for interacting with AWS Route53Resolver service.</p>
-
-<p>Here&rsquo;s how you set up to query an Amazon Route 53 private hosted zone from your network:   Connect your network to a VPC using AWS Direct Connect or a VPN.   Run the following AWS CLI command to create a Resolver endpoint:  create-resolver-endpoint &ndash;name [endpoint_name] &ndash;direction INBOUND &ndash;creator-request-id [unique_string] &ndash;security-group-ids [security_group_with_inbound_rules] &ndash;ip-addresses SubnetId=[subnet_id] SubnetId=[subnet_id_in_different_AZ]  Note the resolver endpoint ID that appears in the response. You&rsquo;ll use it in step 3.   Get the IP addresses for the Resolver endpoints:  get-resolver-endpoint &ndash;resolver-endpoint-id [resolver_endpoint_id]    In your network configuration, define the IP addresses that you got in step 3 as DNS servers. You can now query instance names in your VPCs and the names of records in your private hosted zone.   You can also perform the following operations using the AWS CLI:    list-resolver-endpoints: List all endpoints. The syntax includes options for pagination and filtering.    update-resolver-endpoints: Add IP addresses to an endpoint or remove IP addresses from an endpoint.    To delete an endpoint, use the following AWS CLI command:  delete-resolver-endpoint &ndash;resolver-endpoint-id [resolver_endpoint_id]</p>
+                        <p>Undocumented</p>
 
                         <a href="Structs/Route53Resolver.html" class="slightly-smaller">See more</a>
                       </div>
@@ -761,9 +780,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Route53Resolver</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Route53Resolver</span> <span class="p">:</span> <span class="kt"><a href="Protocols/AWSService.html">AWSService</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Route53Resolver/Route53Resolver_API.swift#L24-L225">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -771,9 +793,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:18AWSRoute53Resolver07Route53B9ErrorTypeO"></a>
+                    <a name="/s:19SotoRoute53Resolver0bC9ErrorTypeO"></a>
                     <a name="//apple_ref/swift/Enum/Route53ResolverErrorType" class="dashAnchor"></a>
-                    <a class="token" href="#/s:18AWSRoute53Resolver07Route53B9ErrorTypeO">Route53ResolverErrorType</a>
+                    <a class="token" href="#/s:19SotoRoute53Resolver0bC9ErrorTypeO">Route53ResolverErrorType</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -793,6 +815,9 @@
 <pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">Route53ResolverErrorType</span><span class="p">:</span> <span class="kt">CustomStringConvertible</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Route53Resolver/Route53Resolver_Error.swift#L20-L35">Show on GitHub</a>
                       </div>
                     </section>
                   </div>

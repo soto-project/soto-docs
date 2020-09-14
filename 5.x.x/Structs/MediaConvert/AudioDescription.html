@@ -15,7 +15,7 @@
     <header>
       <div class="content-wrapper">
         <p><a href="../../index.html"> Docs</a> (54% documented)</p>
-        <p class="header-right"><a href="https://github.com/swift-aws/aws-sdk-swift"><img src="../../img/gh.png"/>View on GitHub</a></p>
+        <p class="header-right"><a href="https://github.com/soto-project/soto"><img src="../../img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -28,6 +28,9 @@
     <div class="content-wrapper">
       <nav class="sidebar">
         <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../../User%20Guides.html">User Guides</a>
+          </li>
           <li class="nav-group-name">
             <a href="../../AWSSDKSwiftCore.html">AWSSDKSwiftCore</a>
           </li>
@@ -68,6 +71,9 @@
             <a href="../../AppSync.html">AppSync</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../Appflow.html">Appflow</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../ApplicationAutoScaling.html">ApplicationAutoScaling</a>
           </li>
           <li class="nav-group-name">
@@ -93,6 +99,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../Batch.html">Batch</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../Braket.html">Braket</a>
           </li>
           <li class="nav-group-name">
             <a href="../../Budgets.html">Budgets</a>
@@ -335,6 +344,12 @@
             <a href="../../IAM.html">IAM</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../IVS.html">IVS</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../IdentityStore.html">IdentityStore</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../Imagebuilder.html">Imagebuilder</a>
           </li>
           <li class="nav-group-name">
@@ -557,6 +572,9 @@
             <a href="../../Redshift.html">Redshift</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../RedshiftDataAPIService.html">RedshiftDataAPIService</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../Rekognition.html">Rekognition</a>
           </li>
           <li class="nav-group-name">
@@ -606,6 +624,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../SSO.html">SSO</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../SSOAdmin.html">SSOAdmin</a>
           </li>
           <li class="nav-group-name">
             <a href="../../SSOOIDC.html">SSOOIDC</a>
@@ -735,7 +756,8 @@
             <h1>AudioDescription</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">AudioDescription</span> <span class="p">:</span> <span class="kt"><a href="../../Protocols/AWSEncodableShape.html">AWSEncodableShape</a></span> <span class="o">&amp;</span> <span class="kt"><a href="../../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                  
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">AudioDescription</span> <span class="p">:</span> <span class="kt"><a href="../../Protocols/AWSEncodableShape.html">AWSEncodableShape</a></span> <span class="o">&amp;</span> <span class="kt"><a href="../../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                 </div>
               </div>
@@ -748,9 +770,39 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:15AWSMediaConvert05MediaB0V16AudioDescriptionV26audioNormalizationSettingsAC0dgH0VSgvp"></a>
+                    <a name="/s:16SotoMediaConvert0bC0V16AudioDescriptionV27audioChannelTaggingSettingsAC0dghI0VSgvp"></a>
+                    <a name="//apple_ref/swift/Property/audioChannelTaggingSettings" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16SotoMediaConvert0bC0V16AudioDescriptionV27audioChannelTaggingSettingsAC0dghI0VSgvp">audioChannelTaggingSettings</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>When you mimic a multi-channel audio layout with multiple mono-channel tracks, you can tag each channel layout manually. For example, you would tag the tracks that contain your left, right, and center audio with Left (L), Right &reg;, and Center &copy;, respectively. When you don&rsquo;t specify a value, MediaConvert labels your track as Center &copy; by default. To use audio layout tagging, your output must be in a QuickTime (.mov) container; your audio codec must be AAC, WAV, or AIFF; and you must set up your audio track to have only one channel.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">audioChannelTaggingSettings</span><span class="p">:</span> <span class="kt"><a href="../../Structs/MediaConvert/AudioChannelTaggingSettings.html">AudioChannelTaggingSettings</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/MediaConvert/MediaConvert_Shapes.swift#L2467">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16SotoMediaConvert0bC0V16AudioDescriptionV26audioNormalizationSettingsAC0dgH0VSgvp"></a>
                     <a name="//apple_ref/swift/Property/audioNormalizationSettings" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15AWSMediaConvert05MediaB0V16AudioDescriptionV26audioNormalizationSettingsAC0dgH0VSgvp">audioNormalizationSettings</a>
+                    <a class="token" href="#/s:16SotoMediaConvert0bC0V16AudioDescriptionV26audioNormalizationSettingsAC0dgH0VSgvp">audioNormalizationSettings</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -769,15 +821,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/MediaConvert/MediaConvert_Shapes.swift#L2469">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:15AWSMediaConvert05MediaB0V16AudioDescriptionV15audioSourceNameSSSgvp"></a>
+                    <a name="/s:16SotoMediaConvert0bC0V16AudioDescriptionV15audioSourceNameSSSgvp"></a>
                     <a name="//apple_ref/swift/Property/audioSourceName" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15AWSMediaConvert05MediaB0V16AudioDescriptionV15audioSourceNameSSSgvp">audioSourceName</a>
+                    <a class="token" href="#/s:16SotoMediaConvert0bC0V16AudioDescriptionV15audioSourceNameSSSgvp">audioSourceName</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -796,15 +851,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/MediaConvert/MediaConvert_Shapes.swift#L2471">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:15AWSMediaConvert05MediaB0V16AudioDescriptionV9audioTypeSiSgvp"></a>
+                    <a name="/s:16SotoMediaConvert0bC0V16AudioDescriptionV9audioTypeSiSgvp"></a>
                     <a name="//apple_ref/swift/Property/audioType" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15AWSMediaConvert05MediaB0V16AudioDescriptionV9audioTypeSiSgvp">audioType</a>
+                    <a class="token" href="#/s:16SotoMediaConvert0bC0V16AudioDescriptionV9audioTypeSiSgvp">audioType</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -823,15 +881,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/MediaConvert/MediaConvert_Shapes.swift#L2473">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:15AWSMediaConvert05MediaB0V16AudioDescriptionV16audioTypeControlAC0dgH0OSgvp"></a>
+                    <a name="/s:16SotoMediaConvert0bC0V16AudioDescriptionV16audioTypeControlAC0dgH0OSgvp"></a>
                     <a name="//apple_ref/swift/Property/audioTypeControl" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15AWSMediaConvert05MediaB0V16AudioDescriptionV16audioTypeControlAC0dgH0OSgvp">audioTypeControl</a>
+                    <a class="token" href="#/s:16SotoMediaConvert0bC0V16AudioDescriptionV16audioTypeControlAC0dgH0OSgvp">audioTypeControl</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -850,15 +911,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/MediaConvert/MediaConvert_Shapes.swift#L2475">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:15AWSMediaConvert05MediaB0V16AudioDescriptionV13codecSettingsAC0d5CodecG0VSgvp"></a>
+                    <a name="/s:16SotoMediaConvert0bC0V16AudioDescriptionV13codecSettingsAC0d5CodecG0VSgvp"></a>
                     <a name="//apple_ref/swift/Property/codecSettings" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15AWSMediaConvert05MediaB0V16AudioDescriptionV13codecSettingsAC0d5CodecG0VSgvp">codecSettings</a>
+                    <a class="token" href="#/s:16SotoMediaConvert0bC0V16AudioDescriptionV13codecSettingsAC0d5CodecG0VSgvp">codecSettings</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -877,15 +941,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/MediaConvert/MediaConvert_Shapes.swift#L2477">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:15AWSMediaConvert05MediaB0V16AudioDescriptionV18customLanguageCodeSSSgvp"></a>
+                    <a name="/s:16SotoMediaConvert0bC0V16AudioDescriptionV18customLanguageCodeSSSgvp"></a>
                     <a name="//apple_ref/swift/Property/customLanguageCode" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15AWSMediaConvert05MediaB0V16AudioDescriptionV18customLanguageCodeSSSgvp">customLanguageCode</a>
+                    <a class="token" href="#/s:16SotoMediaConvert0bC0V16AudioDescriptionV18customLanguageCodeSSSgvp">customLanguageCode</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -904,15 +971,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/MediaConvert/MediaConvert_Shapes.swift#L2479">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:15AWSMediaConvert05MediaB0V16AudioDescriptionV12languageCodeAC08LanguageG0OSgvp"></a>
+                    <a name="/s:16SotoMediaConvert0bC0V16AudioDescriptionV12languageCodeAC08LanguageG0OSgvp"></a>
                     <a name="//apple_ref/swift/Property/languageCode" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15AWSMediaConvert05MediaB0V16AudioDescriptionV12languageCodeAC08LanguageG0OSgvp">languageCode</a>
+                    <a class="token" href="#/s:16SotoMediaConvert0bC0V16AudioDescriptionV12languageCodeAC08LanguageG0OSgvp">languageCode</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -931,15 +1001,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/MediaConvert/MediaConvert_Shapes.swift#L2481">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:15AWSMediaConvert05MediaB0V16AudioDescriptionV19languageCodeControlAC0d8LanguagegH0OSgvp"></a>
+                    <a name="/s:16SotoMediaConvert0bC0V16AudioDescriptionV19languageCodeControlAC0d8LanguagegH0OSgvp"></a>
                     <a name="//apple_ref/swift/Property/languageCodeControl" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15AWSMediaConvert05MediaB0V16AudioDescriptionV19languageCodeControlAC0d8LanguagegH0OSgvp">languageCodeControl</a>
+                    <a class="token" href="#/s:16SotoMediaConvert0bC0V16AudioDescriptionV19languageCodeControlAC0d8LanguagegH0OSgvp">languageCodeControl</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -958,15 +1031,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/MediaConvert/MediaConvert_Shapes.swift#L2483">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:15AWSMediaConvert05MediaB0V16AudioDescriptionV13remixSettingsAC05RemixG0VSgvp"></a>
+                    <a name="/s:16SotoMediaConvert0bC0V16AudioDescriptionV13remixSettingsAC05RemixG0VSgvp"></a>
                     <a name="//apple_ref/swift/Property/remixSettings" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15AWSMediaConvert05MediaB0V16AudioDescriptionV13remixSettingsAC05RemixG0VSgvp">remixSettings</a>
+                    <a class="token" href="#/s:16SotoMediaConvert0bC0V16AudioDescriptionV13remixSettingsAC05RemixG0VSgvp">remixSettings</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -985,15 +1061,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/MediaConvert/MediaConvert_Shapes.swift#L2485">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:15AWSMediaConvert05MediaB0V16AudioDescriptionV10streamNameSSSgvp"></a>
+                    <a name="/s:16SotoMediaConvert0bC0V16AudioDescriptionV10streamNameSSSgvp"></a>
                     <a name="//apple_ref/swift/Property/streamName" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15AWSMediaConvert05MediaB0V16AudioDescriptionV10streamNameSSSgvp">streamName</a>
+                    <a class="token" href="#/s:16SotoMediaConvert0bC0V16AudioDescriptionV10streamNameSSSgvp">streamName</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1012,15 +1091,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/MediaConvert/MediaConvert_Shapes.swift#L2487">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:15AWSMediaConvert05MediaB0V16AudioDescriptionV26audioNormalizationSettings0F10SourceName0F4Type0fK7Control05codecH018customLanguageCode08languageP00qpL005remixH006streamJ0AeC0dgH0VSg_SSSgSiSgAC0dkL0OSgAC0d5CodecH0VSgAsC0oP0OSgAC0dopL0OSgAC05RemixH0VSgAStcfc"></a>
-                    <a name="//apple_ref/swift/Method/init(audioNormalizationSettings:audioSourceName:audioType:audioTypeControl:codecSettings:customLanguageCode:languageCode:languageCodeControl:remixSettings:streamName:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15AWSMediaConvert05MediaB0V16AudioDescriptionV26audioNormalizationSettings0F10SourceName0F4Type0fK7Control05codecH018customLanguageCode08languageP00qpL005remixH006streamJ0AeC0dgH0VSg_SSSgSiSgAC0dkL0OSgAC0d5CodecH0VSgAsC0oP0OSgAC0dopL0OSgAC05RemixH0VSgAStcfc">init(audioNormalizationSettings:audioSourceName:audioType:audioTypeControl:codecSettings:customLanguageCode:languageCode:languageCodeControl:remixSettings:streamName:)</a>
+                    <a name="/s:16SotoMediaConvert0bC0V16AudioDescriptionV27audioChannelTaggingSettings0f13NormalizationI00F10SourceName0F4Type0fM7Control05codecI018customLanguageCode08languageR00srN005remixI006streamL0AeC0dghI0VSg_AC0djI0VSgSSSgSiSgAC0dmN0OSgAC0d5CodecI0VSgAwC0qR0OSgAC0dqrN0OSgAC05RemixI0VSgAWtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(audioChannelTaggingSettings:audioNormalizationSettings:audioSourceName:audioType:audioTypeControl:codecSettings:customLanguageCode:languageCode:languageCodeControl:remixSettings:streamName:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16SotoMediaConvert0bC0V16AudioDescriptionV27audioChannelTaggingSettings0f13NormalizationI00F10SourceName0F4Type0fM7Control05codecI018customLanguageCode08languageR00srN005remixI006streamL0AeC0dghI0VSg_AC0djI0VSgSSSgSiSgAC0dmN0OSgAC0d5CodecI0VSgAwC0qR0OSgAC0dqrN0OSgAC05RemixI0VSgAWtcfc">init(audioChannelTaggingSettings:<wbr>audioNormalizationSettings:<wbr>audioSourceName:<wbr>audioType:<wbr>audioTypeControl:<wbr>codecSettings:<wbr>customLanguageCode:<wbr>languageCode:<wbr>languageCodeControl:<wbr>remixSettings:<wbr>streamName:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1035,9 +1117,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">audioNormalizationSettings</span><span class="p">:</span> <span class="kt"><a href="../../Structs/MediaConvert/AudioNormalizationSettings.html">AudioNormalizationSettings</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">audioSourceName</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">audioType</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">audioTypeControl</span><span class="p">:</span> <span class="kt"><a href="../../Structs/MediaConvert/AudioTypeControl.html">AudioTypeControl</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">codecSettings</span><span class="p">:</span> <span class="kt"><a href="../../Structs/MediaConvert/AudioCodecSettings.html">AudioCodecSettings</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">customLanguageCode</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">languageCode</span><span class="p">:</span> <span class="kt"><a href="../../Structs/MediaConvert/LanguageCode.html">LanguageCode</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">languageCodeControl</span><span class="p">:</span> <span class="kt"><a href="../../Structs/MediaConvert/AudioLanguageCodeControl.html">AudioLanguageCodeControl</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">remixSettings</span><span class="p">:</span> <span class="kt"><a href="../../Structs/MediaConvert/RemixSettings.html">RemixSettings</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">streamName</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">audioChannelTaggingSettings</span><span class="p">:</span> <span class="kt"><a href="../../Structs/MediaConvert/AudioChannelTaggingSettings.html">AudioChannelTaggingSettings</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">audioNormalizationSettings</span><span class="p">:</span> <span class="kt"><a href="../../Structs/MediaConvert/AudioNormalizationSettings.html">AudioNormalizationSettings</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">audioSourceName</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">audioType</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">audioTypeControl</span><span class="p">:</span> <span class="kt"><a href="../../Structs/MediaConvert/AudioTypeControl.html">AudioTypeControl</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">codecSettings</span><span class="p">:</span> <span class="kt"><a href="../../Structs/MediaConvert/AudioCodecSettings.html">AudioCodecSettings</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">customLanguageCode</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">languageCode</span><span class="p">:</span> <span class="kt"><a href="../../Structs/MediaConvert/LanguageCode.html">LanguageCode</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">languageCodeControl</span><span class="p">:</span> <span class="kt"><a href="../../Structs/MediaConvert/AudioLanguageCodeControl.html">AudioLanguageCodeControl</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">remixSettings</span><span class="p">:</span> <span class="kt"><a href="../../Structs/MediaConvert/RemixSettings.html">RemixSettings</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">streamName</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/MediaConvert/MediaConvert_Shapes.swift#L2489-L2501">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1045,9 +1130,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:15AWSSDKSwiftCore17AWSEncodableShapeP8validate4nameySS_tKF"></a>
+                    <a name="/s:8SotoCore17AWSEncodableShapeP8validate4nameySS_tKF"></a>
                     <a name="//apple_ref/swift/Method/validate(name:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15AWSSDKSwiftCore17AWSEncodableShapeP8validate4nameySS_tKF">validate(name:)</a>
+                    <a class="token" href="#/s:8SotoCore17AWSEncodableShapeP8validate4nameySS_tKF">validate(name:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1064,6 +1149,9 @@
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">validate</span><span class="p">(</span><span class="nv">name</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="k">throws</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/MediaConvert/MediaConvert_Shapes.swift#L2503-L2511">Show on GitHub</a>
                       </div>
                     </section>
                   </div>

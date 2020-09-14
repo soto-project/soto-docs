@@ -15,7 +15,7 @@
     <header>
       <div class="content-wrapper">
         <p><a href="../../index.html"> Docs</a> (54% documented)</p>
-        <p class="header-right"><a href="https://github.com/swift-aws/aws-sdk-swift"><img src="../../img/gh.png"/>View on GitHub</a></p>
+        <p class="header-right"><a href="https://github.com/soto-project/soto"><img src="../../img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -28,6 +28,9 @@
     <div class="content-wrapper">
       <nav class="sidebar">
         <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../../User%20Guides.html">User Guides</a>
+          </li>
           <li class="nav-group-name">
             <a href="../../AWSSDKSwiftCore.html">AWSSDKSwiftCore</a>
           </li>
@@ -68,6 +71,9 @@
             <a href="../../AppSync.html">AppSync</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../Appflow.html">Appflow</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../ApplicationAutoScaling.html">ApplicationAutoScaling</a>
           </li>
           <li class="nav-group-name">
@@ -93,6 +99,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../Batch.html">Batch</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../Braket.html">Braket</a>
           </li>
           <li class="nav-group-name">
             <a href="../../Budgets.html">Budgets</a>
@@ -335,6 +344,12 @@
             <a href="../../IAM.html">IAM</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../IVS.html">IVS</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../IdentityStore.html">IdentityStore</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../Imagebuilder.html">Imagebuilder</a>
           </li>
           <li class="nav-group-name">
@@ -557,6 +572,9 @@
             <a href="../../Redshift.html">Redshift</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../RedshiftDataAPIService.html">RedshiftDataAPIService</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../Rekognition.html">Rekognition</a>
           </li>
           <li class="nav-group-name">
@@ -606,6 +624,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../SSO.html">SSO</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../SSOAdmin.html">SSOAdmin</a>
           </li>
           <li class="nav-group-name">
             <a href="../../SSOOIDC.html">SSOOIDC</a>
@@ -735,6 +756,7 @@
             <h1>UpdateWorkteamRequest</h1>
               <div class="declaration">
                 <div class="language">
+                  
                   <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">UpdateWorkteamRequest</span> <span class="p">:</span> <span class="kt"><a href="../../Protocols/AWSEncodableShape.html">AWSEncodableShape</a></span></code></pre>
 
                 </div>
@@ -748,9 +770,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:12AWSSageMaker04SageB0V21UpdateWorkteamRequestV11descriptionSSSgvp"></a>
+                    <a name="/s:13SotoSageMaker0bC0V21UpdateWorkteamRequestV11descriptionSSSgvp"></a>
                     <a name="//apple_ref/swift/Property/description" class="dashAnchor"></a>
-                    <a class="token" href="#/s:12AWSSageMaker04SageB0V21UpdateWorkteamRequestV11descriptionSSSgvp">description</a>
+                    <a class="token" href="#/s:13SotoSageMaker0bC0V21UpdateWorkteamRequestV11descriptionSSSgvp">description</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -769,15 +791,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/SageMaker/SageMaker_Shapes.swift#L14886">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:12AWSSageMaker04SageB0V21UpdateWorkteamRequestV17memberDefinitionsSayAC16MemberDefinitionVGSgvp"></a>
+                    <a name="/s:13SotoSageMaker0bC0V21UpdateWorkteamRequestV17memberDefinitionsSayAC16MemberDefinitionVGSgvp"></a>
                     <a name="//apple_ref/swift/Property/memberDefinitions" class="dashAnchor"></a>
-                    <a class="token" href="#/s:12AWSSageMaker04SageB0V21UpdateWorkteamRequestV17memberDefinitionsSayAC16MemberDefinitionVGSgvp">memberDefinitions</a>
+                    <a class="token" href="#/s:13SotoSageMaker0bC0V21UpdateWorkteamRequestV17memberDefinitionsSayAC16MemberDefinitionVGSgvp">memberDefinitions</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -785,7 +810,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>A list of MemberDefinition objects that contain the updated work team members.</p>
+                        <p>A list of MemberDefinition objects that contains objects that identify the workers that make up the work team.  Workforces can be created using Amazon Cognito or your own OIDC Identity Provider (IdP). For private workforces created using Amazon Cognito use CognitoMemberDefinition. For workforces created using your own OIDC identity provider (IdP) use OidcMemberDefinition. You should not provide input for both of these parameters in a single request. For workforces created using Amazon Cognito, private work teams correspond to Amazon Cognito user groups within the user pool used to create a workforce. All of the CognitoMemberDefinition objects that make up the member definition must have the same ClientId and UserPool values. To add a Amazon Cognito user group to an existing worker pool, see Adding groups to a User Pool. For more information about user pools, see Amazon Cognito User Pools. For workforces created using your own OIDC IdP, specify the user groups that you want to include in your private work team in OidcMemberDefinition by listing those groups in Groups. Be aware that user groups that are already in the work team must also be listed in Groups when you make this request to remain on the work team. If you do not include these user groups, they will no longer be associated with the work team you update.</p>
 
                       </div>
                       <div class="declaration">
@@ -796,15 +821,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/SageMaker/SageMaker_Shapes.swift#L14888">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:12AWSSageMaker04SageB0V21UpdateWorkteamRequestV25notificationConfigurationAC012NotificationH0VSgvp"></a>
+                    <a name="/s:13SotoSageMaker0bC0V21UpdateWorkteamRequestV25notificationConfigurationAC012NotificationH0VSgvp"></a>
                     <a name="//apple_ref/swift/Property/notificationConfiguration" class="dashAnchor"></a>
-                    <a class="token" href="#/s:12AWSSageMaker04SageB0V21UpdateWorkteamRequestV25notificationConfigurationAC012NotificationH0VSgvp">notificationConfiguration</a>
+                    <a class="token" href="#/s:13SotoSageMaker0bC0V21UpdateWorkteamRequestV25notificationConfigurationAC012NotificationH0VSgvp">notificationConfiguration</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -823,15 +851,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/SageMaker/SageMaker_Shapes.swift#L14890">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:12AWSSageMaker04SageB0V21UpdateWorkteamRequestV12workteamNameSSvp"></a>
+                    <a name="/s:13SotoSageMaker0bC0V21UpdateWorkteamRequestV12workteamNameSSvp"></a>
                     <a name="//apple_ref/swift/Property/workteamName" class="dashAnchor"></a>
-                    <a class="token" href="#/s:12AWSSageMaker04SageB0V21UpdateWorkteamRequestV12workteamNameSSvp">workteamName</a>
+                    <a class="token" href="#/s:13SotoSageMaker0bC0V21UpdateWorkteamRequestV12workteamNameSSvp">workteamName</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -850,15 +881,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/SageMaker/SageMaker_Shapes.swift#L14892">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:12AWSSageMaker04SageB0V21UpdateWorkteamRequestV11description17memberDefinitions25notificationConfiguration12workteamNameAESSSg_SayAC16MemberDefinitionVGSgAC012NotificationK0VSgSStcfc"></a>
+                    <a name="/s:13SotoSageMaker0bC0V21UpdateWorkteamRequestV11description17memberDefinitions25notificationConfiguration12workteamNameAESSSg_SayAC16MemberDefinitionVGSgAC012NotificationK0VSgSStcfc"></a>
                     <a name="//apple_ref/swift/Method/init(description:memberDefinitions:notificationConfiguration:workteamName:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:12AWSSageMaker04SageB0V21UpdateWorkteamRequestV11description17memberDefinitions25notificationConfiguration12workteamNameAESSSg_SayAC16MemberDefinitionVGSgAC012NotificationK0VSgSStcfc">init(description:memberDefinitions:notificationConfiguration:workteamName:)</a>
+                    <a class="token" href="#/s:13SotoSageMaker0bC0V21UpdateWorkteamRequestV11description17memberDefinitions25notificationConfiguration12workteamNameAESSSg_SayAC16MemberDefinitionVGSgAC012NotificationK0VSgSStcfc">init(description:<wbr>memberDefinitions:<wbr>notificationConfiguration:<wbr>workteamName:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -877,15 +911,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/SageMaker/SageMaker_Shapes.swift#L14894-L14899">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:15AWSSDKSwiftCore17AWSEncodableShapeP8validate4nameySS_tKF"></a>
+                    <a name="/s:8SotoCore17AWSEncodableShapeP8validate4nameySS_tKF"></a>
                     <a name="//apple_ref/swift/Method/validate(name:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15AWSSDKSwiftCore17AWSEncodableShapeP8validate4nameySS_tKF">validate(name:)</a>
+                    <a class="token" href="#/s:8SotoCore17AWSEncodableShapeP8validate4nameySS_tKF">validate(name:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -902,6 +939,9 @@
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">validate</span><span class="p">(</span><span class="nv">name</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="k">throws</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/SageMaker/SageMaker_Shapes.swift#L14901-L14914">Show on GitHub</a>
                       </div>
                     </section>
                   </div>

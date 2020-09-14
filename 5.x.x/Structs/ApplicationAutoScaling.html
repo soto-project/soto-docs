@@ -15,7 +15,7 @@
     <header>
       <div class="content-wrapper">
         <p><a href="../index.html"> Docs</a> (54% documented)</p>
-        <p class="header-right"><a href="https://github.com/swift-aws/aws-sdk-swift"><img src="../img/gh.png"/>View on GitHub</a></p>
+        <p class="header-right"><a href="https://github.com/soto-project/soto"><img src="../img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -28,6 +28,9 @@
     <div class="content-wrapper">
       <nav class="sidebar">
         <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../User%20Guides.html">User Guides</a>
+          </li>
           <li class="nav-group-name">
             <a href="../AWSSDKSwiftCore.html">AWSSDKSwiftCore</a>
           </li>
@@ -68,6 +71,9 @@
             <a href="../AppSync.html">AppSync</a>
           </li>
           <li class="nav-group-name">
+            <a href="../Appflow.html">Appflow</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../ApplicationAutoScaling.html">ApplicationAutoScaling</a>
           </li>
           <li class="nav-group-name">
@@ -93,6 +99,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../Batch.html">Batch</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Braket.html">Braket</a>
           </li>
           <li class="nav-group-name">
             <a href="../Budgets.html">Budgets</a>
@@ -335,6 +344,12 @@
             <a href="../IAM.html">IAM</a>
           </li>
           <li class="nav-group-name">
+            <a href="../IVS.html">IVS</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../IdentityStore.html">IdentityStore</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../Imagebuilder.html">Imagebuilder</a>
           </li>
           <li class="nav-group-name">
@@ -557,6 +572,9 @@
             <a href="../Redshift.html">Redshift</a>
           </li>
           <li class="nav-group-name">
+            <a href="../RedshiftDataAPIService.html">RedshiftDataAPIService</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../Rekognition.html">Rekognition</a>
           </li>
           <li class="nav-group-name">
@@ -606,6 +624,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../SSO.html">SSO</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../SSOAdmin.html">SSOAdmin</a>
           </li>
           <li class="nav-group-name">
             <a href="../SSOOIDC.html">SSOOIDC</a>
@@ -735,13 +756,12 @@
             <h1>ApplicationAutoScaling</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ApplicationAutoScaling</span></code></pre>
+                  
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ApplicationAutoScaling</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSService.html">AWSService</a></span></code></pre>
 
                 </div>
               </div>
-            <p>Client object for interacting with AWS ApplicationAutoScaling service.</p>
-
-<p>With Application Auto Scaling, you can configure automatic scaling for the following resources:   Amazon ECS services   Amazon EC2 Spot Fleet requests   Amazon EMR clusters   Amazon AppStream 2.0 fleets   Amazon DynamoDB tables and global secondary indexes throughput capacity   Amazon Aurora Replicas   Amazon SageMaker endpoint variants   Custom resources provided by your own applications or services   Amazon Comprehend document classification endpoints   AWS Lambda function provisioned concurrency   Amazon Keyspaces (for Apache Cassandra) tables    API Summary  The Application Auto Scaling service API includes three key sets of actions:    Register and manage scalable targets - Register AWS or custom resources as scalable targets (a resource that Application Auto Scaling can scale), set minimum and maximum capacity limits, and retrieve information on existing scalable targets.   Configure and manage automatic scaling - Define scaling policies to dynamically scale your resources in response to CloudWatch alarms, schedule one-time or recurring scaling actions, and retrieve your recent scaling activity history.   Suspend and resume scaling - Temporarily suspend and later resume automatic scaling by calling the RegisterScalableTarget API action for any Application Auto Scaling scalable target. You can suspend and resume (individually or in combination) scale-out activities that are triggered by a scaling policy, scale-in activities that are triggered by a scaling policy, and scheduled scaling.   To learn more about Application Auto Scaling, including information about granting IAM users required permissions for Application Auto Scaling actions, see the Application Auto Scaling User Guide.</p>
+            <p>Undocumented</p>
 
           </section>
           <section class="section task-group-section">
@@ -749,17 +769,19 @@
               <div class="task-name-container">
                 <a name="/Member%20variables"></a>
                 <a name="//apple_ref/swift/Section/Member variables" class="dashAnchor"></a>
-                <a href="#/Member%20variables">
-                  <h3 class="section-name">Member variables</h3>
-                </a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Member%20variables"></a>
+                  <h3 class="section-name"><p>Member variables</p>
+</h3>
+                </div>
               </div>
               <ul>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:25AWSApplicationAutoScaling011ApplicationbC0V6client15AWSSDKSwiftCore9AWSClientCvp"></a>
+                    <a name="/s:8SotoCore10AWSServiceP6clientAA9AWSClientCvp"></a>
                     <a name="//apple_ref/swift/Property/client" class="dashAnchor"></a>
-                    <a class="token" href="#/s:25AWSApplicationAutoScaling011ApplicationbC0V6client15AWSSDKSwiftCore9AWSClientCvp">client</a>
+                    <a class="token" href="#/s:8SotoCore10AWSServiceP6clientAA9AWSClientCvp">client</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -767,8 +789,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
-
+                        
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
@@ -778,15 +799,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ApplicationAutoScaling/ApplicationAutoScaling_API.swift#L19">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:25AWSApplicationAutoScaling011ApplicationbC0V13serviceConfig15AWSSDKSwiftCore010AWSServiceF0Cvp"></a>
-                    <a name="//apple_ref/swift/Property/serviceConfig" class="dashAnchor"></a>
-                    <a class="token" href="#/s:25AWSApplicationAutoScaling011ApplicationbC0V13serviceConfig15AWSSDKSwiftCore010AWSServiceF0Cvp">serviceConfig</a>
+                    <a name="/s:8SotoCore10AWSServiceP6configAA0C6ConfigCvp"></a>
+                    <a name="//apple_ref/swift/Property/config" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8SotoCore10AWSServiceP6configAA0C6ConfigCvp">config</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -794,16 +818,18 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
-
+                        
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">serviceConfig</span><span class="p">:</span> <span class="kt"><a href="../Classes/AWSServiceConfig.html">AWSServiceConfig</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">config</span><span class="p">:</span> <span class="kt"><a href="../Classes/AWSServiceConfig.html">AWSServiceConfig</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ApplicationAutoScaling/ApplicationAutoScaling_API.swift#L21">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -814,17 +840,19 @@
               <div class="task-name-container">
                 <a name="/Initialization"></a>
                 <a name="//apple_ref/swift/Section/Initialization" class="dashAnchor"></a>
-                <a href="#/Initialization">
-                  <h3 class="section-name">Initialization</h3>
-                </a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Initialization"></a>
+                  <h3 class="section-name"><p>Initialization</p>
+</h3>
+                </div>
               </div>
               <ul>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:25AWSApplicationAutoScaling011ApplicationbC0V6client6region9partition8endpointAC15AWSSDKSwiftCore9AWSClientC_AH6RegionVSgAH9PartitionVSSSgtcfc"></a>
-                    <a name="//apple_ref/swift/Method/init(client:region:partition:endpoint:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:25AWSApplicationAutoScaling011ApplicationbC0V6client6region9partition8endpointAC15AWSSDKSwiftCore9AWSClientC_AH6RegionVSgAH9PartitionVSSSgtcfc">init(client:region:partition:endpoint:)</a>
+                    <a name="/s:26SotoApplicationAutoScaling0bcD0V6client6region9partition8endpoint7timeout19byteBufferAllocator7optionsAC0A4Core9AWSClientC_AK6RegionVSgAK12AWSPartitionVSSSg3NIO10TimeAmountVSgAT04BytekL0VAK16AWSServiceConfigC7OptionsVtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(client:region:partition:endpoint:timeout:byteBufferAllocator:options:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:26SotoApplicationAutoScaling0bcD0V6client6region9partition8endpoint7timeout19byteBufferAllocator7optionsAC0A4Core9AWSClientC_AK6RegionVSgAK12AWSPartitionVSSSg3NIO10TimeAmountVSgAT04BytekL0VAK16AWSServiceConfigC7OptionsVtcfc">init(client:<wbr>region:<wbr>partition:<wbr>endpoint:<wbr>timeout:<wbr>byteBufferAllocator:<wbr>options:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -841,9 +869,12 @@
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span>
     <span class="nv">client</span><span class="p">:</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="p">,</span>
-    <span class="nv">region</span><span class="p">:</span> <span class="kt">AWSSDKSwiftCore</span><span class="o">.</span><span class="kt"><a href="../Structs/Region.html">Region</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
-    <span class="nv">partition</span><span class="p">:</span> <span class="kt">AWSSDKSwiftCore</span><span class="o">.</span><span class="kt"><a href="../Structs/Partition.html">Partition</a></span> <span class="o">=</span> <span class="o">.</span><span class="n">aws</span><span class="p">,</span>
-    <span class="nv">endpoint</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span>
+    <span class="nv">region</span><span class="p">:</span> <span class="kt">SotoCore</span><span class="o">.</span><span class="kt"><a href="../Structs/Region.html">Region</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="nv">partition</span><span class="p">:</span> <span class="kt"><a href="../Structs/AWSPartition.html">AWSPartition</a></span> <span class="o">=</span> <span class="o">.</span><span class="n">aws</span><span class="p">,</span>
+    <span class="nv">endpoint</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="nv">timeout</span><span class="p">:</span> <span class="kt">TimeAmount</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="nv">byteBufferAllocator</span><span class="p">:</span> <span class="kt">ByteBufferAllocator</span> <span class="o">=</span> <span class="kt">ByteBufferAllocator</span><span class="p">(),</span>
+    <span class="nv">options</span><span class="p">:</span> <span class="kt"><a href="../Classes/AWSServiceConfig.html">AWSServiceConfig</a></span><span class="o">.</span><span class="kt">Options</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="p">)</span></code></pre>
 
                         </div>
@@ -900,8 +931,23 @@
                                 </div>
                               </td>
                             </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>timeout</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Timeout value for HTTP requests</p>
+                                </div>
+                              </td>
+                            </tr>
                           </tbody>
                         </table>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ApplicationAutoScaling/ApplicationAutoScaling_API.swift#L39-L62">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -912,17 +958,19 @@
               <div class="task-name-container">
                 <a name="/API%20Calls"></a>
                 <a name="//apple_ref/swift/Section/API Calls" class="dashAnchor"></a>
-                <a href="#/API%20Calls">
-                  <h3 class="section-name">API Calls</h3>
-                </a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/API%20Calls"></a>
+                  <h3 class="section-name"><p>API Calls</p>
+</h3>
+                </div>
               </div>
               <ul>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:25AWSApplicationAutoScaling011ApplicationbC0V06deleteC6Policy_2on3NIO15EventLoopFutureCyAC06DeletecF8ResponseVGAC0lcF7RequestV_AF0iJ0_pSgtF"></a>
-                    <a name="//apple_ref/swift/Method/deleteScalingPolicy(_:on:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:25AWSApplicationAutoScaling011ApplicationbC0V06deleteC6Policy_2on3NIO15EventLoopFutureCyAC06DeletecF8ResponseVGAC0lcF7RequestV_AF0iJ0_pSgtF">deleteScalingPolicy(_:on:)</a>
+                    <a name="/s:26SotoApplicationAutoScaling0bcD0V06deleteD6Policy_2on6logger3NIO15EventLoopFutureCyAC06DeletedF8ResponseVGAC0mdF7RequestV_AG0jK0_pSg7Logging6LoggerVtF"></a>
+                    <a name="//apple_ref/swift/Method/deleteScalingPolicy(_:on:logger:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:26SotoApplicationAutoScaling0bcD0V06deleteD6Policy_2on6logger3NIO15EventLoopFutureCyAC06DeletedF8ResponseVGAC0mdF7RequestV_AG0jK0_pSg7Logging6LoggerVtF">deleteScalingPolicy(_:<wbr>on:<wbr>logger:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -937,9 +985,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">deleteScalingPolicy</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/ApplicationAutoScaling/DeleteScalingPolicyRequest.html">DeleteScalingPolicyRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/ApplicationAutoScaling/DeleteScalingPolicyResponse.html">DeleteScalingPolicyResponse</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">deleteScalingPolicy</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/ApplicationAutoScaling/DeleteScalingPolicyRequest.html">DeleteScalingPolicyRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">logger</span><span class="p">:</span> <span class="kt">Logger</span> <span class="o">=</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="o">.</span><span class="n">loggingDisabled</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/ApplicationAutoScaling/DeleteScalingPolicyResponse.html">DeleteScalingPolicyResponse</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ApplicationAutoScaling/ApplicationAutoScaling_API.swift#L67-L69">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -947,9 +998,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:25AWSApplicationAutoScaling011ApplicationbC0V21deleteScheduledAction_2on3NIO15EventLoopFutureCyAC06DeletefG8ResponseVGAC0mfG7RequestV_AF0jK0_pSgtF"></a>
-                    <a name="//apple_ref/swift/Method/deleteScheduledAction(_:on:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:25AWSApplicationAutoScaling011ApplicationbC0V21deleteScheduledAction_2on3NIO15EventLoopFutureCyAC06DeletefG8ResponseVGAC0mfG7RequestV_AF0jK0_pSgtF">deleteScheduledAction(_:on:)</a>
+                    <a name="/s:26SotoApplicationAutoScaling0bcD0V21deleteScheduledAction_2on6logger3NIO15EventLoopFutureCyAC06DeletefG8ResponseVGAC0nfG7RequestV_AG0kL0_pSg7Logging6LoggerVtF"></a>
+                    <a name="//apple_ref/swift/Method/deleteScheduledAction(_:on:logger:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:26SotoApplicationAutoScaling0bcD0V21deleteScheduledAction_2on6logger3NIO15EventLoopFutureCyAC06DeletefG8ResponseVGAC0nfG7RequestV_AG0kL0_pSg7Logging6LoggerVtF">deleteScheduledAction(_:<wbr>on:<wbr>logger:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -964,9 +1015,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">deleteScheduledAction</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/ApplicationAutoScaling/DeleteScheduledActionRequest.html">DeleteScheduledActionRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/ApplicationAutoScaling/DeleteScheduledActionResponse.html">DeleteScheduledActionResponse</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">deleteScheduledAction</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/ApplicationAutoScaling/DeleteScheduledActionRequest.html">DeleteScheduledActionRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">logger</span><span class="p">:</span> <span class="kt">Logger</span> <span class="o">=</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="o">.</span><span class="n">loggingDisabled</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/ApplicationAutoScaling/DeleteScheduledActionResponse.html">DeleteScheduledActionResponse</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ApplicationAutoScaling/ApplicationAutoScaling_API.swift#L72-L74">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -974,9 +1028,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:25AWSApplicationAutoScaling011ApplicationbC0V24deregisterScalableTarget_2on3NIO15EventLoopFutureCyAC010DeregisterfG8ResponseVGAC0mfG7RequestV_AF0jK0_pSgtF"></a>
-                    <a name="//apple_ref/swift/Method/deregisterScalableTarget(_:on:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:25AWSApplicationAutoScaling011ApplicationbC0V24deregisterScalableTarget_2on3NIO15EventLoopFutureCyAC010DeregisterfG8ResponseVGAC0mfG7RequestV_AF0jK0_pSgtF">deregisterScalableTarget(_:on:)</a>
+                    <a name="/s:26SotoApplicationAutoScaling0bcD0V24deregisterScalableTarget_2on6logger3NIO15EventLoopFutureCyAC010DeregisterfG8ResponseVGAC0nfG7RequestV_AG0kL0_pSg7Logging6LoggerVtF"></a>
+                    <a name="//apple_ref/swift/Method/deregisterScalableTarget(_:on:logger:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:26SotoApplicationAutoScaling0bcD0V24deregisterScalableTarget_2on6logger3NIO15EventLoopFutureCyAC010DeregisterfG8ResponseVGAC0nfG7RequestV_AG0kL0_pSg7Logging6LoggerVtF">deregisterScalableTarget(_:<wbr>on:<wbr>logger:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -991,9 +1045,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">deregisterScalableTarget</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/ApplicationAutoScaling/DeregisterScalableTargetRequest.html">DeregisterScalableTargetRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/ApplicationAutoScaling/DeregisterScalableTargetResponse.html">DeregisterScalableTargetResponse</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">deregisterScalableTarget</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/ApplicationAutoScaling/DeregisterScalableTargetRequest.html">DeregisterScalableTargetRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">logger</span><span class="p">:</span> <span class="kt">Logger</span> <span class="o">=</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="o">.</span><span class="n">loggingDisabled</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/ApplicationAutoScaling/DeregisterScalableTargetResponse.html">DeregisterScalableTargetResponse</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ApplicationAutoScaling/ApplicationAutoScaling_API.swift#L77-L79">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1001,9 +1058,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:25AWSApplicationAutoScaling011ApplicationbC0V23describeScalableTargets_2on3NIO15EventLoopFutureCyAC08DescribefG8ResponseVGAC0mfG7RequestV_AF0jK0_pSgtF"></a>
-                    <a name="//apple_ref/swift/Method/describeScalableTargets(_:on:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:25AWSApplicationAutoScaling011ApplicationbC0V23describeScalableTargets_2on3NIO15EventLoopFutureCyAC08DescribefG8ResponseVGAC0mfG7RequestV_AF0jK0_pSgtF">describeScalableTargets(_:on:)</a>
+                    <a name="/s:26SotoApplicationAutoScaling0bcD0V23describeScalableTargets_2on6logger3NIO15EventLoopFutureCyAC08DescribefG8ResponseVGAC0nfG7RequestV_AG0kL0_pSg7Logging6LoggerVtF"></a>
+                    <a name="//apple_ref/swift/Method/describeScalableTargets(_:on:logger:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:26SotoApplicationAutoScaling0bcD0V23describeScalableTargets_2on6logger3NIO15EventLoopFutureCyAC08DescribefG8ResponseVGAC0nfG7RequestV_AG0kL0_pSg7Logging6LoggerVtF">describeScalableTargets(_:<wbr>on:<wbr>logger:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1018,9 +1075,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">describeScalableTargets</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/ApplicationAutoScaling/DescribeScalableTargetsRequest.html">DescribeScalableTargetsRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/ApplicationAutoScaling/DescribeScalableTargetsResponse.html">DescribeScalableTargetsResponse</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">describeScalableTargets</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/ApplicationAutoScaling/DescribeScalableTargetsRequest.html">DescribeScalableTargetsRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">logger</span><span class="p">:</span> <span class="kt">Logger</span> <span class="o">=</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="o">.</span><span class="n">loggingDisabled</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/ApplicationAutoScaling/DescribeScalableTargetsResponse.html">DescribeScalableTargetsResponse</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ApplicationAutoScaling/ApplicationAutoScaling_API.swift#L82-L84">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1028,9 +1088,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:25AWSApplicationAutoScaling011ApplicationbC0V08describeC10Activities_2on3NIO15EventLoopFutureCyAC08DescribecF8ResponseVGAC0lcF7RequestV_AF0iJ0_pSgtF"></a>
-                    <a name="//apple_ref/swift/Method/describeScalingActivities(_:on:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:25AWSApplicationAutoScaling011ApplicationbC0V08describeC10Activities_2on3NIO15EventLoopFutureCyAC08DescribecF8ResponseVGAC0lcF7RequestV_AF0iJ0_pSgtF">describeScalingActivities(_:on:)</a>
+                    <a name="/s:26SotoApplicationAutoScaling0bcD0V08describeD10Activities_2on6logger3NIO15EventLoopFutureCyAC08DescribedF8ResponseVGAC0mdF7RequestV_AG0jK0_pSg7Logging6LoggerVtF"></a>
+                    <a name="//apple_ref/swift/Method/describeScalingActivities(_:on:logger:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:26SotoApplicationAutoScaling0bcD0V08describeD10Activities_2on6logger3NIO15EventLoopFutureCyAC08DescribedF8ResponseVGAC0mdF7RequestV_AG0jK0_pSg7Logging6LoggerVtF">describeScalingActivities(_:<wbr>on:<wbr>logger:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1045,9 +1105,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">describeScalingActivities</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/ApplicationAutoScaling/DescribeScalingActivitiesRequest.html">DescribeScalingActivitiesRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/ApplicationAutoScaling/DescribeScalingActivitiesResponse.html">DescribeScalingActivitiesResponse</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">describeScalingActivities</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/ApplicationAutoScaling/DescribeScalingActivitiesRequest.html">DescribeScalingActivitiesRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">logger</span><span class="p">:</span> <span class="kt">Logger</span> <span class="o">=</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="o">.</span><span class="n">loggingDisabled</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/ApplicationAutoScaling/DescribeScalingActivitiesResponse.html">DescribeScalingActivitiesResponse</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ApplicationAutoScaling/ApplicationAutoScaling_API.swift#L87-L89">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1055,9 +1118,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:25AWSApplicationAutoScaling011ApplicationbC0V08describeC8Policies_2on3NIO15EventLoopFutureCyAC08DescribecF8ResponseVGAC0lcF7RequestV_AF0iJ0_pSgtF"></a>
-                    <a name="//apple_ref/swift/Method/describeScalingPolicies(_:on:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:25AWSApplicationAutoScaling011ApplicationbC0V08describeC8Policies_2on3NIO15EventLoopFutureCyAC08DescribecF8ResponseVGAC0lcF7RequestV_AF0iJ0_pSgtF">describeScalingPolicies(_:on:)</a>
+                    <a name="/s:26SotoApplicationAutoScaling0bcD0V08describeD8Policies_2on6logger3NIO15EventLoopFutureCyAC08DescribedF8ResponseVGAC0mdF7RequestV_AG0jK0_pSg7Logging6LoggerVtF"></a>
+                    <a name="//apple_ref/swift/Method/describeScalingPolicies(_:on:logger:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:26SotoApplicationAutoScaling0bcD0V08describeD8Policies_2on6logger3NIO15EventLoopFutureCyAC08DescribedF8ResponseVGAC0mdF7RequestV_AG0jK0_pSg7Logging6LoggerVtF">describeScalingPolicies(_:<wbr>on:<wbr>logger:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1072,9 +1135,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">describeScalingPolicies</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/ApplicationAutoScaling/DescribeScalingPoliciesRequest.html">DescribeScalingPoliciesRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/ApplicationAutoScaling/DescribeScalingPoliciesResponse.html">DescribeScalingPoliciesResponse</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">describeScalingPolicies</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/ApplicationAutoScaling/DescribeScalingPoliciesRequest.html">DescribeScalingPoliciesRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">logger</span><span class="p">:</span> <span class="kt">Logger</span> <span class="o">=</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="o">.</span><span class="n">loggingDisabled</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/ApplicationAutoScaling/DescribeScalingPoliciesResponse.html">DescribeScalingPoliciesResponse</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ApplicationAutoScaling/ApplicationAutoScaling_API.swift#L92-L94">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1082,9 +1148,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:25AWSApplicationAutoScaling011ApplicationbC0V24describeScheduledActions_2on3NIO15EventLoopFutureCyAC08DescribefG8ResponseVGAC0mfG7RequestV_AF0jK0_pSgtF"></a>
-                    <a name="//apple_ref/swift/Method/describeScheduledActions(_:on:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:25AWSApplicationAutoScaling011ApplicationbC0V24describeScheduledActions_2on3NIO15EventLoopFutureCyAC08DescribefG8ResponseVGAC0mfG7RequestV_AF0jK0_pSgtF">describeScheduledActions(_:on:)</a>
+                    <a name="/s:26SotoApplicationAutoScaling0bcD0V24describeScheduledActions_2on6logger3NIO15EventLoopFutureCyAC08DescribefG8ResponseVGAC0nfG7RequestV_AG0kL0_pSg7Logging6LoggerVtF"></a>
+                    <a name="//apple_ref/swift/Method/describeScheduledActions(_:on:logger:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:26SotoApplicationAutoScaling0bcD0V24describeScheduledActions_2on6logger3NIO15EventLoopFutureCyAC08DescribefG8ResponseVGAC0nfG7RequestV_AG0kL0_pSg7Logging6LoggerVtF">describeScheduledActions(_:<wbr>on:<wbr>logger:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1099,9 +1165,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">describeScheduledActions</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/ApplicationAutoScaling/DescribeScheduledActionsRequest.html">DescribeScheduledActionsRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/ApplicationAutoScaling/DescribeScheduledActionsResponse.html">DescribeScheduledActionsResponse</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">describeScheduledActions</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/ApplicationAutoScaling/DescribeScheduledActionsRequest.html">DescribeScheduledActionsRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">logger</span><span class="p">:</span> <span class="kt">Logger</span> <span class="o">=</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="o">.</span><span class="n">loggingDisabled</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/ApplicationAutoScaling/DescribeScheduledActionsResponse.html">DescribeScheduledActionsResponse</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ApplicationAutoScaling/ApplicationAutoScaling_API.swift#L97-L99">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1109,9 +1178,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:25AWSApplicationAutoScaling011ApplicationbC0V03putC6Policy_2on3NIO15EventLoopFutureCyAC03PutcF8ResponseVGAC0lcF7RequestV_AF0iJ0_pSgtF"></a>
-                    <a name="//apple_ref/swift/Method/putScalingPolicy(_:on:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:25AWSApplicationAutoScaling011ApplicationbC0V03putC6Policy_2on3NIO15EventLoopFutureCyAC03PutcF8ResponseVGAC0lcF7RequestV_AF0iJ0_pSgtF">putScalingPolicy(_:on:)</a>
+                    <a name="/s:26SotoApplicationAutoScaling0bcD0V03putD6Policy_2on6logger3NIO15EventLoopFutureCyAC03PutdF8ResponseVGAC0mdF7RequestV_AG0jK0_pSg7Logging6LoggerVtF"></a>
+                    <a name="//apple_ref/swift/Method/putScalingPolicy(_:on:logger:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:26SotoApplicationAutoScaling0bcD0V03putD6Policy_2on6logger3NIO15EventLoopFutureCyAC03PutdF8ResponseVGAC0mdF7RequestV_AG0jK0_pSg7Logging6LoggerVtF">putScalingPolicy(_:<wbr>on:<wbr>logger:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1126,9 +1195,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">putScalingPolicy</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/ApplicationAutoScaling/PutScalingPolicyRequest.html">PutScalingPolicyRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/ApplicationAutoScaling/PutScalingPolicyResponse.html">PutScalingPolicyResponse</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">putScalingPolicy</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/ApplicationAutoScaling/PutScalingPolicyRequest.html">PutScalingPolicyRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">logger</span><span class="p">:</span> <span class="kt">Logger</span> <span class="o">=</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="o">.</span><span class="n">loggingDisabled</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/ApplicationAutoScaling/PutScalingPolicyResponse.html">PutScalingPolicyResponse</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ApplicationAutoScaling/ApplicationAutoScaling_API.swift#L102-L104">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1136,9 +1208,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:25AWSApplicationAutoScaling011ApplicationbC0V18putScheduledAction_2on3NIO15EventLoopFutureCyAC03PutfG8ResponseVGAC0mfG7RequestV_AF0jK0_pSgtF"></a>
-                    <a name="//apple_ref/swift/Method/putScheduledAction(_:on:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:25AWSApplicationAutoScaling011ApplicationbC0V18putScheduledAction_2on3NIO15EventLoopFutureCyAC03PutfG8ResponseVGAC0mfG7RequestV_AF0jK0_pSgtF">putScheduledAction(_:on:)</a>
+                    <a name="/s:26SotoApplicationAutoScaling0bcD0V18putScheduledAction_2on6logger3NIO15EventLoopFutureCyAC03PutfG8ResponseVGAC0nfG7RequestV_AG0kL0_pSg7Logging6LoggerVtF"></a>
+                    <a name="//apple_ref/swift/Method/putScheduledAction(_:on:logger:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:26SotoApplicationAutoScaling0bcD0V18putScheduledAction_2on6logger3NIO15EventLoopFutureCyAC03PutfG8ResponseVGAC0nfG7RequestV_AG0kL0_pSg7Logging6LoggerVtF">putScheduledAction(_:<wbr>on:<wbr>logger:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1153,9 +1225,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">putScheduledAction</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/ApplicationAutoScaling/PutScheduledActionRequest.html">PutScheduledActionRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/ApplicationAutoScaling/PutScheduledActionResponse.html">PutScheduledActionResponse</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">putScheduledAction</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/ApplicationAutoScaling/PutScheduledActionRequest.html">PutScheduledActionRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">logger</span><span class="p">:</span> <span class="kt">Logger</span> <span class="o">=</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="o">.</span><span class="n">loggingDisabled</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/ApplicationAutoScaling/PutScheduledActionResponse.html">PutScheduledActionResponse</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ApplicationAutoScaling/ApplicationAutoScaling_API.swift#L107-L109">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1163,9 +1238,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:25AWSApplicationAutoScaling011ApplicationbC0V22registerScalableTarget_2on3NIO15EventLoopFutureCyAC08RegisterfG8ResponseVGAC0mfG7RequestV_AF0jK0_pSgtF"></a>
-                    <a name="//apple_ref/swift/Method/registerScalableTarget(_:on:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:25AWSApplicationAutoScaling011ApplicationbC0V22registerScalableTarget_2on3NIO15EventLoopFutureCyAC08RegisterfG8ResponseVGAC0mfG7RequestV_AF0jK0_pSgtF">registerScalableTarget(_:on:)</a>
+                    <a name="/s:26SotoApplicationAutoScaling0bcD0V22registerScalableTarget_2on6logger3NIO15EventLoopFutureCyAC08RegisterfG8ResponseVGAC0nfG7RequestV_AG0kL0_pSg7Logging6LoggerVtF"></a>
+                    <a name="//apple_ref/swift/Method/registerScalableTarget(_:on:logger:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:26SotoApplicationAutoScaling0bcD0V22registerScalableTarget_2on6logger3NIO15EventLoopFutureCyAC08RegisterfG8ResponseVGAC0nfG7RequestV_AG0kL0_pSg7Logging6LoggerVtF">registerScalableTarget(_:<wbr>on:<wbr>logger:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1180,9 +1255,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">registerScalableTarget</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/ApplicationAutoScaling/RegisterScalableTargetRequest.html">RegisterScalableTargetRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/ApplicationAutoScaling/RegisterScalableTargetResponse.html">RegisterScalableTargetResponse</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">registerScalableTarget</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/ApplicationAutoScaling/RegisterScalableTargetRequest.html">RegisterScalableTargetRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">logger</span><span class="p">:</span> <span class="kt">Logger</span> <span class="o">=</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="o">.</span><span class="n">loggingDisabled</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/ApplicationAutoScaling/RegisterScalableTargetResponse.html">RegisterScalableTargetResponse</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ApplicationAutoScaling/ApplicationAutoScaling_API.swift#L112-L114">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1193,17 +1271,19 @@
               <div class="task-name-container">
                 <a name="/Paginators"></a>
                 <a name="//apple_ref/swift/Section/Paginators" class="dashAnchor"></a>
-                <a href="#/Paginators">
-                  <h3 class="section-name">Paginators</h3>
-                </a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Paginators"></a>
+                  <h3 class="section-name"><p>Paginators</p>
+</h3>
+                </div>
               </div>
               <ul>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:25AWSApplicationAutoScaling011ApplicationbC0V32describeScalableTargetsPaginator_2on0I4Page3NIO15EventLoopFutureCyytGAC08DescribefG7RequestV_AG0lM0_pSgAIySbGAC0ofG8ResponseV_AgM_ptctF"></a>
-                    <a name="//apple_ref/swift/Method/describeScalableTargetsPaginator(_:on:onPage:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:25AWSApplicationAutoScaling011ApplicationbC0V32describeScalableTargetsPaginator_2on0I4Page3NIO15EventLoopFutureCyytGAC08DescribefG7RequestV_AG0lM0_pSgAIySbGAC0ofG8ResponseV_AgM_ptctF">describeScalableTargetsPaginator(_:on:onPage:)</a>
+                    <a name="/s:26SotoApplicationAutoScaling0bcD0V32describeScalableTargetsPaginator_2on6logger0I4Page3NIO15EventLoopFutureCyytGAC08DescribefG7RequestV_AH0mN0_pSg7Logging6LoggerVAJySbGAC0pfG8ResponseV_AhN_ptctF"></a>
+                    <a name="//apple_ref/swift/Method/describeScalableTargetsPaginator(_:on:logger:onPage:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:26SotoApplicationAutoScaling0bcD0V32describeScalableTargetsPaginator_2on6logger0I4Page3NIO15EventLoopFutureCyytGAC08DescribefG7RequestV_AH0mN0_pSg7Logging6LoggerVAJySbGAC0pfG8ResponseV_AhN_ptctF">describeScalableTargetsPaginator(_:<wbr>on:<wbr>logger:<wbr>onPage:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1221,11 +1301,14 @@
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">describeScalableTargetsPaginator</span><span class="p">(</span>
     <span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/ApplicationAutoScaling/DescribeScalableTargetsRequest.html">DescribeScalableTargetsRequest</a></span><span class="p">,</span>
     <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
-    <span class="nv">onPage</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/ApplicationAutoScaling/DescribeScalableTargetsResponse.html">DescribeScalableTargetsResponse</a></span><span class="p">,</span>
-    <span class="kt">EventLoop</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Bool</span><span class="o">&gt;</span>
+    <span class="nv">logger</span><span class="p">:</span> <span class="kt">Logger</span> <span class="o">=</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="o">.</span><span class="n">loggingDisabled</span><span class="p">,</span>
+    <span class="nv">onPage</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/ApplicationAutoScaling/DescribeScalableTargetsResponse.html">DescribeScalableTargetsResponse</a></span><span class="p">,</span> <span class="kt">EventLoop</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Bool</span><span class="o">&gt;</span>
 <span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Void</span><span class="o">&gt;</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ApplicationAutoScaling/ApplicationAutoScaling_Paginator.swift#L23-L36">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1233,9 +1316,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:25AWSApplicationAutoScaling011ApplicationbC0V08describeC19ActivitiesPaginator_2on0H4Page3NIO15EventLoopFutureCyytGAC08DescribecF7RequestV_AG0kL0_pSgAIySbGAC0ncF8ResponseV_AgM_ptctF"></a>
-                    <a name="//apple_ref/swift/Method/describeScalingActivitiesPaginator(_:on:onPage:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:25AWSApplicationAutoScaling011ApplicationbC0V08describeC19ActivitiesPaginator_2on0H4Page3NIO15EventLoopFutureCyytGAC08DescribecF7RequestV_AG0kL0_pSgAIySbGAC0ncF8ResponseV_AgM_ptctF">describeScalingActivitiesPaginator(_:on:onPage:)</a>
+                    <a name="/s:26SotoApplicationAutoScaling0bcD0V08describeD19ActivitiesPaginator_2on6logger0H4Page3NIO15EventLoopFutureCyytGAC08DescribedF7RequestV_AH0lM0_pSg7Logging6LoggerVAJySbGAC0odF8ResponseV_AhN_ptctF"></a>
+                    <a name="//apple_ref/swift/Method/describeScalingActivitiesPaginator(_:on:logger:onPage:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:26SotoApplicationAutoScaling0bcD0V08describeD19ActivitiesPaginator_2on6logger0H4Page3NIO15EventLoopFutureCyytGAC08DescribedF7RequestV_AH0lM0_pSg7Logging6LoggerVAJySbGAC0odF8ResponseV_AhN_ptctF">describeScalingActivitiesPaginator(_:<wbr>on:<wbr>logger:<wbr>onPage:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1253,11 +1336,14 @@
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">describeScalingActivitiesPaginator</span><span class="p">(</span>
     <span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/ApplicationAutoScaling/DescribeScalingActivitiesRequest.html">DescribeScalingActivitiesRequest</a></span><span class="p">,</span>
     <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
-    <span class="nv">onPage</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/ApplicationAutoScaling/DescribeScalingActivitiesResponse.html">DescribeScalingActivitiesResponse</a></span><span class="p">,</span>
-    <span class="kt">EventLoop</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Bool</span><span class="o">&gt;</span>
+    <span class="nv">logger</span><span class="p">:</span> <span class="kt">Logger</span> <span class="o">=</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="o">.</span><span class="n">loggingDisabled</span><span class="p">,</span>
+    <span class="nv">onPage</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/ApplicationAutoScaling/DescribeScalingActivitiesResponse.html">DescribeScalingActivitiesResponse</a></span><span class="p">,</span> <span class="kt">EventLoop</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Bool</span><span class="o">&gt;</span>
 <span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Void</span><span class="o">&gt;</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ApplicationAutoScaling/ApplicationAutoScaling_Paginator.swift#L39-L52">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1265,9 +1351,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:25AWSApplicationAutoScaling011ApplicationbC0V08describeC17PoliciesPaginator_2on0H4Page3NIO15EventLoopFutureCyytGAC08DescribecF7RequestV_AG0kL0_pSgAIySbGAC0ncF8ResponseV_AgM_ptctF"></a>
-                    <a name="//apple_ref/swift/Method/describeScalingPoliciesPaginator(_:on:onPage:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:25AWSApplicationAutoScaling011ApplicationbC0V08describeC17PoliciesPaginator_2on0H4Page3NIO15EventLoopFutureCyytGAC08DescribecF7RequestV_AG0kL0_pSgAIySbGAC0ncF8ResponseV_AgM_ptctF">describeScalingPoliciesPaginator(_:on:onPage:)</a>
+                    <a name="/s:26SotoApplicationAutoScaling0bcD0V08describeD17PoliciesPaginator_2on6logger0H4Page3NIO15EventLoopFutureCyytGAC08DescribedF7RequestV_AH0lM0_pSg7Logging6LoggerVAJySbGAC0odF8ResponseV_AhN_ptctF"></a>
+                    <a name="//apple_ref/swift/Method/describeScalingPoliciesPaginator(_:on:logger:onPage:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:26SotoApplicationAutoScaling0bcD0V08describeD17PoliciesPaginator_2on6logger0H4Page3NIO15EventLoopFutureCyytGAC08DescribedF7RequestV_AH0lM0_pSg7Logging6LoggerVAJySbGAC0odF8ResponseV_AhN_ptctF">describeScalingPoliciesPaginator(_:<wbr>on:<wbr>logger:<wbr>onPage:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1285,11 +1371,14 @@
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">describeScalingPoliciesPaginator</span><span class="p">(</span>
     <span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/ApplicationAutoScaling/DescribeScalingPoliciesRequest.html">DescribeScalingPoliciesRequest</a></span><span class="p">,</span>
     <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
-    <span class="nv">onPage</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/ApplicationAutoScaling/DescribeScalingPoliciesResponse.html">DescribeScalingPoliciesResponse</a></span><span class="p">,</span>
-    <span class="kt">EventLoop</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Bool</span><span class="o">&gt;</span>
+    <span class="nv">logger</span><span class="p">:</span> <span class="kt">Logger</span> <span class="o">=</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="o">.</span><span class="n">loggingDisabled</span><span class="p">,</span>
+    <span class="nv">onPage</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/ApplicationAutoScaling/DescribeScalingPoliciesResponse.html">DescribeScalingPoliciesResponse</a></span><span class="p">,</span> <span class="kt">EventLoop</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Bool</span><span class="o">&gt;</span>
 <span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Void</span><span class="o">&gt;</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ApplicationAutoScaling/ApplicationAutoScaling_Paginator.swift#L55-L68">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1297,9 +1386,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:25AWSApplicationAutoScaling011ApplicationbC0V33describeScheduledActionsPaginator_2on0I4Page3NIO15EventLoopFutureCyytGAC08DescribefG7RequestV_AG0lM0_pSgAIySbGAC0ofG8ResponseV_AgM_ptctF"></a>
-                    <a name="//apple_ref/swift/Method/describeScheduledActionsPaginator(_:on:onPage:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:25AWSApplicationAutoScaling011ApplicationbC0V33describeScheduledActionsPaginator_2on0I4Page3NIO15EventLoopFutureCyytGAC08DescribefG7RequestV_AG0lM0_pSgAIySbGAC0ofG8ResponseV_AgM_ptctF">describeScheduledActionsPaginator(_:on:onPage:)</a>
+                    <a name="/s:26SotoApplicationAutoScaling0bcD0V33describeScheduledActionsPaginator_2on6logger0I4Page3NIO15EventLoopFutureCyytGAC08DescribefG7RequestV_AH0mN0_pSg7Logging6LoggerVAJySbGAC0pfG8ResponseV_AhN_ptctF"></a>
+                    <a name="//apple_ref/swift/Method/describeScheduledActionsPaginator(_:on:logger:onPage:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:26SotoApplicationAutoScaling0bcD0V33describeScheduledActionsPaginator_2on6logger0I4Page3NIO15EventLoopFutureCyytGAC08DescribefG7RequestV_AH0mN0_pSg7Logging6LoggerVAJySbGAC0pfG8ResponseV_AhN_ptctF">describeScheduledActionsPaginator(_:<wbr>on:<wbr>logger:<wbr>onPage:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1317,11 +1406,14 @@
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">describeScheduledActionsPaginator</span><span class="p">(</span>
     <span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/ApplicationAutoScaling/DescribeScheduledActionsRequest.html">DescribeScheduledActionsRequest</a></span><span class="p">,</span>
     <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
-    <span class="nv">onPage</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/ApplicationAutoScaling/DescribeScheduledActionsResponse.html">DescribeScheduledActionsResponse</a></span><span class="p">,</span>
-    <span class="kt">EventLoop</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Bool</span><span class="o">&gt;</span>
+    <span class="nv">logger</span><span class="p">:</span> <span class="kt">Logger</span> <span class="o">=</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="o">.</span><span class="n">loggingDisabled</span><span class="p">,</span>
+    <span class="nv">onPage</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/ApplicationAutoScaling/DescribeScheduledActionsResponse.html">DescribeScheduledActionsResponse</a></span><span class="p">,</span> <span class="kt">EventLoop</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Bool</span><span class="o">&gt;</span>
 <span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Void</span><span class="o">&gt;</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ApplicationAutoScaling/ApplicationAutoScaling_Paginator.swift#L71-L84">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1332,17 +1424,19 @@
               <div class="task-name-container">
                 <a name="/Shapes"></a>
                 <a name="//apple_ref/swift/Section/Shapes" class="dashAnchor"></a>
-                <a href="#/Shapes">
-                  <h3 class="section-name">Shapes</h3>
-                </a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Shapes"></a>
+                  <h3 class="section-name"><p>Shapes</p>
+</h3>
+                </div>
               </div>
               <ul>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:25AWSApplicationAutoScaling011ApplicationbC0V30DescribeScalableTargetsRequestV"></a>
+                    <a name="/s:26SotoApplicationAutoScaling0bcD0V30DescribeScalableTargetsRequestV"></a>
                     <a name="//apple_ref/swift/Struct/DescribeScalableTargetsRequest" class="dashAnchor"></a>
-                    <a class="token" href="#/s:25AWSApplicationAutoScaling011ApplicationbC0V30DescribeScalableTargetsRequestV">DescribeScalableTargetsRequest</a>
+                    <a class="token" href="#/s:26SotoApplicationAutoScaling0bcD0V30DescribeScalableTargetsRequestV">DescribeScalableTargetsRequest</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1363,15 +1457,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ApplicationAutoScaling/ApplicationAutoScaling_Shapes.swift#L271-L307">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:25AWSApplicationAutoScaling011ApplicationbC0V08DescribeC17ActivitiesRequestV"></a>
+                    <a name="/s:26SotoApplicationAutoScaling0bcD0V08DescribeD17ActivitiesRequestV"></a>
                     <a name="//apple_ref/swift/Struct/DescribeScalingActivitiesRequest" class="dashAnchor"></a>
-                    <a class="token" href="#/s:25AWSApplicationAutoScaling011ApplicationbC0V08DescribeC17ActivitiesRequestV">DescribeScalingActivitiesRequest</a>
+                    <a class="token" href="#/s:26SotoApplicationAutoScaling0bcD0V08DescribeD17ActivitiesRequestV">DescribeScalingActivitiesRequest</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1392,15 +1489,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ApplicationAutoScaling/ApplicationAutoScaling_Shapes.swift#L326-L360">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:25AWSApplicationAutoScaling011ApplicationbC0V08DescribeC15PoliciesRequestV"></a>
+                    <a name="/s:26SotoApplicationAutoScaling0bcD0V08DescribeD15PoliciesRequestV"></a>
                     <a name="//apple_ref/swift/Struct/DescribeScalingPoliciesRequest" class="dashAnchor"></a>
-                    <a class="token" href="#/s:25AWSApplicationAutoScaling011ApplicationbC0V08DescribeC15PoliciesRequestV">DescribeScalingPoliciesRequest</a>
+                    <a class="token" href="#/s:26SotoApplicationAutoScaling0bcD0V08DescribeD15PoliciesRequestV">DescribeScalingPoliciesRequest</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1421,15 +1521,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ApplicationAutoScaling/ApplicationAutoScaling_Shapes.swift#L379-L422">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:25AWSApplicationAutoScaling011ApplicationbC0V31DescribeScheduledActionsRequestV"></a>
+                    <a name="/s:26SotoApplicationAutoScaling0bcD0V31DescribeScheduledActionsRequestV"></a>
                     <a name="//apple_ref/swift/Struct/DescribeScheduledActionsRequest" class="dashAnchor"></a>
-                    <a class="token" href="#/s:25AWSApplicationAutoScaling011ApplicationbC0V31DescribeScheduledActionsRequestV">DescribeScheduledActionsRequest</a>
+                    <a class="token" href="#/s:26SotoApplicationAutoScaling0bcD0V31DescribeScheduledActionsRequestV">DescribeScheduledActionsRequest</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1450,15 +1553,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ApplicationAutoScaling/ApplicationAutoScaling_Shapes.swift#L441-L484">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:25AWSApplicationAutoScaling011ApplicationbC0V5AlarmV"></a>
+                    <a name="/s:26SotoApplicationAutoScaling0bcD0V5AlarmV"></a>
                     <a name="//apple_ref/swift/Struct/Alarm" class="dashAnchor"></a>
-                    <a class="token" href="#/s:25AWSApplicationAutoScaling011ApplicationbC0V5AlarmV">Alarm</a>
+                    <a class="token" href="#/s:26SotoApplicationAutoScaling0bcD0V5AlarmV">Alarm</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1474,9 +1580,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Alarm</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Alarm</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ApplicationAutoScaling/ApplicationAutoScaling_Shapes.swift#L118-L133">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1484,9 +1593,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:25AWSApplicationAutoScaling011ApplicationbC0V29CustomizedMetricSpecificationV"></a>
+                    <a name="/s:26SotoApplicationAutoScaling0bcD0V29CustomizedMetricSpecificationV"></a>
                     <a name="//apple_ref/swift/Struct/CustomizedMetricSpecification" class="dashAnchor"></a>
-                    <a class="token" href="#/s:25AWSApplicationAutoScaling011ApplicationbC0V29CustomizedMetricSpecificationV">CustomizedMetricSpecification</a>
+                    <a class="token" href="#/s:26SotoApplicationAutoScaling0bcD0V29CustomizedMetricSpecificationV">CustomizedMetricSpecification</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1502,9 +1611,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">CustomizedMetricSpecification</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSEncodableShape.html">AWSEncodableShape</a></span> <span class="o">&amp;</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">CustomizedMetricSpecification</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSEncodableShape.html">AWSEncodableShape</a></span> <span class="o">&amp;</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ApplicationAutoScaling/ApplicationAutoScaling_Shapes.swift#L135-L162">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1512,9 +1624,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:25AWSApplicationAutoScaling011ApplicationbC0V06DeleteC13PolicyRequestV"></a>
+                    <a name="/s:26SotoApplicationAutoScaling0bcD0V06DeleteD13PolicyRequestV"></a>
                     <a name="//apple_ref/swift/Struct/DeleteScalingPolicyRequest" class="dashAnchor"></a>
-                    <a class="token" href="#/s:25AWSApplicationAutoScaling011ApplicationbC0V06DeleteC13PolicyRequestV">DeleteScalingPolicyRequest</a>
+                    <a class="token" href="#/s:26SotoApplicationAutoScaling0bcD0V06DeleteD13PolicyRequestV">DeleteScalingPolicyRequest</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1534,15 +1646,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ApplicationAutoScaling/ApplicationAutoScaling_Shapes.swift#L164-L196">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:25AWSApplicationAutoScaling011ApplicationbC0V06DeleteC14PolicyResponseV"></a>
+                    <a name="/s:26SotoApplicationAutoScaling0bcD0V06DeleteD14PolicyResponseV"></a>
                     <a name="//apple_ref/swift/Struct/DeleteScalingPolicyResponse" class="dashAnchor"></a>
-                    <a class="token" href="#/s:25AWSApplicationAutoScaling011ApplicationbC0V06DeleteC14PolicyResponseV">DeleteScalingPolicyResponse</a>
+                    <a class="token" href="#/s:26SotoApplicationAutoScaling0bcD0V06DeleteD14PolicyResponseV">DeleteScalingPolicyResponse</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1558,9 +1673,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DeleteScalingPolicyResponse</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DeleteScalingPolicyResponse</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ApplicationAutoScaling/ApplicationAutoScaling_Shapes.swift#L198-L200">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1568,9 +1686,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:25AWSApplicationAutoScaling011ApplicationbC0V28DeleteScheduledActionRequestV"></a>
+                    <a name="/s:26SotoApplicationAutoScaling0bcD0V28DeleteScheduledActionRequestV"></a>
                     <a name="//apple_ref/swift/Struct/DeleteScheduledActionRequest" class="dashAnchor"></a>
-                    <a class="token" href="#/s:25AWSApplicationAutoScaling011ApplicationbC0V28DeleteScheduledActionRequestV">DeleteScheduledActionRequest</a>
+                    <a class="token" href="#/s:26SotoApplicationAutoScaling0bcD0V28DeleteScheduledActionRequestV">DeleteScheduledActionRequest</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1590,15 +1708,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ApplicationAutoScaling/ApplicationAutoScaling_Shapes.swift#L202-L234">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:25AWSApplicationAutoScaling011ApplicationbC0V29DeleteScheduledActionResponseV"></a>
+                    <a name="/s:26SotoApplicationAutoScaling0bcD0V29DeleteScheduledActionResponseV"></a>
                     <a name="//apple_ref/swift/Struct/DeleteScheduledActionResponse" class="dashAnchor"></a>
-                    <a class="token" href="#/s:25AWSApplicationAutoScaling011ApplicationbC0V29DeleteScheduledActionResponseV">DeleteScheduledActionResponse</a>
+                    <a class="token" href="#/s:26SotoApplicationAutoScaling0bcD0V29DeleteScheduledActionResponseV">DeleteScheduledActionResponse</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1614,9 +1735,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DeleteScheduledActionResponse</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DeleteScheduledActionResponse</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ApplicationAutoScaling/ApplicationAutoScaling_Shapes.swift#L236-L238">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1624,9 +1748,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:25AWSApplicationAutoScaling011ApplicationbC0V31DeregisterScalableTargetRequestV"></a>
+                    <a name="/s:26SotoApplicationAutoScaling0bcD0V31DeregisterScalableTargetRequestV"></a>
                     <a name="//apple_ref/swift/Struct/DeregisterScalableTargetRequest" class="dashAnchor"></a>
-                    <a class="token" href="#/s:25AWSApplicationAutoScaling011ApplicationbC0V31DeregisterScalableTargetRequestV">DeregisterScalableTargetRequest</a>
+                    <a class="token" href="#/s:26SotoApplicationAutoScaling0bcD0V31DeregisterScalableTargetRequestV">DeregisterScalableTargetRequest</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1646,15 +1770,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ApplicationAutoScaling/ApplicationAutoScaling_Shapes.swift#L240-L265">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:25AWSApplicationAutoScaling011ApplicationbC0V32DeregisterScalableTargetResponseV"></a>
+                    <a name="/s:26SotoApplicationAutoScaling0bcD0V32DeregisterScalableTargetResponseV"></a>
                     <a name="//apple_ref/swift/Struct/DeregisterScalableTargetResponse" class="dashAnchor"></a>
-                    <a class="token" href="#/s:25AWSApplicationAutoScaling011ApplicationbC0V32DeregisterScalableTargetResponseV">DeregisterScalableTargetResponse</a>
+                    <a class="token" href="#/s:26SotoApplicationAutoScaling0bcD0V32DeregisterScalableTargetResponseV">DeregisterScalableTargetResponse</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1670,9 +1797,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DeregisterScalableTargetResponse</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DeregisterScalableTargetResponse</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ApplicationAutoScaling/ApplicationAutoScaling_Shapes.swift#L267-L269">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1680,9 +1810,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:25AWSApplicationAutoScaling011ApplicationbC0V31DescribeScalableTargetsResponseV"></a>
+                    <a name="/s:26SotoApplicationAutoScaling0bcD0V31DescribeScalableTargetsResponseV"></a>
                     <a name="//apple_ref/swift/Struct/DescribeScalableTargetsResponse" class="dashAnchor"></a>
-                    <a class="token" href="#/s:25AWSApplicationAutoScaling011ApplicationbC0V31DescribeScalableTargetsResponseV">DescribeScalableTargetsResponse</a>
+                    <a class="token" href="#/s:26SotoApplicationAutoScaling0bcD0V31DescribeScalableTargetsResponseV">DescribeScalableTargetsResponse</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1698,9 +1828,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DescribeScalableTargetsResponse</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DescribeScalableTargetsResponse</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ApplicationAutoScaling/ApplicationAutoScaling_Shapes.swift#L309-L324">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1708,9 +1841,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:25AWSApplicationAutoScaling011ApplicationbC0V08DescribeC18ActivitiesResponseV"></a>
+                    <a name="/s:26SotoApplicationAutoScaling0bcD0V08DescribeD18ActivitiesResponseV"></a>
                     <a name="//apple_ref/swift/Struct/DescribeScalingActivitiesResponse" class="dashAnchor"></a>
-                    <a class="token" href="#/s:25AWSApplicationAutoScaling011ApplicationbC0V08DescribeC18ActivitiesResponseV">DescribeScalingActivitiesResponse</a>
+                    <a class="token" href="#/s:26SotoApplicationAutoScaling0bcD0V08DescribeD18ActivitiesResponseV">DescribeScalingActivitiesResponse</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1726,9 +1859,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DescribeScalingActivitiesResponse</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DescribeScalingActivitiesResponse</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ApplicationAutoScaling/ApplicationAutoScaling_Shapes.swift#L362-L377">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1736,9 +1872,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:25AWSApplicationAutoScaling011ApplicationbC0V08DescribeC16PoliciesResponseV"></a>
+                    <a name="/s:26SotoApplicationAutoScaling0bcD0V08DescribeD16PoliciesResponseV"></a>
                     <a name="//apple_ref/swift/Struct/DescribeScalingPoliciesResponse" class="dashAnchor"></a>
-                    <a class="token" href="#/s:25AWSApplicationAutoScaling011ApplicationbC0V08DescribeC16PoliciesResponseV">DescribeScalingPoliciesResponse</a>
+                    <a class="token" href="#/s:26SotoApplicationAutoScaling0bcD0V08DescribeD16PoliciesResponseV">DescribeScalingPoliciesResponse</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1754,9 +1890,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DescribeScalingPoliciesResponse</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DescribeScalingPoliciesResponse</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ApplicationAutoScaling/ApplicationAutoScaling_Shapes.swift#L424-L439">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1764,9 +1903,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:25AWSApplicationAutoScaling011ApplicationbC0V32DescribeScheduledActionsResponseV"></a>
+                    <a name="/s:26SotoApplicationAutoScaling0bcD0V32DescribeScheduledActionsResponseV"></a>
                     <a name="//apple_ref/swift/Struct/DescribeScheduledActionsResponse" class="dashAnchor"></a>
-                    <a class="token" href="#/s:25AWSApplicationAutoScaling011ApplicationbC0V32DescribeScheduledActionsResponseV">DescribeScheduledActionsResponse</a>
+                    <a class="token" href="#/s:26SotoApplicationAutoScaling0bcD0V32DescribeScheduledActionsResponseV">DescribeScheduledActionsResponse</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1782,9 +1921,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DescribeScheduledActionsResponse</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DescribeScheduledActionsResponse</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ApplicationAutoScaling/ApplicationAutoScaling_Shapes.swift#L486-L501">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1792,9 +1934,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:25AWSApplicationAutoScaling011ApplicationbC0V15MetricDimensionV"></a>
+                    <a name="/s:26SotoApplicationAutoScaling0bcD0V15MetricDimensionV"></a>
                     <a name="//apple_ref/swift/Struct/MetricDimension" class="dashAnchor"></a>
-                    <a class="token" href="#/s:25AWSApplicationAutoScaling011ApplicationbC0V15MetricDimensionV">MetricDimension</a>
+                    <a class="token" href="#/s:26SotoApplicationAutoScaling0bcD0V15MetricDimensionV">MetricDimension</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1810,9 +1952,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">MetricDimension</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSEncodableShape.html">AWSEncodableShape</a></span> <span class="o">&amp;</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">MetricDimension</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSEncodableShape.html">AWSEncodableShape</a></span> <span class="o">&amp;</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ApplicationAutoScaling/ApplicationAutoScaling_Shapes.swift#L503-L518">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1820,9 +1965,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:25AWSApplicationAutoScaling011ApplicationbC0V29PredefinedMetricSpecificationV"></a>
+                    <a name="/s:26SotoApplicationAutoScaling0bcD0V29PredefinedMetricSpecificationV"></a>
                     <a name="//apple_ref/swift/Struct/PredefinedMetricSpecification" class="dashAnchor"></a>
-                    <a class="token" href="#/s:25AWSApplicationAutoScaling011ApplicationbC0V29PredefinedMetricSpecificationV">PredefinedMetricSpecification</a>
+                    <a class="token" href="#/s:26SotoApplicationAutoScaling0bcD0V29PredefinedMetricSpecificationV">PredefinedMetricSpecification</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1838,9 +1983,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">PredefinedMetricSpecification</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSEncodableShape.html">AWSEncodableShape</a></span> <span class="o">&amp;</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">PredefinedMetricSpecification</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSEncodableShape.html">AWSEncodableShape</a></span> <span class="o">&amp;</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ApplicationAutoScaling/ApplicationAutoScaling_Shapes.swift#L520-L540">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1848,9 +1996,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:25AWSApplicationAutoScaling011ApplicationbC0V03PutC13PolicyRequestV"></a>
+                    <a name="/s:26SotoApplicationAutoScaling0bcD0V03PutD13PolicyRequestV"></a>
                     <a name="//apple_ref/swift/Struct/PutScalingPolicyRequest" class="dashAnchor"></a>
-                    <a class="token" href="#/s:25AWSApplicationAutoScaling011ApplicationbC0V03PutC13PolicyRequestV">PutScalingPolicyRequest</a>
+                    <a class="token" href="#/s:26SotoApplicationAutoScaling0bcD0V03PutD13PolicyRequestV">PutScalingPolicyRequest</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1870,15 +2018,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ApplicationAutoScaling/ApplicationAutoScaling_Shapes.swift#L542-L587">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:25AWSApplicationAutoScaling011ApplicationbC0V03PutC14PolicyResponseV"></a>
+                    <a name="/s:26SotoApplicationAutoScaling0bcD0V03PutD14PolicyResponseV"></a>
                     <a name="//apple_ref/swift/Struct/PutScalingPolicyResponse" class="dashAnchor"></a>
-                    <a class="token" href="#/s:25AWSApplicationAutoScaling011ApplicationbC0V03PutC14PolicyResponseV">PutScalingPolicyResponse</a>
+                    <a class="token" href="#/s:26SotoApplicationAutoScaling0bcD0V03PutD14PolicyResponseV">PutScalingPolicyResponse</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1894,9 +2045,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">PutScalingPolicyResponse</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">PutScalingPolicyResponse</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ApplicationAutoScaling/ApplicationAutoScaling_Shapes.swift#L589-L604">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1904,9 +2058,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:25AWSApplicationAutoScaling011ApplicationbC0V25PutScheduledActionRequestV"></a>
+                    <a name="/s:26SotoApplicationAutoScaling0bcD0V25PutScheduledActionRequestV"></a>
                     <a name="//apple_ref/swift/Struct/PutScheduledActionRequest" class="dashAnchor"></a>
-                    <a class="token" href="#/s:25AWSApplicationAutoScaling011ApplicationbC0V25PutScheduledActionRequestV">PutScheduledActionRequest</a>
+                    <a class="token" href="#/s:26SotoApplicationAutoScaling0bcD0V25PutScheduledActionRequestV">PutScheduledActionRequest</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1926,15 +2080,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ApplicationAutoScaling/ApplicationAutoScaling_Shapes.swift#L606-L657">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:25AWSApplicationAutoScaling011ApplicationbC0V26PutScheduledActionResponseV"></a>
+                    <a name="/s:26SotoApplicationAutoScaling0bcD0V26PutScheduledActionResponseV"></a>
                     <a name="//apple_ref/swift/Struct/PutScheduledActionResponse" class="dashAnchor"></a>
-                    <a class="token" href="#/s:25AWSApplicationAutoScaling011ApplicationbC0V26PutScheduledActionResponseV">PutScheduledActionResponse</a>
+                    <a class="token" href="#/s:26SotoApplicationAutoScaling0bcD0V26PutScheduledActionResponseV">PutScheduledActionResponse</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1950,9 +2107,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">PutScheduledActionResponse</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">PutScheduledActionResponse</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ApplicationAutoScaling/ApplicationAutoScaling_Shapes.swift#L659-L661">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1960,9 +2120,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:25AWSApplicationAutoScaling011ApplicationbC0V29RegisterScalableTargetRequestV"></a>
+                    <a name="/s:26SotoApplicationAutoScaling0bcD0V29RegisterScalableTargetRequestV"></a>
                     <a name="//apple_ref/swift/Struct/RegisterScalableTargetRequest" class="dashAnchor"></a>
-                    <a class="token" href="#/s:25AWSApplicationAutoScaling011ApplicationbC0V29RegisterScalableTargetRequestV">RegisterScalableTargetRequest</a>
+                    <a class="token" href="#/s:26SotoApplicationAutoScaling0bcD0V29RegisterScalableTargetRequestV">RegisterScalableTargetRequest</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1982,15 +2142,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ApplicationAutoScaling/ApplicationAutoScaling_Shapes.swift#L663-L707">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:25AWSApplicationAutoScaling011ApplicationbC0V30RegisterScalableTargetResponseV"></a>
+                    <a name="/s:26SotoApplicationAutoScaling0bcD0V30RegisterScalableTargetResponseV"></a>
                     <a name="//apple_ref/swift/Struct/RegisterScalableTargetResponse" class="dashAnchor"></a>
-                    <a class="token" href="#/s:25AWSApplicationAutoScaling011ApplicationbC0V30RegisterScalableTargetResponseV">RegisterScalableTargetResponse</a>
+                    <a class="token" href="#/s:26SotoApplicationAutoScaling0bcD0V30RegisterScalableTargetResponseV">RegisterScalableTargetResponse</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2006,9 +2169,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">RegisterScalableTargetResponse</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">RegisterScalableTargetResponse</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ApplicationAutoScaling/ApplicationAutoScaling_Shapes.swift#L709-L711">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -2016,9 +2182,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:25AWSApplicationAutoScaling011ApplicationbC0V14ScalableTargetV"></a>
+                    <a name="/s:26SotoApplicationAutoScaling0bcD0V14ScalableTargetV"></a>
                     <a name="//apple_ref/swift/Struct/ScalableTarget" class="dashAnchor"></a>
-                    <a class="token" href="#/s:25AWSApplicationAutoScaling011ApplicationbC0V14ScalableTargetV">ScalableTarget</a>
+                    <a class="token" href="#/s:26SotoApplicationAutoScaling0bcD0V14ScalableTargetV">ScalableTarget</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2034,9 +2200,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ScalableTarget</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ScalableTarget</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ApplicationAutoScaling/ApplicationAutoScaling_Shapes.swift#L713-L751">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -2044,9 +2213,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:25AWSApplicationAutoScaling011ApplicationbC0V20ScalableTargetActionV"></a>
+                    <a name="/s:26SotoApplicationAutoScaling0bcD0V20ScalableTargetActionV"></a>
                     <a name="//apple_ref/swift/Struct/ScalableTargetAction" class="dashAnchor"></a>
-                    <a class="token" href="#/s:25AWSApplicationAutoScaling011ApplicationbC0V20ScalableTargetActionV">ScalableTargetAction</a>
+                    <a class="token" href="#/s:26SotoApplicationAutoScaling0bcD0V20ScalableTargetActionV">ScalableTargetAction</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2062,9 +2231,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ScalableTargetAction</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSEncodableShape.html">AWSEncodableShape</a></span> <span class="o">&amp;</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ScalableTargetAction</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSEncodableShape.html">AWSEncodableShape</a></span> <span class="o">&amp;</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ApplicationAutoScaling/ApplicationAutoScaling_Shapes.swift#L753-L768">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -2072,9 +2244,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:25AWSApplicationAutoScaling011ApplicationbC0V0C8ActivityV"></a>
+                    <a name="/s:26SotoApplicationAutoScaling0bcD0V0D8ActivityV"></a>
                     <a name="//apple_ref/swift/Struct/ScalingActivity" class="dashAnchor"></a>
-                    <a class="token" href="#/s:25AWSApplicationAutoScaling011ApplicationbC0V0C8ActivityV">ScalingActivity</a>
+                    <a class="token" href="#/s:26SotoApplicationAutoScaling0bcD0V0D8ActivityV">ScalingActivity</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2090,9 +2262,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ScalingActivity</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ScalingActivity</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ApplicationAutoScaling/ApplicationAutoScaling_Shapes.swift#L770-L821">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -2100,9 +2275,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:25AWSApplicationAutoScaling011ApplicationbC0V0C6PolicyV"></a>
+                    <a name="/s:26SotoApplicationAutoScaling0bcD0V0D6PolicyV"></a>
                     <a name="//apple_ref/swift/Struct/ScalingPolicy" class="dashAnchor"></a>
-                    <a class="token" href="#/s:25AWSApplicationAutoScaling011ApplicationbC0V0C6PolicyV">ScalingPolicy</a>
+                    <a class="token" href="#/s:26SotoApplicationAutoScaling0bcD0V0D6PolicyV">ScalingPolicy</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2118,9 +2293,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ScalingPolicy</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ScalingPolicy</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ApplicationAutoScaling/ApplicationAutoScaling_Shapes.swift#L823-L870">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -2128,9 +2306,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:25AWSApplicationAutoScaling011ApplicationbC0V15ScheduledActionV"></a>
+                    <a name="/s:26SotoApplicationAutoScaling0bcD0V15ScheduledActionV"></a>
                     <a name="//apple_ref/swift/Struct/ScheduledAction" class="dashAnchor"></a>
-                    <a class="token" href="#/s:25AWSApplicationAutoScaling011ApplicationbC0V15ScheduledActionV">ScheduledAction</a>
+                    <a class="token" href="#/s:26SotoApplicationAutoScaling0bcD0V15ScheduledActionV">ScheduledAction</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2146,9 +2324,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ScheduledAction</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ScheduledAction</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ApplicationAutoScaling/ApplicationAutoScaling_Shapes.swift#L872-L919">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -2156,9 +2337,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:25AWSApplicationAutoScaling011ApplicationbC0V14StepAdjustmentV"></a>
+                    <a name="/s:26SotoApplicationAutoScaling0bcD0V14StepAdjustmentV"></a>
                     <a name="//apple_ref/swift/Struct/StepAdjustment" class="dashAnchor"></a>
-                    <a class="token" href="#/s:25AWSApplicationAutoScaling011ApplicationbC0V14StepAdjustmentV">StepAdjustment</a>
+                    <a class="token" href="#/s:26SotoApplicationAutoScaling0bcD0V14StepAdjustmentV">StepAdjustment</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2174,9 +2355,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">StepAdjustment</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSEncodableShape.html">AWSEncodableShape</a></span> <span class="o">&amp;</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">StepAdjustment</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSEncodableShape.html">AWSEncodableShape</a></span> <span class="o">&amp;</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ApplicationAutoScaling/ApplicationAutoScaling_Shapes.swift#L921-L940">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -2184,9 +2368,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:25AWSApplicationAutoScaling011ApplicationbC0V04StepC19PolicyConfigurationV"></a>
+                    <a name="/s:26SotoApplicationAutoScaling0bcD0V04StepD19PolicyConfigurationV"></a>
                     <a name="//apple_ref/swift/Struct/StepScalingPolicyConfiguration" class="dashAnchor"></a>
-                    <a class="token" href="#/s:25AWSApplicationAutoScaling011ApplicationbC0V04StepC19PolicyConfigurationV">StepScalingPolicyConfiguration</a>
+                    <a class="token" href="#/s:26SotoApplicationAutoScaling0bcD0V04StepD19PolicyConfigurationV">StepScalingPolicyConfiguration</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2202,9 +2386,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">StepScalingPolicyConfiguration</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSEncodableShape.html">AWSEncodableShape</a></span> <span class="o">&amp;</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">StepScalingPolicyConfiguration</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSEncodableShape.html">AWSEncodableShape</a></span> <span class="o">&amp;</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ApplicationAutoScaling/ApplicationAutoScaling_Shapes.swift#L942-L969">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -2212,9 +2399,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:25AWSApplicationAutoScaling011ApplicationbC0V14SuspendedStateV"></a>
+                    <a name="/s:26SotoApplicationAutoScaling0bcD0V14SuspendedStateV"></a>
                     <a name="//apple_ref/swift/Struct/SuspendedState" class="dashAnchor"></a>
-                    <a class="token" href="#/s:25AWSApplicationAutoScaling011ApplicationbC0V14SuspendedStateV">SuspendedState</a>
+                    <a class="token" href="#/s:26SotoApplicationAutoScaling0bcD0V14SuspendedStateV">SuspendedState</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2230,9 +2417,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">SuspendedState</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSEncodableShape.html">AWSEncodableShape</a></span> <span class="o">&amp;</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">SuspendedState</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSEncodableShape.html">AWSEncodableShape</a></span> <span class="o">&amp;</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ApplicationAutoScaling/ApplicationAutoScaling_Shapes.swift#L971-L990">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -2240,9 +2430,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:25AWSApplicationAutoScaling011ApplicationbC0V014TargetTrackingC19PolicyConfigurationV"></a>
+                    <a name="/s:26SotoApplicationAutoScaling0bcD0V014TargetTrackingD19PolicyConfigurationV"></a>
                     <a name="//apple_ref/swift/Struct/TargetTrackingScalingPolicyConfiguration" class="dashAnchor"></a>
-                    <a class="token" href="#/s:25AWSApplicationAutoScaling011ApplicationbC0V014TargetTrackingC19PolicyConfigurationV">TargetTrackingScalingPolicyConfiguration</a>
+                    <a class="token" href="#/s:26SotoApplicationAutoScaling0bcD0V014TargetTrackingD19PolicyConfigurationV">TargetTrackingScalingPolicyConfiguration</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2258,9 +2448,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">TargetTrackingScalingPolicyConfiguration</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSEncodableShape.html">AWSEncodableShape</a></span> <span class="o">&amp;</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">TargetTrackingScalingPolicyConfiguration</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSEncodableShape.html">AWSEncodableShape</a></span> <span class="o">&amp;</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ApplicationAutoScaling/ApplicationAutoScaling_Shapes.swift#L992-L1027">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -2271,17 +2464,19 @@
               <div class="task-name-container">
                 <a name="/Enums"></a>
                 <a name="//apple_ref/swift/Section/Enums" class="dashAnchor"></a>
-                <a href="#/Enums">
-                  <h3 class="section-name">Enums</h3>
-                </a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Enums"></a>
+                  <h3 class="section-name"><p>Enums</p>
+</h3>
+                </div>
               </div>
               <ul>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:25AWSApplicationAutoScaling011ApplicationbC0V14AdjustmentTypeO"></a>
+                    <a name="/s:26SotoApplicationAutoScaling0bcD0V14AdjustmentTypeO"></a>
                     <a name="//apple_ref/swift/Enum/AdjustmentType" class="dashAnchor"></a>
-                    <a class="token" href="#/s:25AWSApplicationAutoScaling011ApplicationbC0V14AdjustmentTypeO">AdjustmentType</a>
+                    <a class="token" href="#/s:26SotoApplicationAutoScaling0bcD0V14AdjustmentTypeO">AdjustmentType</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2301,15 +2496,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ApplicationAutoScaling/ApplicationAutoScaling_Shapes.swift#L23-L28">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:25AWSApplicationAutoScaling011ApplicationbC0V21MetricAggregationTypeO"></a>
+                    <a name="/s:26SotoApplicationAutoScaling0bcD0V21MetricAggregationTypeO"></a>
                     <a name="//apple_ref/swift/Enum/MetricAggregationType" class="dashAnchor"></a>
-                    <a class="token" href="#/s:25AWSApplicationAutoScaling011ApplicationbC0V21MetricAggregationTypeO">MetricAggregationType</a>
+                    <a class="token" href="#/s:26SotoApplicationAutoScaling0bcD0V21MetricAggregationTypeO">MetricAggregationType</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2329,15 +2527,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ApplicationAutoScaling/ApplicationAutoScaling_Shapes.swift#L30-L35">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:25AWSApplicationAutoScaling011ApplicationbC0V15MetricStatisticO"></a>
+                    <a name="/s:26SotoApplicationAutoScaling0bcD0V15MetricStatisticO"></a>
                     <a name="//apple_ref/swift/Enum/MetricStatistic" class="dashAnchor"></a>
-                    <a class="token" href="#/s:25AWSApplicationAutoScaling011ApplicationbC0V15MetricStatisticO">MetricStatistic</a>
+                    <a class="token" href="#/s:26SotoApplicationAutoScaling0bcD0V15MetricStatisticO">MetricStatistic</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2357,15 +2558,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ApplicationAutoScaling/ApplicationAutoScaling_Shapes.swift#L37-L44">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:25AWSApplicationAutoScaling011ApplicationbC0V10MetricTypeO"></a>
+                    <a name="/s:26SotoApplicationAutoScaling0bcD0V10MetricTypeO"></a>
                     <a name="//apple_ref/swift/Enum/MetricType" class="dashAnchor"></a>
-                    <a class="token" href="#/s:25AWSApplicationAutoScaling011ApplicationbC0V10MetricTypeO">MetricType</a>
+                    <a class="token" href="#/s:26SotoApplicationAutoScaling0bcD0V10MetricTypeO">MetricType</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2385,15 +2589,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ApplicationAutoScaling/ApplicationAutoScaling_Shapes.swift#L46-L64">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:25AWSApplicationAutoScaling011ApplicationbC0V10PolicyTypeO"></a>
+                    <a name="/s:26SotoApplicationAutoScaling0bcD0V10PolicyTypeO"></a>
                     <a name="//apple_ref/swift/Enum/PolicyType" class="dashAnchor"></a>
-                    <a class="token" href="#/s:25AWSApplicationAutoScaling011ApplicationbC0V10PolicyTypeO">PolicyType</a>
+                    <a class="token" href="#/s:26SotoApplicationAutoScaling0bcD0V10PolicyTypeO">PolicyType</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2413,15 +2620,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ApplicationAutoScaling/ApplicationAutoScaling_Shapes.swift#L66-L70">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:25AWSApplicationAutoScaling011ApplicationbC0V17ScalableDimensionO"></a>
+                    <a name="/s:26SotoApplicationAutoScaling0bcD0V17ScalableDimensionO"></a>
                     <a name="//apple_ref/swift/Enum/ScalableDimension" class="dashAnchor"></a>
-                    <a class="token" href="#/s:25AWSApplicationAutoScaling011ApplicationbC0V17ScalableDimensionO">ScalableDimension</a>
+                    <a class="token" href="#/s:26SotoApplicationAutoScaling0bcD0V17ScalableDimensionO">ScalableDimension</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2441,15 +2651,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ApplicationAutoScaling/ApplicationAutoScaling_Shapes.swift#L72-L89">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:25AWSApplicationAutoScaling011ApplicationbC0V0C18ActivityStatusCodeO"></a>
+                    <a name="/s:26SotoApplicationAutoScaling0bcD0V0D18ActivityStatusCodeO"></a>
                     <a name="//apple_ref/swift/Enum/ScalingActivityStatusCode" class="dashAnchor"></a>
-                    <a class="token" href="#/s:25AWSApplicationAutoScaling011ApplicationbC0V0C18ActivityStatusCodeO">ScalingActivityStatusCode</a>
+                    <a class="token" href="#/s:26SotoApplicationAutoScaling0bcD0V0D18ActivityStatusCodeO">ScalingActivityStatusCode</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2469,15 +2682,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ApplicationAutoScaling/ApplicationAutoScaling_Shapes.swift#L91-L99">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:25AWSApplicationAutoScaling011ApplicationbC0V16ServiceNamespaceO"></a>
+                    <a name="/s:26SotoApplicationAutoScaling0bcD0V16ServiceNamespaceO"></a>
                     <a name="//apple_ref/swift/Enum/ServiceNamespace" class="dashAnchor"></a>
-                    <a class="token" href="#/s:25AWSApplicationAutoScaling011ApplicationbC0V16ServiceNamespaceO">ServiceNamespace</a>
+                    <a class="token" href="#/s:26SotoApplicationAutoScaling0bcD0V16ServiceNamespaceO">ServiceNamespace</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2496,6 +2712,9 @@
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">ServiceNamespace</span> <span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="kt">CustomStringConvertible</span><span class="p">,</span> <span class="kt">Codable</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ApplicationAutoScaling/ApplicationAutoScaling_Shapes.swift#L101-L114">Show on GitHub</a>
                       </div>
                     </section>
                   </div>

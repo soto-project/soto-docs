@@ -15,7 +15,7 @@
     <header>
       <div class="content-wrapper">
         <p><a href="index.html"> Docs</a> (54% documented)</p>
-        <p class="header-right"><a href="https://github.com/swift-aws/aws-sdk-swift"><img src="img/gh.png"/>View on GitHub</a></p>
+        <p class="header-right"><a href="https://github.com/soto-project/soto"><img src="img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -28,6 +28,9 @@
     <div class="content-wrapper">
       <nav class="sidebar">
         <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="User%20Guides.html">User Guides</a>
+          </li>
           <li class="nav-group-name">
             <a href="AWSSDKSwiftCore.html">AWSSDKSwiftCore</a>
           </li>
@@ -68,6 +71,9 @@
             <a href="AppSync.html">AppSync</a>
           </li>
           <li class="nav-group-name">
+            <a href="Appflow.html">Appflow</a>
+          </li>
+          <li class="nav-group-name">
             <a href="ApplicationAutoScaling.html">ApplicationAutoScaling</a>
           </li>
           <li class="nav-group-name">
@@ -93,6 +99,9 @@
           </li>
           <li class="nav-group-name">
             <a href="Batch.html">Batch</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="Braket.html">Braket</a>
           </li>
           <li class="nav-group-name">
             <a href="Budgets.html">Budgets</a>
@@ -335,6 +344,12 @@
             <a href="IAM.html">IAM</a>
           </li>
           <li class="nav-group-name">
+            <a href="IVS.html">IVS</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="IdentityStore.html">IdentityStore</a>
+          </li>
+          <li class="nav-group-name">
             <a href="Imagebuilder.html">Imagebuilder</a>
           </li>
           <li class="nav-group-name">
@@ -557,6 +572,9 @@
             <a href="Redshift.html">Redshift</a>
           </li>
           <li class="nav-group-name">
+            <a href="RedshiftDataAPIService.html">RedshiftDataAPIService</a>
+          </li>
+          <li class="nav-group-name">
             <a href="Rekognition.html">Rekognition</a>
           </li>
           <li class="nav-group-name">
@@ -606,6 +624,9 @@
           </li>
           <li class="nav-group-name">
             <a href="SSO.html">SSO</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="SSOAdmin.html">SSOAdmin</a>
           </li>
           <li class="nav-group-name">
             <a href="SSOOIDC.html">SSOOIDC</a>
@@ -741,9 +762,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:13AWSCloudWatch05CloudB0V"></a>
+                    <a name="/s:14SotoCloudWatch0bC0V"></a>
                     <a name="//apple_ref/swift/Struct/CloudWatch" class="dashAnchor"></a>
-                    <a class="token" href="#/s:13AWSCloudWatch05CloudB0V">CloudWatch</a>
+                    <a class="token" href="#/s:14SotoCloudWatch0bC0V">CloudWatch</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -751,9 +772,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Client object for interacting with AWS CloudWatch service.</p>
-
-<p>Amazon CloudWatch monitors your Amazon Web Services (AWS) resources and the applications you run on AWS in real time. You can use CloudWatch to collect and track metrics, which are the variables you want to measure for your resources and applications. CloudWatch alarms send notifications or automatically change the resources you are monitoring based on rules that you define. For example, you can monitor the CPU usage and disk reads and writes of your Amazon EC2 instances. Then, use this data to determine whether you should launch additional instances to handle increased load. You can also use this data to stop under-used instances to save money. In addition to monitoring the built-in metrics that come with AWS, you can monitor your own custom metrics. With CloudWatch, you gain system-wide visibility into resource utilization, application performance, and operational health.</p>
+                        <p>Undocumented</p>
 
                         <a href="Structs/CloudWatch.html" class="slightly-smaller">See more</a>
                       </div>
@@ -761,9 +780,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">CloudWatch</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">CloudWatch</span> <span class="p">:</span> <span class="kt"><a href="Protocols/AWSService.html">AWSService</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudWatch/CloudWatch_API.swift#L24-L214">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -771,9 +793,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:13AWSCloudWatch05CloudB9ErrorTypeO"></a>
+                    <a name="/s:14SotoCloudWatch0bC9ErrorTypeO"></a>
                     <a name="//apple_ref/swift/Enum/CloudWatchErrorType" class="dashAnchor"></a>
-                    <a class="token" href="#/s:13AWSCloudWatch05CloudB9ErrorTypeO">CloudWatchErrorType</a>
+                    <a class="token" href="#/s:14SotoCloudWatch0bC9ErrorTypeO">CloudWatchErrorType</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -793,6 +815,9 @@
 <pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">CloudWatchErrorType</span><span class="p">:</span> <span class="kt">CustomStringConvertible</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudWatch/CloudWatch_Error.swift#L20-L33">Show on GitHub</a>
                       </div>
                     </section>
                   </div>

@@ -15,7 +15,7 @@
     <header>
       <div class="content-wrapper">
         <p><a href="index.html"> Docs</a> (54% documented)</p>
-        <p class="header-right"><a href="https://github.com/swift-aws/aws-sdk-swift"><img src="img/gh.png"/>View on GitHub</a></p>
+        <p class="header-right"><a href="https://github.com/soto-project/soto"><img src="img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -28,6 +28,9 @@
     <div class="content-wrapper">
       <nav class="sidebar">
         <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="User%20Guides.html">User Guides</a>
+          </li>
           <li class="nav-group-name">
             <a href="AWSSDKSwiftCore.html">AWSSDKSwiftCore</a>
           </li>
@@ -68,6 +71,9 @@
             <a href="AppSync.html">AppSync</a>
           </li>
           <li class="nav-group-name">
+            <a href="Appflow.html">Appflow</a>
+          </li>
+          <li class="nav-group-name">
             <a href="ApplicationAutoScaling.html">ApplicationAutoScaling</a>
           </li>
           <li class="nav-group-name">
@@ -93,6 +99,9 @@
           </li>
           <li class="nav-group-name">
             <a href="Batch.html">Batch</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="Braket.html">Braket</a>
           </li>
           <li class="nav-group-name">
             <a href="Budgets.html">Budgets</a>
@@ -335,6 +344,12 @@
             <a href="IAM.html">IAM</a>
           </li>
           <li class="nav-group-name">
+            <a href="IVS.html">IVS</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="IdentityStore.html">IdentityStore</a>
+          </li>
+          <li class="nav-group-name">
             <a href="Imagebuilder.html">Imagebuilder</a>
           </li>
           <li class="nav-group-name">
@@ -557,6 +572,9 @@
             <a href="Redshift.html">Redshift</a>
           </li>
           <li class="nav-group-name">
+            <a href="RedshiftDataAPIService.html">RedshiftDataAPIService</a>
+          </li>
+          <li class="nav-group-name">
             <a href="Rekognition.html">Rekognition</a>
           </li>
           <li class="nav-group-name">
@@ -606,6 +624,9 @@
           </li>
           <li class="nav-group-name">
             <a href="SSO.html">SSO</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="SSOAdmin.html">SSOAdmin</a>
           </li>
           <li class="nav-group-name">
             <a href="SSOOIDC.html">SSOOIDC</a>
@@ -741,9 +762,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:13AWSOpsWorksCM03OpsbC0V"></a>
+                    <a name="/s:14SotoOpsWorksCM0bcD0V"></a>
                     <a name="//apple_ref/swift/Struct/OpsWorksCM" class="dashAnchor"></a>
-                    <a class="token" href="#/s:13AWSOpsWorksCM03OpsbC0V">OpsWorksCM</a>
+                    <a class="token" href="#/s:14SotoOpsWorksCM0bcD0V">OpsWorksCM</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -751,9 +772,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Client object for interacting with AWS OpsWorksCM service.</p>
-
-<p>AWS OpsWorks CM AWS OpsWorks for configuration management (CM) is a service that runs and manages configuration management servers. You can use AWS OpsWorks CM to create and manage AWS OpsWorks for Chef Automate and AWS OpsWorks for Puppet Enterprise servers, and add or remove nodes for the servers to manage.  Glossary of terms     Server: A configuration management server that can be highly-available. The configuration management server runs on an Amazon Elastic Compute Cloud (EC2) instance, and may use various other AWS services, such as Amazon Relational Database Service (RDS) and Elastic Load Balancing. A server is a generic abstraction over the configuration manager that you want to use, much like Amazon RDS. In AWS OpsWorks CM, you do not start or stop servers. After you create servers, they continue to run until they are deleted.    Engine: The engine is the specific configuration manager that you want to use. Valid values in this release include ChefAutomate and Puppet.    Backup: This is an application-level backup of the data that the configuration manager stores. AWS OpsWorks CM creates an S3 bucket for backups when you launch the first server. A backup maintains a snapshot of a server&rsquo;s configuration-related attributes at the time the backup starts.    Events: Events are always related to a server. Events are written during server creation, when health checks run, when backups are created, when system maintenance is performed, etc. When you delete a server, the server&rsquo;s events are also deleted.    Account attributes: Every account has attributes that are assigned in the AWS OpsWorks CM database. These attributes store information about configuration limits (servers, backups, etc.) and your customer account.     Endpoints  AWS OpsWorks CM supports the following endpoints, all HTTPS. You must connect to one of the following endpoints. Your servers can only be accessed or managed within the endpoint in which they are created.   opsworks-cm.us-east-1.amazonaws.com   opsworks-cm.us-east-2.amazonaws.com   opsworks-cm.us-west-1.amazonaws.com   opsworks-cm.us-west-2.amazonaws.com   opsworks-cm.ap-northeast-1.amazonaws.com   opsworks-cm.ap-southeast-1.amazonaws.com   opsworks-cm.ap-southeast-2.amazonaws.com   opsworks-cm.eu-central-1.amazonaws.com   opsworks-cm.eu-west-1.amazonaws.com   For more information, see AWS OpsWorks endpoints and quotas in the AWS General Reference.  Throttling limits  All API operations allow for five requests per second with a burst of 10 requests per second.</p>
+                        <p>Undocumented</p>
 
                         <a href="Structs/OpsWorksCM.html" class="slightly-smaller">See more</a>
                       </div>
@@ -761,9 +780,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">OpsWorksCM</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">OpsWorksCM</span> <span class="p">:</span> <span class="kt"><a href="Protocols/AWSService.html">AWSService</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/OpsWorksCM/OpsWorksCM_API.swift#L24-L160">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -771,9 +793,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:13AWSOpsWorksCM03OpsB11CMErrorTypeO"></a>
+                    <a name="/s:14SotoOpsWorksCM0bC11CMErrorTypeO"></a>
                     <a name="//apple_ref/swift/Enum/OpsWorksCMErrorType" class="dashAnchor"></a>
-                    <a class="token" href="#/s:13AWSOpsWorksCM03OpsB11CMErrorTypeO">OpsWorksCMErrorType</a>
+                    <a class="token" href="#/s:14SotoOpsWorksCM0bC11CMErrorTypeO">OpsWorksCMErrorType</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -793,6 +815,9 @@
 <pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">OpsWorksCMErrorType</span><span class="p">:</span> <span class="kt">CustomStringConvertible</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/OpsWorksCM/OpsWorksCM_Error.swift#L20-L27">Show on GitHub</a>
                       </div>
                     </section>
                   </div>

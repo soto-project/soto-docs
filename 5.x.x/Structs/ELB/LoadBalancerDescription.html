@@ -15,7 +15,7 @@
     <header>
       <div class="content-wrapper">
         <p><a href="../../index.html"> Docs</a> (54% documented)</p>
-        <p class="header-right"><a href="https://github.com/swift-aws/aws-sdk-swift"><img src="../../img/gh.png"/>View on GitHub</a></p>
+        <p class="header-right"><a href="https://github.com/soto-project/soto"><img src="../../img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -28,6 +28,9 @@
     <div class="content-wrapper">
       <nav class="sidebar">
         <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../../User%20Guides.html">User Guides</a>
+          </li>
           <li class="nav-group-name">
             <a href="../../AWSSDKSwiftCore.html">AWSSDKSwiftCore</a>
           </li>
@@ -68,6 +71,9 @@
             <a href="../../AppSync.html">AppSync</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../Appflow.html">Appflow</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../ApplicationAutoScaling.html">ApplicationAutoScaling</a>
           </li>
           <li class="nav-group-name">
@@ -93,6 +99,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../Batch.html">Batch</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../Braket.html">Braket</a>
           </li>
           <li class="nav-group-name">
             <a href="../../Budgets.html">Budgets</a>
@@ -335,6 +344,12 @@
             <a href="../../IAM.html">IAM</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../IVS.html">IVS</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../IdentityStore.html">IdentityStore</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../Imagebuilder.html">Imagebuilder</a>
           </li>
           <li class="nav-group-name">
@@ -557,6 +572,9 @@
             <a href="../../Redshift.html">Redshift</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../RedshiftDataAPIService.html">RedshiftDataAPIService</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../Rekognition.html">Rekognition</a>
           </li>
           <li class="nav-group-name">
@@ -606,6 +624,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../SSO.html">SSO</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../SSOAdmin.html">SSOAdmin</a>
           </li>
           <li class="nav-group-name">
             <a href="../../SSOOIDC.html">SSOOIDC</a>
@@ -735,7 +756,8 @@
             <h1>LoadBalancerDescription</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">LoadBalancerDescription</span> <span class="p">:</span> <span class="kt"><a href="../../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                  
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">LoadBalancerDescription</span> <span class="p">:</span> <span class="kt"><a href="../../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                 </div>
               </div>
@@ -748,9 +770,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6AWSELB3ELBV23LoadBalancerDescriptionV17availabilityZonesSaySSGSgvp"></a>
+                    <a name="/s:7SotoELB0B0V23LoadBalancerDescriptionV17availabilityZonesSaySSGSgvp"></a>
                     <a name="//apple_ref/swift/Property/availabilityZones" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6AWSELB3ELBV23LoadBalancerDescriptionV17availabilityZonesSaySSGSgvp">availabilityZones</a>
+                    <a class="token" href="#/s:7SotoELB0B0V23LoadBalancerDescriptionV17availabilityZonesSaySSGSgvp">availabilityZones</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -766,9 +788,12 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">@OptionalCoding</span>
-<span class="o">&lt;</span><span class="kt"><a href="../../Other%20Typealiases.html#/s:15AWSSDKSwiftCore17DefaultArrayCodera">DefaultArrayCoder</a></span><span class="o">&gt;</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">availabilityZones</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+<span class="o">&lt;</span><span class="kt"><a href="../../Other%20Typealiases.html#/s:8SotoCore17DefaultArrayCodera">DefaultArrayCoder</a></span><span class="o">&gt;</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">availabilityZones</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ELB/ELB_Shapes.swift#L1055">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -776,9 +801,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6AWSELB3ELBV23LoadBalancerDescriptionV25backendServerDescriptionsSayAC07BackendgE0VGSgvp"></a>
+                    <a name="/s:7SotoELB0B0V23LoadBalancerDescriptionV25backendServerDescriptionsSayAC07BackendgE0VGSgvp"></a>
                     <a name="//apple_ref/swift/Property/backendServerDescriptions" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6AWSELB3ELBV23LoadBalancerDescriptionV25backendServerDescriptionsSayAC07BackendgE0VGSgvp">backendServerDescriptions</a>
+                    <a class="token" href="#/s:7SotoELB0B0V23LoadBalancerDescriptionV25backendServerDescriptionsSayAC07BackendgE0VGSgvp">backendServerDescriptions</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -794,9 +819,12 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">@OptionalCoding</span>
-<span class="o">&lt;</span><span class="kt"><a href="../../Other%20Typealiases.html#/s:15AWSSDKSwiftCore17DefaultArrayCodera">DefaultArrayCoder</a></span><span class="o">&gt;</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">backendServerDescriptions</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../../Structs/ELB/BackendServerDescription.html">BackendServerDescription</a></span><span class="p">]?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+<span class="o">&lt;</span><span class="kt"><a href="../../Other%20Typealiases.html#/s:8SotoCore17DefaultArrayCodera">DefaultArrayCoder</a></span><span class="o">&gt;</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">backendServerDescriptions</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../../Structs/ELB/BackendServerDescription.html">BackendServerDescription</a></span><span class="p">]?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ELB/ELB_Shapes.swift#L1058">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -804,9 +832,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6AWSELB3ELBV23LoadBalancerDescriptionV23canonicalHostedZoneNameSSSgvp"></a>
+                    <a name="/s:7SotoELB0B0V23LoadBalancerDescriptionV23canonicalHostedZoneNameSSSgvp"></a>
                     <a name="//apple_ref/swift/Property/canonicalHostedZoneName" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6AWSELB3ELBV23LoadBalancerDescriptionV23canonicalHostedZoneNameSSSgvp">canonicalHostedZoneName</a>
+                    <a class="token" href="#/s:7SotoELB0B0V23LoadBalancerDescriptionV23canonicalHostedZoneNameSSSgvp">canonicalHostedZoneName</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -825,15 +853,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ELB/ELB_Shapes.swift#L1060">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6AWSELB3ELBV23LoadBalancerDescriptionV25canonicalHostedZoneNameIDSSSgvp"></a>
+                    <a name="/s:7SotoELB0B0V23LoadBalancerDescriptionV25canonicalHostedZoneNameIDSSSgvp"></a>
                     <a name="//apple_ref/swift/Property/canonicalHostedZoneNameID" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6AWSELB3ELBV23LoadBalancerDescriptionV25canonicalHostedZoneNameIDSSSgvp">canonicalHostedZoneNameID</a>
+                    <a class="token" href="#/s:7SotoELB0B0V23LoadBalancerDescriptionV25canonicalHostedZoneNameIDSSSgvp">canonicalHostedZoneNameID</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -852,15 +883,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ELB/ELB_Shapes.swift#L1062">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6AWSELB3ELBV23LoadBalancerDescriptionV11createdTime15AWSSDKSwiftCore0G5StampVSgvp"></a>
+                    <a name="/s:7SotoELB0B0V23LoadBalancerDescriptionV11createdTime0A4Core0G5StampVSgvp"></a>
                     <a name="//apple_ref/swift/Property/createdTime" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6AWSELB3ELBV23LoadBalancerDescriptionV11createdTime15AWSSDKSwiftCore0G5StampVSgvp">createdTime</a>
+                    <a class="token" href="#/s:7SotoELB0B0V23LoadBalancerDescriptionV11createdTime0A4Core0G5StampVSgvp">createdTime</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -879,15 +913,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ELB/ELB_Shapes.swift#L1064">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6AWSELB3ELBV23LoadBalancerDescriptionV7dNSNameSSSgvp"></a>
+                    <a name="/s:7SotoELB0B0V23LoadBalancerDescriptionV7dNSNameSSSgvp"></a>
                     <a name="//apple_ref/swift/Property/dNSName" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6AWSELB3ELBV23LoadBalancerDescriptionV7dNSNameSSSgvp">dNSName</a>
+                    <a class="token" href="#/s:7SotoELB0B0V23LoadBalancerDescriptionV7dNSNameSSSgvp">dNSName</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -906,15 +943,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ELB/ELB_Shapes.swift#L1066">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6AWSELB3ELBV23LoadBalancerDescriptionV11healthCheckAC06HealthG0VSgvp"></a>
+                    <a name="/s:7SotoELB0B0V23LoadBalancerDescriptionV11healthCheckAC06HealthG0VSgvp"></a>
                     <a name="//apple_ref/swift/Property/healthCheck" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6AWSELB3ELBV23LoadBalancerDescriptionV11healthCheckAC06HealthG0VSgvp">healthCheck</a>
+                    <a class="token" href="#/s:7SotoELB0B0V23LoadBalancerDescriptionV11healthCheckAC06HealthG0VSgvp">healthCheck</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -933,15 +973,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ELB/ELB_Shapes.swift#L1068">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6AWSELB3ELBV23LoadBalancerDescriptionV9instancesSayAC8InstanceVGSgvp"></a>
+                    <a name="/s:7SotoELB0B0V23LoadBalancerDescriptionV9instancesSayAC8InstanceVGSgvp"></a>
                     <a name="//apple_ref/swift/Property/instances" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6AWSELB3ELBV23LoadBalancerDescriptionV9instancesSayAC8InstanceVGSgvp">instances</a>
+                    <a class="token" href="#/s:7SotoELB0B0V23LoadBalancerDescriptionV9instancesSayAC8InstanceVGSgvp">instances</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -957,9 +1000,12 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">@OptionalCoding</span>
-<span class="o">&lt;</span><span class="kt"><a href="../../Other%20Typealiases.html#/s:15AWSSDKSwiftCore17DefaultArrayCodera">DefaultArrayCoder</a></span><span class="o">&gt;</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">instances</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../../Structs/ELB/Instance.html">Instance</a></span><span class="p">]?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+<span class="o">&lt;</span><span class="kt"><a href="../../Other%20Typealiases.html#/s:8SotoCore17DefaultArrayCodera">DefaultArrayCoder</a></span><span class="o">&gt;</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">instances</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../../Structs/ELB/Instance.html">Instance</a></span><span class="p">]?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ELB/ELB_Shapes.swift#L1071">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -967,9 +1013,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6AWSELB3ELBV23LoadBalancerDescriptionV20listenerDescriptionsSayAC08ListenerE0VGSgvp"></a>
+                    <a name="/s:7SotoELB0B0V23LoadBalancerDescriptionV20listenerDescriptionsSayAC08ListenerE0VGSgvp"></a>
                     <a name="//apple_ref/swift/Property/listenerDescriptions" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6AWSELB3ELBV23LoadBalancerDescriptionV20listenerDescriptionsSayAC08ListenerE0VGSgvp">listenerDescriptions</a>
+                    <a class="token" href="#/s:7SotoELB0B0V23LoadBalancerDescriptionV20listenerDescriptionsSayAC08ListenerE0VGSgvp">listenerDescriptions</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -985,9 +1031,12 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">@OptionalCoding</span>
-<span class="o">&lt;</span><span class="kt"><a href="../../Other%20Typealiases.html#/s:15AWSSDKSwiftCore17DefaultArrayCodera">DefaultArrayCoder</a></span><span class="o">&gt;</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">listenerDescriptions</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../../Structs/ELB/ListenerDescription.html">ListenerDescription</a></span><span class="p">]?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+<span class="o">&lt;</span><span class="kt"><a href="../../Other%20Typealiases.html#/s:8SotoCore17DefaultArrayCodera">DefaultArrayCoder</a></span><span class="o">&gt;</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">listenerDescriptions</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../../Structs/ELB/ListenerDescription.html">ListenerDescription</a></span><span class="p">]?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ELB/ELB_Shapes.swift#L1074">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -995,9 +1044,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6AWSELB3ELBV23LoadBalancerDescriptionV04loadD4NameSSSgvp"></a>
+                    <a name="/s:7SotoELB0B0V23LoadBalancerDescriptionV04loadD4NameSSSgvp"></a>
                     <a name="//apple_ref/swift/Property/loadBalancerName" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6AWSELB3ELBV23LoadBalancerDescriptionV04loadD4NameSSSgvp">loadBalancerName</a>
+                    <a class="token" href="#/s:7SotoELB0B0V23LoadBalancerDescriptionV04loadD4NameSSSgvp">loadBalancerName</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1016,15 +1065,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ELB/ELB_Shapes.swift#L1076">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6AWSELB3ELBV23LoadBalancerDescriptionV8policiesAC8PoliciesVSgvp"></a>
+                    <a name="/s:7SotoELB0B0V23LoadBalancerDescriptionV8policiesAC8PoliciesVSgvp"></a>
                     <a name="//apple_ref/swift/Property/policies" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6AWSELB3ELBV23LoadBalancerDescriptionV8policiesAC8PoliciesVSgvp">policies</a>
+                    <a class="token" href="#/s:7SotoELB0B0V23LoadBalancerDescriptionV8policiesAC8PoliciesVSgvp">policies</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1043,15 +1095,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ELB/ELB_Shapes.swift#L1078">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6AWSELB3ELBV23LoadBalancerDescriptionV6schemeSSSgvp"></a>
+                    <a name="/s:7SotoELB0B0V23LoadBalancerDescriptionV6schemeSSSgvp"></a>
                     <a name="//apple_ref/swift/Property/scheme" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6AWSELB3ELBV23LoadBalancerDescriptionV6schemeSSSgvp">scheme</a>
+                    <a class="token" href="#/s:7SotoELB0B0V23LoadBalancerDescriptionV6schemeSSSgvp">scheme</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1070,15 +1125,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ELB/ELB_Shapes.swift#L1080">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6AWSELB3ELBV23LoadBalancerDescriptionV14securityGroupsSaySSGSgvp"></a>
+                    <a name="/s:7SotoELB0B0V23LoadBalancerDescriptionV14securityGroupsSaySSGSgvp"></a>
                     <a name="//apple_ref/swift/Property/securityGroups" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6AWSELB3ELBV23LoadBalancerDescriptionV14securityGroupsSaySSGSgvp">securityGroups</a>
+                    <a class="token" href="#/s:7SotoELB0B0V23LoadBalancerDescriptionV14securityGroupsSaySSGSgvp">securityGroups</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1094,9 +1152,12 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">@OptionalCoding</span>
-<span class="o">&lt;</span><span class="kt"><a href="../../Other%20Typealiases.html#/s:15AWSSDKSwiftCore17DefaultArrayCodera">DefaultArrayCoder</a></span><span class="o">&gt;</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">securityGroups</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+<span class="o">&lt;</span><span class="kt"><a href="../../Other%20Typealiases.html#/s:8SotoCore17DefaultArrayCodera">DefaultArrayCoder</a></span><span class="o">&gt;</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">securityGroups</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ELB/ELB_Shapes.swift#L1083">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1104,9 +1165,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6AWSELB3ELBV23LoadBalancerDescriptionV19sourceSecurityGroupAC06SourcegH0VSgvp"></a>
+                    <a name="/s:7SotoELB0B0V23LoadBalancerDescriptionV19sourceSecurityGroupAC06SourcegH0VSgvp"></a>
                     <a name="//apple_ref/swift/Property/sourceSecurityGroup" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6AWSELB3ELBV23LoadBalancerDescriptionV19sourceSecurityGroupAC06SourcegH0VSgvp">sourceSecurityGroup</a>
+                    <a class="token" href="#/s:7SotoELB0B0V23LoadBalancerDescriptionV19sourceSecurityGroupAC06SourcegH0VSgvp">sourceSecurityGroup</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1125,15 +1186,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ELB/ELB_Shapes.swift#L1085">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6AWSELB3ELBV23LoadBalancerDescriptionV7subnetsSaySSGSgvp"></a>
+                    <a name="/s:7SotoELB0B0V23LoadBalancerDescriptionV7subnetsSaySSGSgvp"></a>
                     <a name="//apple_ref/swift/Property/subnets" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6AWSELB3ELBV23LoadBalancerDescriptionV7subnetsSaySSGSgvp">subnets</a>
+                    <a class="token" href="#/s:7SotoELB0B0V23LoadBalancerDescriptionV7subnetsSaySSGSgvp">subnets</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1149,9 +1213,12 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">@OptionalCoding</span>
-<span class="o">&lt;</span><span class="kt"><a href="../../Other%20Typealiases.html#/s:15AWSSDKSwiftCore17DefaultArrayCodera">DefaultArrayCoder</a></span><span class="o">&gt;</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">subnets</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+<span class="o">&lt;</span><span class="kt"><a href="../../Other%20Typealiases.html#/s:8SotoCore17DefaultArrayCodera">DefaultArrayCoder</a></span><span class="o">&gt;</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">subnets</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ELB/ELB_Shapes.swift#L1088">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1159,9 +1226,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6AWSELB3ELBV23LoadBalancerDescriptionV5vPCIdSSSgvp"></a>
+                    <a name="/s:7SotoELB0B0V23LoadBalancerDescriptionV5vPCIdSSSgvp"></a>
                     <a name="//apple_ref/swift/Property/vPCId" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6AWSELB3ELBV23LoadBalancerDescriptionV5vPCIdSSSgvp">vPCId</a>
+                    <a class="token" href="#/s:7SotoELB0B0V23LoadBalancerDescriptionV5vPCIdSSSgvp">vPCId</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1180,15 +1247,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ELB/ELB_Shapes.swift#L1090">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6AWSELB3ELBV23LoadBalancerDescriptionV17availabilityZones25backendServerDescriptions23canonicalHostedZoneName0klmN2ID11createdTime7dNSName11healthCheck9instances08listenerJ004loaddN08policies6scheme14securityGroups19sourceSecurityGroup7subnets5vPCIdAESaySSGSg_SayAC07BackendiE0VGSgSSSgA0_15AWSSDKSwiftCore0Q5StampVSgA0_AC06HealthT0VSgSayAC8InstanceVGSgSayAC08ListenerE0VGSgA0_AC8PoliciesVSgA0_AwC19SourceSecurityGroupVSgAWA0_tcfc"></a>
+                    <a name="/s:7SotoELB0B0V23LoadBalancerDescriptionV17availabilityZones25backendServerDescriptions23canonicalHostedZoneName0klmN2ID11createdTime7dNSName11healthCheck9instances08listenerJ004loaddN08policies6scheme14securityGroups19sourceSecurityGroup7subnets5vPCIdAESaySSGSg_SayAC07BackendiE0VGSgSSSgA0_0A4Core0Q5StampVSgA0_AC06HealthT0VSgSayAC8InstanceVGSgSayAC08ListenerE0VGSgA0_AC8PoliciesVSgA0_AwC19SourceSecurityGroupVSgAWA0_tcfc"></a>
                     <a name="//apple_ref/swift/Method/init(availabilityZones:backendServerDescriptions:canonicalHostedZoneName:canonicalHostedZoneNameID:createdTime:dNSName:healthCheck:instances:listenerDescriptions:loadBalancerName:policies:scheme:securityGroups:sourceSecurityGroup:subnets:vPCId:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6AWSELB3ELBV23LoadBalancerDescriptionV17availabilityZones25backendServerDescriptions23canonicalHostedZoneName0klmN2ID11createdTime7dNSName11healthCheck9instances08listenerJ004loaddN08policies6scheme14securityGroups19sourceSecurityGroup7subnets5vPCIdAESaySSGSg_SayAC07BackendiE0VGSgSSSgA0_15AWSSDKSwiftCore0Q5StampVSgA0_AC06HealthT0VSgSayAC8InstanceVGSgSayAC08ListenerE0VGSgA0_AC8PoliciesVSgA0_AwC19SourceSecurityGroupVSgAWA0_tcfc">init(availabilityZones:backendServerDescriptions:canonicalHostedZoneName:canonicalHostedZoneNameID:createdTime:dNSName:healthCheck:instances:listenerDescriptions:loadBalancerName:policies:scheme:securityGroups:sourceSecurityGroup:subnets:vPCId:)</a>
+                    <a class="token" href="#/s:7SotoELB0B0V23LoadBalancerDescriptionV17availabilityZones25backendServerDescriptions23canonicalHostedZoneName0klmN2ID11createdTime7dNSName11healthCheck9instances08listenerJ004loaddN08policies6scheme14securityGroups19sourceSecurityGroup7subnets5vPCIdAESaySSGSg_SayAC07BackendiE0VGSgSSSgA0_0A4Core0Q5StampVSgA0_AC06HealthT0VSgSayAC8InstanceVGSgSayAC08ListenerE0VGSgA0_AC8PoliciesVSgA0_AwC19SourceSecurityGroupVSgAWA0_tcfc">init(availabilityZones:<wbr>backendServerDescriptions:<wbr>canonicalHostedZoneName:<wbr>canonicalHostedZoneNameID:<wbr>createdTime:<wbr>dNSName:<wbr>healthCheck:<wbr>instances:<wbr>listenerDescriptions:<wbr>loadBalancerName:<wbr>policies:<wbr>scheme:<wbr>securityGroups:<wbr>sourceSecurityGroup:<wbr>subnets:<wbr>vPCId:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1206,6 +1276,9 @@
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">availabilityZones</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">backendServerDescriptions</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../../Structs/ELB/BackendServerDescription.html">BackendServerDescription</a></span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">canonicalHostedZoneName</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">canonicalHostedZoneNameID</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">createdTime</span><span class="p">:</span> <span class="kt"><a href="../../Structs/TimeStamp.html">TimeStamp</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">dNSName</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">healthCheck</span><span class="p">:</span> <span class="kt"><a href="../../Structs/ELB/HealthCheck.html">HealthCheck</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">instances</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../../Structs/ELB/Instance.html">Instance</a></span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">listenerDescriptions</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../../Structs/ELB/ListenerDescription.html">ListenerDescription</a></span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">loadBalancerName</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">policies</span><span class="p">:</span> <span class="kt"><a href="../../Structs/ELB/Policies.html">Policies</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">scheme</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">securityGroups</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">sourceSecurityGroup</span><span class="p">:</span> <span class="kt"><a href="../../Structs/ELB/SourceSecurityGroup.html">SourceSecurityGroup</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">subnets</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">vPCId</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ELB/ELB_Shapes.swift#L1092-L1109">Show on GitHub</a>
                       </div>
                     </section>
                   </div>

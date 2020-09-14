@@ -15,7 +15,7 @@
     <header>
       <div class="content-wrapper">
         <p><a href="../index.html"> Docs</a> (54% documented)</p>
-        <p class="header-right"><a href="https://github.com/swift-aws/aws-sdk-swift"><img src="../img/gh.png"/>View on GitHub</a></p>
+        <p class="header-right"><a href="https://github.com/soto-project/soto"><img src="../img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -28,6 +28,9 @@
     <div class="content-wrapper">
       <nav class="sidebar">
         <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../User%20Guides.html">User Guides</a>
+          </li>
           <li class="nav-group-name">
             <a href="../AWSSDKSwiftCore.html">AWSSDKSwiftCore</a>
           </li>
@@ -68,6 +71,9 @@
             <a href="../AppSync.html">AppSync</a>
           </li>
           <li class="nav-group-name">
+            <a href="../Appflow.html">Appflow</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../ApplicationAutoScaling.html">ApplicationAutoScaling</a>
           </li>
           <li class="nav-group-name">
@@ -93,6 +99,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../Batch.html">Batch</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Braket.html">Braket</a>
           </li>
           <li class="nav-group-name">
             <a href="../Budgets.html">Budgets</a>
@@ -335,6 +344,12 @@
             <a href="../IAM.html">IAM</a>
           </li>
           <li class="nav-group-name">
+            <a href="../IVS.html">IVS</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../IdentityStore.html">IdentityStore</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../Imagebuilder.html">Imagebuilder</a>
           </li>
           <li class="nav-group-name">
@@ -557,6 +572,9 @@
             <a href="../Redshift.html">Redshift</a>
           </li>
           <li class="nav-group-name">
+            <a href="../RedshiftDataAPIService.html">RedshiftDataAPIService</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../Rekognition.html">Rekognition</a>
           </li>
           <li class="nav-group-name">
@@ -606,6 +624,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../SSO.html">SSO</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../SSOAdmin.html">SSOAdmin</a>
           </li>
           <li class="nav-group-name">
             <a href="../SSOOIDC.html">SSOOIDC</a>
@@ -735,6 +756,7 @@
             <h1>AWSHTTPClient</h1>
               <div class="declaration">
                 <div class="language">
+                  
                   <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">AWSHTTPClient</span></code></pre>
 
                 </div>
@@ -748,9 +770,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:15AWSSDKSwiftCore13AWSHTTPClientP14ResponseStreama"></a>
+                    <a name="/s:8SotoCore13AWSHTTPClientP14ResponseStreama"></a>
                     <a name="//apple_ref/swift/Alias/ResponseStream" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15AWSSDKSwiftCore13AWSHTTPClientP14ResponseStreama">ResponseStream</a>
+                    <a class="token" href="#/s:8SotoCore13AWSHTTPClientP14ResponseStreama">ResponseStream</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -769,15 +791,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/.build/checkouts/soto-core/Sources/SotoCore/HTTP/AWSHTTPClient.swift#L">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:15AWSSDKSwiftCore13AWSHTTPClientP7execute7request7timeout2on3NIO15EventLoopFutureCyAA15AWSHTTPResponse_pGAA14AWSHTTPRequestV_AH10TimeAmountVAH0iJ0_ptF"></a>
-                    <a name="//apple_ref/swift/Method/execute(request:timeout:on:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15AWSSDKSwiftCore13AWSHTTPClientP7execute7request7timeout2on3NIO15EventLoopFutureCyAA15AWSHTTPResponse_pGAA14AWSHTTPRequestV_AH10TimeAmountVAH0iJ0_ptF">execute(request:timeout:on:)</a>
+                    <a name="/s:8SotoCore13AWSHTTPClientP7execute7request7timeout2on6logger3NIO15EventLoopFutureCyAA15AWSHTTPResponse_pGAA14AWSHTTPRequestV_AI10TimeAmountVAI0jK0_p7Logging6LoggerVtF"></a>
+                    <a name="//apple_ref/swift/Method/execute(request:timeout:on:logger:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8SotoCore13AWSHTTPClientP7execute7request7timeout2on6logger3NIO15EventLoopFutureCyAA15AWSHTTPResponse_pGAA14AWSHTTPRequestV_AI10TimeAmountVAI0jK0_p7Logging6LoggerVtF">execute(request:<wbr>timeout:<wbr>on:<wbr>logger:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -792,9 +817,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">execute</span><span class="p">(</span><span class="nv">request</span><span class="p">:</span> <span class="kt"><a href="../Structs/AWSHTTPRequest.html">AWSHTTPRequest</a></span><span class="p">,</span> <span class="nv">timeout</span><span class="p">:</span> <span class="kt">TimeAmount</span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Protocols/AWSHTTPResponse.html">AWSHTTPResponse</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">execute</span><span class="p">(</span><span class="nv">request</span><span class="p">:</span> <span class="kt"><a href="../Structs/AWSHTTPRequest.html">AWSHTTPRequest</a></span><span class="p">,</span> <span class="nv">timeout</span><span class="p">:</span> <span class="kt">TimeAmount</span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">,</span> <span class="nv">logger</span><span class="p">:</span> <span class="kt">Logger</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Protocols/AWSHTTPResponse.html">AWSHTTPResponse</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/.build/checkouts/soto-core/Sources/SotoCore/HTTP/AWSHTTPClient.swift#L47">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -802,9 +830,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:15AWSSDKSwiftCore13AWSHTTPClientP7execute7request7timeout2on6stream3NIO15EventLoopFutureCyAA15AWSHTTPResponse_pGAA14AWSHTTPRequestV_AI10TimeAmountVAI0jK0_pAKyytGAI10ByteBufferV_AiR_ptctF"></a>
-                    <a name="//apple_ref/swift/Method/execute(request:timeout:on:stream:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15AWSSDKSwiftCore13AWSHTTPClientP7execute7request7timeout2on6stream3NIO15EventLoopFutureCyAA15AWSHTTPResponse_pGAA14AWSHTTPRequestV_AI10TimeAmountVAI0jK0_pAKyytGAI10ByteBufferV_AiR_ptctF">execute(request:timeout:on:stream:)</a>
+                    <a name="/s:8SotoCore13AWSHTTPClientP7execute7request7timeout2on6logger6stream3NIO15EventLoopFutureCyAA15AWSHTTPResponse_pGAA14AWSHTTPRequestV_AJ10TimeAmountVAJ0kL0_p7Logging6LoggerVALyytGAJ10ByteBufferV_AjS_ptctF"></a>
+                    <a name="//apple_ref/swift/Method/execute(request:timeout:on:logger:stream:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8SotoCore13AWSHTTPClientP7execute7request7timeout2on6logger6stream3NIO15EventLoopFutureCyAA15AWSHTTPResponse_pGAA14AWSHTTPRequestV_AJ10TimeAmountVAJ0kL0_p7Logging6LoggerVALyytGAJ10ByteBufferV_AjS_ptctF">execute(request:<wbr>timeout:<wbr>on:<wbr>logger:<wbr>stream:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Default implementation
@@ -827,9 +855,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">execute</span><span class="p">(</span><span class="nv">request</span><span class="p">:</span> <span class="kt"><a href="../Structs/AWSHTTPRequest.html">AWSHTTPRequest</a></span><span class="p">,</span> <span class="nv">timeout</span><span class="p">:</span> <span class="kt">TimeAmount</span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">,</span> <span class="nv">stream</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt"><a href="../Protocols/AWSHTTPClient.html#/s:15AWSSDKSwiftCore13AWSHTTPClientP14ResponseStreama">ResponseStream</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Protocols/AWSHTTPResponse.html">AWSHTTPResponse</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">execute</span><span class="p">(</span><span class="nv">request</span><span class="p">:</span> <span class="kt"><a href="../Structs/AWSHTTPRequest.html">AWSHTTPRequest</a></span><span class="p">,</span> <span class="nv">timeout</span><span class="p">:</span> <span class="kt">TimeAmount</span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">,</span> <span class="nv">logger</span><span class="p">:</span> <span class="kt">Logger</span><span class="p">,</span> <span class="nv">stream</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt"><a href="../Protocols/AWSHTTPClient.html#/s:8SotoCore13AWSHTTPClientP14ResponseStreama">ResponseStream</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Protocols/AWSHTTPResponse.html">AWSHTTPResponse</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/.build/checkouts/soto-core/Sources/SotoCore/HTTP/AWSHTTPClient.swift#L50">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -837,9 +868,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:15AWSSDKSwiftCore13AWSHTTPClientP12syncShutdownyyKF"></a>
-                    <a name="//apple_ref/swift/Method/syncShutdown()" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15AWSSDKSwiftCore13AWSHTTPClientP12syncShutdownyyKF">syncShutdown()</a>
+                    <a name="/s:8SotoCore13AWSHTTPClientP8shutdown5queue_ySo012OS_dispatch_E0C_ys5Error_pSgctF"></a>
+                    <a name="//apple_ref/swift/Method/shutdown(queue:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8SotoCore13AWSHTTPClientP8shutdown5queue_ySo012OS_dispatch_E0C_ys5Error_pSgctF">shutdown(queue:<wbr>_:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -854,9 +885,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">syncShutdown</span><span class="p">()</span> <span class="k">throws</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">shutdown</span><span class="p">(</span><span class="nv">queue</span><span class="p">:</span> <span class="kt">DispatchQueue</span><span class="p">,</span> <span class="n">_</span> <span class="nv">callback</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/.build/checkouts/soto-core/Sources/SotoCore/HTTP/AWSHTTPClient.swift#L53">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -864,9 +898,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:15AWSSDKSwiftCore13AWSHTTPClientP14eventLoopGroup3NIO05EventeF0_pvp"></a>
+                    <a name="/s:8SotoCore13AWSHTTPClientP14eventLoopGroup3NIO05EventeF0_pvp"></a>
                     <a name="//apple_ref/swift/Property/eventLoopGroup" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15AWSSDKSwiftCore13AWSHTTPClientP14eventLoopGroup3NIO05EventeF0_pvp">eventLoopGroup</a>
+                    <a class="token" href="#/s:8SotoCore13AWSHTTPClientP14eventLoopGroup3NIO05EventeF0_pvp">eventLoopGroup</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -884,6 +918,9 @@
                           <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">eventLoopGroup</span><span class="p">:</span> <span class="kt">EventLoopGroup</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/.build/checkouts/soto-core/Sources/SotoCore/HTTP/AWSHTTPClient.swift#L56">Show on GitHub</a>
                       </div>
                     </section>
                   </div>

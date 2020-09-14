@@ -15,7 +15,7 @@
     <header>
       <div class="content-wrapper">
         <p><a href="../../index.html"> Docs</a> (54% documented)</p>
-        <p class="header-right"><a href="https://github.com/swift-aws/aws-sdk-swift"><img src="../../img/gh.png"/>View on GitHub</a></p>
+        <p class="header-right"><a href="https://github.com/soto-project/soto"><img src="../../img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -28,6 +28,9 @@
     <div class="content-wrapper">
       <nav class="sidebar">
         <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../../User%20Guides.html">User Guides</a>
+          </li>
           <li class="nav-group-name">
             <a href="../../AWSSDKSwiftCore.html">AWSSDKSwiftCore</a>
           </li>
@@ -68,6 +71,9 @@
             <a href="../../AppSync.html">AppSync</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../Appflow.html">Appflow</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../ApplicationAutoScaling.html">ApplicationAutoScaling</a>
           </li>
           <li class="nav-group-name">
@@ -93,6 +99,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../Batch.html">Batch</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../Braket.html">Braket</a>
           </li>
           <li class="nav-group-name">
             <a href="../../Budgets.html">Budgets</a>
@@ -335,6 +344,12 @@
             <a href="../../IAM.html">IAM</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../IVS.html">IVS</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../IdentityStore.html">IdentityStore</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../Imagebuilder.html">Imagebuilder</a>
           </li>
           <li class="nav-group-name">
@@ -557,6 +572,9 @@
             <a href="../../Redshift.html">Redshift</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../RedshiftDataAPIService.html">RedshiftDataAPIService</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../Rekognition.html">Rekognition</a>
           </li>
           <li class="nav-group-name">
@@ -606,6 +624,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../SSO.html">SSO</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../SSOAdmin.html">SSOAdmin</a>
           </li>
           <li class="nav-group-name">
             <a href="../../SSOOIDC.html">SSOOIDC</a>
@@ -735,7 +756,8 @@
             <h1>GetDetectorVersionResult</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">GetDetectorVersionResult</span> <span class="p">:</span> <span class="kt"><a href="../../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                  
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">GetDetectorVersionResult</span> <span class="p">:</span> <span class="kt"><a href="../../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                 </div>
               </div>
@@ -748,9 +770,39 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:16AWSFraudDetector05FraudB0V03GetB13VersionResultV11createdTimeSSSgvp"></a>
+                    <a name="/s:17SotoFraudDetector0bC0V03GetC13VersionResultV3arnSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/arn" class="dashAnchor"></a>
+                    <a class="token" href="#/s:17SotoFraudDetector0bC0V03GetC13VersionResultV3arnSSSgvp">arn</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The detector version ARN.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">arn</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/FraudDetector/FraudDetector_Shapes.swift#L1047">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:17SotoFraudDetector0bC0V03GetC13VersionResultV11createdTimeSSSgvp"></a>
                     <a name="//apple_ref/swift/Property/createdTime" class="dashAnchor"></a>
-                    <a class="token" href="#/s:16AWSFraudDetector05FraudB0V03GetB13VersionResultV11createdTimeSSSgvp">createdTime</a>
+                    <a class="token" href="#/s:17SotoFraudDetector0bC0V03GetC13VersionResultV11createdTimeSSSgvp">createdTime</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -769,15 +821,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/FraudDetector/FraudDetector_Shapes.swift#L1049">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:16AWSFraudDetector05FraudB0V03GetB13VersionResultV11descriptionSSSgvp"></a>
+                    <a name="/s:17SotoFraudDetector0bC0V03GetC13VersionResultV11descriptionSSSgvp"></a>
                     <a name="//apple_ref/swift/Property/description" class="dashAnchor"></a>
-                    <a class="token" href="#/s:16AWSFraudDetector05FraudB0V03GetB13VersionResultV11descriptionSSSgvp">description</a>
+                    <a class="token" href="#/s:17SotoFraudDetector0bC0V03GetC13VersionResultV11descriptionSSSgvp">description</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -796,15 +851,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/FraudDetector/FraudDetector_Shapes.swift#L1051">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:16AWSFraudDetector05FraudB0V03GetB13VersionResultV10detectorIdSSSgvp"></a>
+                    <a name="/s:17SotoFraudDetector0bC0V03GetC13VersionResultV10detectorIdSSSgvp"></a>
                     <a name="//apple_ref/swift/Property/detectorId" class="dashAnchor"></a>
-                    <a class="token" href="#/s:16AWSFraudDetector05FraudB0V03GetB13VersionResultV10detectorIdSSSgvp">detectorId</a>
+                    <a class="token" href="#/s:17SotoFraudDetector0bC0V03GetC13VersionResultV10detectorIdSSSgvp">detectorId</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -823,15 +881,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/FraudDetector/FraudDetector_Shapes.swift#L1053">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:16AWSFraudDetector05FraudB0V03GetB13VersionResultV08detectorE2IdSSSgvp"></a>
+                    <a name="/s:17SotoFraudDetector0bC0V03GetC13VersionResultV08detectorE2IdSSSgvp"></a>
                     <a name="//apple_ref/swift/Property/detectorVersionId" class="dashAnchor"></a>
-                    <a class="token" href="#/s:16AWSFraudDetector05FraudB0V03GetB13VersionResultV08detectorE2IdSSSgvp">detectorVersionId</a>
+                    <a class="token" href="#/s:17SotoFraudDetector0bC0V03GetC13VersionResultV08detectorE2IdSSSgvp">detectorVersionId</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -850,15 +911,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/FraudDetector/FraudDetector_Shapes.swift#L1055">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:16AWSFraudDetector05FraudB0V03GetB13VersionResultV22externalModelEndpointsSaySSGSgvp"></a>
+                    <a name="/s:17SotoFraudDetector0bC0V03GetC13VersionResultV22externalModelEndpointsSaySSGSgvp"></a>
                     <a name="//apple_ref/swift/Property/externalModelEndpoints" class="dashAnchor"></a>
-                    <a class="token" href="#/s:16AWSFraudDetector05FraudB0V03GetB13VersionResultV22externalModelEndpointsSaySSGSgvp">externalModelEndpoints</a>
+                    <a class="token" href="#/s:17SotoFraudDetector0bC0V03GetC13VersionResultV22externalModelEndpointsSaySSGSgvp">externalModelEndpoints</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -877,15 +941,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/FraudDetector/FraudDetector_Shapes.swift#L1057">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:16AWSFraudDetector05FraudB0V03GetB13VersionResultV15lastUpdatedTimeSSSgvp"></a>
+                    <a name="/s:17SotoFraudDetector0bC0V03GetC13VersionResultV15lastUpdatedTimeSSSgvp"></a>
                     <a name="//apple_ref/swift/Property/lastUpdatedTime" class="dashAnchor"></a>
-                    <a class="token" href="#/s:16AWSFraudDetector05FraudB0V03GetB13VersionResultV15lastUpdatedTimeSSSgvp">lastUpdatedTime</a>
+                    <a class="token" href="#/s:17SotoFraudDetector0bC0V03GetC13VersionResultV15lastUpdatedTimeSSSgvp">lastUpdatedTime</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -904,15 +971,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/FraudDetector/FraudDetector_Shapes.swift#L1059">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:16AWSFraudDetector05FraudB0V03GetB13VersionResultV13modelVersionsSayAC05ModelE0VGSgvp"></a>
+                    <a name="/s:17SotoFraudDetector0bC0V03GetC13VersionResultV13modelVersionsSayAC05ModelE0VGSgvp"></a>
                     <a name="//apple_ref/swift/Property/modelVersions" class="dashAnchor"></a>
-                    <a class="token" href="#/s:16AWSFraudDetector05FraudB0V03GetB13VersionResultV13modelVersionsSayAC05ModelE0VGSgvp">modelVersions</a>
+                    <a class="token" href="#/s:17SotoFraudDetector0bC0V03GetC13VersionResultV13modelVersionsSayAC05ModelE0VGSgvp">modelVersions</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -931,15 +1001,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/FraudDetector/FraudDetector_Shapes.swift#L1061">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:16AWSFraudDetector05FraudB0V03GetB13VersionResultV17ruleExecutionModeAC04RulehI0OSgvp"></a>
+                    <a name="/s:17SotoFraudDetector0bC0V03GetC13VersionResultV17ruleExecutionModeAC04RulehI0OSgvp"></a>
                     <a name="//apple_ref/swift/Property/ruleExecutionMode" class="dashAnchor"></a>
-                    <a class="token" href="#/s:16AWSFraudDetector05FraudB0V03GetB13VersionResultV17ruleExecutionModeAC04RulehI0OSgvp">ruleExecutionMode</a>
+                    <a class="token" href="#/s:17SotoFraudDetector0bC0V03GetC13VersionResultV17ruleExecutionModeAC04RulehI0OSgvp">ruleExecutionMode</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -958,15 +1031,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/FraudDetector/FraudDetector_Shapes.swift#L1063">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:16AWSFraudDetector05FraudB0V03GetB13VersionResultV5rulesSayAC4RuleVGSgvp"></a>
+                    <a name="/s:17SotoFraudDetector0bC0V03GetC13VersionResultV5rulesSayAC4RuleVGSgvp"></a>
                     <a name="//apple_ref/swift/Property/rules" class="dashAnchor"></a>
-                    <a class="token" href="#/s:16AWSFraudDetector05FraudB0V03GetB13VersionResultV5rulesSayAC4RuleVGSgvp">rules</a>
+                    <a class="token" href="#/s:17SotoFraudDetector0bC0V03GetC13VersionResultV5rulesSayAC4RuleVGSgvp">rules</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -985,15 +1061,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/FraudDetector/FraudDetector_Shapes.swift#L1065">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:16AWSFraudDetector05FraudB0V03GetB13VersionResultV6statusAC0bE6StatusOSgvp"></a>
+                    <a name="/s:17SotoFraudDetector0bC0V03GetC13VersionResultV6statusAC0cE6StatusOSgvp"></a>
                     <a name="//apple_ref/swift/Property/status" class="dashAnchor"></a>
-                    <a class="token" href="#/s:16AWSFraudDetector05FraudB0V03GetB13VersionResultV6statusAC0bE6StatusOSgvp">status</a>
+                    <a class="token" href="#/s:17SotoFraudDetector0bC0V03GetC13VersionResultV6statusAC0cE6StatusOSgvp">status</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1012,15 +1091,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/FraudDetector/FraudDetector_Shapes.swift#L1067">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:16AWSFraudDetector05FraudB0V03GetB13VersionResultV11createdTime11description10detectorId0jeK022externalModelEndpoints011lastUpdatedH013modelVersions17ruleExecutionMode5rules6statusAESSSg_A3PSaySSGSgAPSayAC0mE0VGSgAC04RuletU0OSgSayAC0X0VGSgAC0bE6StatusOSgtcfc"></a>
-                    <a name="//apple_ref/swift/Method/init(createdTime:description:detectorId:detectorVersionId:externalModelEndpoints:lastUpdatedTime:modelVersions:ruleExecutionMode:rules:status:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:16AWSFraudDetector05FraudB0V03GetB13VersionResultV11createdTime11description10detectorId0jeK022externalModelEndpoints011lastUpdatedH013modelVersions17ruleExecutionMode5rules6statusAESSSg_A3PSaySSGSgAPSayAC0mE0VGSgAC04RuletU0OSgSayAC0X0VGSgAC0bE6StatusOSgtcfc">init(createdTime:description:detectorId:detectorVersionId:externalModelEndpoints:lastUpdatedTime:modelVersions:ruleExecutionMode:rules:status:)</a>
+                    <a name="/s:17SotoFraudDetector0bC0V03GetC13VersionResultV3arn11createdTime11description10detectorId0keL022externalModelEndpoints011lastUpdatedI013modelVersions17ruleExecutionMode5rules6statusAESSSg_A4QSaySSGSgAQSayAC0nE0VGSgAC04RuleuV0OSgSayAC0Y0VGSgAC0cE6StatusOSgtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(arn:createdTime:description:detectorId:detectorVersionId:externalModelEndpoints:lastUpdatedTime:modelVersions:ruleExecutionMode:rules:status:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:17SotoFraudDetector0bC0V03GetC13VersionResultV3arn11createdTime11description10detectorId0keL022externalModelEndpoints011lastUpdatedI013modelVersions17ruleExecutionMode5rules6statusAESSSg_A4QSaySSGSgAQSayAC0nE0VGSgAC04RuleuV0OSgSayAC0Y0VGSgAC0cE6StatusOSgtcfc">init(arn:<wbr>createdTime:<wbr>description:<wbr>detectorId:<wbr>detectorVersionId:<wbr>externalModelEndpoints:<wbr>lastUpdatedTime:<wbr>modelVersions:<wbr>ruleExecutionMode:<wbr>rules:<wbr>status:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1035,9 +1117,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">createdTime</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">description</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">detectorId</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">detectorVersionId</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">externalModelEndpoints</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">lastUpdatedTime</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">modelVersions</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../../Structs/FraudDetector/ModelVersion.html">ModelVersion</a></span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">ruleExecutionMode</span><span class="p">:</span> <span class="kt"><a href="../../Structs/FraudDetector/RuleExecutionMode.html">RuleExecutionMode</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">rules</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../../Structs/FraudDetector/Rule.html">Rule</a></span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">status</span><span class="p">:</span> <span class="kt"><a href="../../Structs/FraudDetector/DetectorVersionStatus.html">DetectorVersionStatus</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">arn</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">createdTime</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">description</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">detectorId</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">detectorVersionId</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">externalModelEndpoints</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">lastUpdatedTime</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">modelVersions</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../../Structs/FraudDetector/ModelVersion.html">ModelVersion</a></span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">ruleExecutionMode</span><span class="p">:</span> <span class="kt"><a href="../../Structs/FraudDetector/RuleExecutionMode.html">RuleExecutionMode</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">rules</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../../Structs/FraudDetector/Rule.html">Rule</a></span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">status</span><span class="p">:</span> <span class="kt"><a href="../../Structs/FraudDetector/DetectorVersionStatus.html">DetectorVersionStatus</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/FraudDetector/FraudDetector_Shapes.swift#L1069-L1081">Show on GitHub</a>
                       </div>
                     </section>
                   </div>

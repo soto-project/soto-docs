@@ -15,7 +15,7 @@
     <header>
       <div class="content-wrapper">
         <p><a href="../../index.html"> Docs</a> (54% documented)</p>
-        <p class="header-right"><a href="https://github.com/swift-aws/aws-sdk-swift"><img src="../../img/gh.png"/>View on GitHub</a></p>
+        <p class="header-right"><a href="https://github.com/soto-project/soto"><img src="../../img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -28,6 +28,9 @@
     <div class="content-wrapper">
       <nav class="sidebar">
         <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../../User%20Guides.html">User Guides</a>
+          </li>
           <li class="nav-group-name">
             <a href="../../AWSSDKSwiftCore.html">AWSSDKSwiftCore</a>
           </li>
@@ -68,6 +71,9 @@
             <a href="../../AppSync.html">AppSync</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../Appflow.html">Appflow</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../ApplicationAutoScaling.html">ApplicationAutoScaling</a>
           </li>
           <li class="nav-group-name">
@@ -93,6 +99,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../Batch.html">Batch</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../Braket.html">Braket</a>
           </li>
           <li class="nav-group-name">
             <a href="../../Budgets.html">Budgets</a>
@@ -335,6 +344,12 @@
             <a href="../../IAM.html">IAM</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../IVS.html">IVS</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../IdentityStore.html">IdentityStore</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../Imagebuilder.html">Imagebuilder</a>
           </li>
           <li class="nav-group-name">
@@ -557,6 +572,9 @@
             <a href="../../Redshift.html">Redshift</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../RedshiftDataAPIService.html">RedshiftDataAPIService</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../Rekognition.html">Rekognition</a>
           </li>
           <li class="nav-group-name">
@@ -606,6 +624,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../SSO.html">SSO</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../SSOAdmin.html">SSOAdmin</a>
           </li>
           <li class="nav-group-name">
             <a href="../../SSOOIDC.html">SSOOIDC</a>
@@ -735,6 +756,7 @@
             <h1>UpdateSMBFileShareInput</h1>
               <div class="declaration">
                 <div class="language">
+                  
                   <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">UpdateSMBFileShareInput</span> <span class="p">:</span> <span class="kt"><a href="../../Protocols/AWSEncodableShape.html">AWSEncodableShape</a></span></code></pre>
 
                 </div>
@@ -748,9 +770,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:17AWSStorageGateway07StorageB0V23UpdateSMBFileShareInputV13adminUserListSaySSGSgvp"></a>
+                    <a name="/s:18SotoStorageGateway0bC0V23UpdateSMBFileShareInputV13adminUserListSaySSGSgvp"></a>
                     <a name="//apple_ref/swift/Property/adminUserList" class="dashAnchor"></a>
-                    <a class="token" href="#/s:17AWSStorageGateway07StorageB0V23UpdateSMBFileShareInputV13adminUserListSaySSGSgvp">adminUserList</a>
+                    <a class="token" href="#/s:18SotoStorageGateway0bC0V23UpdateSMBFileShareInputV13adminUserListSaySSGSgvp">adminUserList</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -758,7 +780,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>A list of users in the Active Directory that have administrator rights to the file share. A group must be prefixed with the @ character. For example, @group1. Can only be set if Authentication is set to ActiveDirectory.</p>
+                        <p>A list of users or groups in the Active Directory that have administrator rights to the file share. A group must be prefixed with the @ character. Acceptable formats include: DOMAIN\User1, user1, @group1, and @DOMAIN\group1. Can only be set if Authentication is set to ActiveDirectory.</p>
 
                       </div>
                       <div class="declaration">
@@ -769,15 +791,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/StorageGateway/StorageGateway_Shapes.swift#L4522">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:17AWSStorageGateway07StorageB0V23UpdateSMBFileShareInputV19auditDestinationARNSSSgvp"></a>
+                    <a name="/s:18SotoStorageGateway0bC0V23UpdateSMBFileShareInputV19auditDestinationARNSSSgvp"></a>
                     <a name="//apple_ref/swift/Property/auditDestinationARN" class="dashAnchor"></a>
-                    <a class="token" href="#/s:17AWSStorageGateway07StorageB0V23UpdateSMBFileShareInputV19auditDestinationARNSSSgvp">auditDestinationARN</a>
+                    <a class="token" href="#/s:18SotoStorageGateway0bC0V23UpdateSMBFileShareInputV19auditDestinationARNSSSgvp">auditDestinationARN</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -796,15 +821,78 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/StorageGateway/StorageGateway_Shapes.swift#L4524">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:17AWSStorageGateway07StorageB0V23UpdateSMBFileShareInputV07defaultC5ClassSSSgvp"></a>
+                    <a name="/s:18SotoStorageGateway0bC0V23UpdateSMBFileShareInputV15cacheAttributesAC05CacheI0VSgvp"></a>
+                    <a name="//apple_ref/swift/Property/cacheAttributes" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18SotoStorageGateway0bC0V23UpdateSMBFileShareInputV15cacheAttributesAC05CacheI0VSgvp">cacheAttributes</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Refresh cache information.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">cacheAttributes</span><span class="p">:</span> <span class="kt"><a href="../../Structs/StorageGateway/CacheAttributes.html">CacheAttributes</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/StorageGateway/StorageGateway_Shapes.swift#L4526">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18SotoStorageGateway0bC0V23UpdateSMBFileShareInputV15caseSensitivityAC04CaseI0OSgvp"></a>
+                    <a name="//apple_ref/swift/Property/caseSensitivity" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18SotoStorageGateway0bC0V23UpdateSMBFileShareInputV15caseSensitivityAC04CaseI0OSgvp">caseSensitivity</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The case of an object name in an Amazon S3 bucket. For ClientSpecified, the client determines the case sensitivity. For CaseSensitive, the gateway determines the case sensitivity. The default value is ClientSpecified.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">caseSensitivity</span><span class="p">:</span> <span class="kt"><a href="../../Structs/StorageGateway/CaseSensitivity.html">CaseSensitivity</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/StorageGateway/StorageGateway_Shapes.swift#L4528">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18SotoStorageGateway0bC0V23UpdateSMBFileShareInputV07defaultB5ClassSSSgvp"></a>
                     <a name="//apple_ref/swift/Property/defaultStorageClass" class="dashAnchor"></a>
-                    <a class="token" href="#/s:17AWSStorageGateway07StorageB0V23UpdateSMBFileShareInputV07defaultC5ClassSSSgvp">defaultStorageClass</a>
+                    <a class="token" href="#/s:18SotoStorageGateway0bC0V23UpdateSMBFileShareInputV07defaultB5ClassSSSgvp">defaultStorageClass</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -823,15 +911,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/StorageGateway/StorageGateway_Shapes.swift#L4530">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:17AWSStorageGateway07StorageB0V23UpdateSMBFileShareInputV04fileF3ARNSSvp"></a>
+                    <a name="/s:18SotoStorageGateway0bC0V23UpdateSMBFileShareInputV04fileF3ARNSSvp"></a>
                     <a name="//apple_ref/swift/Property/fileShareARN" class="dashAnchor"></a>
-                    <a class="token" href="#/s:17AWSStorageGateway07StorageB0V23UpdateSMBFileShareInputV04fileF3ARNSSvp">fileShareARN</a>
+                    <a class="token" href="#/s:18SotoStorageGateway0bC0V23UpdateSMBFileShareInputV04fileF3ARNSSvp">fileShareARN</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -850,15 +941,48 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/StorageGateway/StorageGateway_Shapes.swift#L4532">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:17AWSStorageGateway07StorageB0V23UpdateSMBFileShareInputV20guessMIMETypeEnabledSbSgvp"></a>
+                    <a name="/s:18SotoStorageGateway0bC0V23UpdateSMBFileShareInputV04fileF4NameSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/fileShareName" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18SotoStorageGateway0bC0V23UpdateSMBFileShareInputV04fileF4NameSSSgvp">fileShareName</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The name of the file share. Optional.   FileShareName must be set if an S3 prefix name is set in LocationARN.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">fileShareName</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/StorageGateway/StorageGateway_Shapes.swift#L4534">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18SotoStorageGateway0bC0V23UpdateSMBFileShareInputV20guessMIMETypeEnabledSbSgvp"></a>
                     <a name="//apple_ref/swift/Property/guessMIMETypeEnabled" class="dashAnchor"></a>
-                    <a class="token" href="#/s:17AWSStorageGateway07StorageB0V23UpdateSMBFileShareInputV20guessMIMETypeEnabledSbSgvp">guessMIMETypeEnabled</a>
+                    <a class="token" href="#/s:18SotoStorageGateway0bC0V23UpdateSMBFileShareInputV20guessMIMETypeEnabledSbSgvp">guessMIMETypeEnabled</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -877,15 +1001,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/StorageGateway/StorageGateway_Shapes.swift#L4536">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:17AWSStorageGateway07StorageB0V23UpdateSMBFileShareInputV15invalidUserListSaySSGSgvp"></a>
+                    <a name="/s:18SotoStorageGateway0bC0V23UpdateSMBFileShareInputV15invalidUserListSaySSGSgvp"></a>
                     <a name="//apple_ref/swift/Property/invalidUserList" class="dashAnchor"></a>
-                    <a class="token" href="#/s:17AWSStorageGateway07StorageB0V23UpdateSMBFileShareInputV15invalidUserListSaySSGSgvp">invalidUserList</a>
+                    <a class="token" href="#/s:18SotoStorageGateway0bC0V23UpdateSMBFileShareInputV15invalidUserListSaySSGSgvp">invalidUserList</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -893,7 +1020,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>A list of users or groups in the Active Directory that are not allowed to access the file share. A group must be prefixed with the @ character. For example @group1. Can only be set if Authentication is set to ActiveDirectory.</p>
+                        <p>A list of users or groups in the Active Directory that are not allowed to access the file share. A group must be prefixed with the @ character. Acceptable formats include: DOMAIN\User1, user1, @group1, and @DOMAIN\group1. Can only be set if Authentication is set to ActiveDirectory.</p>
 
                       </div>
                       <div class="declaration">
@@ -904,15 +1031,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/StorageGateway/StorageGateway_Shapes.swift#L4538">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:17AWSStorageGateway07StorageB0V23UpdateSMBFileShareInputV12kMSEncryptedSbSgvp"></a>
+                    <a name="/s:18SotoStorageGateway0bC0V23UpdateSMBFileShareInputV12kMSEncryptedSbSgvp"></a>
                     <a name="//apple_ref/swift/Property/kMSEncrypted" class="dashAnchor"></a>
-                    <a class="token" href="#/s:17AWSStorageGateway07StorageB0V23UpdateSMBFileShareInputV12kMSEncryptedSbSgvp">kMSEncrypted</a>
+                    <a class="token" href="#/s:18SotoStorageGateway0bC0V23UpdateSMBFileShareInputV12kMSEncryptedSbSgvp">kMSEncrypted</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -931,15 +1061,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/StorageGateway/StorageGateway_Shapes.swift#L4540">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:17AWSStorageGateway07StorageB0V23UpdateSMBFileShareInputV6kMSKeySSSgvp"></a>
+                    <a name="/s:18SotoStorageGateway0bC0V23UpdateSMBFileShareInputV6kMSKeySSSgvp"></a>
                     <a name="//apple_ref/swift/Property/kMSKey" class="dashAnchor"></a>
-                    <a class="token" href="#/s:17AWSStorageGateway07StorageB0V23UpdateSMBFileShareInputV6kMSKeySSSgvp">kMSKey</a>
+                    <a class="token" href="#/s:18SotoStorageGateway0bC0V23UpdateSMBFileShareInputV6kMSKeySSSgvp">kMSKey</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -958,15 +1091,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/StorageGateway/StorageGateway_Shapes.swift#L4542">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:17AWSStorageGateway07StorageB0V23UpdateSMBFileShareInputV9objectACLAC06ObjectI0OSgvp"></a>
+                    <a name="/s:18SotoStorageGateway0bC0V23UpdateSMBFileShareInputV9objectACLAC06ObjectI0OSgvp"></a>
                     <a name="//apple_ref/swift/Property/objectACL" class="dashAnchor"></a>
-                    <a class="token" href="#/s:17AWSStorageGateway07StorageB0V23UpdateSMBFileShareInputV9objectACLAC06ObjectI0OSgvp">objectACL</a>
+                    <a class="token" href="#/s:18SotoStorageGateway0bC0V23UpdateSMBFileShareInputV9objectACLAC06ObjectI0OSgvp">objectACL</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -985,15 +1121,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/StorageGateway/StorageGateway_Shapes.swift#L4544">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:17AWSStorageGateway07StorageB0V23UpdateSMBFileShareInputV8readOnlySbSgvp"></a>
+                    <a name="/s:18SotoStorageGateway0bC0V23UpdateSMBFileShareInputV8readOnlySbSgvp"></a>
                     <a name="//apple_ref/swift/Property/readOnly" class="dashAnchor"></a>
-                    <a class="token" href="#/s:17AWSStorageGateway07StorageB0V23UpdateSMBFileShareInputV8readOnlySbSgvp">readOnly</a>
+                    <a class="token" href="#/s:18SotoStorageGateway0bC0V23UpdateSMBFileShareInputV8readOnlySbSgvp">readOnly</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1012,15 +1151,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/StorageGateway/StorageGateway_Shapes.swift#L4546">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:17AWSStorageGateway07StorageB0V23UpdateSMBFileShareInputV13requesterPaysSbSgvp"></a>
+                    <a name="/s:18SotoStorageGateway0bC0V23UpdateSMBFileShareInputV13requesterPaysSbSgvp"></a>
                     <a name="//apple_ref/swift/Property/requesterPays" class="dashAnchor"></a>
-                    <a class="token" href="#/s:17AWSStorageGateway07StorageB0V23UpdateSMBFileShareInputV13requesterPaysSbSgvp">requesterPays</a>
+                    <a class="token" href="#/s:18SotoStorageGateway0bC0V23UpdateSMBFileShareInputV13requesterPaysSbSgvp">requesterPays</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1039,15 +1181,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/StorageGateway/StorageGateway_Shapes.swift#L4548">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:17AWSStorageGateway07StorageB0V23UpdateSMBFileShareInputV13sMBACLEnabledSbSgvp"></a>
+                    <a name="/s:18SotoStorageGateway0bC0V23UpdateSMBFileShareInputV13sMBACLEnabledSbSgvp"></a>
                     <a name="//apple_ref/swift/Property/sMBACLEnabled" class="dashAnchor"></a>
-                    <a class="token" href="#/s:17AWSStorageGateway07StorageB0V23UpdateSMBFileShareInputV13sMBACLEnabledSbSgvp">sMBACLEnabled</a>
+                    <a class="token" href="#/s:18SotoStorageGateway0bC0V23UpdateSMBFileShareInputV13sMBACLEnabledSbSgvp">sMBACLEnabled</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1066,15 +1211,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/StorageGateway/StorageGateway_Shapes.swift#L4550">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:17AWSStorageGateway07StorageB0V23UpdateSMBFileShareInputV13validUserListSaySSGSgvp"></a>
+                    <a name="/s:18SotoStorageGateway0bC0V23UpdateSMBFileShareInputV13validUserListSaySSGSgvp"></a>
                     <a name="//apple_ref/swift/Property/validUserList" class="dashAnchor"></a>
-                    <a class="token" href="#/s:17AWSStorageGateway07StorageB0V23UpdateSMBFileShareInputV13validUserListSaySSGSgvp">validUserList</a>
+                    <a class="token" href="#/s:18SotoStorageGateway0bC0V23UpdateSMBFileShareInputV13validUserListSaySSGSgvp">validUserList</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1082,7 +1230,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>A list of users or groups in the Active Directory that are allowed to access the file share. A group must be prefixed with the @ character. For example, @group1. Can only be set if Authentication is set to ActiveDirectory.</p>
+                        <p>A list of users or groups in the Active Directory that are allowed to access the file share. A group must be prefixed with the @ character. Acceptable formats include: DOMAIN\User1, user1, @group1, and @DOMAIN\group1. Can only be set if Authentication is set to ActiveDirectory.</p>
 
                       </div>
                       <div class="declaration">
@@ -1093,15 +1241,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/StorageGateway/StorageGateway_Shapes.swift#L4552">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:17AWSStorageGateway07StorageB0V23UpdateSMBFileShareInputV13adminUserList19auditDestinationARN07defaultC5Class04filefM020guessMIMETypeEnabled07invalidiJ012kMSEncrypted6kMSKey9objectACL8readOnly13requesterPays13sMBACLEnabled05validiJ0AESaySSGSg_SSSgAUSSSbSgAtvuC06ObjectX0OSgA3vTtcfc"></a>
-                    <a name="//apple_ref/swift/Method/init(adminUserList:auditDestinationARN:defaultStorageClass:fileShareARN:guessMIMETypeEnabled:invalidUserList:kMSEncrypted:kMSKey:objectACL:readOnly:requesterPays:sMBACLEnabled:validUserList:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:17AWSStorageGateway07StorageB0V23UpdateSMBFileShareInputV13adminUserList19auditDestinationARN07defaultC5Class04filefM020guessMIMETypeEnabled07invalidiJ012kMSEncrypted6kMSKey9objectACL8readOnly13requesterPays13sMBACLEnabled05validiJ0AESaySSGSg_SSSgAUSSSbSgAtvuC06ObjectX0OSgA3vTtcfc">init(adminUserList:auditDestinationARN:defaultStorageClass:fileShareARN:guessMIMETypeEnabled:invalidUserList:kMSEncrypted:kMSKey:objectACL:readOnly:requesterPays:sMBACLEnabled:validUserList:)</a>
+                    <a name="/s:18SotoStorageGateway0bC0V23UpdateSMBFileShareInputV13adminUserList19auditDestinationARN15cacheAttributes15caseSensitivity07defaultB5Class04filefM00tF4Name20guessMIMETypeEnabled07invalidiJ012kMSEncrypted6kMSKey9objectACL8readOnly13requesterPays13sMBACLEnabled05validiJ0AESaySSGSg_SSSgAC05CacheO0VSgAC04CaseQ0OSgAXSSAXSbSgAWA3_AxC9ObjectACLOSgA3_A3_A3_AWtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(adminUserList:auditDestinationARN:cacheAttributes:caseSensitivity:defaultStorageClass:fileShareARN:fileShareName:guessMIMETypeEnabled:invalidUserList:kMSEncrypted:kMSKey:objectACL:readOnly:requesterPays:sMBACLEnabled:validUserList:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18SotoStorageGateway0bC0V23UpdateSMBFileShareInputV13adminUserList19auditDestinationARN15cacheAttributes15caseSensitivity07defaultB5Class04filefM00tF4Name20guessMIMETypeEnabled07invalidiJ012kMSEncrypted6kMSKey9objectACL8readOnly13requesterPays13sMBACLEnabled05validiJ0AESaySSGSg_SSSgAC05CacheO0VSgAC04CaseQ0OSgAXSSAXSbSgAWA3_AxC9ObjectACLOSgA3_A3_A3_AWtcfc">init(adminUserList:<wbr>auditDestinationARN:<wbr>cacheAttributes:<wbr>caseSensitivity:<wbr>defaultStorageClass:<wbr>fileShareARN:<wbr>fileShareName:<wbr>guessMIMETypeEnabled:<wbr>invalidUserList:<wbr>kMSEncrypted:<wbr>kMSKey:<wbr>objectACL:<wbr>readOnly:<wbr>requesterPays:<wbr>sMBACLEnabled:<wbr>validUserList:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1116,9 +1267,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">adminUserList</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">auditDestinationARN</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="n"><a href="../../Structs/StorageGateway/UpdateSMBFileShareInput.html#/s:17AWSStorageGateway07StorageB0V23UpdateSMBFileShareInputV07defaultC5ClassSSSgvp">defaultStorageClass</a></span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">fileShareARN</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">guessMIMETypeEnabled</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">invalidUserList</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">kMSEncrypted</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">kMSKey</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">objectACL</span><span class="p">:</span> <span class="kt"><a href="../../Structs/StorageGateway/ObjectACL.html">ObjectACL</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">readOnly</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">requesterPays</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">sMBACLEnabled</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">validUserList</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">adminUserList</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">auditDestinationARN</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">cacheAttributes</span><span class="p">:</span> <span class="kt"><a href="../../Structs/StorageGateway/CacheAttributes.html">CacheAttributes</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">caseSensitivity</span><span class="p">:</span> <span class="kt"><a href="../../Structs/StorageGateway/CaseSensitivity.html">CaseSensitivity</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="n"><a href="../../Structs/StorageGateway/UpdateSMBFileShareInput.html#/s:18SotoStorageGateway0bC0V23UpdateSMBFileShareInputV07defaultB5ClassSSSgvp">defaultStorageClass</a></span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">fileShareARN</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">fileShareName</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">guessMIMETypeEnabled</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">invalidUserList</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">kMSEncrypted</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">kMSKey</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">objectACL</span><span class="p">:</span> <span class="kt"><a href="../../Structs/StorageGateway/ObjectACL.html">ObjectACL</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">readOnly</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">requesterPays</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">sMBACLEnabled</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">validUserList</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/StorageGateway/StorageGateway_Shapes.swift#L4554-L4571">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1126,9 +1280,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:15AWSSDKSwiftCore17AWSEncodableShapeP8validate4nameySS_tKF"></a>
+                    <a name="/s:8SotoCore17AWSEncodableShapeP8validate4nameySS_tKF"></a>
                     <a name="//apple_ref/swift/Method/validate(name:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15AWSSDKSwiftCore17AWSEncodableShapeP8validate4nameySS_tKF">validate(name:)</a>
+                    <a class="token" href="#/s:8SotoCore17AWSEncodableShapeP8validate4nameySS_tKF">validate(name:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1145,6 +1299,9 @@
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">validate</span><span class="p">(</span><span class="nv">name</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="k">throws</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/StorageGateway/StorageGateway_Shapes.swift#L4573-L4602">Show on GitHub</a>
                       </div>
                     </section>
                   </div>

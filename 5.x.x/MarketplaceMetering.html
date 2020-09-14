@@ -15,7 +15,7 @@
     <header>
       <div class="content-wrapper">
         <p><a href="index.html"> Docs</a> (54% documented)</p>
-        <p class="header-right"><a href="https://github.com/swift-aws/aws-sdk-swift"><img src="img/gh.png"/>View on GitHub</a></p>
+        <p class="header-right"><a href="https://github.com/soto-project/soto"><img src="img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -28,6 +28,9 @@
     <div class="content-wrapper">
       <nav class="sidebar">
         <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="User%20Guides.html">User Guides</a>
+          </li>
           <li class="nav-group-name">
             <a href="AWSSDKSwiftCore.html">AWSSDKSwiftCore</a>
           </li>
@@ -68,6 +71,9 @@
             <a href="AppSync.html">AppSync</a>
           </li>
           <li class="nav-group-name">
+            <a href="Appflow.html">Appflow</a>
+          </li>
+          <li class="nav-group-name">
             <a href="ApplicationAutoScaling.html">ApplicationAutoScaling</a>
           </li>
           <li class="nav-group-name">
@@ -93,6 +99,9 @@
           </li>
           <li class="nav-group-name">
             <a href="Batch.html">Batch</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="Braket.html">Braket</a>
           </li>
           <li class="nav-group-name">
             <a href="Budgets.html">Budgets</a>
@@ -335,6 +344,12 @@
             <a href="IAM.html">IAM</a>
           </li>
           <li class="nav-group-name">
+            <a href="IVS.html">IVS</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="IdentityStore.html">IdentityStore</a>
+          </li>
+          <li class="nav-group-name">
             <a href="Imagebuilder.html">Imagebuilder</a>
           </li>
           <li class="nav-group-name">
@@ -557,6 +572,9 @@
             <a href="Redshift.html">Redshift</a>
           </li>
           <li class="nav-group-name">
+            <a href="RedshiftDataAPIService.html">RedshiftDataAPIService</a>
+          </li>
+          <li class="nav-group-name">
             <a href="Rekognition.html">Rekognition</a>
           </li>
           <li class="nav-group-name">
@@ -606,6 +624,9 @@
           </li>
           <li class="nav-group-name">
             <a href="SSO.html">SSO</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="SSOAdmin.html">SSOAdmin</a>
           </li>
           <li class="nav-group-name">
             <a href="SSOOIDC.html">SSOOIDC</a>
@@ -741,9 +762,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:22AWSMarketplaceMetering011MarketplaceB0V"></a>
+                    <a name="/s:23SotoMarketplaceMetering0bC0V"></a>
                     <a name="//apple_ref/swift/Struct/MarketplaceMetering" class="dashAnchor"></a>
-                    <a class="token" href="#/s:22AWSMarketplaceMetering011MarketplaceB0V">MarketplaceMetering</a>
+                    <a class="token" href="#/s:23SotoMarketplaceMetering0bC0V">MarketplaceMetering</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -751,9 +772,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Client object for interacting with AWS MarketplaceMetering service.</p>
-
-<p>AWS Marketplace Metering Service This reference provides descriptions of the low-level AWS Marketplace Metering Service API. AWS Marketplace sellers can use this API to submit usage data for custom usage dimensions. For information on the permissions you need to use this API, see AWS Marketing metering and entitlement API permissions in the AWS Marketplace Seller Guide.   Submitting Metering Records     MeterUsage- Submits the metering record for a Marketplace product. MeterUsage is called from an EC2 instance or a container running on EKS or ECS.    BatchMeterUsage- Submits the metering record for a set of customers. BatchMeterUsage is called from a software-as-a-service (SaaS) application.    Accepting New Customers     ResolveCustomer- Called by a SaaS application during the registration process. When a buyer visits your website during the registration process, the buyer submits a Registration Token through the browser. The Registration Token is resolved through this API to obtain a CustomerIdentifier and Product Code.    Entitlement and Metering for Paid Container Products     Paid container software products sold through AWS Marketplace must integrate with the AWS Marketplace Metering Service and call the RegisterUsage operation for software entitlement and metering. Free and BYOL products for Amazon ECS or Amazon EKS aren&rsquo;t required to call RegisterUsage, but you can do so if you want to receive usage data in your seller reports. For more information on using the RegisterUsage operation, see Container-Based Products.    BatchMeterUsage API calls are captured by AWS CloudTrail. You can use Cloudtrail to verify that the SaaS metering records that you sent are accurate by searching for records with the eventName of BatchMeterUsage. You can also use CloudTrail to audit records over time. For more information, see the  AWS CloudTrail User Guide .</p>
+                        <p>Undocumented</p>
 
                         <a href="Structs/MarketplaceMetering.html" class="slightly-smaller">See more</a>
                       </div>
@@ -761,9 +780,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">MarketplaceMetering</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">MarketplaceMetering</span> <span class="p">:</span> <span class="kt"><a href="Protocols/AWSService.html">AWSService</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/MarketplaceMetering/MarketplaceMetering_API.swift#L24-L86">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -771,9 +793,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:22AWSMarketplaceMetering011MarketplaceB9ErrorTypeO"></a>
+                    <a name="/s:23SotoMarketplaceMetering0bC9ErrorTypeO"></a>
                     <a name="//apple_ref/swift/Enum/MarketplaceMeteringErrorType" class="dashAnchor"></a>
-                    <a class="token" href="#/s:22AWSMarketplaceMetering011MarketplaceB9ErrorTypeO">MarketplaceMeteringErrorType</a>
+                    <a class="token" href="#/s:23SotoMarketplaceMetering0bC9ErrorTypeO">MarketplaceMeteringErrorType</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -793,6 +815,9 @@
 <pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">MarketplaceMeteringErrorType</span><span class="p">:</span> <span class="kt">CustomStringConvertible</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/MarketplaceMetering/MarketplaceMetering_Error.swift#L20-L36">Show on GitHub</a>
                       </div>
                     </section>
                   </div>

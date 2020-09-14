@@ -15,7 +15,7 @@
     <header>
       <div class="content-wrapper">
         <p><a href="../../index.html"> Docs</a> (54% documented)</p>
-        <p class="header-right"><a href="https://github.com/swift-aws/aws-sdk-swift"><img src="../../img/gh.png"/>View on GitHub</a></p>
+        <p class="header-right"><a href="https://github.com/soto-project/soto"><img src="../../img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -28,6 +28,9 @@
     <div class="content-wrapper">
       <nav class="sidebar">
         <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../../User%20Guides.html">User Guides</a>
+          </li>
           <li class="nav-group-name">
             <a href="../../AWSSDKSwiftCore.html">AWSSDKSwiftCore</a>
           </li>
@@ -68,6 +71,9 @@
             <a href="../../AppSync.html">AppSync</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../Appflow.html">Appflow</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../ApplicationAutoScaling.html">ApplicationAutoScaling</a>
           </li>
           <li class="nav-group-name">
@@ -93,6 +99,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../Batch.html">Batch</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../Braket.html">Braket</a>
           </li>
           <li class="nav-group-name">
             <a href="../../Budgets.html">Budgets</a>
@@ -335,6 +344,12 @@
             <a href="../../IAM.html">IAM</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../IVS.html">IVS</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../IdentityStore.html">IdentityStore</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../Imagebuilder.html">Imagebuilder</a>
           </li>
           <li class="nav-group-name">
@@ -557,6 +572,9 @@
             <a href="../../Redshift.html">Redshift</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../RedshiftDataAPIService.html">RedshiftDataAPIService</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../Rekognition.html">Rekognition</a>
           </li>
           <li class="nav-group-name">
@@ -606,6 +624,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../SSO.html">SSO</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../SSOAdmin.html">SSOAdmin</a>
           </li>
           <li class="nav-group-name">
             <a href="../../SSOOIDC.html">SSOOIDC</a>
@@ -735,6 +756,7 @@
             <h1>CreateUserRequest</h1>
               <div class="declaration">
                 <div class="language">
+                  
                   <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">CreateUserRequest</span> <span class="p">:</span> <span class="kt"><a href="../../Protocols/AWSEncodableShape.html">AWSEncodableShape</a></span></code></pre>
 
                 </div>
@@ -748,9 +770,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:11AWSTransfer8TransferV17CreateUserRequestV13homeDirectorySSSgvp"></a>
+                    <a name="/s:12SotoTransfer0B0V17CreateUserRequestV13homeDirectorySSSgvp"></a>
                     <a name="//apple_ref/swift/Property/homeDirectory" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11AWSTransfer8TransferV17CreateUserRequestV13homeDirectorySSSgvp">homeDirectory</a>
+                    <a class="token" href="#/s:12SotoTransfer0B0V17CreateUserRequestV13homeDirectorySSSgvp">homeDirectory</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -769,15 +791,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Transfer/Transfer_Shapes.swift#L144">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:11AWSTransfer8TransferV17CreateUserRequestV21homeDirectoryMappingsSayAC04HomeG8MapEntryVGSgvp"></a>
+                    <a name="/s:12SotoTransfer0B0V17CreateUserRequestV21homeDirectoryMappingsSayAC04HomeG8MapEntryVGSgvp"></a>
                     <a name="//apple_ref/swift/Property/homeDirectoryMappings" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11AWSTransfer8TransferV17CreateUserRequestV21homeDirectoryMappingsSayAC04HomeG8MapEntryVGSgvp">homeDirectoryMappings</a>
+                    <a class="token" href="#/s:12SotoTransfer0B0V17CreateUserRequestV21homeDirectoryMappingsSayAC04HomeG8MapEntryVGSgvp">homeDirectoryMappings</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -785,7 +810,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Logical directory mappings that specify what Amazon S3 paths and keys should be visible to your user and how you want to make them visible. You will need to specify the &ldquo;Entry&rdquo; and &ldquo;Target&rdquo; pair, where Entry shows how the path is made visible and Target is the actual Amazon S3 path. If you only specify a target, it will be displayed as is. You will need to also make sure that your IAM role provides access to paths in Target. The following is an example.  &lsquo;[ &ldquo;/bucket2/documentation&rdquo;, { &ldquo;Entry&rdquo;: &ldquo;your-personal-report.pdf&rdquo;, &ldquo;Target&rdquo;: &ldquo;/bucket3/customized-reports/${transfer:UserName}.pdf&rdquo; } ]&rsquo;  In most cases, you can use this value instead of the scope-down policy to lock your user down to the designated home directory (&ldquo;chroot&rdquo;). To do this, you can set Entry to &lsquo;/&rsquo; and set Target to the HomeDirectory parameter value.  If the target of a logical directory entry does not exist in Amazon S3, the entry will be ignored. As a workaround, you can use the Amazon S3 api to create 0 byte objects as place holders for your directory. If using the CLI, use the s3api call instead of s3 so you can use the put-object operation. For example, you use the following: aws s3api put-object &ndash;bucket bucketname &ndash;key path/to/folder/. Make sure that the end of the key name ends in a &lsquo;/&rsquo; for it to be considered a folder.</p>
+                        <p>Logical directory mappings that specify what Amazon S3 paths and keys should be visible to your user and how you want to make them visible. You will need to specify the &ldquo;Entry&rdquo; and &ldquo;Target&rdquo; pair, where Entry shows how the path is made visible and Target is the actual Amazon S3 path. If you only specify a target, it will be displayed as is. You will need to also make sure that your IAM role provides access to paths in Target. The following is an example.  &lsquo;[ &ldquo;/bucket2/documentation&rdquo;, { &ldquo;Entry&rdquo;: &ldquo;your-personal-report.pdf&rdquo;, &ldquo;Target&rdquo;: &ldquo;/bucket3/customized-reports/${transfer:UserName}.pdf&rdquo; } ]&rsquo;  In most cases, you can use this value instead of the scope-down policy to lock your user down to the designated home directory (&ldquo;chroot&rdquo;). To do this, you can set Entry to &lsquo;/&rsquo; and set Target to the HomeDirectory parameter value.  If the target of a logical directory entry does not exist in Amazon S3, the entry will be ignored. As a workaround, you can use the Amazon S3 API to create 0 byte objects as place holders for your directory. If using the CLI, use the s3api call instead of s3 so you can use the put-object operation. For example, you use the following: aws s3api put-object &ndash;bucket bucketname &ndash;key path/to/folder/. Make sure that the end of the key name ends in a &lsquo;/&rsquo; for it to be considered a folder.</p>
 
                       </div>
                       <div class="declaration">
@@ -796,15 +821,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Transfer/Transfer_Shapes.swift#L146">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:11AWSTransfer8TransferV17CreateUserRequestV17homeDirectoryTypeAC04HomegH0OSgvp"></a>
+                    <a name="/s:12SotoTransfer0B0V17CreateUserRequestV17homeDirectoryTypeAC04HomegH0OSgvp"></a>
                     <a name="//apple_ref/swift/Property/homeDirectoryType" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11AWSTransfer8TransferV17CreateUserRequestV17homeDirectoryTypeAC04HomegH0OSgvp">homeDirectoryType</a>
+                    <a class="token" href="#/s:12SotoTransfer0B0V17CreateUserRequestV17homeDirectoryTypeAC04HomegH0OSgvp">homeDirectoryType</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -823,15 +851,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Transfer/Transfer_Shapes.swift#L148">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:11AWSTransfer8TransferV17CreateUserRequestV6policySSSgvp"></a>
+                    <a name="/s:12SotoTransfer0B0V17CreateUserRequestV6policySSSgvp"></a>
                     <a name="//apple_ref/swift/Property/policy" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11AWSTransfer8TransferV17CreateUserRequestV6policySSSgvp">policy</a>
+                    <a class="token" href="#/s:12SotoTransfer0B0V17CreateUserRequestV6policySSSgvp">policy</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -850,15 +881,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Transfer/Transfer_Shapes.swift#L150">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:11AWSTransfer8TransferV17CreateUserRequestV4roleSSvp"></a>
+                    <a name="/s:12SotoTransfer0B0V17CreateUserRequestV4roleSSvp"></a>
                     <a name="//apple_ref/swift/Property/role" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11AWSTransfer8TransferV17CreateUserRequestV4roleSSvp">role</a>
+                    <a class="token" href="#/s:12SotoTransfer0B0V17CreateUserRequestV4roleSSvp">role</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -877,15 +911,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Transfer/Transfer_Shapes.swift#L152">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:11AWSTransfer8TransferV17CreateUserRequestV8serverIdSSvp"></a>
+                    <a name="/s:12SotoTransfer0B0V17CreateUserRequestV8serverIdSSvp"></a>
                     <a name="//apple_ref/swift/Property/serverId" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11AWSTransfer8TransferV17CreateUserRequestV8serverIdSSvp">serverId</a>
+                    <a class="token" href="#/s:12SotoTransfer0B0V17CreateUserRequestV8serverIdSSvp">serverId</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -904,15 +941,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Transfer/Transfer_Shapes.swift#L154">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:11AWSTransfer8TransferV17CreateUserRequestV16sshPublicKeyBodySSSgvp"></a>
+                    <a name="/s:12SotoTransfer0B0V17CreateUserRequestV16sshPublicKeyBodySSSgvp"></a>
                     <a name="//apple_ref/swift/Property/sshPublicKeyBody" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11AWSTransfer8TransferV17CreateUserRequestV16sshPublicKeyBodySSSgvp">sshPublicKeyBody</a>
+                    <a class="token" href="#/s:12SotoTransfer0B0V17CreateUserRequestV16sshPublicKeyBodySSSgvp">sshPublicKeyBody</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -931,15 +971,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Transfer/Transfer_Shapes.swift#L156">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:11AWSTransfer8TransferV17CreateUserRequestV4tagsSayAC3TagVGSgvp"></a>
+                    <a name="/s:12SotoTransfer0B0V17CreateUserRequestV4tagsSayAC3TagVGSgvp"></a>
                     <a name="//apple_ref/swift/Property/tags" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11AWSTransfer8TransferV17CreateUserRequestV4tagsSayAC3TagVGSgvp">tags</a>
+                    <a class="token" href="#/s:12SotoTransfer0B0V17CreateUserRequestV4tagsSayAC3TagVGSgvp">tags</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -958,15 +1001,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Transfer/Transfer_Shapes.swift#L158">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:11AWSTransfer8TransferV17CreateUserRequestV8userNameSSvp"></a>
+                    <a name="/s:12SotoTransfer0B0V17CreateUserRequestV8userNameSSvp"></a>
                     <a name="//apple_ref/swift/Property/userName" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11AWSTransfer8TransferV17CreateUserRequestV8userNameSSvp">userName</a>
+                    <a class="token" href="#/s:12SotoTransfer0B0V17CreateUserRequestV8userNameSSvp">userName</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -974,7 +1020,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>A unique string that identifies a user and is associated with a file transfer protocol-enabled server as specified by the ServerId. This user name must be a minimum of 3 and a maximum of 32 characters long. The following are valid characters: a-z, A-Z, 0-9, underscore, and hyphen. The user name can&rsquo;t start with a hyphen.</p>
+                        <p>A unique string that identifies a user and is associated with a file transfer protocol-enabled server as specified by the ServerId. This user name must be a minimum of 3 and a maximum of 100 characters long. The following are valid characters: a-z, A-Z, 0-9, underscore &lsquo;_&rsquo;, hyphen &lsquo;-&rsquo;, period &lsquo;.&rsquo;, and at sign &lsquo;@&rsquo;. The user name can&rsquo;t start with a hyphen, period, and at sign.</p>
 
                       </div>
                       <div class="declaration">
@@ -985,15 +1031,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Transfer/Transfer_Shapes.swift#L160">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:11AWSTransfer8TransferV17CreateUserRequestV13homeDirectory0fG8Mappings0fG4Type6policy4role8serverId16sshPublicKeyBody4tags8userNameAESSSg_SayAC04HomeG8MapEntryVGSgAC0ugI0OSgAOS2SAOSayAC3TagVGSgSStcfc"></a>
+                    <a name="/s:12SotoTransfer0B0V17CreateUserRequestV13homeDirectory0fG8Mappings0fG4Type6policy4role8serverId16sshPublicKeyBody4tags8userNameAESSSg_SayAC04HomeG8MapEntryVGSgAC0ugI0OSgAOS2SAOSayAC3TagVGSgSStcfc"></a>
                     <a name="//apple_ref/swift/Method/init(homeDirectory:homeDirectoryMappings:homeDirectoryType:policy:role:serverId:sshPublicKeyBody:tags:userName:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11AWSTransfer8TransferV17CreateUserRequestV13homeDirectory0fG8Mappings0fG4Type6policy4role8serverId16sshPublicKeyBody4tags8userNameAESSSg_SayAC04HomeG8MapEntryVGSgAC0ugI0OSgAOS2SAOSayAC3TagVGSgSStcfc">init(homeDirectory:homeDirectoryMappings:homeDirectoryType:policy:role:serverId:sshPublicKeyBody:tags:userName:)</a>
+                    <a class="token" href="#/s:12SotoTransfer0B0V17CreateUserRequestV13homeDirectory0fG8Mappings0fG4Type6policy4role8serverId16sshPublicKeyBody4tags8userNameAESSSg_SayAC04HomeG8MapEntryVGSgAC0ugI0OSgAOS2SAOSayAC3TagVGSgSStcfc">init(homeDirectory:<wbr>homeDirectoryMappings:<wbr>homeDirectoryType:<wbr>policy:<wbr>role:<wbr>serverId:<wbr>sshPublicKeyBody:<wbr>tags:<wbr>userName:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1012,15 +1061,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Transfer/Transfer_Shapes.swift#L162-L172">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:15AWSSDKSwiftCore17AWSEncodableShapeP8validate4nameySS_tKF"></a>
+                    <a name="/s:8SotoCore17AWSEncodableShapeP8validate4nameySS_tKF"></a>
                     <a name="//apple_ref/swift/Method/validate(name:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15AWSSDKSwiftCore17AWSEncodableShapeP8validate4nameySS_tKF">validate(name:)</a>
+                    <a class="token" href="#/s:8SotoCore17AWSEncodableShapeP8validate4nameySS_tKF">validate(name:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1037,6 +1089,9 @@
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">validate</span><span class="p">(</span><span class="nv">name</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="k">throws</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Transfer/Transfer_Shapes.swift#L174-L199">Show on GitHub</a>
                       </div>
                     </section>
                   </div>

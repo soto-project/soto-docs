@@ -15,7 +15,7 @@
     <header>
       <div class="content-wrapper">
         <p><a href="../../index.html"> Docs</a> (54% documented)</p>
-        <p class="header-right"><a href="https://github.com/swift-aws/aws-sdk-swift"><img src="../../img/gh.png"/>View on GitHub</a></p>
+        <p class="header-right"><a href="https://github.com/soto-project/soto"><img src="../../img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -28,6 +28,9 @@
     <div class="content-wrapper">
       <nav class="sidebar">
         <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../../User%20Guides.html">User Guides</a>
+          </li>
           <li class="nav-group-name">
             <a href="../../AWSSDKSwiftCore.html">AWSSDKSwiftCore</a>
           </li>
@@ -68,6 +71,9 @@
             <a href="../../AppSync.html">AppSync</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../Appflow.html">Appflow</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../ApplicationAutoScaling.html">ApplicationAutoScaling</a>
           </li>
           <li class="nav-group-name">
@@ -93,6 +99,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../Batch.html">Batch</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../Braket.html">Braket</a>
           </li>
           <li class="nav-group-name">
             <a href="../../Budgets.html">Budgets</a>
@@ -335,6 +344,12 @@
             <a href="../../IAM.html">IAM</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../IVS.html">IVS</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../IdentityStore.html">IdentityStore</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../Imagebuilder.html">Imagebuilder</a>
           </li>
           <li class="nav-group-name">
@@ -557,6 +572,9 @@
             <a href="../../Redshift.html">Redshift</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../RedshiftDataAPIService.html">RedshiftDataAPIService</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../Rekognition.html">Rekognition</a>
           </li>
           <li class="nav-group-name">
@@ -606,6 +624,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../SSO.html">SSO</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../SSOAdmin.html">SSOAdmin</a>
           </li>
           <li class="nav-group-name">
             <a href="../../SSOOIDC.html">SSOOIDC</a>
@@ -735,6 +756,7 @@
             <h1>HlsManifestCreateOrUpdateParameters</h1>
               <div class="declaration">
                 <div class="language">
+                  
                   <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">HlsManifestCreateOrUpdateParameters</span> <span class="p">:</span> <span class="kt"><a href="../../Protocols/AWSEncodableShape.html">AWSEncodableShape</a></span></code></pre>
 
                 </div>
@@ -748,9 +770,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:15AWSMediaPackage05MediaB0V35HlsManifestCreateOrUpdateParametersV9adMarkersAC02AdK0OSgvp"></a>
+                    <a name="/s:16SotoMediaPackage0bC0V35HlsManifestCreateOrUpdateParametersV9adMarkersAC02AdK0OSgvp"></a>
                     <a name="//apple_ref/swift/Property/adMarkers" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15AWSMediaPackage05MediaB0V35HlsManifestCreateOrUpdateParametersV9adMarkersAC02AdK0OSgvp">adMarkers</a>
+                    <a class="token" href="#/s:16SotoMediaPackage0bC0V35HlsManifestCreateOrUpdateParametersV9adMarkersAC02AdK0OSgvp">adMarkers</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -763,7 +785,10 @@
 &ldquo;PASSTHROUGH&rdquo; causes the manifest to contain a copy of the SCTE-35 ad
 markers (comments) taken directly from the input HTTP Live Streaming (HLS) manifest.
 &ldquo;SCTE35_ENHANCED&rdquo; generates ad markers and blackout tags based on SCTE-35
-messages in the input source.</p>
+messages in the input source.
+&ldquo;DATERANGE&rdquo; inserts EXT-X-DATERANGE tags to signal ad and program transition events
+in HLS and CMAF manifests. For this option, you must set a programDateTimeIntervalSeconds value
+that is greater than 0.</p>
 
                       </div>
                       <div class="declaration">
@@ -774,15 +799,18 @@ messages in the input source.</p>
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/MediaPackage/MediaPackage_Shapes.swift#L882">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:15AWSMediaPackage05MediaB0V35HlsManifestCreateOrUpdateParametersV25adsOnDeliveryRestrictionsAC03AdsklM0OSgvp"></a>
+                    <a name="/s:16SotoMediaPackage0bC0V35HlsManifestCreateOrUpdateParametersV25adsOnDeliveryRestrictionsAC03AdsklM0OSgvp"></a>
                     <a name="//apple_ref/swift/Property/adsOnDeliveryRestrictions" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15AWSMediaPackage05MediaB0V35HlsManifestCreateOrUpdateParametersV25adsOnDeliveryRestrictionsAC03AdsklM0OSgvp">adsOnDeliveryRestrictions</a>
+                    <a class="token" href="#/s:16SotoMediaPackage0bC0V35HlsManifestCreateOrUpdateParametersV25adsOnDeliveryRestrictionsAC03AdsklM0OSgvp">adsOnDeliveryRestrictions</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -801,15 +829,18 @@ messages in the input source.</p>
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/MediaPackage/MediaPackage_Shapes.swift#L">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:15AWSMediaPackage05MediaB0V35HlsManifestCreateOrUpdateParametersV10adTriggersSayAC17AdtriggerselementOGSgvp"></a>
+                    <a name="/s:16SotoMediaPackage0bC0V35HlsManifestCreateOrUpdateParametersV10adTriggersSayAC17AdtriggerselementOGSgvp"></a>
                     <a name="//apple_ref/swift/Property/adTriggers" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15AWSMediaPackage05MediaB0V35HlsManifestCreateOrUpdateParametersV10adTriggersSayAC17AdtriggerselementOGSgvp">adTriggers</a>
+                    <a class="token" href="#/s:16SotoMediaPackage0bC0V35HlsManifestCreateOrUpdateParametersV10adTriggersSayAC17AdtriggerselementOGSgvp">adTriggers</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -828,15 +859,18 @@ messages in the input source.</p>
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/MediaPackage/MediaPackage_Shapes.swift#L">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:15AWSMediaPackage05MediaB0V35HlsManifestCreateOrUpdateParametersV2idSSvp"></a>
+                    <a name="/s:16SotoMediaPackage0bC0V35HlsManifestCreateOrUpdateParametersV2idSSvp"></a>
                     <a name="//apple_ref/swift/Property/id" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15AWSMediaPackage05MediaB0V35HlsManifestCreateOrUpdateParametersV2idSSvp">id</a>
+                    <a class="token" href="#/s:16SotoMediaPackage0bC0V35HlsManifestCreateOrUpdateParametersV2idSSvp">id</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -855,15 +889,18 @@ messages in the input source.</p>
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/MediaPackage/MediaPackage_Shapes.swift#L886">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:15AWSMediaPackage05MediaB0V35HlsManifestCreateOrUpdateParametersV23includeIframeOnlyStreamSbSgvp"></a>
+                    <a name="/s:16SotoMediaPackage0bC0V35HlsManifestCreateOrUpdateParametersV23includeIframeOnlyStreamSbSgvp"></a>
                     <a name="//apple_ref/swift/Property/includeIframeOnlyStream" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15AWSMediaPackage05MediaB0V35HlsManifestCreateOrUpdateParametersV23includeIframeOnlyStreamSbSgvp">includeIframeOnlyStream</a>
+                    <a class="token" href="#/s:16SotoMediaPackage0bC0V35HlsManifestCreateOrUpdateParametersV23includeIframeOnlyStreamSbSgvp">includeIframeOnlyStream</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -882,15 +919,18 @@ messages in the input source.</p>
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/MediaPackage/MediaPackage_Shapes.swift#L888">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:15AWSMediaPackage05MediaB0V35HlsManifestCreateOrUpdateParametersV12manifestNameSSSgvp"></a>
+                    <a name="/s:16SotoMediaPackage0bC0V35HlsManifestCreateOrUpdateParametersV12manifestNameSSSgvp"></a>
                     <a name="//apple_ref/swift/Property/manifestName" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15AWSMediaPackage05MediaB0V35HlsManifestCreateOrUpdateParametersV12manifestNameSSSgvp">manifestName</a>
+                    <a class="token" href="#/s:16SotoMediaPackage0bC0V35HlsManifestCreateOrUpdateParametersV12manifestNameSSSgvp">manifestName</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -909,15 +949,18 @@ messages in the input source.</p>
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/MediaPackage/MediaPackage_Shapes.swift#L890">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:15AWSMediaPackage05MediaB0V35HlsManifestCreateOrUpdateParametersV12playlistTypeAC08PlaylistK0OSgvp"></a>
+                    <a name="/s:16SotoMediaPackage0bC0V35HlsManifestCreateOrUpdateParametersV12playlistTypeAC08PlaylistK0OSgvp"></a>
                     <a name="//apple_ref/swift/Property/playlistType" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15AWSMediaPackage05MediaB0V35HlsManifestCreateOrUpdateParametersV12playlistTypeAC08PlaylistK0OSgvp">playlistType</a>
+                    <a class="token" href="#/s:16SotoMediaPackage0bC0V35HlsManifestCreateOrUpdateParametersV12playlistTypeAC08PlaylistK0OSgvp">playlistType</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -938,15 +981,18 @@ entry will be included in the media playlist.</p>
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/MediaPackage/MediaPackage_Shapes.swift#L894">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:15AWSMediaPackage05MediaB0V35HlsManifestCreateOrUpdateParametersV21playlistWindowSecondsSiSgvp"></a>
+                    <a name="/s:16SotoMediaPackage0bC0V35HlsManifestCreateOrUpdateParametersV21playlistWindowSecondsSiSgvp"></a>
                     <a name="//apple_ref/swift/Property/playlistWindowSeconds" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15AWSMediaPackage05MediaB0V35HlsManifestCreateOrUpdateParametersV21playlistWindowSecondsSiSgvp">playlistWindowSeconds</a>
+                    <a class="token" href="#/s:16SotoMediaPackage0bC0V35HlsManifestCreateOrUpdateParametersV21playlistWindowSecondsSiSgvp">playlistWindowSeconds</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -965,15 +1011,18 @@ entry will be included in the media playlist.</p>
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/MediaPackage/MediaPackage_Shapes.swift#L896">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:15AWSMediaPackage05MediaB0V35HlsManifestCreateOrUpdateParametersV30programDateTimeIntervalSecondsSiSgvp"></a>
+                    <a name="/s:16SotoMediaPackage0bC0V35HlsManifestCreateOrUpdateParametersV30programDateTimeIntervalSecondsSiSgvp"></a>
                     <a name="//apple_ref/swift/Property/programDateTimeIntervalSeconds" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15AWSMediaPackage05MediaB0V35HlsManifestCreateOrUpdateParametersV30programDateTimeIntervalSecondsSiSgvp">programDateTimeIntervalSeconds</a>
+                    <a class="token" href="#/s:16SotoMediaPackage0bC0V35HlsManifestCreateOrUpdateParametersV30programDateTimeIntervalSecondsSiSgvp">programDateTimeIntervalSeconds</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1000,15 +1049,18 @@ it will be passed through to HLS output.</p>
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/MediaPackage/MediaPackage_Shapes.swift#L906">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:15AWSMediaPackage05MediaB0V35HlsManifestCreateOrUpdateParametersV9adMarkers25adsOnDeliveryRestrictions0J8Triggers2id23includeIframeOnlyStream12manifestName12playlistType0X13WindowSeconds30programDateTimeIntervalSecondsAeC02AdK0OSg_AC03AdsmnO0OSgSayAC17AdtriggerselementOGSgSSSbSgSSSgAC08PlaylistY0OSgSiSgA2_tcfc"></a>
+                    <a name="/s:16SotoMediaPackage0bC0V35HlsManifestCreateOrUpdateParametersV9adMarkers25adsOnDeliveryRestrictions0J8Triggers2id23includeIframeOnlyStream12manifestName12playlistType0X13WindowSeconds30programDateTimeIntervalSecondsAeC02AdK0OSg_AC03AdsmnO0OSgSayAC17AdtriggerselementOGSgSSSbSgSSSgAC08PlaylistY0OSgSiSgA2_tcfc"></a>
                     <a name="//apple_ref/swift/Method/init(adMarkers:adsOnDeliveryRestrictions:adTriggers:id:includeIframeOnlyStream:manifestName:playlistType:playlistWindowSeconds:programDateTimeIntervalSeconds:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15AWSMediaPackage05MediaB0V35HlsManifestCreateOrUpdateParametersV9adMarkers25adsOnDeliveryRestrictions0J8Triggers2id23includeIframeOnlyStream12manifestName12playlistType0X13WindowSeconds30programDateTimeIntervalSecondsAeC02AdK0OSg_AC03AdsmnO0OSgSayAC17AdtriggerselementOGSgSSSbSgSSSgAC08PlaylistY0OSgSiSgA2_tcfc">init(adMarkers:adsOnDeliveryRestrictions:adTriggers:id:includeIframeOnlyStream:manifestName:playlistType:playlistWindowSeconds:programDateTimeIntervalSeconds:)</a>
+                    <a class="token" href="#/s:16SotoMediaPackage0bC0V35HlsManifestCreateOrUpdateParametersV9adMarkers25adsOnDeliveryRestrictions0J8Triggers2id23includeIframeOnlyStream12manifestName12playlistType0X13WindowSeconds30programDateTimeIntervalSecondsAeC02AdK0OSg_AC03AdsmnO0OSgSayAC17AdtriggerselementOGSgSSSbSgSSSgAC08PlaylistY0OSgSiSgA2_tcfc">init(adMarkers:<wbr>adsOnDeliveryRestrictions:<wbr>adTriggers:<wbr>id:<wbr>includeIframeOnlyStream:<wbr>manifestName:<wbr>playlistType:<wbr>playlistWindowSeconds:<wbr>programDateTimeIntervalSeconds:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1026,6 +1078,9 @@ it will be passed through to HLS output.</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">adMarkers</span><span class="p">:</span> <span class="kt"><a href="../../Structs/MediaPackage/AdMarkers.html">AdMarkers</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">adsOnDeliveryRestrictions</span><span class="p">:</span> <span class="kt"><a href="../../Structs/MediaPackage/AdsOnDeliveryRestrictions.html">AdsOnDeliveryRestrictions</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">adTriggers</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../../Structs/MediaPackage/Adtriggerselement.html">Adtriggerselement</a></span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">id</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">includeIframeOnlyStream</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">manifestName</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">playlistType</span><span class="p">:</span> <span class="kt"><a href="../../Structs/MediaPackage/PlaylistType.html">PlaylistType</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">playlistWindowSeconds</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">programDateTimeIntervalSeconds</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/MediaPackage/MediaPackage_Shapes.swift#L908-L918">Show on GitHub</a>
                       </div>
                     </section>
                   </div>

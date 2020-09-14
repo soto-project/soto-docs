@@ -15,7 +15,7 @@
     <header>
       <div class="content-wrapper">
         <p><a href="index.html"> Docs</a> (54% documented)</p>
-        <p class="header-right"><a href="https://github.com/swift-aws/aws-sdk-swift"><img src="img/gh.png"/>View on GitHub</a></p>
+        <p class="header-right"><a href="https://github.com/soto-project/soto"><img src="img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -28,6 +28,9 @@
     <div class="content-wrapper">
       <nav class="sidebar">
         <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="User%20Guides.html">User Guides</a>
+          </li>
           <li class="nav-group-name">
             <a href="AWSSDKSwiftCore.html">AWSSDKSwiftCore</a>
           </li>
@@ -68,6 +71,9 @@
             <a href="AppSync.html">AppSync</a>
           </li>
           <li class="nav-group-name">
+            <a href="Appflow.html">Appflow</a>
+          </li>
+          <li class="nav-group-name">
             <a href="ApplicationAutoScaling.html">ApplicationAutoScaling</a>
           </li>
           <li class="nav-group-name">
@@ -93,6 +99,9 @@
           </li>
           <li class="nav-group-name">
             <a href="Batch.html">Batch</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="Braket.html">Braket</a>
           </li>
           <li class="nav-group-name">
             <a href="Budgets.html">Budgets</a>
@@ -335,6 +344,12 @@
             <a href="IAM.html">IAM</a>
           </li>
           <li class="nav-group-name">
+            <a href="IVS.html">IVS</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="IdentityStore.html">IdentityStore</a>
+          </li>
+          <li class="nav-group-name">
             <a href="Imagebuilder.html">Imagebuilder</a>
           </li>
           <li class="nav-group-name">
@@ -557,6 +572,9 @@
             <a href="Redshift.html">Redshift</a>
           </li>
           <li class="nav-group-name">
+            <a href="RedshiftDataAPIService.html">RedshiftDataAPIService</a>
+          </li>
+          <li class="nav-group-name">
             <a href="Rekognition.html">Rekognition</a>
           </li>
           <li class="nav-group-name">
@@ -606,6 +624,9 @@
           </li>
           <li class="nav-group-name">
             <a href="SSO.html">SSO</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="SSOAdmin.html">SSOAdmin</a>
           </li>
           <li class="nav-group-name">
             <a href="SSOOIDC.html">SSOOIDC</a>
@@ -741,9 +762,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:15AWSIoTAnalytics02IoB0V"></a>
+                    <a name="/s:16SotoIoTAnalytics0bC0V"></a>
                     <a name="//apple_ref/swift/Struct/IoTAnalytics" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15AWSIoTAnalytics02IoB0V">IoTAnalytics</a>
+                    <a class="token" href="#/s:16SotoIoTAnalytics0bC0V">IoTAnalytics</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -751,9 +772,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Client object for interacting with AWS IoTAnalytics service.</p>
-
-<p>AWS IoT Analytics allows you to collect large amounts of device data, process messages, and store them. You can then query the data and run sophisticated analytics on it. AWS IoT Analytics enables advanced data exploration through integration with Jupyter Notebooks and data visualization through integration with Amazon QuickSight. Traditional analytics and business intelligence tools are designed to process structured data. IoT data often comes from devices that record noisy processes (such as temperature, motion, or sound). As a result the data from these devices can have significant gaps, corrupted messages, and false readings that must be cleaned up before analysis can occur. Also, IoT data is often only meaningful in the context of other data from external sources.  AWS IoT Analytics automates the steps required to analyze data from IoT devices. AWS IoT Analytics filters, transforms, and enriches IoT data before storing it in a time-series data store for analysis. You can set up the service to collect only the data you need from your devices, apply mathematical transforms to process the data, and enrich the data with device-specific metadata such as device type and location before storing it. Then, you can analyze your data by running queries using the built-in SQL query engine, or perform more complex analytics and machine learning inference. AWS IoT Analytics includes pre-built models for common IoT use cases so you can answer questions like which devices are about to fail or which customers are at risk of abandoning their wearable devices.</p>
+                        <p>Undocumented</p>
 
                         <a href="Structs/IoTAnalytics.html" class="slightly-smaller">See more</a>
                       </div>
@@ -761,9 +780,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">IoTAnalytics</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">IoTAnalytics</span> <span class="p">:</span> <span class="kt"><a href="Protocols/AWSService.html">AWSService</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/IoTAnalytics/IoTAnalytics_API.swift#L24-L234">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -771,9 +793,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:15AWSIoTAnalytics02IoB9ErrorTypeO"></a>
+                    <a name="/s:16SotoIoTAnalytics0bC9ErrorTypeO"></a>
                     <a name="//apple_ref/swift/Enum/IoTAnalyticsErrorType" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15AWSIoTAnalytics02IoB9ErrorTypeO">IoTAnalyticsErrorType</a>
+                    <a class="token" href="#/s:16SotoIoTAnalytics0bC9ErrorTypeO">IoTAnalyticsErrorType</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -793,6 +815,9 @@
 <pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">IoTAnalyticsErrorType</span><span class="p">:</span> <span class="kt">CustomStringConvertible</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/IoTAnalytics/IoTAnalytics_Error.swift#L20-L28">Show on GitHub</a>
                       </div>
                     </section>
                   </div>

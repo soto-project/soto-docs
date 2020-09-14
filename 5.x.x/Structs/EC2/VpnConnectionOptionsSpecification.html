@@ -15,7 +15,7 @@
     <header>
       <div class="content-wrapper">
         <p><a href="../../index.html"> Docs</a> (54% documented)</p>
-        <p class="header-right"><a href="https://github.com/swift-aws/aws-sdk-swift"><img src="../../img/gh.png"/>View on GitHub</a></p>
+        <p class="header-right"><a href="https://github.com/soto-project/soto"><img src="../../img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -28,6 +28,9 @@
     <div class="content-wrapper">
       <nav class="sidebar">
         <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../../User%20Guides.html">User Guides</a>
+          </li>
           <li class="nav-group-name">
             <a href="../../AWSSDKSwiftCore.html">AWSSDKSwiftCore</a>
           </li>
@@ -68,6 +71,9 @@
             <a href="../../AppSync.html">AppSync</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../Appflow.html">Appflow</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../ApplicationAutoScaling.html">ApplicationAutoScaling</a>
           </li>
           <li class="nav-group-name">
@@ -93,6 +99,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../Batch.html">Batch</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../Braket.html">Braket</a>
           </li>
           <li class="nav-group-name">
             <a href="../../Budgets.html">Budgets</a>
@@ -335,6 +344,12 @@
             <a href="../../IAM.html">IAM</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../IVS.html">IVS</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../IdentityStore.html">IdentityStore</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../Imagebuilder.html">Imagebuilder</a>
           </li>
           <li class="nav-group-name">
@@ -557,6 +572,9 @@
             <a href="../../Redshift.html">Redshift</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../RedshiftDataAPIService.html">RedshiftDataAPIService</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../Rekognition.html">Rekognition</a>
           </li>
           <li class="nav-group-name">
@@ -606,6 +624,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../SSO.html">SSO</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../SSOAdmin.html">SSOAdmin</a>
           </li>
           <li class="nav-group-name">
             <a href="../../SSOOIDC.html">SSOOIDC</a>
@@ -735,6 +756,7 @@
             <h1>VpnConnectionOptionsSpecification</h1>
               <div class="declaration">
                 <div class="language">
+                  
                   <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">VpnConnectionOptionsSpecification</span> <span class="p">:</span> <span class="kt"><a href="../../Protocols/AWSEncodableShape.html">AWSEncodableShape</a></span></code></pre>
 
                 </div>
@@ -748,9 +770,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6AWSEC23EC2V33VpnConnectionOptionsSpecificationV18enableAccelerationSbSgvp"></a>
+                    <a name="/s:7SotoEC20B0V33VpnConnectionOptionsSpecificationV18enableAccelerationSbSgvp"></a>
                     <a name="//apple_ref/swift/Property/enableAcceleration" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6AWSEC23EC2V33VpnConnectionOptionsSpecificationV18enableAccelerationSbSgvp">enableAcceleration</a>
+                    <a class="token" href="#/s:7SotoEC20B0V33VpnConnectionOptionsSpecificationV18enableAccelerationSbSgvp">enableAcceleration</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -769,15 +791,138 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L34701">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6AWSEC23EC2V33VpnConnectionOptionsSpecificationV16staticRoutesOnlySbSgvp"></a>
+                    <a name="/s:7SotoEC20B0V33VpnConnectionOptionsSpecificationV20localIpv4NetworkCidrSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/localIpv4NetworkCidr" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7SotoEC20B0V33VpnConnectionOptionsSpecificationV20localIpv4NetworkCidrSSSgvp">localIpv4NetworkCidr</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The IPv4 CIDR on the customer gateway (on-premises) side of the VPN connection. Default: 0.0.0.0/0</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">localIpv4NetworkCidr</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L34703">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7SotoEC20B0V33VpnConnectionOptionsSpecificationV20localIpv6NetworkCidrSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/localIpv6NetworkCidr" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7SotoEC20B0V33VpnConnectionOptionsSpecificationV20localIpv6NetworkCidrSSSgvp">localIpv6NetworkCidr</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The IPv6 CIDR on the customer gateway (on-premises) side of the VPN connection. Default: ::/0</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">localIpv6NetworkCidr</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L34705">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7SotoEC20B0V33VpnConnectionOptionsSpecificationV21remoteIpv4NetworkCidrSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/remoteIpv4NetworkCidr" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7SotoEC20B0V33VpnConnectionOptionsSpecificationV21remoteIpv4NetworkCidrSSSgvp">remoteIpv4NetworkCidr</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The IPv4 CIDR on the AWS side of the VPN connection. Default: 0.0.0.0/0</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">remoteIpv4NetworkCidr</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L34707">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7SotoEC20B0V33VpnConnectionOptionsSpecificationV21remoteIpv6NetworkCidrSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/remoteIpv6NetworkCidr" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7SotoEC20B0V33VpnConnectionOptionsSpecificationV21remoteIpv6NetworkCidrSSSgvp">remoteIpv6NetworkCidr</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The IPv6 CIDR on the AWS side of the VPN connection. Default: ::/0</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">remoteIpv6NetworkCidr</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L34709">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7SotoEC20B0V33VpnConnectionOptionsSpecificationV16staticRoutesOnlySbSgvp"></a>
                     <a name="//apple_ref/swift/Property/staticRoutesOnly" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6AWSEC23EC2V33VpnConnectionOptionsSpecificationV16staticRoutesOnlySbSgvp">staticRoutesOnly</a>
+                    <a class="token" href="#/s:7SotoEC20B0V33VpnConnectionOptionsSpecificationV16staticRoutesOnlySbSgvp">staticRoutesOnly</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -796,15 +941,48 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L34711">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6AWSEC23EC2V33VpnConnectionOptionsSpecificationV06tunnelE0SayAC0c6TunneleF0VGSgvp"></a>
+                    <a name="/s:7SotoEC20B0V33VpnConnectionOptionsSpecificationV21tunnelInsideIpVersionAC06TunnelhiJ0OSgvp"></a>
+                    <a name="//apple_ref/swift/Property/tunnelInsideIpVersion" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7SotoEC20B0V33VpnConnectionOptionsSpecificationV21tunnelInsideIpVersionAC06TunnelhiJ0OSgvp">tunnelInsideIpVersion</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Indicate whether the VPN tunnels process IPv4 or IPv6 traffic. Default: ipv4</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">tunnelInsideIpVersion</span><span class="p">:</span> <span class="kt"><a href="../../Structs/EC2/TunnelInsideIpVersion.html">TunnelInsideIpVersion</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L34713">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7SotoEC20B0V33VpnConnectionOptionsSpecificationV06tunnelE0SayAC0c6TunneleF0VGSgvp"></a>
                     <a name="//apple_ref/swift/Property/tunnelOptions" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6AWSEC23EC2V33VpnConnectionOptionsSpecificationV06tunnelE0SayAC0c6TunneleF0VGSgvp">tunnelOptions</a>
+                    <a class="token" href="#/s:7SotoEC20B0V33VpnConnectionOptionsSpecificationV06tunnelE0SayAC0c6TunneleF0VGSgvp">tunnelOptions</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -820,9 +998,12 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">@OptionalCoding</span>
-<span class="o">&lt;</span><span class="kt"><a href="../../Structs/EC2.html">EC2</a></span><span class="o">.</span><span class="kt"><a href="../../Structs/EC2.html#/s:6AWSEC23EC2V17DefaultArrayCodera">DefaultArrayCoder</a></span><span class="o">&gt;</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">tunnelOptions</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../../Structs/EC2/VpnTunnelOptionsSpecification.html">VpnTunnelOptionsSpecification</a></span><span class="p">]?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+<span class="o">&lt;</span><span class="kt"><a href="../../Structs/EC2.html">EC2</a></span><span class="o">.</span><span class="kt"><a href="../../Structs/EC2.html#/s:7SotoEC20B0V17DefaultArrayCodera">DefaultArrayCoder</a></span><span class="o">&gt;</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">tunnelOptions</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../../Structs/EC2/VpnTunnelOptionsSpecification.html">VpnTunnelOptionsSpecification</a></span><span class="p">]?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L34716">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -830,9 +1011,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6AWSEC23EC2V33VpnConnectionOptionsSpecificationV18enableAcceleration16staticRoutesOnly06tunnelE0AESbSg_AISayAC0c6TunneleF0VGSgtcfc"></a>
-                    <a name="//apple_ref/swift/Method/init(enableAcceleration:staticRoutesOnly:tunnelOptions:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6AWSEC23EC2V33VpnConnectionOptionsSpecificationV18enableAcceleration16staticRoutesOnly06tunnelE0AESbSg_AISayAC0c6TunneleF0VGSgtcfc">init(enableAcceleration:staticRoutesOnly:tunnelOptions:)</a>
+                    <a name="/s:7SotoEC20B0V33VpnConnectionOptionsSpecificationV18enableAcceleration20localIpv4NetworkCidr0i4Ipv6kL006remotejkL00nmkL016staticRoutesOnly21tunnelInsideIpVersion0rE0AESbSg_SSSgA3onC06TunnelstU0OSgSayAC0cveF0VGSgtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(enableAcceleration:localIpv4NetworkCidr:localIpv6NetworkCidr:remoteIpv4NetworkCidr:remoteIpv6NetworkCidr:staticRoutesOnly:tunnelInsideIpVersion:tunnelOptions:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7SotoEC20B0V33VpnConnectionOptionsSpecificationV18enableAcceleration20localIpv4NetworkCidr0i4Ipv6kL006remotejkL00nmkL016staticRoutesOnly21tunnelInsideIpVersion0rE0AESbSg_SSSgA3onC06TunnelstU0OSgSayAC0cveF0VGSgtcfc">init(enableAcceleration:<wbr>localIpv4NetworkCidr:<wbr>localIpv6NetworkCidr:<wbr>remoteIpv4NetworkCidr:<wbr>remoteIpv6NetworkCidr:<wbr>staticRoutesOnly:<wbr>tunnelInsideIpVersion:<wbr>tunnelOptions:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -847,9 +1028,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">enableAcceleration</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">staticRoutesOnly</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">tunnelOptions</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../../Structs/EC2/VpnTunnelOptionsSpecification.html">VpnTunnelOptionsSpecification</a></span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">enableAcceleration</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">localIpv4NetworkCidr</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">localIpv6NetworkCidr</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">remoteIpv4NetworkCidr</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">remoteIpv6NetworkCidr</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">staticRoutesOnly</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">tunnelInsideIpVersion</span><span class="p">:</span> <span class="kt"><a href="../../Structs/EC2/TunnelInsideIpVersion.html">TunnelInsideIpVersion</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">tunnelOptions</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../../Structs/EC2/VpnTunnelOptionsSpecification.html">VpnTunnelOptionsSpecification</a></span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L34718-L34727">Show on GitHub</a>
                       </div>
                     </section>
                   </div>

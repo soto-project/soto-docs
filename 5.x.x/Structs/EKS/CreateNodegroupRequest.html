@@ -15,7 +15,7 @@
     <header>
       <div class="content-wrapper">
         <p><a href="../../index.html"> Docs</a> (54% documented)</p>
-        <p class="header-right"><a href="https://github.com/swift-aws/aws-sdk-swift"><img src="../../img/gh.png"/>View on GitHub</a></p>
+        <p class="header-right"><a href="https://github.com/soto-project/soto"><img src="../../img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -28,6 +28,9 @@
     <div class="content-wrapper">
       <nav class="sidebar">
         <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../../User%20Guides.html">User Guides</a>
+          </li>
           <li class="nav-group-name">
             <a href="../../AWSSDKSwiftCore.html">AWSSDKSwiftCore</a>
           </li>
@@ -68,6 +71,9 @@
             <a href="../../AppSync.html">AppSync</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../Appflow.html">Appflow</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../ApplicationAutoScaling.html">ApplicationAutoScaling</a>
           </li>
           <li class="nav-group-name">
@@ -93,6 +99,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../Batch.html">Batch</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../Braket.html">Braket</a>
           </li>
           <li class="nav-group-name">
             <a href="../../Budgets.html">Budgets</a>
@@ -335,6 +344,12 @@
             <a href="../../IAM.html">IAM</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../IVS.html">IVS</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../IdentityStore.html">IdentityStore</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../Imagebuilder.html">Imagebuilder</a>
           </li>
           <li class="nav-group-name">
@@ -557,6 +572,9 @@
             <a href="../../Redshift.html">Redshift</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../RedshiftDataAPIService.html">RedshiftDataAPIService</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../Rekognition.html">Rekognition</a>
           </li>
           <li class="nav-group-name">
@@ -606,6 +624,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../SSO.html">SSO</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../SSOAdmin.html">SSOAdmin</a>
           </li>
           <li class="nav-group-name">
             <a href="../../SSOOIDC.html">SSOOIDC</a>
@@ -735,6 +756,7 @@
             <h1>CreateNodegroupRequest</h1>
               <div class="declaration">
                 <div class="language">
+                  
                   <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">CreateNodegroupRequest</span> <span class="p">:</span> <span class="kt"><a href="../../Protocols/AWSEncodableShape.html">AWSEncodableShape</a></span></code></pre>
 
                 </div>
@@ -748,9 +770,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:15AWSSDKSwiftCore8AWSShapeP9_encodingSayAA17AWSMemberEncodingVGvpZ"></a>
+                    <a name="/s:8SotoCore8AWSShapeP9_encodingSayAA17AWSMemberEncodingVGvpZ"></a>
                     <a name="//apple_ref/swift/Variable/_encoding" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15AWSSDKSwiftCore8AWSShapeP9_encodingSayAA17AWSMemberEncodingVGvpZ">_encoding</a>
+                    <a class="token" href="#/s:8SotoCore8AWSShapeP9_encodingSayAA17AWSMemberEncodingVGvpZ">_encoding</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -768,15 +790,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EKS/EKS_Shapes.swift#L23">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6AWSEKS3EKSV22CreateNodegroupRequestV7amiTypeAC8AMITypesOSgvp"></a>
+                    <a name="/s:7SotoEKS0B0V22CreateNodegroupRequestV7amiTypeAC8AMITypesOSgvp"></a>
                     <a name="//apple_ref/swift/Property/amiType" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6AWSEKS3EKSV22CreateNodegroupRequestV7amiTypeAC8AMITypesOSgvp">amiType</a>
+                    <a class="token" href="#/s:7SotoEKS0B0V22CreateNodegroupRequestV7amiTypeAC8AMITypesOSgvp">amiType</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -784,7 +809,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The AMI type for your node group. GPU instance types should use the AL2_x86_64_GPU AMI type, which uses the Amazon EKS-optimized Linux AMI with GPU support. Non-GPU instances should use the AL2_x86_64 AMI type, which uses the Amazon EKS-optimized Linux AMI.</p>
+                        <p>The AMI type for your node group. GPU instance types should use the AL2_x86_64_GPU AMI type, which uses the Amazon EKS-optimized Linux AMI with GPU support. Non-GPU instances should use the AL2_x86_64 AMI type, which uses the Amazon EKS-optimized Linux AMI. If you specify launchTemplate, and your launch template uses a custom AMI, then don&rsquo;t specify amiType, or the node group deployment will fail. For more information about using launch templates with Amazon EKS, see Launch template support in the Amazon EKS User Guide.</p>
 
                       </div>
                       <div class="declaration">
@@ -795,15 +820,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EKS/EKS_Shapes.swift#L366">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6AWSEKS3EKSV22CreateNodegroupRequestV06clientE5TokenSSSgvp"></a>
+                    <a name="/s:7SotoEKS0B0V22CreateNodegroupRequestV06clientE5TokenSSSgvp"></a>
                     <a name="//apple_ref/swift/Property/clientRequestToken" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6AWSEKS3EKSV22CreateNodegroupRequestV06clientE5TokenSSSgvp">clientRequestToken</a>
+                    <a class="token" href="#/s:7SotoEKS0B0V22CreateNodegroupRequestV06clientE5TokenSSSgvp">clientRequestToken</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -822,15 +850,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EKS/EKS_Shapes.swift#L368">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6AWSEKS3EKSV22CreateNodegroupRequestV11clusterNameSSvp"></a>
+                    <a name="/s:7SotoEKS0B0V22CreateNodegroupRequestV11clusterNameSSvp"></a>
                     <a name="//apple_ref/swift/Property/clusterName" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6AWSEKS3EKSV22CreateNodegroupRequestV11clusterNameSSvp">clusterName</a>
+                    <a class="token" href="#/s:7SotoEKS0B0V22CreateNodegroupRequestV11clusterNameSSvp">clusterName</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -849,15 +880,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EKS/EKS_Shapes.swift#L370">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6AWSEKS3EKSV22CreateNodegroupRequestV8diskSizeSiSgvp"></a>
+                    <a name="/s:7SotoEKS0B0V22CreateNodegroupRequestV8diskSizeSiSgvp"></a>
                     <a name="//apple_ref/swift/Property/diskSize" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6AWSEKS3EKSV22CreateNodegroupRequestV8diskSizeSiSgvp">diskSize</a>
+                    <a class="token" href="#/s:7SotoEKS0B0V22CreateNodegroupRequestV8diskSizeSiSgvp">diskSize</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -865,7 +899,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The root device disk size (in GiB) for your node group instances. The default disk size is 20 GiB.</p>
+                        <p>The root device disk size (in GiB) for your node group instances. The default disk size is 20 GiB. If you specify launchTemplate, then don&rsquo;t specify diskSize, or the node group deployment will fail. For more information about using launch templates with Amazon EKS, see Launch template support in the Amazon EKS User Guide.</p>
 
                       </div>
                       <div class="declaration">
@@ -876,15 +910,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EKS/EKS_Shapes.swift#L372">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6AWSEKS3EKSV22CreateNodegroupRequestV13instanceTypesSaySSGSgvp"></a>
+                    <a name="/s:7SotoEKS0B0V22CreateNodegroupRequestV13instanceTypesSaySSGSgvp"></a>
                     <a name="//apple_ref/swift/Property/instanceTypes" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6AWSEKS3EKSV22CreateNodegroupRequestV13instanceTypesSaySSGSgvp">instanceTypes</a>
+                    <a class="token" href="#/s:7SotoEKS0B0V22CreateNodegroupRequestV13instanceTypesSaySSGSgvp">instanceTypes</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -892,7 +929,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The instance type to use for your node group. Currently, you can specify a single instance type for a node group. The default value for this parameter is t3.medium. If you choose a GPU instance type, be sure to specify the AL2_x86_64_GPU with the amiType parameter.</p>
+                        <p>The instance type to use for your node group. You can specify a single instance type for a node group. The default value for instanceTypes is t3.medium. If you choose a GPU instance type, be sure to specify AL2_x86_64_GPU with the amiType parameter. If you specify launchTemplate, then don&rsquo;t specify instanceTypes, or the node group deployment will fail. For more information about using launch templates with Amazon EKS, see Launch template support in the Amazon EKS User Guide.</p>
 
                       </div>
                       <div class="declaration">
@@ -903,15 +940,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EKS/EKS_Shapes.swift#L374">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6AWSEKS3EKSV22CreateNodegroupRequestV6labelsSDyS2SGSgvp"></a>
+                    <a name="/s:7SotoEKS0B0V22CreateNodegroupRequestV6labelsSDyS2SGSgvp"></a>
                     <a name="//apple_ref/swift/Property/labels" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6AWSEKS3EKSV22CreateNodegroupRequestV6labelsSDyS2SGSgvp">labels</a>
+                    <a class="token" href="#/s:7SotoEKS0B0V22CreateNodegroupRequestV6labelsSDyS2SGSgvp">labels</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -930,15 +970,48 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EKS/EKS_Shapes.swift#L376">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6AWSEKS3EKSV22CreateNodegroupRequestV13nodegroupNameSSvp"></a>
+                    <a name="/s:7SotoEKS0B0V22CreateNodegroupRequestV14launchTemplateAC06LaunchG13SpecificationVSgvp"></a>
+                    <a name="//apple_ref/swift/Property/launchTemplate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7SotoEKS0B0V22CreateNodegroupRequestV14launchTemplateAC06LaunchG13SpecificationVSgvp">launchTemplate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>An object representing a node group&rsquo;s launch template specification. If specified, then do not specify instanceTypes, diskSize, or remoteAccess. If specified, make sure that the launch template meets the requirements in launchTemplateSpecification.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">launchTemplate</span><span class="p">:</span> <span class="kt"><a href="../../Structs/EKS/LaunchTemplateSpecification.html">LaunchTemplateSpecification</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EKS/EKS_Shapes.swift#L378">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7SotoEKS0B0V22CreateNodegroupRequestV13nodegroupNameSSvp"></a>
                     <a name="//apple_ref/swift/Property/nodegroupName" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6AWSEKS3EKSV22CreateNodegroupRequestV13nodegroupNameSSvp">nodegroupName</a>
+                    <a class="token" href="#/s:7SotoEKS0B0V22CreateNodegroupRequestV13nodegroupNameSSvp">nodegroupName</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -957,15 +1030,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EKS/EKS_Shapes.swift#L380">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6AWSEKS3EKSV22CreateNodegroupRequestV8nodeRoleSSvp"></a>
+                    <a name="/s:7SotoEKS0B0V22CreateNodegroupRequestV8nodeRoleSSvp"></a>
                     <a name="//apple_ref/swift/Property/nodeRole" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6AWSEKS3EKSV22CreateNodegroupRequestV8nodeRoleSSvp">nodeRole</a>
+                    <a class="token" href="#/s:7SotoEKS0B0V22CreateNodegroupRequestV8nodeRoleSSvp">nodeRole</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -973,7 +1049,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The Amazon Resource Name (ARN) of the IAM role to associate with your node group. The Amazon EKS worker node kubelet daemon makes calls to AWS APIs on your behalf. Worker nodes receive permissions for these API calls through an IAM instance profile and associated policies. Before you can launch worker nodes and register them into a cluster, you must create an IAM role for those worker nodes to use when they are launched. For more information, see Amazon EKS Worker Node IAM Role in the  Amazon EKS User Guide .</p>
+                        <p>The Amazon Resource Name (ARN) of the IAM role to associate with your node group. The Amazon EKS worker node kubelet daemon makes calls to AWS APIs on your behalf. Worker nodes receive permissions for these API calls through an IAM instance profile and associated policies. Before you can launch worker nodes and register them into a cluster, you must create an IAM role for those worker nodes to use when they are launched. For more information, see Amazon EKS Worker Node IAM Role in the  Amazon EKS User Guide . If you specify launchTemplate, then don&rsquo;t specify  IamInstanceProfile  in your launch template, or the node group deployment will fail. For more information about using launch templates with Amazon EKS, see Launch template support in the Amazon EKS User Guide.</p>
 
                       </div>
                       <div class="declaration">
@@ -984,15 +1060,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EKS/EKS_Shapes.swift#L382">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6AWSEKS3EKSV22CreateNodegroupRequestV14releaseVersionSSSgvp"></a>
+                    <a name="/s:7SotoEKS0B0V22CreateNodegroupRequestV14releaseVersionSSSgvp"></a>
                     <a name="//apple_ref/swift/Property/releaseVersion" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6AWSEKS3EKSV22CreateNodegroupRequestV14releaseVersionSSSgvp">releaseVersion</a>
+                    <a class="token" href="#/s:7SotoEKS0B0V22CreateNodegroupRequestV14releaseVersionSSSgvp">releaseVersion</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1000,7 +1079,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The AMI version of the Amazon EKS-optimized AMI to use with your node group. By default, the latest available AMI version for the node group&rsquo;s current Kubernetes version is used. For more information, see Amazon EKS-Optimized Linux AMI Versions in the Amazon EKS User Guide.</p>
+                        <p>The AMI version of the Amazon EKS-optimized AMI to use with your node group. By default, the latest available AMI version for the node group&rsquo;s current Kubernetes version is used. For more information, see Amazon EKS-Optimized Linux AMI Versions in the Amazon EKS User Guide. If you specify launchTemplate, and your launch template uses a custom AMI, then don&rsquo;t specify releaseVersion, or the node group deployment will fail. For more information about using launch templates with Amazon EKS, see Launch template support in the Amazon EKS User Guide.</p>
 
                       </div>
                       <div class="declaration">
@@ -1011,15 +1090,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EKS/EKS_Shapes.swift#L384">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6AWSEKS3EKSV22CreateNodegroupRequestV12remoteAccessAC06RemoteG6ConfigVSgvp"></a>
+                    <a name="/s:7SotoEKS0B0V22CreateNodegroupRequestV12remoteAccessAC06RemoteG6ConfigVSgvp"></a>
                     <a name="//apple_ref/swift/Property/remoteAccess" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6AWSEKS3EKSV22CreateNodegroupRequestV12remoteAccessAC06RemoteG6ConfigVSgvp">remoteAccess</a>
+                    <a class="token" href="#/s:7SotoEKS0B0V22CreateNodegroupRequestV12remoteAccessAC06RemoteG6ConfigVSgvp">remoteAccess</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1027,7 +1109,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The remote access (SSH) configuration to use with your node group.</p>
+                        <p>The remote access (SSH) configuration to use with your node group. If you specify launchTemplate, then don&rsquo;t specify remoteAccess, or the node group deployment will fail. For more information about using launch templates with Amazon EKS, see Launch template support in the Amazon EKS User Guide.</p>
 
                       </div>
                       <div class="declaration">
@@ -1038,15 +1120,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EKS/EKS_Shapes.swift#L386">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6AWSEKS3EKSV22CreateNodegroupRequestV13scalingConfigAC0d7ScalingG0VSgvp"></a>
+                    <a name="/s:7SotoEKS0B0V22CreateNodegroupRequestV13scalingConfigAC0d7ScalingG0VSgvp"></a>
                     <a name="//apple_ref/swift/Property/scalingConfig" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6AWSEKS3EKSV22CreateNodegroupRequestV13scalingConfigAC0d7ScalingG0VSgvp">scalingConfig</a>
+                    <a class="token" href="#/s:7SotoEKS0B0V22CreateNodegroupRequestV13scalingConfigAC0d7ScalingG0VSgvp">scalingConfig</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1065,15 +1150,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EKS/EKS_Shapes.swift#L388">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6AWSEKS3EKSV22CreateNodegroupRequestV7subnetsSaySSGvp"></a>
+                    <a name="/s:7SotoEKS0B0V22CreateNodegroupRequestV7subnetsSaySSGvp"></a>
                     <a name="//apple_ref/swift/Property/subnets" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6AWSEKS3EKSV22CreateNodegroupRequestV7subnetsSaySSGvp">subnets</a>
+                    <a class="token" href="#/s:7SotoEKS0B0V22CreateNodegroupRequestV7subnetsSaySSGvp">subnets</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1081,7 +1169,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The subnets to use for the Auto Scaling group that is created for your node group. These subnets must have the tag key kubernetes.io/cluster/CLUSTER_NAME with a value of shared, where CLUSTER_NAME is replaced with the name of your cluster.</p>
+                        <p>The subnets to use for the Auto Scaling group that is created for your node group. These subnets must have the tag key kubernetes.io/cluster/CLUSTER_NAME with a value of shared, where CLUSTER_NAME is replaced with the name of your cluster. If you specify launchTemplate, then don&rsquo;t specify  SubnetId  in your launch template, or the node group deployment will fail. For more information about using launch templates with Amazon EKS, see Launch template support in the Amazon EKS User Guide.</p>
 
                       </div>
                       <div class="declaration">
@@ -1092,15 +1180,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EKS/EKS_Shapes.swift#L390">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6AWSEKS3EKSV22CreateNodegroupRequestV4tagsSDyS2SGSgvp"></a>
+                    <a name="/s:7SotoEKS0B0V22CreateNodegroupRequestV4tagsSDyS2SGSgvp"></a>
                     <a name="//apple_ref/swift/Property/tags" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6AWSEKS3EKSV22CreateNodegroupRequestV4tagsSDyS2SGSgvp">tags</a>
+                    <a class="token" href="#/s:7SotoEKS0B0V22CreateNodegroupRequestV4tagsSDyS2SGSgvp">tags</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1119,15 +1210,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EKS/EKS_Shapes.swift#L392">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6AWSEKS3EKSV22CreateNodegroupRequestV7versionSSSgvp"></a>
+                    <a name="/s:7SotoEKS0B0V22CreateNodegroupRequestV7versionSSSgvp"></a>
                     <a name="//apple_ref/swift/Property/version" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6AWSEKS3EKSV22CreateNodegroupRequestV7versionSSSgvp">version</a>
+                    <a class="token" href="#/s:7SotoEKS0B0V22CreateNodegroupRequestV7versionSSSgvp">version</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1135,7 +1229,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The Kubernetes version to use for your managed nodes. By default, the Kubernetes version of the cluster is used, and this is the only accepted specified value.</p>
+                        <p>The Kubernetes version to use for your managed nodes. By default, the Kubernetes version of the cluster is used, and this is the only accepted specified value. If you specify launchTemplate, and your launch template uses a custom AMI, then don&rsquo;t specify version, or the node group deployment will fail. For more information about using launch templates with Amazon EKS, see Launch template support in the Amazon EKS User Guide.</p>
 
                       </div>
                       <div class="declaration">
@@ -1146,15 +1240,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EKS/EKS_Shapes.swift#L394">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6AWSEKS3EKSV22CreateNodegroupRequestV7amiType06clientE5Token11clusterName8diskSize13instanceTypes6labels09nodegroupK08nodeRole14releaseVersion12remoteAccess13scalingConfig7subnets4tags7versionAeC8AMITypesOSg_SSSgSSSiSgSaySSGSgSDyS2SGSgS2SAwC06RemotewY0VSgAC0d7ScalingY0VSgAYA0_AWtcfc"></a>
-                    <a name="//apple_ref/swift/Method/init(amiType:clientRequestToken:clusterName:diskSize:instanceTypes:labels:nodegroupName:nodeRole:releaseVersion:remoteAccess:scalingConfig:subnets:tags:version:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6AWSEKS3EKSV22CreateNodegroupRequestV7amiType06clientE5Token11clusterName8diskSize13instanceTypes6labels09nodegroupK08nodeRole14releaseVersion12remoteAccess13scalingConfig7subnets4tags7versionAeC8AMITypesOSg_SSSgSSSiSgSaySSGSgSDyS2SGSgS2SAwC06RemotewY0VSgAC0d7ScalingY0VSgAYA0_AWtcfc">init(amiType:clientRequestToken:clusterName:diskSize:instanceTypes:labels:nodegroupName:nodeRole:releaseVersion:remoteAccess:scalingConfig:subnets:tags:version:)</a>
+                    <a name="/s:7SotoEKS0B0V22CreateNodegroupRequestV7amiType06clientE5Token11clusterName8diskSize13instanceTypes6labels14launchTemplate09nodegroupK08nodeRole14releaseVersion12remoteAccess13scalingConfig7subnets4tags7versionAeC8AMITypesOSg_SSSgSSSiSgSaySSGSgSDyS2SGSgAC06LaunchR13SpecificationVSgS2SAxC06RemoteY6ConfigVSgAC0D13ScalingConfigVSgAZA1_AXtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(amiType:clientRequestToken:clusterName:diskSize:instanceTypes:labels:launchTemplate:nodegroupName:nodeRole:releaseVersion:remoteAccess:scalingConfig:subnets:tags:version:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7SotoEKS0B0V22CreateNodegroupRequestV7amiType06clientE5Token11clusterName8diskSize13instanceTypes6labels14launchTemplate09nodegroupK08nodeRole14releaseVersion12remoteAccess13scalingConfig7subnets4tags7versionAeC8AMITypesOSg_SSSgSSSiSgSaySSGSgSDyS2SGSgAC06LaunchR13SpecificationVSgS2SAxC06RemoteY6ConfigVSgAC0D13ScalingConfigVSgAZA1_AXtcfc">init(amiType:<wbr>clientRequestToken:<wbr>clusterName:<wbr>diskSize:<wbr>instanceTypes:<wbr>labels:<wbr>launchTemplate:<wbr>nodegroupName:<wbr>nodeRole:<wbr>releaseVersion:<wbr>remoteAccess:<wbr>scalingConfig:<wbr>subnets:<wbr>tags:<wbr>version:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1169,9 +1266,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">amiType</span><span class="p">:</span> <span class="kt"><a href="../../Structs/EKS/AMITypes.html">AMITypes</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">clientRequestToken</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kt">CreateNodegroupRequest</span><span class="o">.</span><span class="nf">idempotencyToken</span><span class="p">(),</span> <span class="nv">clusterName</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">diskSize</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">instanceTypes</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">labels</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt">String</span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">nodegroupName</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">nodeRole</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">releaseVersion</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">remoteAccess</span><span class="p">:</span> <span class="kt"><a href="../../Structs/EKS/RemoteAccessConfig.html">RemoteAccessConfig</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">scalingConfig</span><span class="p">:</span> <span class="kt"><a href="../../Structs/EKS/NodegroupScalingConfig.html">NodegroupScalingConfig</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">subnets</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">],</span> <span class="nv">tags</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt">String</span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">version</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">amiType</span><span class="p">:</span> <span class="kt"><a href="../../Structs/EKS/AMITypes.html">AMITypes</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">clientRequestToken</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kt">CreateNodegroupRequest</span><span class="o">.</span><span class="nf">idempotencyToken</span><span class="p">(),</span> <span class="nv">clusterName</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">diskSize</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">instanceTypes</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">labels</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt">String</span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">launchTemplate</span><span class="p">:</span> <span class="kt"><a href="../../Structs/EKS/LaunchTemplateSpecification.html">LaunchTemplateSpecification</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">nodegroupName</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">nodeRole</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">releaseVersion</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">remoteAccess</span><span class="p">:</span> <span class="kt"><a href="../../Structs/EKS/RemoteAccessConfig.html">RemoteAccessConfig</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">scalingConfig</span><span class="p">:</span> <span class="kt"><a href="../../Structs/EKS/NodegroupScalingConfig.html">NodegroupScalingConfig</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">subnets</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">],</span> <span class="nv">tags</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt">String</span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">version</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EKS/EKS_Shapes.swift#L396-L412">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1179,9 +1279,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:15AWSSDKSwiftCore17AWSEncodableShapeP8validate4nameySS_tKF"></a>
+                    <a name="/s:8SotoCore17AWSEncodableShapeP8validate4nameySS_tKF"></a>
                     <a name="//apple_ref/swift/Method/validate(name:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15AWSSDKSwiftCore17AWSEncodableShapeP8validate4nameySS_tKF">validate(name:)</a>
+                    <a class="token" href="#/s:8SotoCore17AWSEncodableShapeP8validate4nameySS_tKF">validate(name:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1198,6 +1298,9 @@
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">validate</span><span class="p">(</span><span class="nv">name</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="k">throws</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EKS/EKS_Shapes.swift#L414-L427">Show on GitHub</a>
                       </div>
                     </section>
                   </div>

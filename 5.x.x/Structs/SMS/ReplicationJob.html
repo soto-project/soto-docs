@@ -15,7 +15,7 @@
     <header>
       <div class="content-wrapper">
         <p><a href="../../index.html"> Docs</a> (54% documented)</p>
-        <p class="header-right"><a href="https://github.com/swift-aws/aws-sdk-swift"><img src="../../img/gh.png"/>View on GitHub</a></p>
+        <p class="header-right"><a href="https://github.com/soto-project/soto"><img src="../../img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -28,6 +28,9 @@
     <div class="content-wrapper">
       <nav class="sidebar">
         <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../../User%20Guides.html">User Guides</a>
+          </li>
           <li class="nav-group-name">
             <a href="../../AWSSDKSwiftCore.html">AWSSDKSwiftCore</a>
           </li>
@@ -68,6 +71,9 @@
             <a href="../../AppSync.html">AppSync</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../Appflow.html">Appflow</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../ApplicationAutoScaling.html">ApplicationAutoScaling</a>
           </li>
           <li class="nav-group-name">
@@ -93,6 +99,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../Batch.html">Batch</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../Braket.html">Braket</a>
           </li>
           <li class="nav-group-name">
             <a href="../../Budgets.html">Budgets</a>
@@ -335,6 +344,12 @@
             <a href="../../IAM.html">IAM</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../IVS.html">IVS</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../IdentityStore.html">IdentityStore</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../Imagebuilder.html">Imagebuilder</a>
           </li>
           <li class="nav-group-name">
@@ -557,6 +572,9 @@
             <a href="../../Redshift.html">Redshift</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../RedshiftDataAPIService.html">RedshiftDataAPIService</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../Rekognition.html">Rekognition</a>
           </li>
           <li class="nav-group-name">
@@ -606,6 +624,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../SSO.html">SSO</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../SSOAdmin.html">SSOAdmin</a>
           </li>
           <li class="nav-group-name">
             <a href="../../SSOOIDC.html">SSOOIDC</a>
@@ -735,7 +756,8 @@
             <h1>ReplicationJob</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ReplicationJob</span> <span class="p">:</span> <span class="kt"><a href="../../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                  
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ReplicationJob</span> <span class="p">:</span> <span class="kt"><a href="../../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                 </div>
               </div>
@@ -748,9 +770,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6AWSSMS3SMSV14ReplicationJobV11descriptionSSSgvp"></a>
+                    <a name="/s:7SotoSMS0B0V14ReplicationJobV11descriptionSSSgvp"></a>
                     <a name="//apple_ref/swift/Property/description" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6AWSSMS3SMSV14ReplicationJobV11descriptionSSSgvp">description</a>
+                    <a class="token" href="#/s:7SotoSMS0B0V14ReplicationJobV11descriptionSSSgvp">description</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -769,15 +791,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/SMS/SMS_Shapes.swift#L1234">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6AWSSMS3SMSV14ReplicationJobV9encryptedSbSgvp"></a>
+                    <a name="/s:7SotoSMS0B0V14ReplicationJobV9encryptedSbSgvp"></a>
                     <a name="//apple_ref/swift/Property/encrypted" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6AWSSMS3SMSV14ReplicationJobV9encryptedSbSgvp">encrypted</a>
+                    <a class="token" href="#/s:7SotoSMS0B0V14ReplicationJobV9encryptedSbSgvp">encrypted</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -785,7 +810,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Whether the replication job should produce encrypted AMIs or not. See also KmsKeyId below.</p>
+                        <p>Indicates whether the replication job should produce encrypted AMIs.</p>
 
                       </div>
                       <div class="declaration">
@@ -796,15 +821,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/SMS/SMS_Shapes.swift#L1236">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6AWSSMS3SMSV14ReplicationJobV9frequencySiSgvp"></a>
+                    <a name="/s:7SotoSMS0B0V14ReplicationJobV9frequencySiSgvp"></a>
                     <a name="//apple_ref/swift/Property/frequency" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6AWSSMS3SMSV14ReplicationJobV9frequencySiSgvp">frequency</a>
+                    <a class="token" href="#/s:7SotoSMS0B0V14ReplicationJobV9frequencySiSgvp">frequency</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -823,15 +851,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/SMS/SMS_Shapes.swift#L1238">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6AWSSMS3SMSV14ReplicationJobV8kmsKeyIdSSSgvp"></a>
+                    <a name="/s:7SotoSMS0B0V14ReplicationJobV8kmsKeyIdSSSgvp"></a>
                     <a name="//apple_ref/swift/Property/kmsKeyId" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6AWSSMS3SMSV14ReplicationJobV8kmsKeyIdSSSgvp">kmsKeyId</a>
+                    <a class="token" href="#/s:7SotoSMS0B0V14ReplicationJobV8kmsKeyIdSSSgvp">kmsKeyId</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -839,7 +870,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>KMS key ID for replication jobs that produce encrypted AMIs. Can be any of the following:    KMS key ID   KMS key alias   ARN referring to KMS key ID   ARN referring to KMS key alias    If encrypted is true but a KMS key id is not specified, the customer&rsquo;s default KMS key for EBS is used.</p>
+                        <p>The ID of the KMS key for replication jobs that produce encrypted AMIs. This value can be any of the following:    KMS key ID   KMS key alias   ARN referring to the KMS key ID   ARN referring to the KMS key alias   If encrypted is enabled but a KMS key ID is not specified, the customer&rsquo;s default KMS key for Amazon EBS is used.</p>
 
                       </div>
                       <div class="declaration">
@@ -850,15 +881,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/SMS/SMS_Shapes.swift#L1240">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6AWSSMS3SMSV14ReplicationJobV11latestAmiIdSSSgvp"></a>
+                    <a name="/s:7SotoSMS0B0V14ReplicationJobV11latestAmiIdSSSgvp"></a>
                     <a name="//apple_ref/swift/Property/latestAmiId" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6AWSSMS3SMSV14ReplicationJobV11latestAmiIdSSSgvp">latestAmiId</a>
+                    <a class="token" href="#/s:7SotoSMS0B0V14ReplicationJobV11latestAmiIdSSSgvp">latestAmiId</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -877,15 +911,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/SMS/SMS_Shapes.swift#L1242">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6AWSSMS3SMSV14ReplicationJobV11licenseTypeAC07LicenseF0OSgvp"></a>
+                    <a name="/s:7SotoSMS0B0V14ReplicationJobV11licenseTypeAC07LicenseF0OSgvp"></a>
                     <a name="//apple_ref/swift/Property/licenseType" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6AWSSMS3SMSV14ReplicationJobV11licenseTypeAC07LicenseF0OSgvp">licenseType</a>
+                    <a class="token" href="#/s:7SotoSMS0B0V14ReplicationJobV11licenseTypeAC07LicenseF0OSgvp">licenseType</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -904,15 +941,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/SMS/SMS_Shapes.swift#L1244">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6AWSSMS3SMSV14ReplicationJobV04nextC12RunStartTime15AWSSDKSwiftCore0H5StampVSgvp"></a>
+                    <a name="/s:7SotoSMS0B0V14ReplicationJobV04nextC12RunStartTime0A4Core0H5StampVSgvp"></a>
                     <a name="//apple_ref/swift/Property/nextReplicationRunStartTime" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6AWSSMS3SMSV14ReplicationJobV04nextC12RunStartTime15AWSSDKSwiftCore0H5StampVSgvp">nextReplicationRunStartTime</a>
+                    <a class="token" href="#/s:7SotoSMS0B0V14ReplicationJobV04nextC12RunStartTime0A4Core0H5StampVSgvp">nextReplicationRunStartTime</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -931,15 +971,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/SMS/SMS_Shapes.swift#L1246">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6AWSSMS3SMSV14ReplicationJobV24numberOfRecentAmisToKeepSiSgvp"></a>
+                    <a name="/s:7SotoSMS0B0V14ReplicationJobV24numberOfRecentAmisToKeepSiSgvp"></a>
                     <a name="//apple_ref/swift/Property/numberOfRecentAmisToKeep" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6AWSSMS3SMSV14ReplicationJobV24numberOfRecentAmisToKeepSiSgvp">numberOfRecentAmisToKeep</a>
+                    <a class="token" href="#/s:7SotoSMS0B0V14ReplicationJobV24numberOfRecentAmisToKeepSiSgvp">numberOfRecentAmisToKeep</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -947,7 +990,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Number of recent AMIs to keep in the customer&rsquo;s account for a replication job. By default the value is set to zero, meaning that all AMIs are kept.</p>
+                        <p>The number of recent AMIs to keep in the customer&rsquo;s account for a replication job. By default, the value is set to zero, meaning that all AMIs are kept.</p>
 
                       </div>
                       <div class="declaration">
@@ -958,15 +1001,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/SMS/SMS_Shapes.swift#L1248">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6AWSSMS3SMSV14ReplicationJobV011replicationD2IdSSSgvp"></a>
+                    <a name="/s:7SotoSMS0B0V14ReplicationJobV011replicationD2IdSSSgvp"></a>
                     <a name="//apple_ref/swift/Property/replicationJobId" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6AWSSMS3SMSV14ReplicationJobV011replicationD2IdSSSgvp">replicationJobId</a>
+                    <a class="token" href="#/s:7SotoSMS0B0V14ReplicationJobV011replicationD2IdSSSgvp">replicationJobId</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -974,7 +1020,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The identifier of the replication job.</p>
+                        <p>The ID of the replication job.</p>
 
                       </div>
                       <div class="declaration">
@@ -985,15 +1031,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/SMS/SMS_Shapes.swift#L1250">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6AWSSMS3SMSV14ReplicationJobV18replicationRunListSayAC0cF0VGSgvp"></a>
+                    <a name="/s:7SotoSMS0B0V14ReplicationJobV18replicationRunListSayAC0cF0VGSgvp"></a>
                     <a name="//apple_ref/swift/Property/replicationRunList" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6AWSSMS3SMSV14ReplicationJobV18replicationRunListSayAC0cF0VGSgvp">replicationRunList</a>
+                    <a class="token" href="#/s:7SotoSMS0B0V14ReplicationJobV18replicationRunListSayAC0cF0VGSgvp">replicationRunList</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1012,15 +1061,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/SMS/SMS_Shapes.swift#L1252">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6AWSSMS3SMSV14ReplicationJobV8roleNameSSSgvp"></a>
+                    <a name="/s:7SotoSMS0B0V14ReplicationJobV8roleNameSSSgvp"></a>
                     <a name="//apple_ref/swift/Property/roleName" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6AWSSMS3SMSV14ReplicationJobV8roleNameSSSgvp">roleName</a>
+                    <a class="token" href="#/s:7SotoSMS0B0V14ReplicationJobV8roleNameSSSgvp">roleName</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1028,7 +1080,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The name of the IAM role to be used by the Server Migration Service.</p>
+                        <p>The name of the IAM role to be used by AWS SMS.</p>
 
                       </div>
                       <div class="declaration">
@@ -1039,15 +1091,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/SMS/SMS_Shapes.swift#L1254">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6AWSSMS3SMSV14ReplicationJobV7runOnceSbSgvp"></a>
+                    <a name="/s:7SotoSMS0B0V14ReplicationJobV7runOnceSbSgvp"></a>
                     <a name="//apple_ref/swift/Property/runOnce" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6AWSSMS3SMSV14ReplicationJobV7runOnceSbSgvp">runOnce</a>
+                    <a class="token" href="#/s:7SotoSMS0B0V14ReplicationJobV7runOnceSbSgvp">runOnce</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1055,7 +1110,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Indicates whether to run the replication job one time.</p>
 
                       </div>
                       <div class="declaration">
@@ -1066,15 +1121,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/SMS/SMS_Shapes.swift#L1256">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6AWSSMS3SMSV14ReplicationJobV04seedC4Time15AWSSDKSwiftCore0F5StampVSgvp"></a>
+                    <a name="/s:7SotoSMS0B0V14ReplicationJobV04seedC4Time0A4Core0F5StampVSgvp"></a>
                     <a name="//apple_ref/swift/Property/seedReplicationTime" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6AWSSMS3SMSV14ReplicationJobV04seedC4Time15AWSSDKSwiftCore0F5StampVSgvp">seedReplicationTime</a>
+                    <a class="token" href="#/s:7SotoSMS0B0V14ReplicationJobV04seedC4Time0A4Core0F5StampVSgvp">seedReplicationTime</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1093,15 +1151,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/SMS/SMS_Shapes.swift#L1258">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6AWSSMS3SMSV14ReplicationJobV8serverIdSSSgvp"></a>
+                    <a name="/s:7SotoSMS0B0V14ReplicationJobV8serverIdSSSgvp"></a>
                     <a name="//apple_ref/swift/Property/serverId" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6AWSSMS3SMSV14ReplicationJobV8serverIdSSSgvp">serverId</a>
+                    <a class="token" href="#/s:7SotoSMS0B0V14ReplicationJobV8serverIdSSSgvp">serverId</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1109,7 +1170,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The identifier of the server.</p>
+                        <p>The ID of the server.</p>
 
                       </div>
                       <div class="declaration">
@@ -1120,15 +1181,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/SMS/SMS_Shapes.swift#L1260">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6AWSSMS3SMSV14ReplicationJobV10serverTypeAC06ServerF0OSgvp"></a>
+                    <a name="/s:7SotoSMS0B0V14ReplicationJobV10serverTypeAC06ServerF0OSgvp"></a>
                     <a name="//apple_ref/swift/Property/serverType" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6AWSSMS3SMSV14ReplicationJobV10serverTypeAC06ServerF0OSgvp">serverType</a>
+                    <a class="token" href="#/s:7SotoSMS0B0V14ReplicationJobV10serverTypeAC06ServerF0OSgvp">serverType</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1147,15 +1211,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/SMS/SMS_Shapes.swift#L1262">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6AWSSMS3SMSV14ReplicationJobV5stateAC0cD5StateOSgvp"></a>
+                    <a name="/s:7SotoSMS0B0V14ReplicationJobV5stateAC0cD5StateOSgvp"></a>
                     <a name="//apple_ref/swift/Property/state" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6AWSSMS3SMSV14ReplicationJobV5stateAC0cD5StateOSgvp">state</a>
+                    <a class="token" href="#/s:7SotoSMS0B0V14ReplicationJobV5stateAC0cD5StateOSgvp">state</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1174,15 +1241,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/SMS/SMS_Shapes.swift#L1264">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6AWSSMS3SMSV14ReplicationJobV13statusMessageSSSgvp"></a>
+                    <a name="/s:7SotoSMS0B0V14ReplicationJobV13statusMessageSSSgvp"></a>
                     <a name="//apple_ref/swift/Property/statusMessage" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6AWSSMS3SMSV14ReplicationJobV13statusMessageSSSgvp">statusMessage</a>
+                    <a class="token" href="#/s:7SotoSMS0B0V14ReplicationJobV13statusMessageSSSgvp">statusMessage</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1201,15 +1271,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/SMS/SMS_Shapes.swift#L1266">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6AWSSMS3SMSV14ReplicationJobV8vmServerAC02VmF0VSgvp"></a>
+                    <a name="/s:7SotoSMS0B0V14ReplicationJobV8vmServerAC02VmF0VSgvp"></a>
                     <a name="//apple_ref/swift/Property/vmServer" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6AWSSMS3SMSV14ReplicationJobV8vmServerAC02VmF0VSgvp">vmServer</a>
+                    <a class="token" href="#/s:7SotoSMS0B0V14ReplicationJobV8vmServerAC02VmF0VSgvp">vmServer</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1228,15 +1301,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/SMS/SMS_Shapes.swift#L1268">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6AWSSMS3SMSV14ReplicationJobV11description9encrypted9frequency8kmsKeyId09latestAmiJ011licenseType04nextC12RunStartTime24numberOfRecentAmisToKeep011replicationdJ00yP4List8roleName7runOnce04seedcR006serverJ006serverN05state13statusMessage8vmServerAESSSg_SbSgSiSgA2xC07LicenseN0OSg15AWSSDKSwiftCore0R5StampVSgAzXSayAC0cP0VGSgAxYA5_AxC06ServerN0OSgAC0cD5StateOSgAxC8VmServerVSgtcfc"></a>
+                    <a name="/s:7SotoSMS0B0V14ReplicationJobV11description9encrypted9frequency8kmsKeyId09latestAmiJ011licenseType04nextC12RunStartTime24numberOfRecentAmisToKeep011replicationdJ00yP4List8roleName7runOnce04seedcR006serverJ006serverN05state13statusMessage8vmServerAESSSg_SbSgSiSgA2xC07LicenseN0OSg0A4Core0R5StampVSgAzXSayAC0cP0VGSgAxYA5_AxC06ServerN0OSgAC0cD5StateOSgAxC8VmServerVSgtcfc"></a>
                     <a name="//apple_ref/swift/Method/init(description:encrypted:frequency:kmsKeyId:latestAmiId:licenseType:nextReplicationRunStartTime:numberOfRecentAmisToKeep:replicationJobId:replicationRunList:roleName:runOnce:seedReplicationTime:serverId:serverType:state:statusMessage:vmServer:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6AWSSMS3SMSV14ReplicationJobV11description9encrypted9frequency8kmsKeyId09latestAmiJ011licenseType04nextC12RunStartTime24numberOfRecentAmisToKeep011replicationdJ00yP4List8roleName7runOnce04seedcR006serverJ006serverN05state13statusMessage8vmServerAESSSg_SbSgSiSgA2xC07LicenseN0OSg15AWSSDKSwiftCore0R5StampVSgAzXSayAC0cP0VGSgAxYA5_AxC06ServerN0OSgAC0cD5StateOSgAxC8VmServerVSgtcfc">init(description:encrypted:frequency:kmsKeyId:latestAmiId:licenseType:nextReplicationRunStartTime:numberOfRecentAmisToKeep:replicationJobId:replicationRunList:roleName:runOnce:seedReplicationTime:serverId:serverType:state:statusMessage:vmServer:)</a>
+                    <a class="token" href="#/s:7SotoSMS0B0V14ReplicationJobV11description9encrypted9frequency8kmsKeyId09latestAmiJ011licenseType04nextC12RunStartTime24numberOfRecentAmisToKeep011replicationdJ00yP4List8roleName7runOnce04seedcR006serverJ006serverN05state13statusMessage8vmServerAESSSg_SbSgSiSgA2xC07LicenseN0OSg0A4Core0R5StampVSgAzXSayAC0cP0VGSgAxYA5_AxC06ServerN0OSgAC0cD5StateOSgAxC8VmServerVSgtcfc">init(description:<wbr>encrypted:<wbr>frequency:<wbr>kmsKeyId:<wbr>latestAmiId:<wbr>licenseType:<wbr>nextReplicationRunStartTime:<wbr>numberOfRecentAmisToKeep:<wbr>replicationJobId:<wbr>replicationRunList:<wbr>roleName:<wbr>runOnce:<wbr>seedReplicationTime:<wbr>serverId:<wbr>serverType:<wbr>state:<wbr>statusMessage:<wbr>vmServer:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1254,6 +1330,9 @@
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">description</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">encrypted</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">frequency</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">kmsKeyId</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">latestAmiId</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">licenseType</span><span class="p">:</span> <span class="kt"><a href="../../Structs/SMS/LicenseType.html">LicenseType</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">nextReplicationRunStartTime</span><span class="p">:</span> <span class="kt"><a href="../../Structs/TimeStamp.html">TimeStamp</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">numberOfRecentAmisToKeep</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">replicationJobId</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">replicationRunList</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../../Structs/SMS/ReplicationRun.html">ReplicationRun</a></span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">roleName</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">runOnce</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">seedReplicationTime</span><span class="p">:</span> <span class="kt"><a href="../../Structs/TimeStamp.html">TimeStamp</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">serverId</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">serverType</span><span class="p">:</span> <span class="kt"><a href="../../Structs/SMS/ServerType.html">ServerType</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">state</span><span class="p">:</span> <span class="kt"><a href="../../Structs/SMS/ReplicationJobState.html">ReplicationJobState</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">statusMessage</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">vmServer</span><span class="p">:</span> <span class="kt"><a href="../../Structs/SMS/VmServer.html">VmServer</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/SMS/SMS_Shapes.swift#L1270-L1289">Show on GitHub</a>
                       </div>
                     </section>
                   </div>

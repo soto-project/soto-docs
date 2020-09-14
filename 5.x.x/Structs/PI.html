@@ -15,7 +15,7 @@
     <header>
       <div class="content-wrapper">
         <p><a href="../index.html"> Docs</a> (54% documented)</p>
-        <p class="header-right"><a href="https://github.com/swift-aws/aws-sdk-swift"><img src="../img/gh.png"/>View on GitHub</a></p>
+        <p class="header-right"><a href="https://github.com/soto-project/soto"><img src="../img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -28,6 +28,9 @@
     <div class="content-wrapper">
       <nav class="sidebar">
         <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../User%20Guides.html">User Guides</a>
+          </li>
           <li class="nav-group-name">
             <a href="../AWSSDKSwiftCore.html">AWSSDKSwiftCore</a>
           </li>
@@ -68,6 +71,9 @@
             <a href="../AppSync.html">AppSync</a>
           </li>
           <li class="nav-group-name">
+            <a href="../Appflow.html">Appflow</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../ApplicationAutoScaling.html">ApplicationAutoScaling</a>
           </li>
           <li class="nav-group-name">
@@ -93,6 +99,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../Batch.html">Batch</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Braket.html">Braket</a>
           </li>
           <li class="nav-group-name">
             <a href="../Budgets.html">Budgets</a>
@@ -335,6 +344,12 @@
             <a href="../IAM.html">IAM</a>
           </li>
           <li class="nav-group-name">
+            <a href="../IVS.html">IVS</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../IdentityStore.html">IdentityStore</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../Imagebuilder.html">Imagebuilder</a>
           </li>
           <li class="nav-group-name">
@@ -557,6 +572,9 @@
             <a href="../Redshift.html">Redshift</a>
           </li>
           <li class="nav-group-name">
+            <a href="../RedshiftDataAPIService.html">RedshiftDataAPIService</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../Rekognition.html">Rekognition</a>
           </li>
           <li class="nav-group-name">
@@ -606,6 +624,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../SSO.html">SSO</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../SSOAdmin.html">SSOAdmin</a>
           </li>
           <li class="nav-group-name">
             <a href="../SSOOIDC.html">SSOOIDC</a>
@@ -735,13 +756,12 @@
             <h1>PI</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">PI</span></code></pre>
+                  
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">PI</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSService.html">AWSService</a></span></code></pre>
 
                 </div>
               </div>
-            <p>Client object for interacting with AWS PI service.</p>
-
-<p>AWS Performance Insights enables you to monitor and explore different dimensions of database load based on data captured from a running RDS instance. The guide provides detailed information about Performance Insights data types, parameters and errors. For more information about Performance Insights capabilities see Using Amazon RDS Performance Insights  in the Amazon RDS User Guide.  The AWS Performance Insights API provides visibility into the performance of your RDS instance, when Performance Insights is enabled for supported engine types. While Amazon CloudWatch provides the authoritative source for AWS service vended monitoring metrics, AWS Performance Insights offers a domain-specific view of database load measured as Average Active Sessions and provided to API consumers as a 2-dimensional time-series dataset. The time dimension of the data provides DB load data for each time point in the queried time range, and each time point decomposes overall load in relation to the requested dimensions, such as SQL, Wait-event, User or Host, measured at that time point.</p>
+            <p>Undocumented</p>
 
           </section>
           <section class="section task-group-section">
@@ -749,17 +769,19 @@
               <div class="task-name-container">
                 <a name="/Member%20variables"></a>
                 <a name="//apple_ref/swift/Section/Member variables" class="dashAnchor"></a>
-                <a href="#/Member%20variables">
-                  <h3 class="section-name">Member variables</h3>
-                </a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Member%20variables"></a>
+                  <h3 class="section-name"><p>Member variables</p>
+</h3>
+                </div>
               </div>
               <ul>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:5AWSPI2PIV6client15AWSSDKSwiftCore9AWSClientCvp"></a>
+                    <a name="/s:8SotoCore10AWSServiceP6clientAA9AWSClientCvp"></a>
                     <a name="//apple_ref/swift/Property/client" class="dashAnchor"></a>
-                    <a class="token" href="#/s:5AWSPI2PIV6client15AWSSDKSwiftCore9AWSClientCvp">client</a>
+                    <a class="token" href="#/s:8SotoCore10AWSServiceP6clientAA9AWSClientCvp">client</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -767,8 +789,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
-
+                        
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
@@ -778,15 +799,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/PI/PI_API.swift#L19">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:5AWSPI2PIV13serviceConfig15AWSSDKSwiftCore010AWSServiceD0Cvp"></a>
-                    <a name="//apple_ref/swift/Property/serviceConfig" class="dashAnchor"></a>
-                    <a class="token" href="#/s:5AWSPI2PIV13serviceConfig15AWSSDKSwiftCore010AWSServiceD0Cvp">serviceConfig</a>
+                    <a name="/s:8SotoCore10AWSServiceP6configAA0C6ConfigCvp"></a>
+                    <a name="//apple_ref/swift/Property/config" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8SotoCore10AWSServiceP6configAA0C6ConfigCvp">config</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -794,16 +818,18 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
-
+                        
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">serviceConfig</span><span class="p">:</span> <span class="kt"><a href="../Classes/AWSServiceConfig.html">AWSServiceConfig</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">config</span><span class="p">:</span> <span class="kt"><a href="../Classes/AWSServiceConfig.html">AWSServiceConfig</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/PI/PI_API.swift#L21">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -814,17 +840,19 @@
               <div class="task-name-container">
                 <a name="/Initialization"></a>
                 <a name="//apple_ref/swift/Section/Initialization" class="dashAnchor"></a>
-                <a href="#/Initialization">
-                  <h3 class="section-name">Initialization</h3>
-                </a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Initialization"></a>
+                  <h3 class="section-name"><p>Initialization</p>
+</h3>
+                </div>
               </div>
               <ul>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:5AWSPI2PIV6client6region9partition8endpointAC15AWSSDKSwiftCore9AWSClientC_AH6RegionVSgAH9PartitionVSSSgtcfc"></a>
-                    <a name="//apple_ref/swift/Method/init(client:region:partition:endpoint:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:5AWSPI2PIV6client6region9partition8endpointAC15AWSSDKSwiftCore9AWSClientC_AH6RegionVSgAH9PartitionVSSSgtcfc">init(client:region:partition:endpoint:)</a>
+                    <a name="/s:6SotoPI0B0V6client6region9partition8endpoint7timeout19byteBufferAllocator7optionsAC0A4Core9AWSClientC_AK6RegionVSgAK12AWSPartitionVSSSg3NIO10TimeAmountVSgAT04ByteiJ0VAK16AWSServiceConfigC7OptionsVtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(client:region:partition:endpoint:timeout:byteBufferAllocator:options:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6SotoPI0B0V6client6region9partition8endpoint7timeout19byteBufferAllocator7optionsAC0A4Core9AWSClientC_AK6RegionVSgAK12AWSPartitionVSSSg3NIO10TimeAmountVSgAT04ByteiJ0VAK16AWSServiceConfigC7OptionsVtcfc">init(client:<wbr>region:<wbr>partition:<wbr>endpoint:<wbr>timeout:<wbr>byteBufferAllocator:<wbr>options:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -841,9 +869,12 @@
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span>
     <span class="nv">client</span><span class="p">:</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="p">,</span>
-    <span class="nv">region</span><span class="p">:</span> <span class="kt">AWSSDKSwiftCore</span><span class="o">.</span><span class="kt"><a href="../Structs/Region.html">Region</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
-    <span class="nv">partition</span><span class="p">:</span> <span class="kt">AWSSDKSwiftCore</span><span class="o">.</span><span class="kt"><a href="../Structs/Partition.html">Partition</a></span> <span class="o">=</span> <span class="o">.</span><span class="n">aws</span><span class="p">,</span>
-    <span class="nv">endpoint</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span>
+    <span class="nv">region</span><span class="p">:</span> <span class="kt">SotoCore</span><span class="o">.</span><span class="kt"><a href="../Structs/Region.html">Region</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="nv">partition</span><span class="p">:</span> <span class="kt"><a href="../Structs/AWSPartition.html">AWSPartition</a></span> <span class="o">=</span> <span class="o">.</span><span class="n">aws</span><span class="p">,</span>
+    <span class="nv">endpoint</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="nv">timeout</span><span class="p">:</span> <span class="kt">TimeAmount</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="nv">byteBufferAllocator</span><span class="p">:</span> <span class="kt">ByteBufferAllocator</span> <span class="o">=</span> <span class="kt">ByteBufferAllocator</span><span class="p">(),</span>
+    <span class="nv">options</span><span class="p">:</span> <span class="kt"><a href="../Classes/AWSServiceConfig.html">AWSServiceConfig</a></span><span class="o">.</span><span class="kt">Options</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="p">)</span></code></pre>
 
                         </div>
@@ -900,8 +931,23 @@
                                 </div>
                               </td>
                             </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>timeout</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Timeout value for HTTP requests</p>
+                                </div>
+                              </td>
+                            </tr>
                           </tbody>
                         </table>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/PI/PI_API.swift#L39-L62">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -912,17 +958,19 @@
               <div class="task-name-container">
                 <a name="/API%20Calls"></a>
                 <a name="//apple_ref/swift/Section/API Calls" class="dashAnchor"></a>
-                <a href="#/API%20Calls">
-                  <h3 class="section-name">API Calls</h3>
-                </a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/API%20Calls"></a>
+                  <h3 class="section-name"><p>API Calls</p>
+</h3>
+                </div>
               </div>
               <ul>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:5AWSPI2PIV21describeDimensionKeys_2on3NIO15EventLoopFutureCyAC08DescribedE8ResponseVGAC0kdE7RequestV_AF0hI0_pSgtF"></a>
-                    <a name="//apple_ref/swift/Method/describeDimensionKeys(_:on:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:5AWSPI2PIV21describeDimensionKeys_2on3NIO15EventLoopFutureCyAC08DescribedE8ResponseVGAC0kdE7RequestV_AF0hI0_pSgtF">describeDimensionKeys(_:on:)</a>
+                    <a name="/s:6SotoPI0B0V21describeDimensionKeys_2on6logger3NIO15EventLoopFutureCyAC08DescribedE8ResponseVGAC0ldE7RequestV_AG0iJ0_pSg7Logging6LoggerVtF"></a>
+                    <a name="//apple_ref/swift/Method/describeDimensionKeys(_:on:logger:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6SotoPI0B0V21describeDimensionKeys_2on6logger3NIO15EventLoopFutureCyAC08DescribedE8ResponseVGAC0ldE7RequestV_AG0iJ0_pSg7Logging6LoggerVtF">describeDimensionKeys(_:<wbr>on:<wbr>logger:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -937,9 +985,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">describeDimensionKeys</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/PI/DescribeDimensionKeysRequest.html">DescribeDimensionKeysRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/PI/DescribeDimensionKeysResponse.html">DescribeDimensionKeysResponse</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">describeDimensionKeys</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/PI/DescribeDimensionKeysRequest.html">DescribeDimensionKeysRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">logger</span><span class="p">:</span> <span class="kt">Logger</span> <span class="o">=</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="o">.</span><span class="n">loggingDisabled</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/PI/DescribeDimensionKeysResponse.html">DescribeDimensionKeysResponse</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/PI/PI_API.swift#L67-L69">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -947,9 +998,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:5AWSPI2PIV18getResourceMetrics_2on3NIO15EventLoopFutureCyAC03GetdE8ResponseVGAC0kdE7RequestV_AF0hI0_pSgtF"></a>
-                    <a name="//apple_ref/swift/Method/getResourceMetrics(_:on:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:5AWSPI2PIV18getResourceMetrics_2on3NIO15EventLoopFutureCyAC03GetdE8ResponseVGAC0kdE7RequestV_AF0hI0_pSgtF">getResourceMetrics(_:on:)</a>
+                    <a name="/s:6SotoPI0B0V18getResourceMetrics_2on6logger3NIO15EventLoopFutureCyAC03GetdE8ResponseVGAC0ldE7RequestV_AG0iJ0_pSg7Logging6LoggerVtF"></a>
+                    <a name="//apple_ref/swift/Method/getResourceMetrics(_:on:logger:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6SotoPI0B0V18getResourceMetrics_2on6logger3NIO15EventLoopFutureCyAC03GetdE8ResponseVGAC0ldE7RequestV_AG0iJ0_pSg7Logging6LoggerVtF">getResourceMetrics(_:<wbr>on:<wbr>logger:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -964,9 +1015,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getResourceMetrics</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/PI/GetResourceMetricsRequest.html">GetResourceMetricsRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/PI/GetResourceMetricsResponse.html">GetResourceMetricsResponse</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getResourceMetrics</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/PI/GetResourceMetricsRequest.html">GetResourceMetricsRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">logger</span><span class="p">:</span> <span class="kt">Logger</span> <span class="o">=</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="o">.</span><span class="n">loggingDisabled</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/PI/GetResourceMetricsResponse.html">GetResourceMetricsResponse</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/PI/PI_API.swift#L72-L74">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -977,17 +1031,19 @@
               <div class="task-name-container">
                 <a name="/Enums"></a>
                 <a name="//apple_ref/swift/Section/Enums" class="dashAnchor"></a>
-                <a href="#/Enums">
-                  <h3 class="section-name">Enums</h3>
-                </a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Enums"></a>
+                  <h3 class="section-name"><p>Enums</p>
+</h3>
+                </div>
               </div>
               <ul>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:5AWSPI2PIV11ServiceTypeO"></a>
+                    <a name="/s:6SotoPI0B0V11ServiceTypeO"></a>
                     <a name="//apple_ref/swift/Enum/ServiceType" class="dashAnchor"></a>
-                    <a class="token" href="#/s:5AWSPI2PIV11ServiceTypeO">ServiceType</a>
+                    <a class="token" href="#/s:6SotoPI0B0V11ServiceTypeO">ServiceType</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1007,6 +1063,9 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/PI/PI_Shapes.swift#L23-L26">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
@@ -1016,17 +1075,19 @@
               <div class="task-name-container">
                 <a name="/Shapes"></a>
                 <a name="//apple_ref/swift/Section/Shapes" class="dashAnchor"></a>
-                <a href="#/Shapes">
-                  <h3 class="section-name">Shapes</h3>
-                </a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Shapes"></a>
+                  <h3 class="section-name"><p>Shapes</p>
+</h3>
+                </div>
               </div>
               <ul>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:5AWSPI2PIV9DataPointV"></a>
+                    <a name="/s:6SotoPI0B0V9DataPointV"></a>
                     <a name="//apple_ref/swift/Struct/DataPoint" class="dashAnchor"></a>
-                    <a class="token" href="#/s:5AWSPI2PIV9DataPointV">DataPoint</a>
+                    <a class="token" href="#/s:6SotoPI0B0V9DataPointV">DataPoint</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1042,9 +1103,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DataPoint</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DataPoint</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/PI/PI_Shapes.swift#L30-L45">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1052,9 +1116,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:5AWSPI2PIV28DescribeDimensionKeysRequestV"></a>
+                    <a name="/s:6SotoPI0B0V28DescribeDimensionKeysRequestV"></a>
                     <a name="//apple_ref/swift/Struct/DescribeDimensionKeysRequest" class="dashAnchor"></a>
-                    <a class="token" href="#/s:5AWSPI2PIV28DescribeDimensionKeysRequestV">DescribeDimensionKeysRequest</a>
+                    <a class="token" href="#/s:6SotoPI0B0V28DescribeDimensionKeysRequestV">DescribeDimensionKeysRequest</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1074,15 +1138,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/PI/PI_Shapes.swift#L47-L105">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:5AWSPI2PIV29DescribeDimensionKeysResponseV"></a>
+                    <a name="/s:6SotoPI0B0V29DescribeDimensionKeysResponseV"></a>
                     <a name="//apple_ref/swift/Struct/DescribeDimensionKeysResponse" class="dashAnchor"></a>
-                    <a class="token" href="#/s:5AWSPI2PIV29DescribeDimensionKeysResponseV">DescribeDimensionKeysResponse</a>
+                    <a class="token" href="#/s:6SotoPI0B0V29DescribeDimensionKeysResponseV">DescribeDimensionKeysResponse</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1098,9 +1165,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DescribeDimensionKeysResponse</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DescribeDimensionKeysResponse</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/PI/PI_Shapes.swift#L107-L134">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1108,9 +1178,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:5AWSPI2PIV14DimensionGroupV"></a>
+                    <a name="/s:6SotoPI0B0V14DimensionGroupV"></a>
                     <a name="//apple_ref/swift/Struct/DimensionGroup" class="dashAnchor"></a>
-                    <a class="token" href="#/s:5AWSPI2PIV14DimensionGroupV">DimensionGroup</a>
+                    <a class="token" href="#/s:6SotoPI0B0V14DimensionGroupV">DimensionGroup</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1130,15 +1200,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/PI/PI_Shapes.swift#L136-L162">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:5AWSPI2PIV23DimensionKeyDescriptionV"></a>
+                    <a name="/s:6SotoPI0B0V23DimensionKeyDescriptionV"></a>
                     <a name="//apple_ref/swift/Struct/DimensionKeyDescription" class="dashAnchor"></a>
-                    <a class="token" href="#/s:5AWSPI2PIV23DimensionKeyDescriptionV">DimensionKeyDescription</a>
+                    <a class="token" href="#/s:6SotoPI0B0V23DimensionKeyDescriptionV">DimensionKeyDescription</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1154,9 +1227,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DimensionKeyDescription</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DimensionKeyDescription</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/PI/PI_Shapes.swift#L164-L183">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1164,9 +1240,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:5AWSPI2PIV25GetResourceMetricsRequestV"></a>
+                    <a name="/s:6SotoPI0B0V25GetResourceMetricsRequestV"></a>
                     <a name="//apple_ref/swift/Struct/GetResourceMetricsRequest" class="dashAnchor"></a>
-                    <a class="token" href="#/s:5AWSPI2PIV25GetResourceMetricsRequestV">GetResourceMetricsRequest</a>
+                    <a class="token" href="#/s:6SotoPI0B0V25GetResourceMetricsRequestV">GetResourceMetricsRequest</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1186,15 +1262,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/PI/PI_Shapes.swift#L185-L234">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:5AWSPI2PIV26GetResourceMetricsResponseV"></a>
+                    <a name="/s:6SotoPI0B0V26GetResourceMetricsResponseV"></a>
                     <a name="//apple_ref/swift/Struct/GetResourceMetricsResponse" class="dashAnchor"></a>
-                    <a class="token" href="#/s:5AWSPI2PIV26GetResourceMetricsResponseV">GetResourceMetricsResponse</a>
+                    <a class="token" href="#/s:6SotoPI0B0V26GetResourceMetricsResponseV">GetResourceMetricsResponse</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1210,9 +1289,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">GetResourceMetricsResponse</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">GetResourceMetricsResponse</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/PI/PI_Shapes.swift#L236-L263">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1220,9 +1302,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:5AWSPI2PIV19MetricKeyDataPointsV"></a>
+                    <a name="/s:6SotoPI0B0V19MetricKeyDataPointsV"></a>
                     <a name="//apple_ref/swift/Struct/MetricKeyDataPoints" class="dashAnchor"></a>
-                    <a class="token" href="#/s:5AWSPI2PIV19MetricKeyDataPointsV">MetricKeyDataPoints</a>
+                    <a class="token" href="#/s:6SotoPI0B0V19MetricKeyDataPointsV">MetricKeyDataPoints</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1238,9 +1320,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">MetricKeyDataPoints</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">MetricKeyDataPoints</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/PI/PI_Shapes.swift#L265-L280">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1248,9 +1333,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:5AWSPI2PIV11MetricQueryV"></a>
+                    <a name="/s:6SotoPI0B0V11MetricQueryV"></a>
                     <a name="//apple_ref/swift/Struct/MetricQuery" class="dashAnchor"></a>
-                    <a class="token" href="#/s:5AWSPI2PIV11MetricQueryV">MetricQuery</a>
+                    <a class="token" href="#/s:6SotoPI0B0V11MetricQueryV">MetricQuery</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1270,15 +1355,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/PI/PI_Shapes.swift#L282-L305">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:5AWSPI2PIV20ResponsePartitionKeyV"></a>
+                    <a name="/s:6SotoPI0B0V20ResponsePartitionKeyV"></a>
                     <a name="//apple_ref/swift/Struct/ResponsePartitionKey" class="dashAnchor"></a>
-                    <a class="token" href="#/s:5AWSPI2PIV20ResponsePartitionKeyV">ResponsePartitionKey</a>
+                    <a class="token" href="#/s:6SotoPI0B0V20ResponsePartitionKeyV">ResponsePartitionKey</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1294,9 +1382,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ResponsePartitionKey</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ResponsePartitionKey</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/PI/PI_Shapes.swift#L307-L318">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1304,9 +1395,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:5AWSPI2PIV25ResponseResourceMetricKeyV"></a>
+                    <a name="/s:6SotoPI0B0V25ResponseResourceMetricKeyV"></a>
                     <a name="//apple_ref/swift/Struct/ResponseResourceMetricKey" class="dashAnchor"></a>
-                    <a class="token" href="#/s:5AWSPI2PIV25ResponseResourceMetricKeyV">ResponseResourceMetricKey</a>
+                    <a class="token" href="#/s:6SotoPI0B0V25ResponseResourceMetricKeyV">ResponseResourceMetricKey</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1322,9 +1413,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ResponseResourceMetricKey</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ResponseResourceMetricKey</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/PI/PI_Shapes.swift#L320-L335">Show on GitHub</a>
                       </div>
                     </section>
                   </div>

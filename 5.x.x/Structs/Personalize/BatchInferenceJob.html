@@ -15,7 +15,7 @@
     <header>
       <div class="content-wrapper">
         <p><a href="../../index.html"> Docs</a> (54% documented)</p>
-        <p class="header-right"><a href="https://github.com/swift-aws/aws-sdk-swift"><img src="../../img/gh.png"/>View on GitHub</a></p>
+        <p class="header-right"><a href="https://github.com/soto-project/soto"><img src="../../img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -28,6 +28,9 @@
     <div class="content-wrapper">
       <nav class="sidebar">
         <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../../User%20Guides.html">User Guides</a>
+          </li>
           <li class="nav-group-name">
             <a href="../../AWSSDKSwiftCore.html">AWSSDKSwiftCore</a>
           </li>
@@ -68,6 +71,9 @@
             <a href="../../AppSync.html">AppSync</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../Appflow.html">Appflow</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../ApplicationAutoScaling.html">ApplicationAutoScaling</a>
           </li>
           <li class="nav-group-name">
@@ -93,6 +99,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../Batch.html">Batch</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../Braket.html">Braket</a>
           </li>
           <li class="nav-group-name">
             <a href="../../Budgets.html">Budgets</a>
@@ -335,6 +344,12 @@
             <a href="../../IAM.html">IAM</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../IVS.html">IVS</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../IdentityStore.html">IdentityStore</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../Imagebuilder.html">Imagebuilder</a>
           </li>
           <li class="nav-group-name">
@@ -557,6 +572,9 @@
             <a href="../../Redshift.html">Redshift</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../RedshiftDataAPIService.html">RedshiftDataAPIService</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../Rekognition.html">Rekognition</a>
           </li>
           <li class="nav-group-name">
@@ -606,6 +624,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../SSO.html">SSO</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../SSOAdmin.html">SSOAdmin</a>
           </li>
           <li class="nav-group-name">
             <a href="../../SSOOIDC.html">SSOOIDC</a>
@@ -735,7 +756,8 @@
             <h1>BatchInferenceJob</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">BatchInferenceJob</span> <span class="p">:</span> <span class="kt"><a href="../../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                  
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">BatchInferenceJob</span> <span class="p">:</span> <span class="kt"><a href="../../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                 </div>
               </div>
@@ -748,9 +770,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:14AWSPersonalize11PersonalizeV17BatchInferenceJobV05batchdE3ArnSSSgvp"></a>
+                    <a name="/s:15SotoPersonalize0B0V17BatchInferenceJobV05batchdE3ArnSSSgvp"></a>
                     <a name="//apple_ref/swift/Property/batchInferenceJobArn" class="dashAnchor"></a>
-                    <a class="token" href="#/s:14AWSPersonalize11PersonalizeV17BatchInferenceJobV05batchdE3ArnSSSgvp">batchInferenceJobArn</a>
+                    <a class="token" href="#/s:15SotoPersonalize0B0V17BatchInferenceJobV05batchdE3ArnSSSgvp">batchInferenceJobArn</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -769,15 +791,48 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Personalize/Personalize_Shapes.swift#L143">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:14AWSPersonalize11PersonalizeV17BatchInferenceJobV16creationDateTime15AWSSDKSwiftCore0H5StampVSgvp"></a>
+                    <a name="/s:15SotoPersonalize0B0V17BatchInferenceJobV05batchdE6ConfigAC0cdeG0VSgvp"></a>
+                    <a name="//apple_ref/swift/Property/batchInferenceJobConfig" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15SotoPersonalize0B0V17BatchInferenceJobV05batchdE6ConfigAC0cdeG0VSgvp">batchInferenceJobConfig</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A string to string map of the configuration details of a batch inference job.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">batchInferenceJobConfig</span><span class="p">:</span> <span class="kt"><a href="../../Structs/Personalize/BatchInferenceJobConfig.html">BatchInferenceJobConfig</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Personalize/Personalize_Shapes.swift#L145">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:15SotoPersonalize0B0V17BatchInferenceJobV16creationDateTime0A4Core0H5StampVSgvp"></a>
                     <a name="//apple_ref/swift/Property/creationDateTime" class="dashAnchor"></a>
-                    <a class="token" href="#/s:14AWSPersonalize11PersonalizeV17BatchInferenceJobV16creationDateTime15AWSSDKSwiftCore0H5StampVSgvp">creationDateTime</a>
+                    <a class="token" href="#/s:15SotoPersonalize0B0V17BatchInferenceJobV16creationDateTime0A4Core0H5StampVSgvp">creationDateTime</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -796,15 +851,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Personalize/Personalize_Shapes.swift#L147">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:14AWSPersonalize11PersonalizeV17BatchInferenceJobV13failureReasonSSSgvp"></a>
+                    <a name="/s:15SotoPersonalize0B0V17BatchInferenceJobV13failureReasonSSSgvp"></a>
                     <a name="//apple_ref/swift/Property/failureReason" class="dashAnchor"></a>
-                    <a class="token" href="#/s:14AWSPersonalize11PersonalizeV17BatchInferenceJobV13failureReasonSSSgvp">failureReason</a>
+                    <a class="token" href="#/s:15SotoPersonalize0B0V17BatchInferenceJobV13failureReasonSSSgvp">failureReason</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -823,15 +881,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Personalize/Personalize_Shapes.swift#L149">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:14AWSPersonalize11PersonalizeV17BatchInferenceJobV9filterArnSSSgvp"></a>
+                    <a name="/s:15SotoPersonalize0B0V17BatchInferenceJobV9filterArnSSSgvp"></a>
                     <a name="//apple_ref/swift/Property/filterArn" class="dashAnchor"></a>
-                    <a class="token" href="#/s:14AWSPersonalize11PersonalizeV17BatchInferenceJobV9filterArnSSSgvp">filterArn</a>
+                    <a class="token" href="#/s:15SotoPersonalize0B0V17BatchInferenceJobV9filterArnSSSgvp">filterArn</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -850,15 +911,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Personalize/Personalize_Shapes.swift#L151">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:14AWSPersonalize11PersonalizeV17BatchInferenceJobV8jobInputAC0cdeG0VSgvp"></a>
+                    <a name="/s:15SotoPersonalize0B0V17BatchInferenceJobV8jobInputAC0cdeG0VSgvp"></a>
                     <a name="//apple_ref/swift/Property/jobInput" class="dashAnchor"></a>
-                    <a class="token" href="#/s:14AWSPersonalize11PersonalizeV17BatchInferenceJobV8jobInputAC0cdeG0VSgvp">jobInput</a>
+                    <a class="token" href="#/s:15SotoPersonalize0B0V17BatchInferenceJobV8jobInputAC0cdeG0VSgvp">jobInput</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -877,15 +941,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Personalize/Personalize_Shapes.swift#L153">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:14AWSPersonalize11PersonalizeV17BatchInferenceJobV7jobNameSSSgvp"></a>
+                    <a name="/s:15SotoPersonalize0B0V17BatchInferenceJobV7jobNameSSSgvp"></a>
                     <a name="//apple_ref/swift/Property/jobName" class="dashAnchor"></a>
-                    <a class="token" href="#/s:14AWSPersonalize11PersonalizeV17BatchInferenceJobV7jobNameSSSgvp">jobName</a>
+                    <a class="token" href="#/s:15SotoPersonalize0B0V17BatchInferenceJobV7jobNameSSSgvp">jobName</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -904,15 +971,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Personalize/Personalize_Shapes.swift#L155">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:14AWSPersonalize11PersonalizeV17BatchInferenceJobV9jobOutputAC0cdeG0VSgvp"></a>
+                    <a name="/s:15SotoPersonalize0B0V17BatchInferenceJobV9jobOutputAC0cdeG0VSgvp"></a>
                     <a name="//apple_ref/swift/Property/jobOutput" class="dashAnchor"></a>
-                    <a class="token" href="#/s:14AWSPersonalize11PersonalizeV17BatchInferenceJobV9jobOutputAC0cdeG0VSgvp">jobOutput</a>
+                    <a class="token" href="#/s:15SotoPersonalize0B0V17BatchInferenceJobV9jobOutputAC0cdeG0VSgvp">jobOutput</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -931,15 +1001,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Personalize/Personalize_Shapes.swift#L157">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:14AWSPersonalize11PersonalizeV17BatchInferenceJobV19lastUpdatedDateTime15AWSSDKSwiftCore0I5StampVSgvp"></a>
+                    <a name="/s:15SotoPersonalize0B0V17BatchInferenceJobV19lastUpdatedDateTime0A4Core0I5StampVSgvp"></a>
                     <a name="//apple_ref/swift/Property/lastUpdatedDateTime" class="dashAnchor"></a>
-                    <a class="token" href="#/s:14AWSPersonalize11PersonalizeV17BatchInferenceJobV19lastUpdatedDateTime15AWSSDKSwiftCore0I5StampVSgvp">lastUpdatedDateTime</a>
+                    <a class="token" href="#/s:15SotoPersonalize0B0V17BatchInferenceJobV19lastUpdatedDateTime0A4Core0I5StampVSgvp">lastUpdatedDateTime</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -958,15 +1031,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Personalize/Personalize_Shapes.swift#L159">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:14AWSPersonalize11PersonalizeV17BatchInferenceJobV10numResultsSiSgvp"></a>
+                    <a name="/s:15SotoPersonalize0B0V17BatchInferenceJobV10numResultsSiSgvp"></a>
                     <a name="//apple_ref/swift/Property/numResults" class="dashAnchor"></a>
-                    <a class="token" href="#/s:14AWSPersonalize11PersonalizeV17BatchInferenceJobV10numResultsSiSgvp">numResults</a>
+                    <a class="token" href="#/s:15SotoPersonalize0B0V17BatchInferenceJobV10numResultsSiSgvp">numResults</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -985,15 +1061,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Personalize/Personalize_Shapes.swift#L161">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:14AWSPersonalize11PersonalizeV17BatchInferenceJobV7roleArnSSSgvp"></a>
+                    <a name="/s:15SotoPersonalize0B0V17BatchInferenceJobV7roleArnSSSgvp"></a>
                     <a name="//apple_ref/swift/Property/roleArn" class="dashAnchor"></a>
-                    <a class="token" href="#/s:14AWSPersonalize11PersonalizeV17BatchInferenceJobV7roleArnSSSgvp">roleArn</a>
+                    <a class="token" href="#/s:15SotoPersonalize0B0V17BatchInferenceJobV7roleArnSSSgvp">roleArn</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1012,15 +1091,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Personalize/Personalize_Shapes.swift#L163">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:14AWSPersonalize11PersonalizeV17BatchInferenceJobV18solutionVersionArnSSSgvp"></a>
+                    <a name="/s:15SotoPersonalize0B0V17BatchInferenceJobV18solutionVersionArnSSSgvp"></a>
                     <a name="//apple_ref/swift/Property/solutionVersionArn" class="dashAnchor"></a>
-                    <a class="token" href="#/s:14AWSPersonalize11PersonalizeV17BatchInferenceJobV18solutionVersionArnSSSgvp">solutionVersionArn</a>
+                    <a class="token" href="#/s:15SotoPersonalize0B0V17BatchInferenceJobV18solutionVersionArnSSSgvp">solutionVersionArn</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1039,15 +1121,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Personalize/Personalize_Shapes.swift#L165">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:14AWSPersonalize11PersonalizeV17BatchInferenceJobV6statusSSSgvp"></a>
+                    <a name="/s:15SotoPersonalize0B0V17BatchInferenceJobV6statusSSSgvp"></a>
                     <a name="//apple_ref/swift/Property/status" class="dashAnchor"></a>
-                    <a class="token" href="#/s:14AWSPersonalize11PersonalizeV17BatchInferenceJobV6statusSSSgvp">status</a>
+                    <a class="token" href="#/s:15SotoPersonalize0B0V17BatchInferenceJobV6statusSSSgvp">status</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1066,15 +1151,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Personalize/Personalize_Shapes.swift#L167">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:14AWSPersonalize11PersonalizeV17BatchInferenceJobV05batchdE3Arn16creationDateTime13failureReason06filterG08jobInput0N4Name0N6Output011lastUpdatediJ010numResults04roleG0015solutionVersionG06statusAESSSg_15AWSSDKSwiftCore0J5StampVSgA2rC0cdeO0VSgArC0cdeQ0VSgAVSiSgA3Rtcfc"></a>
-                    <a name="//apple_ref/swift/Method/init(batchInferenceJobArn:creationDateTime:failureReason:filterArn:jobInput:jobName:jobOutput:lastUpdatedDateTime:numResults:roleArn:solutionVersionArn:status:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:14AWSPersonalize11PersonalizeV17BatchInferenceJobV05batchdE3Arn16creationDateTime13failureReason06filterG08jobInput0N4Name0N6Output011lastUpdatediJ010numResults04roleG0015solutionVersionG06statusAESSSg_15AWSSDKSwiftCore0J5StampVSgA2rC0cdeO0VSgArC0cdeQ0VSgAVSiSgA3Rtcfc">init(batchInferenceJobArn:creationDateTime:failureReason:filterArn:jobInput:jobName:jobOutput:lastUpdatedDateTime:numResults:roleArn:solutionVersionArn:status:)</a>
+                    <a name="/s:15SotoPersonalize0B0V17BatchInferenceJobV05batchdE3Arn0fdE6Config16creationDateTime13failureReason06filterG08jobInput0O4Name0O6Output011lastUpdatedjK010numResults04roleG0015solutionVersionG06statusAESSSg_AC0cdeH0VSg0A4Core0K5StampVSgA2sC0cdeP0VSgAsC0cdeR0VSgAZSiSgA3Stcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(batchInferenceJobArn:batchInferenceJobConfig:creationDateTime:failureReason:filterArn:jobInput:jobName:jobOutput:lastUpdatedDateTime:numResults:roleArn:solutionVersionArn:status:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15SotoPersonalize0B0V17BatchInferenceJobV05batchdE3Arn0fdE6Config16creationDateTime13failureReason06filterG08jobInput0O4Name0O6Output011lastUpdatedjK010numResults04roleG0015solutionVersionG06statusAESSSg_AC0cdeH0VSg0A4Core0K5StampVSgA2sC0cdeP0VSgAsC0cdeR0VSgAZSiSgA3Stcfc">init(batchInferenceJobArn:<wbr>batchInferenceJobConfig:<wbr>creationDateTime:<wbr>failureReason:<wbr>filterArn:<wbr>jobInput:<wbr>jobName:<wbr>jobOutput:<wbr>lastUpdatedDateTime:<wbr>numResults:<wbr>roleArn:<wbr>solutionVersionArn:<wbr>status:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1089,9 +1177,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">batchInferenceJobArn</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">creationDateTime</span><span class="p">:</span> <span class="kt"><a href="../../Structs/TimeStamp.html">TimeStamp</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">failureReason</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">filterArn</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">jobInput</span><span class="p">:</span> <span class="kt"><a href="../../Structs/Personalize/BatchInferenceJobInput.html">BatchInferenceJobInput</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">jobName</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">jobOutput</span><span class="p">:</span> <span class="kt"><a href="../../Structs/Personalize/BatchInferenceJobOutput.html">BatchInferenceJobOutput</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">lastUpdatedDateTime</span><span class="p">:</span> <span class="kt"><a href="../../Structs/TimeStamp.html">TimeStamp</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">numResults</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">roleArn</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">solutionVersionArn</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">status</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">batchInferenceJobArn</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">batchInferenceJobConfig</span><span class="p">:</span> <span class="kt"><a href="../../Structs/Personalize/BatchInferenceJobConfig.html">BatchInferenceJobConfig</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">creationDateTime</span><span class="p">:</span> <span class="kt"><a href="../../Structs/TimeStamp.html">TimeStamp</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">failureReason</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">filterArn</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">jobInput</span><span class="p">:</span> <span class="kt"><a href="../../Structs/Personalize/BatchInferenceJobInput.html">BatchInferenceJobInput</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">jobName</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">jobOutput</span><span class="p">:</span> <span class="kt"><a href="../../Structs/Personalize/BatchInferenceJobOutput.html">BatchInferenceJobOutput</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">lastUpdatedDateTime</span><span class="p">:</span> <span class="kt"><a href="../../Structs/TimeStamp.html">TimeStamp</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">numResults</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">roleArn</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">solutionVersionArn</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">status</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Personalize/Personalize_Shapes.swift#L169-L183">Show on GitHub</a>
                       </div>
                     </section>
                   </div>

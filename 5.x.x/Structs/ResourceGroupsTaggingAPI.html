@@ -15,7 +15,7 @@
     <header>
       <div class="content-wrapper">
         <p><a href="../index.html"> Docs</a> (54% documented)</p>
-        <p class="header-right"><a href="https://github.com/swift-aws/aws-sdk-swift"><img src="../img/gh.png"/>View on GitHub</a></p>
+        <p class="header-right"><a href="https://github.com/soto-project/soto"><img src="../img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -28,6 +28,9 @@
     <div class="content-wrapper">
       <nav class="sidebar">
         <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../User%20Guides.html">User Guides</a>
+          </li>
           <li class="nav-group-name">
             <a href="../AWSSDKSwiftCore.html">AWSSDKSwiftCore</a>
           </li>
@@ -68,6 +71,9 @@
             <a href="../AppSync.html">AppSync</a>
           </li>
           <li class="nav-group-name">
+            <a href="../Appflow.html">Appflow</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../ApplicationAutoScaling.html">ApplicationAutoScaling</a>
           </li>
           <li class="nav-group-name">
@@ -93,6 +99,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../Batch.html">Batch</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Braket.html">Braket</a>
           </li>
           <li class="nav-group-name">
             <a href="../Budgets.html">Budgets</a>
@@ -335,6 +344,12 @@
             <a href="../IAM.html">IAM</a>
           </li>
           <li class="nav-group-name">
+            <a href="../IVS.html">IVS</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../IdentityStore.html">IdentityStore</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../Imagebuilder.html">Imagebuilder</a>
           </li>
           <li class="nav-group-name">
@@ -557,6 +572,9 @@
             <a href="../Redshift.html">Redshift</a>
           </li>
           <li class="nav-group-name">
+            <a href="../RedshiftDataAPIService.html">RedshiftDataAPIService</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../Rekognition.html">Rekognition</a>
           </li>
           <li class="nav-group-name">
@@ -606,6 +624,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../SSO.html">SSO</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../SSOAdmin.html">SSOAdmin</a>
           </li>
           <li class="nav-group-name">
             <a href="../SSOOIDC.html">SSOOIDC</a>
@@ -735,13 +756,12 @@
             <h1>ResourceGroupsTaggingAPI</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ResourceGroupsTaggingAPI</span></code></pre>
+                  
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ResourceGroupsTaggingAPI</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSService.html">AWSService</a></span></code></pre>
 
                 </div>
               </div>
-            <p>Client object for interacting with AWS ResourceGroupsTaggingAPI service.</p>
-
-<p>Resource Groups Tagging API This guide describes the API operations for the resource groups tagging. A tag is a label that you assign to an AWS resource. A tag consists of a key and a value, both of which you define. For example, if you have two Amazon EC2 instances, you might assign both a tag key of &ldquo;Stack.&rdquo; But the value of &ldquo;Stack&rdquo; might be &ldquo;Testing&rdquo; for one and &ldquo;Production&rdquo; for the other. Tagging can help you organize your resources and enables you to simplify resource management, access management and cost allocation.  You can use the resource groups tagging API operations to complete the following tasks:   Tag and untag supported resources located in the specified Region for the AWS account.   Use tag-based filters to search for resources located in the specified Region for the AWS account.   List all existing tag keys in the specified Region for the AWS account.   List all existing values for the specified key in the specified Region for the AWS account.   To use resource groups tagging API operations, you must add the following permissions to your IAM policy:    tag:GetResources     tag:TagResources     tag:UntagResources     tag:GetTagKeys     tag:GetTagValues    You&rsquo;ll also need permissions to access the resources of individual services so that you can tag and untag those resources. For more information on IAM policies, see Managing IAM Policies in the IAM User Guide. You can use the Resource Groups Tagging API to tag resources for the following AWS services.   Alexa for Business (a4b)   API Gateway   Amazon AppStream   AWS AppSync   AWS App Mesh   Amazon Athena   Amazon Aurora   AWS Backup   AWS Certificate Manager   AWS Certificate Manager Private CA   Amazon Cloud Directory   AWS CloudFormation   Amazon CloudFront   AWS CloudHSM   AWS CloudTrail   Amazon CloudWatch (alarms only)   Amazon CloudWatch Events   Amazon CloudWatch Logs   AWS CodeBuild   AWS CodeCommit   AWS CodePipeline   AWS CodeStar   Amazon Cognito Identity   Amazon Cognito User Pools   Amazon Comprehend   AWS Config   AWS Data Exchange   AWS Data Pipeline   AWS Database Migration Service   AWS DataSync   AWS Device Farm   AWS Direct Connect   AWS Directory Service   Amazon DynamoDB   Amazon EBS   Amazon EC2   Amazon ECR   Amazon ECS   Amazon EKS   AWS Elastic Beanstalk   Amazon Elastic File System   Elastic Load Balancing   Amazon ElastiCache   Amazon Elasticsearch Service   AWS Elemental MediaLive   AWS Elemental MediaPackage   AWS Elemental MediaTailor   Amazon EMR   Amazon FSx   Amazon S3 Glacier   AWS Glue   Amazon GuardDuty   Amazon Inspector   AWS IoT Analytics   AWS IoT Core   AWS IoT Device Defender   AWS IoT Device Management   AWS IoT Events   AWS IoT Greengrass   AWS IoT 1-Click   AWS IoT Things Graph   AWS Key Management Service   Amazon Kinesis   Amazon Kinesis Data Analytics   Amazon Kinesis Data Firehose   AWS Lambda   AWS License Manager   Amazon Machine Learning   Amazon MQ   Amazon MSK   Amazon Neptune   AWS OpsWorks   AWS Organizations   Amazon Quantum Ledger Database (QLDB)   Amazon RDS   Amazon Redshift   AWS Resource Access Manager   AWS Resource Groups   AWS RoboMaker   Amazon Route 53   Amazon Route 53 Resolver   Amazon S3 (buckets only)   Amazon SageMaker   AWS Secrets Manager   AWS Security Hub   AWS Service Catalog   Amazon Simple Email Service (SES)   Amazon Simple Notification Service (SNS)   Amazon Simple Queue Service (SQS)   Amazon Simple Workflow Service   AWS Step Functions   AWS Storage Gateway   AWS Systems Manager   AWS Transfer for SFTP   AWS WAF Regional   Amazon VPC   Amazon WorkSpaces</p>
+            <p>Undocumented</p>
 
           </section>
           <section class="section task-group-section">
@@ -749,17 +769,19 @@
               <div class="task-name-container">
                 <a name="/Member%20variables"></a>
                 <a name="//apple_ref/swift/Section/Member variables" class="dashAnchor"></a>
-                <a href="#/Member%20variables">
-                  <h3 class="section-name">Member variables</h3>
-                </a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Member%20variables"></a>
+                  <h3 class="section-name"><p>Member variables</p>
+</h3>
+                </div>
               </div>
               <ul>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:27AWSResourceGroupsTaggingAPI08ResourcebcD0V6client15AWSSDKSwiftCore9AWSClientCvp"></a>
+                    <a name="/s:8SotoCore10AWSServiceP6clientAA9AWSClientCvp"></a>
                     <a name="//apple_ref/swift/Property/client" class="dashAnchor"></a>
-                    <a class="token" href="#/s:27AWSResourceGroupsTaggingAPI08ResourcebcD0V6client15AWSSDKSwiftCore9AWSClientCvp">client</a>
+                    <a class="token" href="#/s:8SotoCore10AWSServiceP6clientAA9AWSClientCvp">client</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -767,8 +789,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
-
+                        
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
@@ -778,15 +799,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ResourceGroupsTaggingAPI/ResourceGroupsTaggingAPI_API.swift#L19">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:27AWSResourceGroupsTaggingAPI08ResourcebcD0V13serviceConfig15AWSSDKSwiftCore010AWSServiceG0Cvp"></a>
-                    <a name="//apple_ref/swift/Property/serviceConfig" class="dashAnchor"></a>
-                    <a class="token" href="#/s:27AWSResourceGroupsTaggingAPI08ResourcebcD0V13serviceConfig15AWSSDKSwiftCore010AWSServiceG0Cvp">serviceConfig</a>
+                    <a name="/s:8SotoCore10AWSServiceP6configAA0C6ConfigCvp"></a>
+                    <a name="//apple_ref/swift/Property/config" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8SotoCore10AWSServiceP6configAA0C6ConfigCvp">config</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -794,16 +818,18 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
-
+                        
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">serviceConfig</span><span class="p">:</span> <span class="kt"><a href="../Classes/AWSServiceConfig.html">AWSServiceConfig</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">config</span><span class="p">:</span> <span class="kt"><a href="../Classes/AWSServiceConfig.html">AWSServiceConfig</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ResourceGroupsTaggingAPI/ResourceGroupsTaggingAPI_API.swift#L21">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -814,17 +840,19 @@
               <div class="task-name-container">
                 <a name="/Initialization"></a>
                 <a name="//apple_ref/swift/Section/Initialization" class="dashAnchor"></a>
-                <a href="#/Initialization">
-                  <h3 class="section-name">Initialization</h3>
-                </a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Initialization"></a>
+                  <h3 class="section-name"><p>Initialization</p>
+</h3>
+                </div>
               </div>
               <ul>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:27AWSResourceGroupsTaggingAPI08ResourcebcD0V6client6region9partition8endpointAC15AWSSDKSwiftCore9AWSClientC_AH6RegionVSgAH9PartitionVSSSgtcfc"></a>
-                    <a name="//apple_ref/swift/Method/init(client:region:partition:endpoint:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:27AWSResourceGroupsTaggingAPI08ResourcebcD0V6client6region9partition8endpointAC15AWSSDKSwiftCore9AWSClientC_AH6RegionVSgAH9PartitionVSSSgtcfc">init(client:region:partition:endpoint:)</a>
+                    <a name="/s:28SotoResourceGroupsTaggingAPI0bcdE0V6client6region9partition8endpoint7timeout19byteBufferAllocator7optionsAC0A4Core9AWSClientC_AK6RegionVSgAK12AWSPartitionVSSSg3NIO10TimeAmountVSgAT04BytelM0VAK16AWSServiceConfigC7OptionsVtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(client:region:partition:endpoint:timeout:byteBufferAllocator:options:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:28SotoResourceGroupsTaggingAPI0bcdE0V6client6region9partition8endpoint7timeout19byteBufferAllocator7optionsAC0A4Core9AWSClientC_AK6RegionVSgAK12AWSPartitionVSSSg3NIO10TimeAmountVSgAT04BytelM0VAK16AWSServiceConfigC7OptionsVtcfc">init(client:<wbr>region:<wbr>partition:<wbr>endpoint:<wbr>timeout:<wbr>byteBufferAllocator:<wbr>options:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -841,9 +869,12 @@
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span>
     <span class="nv">client</span><span class="p">:</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="p">,</span>
-    <span class="nv">region</span><span class="p">:</span> <span class="kt">AWSSDKSwiftCore</span><span class="o">.</span><span class="kt"><a href="../Structs/Region.html">Region</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
-    <span class="nv">partition</span><span class="p">:</span> <span class="kt">AWSSDKSwiftCore</span><span class="o">.</span><span class="kt"><a href="../Structs/Partition.html">Partition</a></span> <span class="o">=</span> <span class="o">.</span><span class="n">aws</span><span class="p">,</span>
-    <span class="nv">endpoint</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span>
+    <span class="nv">region</span><span class="p">:</span> <span class="kt">SotoCore</span><span class="o">.</span><span class="kt"><a href="../Structs/Region.html">Region</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="nv">partition</span><span class="p">:</span> <span class="kt"><a href="../Structs/AWSPartition.html">AWSPartition</a></span> <span class="o">=</span> <span class="o">.</span><span class="n">aws</span><span class="p">,</span>
+    <span class="nv">endpoint</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="nv">timeout</span><span class="p">:</span> <span class="kt">TimeAmount</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="nv">byteBufferAllocator</span><span class="p">:</span> <span class="kt">ByteBufferAllocator</span> <span class="o">=</span> <span class="kt">ByteBufferAllocator</span><span class="p">(),</span>
+    <span class="nv">options</span><span class="p">:</span> <span class="kt"><a href="../Classes/AWSServiceConfig.html">AWSServiceConfig</a></span><span class="o">.</span><span class="kt">Options</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="p">)</span></code></pre>
 
                         </div>
@@ -900,8 +931,23 @@
                                 </div>
                               </td>
                             </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>timeout</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Timeout value for HTTP requests</p>
+                                </div>
+                              </td>
+                            </tr>
                           </tbody>
                         </table>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ResourceGroupsTaggingAPI/ResourceGroupsTaggingAPI_API.swift#L39-L62">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -912,17 +958,19 @@
               <div class="task-name-container">
                 <a name="/API%20Calls"></a>
                 <a name="//apple_ref/swift/Section/API Calls" class="dashAnchor"></a>
-                <a href="#/API%20Calls">
-                  <h3 class="section-name">API Calls</h3>
-                </a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/API%20Calls"></a>
+                  <h3 class="section-name"><p>API Calls</p>
+</h3>
+                </div>
               </div>
               <ul>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:27AWSResourceGroupsTaggingAPI08ResourcebcD0V22describeReportCreation_2on3NIO15EventLoopFutureCyAC08DescribegH6OutputVGAC0ngH5InputV_AF0kL0_pSgtF"></a>
-                    <a name="//apple_ref/swift/Method/describeReportCreation(_:on:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:27AWSResourceGroupsTaggingAPI08ResourcebcD0V22describeReportCreation_2on3NIO15EventLoopFutureCyAC08DescribegH6OutputVGAC0ngH5InputV_AF0kL0_pSgtF">describeReportCreation(_:on:)</a>
+                    <a name="/s:28SotoResourceGroupsTaggingAPI0bcdE0V22describeReportCreation_2on6logger3NIO15EventLoopFutureCyAC08DescribegH6OutputVGAC0ogH5InputV_AG0lM0_pSg7Logging6LoggerVtF"></a>
+                    <a name="//apple_ref/swift/Method/describeReportCreation(_:on:logger:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:28SotoResourceGroupsTaggingAPI0bcdE0V22describeReportCreation_2on6logger3NIO15EventLoopFutureCyAC08DescribegH6OutputVGAC0ogH5InputV_AG0lM0_pSg7Logging6LoggerVtF">describeReportCreation(_:<wbr>on:<wbr>logger:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -937,9 +985,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">describeReportCreation</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/ResourceGroupsTaggingAPI/DescribeReportCreationInput.html">DescribeReportCreationInput</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/ResourceGroupsTaggingAPI/DescribeReportCreationOutput.html">DescribeReportCreationOutput</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">describeReportCreation</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/ResourceGroupsTaggingAPI/DescribeReportCreationInput.html">DescribeReportCreationInput</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">logger</span><span class="p">:</span> <span class="kt">Logger</span> <span class="o">=</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="o">.</span><span class="n">loggingDisabled</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/ResourceGroupsTaggingAPI/DescribeReportCreationOutput.html">DescribeReportCreationOutput</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ResourceGroupsTaggingAPI/ResourceGroupsTaggingAPI_API.swift#L67-L69">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -947,9 +998,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:27AWSResourceGroupsTaggingAPI08ResourcebcD0V20getComplianceSummary_2on3NIO15EventLoopFutureCyAC03GetgH6OutputVGAC0ngH5InputV_AF0kL0_pSgtF"></a>
-                    <a name="//apple_ref/swift/Method/getComplianceSummary(_:on:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:27AWSResourceGroupsTaggingAPI08ResourcebcD0V20getComplianceSummary_2on3NIO15EventLoopFutureCyAC03GetgH6OutputVGAC0ngH5InputV_AF0kL0_pSgtF">getComplianceSummary(_:on:)</a>
+                    <a name="/s:28SotoResourceGroupsTaggingAPI0bcdE0V20getComplianceSummary_2on6logger3NIO15EventLoopFutureCyAC03GetgH6OutputVGAC0ogH5InputV_AG0lM0_pSg7Logging6LoggerVtF"></a>
+                    <a name="//apple_ref/swift/Method/getComplianceSummary(_:on:logger:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:28SotoResourceGroupsTaggingAPI0bcdE0V20getComplianceSummary_2on6logger3NIO15EventLoopFutureCyAC03GetgH6OutputVGAC0ogH5InputV_AG0lM0_pSg7Logging6LoggerVtF">getComplianceSummary(_:<wbr>on:<wbr>logger:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -964,9 +1015,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getComplianceSummary</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/ResourceGroupsTaggingAPI/GetComplianceSummaryInput.html">GetComplianceSummaryInput</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/ResourceGroupsTaggingAPI/GetComplianceSummaryOutput.html">GetComplianceSummaryOutput</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getComplianceSummary</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/ResourceGroupsTaggingAPI/GetComplianceSummaryInput.html">GetComplianceSummaryInput</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">logger</span><span class="p">:</span> <span class="kt">Logger</span> <span class="o">=</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="o">.</span><span class="n">loggingDisabled</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/ResourceGroupsTaggingAPI/GetComplianceSummaryOutput.html">GetComplianceSummaryOutput</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ResourceGroupsTaggingAPI/ResourceGroupsTaggingAPI_API.swift#L72-L74">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -974,9 +1028,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:27AWSResourceGroupsTaggingAPI08ResourcebcD0V12getResources_2on3NIO15EventLoopFutureCyAC03GetG6OutputVGAC0mG5InputV_AF0jK0_pSgtF"></a>
-                    <a name="//apple_ref/swift/Method/getResources(_:on:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:27AWSResourceGroupsTaggingAPI08ResourcebcD0V12getResources_2on3NIO15EventLoopFutureCyAC03GetG6OutputVGAC0mG5InputV_AF0jK0_pSgtF">getResources(_:on:)</a>
+                    <a name="/s:28SotoResourceGroupsTaggingAPI0bcdE0V12getResources_2on6logger3NIO15EventLoopFutureCyAC03GetG6OutputVGAC0nG5InputV_AG0kL0_pSg7Logging6LoggerVtF"></a>
+                    <a name="//apple_ref/swift/Method/getResources(_:on:logger:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:28SotoResourceGroupsTaggingAPI0bcdE0V12getResources_2on6logger3NIO15EventLoopFutureCyAC03GetG6OutputVGAC0nG5InputV_AG0kL0_pSg7Logging6LoggerVtF">getResources(_:<wbr>on:<wbr>logger:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -991,9 +1045,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getResources</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/ResourceGroupsTaggingAPI/GetResourcesInput.html">GetResourcesInput</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/ResourceGroupsTaggingAPI/GetResourcesOutput.html">GetResourcesOutput</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getResources</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/ResourceGroupsTaggingAPI/GetResourcesInput.html">GetResourcesInput</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">logger</span><span class="p">:</span> <span class="kt">Logger</span> <span class="o">=</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="o">.</span><span class="n">loggingDisabled</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/ResourceGroupsTaggingAPI/GetResourcesOutput.html">GetResourcesOutput</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ResourceGroupsTaggingAPI/ResourceGroupsTaggingAPI_API.swift#L77-L79">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1001,9 +1058,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:27AWSResourceGroupsTaggingAPI08ResourcebcD0V10getTagKeys_2on3NIO15EventLoopFutureCyAC03GetgH6OutputVGAC0ngH5InputV_AF0kL0_pSgtF"></a>
-                    <a name="//apple_ref/swift/Method/getTagKeys(_:on:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:27AWSResourceGroupsTaggingAPI08ResourcebcD0V10getTagKeys_2on3NIO15EventLoopFutureCyAC03GetgH6OutputVGAC0ngH5InputV_AF0kL0_pSgtF">getTagKeys(_:on:)</a>
+                    <a name="/s:28SotoResourceGroupsTaggingAPI0bcdE0V10getTagKeys_2on6logger3NIO15EventLoopFutureCyAC03GetgH6OutputVGAC0ogH5InputV_AG0lM0_pSg7Logging6LoggerVtF"></a>
+                    <a name="//apple_ref/swift/Method/getTagKeys(_:on:logger:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:28SotoResourceGroupsTaggingAPI0bcdE0V10getTagKeys_2on6logger3NIO15EventLoopFutureCyAC03GetgH6OutputVGAC0ogH5InputV_AG0lM0_pSg7Logging6LoggerVtF">getTagKeys(_:<wbr>on:<wbr>logger:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1018,9 +1075,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getTagKeys</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/ResourceGroupsTaggingAPI/GetTagKeysInput.html">GetTagKeysInput</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/ResourceGroupsTaggingAPI/GetTagKeysOutput.html">GetTagKeysOutput</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getTagKeys</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/ResourceGroupsTaggingAPI/GetTagKeysInput.html">GetTagKeysInput</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">logger</span><span class="p">:</span> <span class="kt">Logger</span> <span class="o">=</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="o">.</span><span class="n">loggingDisabled</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/ResourceGroupsTaggingAPI/GetTagKeysOutput.html">GetTagKeysOutput</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ResourceGroupsTaggingAPI/ResourceGroupsTaggingAPI_API.swift#L82-L84">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1028,9 +1088,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:27AWSResourceGroupsTaggingAPI08ResourcebcD0V12getTagValues_2on3NIO15EventLoopFutureCyAC03GetgH6OutputVGAC0ngH5InputV_AF0kL0_pSgtF"></a>
-                    <a name="//apple_ref/swift/Method/getTagValues(_:on:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:27AWSResourceGroupsTaggingAPI08ResourcebcD0V12getTagValues_2on3NIO15EventLoopFutureCyAC03GetgH6OutputVGAC0ngH5InputV_AF0kL0_pSgtF">getTagValues(_:on:)</a>
+                    <a name="/s:28SotoResourceGroupsTaggingAPI0bcdE0V12getTagValues_2on6logger3NIO15EventLoopFutureCyAC03GetgH6OutputVGAC0ogH5InputV_AG0lM0_pSg7Logging6LoggerVtF"></a>
+                    <a name="//apple_ref/swift/Method/getTagValues(_:on:logger:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:28SotoResourceGroupsTaggingAPI0bcdE0V12getTagValues_2on6logger3NIO15EventLoopFutureCyAC03GetgH6OutputVGAC0ogH5InputV_AG0lM0_pSg7Logging6LoggerVtF">getTagValues(_:<wbr>on:<wbr>logger:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1045,9 +1105,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getTagValues</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/ResourceGroupsTaggingAPI/GetTagValuesInput.html">GetTagValuesInput</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/ResourceGroupsTaggingAPI/GetTagValuesOutput.html">GetTagValuesOutput</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getTagValues</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/ResourceGroupsTaggingAPI/GetTagValuesInput.html">GetTagValuesInput</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">logger</span><span class="p">:</span> <span class="kt">Logger</span> <span class="o">=</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="o">.</span><span class="n">loggingDisabled</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/ResourceGroupsTaggingAPI/GetTagValuesOutput.html">GetTagValuesOutput</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ResourceGroupsTaggingAPI/ResourceGroupsTaggingAPI_API.swift#L87-L89">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1055,9 +1118,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:27AWSResourceGroupsTaggingAPI08ResourcebcD0V19startReportCreation_2on3NIO15EventLoopFutureCyAC05StartgH6OutputVGAC0ngH5InputV_AF0kL0_pSgtF"></a>
-                    <a name="//apple_ref/swift/Method/startReportCreation(_:on:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:27AWSResourceGroupsTaggingAPI08ResourcebcD0V19startReportCreation_2on3NIO15EventLoopFutureCyAC05StartgH6OutputVGAC0ngH5InputV_AF0kL0_pSgtF">startReportCreation(_:on:)</a>
+                    <a name="/s:28SotoResourceGroupsTaggingAPI0bcdE0V19startReportCreation_2on6logger3NIO15EventLoopFutureCyAC05StartgH6OutputVGAC0ogH5InputV_AG0lM0_pSg7Logging6LoggerVtF"></a>
+                    <a name="//apple_ref/swift/Method/startReportCreation(_:on:logger:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:28SotoResourceGroupsTaggingAPI0bcdE0V19startReportCreation_2on6logger3NIO15EventLoopFutureCyAC05StartgH6OutputVGAC0ogH5InputV_AG0lM0_pSg7Logging6LoggerVtF">startReportCreation(_:<wbr>on:<wbr>logger:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1072,9 +1135,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">startReportCreation</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/ResourceGroupsTaggingAPI/StartReportCreationInput.html">StartReportCreationInput</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/ResourceGroupsTaggingAPI/StartReportCreationOutput.html">StartReportCreationOutput</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">startReportCreation</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/ResourceGroupsTaggingAPI/StartReportCreationInput.html">StartReportCreationInput</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">logger</span><span class="p">:</span> <span class="kt">Logger</span> <span class="o">=</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="o">.</span><span class="n">loggingDisabled</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/ResourceGroupsTaggingAPI/StartReportCreationOutput.html">StartReportCreationOutput</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ResourceGroupsTaggingAPI/ResourceGroupsTaggingAPI_API.swift#L92-L94">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1082,9 +1148,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:27AWSResourceGroupsTaggingAPI08ResourcebcD0V12tagResources_2on3NIO15EventLoopFutureCyAC03TagG6OutputVGAC0mG5InputV_AF0jK0_pSgtF"></a>
-                    <a name="//apple_ref/swift/Method/tagResources(_:on:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:27AWSResourceGroupsTaggingAPI08ResourcebcD0V12tagResources_2on3NIO15EventLoopFutureCyAC03TagG6OutputVGAC0mG5InputV_AF0jK0_pSgtF">tagResources(_:on:)</a>
+                    <a name="/s:28SotoResourceGroupsTaggingAPI0bcdE0V12tagResources_2on6logger3NIO15EventLoopFutureCyAC03TagG6OutputVGAC0nG5InputV_AG0kL0_pSg7Logging6LoggerVtF"></a>
+                    <a name="//apple_ref/swift/Method/tagResources(_:on:logger:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:28SotoResourceGroupsTaggingAPI0bcdE0V12tagResources_2on6logger3NIO15EventLoopFutureCyAC03TagG6OutputVGAC0nG5InputV_AG0kL0_pSg7Logging6LoggerVtF">tagResources(_:<wbr>on:<wbr>logger:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1092,16 +1158,19 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Applies one or more tags to the specified resources. Note the following:   Not all resources can have tags. For a list of services that support tagging, see this list.   Each resource can have up to 50 tags. For other limits, see Tag Naming and Usage Conventions in the AWS General Reference.    You can only tag resources that are located in the specified Region for the AWS account.   To add tags to a resource, you need the necessary permissions for the service that the resource belongs to as well as permissions for adding tags. For more information, see this list.</p>
+                        <p>Applies one or more tags to the specified resources. Note the following:   Not all resources can have tags. For a list of services that support tagging, see this list.   Each resource can have up to 50 tags. For other limits, see Tag Naming and Usage Conventions in the AWS General Reference.    You can only tag resources that are located in the specified Region for the AWS account.   To add tags to a resource, you need the necessary permissions for the service that the resource belongs to as well as permissions for adding tags. For more information, see this list.    Do not store personally identifiable information (PII) or other confidential or sensitive information in tags. We use tags to provide you with billing and administration services. Tags are not intended to be used for private or sensitive data.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">tagResources</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/ResourceGroupsTaggingAPI/TagResourcesInput.html">TagResourcesInput</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/ResourceGroupsTaggingAPI/TagResourcesOutput.html">TagResourcesOutput</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">tagResources</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/ResourceGroupsTaggingAPI/TagResourcesInput.html">TagResourcesInput</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">logger</span><span class="p">:</span> <span class="kt">Logger</span> <span class="o">=</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="o">.</span><span class="n">loggingDisabled</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/ResourceGroupsTaggingAPI/TagResourcesOutput.html">TagResourcesOutput</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ResourceGroupsTaggingAPI/ResourceGroupsTaggingAPI_API.swift#L97-L99">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1109,9 +1178,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:27AWSResourceGroupsTaggingAPI08ResourcebcD0V14untagResources_2on3NIO15EventLoopFutureCyAC05UntagG6OutputVGAC0mG5InputV_AF0jK0_pSgtF"></a>
-                    <a name="//apple_ref/swift/Method/untagResources(_:on:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:27AWSResourceGroupsTaggingAPI08ResourcebcD0V14untagResources_2on3NIO15EventLoopFutureCyAC05UntagG6OutputVGAC0mG5InputV_AF0jK0_pSgtF">untagResources(_:on:)</a>
+                    <a name="/s:28SotoResourceGroupsTaggingAPI0bcdE0V14untagResources_2on6logger3NIO15EventLoopFutureCyAC05UntagG6OutputVGAC0nG5InputV_AG0kL0_pSg7Logging6LoggerVtF"></a>
+                    <a name="//apple_ref/swift/Method/untagResources(_:on:logger:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:28SotoResourceGroupsTaggingAPI0bcdE0V14untagResources_2on6logger3NIO15EventLoopFutureCyAC05UntagG6OutputVGAC0nG5InputV_AG0kL0_pSg7Logging6LoggerVtF">untagResources(_:<wbr>on:<wbr>logger:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1126,9 +1195,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">untagResources</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/ResourceGroupsTaggingAPI/UntagResourcesInput.html">UntagResourcesInput</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/ResourceGroupsTaggingAPI/UntagResourcesOutput.html">UntagResourcesOutput</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">untagResources</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/ResourceGroupsTaggingAPI/UntagResourcesInput.html">UntagResourcesInput</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">logger</span><span class="p">:</span> <span class="kt">Logger</span> <span class="o">=</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="o">.</span><span class="n">loggingDisabled</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/ResourceGroupsTaggingAPI/UntagResourcesOutput.html">UntagResourcesOutput</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ResourceGroupsTaggingAPI/ResourceGroupsTaggingAPI_API.swift#L102-L104">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1139,17 +1211,19 @@
               <div class="task-name-container">
                 <a name="/Paginators"></a>
                 <a name="//apple_ref/swift/Section/Paginators" class="dashAnchor"></a>
-                <a href="#/Paginators">
-                  <h3 class="section-name">Paginators</h3>
-                </a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Paginators"></a>
+                  <h3 class="section-name"><p>Paginators</p>
+</h3>
+                </div>
               </div>
               <ul>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:27AWSResourceGroupsTaggingAPI08ResourcebcD0V29getComplianceSummaryPaginator_2on0J4Page3NIO15EventLoopFutureCyytGAC03GetgH5InputV_AG0mN0_pSgAIySbGAC0pgH6OutputV_AgM_ptctF"></a>
-                    <a name="//apple_ref/swift/Method/getComplianceSummaryPaginator(_:on:onPage:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:27AWSResourceGroupsTaggingAPI08ResourcebcD0V29getComplianceSummaryPaginator_2on0J4Page3NIO15EventLoopFutureCyytGAC03GetgH5InputV_AG0mN0_pSgAIySbGAC0pgH6OutputV_AgM_ptctF">getComplianceSummaryPaginator(_:on:onPage:)</a>
+                    <a name="/s:28SotoResourceGroupsTaggingAPI0bcdE0V29getComplianceSummaryPaginator_2on6logger0J4Page3NIO15EventLoopFutureCyytGAC03GetgH5InputV_AH0nO0_pSg7Logging6LoggerVAJySbGAC0qgH6OutputV_AhN_ptctF"></a>
+                    <a name="//apple_ref/swift/Method/getComplianceSummaryPaginator(_:on:logger:onPage:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:28SotoResourceGroupsTaggingAPI0bcdE0V29getComplianceSummaryPaginator_2on6logger0J4Page3NIO15EventLoopFutureCyytGAC03GetgH5InputV_AH0nO0_pSg7Logging6LoggerVAJySbGAC0qgH6OutputV_AhN_ptctF">getComplianceSummaryPaginator(_:<wbr>on:<wbr>logger:<wbr>onPage:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1167,11 +1241,14 @@
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getComplianceSummaryPaginator</span><span class="p">(</span>
     <span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/ResourceGroupsTaggingAPI/GetComplianceSummaryInput.html">GetComplianceSummaryInput</a></span><span class="p">,</span>
     <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
-    <span class="nv">onPage</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/ResourceGroupsTaggingAPI/GetComplianceSummaryOutput.html">GetComplianceSummaryOutput</a></span><span class="p">,</span>
-    <span class="kt">EventLoop</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Bool</span><span class="o">&gt;</span>
+    <span class="nv">logger</span><span class="p">:</span> <span class="kt">Logger</span> <span class="o">=</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="o">.</span><span class="n">loggingDisabled</span><span class="p">,</span>
+    <span class="nv">onPage</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/ResourceGroupsTaggingAPI/GetComplianceSummaryOutput.html">GetComplianceSummaryOutput</a></span><span class="p">,</span> <span class="kt">EventLoop</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Bool</span><span class="o">&gt;</span>
 <span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Void</span><span class="o">&gt;</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ResourceGroupsTaggingAPI/ResourceGroupsTaggingAPI_Paginator.swift#L23-L36">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1179,9 +1256,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:27AWSResourceGroupsTaggingAPI08ResourcebcD0V21getResourcesPaginator_2on0I4Page3NIO15EventLoopFutureCyytGAC03GetG5InputV_AG0lM0_pSgAIySbGAC0oG6OutputV_AgM_ptctF"></a>
-                    <a name="//apple_ref/swift/Method/getResourcesPaginator(_:on:onPage:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:27AWSResourceGroupsTaggingAPI08ResourcebcD0V21getResourcesPaginator_2on0I4Page3NIO15EventLoopFutureCyytGAC03GetG5InputV_AG0lM0_pSgAIySbGAC0oG6OutputV_AgM_ptctF">getResourcesPaginator(_:on:onPage:)</a>
+                    <a name="/s:28SotoResourceGroupsTaggingAPI0bcdE0V21getResourcesPaginator_2on6logger0I4Page3NIO15EventLoopFutureCyytGAC03GetG5InputV_AH0mN0_pSg7Logging6LoggerVAJySbGAC0pG6OutputV_AhN_ptctF"></a>
+                    <a name="//apple_ref/swift/Method/getResourcesPaginator(_:on:logger:onPage:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:28SotoResourceGroupsTaggingAPI0bcdE0V21getResourcesPaginator_2on6logger0I4Page3NIO15EventLoopFutureCyytGAC03GetG5InputV_AH0mN0_pSg7Logging6LoggerVAJySbGAC0pG6OutputV_AhN_ptctF">getResourcesPaginator(_:<wbr>on:<wbr>logger:<wbr>onPage:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1199,11 +1276,14 @@
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getResourcesPaginator</span><span class="p">(</span>
     <span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/ResourceGroupsTaggingAPI/GetResourcesInput.html">GetResourcesInput</a></span><span class="p">,</span>
     <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
-    <span class="nv">onPage</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/ResourceGroupsTaggingAPI/GetResourcesOutput.html">GetResourcesOutput</a></span><span class="p">,</span>
-    <span class="kt">EventLoop</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Bool</span><span class="o">&gt;</span>
+    <span class="nv">logger</span><span class="p">:</span> <span class="kt">Logger</span> <span class="o">=</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="o">.</span><span class="n">loggingDisabled</span><span class="p">,</span>
+    <span class="nv">onPage</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/ResourceGroupsTaggingAPI/GetResourcesOutput.html">GetResourcesOutput</a></span><span class="p">,</span> <span class="kt">EventLoop</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Bool</span><span class="o">&gt;</span>
 <span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Void</span><span class="o">&gt;</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ResourceGroupsTaggingAPI/ResourceGroupsTaggingAPI_Paginator.swift#L39-L52">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1211,9 +1291,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:27AWSResourceGroupsTaggingAPI08ResourcebcD0V19getTagKeysPaginator_2on0J4Page3NIO15EventLoopFutureCyytGAC03GetgH5InputV_AG0mN0_pSgAIySbGAC0pgH6OutputV_AgM_ptctF"></a>
-                    <a name="//apple_ref/swift/Method/getTagKeysPaginator(_:on:onPage:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:27AWSResourceGroupsTaggingAPI08ResourcebcD0V19getTagKeysPaginator_2on0J4Page3NIO15EventLoopFutureCyytGAC03GetgH5InputV_AG0mN0_pSgAIySbGAC0pgH6OutputV_AgM_ptctF">getTagKeysPaginator(_:on:onPage:)</a>
+                    <a name="/s:28SotoResourceGroupsTaggingAPI0bcdE0V19getTagKeysPaginator_2on6logger0J4Page3NIO15EventLoopFutureCyytGAC03GetgH5InputV_AH0nO0_pSg7Logging6LoggerVAJySbGAC0qgH6OutputV_AhN_ptctF"></a>
+                    <a name="//apple_ref/swift/Method/getTagKeysPaginator(_:on:logger:onPage:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:28SotoResourceGroupsTaggingAPI0bcdE0V19getTagKeysPaginator_2on6logger0J4Page3NIO15EventLoopFutureCyytGAC03GetgH5InputV_AH0nO0_pSg7Logging6LoggerVAJySbGAC0qgH6OutputV_AhN_ptctF">getTagKeysPaginator(_:<wbr>on:<wbr>logger:<wbr>onPage:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1231,11 +1311,14 @@
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getTagKeysPaginator</span><span class="p">(</span>
     <span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/ResourceGroupsTaggingAPI/GetTagKeysInput.html">GetTagKeysInput</a></span><span class="p">,</span>
     <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
-    <span class="nv">onPage</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/ResourceGroupsTaggingAPI/GetTagKeysOutput.html">GetTagKeysOutput</a></span><span class="p">,</span>
-    <span class="kt">EventLoop</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Bool</span><span class="o">&gt;</span>
+    <span class="nv">logger</span><span class="p">:</span> <span class="kt">Logger</span> <span class="o">=</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="o">.</span><span class="n">loggingDisabled</span><span class="p">,</span>
+    <span class="nv">onPage</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/ResourceGroupsTaggingAPI/GetTagKeysOutput.html">GetTagKeysOutput</a></span><span class="p">,</span> <span class="kt">EventLoop</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Bool</span><span class="o">&gt;</span>
 <span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Void</span><span class="o">&gt;</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ResourceGroupsTaggingAPI/ResourceGroupsTaggingAPI_Paginator.swift#L55-L68">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1243,9 +1326,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:27AWSResourceGroupsTaggingAPI08ResourcebcD0V21getTagValuesPaginator_2on0J4Page3NIO15EventLoopFutureCyytGAC03GetgH5InputV_AG0mN0_pSgAIySbGAC0pgH6OutputV_AgM_ptctF"></a>
-                    <a name="//apple_ref/swift/Method/getTagValuesPaginator(_:on:onPage:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:27AWSResourceGroupsTaggingAPI08ResourcebcD0V21getTagValuesPaginator_2on0J4Page3NIO15EventLoopFutureCyytGAC03GetgH5InputV_AG0mN0_pSgAIySbGAC0pgH6OutputV_AgM_ptctF">getTagValuesPaginator(_:on:onPage:)</a>
+                    <a name="/s:28SotoResourceGroupsTaggingAPI0bcdE0V21getTagValuesPaginator_2on6logger0J4Page3NIO15EventLoopFutureCyytGAC03GetgH5InputV_AH0nO0_pSg7Logging6LoggerVAJySbGAC0qgH6OutputV_AhN_ptctF"></a>
+                    <a name="//apple_ref/swift/Method/getTagValuesPaginator(_:on:logger:onPage:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:28SotoResourceGroupsTaggingAPI0bcdE0V21getTagValuesPaginator_2on6logger0J4Page3NIO15EventLoopFutureCyytGAC03GetgH5InputV_AH0nO0_pSg7Logging6LoggerVAJySbGAC0qgH6OutputV_AhN_ptctF">getTagValuesPaginator(_:<wbr>on:<wbr>logger:<wbr>onPage:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1263,11 +1346,14 @@
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getTagValuesPaginator</span><span class="p">(</span>
     <span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/ResourceGroupsTaggingAPI/GetTagValuesInput.html">GetTagValuesInput</a></span><span class="p">,</span>
     <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
-    <span class="nv">onPage</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/ResourceGroupsTaggingAPI/GetTagValuesOutput.html">GetTagValuesOutput</a></span><span class="p">,</span>
-    <span class="kt">EventLoop</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Bool</span><span class="o">&gt;</span>
+    <span class="nv">logger</span><span class="p">:</span> <span class="kt">Logger</span> <span class="o">=</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="o">.</span><span class="n">loggingDisabled</span><span class="p">,</span>
+    <span class="nv">onPage</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/ResourceGroupsTaggingAPI/GetTagValuesOutput.html">GetTagValuesOutput</a></span><span class="p">,</span> <span class="kt">EventLoop</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Bool</span><span class="o">&gt;</span>
 <span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Void</span><span class="o">&gt;</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ResourceGroupsTaggingAPI/ResourceGroupsTaggingAPI_Paginator.swift#L71-L84">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1278,17 +1364,19 @@
               <div class="task-name-container">
                 <a name="/Shapes"></a>
                 <a name="//apple_ref/swift/Section/Shapes" class="dashAnchor"></a>
-                <a href="#/Shapes">
-                  <h3 class="section-name">Shapes</h3>
-                </a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Shapes"></a>
+                  <h3 class="section-name"><p>Shapes</p>
+</h3>
+                </div>
               </div>
               <ul>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:27AWSResourceGroupsTaggingAPI08ResourcebcD0V25GetComplianceSummaryInputV"></a>
+                    <a name="/s:28SotoResourceGroupsTaggingAPI0bcdE0V25GetComplianceSummaryInputV"></a>
                     <a name="//apple_ref/swift/Struct/GetComplianceSummaryInput" class="dashAnchor"></a>
-                    <a class="token" href="#/s:27AWSResourceGroupsTaggingAPI08ResourcebcD0V25GetComplianceSummaryInputV">GetComplianceSummaryInput</a>
+                    <a class="token" href="#/s:28SotoResourceGroupsTaggingAPI0bcdE0V25GetComplianceSummaryInputV">GetComplianceSummaryInput</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1309,15 +1397,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ResourceGroupsTaggingAPI/ResourceGroupsTaggingAPI_Shapes.swift#L112-L181">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:27AWSResourceGroupsTaggingAPI08ResourcebcD0V17GetResourcesInputV"></a>
+                    <a name="/s:28SotoResourceGroupsTaggingAPI0bcdE0V17GetResourcesInputV"></a>
                     <a name="//apple_ref/swift/Struct/GetResourcesInput" class="dashAnchor"></a>
-                    <a class="token" href="#/s:27AWSResourceGroupsTaggingAPI08ResourcebcD0V17GetResourcesInputV">GetResourcesInput</a>
+                    <a class="token" href="#/s:28SotoResourceGroupsTaggingAPI0bcdE0V17GetResourcesInputV">GetResourcesInput</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1338,15 +1429,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ResourceGroupsTaggingAPI/ResourceGroupsTaggingAPI_Shapes.swift#L200-L251">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:27AWSResourceGroupsTaggingAPI08ResourcebcD0V15GetTagKeysInputV"></a>
+                    <a name="/s:28SotoResourceGroupsTaggingAPI0bcdE0V15GetTagKeysInputV"></a>
                     <a name="//apple_ref/swift/Struct/GetTagKeysInput" class="dashAnchor"></a>
-                    <a class="token" href="#/s:27AWSResourceGroupsTaggingAPI08ResourcebcD0V15GetTagKeysInputV">GetTagKeysInput</a>
+                    <a class="token" href="#/s:28SotoResourceGroupsTaggingAPI0bcdE0V15GetTagKeysInputV">GetTagKeysInput</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1367,15 +1461,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ResourceGroupsTaggingAPI/ResourceGroupsTaggingAPI_Shapes.swift#L270-L287">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:27AWSResourceGroupsTaggingAPI08ResourcebcD0V17GetTagValuesInputV"></a>
+                    <a name="/s:28SotoResourceGroupsTaggingAPI0bcdE0V17GetTagValuesInputV"></a>
                     <a name="//apple_ref/swift/Struct/GetTagValuesInput" class="dashAnchor"></a>
-                    <a class="token" href="#/s:27AWSResourceGroupsTaggingAPI08ResourcebcD0V17GetTagValuesInputV">GetTagValuesInput</a>
+                    <a class="token" href="#/s:28SotoResourceGroupsTaggingAPI0bcdE0V17GetTagValuesInputV">GetTagValuesInput</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1396,15 +1493,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ResourceGroupsTaggingAPI/ResourceGroupsTaggingAPI_Shapes.swift#L306-L330">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:27AWSResourceGroupsTaggingAPI08ResourcebcD0V17ComplianceDetailsV"></a>
+                    <a name="/s:28SotoResourceGroupsTaggingAPI0bcdE0V17ComplianceDetailsV"></a>
                     <a name="//apple_ref/swift/Struct/ComplianceDetails" class="dashAnchor"></a>
-                    <a class="token" href="#/s:27AWSResourceGroupsTaggingAPI08ResourcebcD0V17ComplianceDetailsV">ComplianceDetails</a>
+                    <a class="token" href="#/s:28SotoResourceGroupsTaggingAPI0bcdE0V17ComplianceDetailsV">ComplianceDetails</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1420,9 +1520,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ComplianceDetails</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ComplianceDetails</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ResourceGroupsTaggingAPI/ResourceGroupsTaggingAPI_Shapes.swift#L45-L64">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1430,9 +1533,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:27AWSResourceGroupsTaggingAPI08ResourcebcD0V27DescribeReportCreationInputV"></a>
+                    <a name="/s:28SotoResourceGroupsTaggingAPI0bcdE0V27DescribeReportCreationInputV"></a>
                     <a name="//apple_ref/swift/Struct/DescribeReportCreationInput" class="dashAnchor"></a>
-                    <a class="token" href="#/s:27AWSResourceGroupsTaggingAPI08ResourcebcD0V27DescribeReportCreationInputV">DescribeReportCreationInput</a>
+                    <a class="token" href="#/s:28SotoResourceGroupsTaggingAPI0bcdE0V27DescribeReportCreationInputV">DescribeReportCreationInput</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1452,15 +1555,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ResourceGroupsTaggingAPI/ResourceGroupsTaggingAPI_Shapes.swift#L66-L68">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:27AWSResourceGroupsTaggingAPI08ResourcebcD0V28DescribeReportCreationOutputV"></a>
+                    <a name="/s:28SotoResourceGroupsTaggingAPI0bcdE0V28DescribeReportCreationOutputV"></a>
                     <a name="//apple_ref/swift/Struct/DescribeReportCreationOutput" class="dashAnchor"></a>
-                    <a class="token" href="#/s:27AWSResourceGroupsTaggingAPI08ResourcebcD0V28DescribeReportCreationOutputV">DescribeReportCreationOutput</a>
+                    <a class="token" href="#/s:28SotoResourceGroupsTaggingAPI0bcdE0V28DescribeReportCreationOutputV">DescribeReportCreationOutput</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1476,9 +1582,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DescribeReportCreationOutput</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DescribeReportCreationOutput</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ResourceGroupsTaggingAPI/ResourceGroupsTaggingAPI_Shapes.swift#L70-L89">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1486,9 +1595,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:27AWSResourceGroupsTaggingAPI08ResourcebcD0V11FailureInfoV"></a>
+                    <a name="/s:28SotoResourceGroupsTaggingAPI0bcdE0V11FailureInfoV"></a>
                     <a name="//apple_ref/swift/Struct/FailureInfo" class="dashAnchor"></a>
-                    <a class="token" href="#/s:27AWSResourceGroupsTaggingAPI08ResourcebcD0V11FailureInfoV">FailureInfo</a>
+                    <a class="token" href="#/s:28SotoResourceGroupsTaggingAPI0bcdE0V11FailureInfoV">FailureInfo</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1504,9 +1613,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">FailureInfo</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">FailureInfo</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ResourceGroupsTaggingAPI/ResourceGroupsTaggingAPI_Shapes.swift#L91-L110">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1514,9 +1626,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:27AWSResourceGroupsTaggingAPI08ResourcebcD0V26GetComplianceSummaryOutputV"></a>
+                    <a name="/s:28SotoResourceGroupsTaggingAPI0bcdE0V26GetComplianceSummaryOutputV"></a>
                     <a name="//apple_ref/swift/Struct/GetComplianceSummaryOutput" class="dashAnchor"></a>
-                    <a class="token" href="#/s:27AWSResourceGroupsTaggingAPI08ResourcebcD0V26GetComplianceSummaryOutputV">GetComplianceSummaryOutput</a>
+                    <a class="token" href="#/s:28SotoResourceGroupsTaggingAPI0bcdE0V26GetComplianceSummaryOutputV">GetComplianceSummaryOutput</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1532,9 +1644,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">GetComplianceSummaryOutput</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">GetComplianceSummaryOutput</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ResourceGroupsTaggingAPI/ResourceGroupsTaggingAPI_Shapes.swift#L183-L198">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1542,9 +1657,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:27AWSResourceGroupsTaggingAPI08ResourcebcD0V18GetResourcesOutputV"></a>
+                    <a name="/s:28SotoResourceGroupsTaggingAPI0bcdE0V18GetResourcesOutputV"></a>
                     <a name="//apple_ref/swift/Struct/GetResourcesOutput" class="dashAnchor"></a>
-                    <a class="token" href="#/s:27AWSResourceGroupsTaggingAPI08ResourcebcD0V18GetResourcesOutputV">GetResourcesOutput</a>
+                    <a class="token" href="#/s:28SotoResourceGroupsTaggingAPI0bcdE0V18GetResourcesOutputV">GetResourcesOutput</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1560,9 +1675,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">GetResourcesOutput</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">GetResourcesOutput</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ResourceGroupsTaggingAPI/ResourceGroupsTaggingAPI_Shapes.swift#L253-L268">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1570,9 +1688,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:27AWSResourceGroupsTaggingAPI08ResourcebcD0V16GetTagKeysOutputV"></a>
+                    <a name="/s:28SotoResourceGroupsTaggingAPI0bcdE0V16GetTagKeysOutputV"></a>
                     <a name="//apple_ref/swift/Struct/GetTagKeysOutput" class="dashAnchor"></a>
-                    <a class="token" href="#/s:27AWSResourceGroupsTaggingAPI08ResourcebcD0V16GetTagKeysOutputV">GetTagKeysOutput</a>
+                    <a class="token" href="#/s:28SotoResourceGroupsTaggingAPI0bcdE0V16GetTagKeysOutputV">GetTagKeysOutput</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1588,9 +1706,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">GetTagKeysOutput</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">GetTagKeysOutput</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ResourceGroupsTaggingAPI/ResourceGroupsTaggingAPI_Shapes.swift#L289-L304">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1598,9 +1719,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:27AWSResourceGroupsTaggingAPI08ResourcebcD0V18GetTagValuesOutputV"></a>
+                    <a name="/s:28SotoResourceGroupsTaggingAPI0bcdE0V18GetTagValuesOutputV"></a>
                     <a name="//apple_ref/swift/Struct/GetTagValuesOutput" class="dashAnchor"></a>
-                    <a class="token" href="#/s:27AWSResourceGroupsTaggingAPI08ResourcebcD0V18GetTagValuesOutputV">GetTagValuesOutput</a>
+                    <a class="token" href="#/s:28SotoResourceGroupsTaggingAPI0bcdE0V18GetTagValuesOutputV">GetTagValuesOutput</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1616,9 +1737,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">GetTagValuesOutput</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">GetTagValuesOutput</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ResourceGroupsTaggingAPI/ResourceGroupsTaggingAPI_Shapes.swift#L332-L347">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1626,9 +1750,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:27AWSResourceGroupsTaggingAPI08ResourcebcD0V0E10TagMappingV"></a>
+                    <a name="/s:28SotoResourceGroupsTaggingAPI0bcdE0V0B10TagMappingV"></a>
                     <a name="//apple_ref/swift/Struct/ResourceTagMapping" class="dashAnchor"></a>
-                    <a class="token" href="#/s:27AWSResourceGroupsTaggingAPI08ResourcebcD0V0E10TagMappingV">ResourceTagMapping</a>
+                    <a class="token" href="#/s:28SotoResourceGroupsTaggingAPI0bcdE0V0B10TagMappingV">ResourceTagMapping</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1644,9 +1768,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ResourceTagMapping</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ResourceTagMapping</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ResourceGroupsTaggingAPI/ResourceGroupsTaggingAPI_Shapes.swift#L349-L368">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1654,9 +1781,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:27AWSResourceGroupsTaggingAPI08ResourcebcD0V24StartReportCreationInputV"></a>
+                    <a name="/s:28SotoResourceGroupsTaggingAPI0bcdE0V24StartReportCreationInputV"></a>
                     <a name="//apple_ref/swift/Struct/StartReportCreationInput" class="dashAnchor"></a>
-                    <a class="token" href="#/s:27AWSResourceGroupsTaggingAPI08ResourcebcD0V24StartReportCreationInputV">StartReportCreationInput</a>
+                    <a class="token" href="#/s:28SotoResourceGroupsTaggingAPI0bcdE0V24StartReportCreationInputV">StartReportCreationInput</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1676,15 +1803,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ResourceGroupsTaggingAPI/ResourceGroupsTaggingAPI_Shapes.swift#L370-L387">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:27AWSResourceGroupsTaggingAPI08ResourcebcD0V25StartReportCreationOutputV"></a>
+                    <a name="/s:28SotoResourceGroupsTaggingAPI0bcdE0V25StartReportCreationOutputV"></a>
                     <a name="//apple_ref/swift/Struct/StartReportCreationOutput" class="dashAnchor"></a>
-                    <a class="token" href="#/s:27AWSResourceGroupsTaggingAPI08ResourcebcD0V25StartReportCreationOutputV">StartReportCreationOutput</a>
+                    <a class="token" href="#/s:28SotoResourceGroupsTaggingAPI0bcdE0V25StartReportCreationOutputV">StartReportCreationOutput</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1700,9 +1830,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">StartReportCreationOutput</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">StartReportCreationOutput</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ResourceGroupsTaggingAPI/ResourceGroupsTaggingAPI_Shapes.swift#L389-L391">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1710,9 +1843,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:27AWSResourceGroupsTaggingAPI08ResourcebcD0V7SummaryV"></a>
+                    <a name="/s:28SotoResourceGroupsTaggingAPI0bcdE0V7SummaryV"></a>
                     <a name="//apple_ref/swift/Struct/Summary" class="dashAnchor"></a>
-                    <a class="token" href="#/s:27AWSResourceGroupsTaggingAPI08ResourcebcD0V7SummaryV">Summary</a>
+                    <a class="token" href="#/s:28SotoResourceGroupsTaggingAPI0bcdE0V7SummaryV">Summary</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1728,9 +1861,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Summary</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Summary</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ResourceGroupsTaggingAPI/ResourceGroupsTaggingAPI_Shapes.swift#L393-L424">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1738,9 +1874,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:27AWSResourceGroupsTaggingAPI08ResourcebcD0V3TagV"></a>
+                    <a name="/s:28SotoResourceGroupsTaggingAPI0bcdE0V3TagV"></a>
                     <a name="//apple_ref/swift/Struct/Tag" class="dashAnchor"></a>
-                    <a class="token" href="#/s:27AWSResourceGroupsTaggingAPI08ResourcebcD0V3TagV">Tag</a>
+                    <a class="token" href="#/s:28SotoResourceGroupsTaggingAPI0bcdE0V3TagV">Tag</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1756,9 +1892,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Tag</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Tag</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ResourceGroupsTaggingAPI/ResourceGroupsTaggingAPI_Shapes.swift#L426-L441">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1766,9 +1905,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:27AWSResourceGroupsTaggingAPI08ResourcebcD0V9TagFilterV"></a>
+                    <a name="/s:28SotoResourceGroupsTaggingAPI0bcdE0V9TagFilterV"></a>
                     <a name="//apple_ref/swift/Struct/TagFilter" class="dashAnchor"></a>
-                    <a class="token" href="#/s:27AWSResourceGroupsTaggingAPI08ResourcebcD0V9TagFilterV">TagFilter</a>
+                    <a class="token" href="#/s:28SotoResourceGroupsTaggingAPI0bcdE0V9TagFilterV">TagFilter</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1788,15 +1927,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ResourceGroupsTaggingAPI/ResourceGroupsTaggingAPI_Shapes.swift#L443-L471">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:27AWSResourceGroupsTaggingAPI08ResourcebcD0V17TagResourcesInputV"></a>
+                    <a name="/s:28SotoResourceGroupsTaggingAPI0bcdE0V17TagResourcesInputV"></a>
                     <a name="//apple_ref/swift/Struct/TagResourcesInput" class="dashAnchor"></a>
-                    <a class="token" href="#/s:27AWSResourceGroupsTaggingAPI08ResourcebcD0V17TagResourcesInputV">TagResourcesInput</a>
+                    <a class="token" href="#/s:28SotoResourceGroupsTaggingAPI0bcdE0V17TagResourcesInputV">TagResourcesInput</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1816,15 +1958,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ResourceGroupsTaggingAPI/ResourceGroupsTaggingAPI_Shapes.swift#L473-L506">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:27AWSResourceGroupsTaggingAPI08ResourcebcD0V18TagResourcesOutputV"></a>
+                    <a name="/s:28SotoResourceGroupsTaggingAPI0bcdE0V18TagResourcesOutputV"></a>
                     <a name="//apple_ref/swift/Struct/TagResourcesOutput" class="dashAnchor"></a>
-                    <a class="token" href="#/s:27AWSResourceGroupsTaggingAPI08ResourcebcD0V18TagResourcesOutputV">TagResourcesOutput</a>
+                    <a class="token" href="#/s:28SotoResourceGroupsTaggingAPI0bcdE0V18TagResourcesOutputV">TagResourcesOutput</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1840,9 +1985,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">TagResourcesOutput</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">TagResourcesOutput</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ResourceGroupsTaggingAPI/ResourceGroupsTaggingAPI_Shapes.swift#L508-L519">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1850,9 +1998,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:27AWSResourceGroupsTaggingAPI08ResourcebcD0V19UntagResourcesInputV"></a>
+                    <a name="/s:28SotoResourceGroupsTaggingAPI0bcdE0V19UntagResourcesInputV"></a>
                     <a name="//apple_ref/swift/Struct/UntagResourcesInput" class="dashAnchor"></a>
-                    <a class="token" href="#/s:27AWSResourceGroupsTaggingAPI08ResourcebcD0V19UntagResourcesInputV">UntagResourcesInput</a>
+                    <a class="token" href="#/s:28SotoResourceGroupsTaggingAPI0bcdE0V19UntagResourcesInputV">UntagResourcesInput</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1872,15 +2020,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ResourceGroupsTaggingAPI/ResourceGroupsTaggingAPI_Shapes.swift#L521-L553">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:27AWSResourceGroupsTaggingAPI08ResourcebcD0V20UntagResourcesOutputV"></a>
+                    <a name="/s:28SotoResourceGroupsTaggingAPI0bcdE0V20UntagResourcesOutputV"></a>
                     <a name="//apple_ref/swift/Struct/UntagResourcesOutput" class="dashAnchor"></a>
-                    <a class="token" href="#/s:27AWSResourceGroupsTaggingAPI08ResourcebcD0V20UntagResourcesOutputV">UntagResourcesOutput</a>
+                    <a class="token" href="#/s:28SotoResourceGroupsTaggingAPI0bcdE0V20UntagResourcesOutputV">UntagResourcesOutput</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1896,9 +2047,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">UntagResourcesOutput</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">UntagResourcesOutput</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ResourceGroupsTaggingAPI/ResourceGroupsTaggingAPI_Shapes.swift#L555-L566">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1909,17 +2063,19 @@
               <div class="task-name-container">
                 <a name="/Enums"></a>
                 <a name="//apple_ref/swift/Section/Enums" class="dashAnchor"></a>
-                <a href="#/Enums">
-                  <h3 class="section-name">Enums</h3>
-                </a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Enums"></a>
+                  <h3 class="section-name"><p>Enums</p>
+</h3>
+                </div>
               </div>
               <ul>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:27AWSResourceGroupsTaggingAPI08ResourcebcD0V9ErrorCodeO"></a>
+                    <a name="/s:28SotoResourceGroupsTaggingAPI0bcdE0V9ErrorCodeO"></a>
                     <a name="//apple_ref/swift/Enum/ErrorCode" class="dashAnchor"></a>
-                    <a class="token" href="#/s:27AWSResourceGroupsTaggingAPI08ResourcebcD0V9ErrorCodeO">ErrorCode</a>
+                    <a class="token" href="#/s:28SotoResourceGroupsTaggingAPI0bcdE0V9ErrorCodeO">ErrorCode</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1939,15 +2095,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ResourceGroupsTaggingAPI/ResourceGroupsTaggingAPI_Shapes.swift#L23-L27">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:27AWSResourceGroupsTaggingAPI08ResourcebcD0V16GroupByAttributeO"></a>
+                    <a name="/s:28SotoResourceGroupsTaggingAPI0bcdE0V16GroupByAttributeO"></a>
                     <a name="//apple_ref/swift/Enum/GroupByAttribute" class="dashAnchor"></a>
-                    <a class="token" href="#/s:27AWSResourceGroupsTaggingAPI08ResourcebcD0V16GroupByAttributeO">GroupByAttribute</a>
+                    <a class="token" href="#/s:28SotoResourceGroupsTaggingAPI0bcdE0V16GroupByAttributeO">GroupByAttribute</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1967,15 +2126,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ResourceGroupsTaggingAPI/ResourceGroupsTaggingAPI_Shapes.swift#L29-L34">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:27AWSResourceGroupsTaggingAPI08ResourcebcD0V12TargetIdTypeO"></a>
+                    <a name="/s:28SotoResourceGroupsTaggingAPI0bcdE0V12TargetIdTypeO"></a>
                     <a name="//apple_ref/swift/Enum/TargetIdType" class="dashAnchor"></a>
-                    <a class="token" href="#/s:27AWSResourceGroupsTaggingAPI08ResourcebcD0V12TargetIdTypeO">TargetIdType</a>
+                    <a class="token" href="#/s:28SotoResourceGroupsTaggingAPI0bcdE0V12TargetIdTypeO">TargetIdType</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1994,6 +2156,9 @@
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">TargetIdType</span> <span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="kt">CustomStringConvertible</span><span class="p">,</span> <span class="kt">Codable</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ResourceGroupsTaggingAPI/ResourceGroupsTaggingAPI_Shapes.swift#L36-L41">Show on GitHub</a>
                       </div>
                     </section>
                   </div>

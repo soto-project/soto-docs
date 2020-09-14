@@ -15,7 +15,7 @@
     <header>
       <div class="content-wrapper">
         <p><a href="../index.html"> Docs</a> (54% documented)</p>
-        <p class="header-right"><a href="https://github.com/swift-aws/aws-sdk-swift"><img src="../img/gh.png"/>View on GitHub</a></p>
+        <p class="header-right"><a href="https://github.com/soto-project/soto"><img src="../img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -28,6 +28,9 @@
     <div class="content-wrapper">
       <nav class="sidebar">
         <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../User%20Guides.html">User Guides</a>
+          </li>
           <li class="nav-group-name">
             <a href="../AWSSDKSwiftCore.html">AWSSDKSwiftCore</a>
           </li>
@@ -68,6 +71,9 @@
             <a href="../AppSync.html">AppSync</a>
           </li>
           <li class="nav-group-name">
+            <a href="../Appflow.html">Appflow</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../ApplicationAutoScaling.html">ApplicationAutoScaling</a>
           </li>
           <li class="nav-group-name">
@@ -93,6 +99,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../Batch.html">Batch</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Braket.html">Braket</a>
           </li>
           <li class="nav-group-name">
             <a href="../Budgets.html">Budgets</a>
@@ -335,6 +344,12 @@
             <a href="../IAM.html">IAM</a>
           </li>
           <li class="nav-group-name">
+            <a href="../IVS.html">IVS</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../IdentityStore.html">IdentityStore</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../Imagebuilder.html">Imagebuilder</a>
           </li>
           <li class="nav-group-name">
@@ -557,6 +572,9 @@
             <a href="../Redshift.html">Redshift</a>
           </li>
           <li class="nav-group-name">
+            <a href="../RedshiftDataAPIService.html">RedshiftDataAPIService</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../Rekognition.html">Rekognition</a>
           </li>
           <li class="nav-group-name">
@@ -606,6 +624,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../SSO.html">SSO</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../SSOAdmin.html">SSOAdmin</a>
           </li>
           <li class="nav-group-name">
             <a href="../SSOOIDC.html">SSOOIDC</a>
@@ -735,13 +756,12 @@
             <h1>ResourceGroups</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ResourceGroups</span></code></pre>
+                  
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ResourceGroups</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSService.html">AWSService</a></span></code></pre>
 
                 </div>
               </div>
-            <p>Client object for interacting with AWS ResourceGroups service.</p>
-
-<p>AWS Resource Groups AWS Resource Groups lets you organize AWS resources such as Amazon EC2 instances, Amazon Relational Database Service databases, and Amazon S3 buckets into groups using criteria that you define as tags. A resource group is a collection of resources that match the resource types specified in a query, and share one or more tags or portions of tags. You can create a group of resources based on their roles in your cloud infrastructure, lifecycle stages, regions, application layers, or virtually any criteria. Resource groups enable you to automate management tasks, such as those in AWS Systems Manager Automation documents, on tag-related resources in AWS Systems Manager. Groups of tagged resources also let you quickly view a custom console in AWS Systems Manager that shows AWS Config compliance and other monitoring data about member resources. To create a resource group, build a resource query, and specify tags that identify the criteria that members of the group have in common. Tags are key-value pairs. For more information about Resource Groups, see the AWS Resource Groups User Guide. AWS Resource Groups uses a REST-compliant API that you can use to perform the following types of operations.   Create, Read, Update, and Delete (CRUD) operations on resource groups and resource query entities   Applying, editing, and removing tags from resource groups   Resolving resource group member ARNs so they can be returned as search results   Getting data about resources that are members of a group   Searching AWS resources based on a resource query</p>
+            <p>Undocumented</p>
 
           </section>
           <section class="section task-group-section">
@@ -749,17 +769,19 @@
               <div class="task-name-container">
                 <a name="/Member%20variables"></a>
                 <a name="//apple_ref/swift/Section/Member variables" class="dashAnchor"></a>
-                <a href="#/Member%20variables">
-                  <h3 class="section-name">Member variables</h3>
-                </a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Member%20variables"></a>
+                  <h3 class="section-name"><p>Member variables</p>
+</h3>
+                </div>
               </div>
               <ul>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:17AWSResourceGroups08ResourceB0V6client15AWSSDKSwiftCore9AWSClientCvp"></a>
+                    <a name="/s:8SotoCore10AWSServiceP6clientAA9AWSClientCvp"></a>
                     <a name="//apple_ref/swift/Property/client" class="dashAnchor"></a>
-                    <a class="token" href="#/s:17AWSResourceGroups08ResourceB0V6client15AWSSDKSwiftCore9AWSClientCvp">client</a>
+                    <a class="token" href="#/s:8SotoCore10AWSServiceP6clientAA9AWSClientCvp">client</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -767,8 +789,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
-
+                        
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
@@ -778,15 +799,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ResourceGroups/ResourceGroups_API.swift#L19">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:17AWSResourceGroups08ResourceB0V13serviceConfig15AWSSDKSwiftCore010AWSServiceE0Cvp"></a>
-                    <a name="//apple_ref/swift/Property/serviceConfig" class="dashAnchor"></a>
-                    <a class="token" href="#/s:17AWSResourceGroups08ResourceB0V13serviceConfig15AWSSDKSwiftCore010AWSServiceE0Cvp">serviceConfig</a>
+                    <a name="/s:8SotoCore10AWSServiceP6configAA0C6ConfigCvp"></a>
+                    <a name="//apple_ref/swift/Property/config" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8SotoCore10AWSServiceP6configAA0C6ConfigCvp">config</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -794,16 +818,18 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
-
+                        
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">serviceConfig</span><span class="p">:</span> <span class="kt"><a href="../Classes/AWSServiceConfig.html">AWSServiceConfig</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">config</span><span class="p">:</span> <span class="kt"><a href="../Classes/AWSServiceConfig.html">AWSServiceConfig</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ResourceGroups/ResourceGroups_API.swift#L21">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -814,17 +840,19 @@
               <div class="task-name-container">
                 <a name="/Initialization"></a>
                 <a name="//apple_ref/swift/Section/Initialization" class="dashAnchor"></a>
-                <a href="#/Initialization">
-                  <h3 class="section-name">Initialization</h3>
-                </a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Initialization"></a>
+                  <h3 class="section-name"><p>Initialization</p>
+</h3>
+                </div>
               </div>
               <ul>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:17AWSResourceGroups08ResourceB0V6client6region9partition8endpointAC15AWSSDKSwiftCore9AWSClientC_AH6RegionVSgAH9PartitionVSSSgtcfc"></a>
-                    <a name="//apple_ref/swift/Method/init(client:region:partition:endpoint:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:17AWSResourceGroups08ResourceB0V6client6region9partition8endpointAC15AWSSDKSwiftCore9AWSClientC_AH6RegionVSgAH9PartitionVSSSgtcfc">init(client:region:partition:endpoint:)</a>
+                    <a name="/s:18SotoResourceGroups0bC0V6client6region9partition8endpoint7timeout19byteBufferAllocator7optionsAC0A4Core9AWSClientC_AK6RegionVSgAK12AWSPartitionVSSSg3NIO10TimeAmountVSgAT04BytejK0VAK16AWSServiceConfigC7OptionsVtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(client:region:partition:endpoint:timeout:byteBufferAllocator:options:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18SotoResourceGroups0bC0V6client6region9partition8endpoint7timeout19byteBufferAllocator7optionsAC0A4Core9AWSClientC_AK6RegionVSgAK12AWSPartitionVSSSg3NIO10TimeAmountVSgAT04BytejK0VAK16AWSServiceConfigC7OptionsVtcfc">init(client:<wbr>region:<wbr>partition:<wbr>endpoint:<wbr>timeout:<wbr>byteBufferAllocator:<wbr>options:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -841,9 +869,12 @@
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span>
     <span class="nv">client</span><span class="p">:</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="p">,</span>
-    <span class="nv">region</span><span class="p">:</span> <span class="kt">AWSSDKSwiftCore</span><span class="o">.</span><span class="kt"><a href="../Structs/Region.html">Region</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
-    <span class="nv">partition</span><span class="p">:</span> <span class="kt">AWSSDKSwiftCore</span><span class="o">.</span><span class="kt"><a href="../Structs/Partition.html">Partition</a></span> <span class="o">=</span> <span class="o">.</span><span class="n">aws</span><span class="p">,</span>
-    <span class="nv">endpoint</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span>
+    <span class="nv">region</span><span class="p">:</span> <span class="kt">SotoCore</span><span class="o">.</span><span class="kt"><a href="../Structs/Region.html">Region</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="nv">partition</span><span class="p">:</span> <span class="kt"><a href="../Structs/AWSPartition.html">AWSPartition</a></span> <span class="o">=</span> <span class="o">.</span><span class="n">aws</span><span class="p">,</span>
+    <span class="nv">endpoint</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="nv">timeout</span><span class="p">:</span> <span class="kt">TimeAmount</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="nv">byteBufferAllocator</span><span class="p">:</span> <span class="kt">ByteBufferAllocator</span> <span class="o">=</span> <span class="kt">ByteBufferAllocator</span><span class="p">(),</span>
+    <span class="nv">options</span><span class="p">:</span> <span class="kt"><a href="../Classes/AWSServiceConfig.html">AWSServiceConfig</a></span><span class="o">.</span><span class="kt">Options</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="p">)</span></code></pre>
 
                         </div>
@@ -900,8 +931,23 @@
                                 </div>
                               </td>
                             </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>timeout</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Timeout value for HTTP requests</p>
+                                </div>
+                              </td>
+                            </tr>
                           </tbody>
                         </table>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ResourceGroups/ResourceGroups_API.swift#L39-L61">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -912,17 +958,19 @@
               <div class="task-name-container">
                 <a name="/API%20Calls"></a>
                 <a name="//apple_ref/swift/Section/API Calls" class="dashAnchor"></a>
-                <a href="#/API%20Calls">
-                  <h3 class="section-name">API Calls</h3>
-                </a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/API%20Calls"></a>
+                  <h3 class="section-name"><p>API Calls</p>
+</h3>
+                </div>
               </div>
               <ul>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:17AWSResourceGroups08ResourceB0V11createGroup_2on3NIO15EventLoopFutureCyAC06CreateE6OutputVGAC0kE5InputV_AF0hI0_pSgtF"></a>
-                    <a name="//apple_ref/swift/Method/createGroup(_:on:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:17AWSResourceGroups08ResourceB0V11createGroup_2on3NIO15EventLoopFutureCyAC06CreateE6OutputVGAC0kE5InputV_AF0hI0_pSgtF">createGroup(_:on:)</a>
+                    <a name="/s:18SotoResourceGroups0bC0V11createGroup_2on6logger3NIO15EventLoopFutureCyAC06CreateE6OutputVGAC0lE5InputV_AG0iJ0_pSg7Logging6LoggerVtF"></a>
+                    <a name="//apple_ref/swift/Method/createGroup(_:on:logger:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18SotoResourceGroups0bC0V11createGroup_2on6logger3NIO15EventLoopFutureCyAC06CreateE6OutputVGAC0lE5InputV_AG0iJ0_pSg7Logging6LoggerVtF">createGroup(_:<wbr>on:<wbr>logger:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -930,16 +978,19 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Creates a group with a specified name, description, and resource query.</p>
+                        <p>Creates a resource group with the specified name and description. You can optionally include a resource query, or a service configuration.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">createGroup</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/ResourceGroups/CreateGroupInput.html">CreateGroupInput</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/ResourceGroups/CreateGroupOutput.html">CreateGroupOutput</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">createGroup</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/ResourceGroups/CreateGroupInput.html">CreateGroupInput</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">logger</span><span class="p">:</span> <span class="kt">Logger</span> <span class="o">=</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="o">.</span><span class="n">loggingDisabled</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/ResourceGroups/CreateGroupOutput.html">CreateGroupOutput</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ResourceGroups/ResourceGroups_API.swift#L66-L68">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -947,9 +998,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:17AWSResourceGroups08ResourceB0V11deleteGroup_2on3NIO15EventLoopFutureCyAC06DeleteE6OutputVGAC0kE5InputV_AF0hI0_pSgtF"></a>
-                    <a name="//apple_ref/swift/Method/deleteGroup(_:on:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:17AWSResourceGroups08ResourceB0V11deleteGroup_2on3NIO15EventLoopFutureCyAC06DeleteE6OutputVGAC0kE5InputV_AF0hI0_pSgtF">deleteGroup(_:on:)</a>
+                    <a name="/s:18SotoResourceGroups0bC0V11deleteGroup_2on6logger3NIO15EventLoopFutureCyAC06DeleteE6OutputVGAC0lE5InputV_AG0iJ0_pSg7Logging6LoggerVtF"></a>
+                    <a name="//apple_ref/swift/Method/deleteGroup(_:on:logger:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18SotoResourceGroups0bC0V11deleteGroup_2on6logger3NIO15EventLoopFutureCyAC06DeleteE6OutputVGAC0lE5InputV_AG0iJ0_pSg7Logging6LoggerVtF">deleteGroup(_:<wbr>on:<wbr>logger:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -957,16 +1008,19 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Deletes a specified resource group. Deleting a resource group does not delete resources that are members of the group; it only deletes the group structure.</p>
+                        <p>Deletes the specified resource group. Deleting a resource group does not delete any resources that are members of the group; it only deletes the group structure.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">deleteGroup</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/ResourceGroups/DeleteGroupInput.html">DeleteGroupInput</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/ResourceGroups/DeleteGroupOutput.html">DeleteGroupOutput</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">deleteGroup</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/ResourceGroups/DeleteGroupInput.html">DeleteGroupInput</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">logger</span><span class="p">:</span> <span class="kt">Logger</span> <span class="o">=</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="o">.</span><span class="n">loggingDisabled</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/ResourceGroups/DeleteGroupOutput.html">DeleteGroupOutput</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ResourceGroups/ResourceGroups_API.swift#L71-L73">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -974,9 +1028,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:17AWSResourceGroups08ResourceB0V8getGroup_2on3NIO15EventLoopFutureCyAC03GetE6OutputVGAC0kE5InputV_AF0hI0_pSgtF"></a>
-                    <a name="//apple_ref/swift/Method/getGroup(_:on:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:17AWSResourceGroups08ResourceB0V8getGroup_2on3NIO15EventLoopFutureCyAC03GetE6OutputVGAC0kE5InputV_AF0hI0_pSgtF">getGroup(_:on:)</a>
+                    <a name="/s:18SotoResourceGroups0bC0V8getGroup_2on6logger3NIO15EventLoopFutureCyAC03GetE6OutputVGAC0lE5InputV_AG0iJ0_pSg7Logging6LoggerVtF"></a>
+                    <a name="//apple_ref/swift/Method/getGroup(_:on:logger:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18SotoResourceGroups0bC0V8getGroup_2on6logger3NIO15EventLoopFutureCyAC03GetE6OutputVGAC0lE5InputV_AG0iJ0_pSg7Logging6LoggerVtF">getGroup(_:<wbr>on:<wbr>logger:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -991,9 +1045,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getGroup</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/ResourceGroups/GetGroupInput.html">GetGroupInput</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/ResourceGroups/GetGroupOutput.html">GetGroupOutput</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getGroup</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/ResourceGroups/GetGroupInput.html">GetGroupInput</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">logger</span><span class="p">:</span> <span class="kt">Logger</span> <span class="o">=</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="o">.</span><span class="n">loggingDisabled</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/ResourceGroups/GetGroupOutput.html">GetGroupOutput</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ResourceGroups/ResourceGroups_API.swift#L76-L78">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1001,9 +1058,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:17AWSResourceGroups08ResourceB0V13getGroupQuery_2on3NIO15EventLoopFutureCyAC03GeteF6OutputVGAC0leF5InputV_AF0iJ0_pSgtF"></a>
-                    <a name="//apple_ref/swift/Method/getGroupQuery(_:on:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:17AWSResourceGroups08ResourceB0V13getGroupQuery_2on3NIO15EventLoopFutureCyAC03GeteF6OutputVGAC0leF5InputV_AF0iJ0_pSgtF">getGroupQuery(_:on:)</a>
+                    <a name="/s:18SotoResourceGroups0bC0V21getGroupConfiguration_2on6logger3NIO15EventLoopFutureCyAC03GeteF6OutputVGAC0meF5InputV_AG0jK0_pSg7Logging6LoggerVtF"></a>
+                    <a name="//apple_ref/swift/Method/getGroupConfiguration(_:on:logger:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18SotoResourceGroups0bC0V21getGroupConfiguration_2on6logger3NIO15EventLoopFutureCyAC03GeteF6OutputVGAC0meF5InputV_AG0jK0_pSg7Logging6LoggerVtF">getGroupConfiguration(_:<wbr>on:<wbr>logger:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1011,16 +1068,19 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Returns the resource query associated with the specified resource group.</p>
+                        <p>Returns the service configuration associated with the specified resource group. AWS Resource Groups supports configurations for the following resource group types:    AWS::EC2::CapacityReservationPool - Amazon EC2 capacity reservation pools. For more information, see Working with capacity reservation groups in the EC2 Users Guide.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getGroupQuery</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/ResourceGroups/GetGroupQueryInput.html">GetGroupQueryInput</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/ResourceGroups/GetGroupQueryOutput.html">GetGroupQueryOutput</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getGroupConfiguration</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/ResourceGroups/GetGroupConfigurationInput.html">GetGroupConfigurationInput</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">logger</span><span class="p">:</span> <span class="kt">Logger</span> <span class="o">=</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="o">.</span><span class="n">loggingDisabled</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/ResourceGroups/GetGroupConfigurationOutput.html">GetGroupConfigurationOutput</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ResourceGroups/ResourceGroups_API.swift#L81-L83">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1028,9 +1088,39 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:17AWSResourceGroups08ResourceB0V7getTags_2on3NIO15EventLoopFutureCyAC03GetE6OutputVGAC0kE5InputV_AF0hI0_pSgtF"></a>
-                    <a name="//apple_ref/swift/Method/getTags(_:on:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:17AWSResourceGroups08ResourceB0V7getTags_2on3NIO15EventLoopFutureCyAC03GetE6OutputVGAC0kE5InputV_AF0hI0_pSgtF">getTags(_:on:)</a>
+                    <a name="/s:18SotoResourceGroups0bC0V13getGroupQuery_2on6logger3NIO15EventLoopFutureCyAC03GeteF6OutputVGAC0meF5InputV_AG0jK0_pSg7Logging6LoggerVtF"></a>
+                    <a name="//apple_ref/swift/Method/getGroupQuery(_:on:logger:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18SotoResourceGroups0bC0V13getGroupQuery_2on6logger3NIO15EventLoopFutureCyAC03GeteF6OutputVGAC0meF5InputV_AG0jK0_pSg7Logging6LoggerVtF">getGroupQuery(_:<wbr>on:<wbr>logger:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Retrieves the resource query associated with the specified resource group.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getGroupQuery</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/ResourceGroups/GetGroupQueryInput.html">GetGroupQueryInput</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">logger</span><span class="p">:</span> <span class="kt">Logger</span> <span class="o">=</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="o">.</span><span class="n">loggingDisabled</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/ResourceGroups/GetGroupQueryOutput.html">GetGroupQueryOutput</a></span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ResourceGroups/ResourceGroups_API.swift#L86-L88">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18SotoResourceGroups0bC0V7getTags_2on6logger3NIO15EventLoopFutureCyAC03GetE6OutputVGAC0lE5InputV_AG0iJ0_pSg7Logging6LoggerVtF"></a>
+                    <a name="//apple_ref/swift/Method/getTags(_:on:logger:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18SotoResourceGroups0bC0V7getTags_2on6logger3NIO15EventLoopFutureCyAC03GetE6OutputVGAC0lE5InputV_AG0iJ0_pSg7Logging6LoggerVtF">getTags(_:<wbr>on:<wbr>logger:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1045,9 +1135,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getTags</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/ResourceGroups/GetTagsInput.html">GetTagsInput</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/ResourceGroups/GetTagsOutput.html">GetTagsOutput</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getTags</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/ResourceGroups/GetTagsInput.html">GetTagsInput</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">logger</span><span class="p">:</span> <span class="kt">Logger</span> <span class="o">=</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="o">.</span><span class="n">loggingDisabled</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/ResourceGroups/GetTagsOutput.html">GetTagsOutput</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ResourceGroups/ResourceGroups_API.swift#L91-L93">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1055,9 +1148,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:17AWSResourceGroups08ResourceB0V18listGroupResources_2on3NIO15EventLoopFutureCyAC04ListeF6OutputVGAC0leF5InputV_AF0iJ0_pSgtF"></a>
-                    <a name="//apple_ref/swift/Method/listGroupResources(_:on:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:17AWSResourceGroups08ResourceB0V18listGroupResources_2on3NIO15EventLoopFutureCyAC04ListeF6OutputVGAC0leF5InputV_AF0iJ0_pSgtF">listGroupResources(_:on:)</a>
+                    <a name="/s:18SotoResourceGroups0bC0V14groupResources_2on6logger3NIO15EventLoopFutureCyAC05GroupE6OutputVGAC0lE5InputV_AG0iJ0_pSg7Logging6LoggerVtF"></a>
+                    <a name="//apple_ref/swift/Method/groupResources(_:on:logger:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18SotoResourceGroups0bC0V14groupResources_2on6logger3NIO15EventLoopFutureCyAC05GroupE6OutputVGAC0lE5InputV_AG0iJ0_pSg7Logging6LoggerVtF">groupResources(_:<wbr>on:<wbr>logger:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1065,16 +1158,19 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Returns a list of ARNs of resources that are members of a specified resource group.</p>
+                        <p>Adds the specified resources to the specified group.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">listGroupResources</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/ResourceGroups/ListGroupResourcesInput.html">ListGroupResourcesInput</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/ResourceGroups/ListGroupResourcesOutput.html">ListGroupResourcesOutput</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">groupResources</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/ResourceGroups/GroupResourcesInput.html">GroupResourcesInput</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">logger</span><span class="p">:</span> <span class="kt">Logger</span> <span class="o">=</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="o">.</span><span class="n">loggingDisabled</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/ResourceGroups/GroupResourcesOutput.html">GroupResourcesOutput</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ResourceGroups/ResourceGroups_API.swift#L96-L98">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1082,9 +1178,39 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:17AWSResourceGroups08ResourceB0V04listB0_2on3NIO15EventLoopFutureCyAC04ListB6OutputVGAC0jB5InputV_AF0gH0_pSgtF"></a>
-                    <a name="//apple_ref/swift/Method/listGroups(_:on:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:17AWSResourceGroups08ResourceB0V04listB0_2on3NIO15EventLoopFutureCyAC04ListB6OutputVGAC0jB5InputV_AF0gH0_pSgtF">listGroups(_:on:)</a>
+                    <a name="/s:18SotoResourceGroups0bC0V18listGroupResources_2on6logger3NIO15EventLoopFutureCyAC04ListeF6OutputVGAC0meF5InputV_AG0jK0_pSg7Logging6LoggerVtF"></a>
+                    <a name="//apple_ref/swift/Method/listGroupResources(_:on:logger:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18SotoResourceGroups0bC0V18listGroupResources_2on6logger3NIO15EventLoopFutureCyAC04ListeF6OutputVGAC0meF5InputV_AG0jK0_pSg7Logging6LoggerVtF">listGroupResources(_:<wbr>on:<wbr>logger:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns a list of ARNs of the resources that are members of a specified resource group.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">listGroupResources</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/ResourceGroups/ListGroupResourcesInput.html">ListGroupResourcesInput</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">logger</span><span class="p">:</span> <span class="kt">Logger</span> <span class="o">=</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="o">.</span><span class="n">loggingDisabled</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/ResourceGroups/ListGroupResourcesOutput.html">ListGroupResourcesOutput</a></span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ResourceGroups/ResourceGroups_API.swift#L101-L103">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18SotoResourceGroups0bC0V04listC0_2on6logger3NIO15EventLoopFutureCyAC04ListC6OutputVGAC0kC5InputV_AG0hI0_pSg7Logging6LoggerVtF"></a>
+                    <a name="//apple_ref/swift/Method/listGroups(_:on:logger:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18SotoResourceGroups0bC0V04listC0_2on6logger3NIO15EventLoopFutureCyAC04ListC6OutputVGAC0kC5InputV_AG0hI0_pSg7Logging6LoggerVtF">listGroups(_:<wbr>on:<wbr>logger:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1099,9 +1225,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">listGroups</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/ResourceGroups/ListGroupsInput.html">ListGroupsInput</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/ResourceGroups/ListGroupsOutput.html">ListGroupsOutput</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">listGroups</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/ResourceGroups/ListGroupsInput.html">ListGroupsInput</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">logger</span><span class="p">:</span> <span class="kt">Logger</span> <span class="o">=</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="o">.</span><span class="n">loggingDisabled</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/ResourceGroups/ListGroupsOutput.html">ListGroupsOutput</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ResourceGroups/ResourceGroups_API.swift#L106-L108">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1109,9 +1238,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:17AWSResourceGroups08ResourceB0V15searchResources_2on3NIO15EventLoopFutureCyAC06SearchE6OutputVGAC0kE5InputV_AF0hI0_pSgtF"></a>
-                    <a name="//apple_ref/swift/Method/searchResources(_:on:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:17AWSResourceGroups08ResourceB0V15searchResources_2on3NIO15EventLoopFutureCyAC06SearchE6OutputVGAC0kE5InputV_AF0hI0_pSgtF">searchResources(_:on:)</a>
+                    <a name="/s:18SotoResourceGroups0bC0V15searchResources_2on6logger3NIO15EventLoopFutureCyAC06SearchE6OutputVGAC0lE5InputV_AG0iJ0_pSg7Logging6LoggerVtF"></a>
+                    <a name="//apple_ref/swift/Method/searchResources(_:on:logger:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18SotoResourceGroups0bC0V15searchResources_2on6logger3NIO15EventLoopFutureCyAC06SearchE6OutputVGAC0lE5InputV_AG0iJ0_pSg7Logging6LoggerVtF">searchResources(_:<wbr>on:<wbr>logger:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1119,16 +1248,19 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Returns a list of AWS resource identifiers that matches a specified query. The query uses the same format as a resource query in a CreateGroup or UpdateGroupQuery operation.</p>
+                        <p>Returns a list of AWS resource identifiers that matches tne specified query. The query uses the same format as a resource query in a CreateGroup or UpdateGroupQuery operation.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">searchResources</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/ResourceGroups/SearchResourcesInput.html">SearchResourcesInput</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/ResourceGroups/SearchResourcesOutput.html">SearchResourcesOutput</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">searchResources</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/ResourceGroups/SearchResourcesInput.html">SearchResourcesInput</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">logger</span><span class="p">:</span> <span class="kt">Logger</span> <span class="o">=</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="o">.</span><span class="n">loggingDisabled</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/ResourceGroups/SearchResourcesOutput.html">SearchResourcesOutput</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ResourceGroups/ResourceGroups_API.swift#L111-L113">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1136,9 +1268,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:17AWSResourceGroups08ResourceB0V3tag_2on3NIO15EventLoopFutureCyAC9TagOutputVGAC0J5InputV_AF0gH0_pSgtF"></a>
-                    <a name="//apple_ref/swift/Method/tag(_:on:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:17AWSResourceGroups08ResourceB0V3tag_2on3NIO15EventLoopFutureCyAC9TagOutputVGAC0J5InputV_AF0gH0_pSgtF">tag(_:on:)</a>
+                    <a name="/s:18SotoResourceGroups0bC0V3tag_2on6logger3NIO15EventLoopFutureCyAC9TagOutputVGAC0K5InputV_AG0hI0_pSg7Logging6LoggerVtF"></a>
+                    <a name="//apple_ref/swift/Method/tag(_:on:logger:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18SotoResourceGroups0bC0V3tag_2on6logger3NIO15EventLoopFutureCyAC9TagOutputVGAC0K5InputV_AG0hI0_pSg7Logging6LoggerVtF">tag(_:<wbr>on:<wbr>logger:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1146,16 +1278,19 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Adds tags to a resource group with the specified ARN. Existing tags on a resource group are not changed if they are not specified in the request parameters.</p>
+                        <p>Adds tags to a resource group with the specified ARN. Existing tags on a resource group are not changed if they are not specified in the request parameters.  Do not store personally identifiable information (PII) or other confidential or sensitive information in tags. We use tags to provide you with billing and administration services. Tags are not intended to be used for private or sensitive data.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">tag</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/ResourceGroups/TagInput.html">TagInput</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/ResourceGroups/TagOutput.html">TagOutput</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">tag</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/ResourceGroups/TagInput.html">TagInput</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">logger</span><span class="p">:</span> <span class="kt">Logger</span> <span class="o">=</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="o">.</span><span class="n">loggingDisabled</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/ResourceGroups/TagOutput.html">TagOutput</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ResourceGroups/ResourceGroups_API.swift#L116-L118">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1163,9 +1298,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:17AWSResourceGroups08ResourceB0V5untag_2on3NIO15EventLoopFutureCyAC11UntagOutputVGAC0J5InputV_AF0gH0_pSgtF"></a>
-                    <a name="//apple_ref/swift/Method/untag(_:on:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:17AWSResourceGroups08ResourceB0V5untag_2on3NIO15EventLoopFutureCyAC11UntagOutputVGAC0J5InputV_AF0gH0_pSgtF">untag(_:on:)</a>
+                    <a name="/s:18SotoResourceGroups0bC0V16ungroupResources_2on6logger3NIO15EventLoopFutureCyAC07UngroupE6OutputVGAC0lE5InputV_AG0iJ0_pSg7Logging6LoggerVtF"></a>
+                    <a name="//apple_ref/swift/Method/ungroupResources(_:on:logger:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18SotoResourceGroups0bC0V16ungroupResources_2on6logger3NIO15EventLoopFutureCyAC07UngroupE6OutputVGAC0lE5InputV_AG0iJ0_pSg7Logging6LoggerVtF">ungroupResources(_:<wbr>on:<wbr>logger:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1173,16 +1308,19 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Deletes specified tags from a specified resource.</p>
+                        <p>Removes the specified resources from the specified group.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">untag</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/ResourceGroups/UntagInput.html">UntagInput</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/ResourceGroups/UntagOutput.html">UntagOutput</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">ungroupResources</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/ResourceGroups/UngroupResourcesInput.html">UngroupResourcesInput</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">logger</span><span class="p">:</span> <span class="kt">Logger</span> <span class="o">=</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="o">.</span><span class="n">loggingDisabled</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/ResourceGroups/UngroupResourcesOutput.html">UngroupResourcesOutput</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ResourceGroups/ResourceGroups_API.swift#L121-L123">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1190,9 +1328,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:17AWSResourceGroups08ResourceB0V11updateGroup_2on3NIO15EventLoopFutureCyAC06UpdateE6OutputVGAC0kE5InputV_AF0hI0_pSgtF"></a>
-                    <a name="//apple_ref/swift/Method/updateGroup(_:on:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:17AWSResourceGroups08ResourceB0V11updateGroup_2on3NIO15EventLoopFutureCyAC06UpdateE6OutputVGAC0kE5InputV_AF0hI0_pSgtF">updateGroup(_:on:)</a>
+                    <a name="/s:18SotoResourceGroups0bC0V5untag_2on6logger3NIO15EventLoopFutureCyAC11UntagOutputVGAC0K5InputV_AG0hI0_pSg7Logging6LoggerVtF"></a>
+                    <a name="//apple_ref/swift/Method/untag(_:on:logger:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18SotoResourceGroups0bC0V5untag_2on6logger3NIO15EventLoopFutureCyAC11UntagOutputVGAC0K5InputV_AG0hI0_pSg7Logging6LoggerVtF">untag(_:<wbr>on:<wbr>logger:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1200,16 +1338,19 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Updates an existing group with a new or changed description. You cannot update the name of a resource group.</p>
+                        <p>Deletes tags from a specified resource group.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">updateGroup</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/ResourceGroups/UpdateGroupInput.html">UpdateGroupInput</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/ResourceGroups/UpdateGroupOutput.html">UpdateGroupOutput</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">untag</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/ResourceGroups/UntagInput.html">UntagInput</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">logger</span><span class="p">:</span> <span class="kt">Logger</span> <span class="o">=</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="o">.</span><span class="n">loggingDisabled</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/ResourceGroups/UntagOutput.html">UntagOutput</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ResourceGroups/ResourceGroups_API.swift#L126-L128">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1217,9 +1358,39 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:17AWSResourceGroups08ResourceB0V16updateGroupQuery_2on3NIO15EventLoopFutureCyAC06UpdateeF6OutputVGAC0leF5InputV_AF0iJ0_pSgtF"></a>
-                    <a name="//apple_ref/swift/Method/updateGroupQuery(_:on:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:17AWSResourceGroups08ResourceB0V16updateGroupQuery_2on3NIO15EventLoopFutureCyAC06UpdateeF6OutputVGAC0leF5InputV_AF0iJ0_pSgtF">updateGroupQuery(_:on:)</a>
+                    <a name="/s:18SotoResourceGroups0bC0V11updateGroup_2on6logger3NIO15EventLoopFutureCyAC06UpdateE6OutputVGAC0lE5InputV_AG0iJ0_pSg7Logging6LoggerVtF"></a>
+                    <a name="//apple_ref/swift/Method/updateGroup(_:on:logger:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18SotoResourceGroups0bC0V11updateGroup_2on6logger3NIO15EventLoopFutureCyAC06UpdateE6OutputVGAC0lE5InputV_AG0iJ0_pSg7Logging6LoggerVtF">updateGroup(_:<wbr>on:<wbr>logger:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Updates the description for an existing group. You cannot update the name of a resource group.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">updateGroup</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/ResourceGroups/UpdateGroupInput.html">UpdateGroupInput</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">logger</span><span class="p">:</span> <span class="kt">Logger</span> <span class="o">=</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="o">.</span><span class="n">loggingDisabled</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/ResourceGroups/UpdateGroupOutput.html">UpdateGroupOutput</a></span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ResourceGroups/ResourceGroups_API.swift#L131-L133">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18SotoResourceGroups0bC0V16updateGroupQuery_2on6logger3NIO15EventLoopFutureCyAC06UpdateeF6OutputVGAC0meF5InputV_AG0jK0_pSg7Logging6LoggerVtF"></a>
+                    <a name="//apple_ref/swift/Method/updateGroupQuery(_:on:logger:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18SotoResourceGroups0bC0V16updateGroupQuery_2on6logger3NIO15EventLoopFutureCyAC06UpdateeF6OutputVGAC0meF5InputV_AG0jK0_pSg7Logging6LoggerVtF">updateGroupQuery(_:<wbr>on:<wbr>logger:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1234,9 +1405,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">updateGroupQuery</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/ResourceGroups/UpdateGroupQueryInput.html">UpdateGroupQueryInput</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/ResourceGroups/UpdateGroupQueryOutput.html">UpdateGroupQueryOutput</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">updateGroupQuery</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/ResourceGroups/UpdateGroupQueryInput.html">UpdateGroupQueryInput</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">logger</span><span class="p">:</span> <span class="kt">Logger</span> <span class="o">=</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="o">.</span><span class="n">loggingDisabled</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/ResourceGroups/UpdateGroupQueryOutput.html">UpdateGroupQueryOutput</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ResourceGroups/ResourceGroups_API.swift#L136-L138">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1247,17 +1421,19 @@
               <div class="task-name-container">
                 <a name="/Paginators"></a>
                 <a name="//apple_ref/swift/Section/Paginators" class="dashAnchor"></a>
-                <a href="#/Paginators">
-                  <h3 class="section-name">Paginators</h3>
-                </a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Paginators"></a>
+                  <h3 class="section-name"><p>Paginators</p>
+</h3>
+                </div>
               </div>
               <ul>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:17AWSResourceGroups08ResourceB0V27listGroupResourcesPaginator_2on0H4Page3NIO15EventLoopFutureCyytGAC04ListeF5InputV_AG0kL0_pSgAIySbGAC0neF6OutputV_AgM_ptctF"></a>
-                    <a name="//apple_ref/swift/Method/listGroupResourcesPaginator(_:on:onPage:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:17AWSResourceGroups08ResourceB0V27listGroupResourcesPaginator_2on0H4Page3NIO15EventLoopFutureCyytGAC04ListeF5InputV_AG0kL0_pSgAIySbGAC0neF6OutputV_AgM_ptctF">listGroupResourcesPaginator(_:on:onPage:)</a>
+                    <a name="/s:18SotoResourceGroups0bC0V27listGroupResourcesPaginator_2on6logger0H4Page3NIO15EventLoopFutureCyytGAC04ListeF5InputV_AH0lM0_pSg7Logging6LoggerVAJySbGAC0oeF6OutputV_AhN_ptctF"></a>
+                    <a name="//apple_ref/swift/Method/listGroupResourcesPaginator(_:on:logger:onPage:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18SotoResourceGroups0bC0V27listGroupResourcesPaginator_2on6logger0H4Page3NIO15EventLoopFutureCyytGAC04ListeF5InputV_AH0lM0_pSg7Logging6LoggerVAJySbGAC0oeF6OutputV_AhN_ptctF">listGroupResourcesPaginator(_:<wbr>on:<wbr>logger:<wbr>onPage:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1265,7 +1441,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Returns a list of ARNs of resources that are members of a specified resource group.</p>
+                        <p>Returns a list of ARNs of the resources that are members of a specified resource group.</p>
 
                       </div>
                       <div class="declaration">
@@ -1275,11 +1451,14 @@
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">listGroupResourcesPaginator</span><span class="p">(</span>
     <span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/ResourceGroups/ListGroupResourcesInput.html">ListGroupResourcesInput</a></span><span class="p">,</span>
     <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
-    <span class="nv">onPage</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/ResourceGroups/ListGroupResourcesOutput.html">ListGroupResourcesOutput</a></span><span class="p">,</span>
-    <span class="kt">EventLoop</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Bool</span><span class="o">&gt;</span>
+    <span class="nv">logger</span><span class="p">:</span> <span class="kt">Logger</span> <span class="o">=</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="o">.</span><span class="n">loggingDisabled</span><span class="p">,</span>
+    <span class="nv">onPage</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/ResourceGroups/ListGroupResourcesOutput.html">ListGroupResourcesOutput</a></span><span class="p">,</span> <span class="kt">EventLoop</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Bool</span><span class="o">&gt;</span>
 <span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Void</span><span class="o">&gt;</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ResourceGroups/ResourceGroups_Paginator.swift#L23-L36">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1287,9 +1466,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:17AWSResourceGroups08ResourceB0V04listB9Paginator_2on0F4Page3NIO15EventLoopFutureCyytGAC04ListB5InputV_AG0iJ0_pSgAIySbGAC0lB6OutputV_AgM_ptctF"></a>
-                    <a name="//apple_ref/swift/Method/listGroupsPaginator(_:on:onPage:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:17AWSResourceGroups08ResourceB0V04listB9Paginator_2on0F4Page3NIO15EventLoopFutureCyytGAC04ListB5InputV_AG0iJ0_pSgAIySbGAC0lB6OutputV_AgM_ptctF">listGroupsPaginator(_:on:onPage:)</a>
+                    <a name="/s:18SotoResourceGroups0bC0V04listC9Paginator_2on6logger0F4Page3NIO15EventLoopFutureCyytGAC04ListC5InputV_AH0jK0_pSg7Logging6LoggerVAJySbGAC0mC6OutputV_AhN_ptctF"></a>
+                    <a name="//apple_ref/swift/Method/listGroupsPaginator(_:on:logger:onPage:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18SotoResourceGroups0bC0V04listC9Paginator_2on6logger0F4Page3NIO15EventLoopFutureCyytGAC04ListC5InputV_AH0jK0_pSg7Logging6LoggerVAJySbGAC0mC6OutputV_AhN_ptctF">listGroupsPaginator(_:<wbr>on:<wbr>logger:<wbr>onPage:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1307,11 +1486,14 @@
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">listGroupsPaginator</span><span class="p">(</span>
     <span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/ResourceGroups/ListGroupsInput.html">ListGroupsInput</a></span><span class="p">,</span>
     <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
-    <span class="nv">onPage</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/ResourceGroups/ListGroupsOutput.html">ListGroupsOutput</a></span><span class="p">,</span>
-    <span class="kt">EventLoop</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Bool</span><span class="o">&gt;</span>
+    <span class="nv">logger</span><span class="p">:</span> <span class="kt">Logger</span> <span class="o">=</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="o">.</span><span class="n">loggingDisabled</span><span class="p">,</span>
+    <span class="nv">onPage</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/ResourceGroups/ListGroupsOutput.html">ListGroupsOutput</a></span><span class="p">,</span> <span class="kt">EventLoop</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Bool</span><span class="o">&gt;</span>
 <span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Void</span><span class="o">&gt;</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ResourceGroups/ResourceGroups_Paginator.swift#L39-L52">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1319,9 +1501,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:17AWSResourceGroups08ResourceB0V24searchResourcesPaginator_2on0G4Page3NIO15EventLoopFutureCyytGAC06SearchE5InputV_AG0jK0_pSgAIySbGAC0mE6OutputV_AgM_ptctF"></a>
-                    <a name="//apple_ref/swift/Method/searchResourcesPaginator(_:on:onPage:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:17AWSResourceGroups08ResourceB0V24searchResourcesPaginator_2on0G4Page3NIO15EventLoopFutureCyytGAC06SearchE5InputV_AG0jK0_pSgAIySbGAC0mE6OutputV_AgM_ptctF">searchResourcesPaginator(_:on:onPage:)</a>
+                    <a name="/s:18SotoResourceGroups0bC0V24searchResourcesPaginator_2on6logger0G4Page3NIO15EventLoopFutureCyytGAC06SearchE5InputV_AH0kL0_pSg7Logging6LoggerVAJySbGAC0nE6OutputV_AhN_ptctF"></a>
+                    <a name="//apple_ref/swift/Method/searchResourcesPaginator(_:on:logger:onPage:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18SotoResourceGroups0bC0V24searchResourcesPaginator_2on6logger0G4Page3NIO15EventLoopFutureCyytGAC06SearchE5InputV_AH0kL0_pSg7Logging6LoggerVAJySbGAC0nE6OutputV_AhN_ptctF">searchResourcesPaginator(_:<wbr>on:<wbr>logger:<wbr>onPage:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1329,7 +1511,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Returns a list of AWS resource identifiers that matches a specified query. The query uses the same format as a resource query in a CreateGroup or UpdateGroupQuery operation.</p>
+                        <p>Returns a list of AWS resource identifiers that matches tne specified query. The query uses the same format as a resource query in a CreateGroup or UpdateGroupQuery operation.</p>
 
                       </div>
                       <div class="declaration">
@@ -1339,11 +1521,14 @@
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">searchResourcesPaginator</span><span class="p">(</span>
     <span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/ResourceGroups/SearchResourcesInput.html">SearchResourcesInput</a></span><span class="p">,</span>
     <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
-    <span class="nv">onPage</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/ResourceGroups/SearchResourcesOutput.html">SearchResourcesOutput</a></span><span class="p">,</span>
-    <span class="kt">EventLoop</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Bool</span><span class="o">&gt;</span>
+    <span class="nv">logger</span><span class="p">:</span> <span class="kt">Logger</span> <span class="o">=</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="o">.</span><span class="n">loggingDisabled</span><span class="p">,</span>
+    <span class="nv">onPage</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/ResourceGroups/SearchResourcesOutput.html">SearchResourcesOutput</a></span><span class="p">,</span> <span class="kt">EventLoop</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Bool</span><span class="o">&gt;</span>
 <span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Void</span><span class="o">&gt;</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ResourceGroups/ResourceGroups_Paginator.swift#L55-L68">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1354,17 +1539,19 @@
               <div class="task-name-container">
                 <a name="/Shapes"></a>
                 <a name="//apple_ref/swift/Section/Shapes" class="dashAnchor"></a>
-                <a href="#/Shapes">
-                  <h3 class="section-name">Shapes</h3>
-                </a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Shapes"></a>
+                  <h3 class="section-name"><p>Shapes</p>
+</h3>
+                </div>
               </div>
               <ul>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:17AWSResourceGroups08ResourceB0V23ListGroupResourcesInputV"></a>
+                    <a name="/s:18SotoResourceGroups0bC0V23ListGroupResourcesInputV"></a>
                     <a name="//apple_ref/swift/Struct/ListGroupResourcesInput" class="dashAnchor"></a>
-                    <a class="token" href="#/s:17AWSResourceGroups08ResourceB0V23ListGroupResourcesInputV">ListGroupResourcesInput</a>
+                    <a class="token" href="#/s:18SotoResourceGroups0bC0V23ListGroupResourcesInputV">ListGroupResourcesInput</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1385,15 +1572,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ResourceGroups/ResourceGroups_Shapes.swift#L522-L559">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:17AWSResourceGroups08ResourceB0V04ListB5InputV"></a>
+                    <a name="/s:18SotoResourceGroups0bC0V04ListC5InputV"></a>
                     <a name="//apple_ref/swift/Struct/ListGroupsInput" class="dashAnchor"></a>
-                    <a class="token" href="#/s:17AWSResourceGroups08ResourceB0V04ListB5InputV">ListGroupsInput</a>
+                    <a class="token" href="#/s:18SotoResourceGroups0bC0V04ListC5InputV">ListGroupsInput</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1414,15 +1604,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ResourceGroups/ResourceGroups_Shapes.swift#L582-L615">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:17AWSResourceGroups08ResourceB0V20SearchResourcesInputV"></a>
+                    <a name="/s:18SotoResourceGroups0bC0V20SearchResourcesInputV"></a>
                     <a name="//apple_ref/swift/Struct/SearchResourcesInput" class="dashAnchor"></a>
-                    <a class="token" href="#/s:17AWSResourceGroups08ResourceB0V20SearchResourcesInputV">SearchResourcesInput</a>
+                    <a class="token" href="#/s:18SotoResourceGroups0bC0V20SearchResourcesInputV">SearchResourcesInput</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1443,15 +1636,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ResourceGroups/ResourceGroups_Shapes.swift#L717-L745">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:17AWSResourceGroups08ResourceB0V16CreateGroupInputV"></a>
+                    <a name="/s:18SotoResourceGroups0bC0V16CreateGroupInputV"></a>
                     <a name="//apple_ref/swift/Struct/CreateGroupInput" class="dashAnchor"></a>
-                    <a class="token" href="#/s:17AWSResourceGroups08ResourceB0V16CreateGroupInputV">CreateGroupInput</a>
+                    <a class="token" href="#/s:18SotoResourceGroups0bC0V16CreateGroupInputV">CreateGroupInput</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1471,15 +1667,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ResourceGroups/ResourceGroups_Shapes.swift#L55-L103">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:17AWSResourceGroups08ResourceB0V17CreateGroupOutputV"></a>
+                    <a name="/s:18SotoResourceGroups0bC0V17CreateGroupOutputV"></a>
                     <a name="//apple_ref/swift/Struct/CreateGroupOutput" class="dashAnchor"></a>
-                    <a class="token" href="#/s:17AWSResourceGroups08ResourceB0V17CreateGroupOutputV">CreateGroupOutput</a>
+                    <a class="token" href="#/s:18SotoResourceGroups0bC0V17CreateGroupOutputV">CreateGroupOutput</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1495,9 +1694,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">CreateGroupOutput</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">CreateGroupOutput</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ResourceGroups/ResourceGroups_Shapes.swift#L105-L128">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1505,9 +1707,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:17AWSResourceGroups08ResourceB0V16DeleteGroupInputV"></a>
+                    <a name="/s:18SotoResourceGroups0bC0V16DeleteGroupInputV"></a>
                     <a name="//apple_ref/swift/Struct/DeleteGroupInput" class="dashAnchor"></a>
-                    <a class="token" href="#/s:17AWSResourceGroups08ResourceB0V16DeleteGroupInputV">DeleteGroupInput</a>
+                    <a class="token" href="#/s:18SotoResourceGroups0bC0V16DeleteGroupInputV">DeleteGroupInput</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1527,15 +1729,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ResourceGroups/ResourceGroups_Shapes.swift#L130-L147">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:17AWSResourceGroups08ResourceB0V17DeleteGroupOutputV"></a>
+                    <a name="/s:18SotoResourceGroups0bC0V17DeleteGroupOutputV"></a>
                     <a name="//apple_ref/swift/Struct/DeleteGroupOutput" class="dashAnchor"></a>
-                    <a class="token" href="#/s:17AWSResourceGroups08ResourceB0V17DeleteGroupOutputV">DeleteGroupOutput</a>
+                    <a class="token" href="#/s:18SotoResourceGroups0bC0V17DeleteGroupOutputV">DeleteGroupOutput</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1551,9 +1756,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DeleteGroupOutput</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DeleteGroupOutput</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ResourceGroups/ResourceGroups_Shapes.swift#L149-L160">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1561,9 +1769,102 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:17AWSResourceGroups08ResourceB0V13GetGroupInputV"></a>
+                    <a name="/s:18SotoResourceGroups0bC0V06FailedB0V"></a>
+                    <a name="//apple_ref/swift/Struct/FailedResource" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18SotoResourceGroups0bC0V06FailedB0V">FailedResource</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/ResourceGroups/FailedResource.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">FailedResource</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ResourceGroups/ResourceGroups_Shapes.swift#L162-L181">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18SotoResourceGroups0bC0V26GetGroupConfigurationInputV"></a>
+                    <a name="//apple_ref/swift/Struct/GetGroupConfigurationInput" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18SotoResourceGroups0bC0V26GetGroupConfigurationInputV">GetGroupConfigurationInput</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/ResourceGroups/GetGroupConfigurationInput.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">GetGroupConfigurationInput</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSEncodableShape.html">AWSEncodableShape</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ResourceGroups/ResourceGroups_Shapes.swift#L183-L200">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18SotoResourceGroups0bC0V27GetGroupConfigurationOutputV"></a>
+                    <a name="//apple_ref/swift/Struct/GetGroupConfigurationOutput" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18SotoResourceGroups0bC0V27GetGroupConfigurationOutputV">GetGroupConfigurationOutput</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/ResourceGroups/GetGroupConfigurationOutput.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">GetGroupConfigurationOutput</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ResourceGroups/ResourceGroups_Shapes.swift#L202-L213">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18SotoResourceGroups0bC0V13GetGroupInputV"></a>
                     <a name="//apple_ref/swift/Struct/GetGroupInput" class="dashAnchor"></a>
-                    <a class="token" href="#/s:17AWSResourceGroups08ResourceB0V13GetGroupInputV">GetGroupInput</a>
+                    <a class="token" href="#/s:18SotoResourceGroups0bC0V13GetGroupInputV">GetGroupInput</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1583,15 +1884,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ResourceGroups/ResourceGroups_Shapes.swift#L215-L232">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:17AWSResourceGroups08ResourceB0V14GetGroupOutputV"></a>
+                    <a name="/s:18SotoResourceGroups0bC0V14GetGroupOutputV"></a>
                     <a name="//apple_ref/swift/Struct/GetGroupOutput" class="dashAnchor"></a>
-                    <a class="token" href="#/s:17AWSResourceGroups08ResourceB0V14GetGroupOutputV">GetGroupOutput</a>
+                    <a class="token" href="#/s:18SotoResourceGroups0bC0V14GetGroupOutputV">GetGroupOutput</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1607,9 +1911,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">GetGroupOutput</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">GetGroupOutput</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ResourceGroups/ResourceGroups_Shapes.swift#L234-L245">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1617,9 +1924,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:17AWSResourceGroups08ResourceB0V18GetGroupQueryInputV"></a>
+                    <a name="/s:18SotoResourceGroups0bC0V18GetGroupQueryInputV"></a>
                     <a name="//apple_ref/swift/Struct/GetGroupQueryInput" class="dashAnchor"></a>
-                    <a class="token" href="#/s:17AWSResourceGroups08ResourceB0V18GetGroupQueryInputV">GetGroupQueryInput</a>
+                    <a class="token" href="#/s:18SotoResourceGroups0bC0V18GetGroupQueryInputV">GetGroupQueryInput</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1639,15 +1946,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ResourceGroups/ResourceGroups_Shapes.swift#L247-L264">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:17AWSResourceGroups08ResourceB0V19GetGroupQueryOutputV"></a>
+                    <a name="/s:18SotoResourceGroups0bC0V19GetGroupQueryOutputV"></a>
                     <a name="//apple_ref/swift/Struct/GetGroupQueryOutput" class="dashAnchor"></a>
-                    <a class="token" href="#/s:17AWSResourceGroups08ResourceB0V19GetGroupQueryOutputV">GetGroupQueryOutput</a>
+                    <a class="token" href="#/s:18SotoResourceGroups0bC0V19GetGroupQueryOutputV">GetGroupQueryOutput</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1663,9 +1973,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">GetGroupQueryOutput</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">GetGroupQueryOutput</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ResourceGroups/ResourceGroups_Shapes.swift#L266-L277">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1673,9 +1986,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:17AWSResourceGroups08ResourceB0V12GetTagsInputV"></a>
+                    <a name="/s:18SotoResourceGroups0bC0V12GetTagsInputV"></a>
                     <a name="//apple_ref/swift/Struct/GetTagsInput" class="dashAnchor"></a>
-                    <a class="token" href="#/s:17AWSResourceGroups08ResourceB0V12GetTagsInputV">GetTagsInput</a>
+                    <a class="token" href="#/s:18SotoResourceGroups0bC0V12GetTagsInputV">GetTagsInput</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1695,15 +2008,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ResourceGroups/ResourceGroups_Shapes.swift#L279-L298">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:17AWSResourceGroups08ResourceB0V13GetTagsOutputV"></a>
+                    <a name="/s:18SotoResourceGroups0bC0V13GetTagsOutputV"></a>
                     <a name="//apple_ref/swift/Struct/GetTagsOutput" class="dashAnchor"></a>
-                    <a class="token" href="#/s:17AWSResourceGroups08ResourceB0V13GetTagsOutputV">GetTagsOutput</a>
+                    <a class="token" href="#/s:18SotoResourceGroups0bC0V13GetTagsOutputV">GetTagsOutput</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1719,9 +2035,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">GetTagsOutput</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">GetTagsOutput</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ResourceGroups/ResourceGroups_Shapes.swift#L300-L315">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1729,9 +2048,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:17AWSResourceGroups08ResourceB0V5GroupV"></a>
+                    <a name="/s:18SotoResourceGroups0bC0V5GroupV"></a>
                     <a name="//apple_ref/swift/Struct/Group" class="dashAnchor"></a>
-                    <a class="token" href="#/s:17AWSResourceGroups08ResourceB0V5GroupV">Group</a>
+                    <a class="token" href="#/s:18SotoResourceGroups0bC0V5GroupV">Group</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1747,9 +2066,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Group</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Group</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ResourceGroups/ResourceGroups_Shapes.swift#L317-L336">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1757,9 +2079,102 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:17AWSResourceGroups08ResourceB0V11GroupFilterV"></a>
+                    <a name="/s:18SotoResourceGroups0bC0V18GroupConfigurationV"></a>
+                    <a name="//apple_ref/swift/Struct/GroupConfiguration" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18SotoResourceGroups0bC0V18GroupConfigurationV">GroupConfiguration</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/ResourceGroups/GroupConfiguration.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">GroupConfiguration</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ResourceGroups/ResourceGroups_Shapes.swift#L338-L361">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18SotoResourceGroups0bC0V22GroupConfigurationItemV"></a>
+                    <a name="//apple_ref/swift/Struct/GroupConfigurationItem" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18SotoResourceGroups0bC0V22GroupConfigurationItemV">GroupConfigurationItem</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/ResourceGroups/GroupConfigurationItem.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">GroupConfigurationItem</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSEncodableShape.html">AWSEncodableShape</a></span> <span class="o">&amp;</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ResourceGroups/ResourceGroups_Shapes.swift#L363-L386">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18SotoResourceGroups0bC0V27GroupConfigurationParameterV"></a>
+                    <a name="//apple_ref/swift/Struct/GroupConfigurationParameter" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18SotoResourceGroups0bC0V27GroupConfigurationParameterV">GroupConfigurationParameter</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/ResourceGroups/GroupConfigurationParameter.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">GroupConfigurationParameter</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSEncodableShape.html">AWSEncodableShape</a></span> <span class="o">&amp;</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ResourceGroups/ResourceGroups_Shapes.swift#L388-L414">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18SotoResourceGroups0bC0V11GroupFilterV"></a>
                     <a name="//apple_ref/swift/Struct/GroupFilter" class="dashAnchor"></a>
-                    <a class="token" href="#/s:17AWSResourceGroups08ResourceB0V11GroupFilterV">GroupFilter</a>
+                    <a class="token" href="#/s:18SotoResourceGroups0bC0V11GroupFilterV">GroupFilter</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1779,15 +2194,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ResourceGroups/ResourceGroups_Shapes.swift#L416-L441">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:17AWSResourceGroups08ResourceB0V15GroupIdentifierV"></a>
+                    <a name="/s:18SotoResourceGroups0bC0V15GroupIdentifierV"></a>
                     <a name="//apple_ref/swift/Struct/GroupIdentifier" class="dashAnchor"></a>
-                    <a class="token" href="#/s:17AWSResourceGroups08ResourceB0V15GroupIdentifierV">GroupIdentifier</a>
+                    <a class="token" href="#/s:18SotoResourceGroups0bC0V15GroupIdentifierV">GroupIdentifier</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1803,9 +2221,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">GroupIdentifier</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">GroupIdentifier</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ResourceGroups/ResourceGroups_Shapes.swift#L443-L458">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1813,9 +2234,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:17AWSResourceGroups08ResourceB0V10GroupQueryV"></a>
+                    <a name="/s:18SotoResourceGroups0bC0V10GroupQueryV"></a>
                     <a name="//apple_ref/swift/Struct/GroupQuery" class="dashAnchor"></a>
-                    <a class="token" href="#/s:17AWSResourceGroups08ResourceB0V10GroupQueryV">GroupQuery</a>
+                    <a class="token" href="#/s:18SotoResourceGroups0bC0V10GroupQueryV">GroupQuery</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1831,9 +2252,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">GroupQuery</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">GroupQuery</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ResourceGroups/ResourceGroups_Shapes.swift#L460-L475">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1841,9 +2265,71 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:17AWSResourceGroups08ResourceB0V24ListGroupResourcesOutputV"></a>
+                    <a name="/s:18SotoResourceGroups0bC0V19GroupResourcesInputV"></a>
+                    <a name="//apple_ref/swift/Struct/GroupResourcesInput" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18SotoResourceGroups0bC0V19GroupResourcesInputV">GroupResourcesInput</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/ResourceGroups/GroupResourcesInput.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">GroupResourcesInput</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSEncodableShape.html">AWSEncodableShape</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ResourceGroups/ResourceGroups_Shapes.swift#L477-L503">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18SotoResourceGroups0bC0V20GroupResourcesOutputV"></a>
+                    <a name="//apple_ref/swift/Struct/GroupResourcesOutput" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18SotoResourceGroups0bC0V20GroupResourcesOutputV">GroupResourcesOutput</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/ResourceGroups/GroupResourcesOutput.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">GroupResourcesOutput</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ResourceGroups/ResourceGroups_Shapes.swift#L505-L520">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18SotoResourceGroups0bC0V24ListGroupResourcesOutputV"></a>
                     <a name="//apple_ref/swift/Struct/ListGroupResourcesOutput" class="dashAnchor"></a>
-                    <a class="token" href="#/s:17AWSResourceGroups08ResourceB0V24ListGroupResourcesOutputV">ListGroupResourcesOutput</a>
+                    <a class="token" href="#/s:18SotoResourceGroups0bC0V24ListGroupResourcesOutputV">ListGroupResourcesOutput</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1859,9 +2345,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ListGroupResourcesOutput</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ListGroupResourcesOutput</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ResourceGroups/ResourceGroups_Shapes.swift#L561-L580">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1869,9 +2358,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:17AWSResourceGroups08ResourceB0V04ListB6OutputV"></a>
+                    <a name="/s:18SotoResourceGroups0bC0V04ListC6OutputV"></a>
                     <a name="//apple_ref/swift/Struct/ListGroupsOutput" class="dashAnchor"></a>
-                    <a class="token" href="#/s:17AWSResourceGroups08ResourceB0V04ListB6OutputV">ListGroupsOutput</a>
+                    <a class="token" href="#/s:18SotoResourceGroups0bC0V04ListC6OutputV">ListGroupsOutput</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1887,9 +2376,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ListGroupsOutput</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ListGroupsOutput</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ResourceGroups/ResourceGroups_Shapes.swift#L617-L632">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1897,9 +2389,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:17AWSResourceGroups08ResourceB0V10QueryErrorV"></a>
+                    <a name="/s:18SotoResourceGroups0bC0V10QueryErrorV"></a>
                     <a name="//apple_ref/swift/Struct/QueryError" class="dashAnchor"></a>
-                    <a class="token" href="#/s:17AWSResourceGroups08ResourceB0V10QueryErrorV">QueryError</a>
+                    <a class="token" href="#/s:18SotoResourceGroups0bC0V10QueryErrorV">QueryError</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1915,9 +2407,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">QueryError</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">QueryError</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ResourceGroups/ResourceGroups_Shapes.swift#L634-L649">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1925,9 +2420,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:17AWSResourceGroups08ResourceB0V0C6FilterV"></a>
+                    <a name="/s:18SotoResourceGroups0bC0V0B6FilterV"></a>
                     <a name="//apple_ref/swift/Struct/ResourceFilter" class="dashAnchor"></a>
-                    <a class="token" href="#/s:17AWSResourceGroups08ResourceB0V0C6FilterV">ResourceFilter</a>
+                    <a class="token" href="#/s:18SotoResourceGroups0bC0V0B6FilterV">ResourceFilter</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1947,15 +2442,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ResourceGroups/ResourceGroups_Shapes.swift#L651-L676">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:17AWSResourceGroups08ResourceB0V0C10IdentifierV"></a>
+                    <a name="/s:18SotoResourceGroups0bC0V0B10IdentifierV"></a>
                     <a name="//apple_ref/swift/Struct/ResourceIdentifier" class="dashAnchor"></a>
-                    <a class="token" href="#/s:17AWSResourceGroups08ResourceB0V0C10IdentifierV">ResourceIdentifier</a>
+                    <a class="token" href="#/s:18SotoResourceGroups0bC0V0B10IdentifierV">ResourceIdentifier</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1971,9 +2469,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ResourceIdentifier</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ResourceIdentifier</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ResourceGroups/ResourceGroups_Shapes.swift#L678-L693">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1981,9 +2482,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:17AWSResourceGroups08ResourceB0V0C5QueryV"></a>
+                    <a name="/s:18SotoResourceGroups0bC0V0B5QueryV"></a>
                     <a name="//apple_ref/swift/Struct/ResourceQuery" class="dashAnchor"></a>
-                    <a class="token" href="#/s:17AWSResourceGroups08ResourceB0V0C5QueryV">ResourceQuery</a>
+                    <a class="token" href="#/s:18SotoResourceGroups0bC0V0B5QueryV">ResourceQuery</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1999,9 +2500,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ResourceQuery</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSEncodableShape.html">AWSEncodableShape</a></span> <span class="o">&amp;</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ResourceQuery</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSEncodableShape.html">AWSEncodableShape</a></span> <span class="o">&amp;</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ResourceGroups/ResourceGroups_Shapes.swift#L695-L715">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -2009,9 +2513,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:17AWSResourceGroups08ResourceB0V21SearchResourcesOutputV"></a>
+                    <a name="/s:18SotoResourceGroups0bC0V21SearchResourcesOutputV"></a>
                     <a name="//apple_ref/swift/Struct/SearchResourcesOutput" class="dashAnchor"></a>
-                    <a class="token" href="#/s:17AWSResourceGroups08ResourceB0V21SearchResourcesOutputV">SearchResourcesOutput</a>
+                    <a class="token" href="#/s:18SotoResourceGroups0bC0V21SearchResourcesOutputV">SearchResourcesOutput</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2027,9 +2531,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">SearchResourcesOutput</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">SearchResourcesOutput</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ResourceGroups/ResourceGroups_Shapes.swift#L747-L766">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -2037,9 +2544,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:17AWSResourceGroups08ResourceB0V8TagInputV"></a>
+                    <a name="/s:18SotoResourceGroups0bC0V8TagInputV"></a>
                     <a name="//apple_ref/swift/Struct/TagInput" class="dashAnchor"></a>
-                    <a class="token" href="#/s:17AWSResourceGroups08ResourceB0V8TagInputV">TagInput</a>
+                    <a class="token" href="#/s:18SotoResourceGroups0bC0V8TagInputV">TagInput</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2059,15 +2566,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ResourceGroups/ResourceGroups_Shapes.swift#L768-L800">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:17AWSResourceGroups08ResourceB0V9TagOutputV"></a>
+                    <a name="/s:18SotoResourceGroups0bC0V9TagOutputV"></a>
                     <a name="//apple_ref/swift/Struct/TagOutput" class="dashAnchor"></a>
-                    <a class="token" href="#/s:17AWSResourceGroups08ResourceB0V9TagOutputV">TagOutput</a>
+                    <a class="token" href="#/s:18SotoResourceGroups0bC0V9TagOutputV">TagOutput</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2083,9 +2593,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">TagOutput</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">TagOutput</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ResourceGroups/ResourceGroups_Shapes.swift#L802-L817">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -2093,9 +2606,71 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:17AWSResourceGroups08ResourceB0V10UntagInputV"></a>
+                    <a name="/s:18SotoResourceGroups0bC0V21UngroupResourcesInputV"></a>
+                    <a name="//apple_ref/swift/Struct/UngroupResourcesInput" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18SotoResourceGroups0bC0V21UngroupResourcesInputV">UngroupResourcesInput</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/ResourceGroups/UngroupResourcesInput.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">UngroupResourcesInput</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSEncodableShape.html">AWSEncodableShape</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ResourceGroups/ResourceGroups_Shapes.swift#L819-L845">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18SotoResourceGroups0bC0V22UngroupResourcesOutputV"></a>
+                    <a name="//apple_ref/swift/Struct/UngroupResourcesOutput" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18SotoResourceGroups0bC0V22UngroupResourcesOutputV">UngroupResourcesOutput</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/ResourceGroups/UngroupResourcesOutput.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">UngroupResourcesOutput</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ResourceGroups/ResourceGroups_Shapes.swift#L847-L862">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18SotoResourceGroups0bC0V10UntagInputV"></a>
                     <a name="//apple_ref/swift/Struct/UntagInput" class="dashAnchor"></a>
-                    <a class="token" href="#/s:17AWSResourceGroups08ResourceB0V10UntagInputV">UntagInput</a>
+                    <a class="token" href="#/s:18SotoResourceGroups0bC0V10UntagInputV">UntagInput</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2115,15 +2690,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ResourceGroups/ResourceGroups_Shapes.swift#L864-L893">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:17AWSResourceGroups08ResourceB0V11UntagOutputV"></a>
+                    <a name="/s:18SotoResourceGroups0bC0V11UntagOutputV"></a>
                     <a name="//apple_ref/swift/Struct/UntagOutput" class="dashAnchor"></a>
-                    <a class="token" href="#/s:17AWSResourceGroups08ResourceB0V11UntagOutputV">UntagOutput</a>
+                    <a class="token" href="#/s:18SotoResourceGroups0bC0V11UntagOutputV">UntagOutput</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2139,9 +2717,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">UntagOutput</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">UntagOutput</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ResourceGroups/ResourceGroups_Shapes.swift#L895-L910">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -2149,9 +2730,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:17AWSResourceGroups08ResourceB0V16UpdateGroupInputV"></a>
+                    <a name="/s:18SotoResourceGroups0bC0V16UpdateGroupInputV"></a>
                     <a name="//apple_ref/swift/Struct/UpdateGroupInput" class="dashAnchor"></a>
-                    <a class="token" href="#/s:17AWSResourceGroups08ResourceB0V16UpdateGroupInputV">UpdateGroupInput</a>
+                    <a class="token" href="#/s:18SotoResourceGroups0bC0V16UpdateGroupInputV">UpdateGroupInput</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2171,15 +2752,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ResourceGroups/ResourceGroups_Shapes.swift#L912-L935">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:17AWSResourceGroups08ResourceB0V17UpdateGroupOutputV"></a>
+                    <a name="/s:18SotoResourceGroups0bC0V17UpdateGroupOutputV"></a>
                     <a name="//apple_ref/swift/Struct/UpdateGroupOutput" class="dashAnchor"></a>
-                    <a class="token" href="#/s:17AWSResourceGroups08ResourceB0V17UpdateGroupOutputV">UpdateGroupOutput</a>
+                    <a class="token" href="#/s:18SotoResourceGroups0bC0V17UpdateGroupOutputV">UpdateGroupOutput</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2195,9 +2779,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">UpdateGroupOutput</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">UpdateGroupOutput</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ResourceGroups/ResourceGroups_Shapes.swift#L937-L948">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -2205,9 +2792,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:17AWSResourceGroups08ResourceB0V21UpdateGroupQueryInputV"></a>
+                    <a name="/s:18SotoResourceGroups0bC0V21UpdateGroupQueryInputV"></a>
                     <a name="//apple_ref/swift/Struct/UpdateGroupQueryInput" class="dashAnchor"></a>
-                    <a class="token" href="#/s:17AWSResourceGroups08ResourceB0V21UpdateGroupQueryInputV">UpdateGroupQueryInput</a>
+                    <a class="token" href="#/s:18SotoResourceGroups0bC0V21UpdateGroupQueryInputV">UpdateGroupQueryInput</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2227,15 +2814,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ResourceGroups/ResourceGroups_Shapes.swift#L950-L972">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:17AWSResourceGroups08ResourceB0V22UpdateGroupQueryOutputV"></a>
+                    <a name="/s:18SotoResourceGroups0bC0V22UpdateGroupQueryOutputV"></a>
                     <a name="//apple_ref/swift/Struct/UpdateGroupQueryOutput" class="dashAnchor"></a>
-                    <a class="token" href="#/s:17AWSResourceGroups08ResourceB0V22UpdateGroupQueryOutputV">UpdateGroupQueryOutput</a>
+                    <a class="token" href="#/s:18SotoResourceGroups0bC0V22UpdateGroupQueryOutputV">UpdateGroupQueryOutput</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2251,9 +2841,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">UpdateGroupQueryOutput</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">UpdateGroupQueryOutput</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ResourceGroups/ResourceGroups_Shapes.swift#L974-L985">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -2264,17 +2857,50 @@
               <div class="task-name-container">
                 <a name="/Enums"></a>
                 <a name="//apple_ref/swift/Section/Enums" class="dashAnchor"></a>
-                <a href="#/Enums">
-                  <h3 class="section-name">Enums</h3>
-                </a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Enums"></a>
+                  <h3 class="section-name"><p>Enums</p>
+</h3>
+                </div>
               </div>
               <ul>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:17AWSResourceGroups08ResourceB0V15GroupFilterNameO"></a>
+                    <a name="/s:18SotoResourceGroups0bC0V24GroupConfigurationStatusO"></a>
+                    <a name="//apple_ref/swift/Enum/GroupConfigurationStatus" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18SotoResourceGroups0bC0V24GroupConfigurationStatusO">GroupConfigurationStatus</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/ResourceGroups/GroupConfigurationStatus.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">GroupConfigurationStatus</span> <span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="kt">CustomStringConvertible</span><span class="p">,</span> <span class="kt">Codable</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ResourceGroups/ResourceGroups_Shapes.swift#L23-L28">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18SotoResourceGroups0bC0V15GroupFilterNameO"></a>
                     <a name="//apple_ref/swift/Enum/GroupFilterName" class="dashAnchor"></a>
-                    <a class="token" href="#/s:17AWSResourceGroups08ResourceB0V15GroupFilterNameO">GroupFilterName</a>
+                    <a class="token" href="#/s:18SotoResourceGroups0bC0V15GroupFilterNameO">GroupFilterName</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2294,15 +2920,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ResourceGroups/ResourceGroups_Shapes.swift#L30-L34">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:17AWSResourceGroups08ResourceB0V14QueryErrorCodeO"></a>
+                    <a name="/s:18SotoResourceGroups0bC0V14QueryErrorCodeO"></a>
                     <a name="//apple_ref/swift/Enum/QueryErrorCode" class="dashAnchor"></a>
-                    <a class="token" href="#/s:17AWSResourceGroups08ResourceB0V14QueryErrorCodeO">QueryErrorCode</a>
+                    <a class="token" href="#/s:18SotoResourceGroups0bC0V14QueryErrorCodeO">QueryErrorCode</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2322,15 +2951,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ResourceGroups/ResourceGroups_Shapes.swift#L36-L40">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:17AWSResourceGroups08ResourceB0V9QueryTypeO"></a>
+                    <a name="/s:18SotoResourceGroups0bC0V9QueryTypeO"></a>
                     <a name="//apple_ref/swift/Enum/QueryType" class="dashAnchor"></a>
-                    <a class="token" href="#/s:17AWSResourceGroups08ResourceB0V9QueryTypeO">QueryType</a>
+                    <a class="token" href="#/s:18SotoResourceGroups0bC0V9QueryTypeO">QueryType</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2350,15 +2982,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ResourceGroups/ResourceGroups_Shapes.swift#L42-L46">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:17AWSResourceGroups08ResourceB0V0C10FilterNameO"></a>
+                    <a name="/s:18SotoResourceGroups0bC0V0B10FilterNameO"></a>
                     <a name="//apple_ref/swift/Enum/ResourceFilterName" class="dashAnchor"></a>
-                    <a class="token" href="#/s:17AWSResourceGroups08ResourceB0V0C10FilterNameO">ResourceFilterName</a>
+                    <a class="token" href="#/s:18SotoResourceGroups0bC0V0B10FilterNameO">ResourceFilterName</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2377,6 +3012,9 @@
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">ResourceFilterName</span> <span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="kt">CustomStringConvertible</span><span class="p">,</span> <span class="kt">Codable</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ResourceGroups/ResourceGroups_Shapes.swift#L48-L51">Show on GitHub</a>
                       </div>
                     </section>
                   </div>

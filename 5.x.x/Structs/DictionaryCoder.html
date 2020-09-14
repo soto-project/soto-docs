@@ -15,7 +15,7 @@
     <header>
       <div class="content-wrapper">
         <p><a href="../index.html"> Docs</a> (54% documented)</p>
-        <p class="header-right"><a href="https://github.com/swift-aws/aws-sdk-swift"><img src="../img/gh.png"/>View on GitHub</a></p>
+        <p class="header-right"><a href="https://github.com/soto-project/soto"><img src="../img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -28,6 +28,9 @@
     <div class="content-wrapper">
       <nav class="sidebar">
         <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../User%20Guides.html">User Guides</a>
+          </li>
           <li class="nav-group-name">
             <a href="../AWSSDKSwiftCore.html">AWSSDKSwiftCore</a>
           </li>
@@ -68,6 +71,9 @@
             <a href="../AppSync.html">AppSync</a>
           </li>
           <li class="nav-group-name">
+            <a href="../Appflow.html">Appflow</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../ApplicationAutoScaling.html">ApplicationAutoScaling</a>
           </li>
           <li class="nav-group-name">
@@ -93,6 +99,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../Batch.html">Batch</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Braket.html">Braket</a>
           </li>
           <li class="nav-group-name">
             <a href="../Budgets.html">Budgets</a>
@@ -335,6 +344,12 @@
             <a href="../IAM.html">IAM</a>
           </li>
           <li class="nav-group-name">
+            <a href="../IVS.html">IVS</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../IdentityStore.html">IdentityStore</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../Imagebuilder.html">Imagebuilder</a>
           </li>
           <li class="nav-group-name">
@@ -557,6 +572,9 @@
             <a href="../Redshift.html">Redshift</a>
           </li>
           <li class="nav-group-name">
+            <a href="../RedshiftDataAPIService.html">RedshiftDataAPIService</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../Rekognition.html">Rekognition</a>
           </li>
           <li class="nav-group-name">
@@ -606,6 +624,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../SSO.html">SSO</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../SSOAdmin.html">SSOAdmin</a>
           </li>
           <li class="nav-group-name">
             <a href="../SSOOIDC.html">SSOOIDC</a>
@@ -735,6 +756,7 @@
             <h1>DictionaryCoder</h1>
               <div class="declaration">
                 <div class="language">
+                  
                   <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DictionaryCoder</span><span class="o">&lt;</span><span class="kt">Properties</span><span class="p">,</span> <span class="kt">Key</span><span class="p">,</span> <span class="kt">Value</span><span class="o">&gt;</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/CustomCoder.html">CustomCoder</a></span> <span class="k">where</span> <span class="kt">Properties</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/DictionaryCoderProperties.html">DictionaryCoderProperties</a></span><span class="p">,</span> <span class="kt">Key</span> <span class="p">:</span> <span class="kt">Hashable</span></code></pre>
 <pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">DictionaryCoder</span><span class="p">:</span> <span class="kt"><a href="../Protocols/CustomDecoder.html">CustomDecoder</a></span> <span class="k">where</span> <span class="kt">Key</span><span class="p">:</span> <span class="kt">Decodable</span><span class="p">,</span> <span class="kt">Value</span><span class="p">:</span> <span class="kt">Decodable</span></code></pre>
 <pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">DictionaryCoder</span><span class="p">:</span> <span class="kt"><a href="../Protocols/CustomEncoder.html">CustomEncoder</a></span> <span class="k">where</span> <span class="kt">Key</span><span class="p">:</span> <span class="kt">Encodable</span><span class="p">,</span> <span class="kt">Value</span><span class="p">:</span> <span class="kt">Encodable</span></code></pre>
@@ -750,9 +772,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:15AWSSDKSwiftCore15DictionaryCoderV12CodableValuea"></a>
+                    <a name="/s:8SotoCore15DictionaryCoderV12CodableValuea"></a>
                     <a name="//apple_ref/swift/Alias/CodableValue" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15AWSSDKSwiftCore15DictionaryCoderV12CodableValuea">CodableValue</a>
+                    <a class="token" href="#/s:8SotoCore15DictionaryCoderV12CodableValuea">CodableValue</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -771,6 +793,9 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/.build/checkouts/soto-core/Sources/SotoCore/Encoder/CodableProperties/CollectionCoders.swift#L">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
@@ -780,17 +805,19 @@
               <div class="task-name-container">
                 <a name="/Available%20where%20%60Key%60:%20%60Decodable%60,%20%60Value%60:%20%60Decodable%60"></a>
                 <a name="//apple_ref/swift/Section/Available where `Key`: `Decodable`, `Value`: `Decodable`" class="dashAnchor"></a>
-                <a href="#/Available%20where%20%60Key%60:%20%60Decodable%60,%20%60Value%60:%20%60Decodable%60">
-                  <h3 class="section-name">Available where `Key`: `Decodable`, `Value`: `Decodable`</h3>
-                </a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Available%20where%20%60Key%60:%20%60Decodable%60,%20%60Value%60:%20%60Decodable%60"></a>
+                  <h3 class="section-name"><p>Available where <code>Key</code>: <code>Decodable</code>, <code>Value</code>: <code>Decodable</code></p>
+</h3>
+                </div>
               </div>
               <ul>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:15AWSSDKSwiftCore15DictionaryCoderVAASeR_SeR0_rlE6decode4fromSDyq_q0_Gs7Decoder_p_tKFZ"></a>
+                    <a name="/s:8SotoCore15DictionaryCoderVAASeR_SeR0_rlE6decode4fromSDyq_q0_Gs7Decoder_p_tKFZ"></a>
                     <a name="//apple_ref/swift/Method/decode(from:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15AWSSDKSwiftCore15DictionaryCoderVAASeR_SeR0_rlE6decode4fromSDyq_q0_Gs7Decoder_p_tKFZ">decode(from:)</a>
+                    <a class="token" href="#/s:8SotoCore15DictionaryCoderVAASeR_SeR0_rlE6decode4fromSDyq_q0_Gs7Decoder_p_tKFZ">decode(from:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -805,9 +832,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">decode</span><span class="p">(</span><span class="n">from</span> <span class="nv">decoder</span><span class="p">:</span> <span class="kt">Decoder</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Structs/DictionaryCoder.html#/s:15AWSSDKSwiftCore15DictionaryCoderV12CodableValuea">CodableValue</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">decode</span><span class="p">(</span><span class="n">from</span> <span class="nv">decoder</span><span class="p">:</span> <span class="kt">Decoder</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Structs/DictionaryCoder.html#/s:8SotoCore15DictionaryCoderV12CodableValuea">CodableValue</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/.build/checkouts/soto-core/Sources/SotoCore/Encoder/CodableProperties/CollectionCoders.swift#L72-L96">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -818,17 +848,19 @@
               <div class="task-name-container">
                 <a name="/Available%20where%20%60Key%60:%20%60Encodable%60,%20%60Value%60:%20%60Encodable%60"></a>
                 <a name="//apple_ref/swift/Section/Available where `Key`: `Encodable`, `Value`: `Encodable`" class="dashAnchor"></a>
-                <a href="#/Available%20where%20%60Key%60:%20%60Encodable%60,%20%60Value%60:%20%60Encodable%60">
-                  <h3 class="section-name">Available where `Key`: `Encodable`, `Value`: `Encodable`</h3>
-                </a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Available%20where%20%60Key%60:%20%60Encodable%60,%20%60Value%60:%20%60Encodable%60"></a>
+                  <h3 class="section-name"><p>Available where <code>Key</code>: <code>Encodable</code>, <code>Value</code>: <code>Encodable</code></p>
+</h3>
+                </div>
               </div>
               <ul>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:15AWSSDKSwiftCore15DictionaryCoderVAASER_SER0_rlE6encode5value2toySDyq_q0_G_s7Encoder_ptKFZ"></a>
+                    <a name="/s:8SotoCore15DictionaryCoderVAASER_SER0_rlE6encode5value2toySDyq_q0_G_s7Encoder_ptKFZ"></a>
                     <a name="//apple_ref/swift/Method/encode(value:to:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15AWSSDKSwiftCore15DictionaryCoderVAASER_SER0_rlE6encode5value2toySDyq_q0_G_s7Encoder_ptKFZ">encode(value:to:)</a>
+                    <a class="token" href="#/s:8SotoCore15DictionaryCoderVAASER_SER0_rlE6encode5value2toySDyq_q0_G_s7Encoder_ptKFZ">encode(value:<wbr>to:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -843,9 +875,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">encode</span><span class="p">(</span><span class="nv">value</span><span class="p">:</span> <span class="kt"><a href="../Structs/DictionaryCoder.html#/s:15AWSSDKSwiftCore15DictionaryCoderV12CodableValuea">CodableValue</a></span><span class="p">,</span> <span class="n">to</span> <span class="nv">encoder</span><span class="p">:</span> <span class="kt">Encoder</span><span class="p">)</span> <span class="k">throws</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">encode</span><span class="p">(</span><span class="nv">value</span><span class="p">:</span> <span class="kt"><a href="../Structs/DictionaryCoder.html#/s:8SotoCore15DictionaryCoderV12CodableValuea">CodableValue</a></span><span class="p">,</span> <span class="n">to</span> <span class="nv">encoder</span><span class="p">:</span> <span class="kt">Encoder</span><span class="p">)</span> <span class="k">throws</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/.build/checkouts/soto-core/Sources/SotoCore/Encoder/CodableProperties/CollectionCoders.swift#L101-L118">Show on GitHub</a>
                       </div>
                     </section>
                   </div>

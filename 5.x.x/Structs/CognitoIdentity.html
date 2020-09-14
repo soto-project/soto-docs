@@ -15,7 +15,7 @@
     <header>
       <div class="content-wrapper">
         <p><a href="../index.html"> Docs</a> (54% documented)</p>
-        <p class="header-right"><a href="https://github.com/swift-aws/aws-sdk-swift"><img src="../img/gh.png"/>View on GitHub</a></p>
+        <p class="header-right"><a href="https://github.com/soto-project/soto"><img src="../img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -28,6 +28,9 @@
     <div class="content-wrapper">
       <nav class="sidebar">
         <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../User%20Guides.html">User Guides</a>
+          </li>
           <li class="nav-group-name">
             <a href="../AWSSDKSwiftCore.html">AWSSDKSwiftCore</a>
           </li>
@@ -68,6 +71,9 @@
             <a href="../AppSync.html">AppSync</a>
           </li>
           <li class="nav-group-name">
+            <a href="../Appflow.html">Appflow</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../ApplicationAutoScaling.html">ApplicationAutoScaling</a>
           </li>
           <li class="nav-group-name">
@@ -93,6 +99,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../Batch.html">Batch</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Braket.html">Braket</a>
           </li>
           <li class="nav-group-name">
             <a href="../Budgets.html">Budgets</a>
@@ -335,6 +344,12 @@
             <a href="../IAM.html">IAM</a>
           </li>
           <li class="nav-group-name">
+            <a href="../IVS.html">IVS</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../IdentityStore.html">IdentityStore</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../Imagebuilder.html">Imagebuilder</a>
           </li>
           <li class="nav-group-name">
@@ -557,6 +572,9 @@
             <a href="../Redshift.html">Redshift</a>
           </li>
           <li class="nav-group-name">
+            <a href="../RedshiftDataAPIService.html">RedshiftDataAPIService</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../Rekognition.html">Rekognition</a>
           </li>
           <li class="nav-group-name">
@@ -606,6 +624,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../SSO.html">SSO</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../SSOAdmin.html">SSOAdmin</a>
           </li>
           <li class="nav-group-name">
             <a href="../SSOOIDC.html">SSOOIDC</a>
@@ -735,13 +756,12 @@
             <h1>CognitoIdentity</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">CognitoIdentity</span></code></pre>
+                  
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">CognitoIdentity</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSService.html">AWSService</a></span></code></pre>
 
                 </div>
               </div>
-            <p>Client object for interacting with AWS CognitoIdentity service.</p>
-
-<p>Amazon Cognito Federated Identities Amazon Cognito Federated Identities is a web service that delivers scoped temporary credentials to mobile devices and other untrusted environments. It uniquely identifies a device and supplies the user with a consistent identity over the lifetime of an application. Using Amazon Cognito Federated Identities, you can enable authentication with one or more third-party identity providers (Facebook, Google, or Login with Amazon) or an Amazon Cognito user pool, and you can also choose to support unauthenticated access from your app. Cognito delivers a unique identifier for each user and acts as an OpenID token provider trusted by AWS Security Token Service (STS) to access temporary, limited-privilege AWS credentials. For a description of the authentication flow from the Amazon Cognito Developer Guide see Authentication Flow. For more information see Amazon Cognito Federated Identities.</p>
+            <p>Undocumented</p>
 
           </section>
           <section class="section task-group-section">
@@ -749,17 +769,19 @@
               <div class="task-name-container">
                 <a name="/Member%20variables"></a>
                 <a name="//apple_ref/swift/Section/Member variables" class="dashAnchor"></a>
-                <a href="#/Member%20variables">
-                  <h3 class="section-name">Member variables</h3>
-                </a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Member%20variables"></a>
+                  <h3 class="section-name"><p>Member variables</p>
+</h3>
+                </div>
               </div>
               <ul>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:18AWSCognitoIdentity07CognitoB0V6client15AWSSDKSwiftCore9AWSClientCvp"></a>
+                    <a name="/s:8SotoCore10AWSServiceP6clientAA9AWSClientCvp"></a>
                     <a name="//apple_ref/swift/Property/client" class="dashAnchor"></a>
-                    <a class="token" href="#/s:18AWSCognitoIdentity07CognitoB0V6client15AWSSDKSwiftCore9AWSClientCvp">client</a>
+                    <a class="token" href="#/s:8SotoCore10AWSServiceP6clientAA9AWSClientCvp">client</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -767,8 +789,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
-
+                        
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
@@ -778,15 +799,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CognitoIdentity/CognitoIdentity_API.swift#L19">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:18AWSCognitoIdentity07CognitoB0V13serviceConfig15AWSSDKSwiftCore010AWSServiceE0Cvp"></a>
-                    <a name="//apple_ref/swift/Property/serviceConfig" class="dashAnchor"></a>
-                    <a class="token" href="#/s:18AWSCognitoIdentity07CognitoB0V13serviceConfig15AWSSDKSwiftCore010AWSServiceE0Cvp">serviceConfig</a>
+                    <a name="/s:8SotoCore10AWSServiceP6configAA0C6ConfigCvp"></a>
+                    <a name="//apple_ref/swift/Property/config" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8SotoCore10AWSServiceP6configAA0C6ConfigCvp">config</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -794,16 +818,18 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
-
+                        
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">serviceConfig</span><span class="p">:</span> <span class="kt"><a href="../Classes/AWSServiceConfig.html">AWSServiceConfig</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">config</span><span class="p">:</span> <span class="kt"><a href="../Classes/AWSServiceConfig.html">AWSServiceConfig</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CognitoIdentity/CognitoIdentity_API.swift#L21">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -814,17 +840,19 @@
               <div class="task-name-container">
                 <a name="/Initialization"></a>
                 <a name="//apple_ref/swift/Section/Initialization" class="dashAnchor"></a>
-                <a href="#/Initialization">
-                  <h3 class="section-name">Initialization</h3>
-                </a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Initialization"></a>
+                  <h3 class="section-name"><p>Initialization</p>
+</h3>
+                </div>
               </div>
               <ul>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:18AWSCognitoIdentity07CognitoB0V6client6region9partition8endpointAC15AWSSDKSwiftCore9AWSClientC_AH6RegionVSgAH9PartitionVSSSgtcfc"></a>
-                    <a name="//apple_ref/swift/Method/init(client:region:partition:endpoint:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:18AWSCognitoIdentity07CognitoB0V6client6region9partition8endpointAC15AWSSDKSwiftCore9AWSClientC_AH6RegionVSgAH9PartitionVSSSgtcfc">init(client:region:partition:endpoint:)</a>
+                    <a name="/s:19SotoCognitoIdentity0bC0V6client6region9partition8endpoint7timeout19byteBufferAllocator7optionsAC0A4Core9AWSClientC_AK6RegionVSgAK12AWSPartitionVSSSg3NIO10TimeAmountVSgAT04BytejK0VAK16AWSServiceConfigC7OptionsVtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(client:region:partition:endpoint:timeout:byteBufferAllocator:options:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:19SotoCognitoIdentity0bC0V6client6region9partition8endpoint7timeout19byteBufferAllocator7optionsAC0A4Core9AWSClientC_AK6RegionVSgAK12AWSPartitionVSSSg3NIO10TimeAmountVSgAT04BytejK0VAK16AWSServiceConfigC7OptionsVtcfc">init(client:<wbr>region:<wbr>partition:<wbr>endpoint:<wbr>timeout:<wbr>byteBufferAllocator:<wbr>options:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -841,9 +869,12 @@
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span>
     <span class="nv">client</span><span class="p">:</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="p">,</span>
-    <span class="nv">region</span><span class="p">:</span> <span class="kt">AWSSDKSwiftCore</span><span class="o">.</span><span class="kt"><a href="../Structs/Region.html">Region</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
-    <span class="nv">partition</span><span class="p">:</span> <span class="kt">AWSSDKSwiftCore</span><span class="o">.</span><span class="kt"><a href="../Structs/Partition.html">Partition</a></span> <span class="o">=</span> <span class="o">.</span><span class="n">aws</span><span class="p">,</span>
-    <span class="nv">endpoint</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span>
+    <span class="nv">region</span><span class="p">:</span> <span class="kt">SotoCore</span><span class="o">.</span><span class="kt"><a href="../Structs/Region.html">Region</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="nv">partition</span><span class="p">:</span> <span class="kt"><a href="../Structs/AWSPartition.html">AWSPartition</a></span> <span class="o">=</span> <span class="o">.</span><span class="n">aws</span><span class="p">,</span>
+    <span class="nv">endpoint</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="nv">timeout</span><span class="p">:</span> <span class="kt">TimeAmount</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="nv">byteBufferAllocator</span><span class="p">:</span> <span class="kt">ByteBufferAllocator</span> <span class="o">=</span> <span class="kt">ByteBufferAllocator</span><span class="p">(),</span>
+    <span class="nv">options</span><span class="p">:</span> <span class="kt"><a href="../Classes/AWSServiceConfig.html">AWSServiceConfig</a></span><span class="o">.</span><span class="kt">Options</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="p">)</span></code></pre>
 
                         </div>
@@ -900,8 +931,23 @@
                                 </div>
                               </td>
                             </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>timeout</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Timeout value for HTTP requests</p>
+                                </div>
+                              </td>
+                            </tr>
                           </tbody>
                         </table>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CognitoIdentity/CognitoIdentity_API.swift#L39-L62">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -912,17 +958,19 @@
               <div class="task-name-container">
                 <a name="/API%20Calls"></a>
                 <a name="//apple_ref/swift/Section/API Calls" class="dashAnchor"></a>
-                <a href="#/API%20Calls">
-                  <h3 class="section-name">API Calls</h3>
-                </a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/API%20Calls"></a>
+                  <h3 class="section-name"><p>API Calls</p>
+</h3>
+                </div>
               </div>
               <ul>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:18AWSCognitoIdentity07CognitoB0V06createB4Pool_2on3NIO15EventLoopFutureCyAC0bE0VGAC06CreatebE5InputV_AF0hI0_pSgtF"></a>
-                    <a name="//apple_ref/swift/Method/createIdentityPool(_:on:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:18AWSCognitoIdentity07CognitoB0V06createB4Pool_2on3NIO15EventLoopFutureCyAC0bE0VGAC06CreatebE5InputV_AF0hI0_pSgtF">createIdentityPool(_:on:)</a>
+                    <a name="/s:19SotoCognitoIdentity0bC0V06createC4Pool_2on6logger3NIO15EventLoopFutureCyAC0cE0VGAC06CreatecE5InputV_AG0iJ0_pSg7Logging6LoggerVtF"></a>
+                    <a name="//apple_ref/swift/Method/createIdentityPool(_:on:logger:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:19SotoCognitoIdentity0bC0V06createC4Pool_2on6logger3NIO15EventLoopFutureCyAC0cE0VGAC06CreatecE5InputV_AG0iJ0_pSg7Logging6LoggerVtF">createIdentityPool(_:<wbr>on:<wbr>logger:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -937,9 +985,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">createIdentityPool</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/CognitoIdentity/CreateIdentityPoolInput.html">CreateIdentityPoolInput</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/CognitoIdentity/IdentityPool.html">IdentityPool</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">createIdentityPool</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/CognitoIdentity/CreateIdentityPoolInput.html">CreateIdentityPoolInput</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">logger</span><span class="p">:</span> <span class="kt">Logger</span> <span class="o">=</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="o">.</span><span class="n">loggingDisabled</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/CognitoIdentity/IdentityPool.html">IdentityPool</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CognitoIdentity/CognitoIdentity_API.swift#L67-L69">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -947,9 +998,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:18AWSCognitoIdentity07CognitoB0V16deleteIdentities_2on3NIO15EventLoopFutureCyAC06DeleteE8ResponseVGAC0kE5InputV_AF0hI0_pSgtF"></a>
-                    <a name="//apple_ref/swift/Method/deleteIdentities(_:on:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:18AWSCognitoIdentity07CognitoB0V16deleteIdentities_2on3NIO15EventLoopFutureCyAC06DeleteE8ResponseVGAC0kE5InputV_AF0hI0_pSgtF">deleteIdentities(_:on:)</a>
+                    <a name="/s:19SotoCognitoIdentity0bC0V16deleteIdentities_2on6logger3NIO15EventLoopFutureCyAC06DeleteE8ResponseVGAC0lE5InputV_AG0iJ0_pSg7Logging6LoggerVtF"></a>
+                    <a name="//apple_ref/swift/Method/deleteIdentities(_:on:logger:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:19SotoCognitoIdentity0bC0V16deleteIdentities_2on6logger3NIO15EventLoopFutureCyAC06DeleteE8ResponseVGAC0lE5InputV_AG0iJ0_pSg7Logging6LoggerVtF">deleteIdentities(_:<wbr>on:<wbr>logger:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -964,9 +1015,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">deleteIdentities</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/CognitoIdentity/DeleteIdentitiesInput.html">DeleteIdentitiesInput</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/CognitoIdentity/DeleteIdentitiesResponse.html">DeleteIdentitiesResponse</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">deleteIdentities</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/CognitoIdentity/DeleteIdentitiesInput.html">DeleteIdentitiesInput</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">logger</span><span class="p">:</span> <span class="kt">Logger</span> <span class="o">=</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="o">.</span><span class="n">loggingDisabled</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/CognitoIdentity/DeleteIdentitiesResponse.html">DeleteIdentitiesResponse</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CognitoIdentity/CognitoIdentity_API.swift#L72-L74">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -974,9 +1028,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:18AWSCognitoIdentity07CognitoB0V06deleteB4Pool_2on3NIO15EventLoopFutureCyytGAC06DeletebE5InputV_AF0hI0_pSgtF"></a>
-                    <a name="//apple_ref/swift/Method/deleteIdentityPool(_:on:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:18AWSCognitoIdentity07CognitoB0V06deleteB4Pool_2on3NIO15EventLoopFutureCyytGAC06DeletebE5InputV_AF0hI0_pSgtF">deleteIdentityPool(_:on:)</a>
+                    <a name="/s:19SotoCognitoIdentity0bC0V06deleteC4Pool_2on6logger3NIO15EventLoopFutureCyytGAC06DeletecE5InputV_AG0iJ0_pSg7Logging6LoggerVtF"></a>
+                    <a name="//apple_ref/swift/Method/deleteIdentityPool(_:on:logger:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:19SotoCognitoIdentity0bC0V06deleteC4Pool_2on6logger3NIO15EventLoopFutureCyytGAC06DeletecE5InputV_AG0iJ0_pSg7Logging6LoggerVtF">deleteIdentityPool(_:<wbr>on:<wbr>logger:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -992,9 +1046,12 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
-<span class="kd">public</span> <span class="kd">func</span> <span class="nf">deleteIdentityPool</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/CognitoIdentity/DeleteIdentityPoolInput.html">DeleteIdentityPoolInput</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Void</span><span class="o">&gt;</span></code></pre>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">deleteIdentityPool</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/CognitoIdentity/DeleteIdentityPoolInput.html">DeleteIdentityPoolInput</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">logger</span><span class="p">:</span> <span class="kt">Logger</span> <span class="o">=</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="o">.</span><span class="n">loggingDisabled</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Void</span><span class="o">&gt;</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CognitoIdentity/CognitoIdentity_API.swift#L77-L79">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1002,9 +1059,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:18AWSCognitoIdentity07CognitoB0V08describeB0_2on3NIO15EventLoopFutureCyAC0B11DescriptionVGAC08DescribeB5InputV_AF0gH0_pSgtF"></a>
-                    <a name="//apple_ref/swift/Method/describeIdentity(_:on:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:18AWSCognitoIdentity07CognitoB0V08describeB0_2on3NIO15EventLoopFutureCyAC0B11DescriptionVGAC08DescribeB5InputV_AF0gH0_pSgtF">describeIdentity(_:on:)</a>
+                    <a name="/s:19SotoCognitoIdentity0bC0V08describeC0_2on6logger3NIO15EventLoopFutureCyAC0C11DescriptionVGAC08DescribeC5InputV_AG0hI0_pSg7Logging6LoggerVtF"></a>
+                    <a name="//apple_ref/swift/Method/describeIdentity(_:on:logger:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:19SotoCognitoIdentity0bC0V08describeC0_2on6logger3NIO15EventLoopFutureCyAC0C11DescriptionVGAC08DescribeC5InputV_AG0hI0_pSg7Logging6LoggerVtF">describeIdentity(_:<wbr>on:<wbr>logger:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1019,9 +1076,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">describeIdentity</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/CognitoIdentity/DescribeIdentityInput.html">DescribeIdentityInput</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/CognitoIdentity/IdentityDescription.html">IdentityDescription</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">describeIdentity</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/CognitoIdentity/DescribeIdentityInput.html">DescribeIdentityInput</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">logger</span><span class="p">:</span> <span class="kt">Logger</span> <span class="o">=</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="o">.</span><span class="n">loggingDisabled</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/CognitoIdentity/IdentityDescription.html">IdentityDescription</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CognitoIdentity/CognitoIdentity_API.swift#L82-L84">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1029,9 +1089,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:18AWSCognitoIdentity07CognitoB0V08describeB4Pool_2on3NIO15EventLoopFutureCyAC0bE0VGAC08DescribebE5InputV_AF0hI0_pSgtF"></a>
-                    <a name="//apple_ref/swift/Method/describeIdentityPool(_:on:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:18AWSCognitoIdentity07CognitoB0V08describeB4Pool_2on3NIO15EventLoopFutureCyAC0bE0VGAC08DescribebE5InputV_AF0hI0_pSgtF">describeIdentityPool(_:on:)</a>
+                    <a name="/s:19SotoCognitoIdentity0bC0V08describeC4Pool_2on6logger3NIO15EventLoopFutureCyAC0cE0VGAC08DescribecE5InputV_AG0iJ0_pSg7Logging6LoggerVtF"></a>
+                    <a name="//apple_ref/swift/Method/describeIdentityPool(_:on:logger:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:19SotoCognitoIdentity0bC0V08describeC4Pool_2on6logger3NIO15EventLoopFutureCyAC0cE0VGAC08DescribecE5InputV_AG0iJ0_pSg7Logging6LoggerVtF">describeIdentityPool(_:<wbr>on:<wbr>logger:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1046,9 +1106,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">describeIdentityPool</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/CognitoIdentity/DescribeIdentityPoolInput.html">DescribeIdentityPoolInput</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/CognitoIdentity/IdentityPool.html">IdentityPool</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">describeIdentityPool</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/CognitoIdentity/DescribeIdentityPoolInput.html">DescribeIdentityPoolInput</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">logger</span><span class="p">:</span> <span class="kt">Logger</span> <span class="o">=</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="o">.</span><span class="n">loggingDisabled</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/CognitoIdentity/IdentityPool.html">IdentityPool</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CognitoIdentity/CognitoIdentity_API.swift#L87-L89">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1056,9 +1119,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:18AWSCognitoIdentity07CognitoB0V017getCredentialsForB0_2on3NIO15EventLoopFutureCyAC03GetefB8ResponseVGAC0lefB5InputV_AF0iJ0_pSgtF"></a>
-                    <a name="//apple_ref/swift/Method/getCredentialsForIdentity(_:on:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:18AWSCognitoIdentity07CognitoB0V017getCredentialsForB0_2on3NIO15EventLoopFutureCyAC03GetefB8ResponseVGAC0lefB5InputV_AF0iJ0_pSgtF">getCredentialsForIdentity(_:on:)</a>
+                    <a name="/s:19SotoCognitoIdentity0bC0V017getCredentialsForC0_2on6logger3NIO15EventLoopFutureCyAC03GetefC8ResponseVGAC0mefC5InputV_AG0jK0_pSg7Logging6LoggerVtF"></a>
+                    <a name="//apple_ref/swift/Method/getCredentialsForIdentity(_:on:logger:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:19SotoCognitoIdentity0bC0V017getCredentialsForC0_2on6logger3NIO15EventLoopFutureCyAC03GetefC8ResponseVGAC0mefC5InputV_AG0jK0_pSg7Logging6LoggerVtF">getCredentialsForIdentity(_:<wbr>on:<wbr>logger:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1073,9 +1136,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getCredentialsForIdentity</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/CognitoIdentity/GetCredentialsForIdentityInput.html">GetCredentialsForIdentityInput</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/CognitoIdentity/GetCredentialsForIdentityResponse.html">GetCredentialsForIdentityResponse</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getCredentialsForIdentity</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/CognitoIdentity/GetCredentialsForIdentityInput.html">GetCredentialsForIdentityInput</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">logger</span><span class="p">:</span> <span class="kt">Logger</span> <span class="o">=</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="o">.</span><span class="n">loggingDisabled</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/CognitoIdentity/GetCredentialsForIdentityResponse.html">GetCredentialsForIdentityResponse</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CognitoIdentity/CognitoIdentity_API.swift#L92-L94">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1083,9 +1149,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:18AWSCognitoIdentity07CognitoB0V5getId_2on3NIO15EventLoopFutureCyAC03GetE8ResponseVGAC0kE5InputV_AF0hI0_pSgtF"></a>
-                    <a name="//apple_ref/swift/Method/getId(_:on:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:18AWSCognitoIdentity07CognitoB0V5getId_2on3NIO15EventLoopFutureCyAC03GetE8ResponseVGAC0kE5InputV_AF0hI0_pSgtF">getId(_:on:)</a>
+                    <a name="/s:19SotoCognitoIdentity0bC0V5getId_2on6logger3NIO15EventLoopFutureCyAC03GetE8ResponseVGAC0lE5InputV_AG0iJ0_pSg7Logging6LoggerVtF"></a>
+                    <a name="//apple_ref/swift/Method/getId(_:on:logger:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:19SotoCognitoIdentity0bC0V5getId_2on6logger3NIO15EventLoopFutureCyAC03GetE8ResponseVGAC0lE5InputV_AG0iJ0_pSg7Logging6LoggerVtF">getId(_:<wbr>on:<wbr>logger:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1100,9 +1166,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getId</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/CognitoIdentity/GetIdInput.html">GetIdInput</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/CognitoIdentity/GetIdResponse.html">GetIdResponse</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getId</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/CognitoIdentity/GetIdInput.html">GetIdInput</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">logger</span><span class="p">:</span> <span class="kt">Logger</span> <span class="o">=</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="o">.</span><span class="n">loggingDisabled</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/CognitoIdentity/GetIdResponse.html">GetIdResponse</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CognitoIdentity/CognitoIdentity_API.swift#L97-L99">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1110,9 +1179,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:18AWSCognitoIdentity07CognitoB0V03getB9PoolRoles_2on3NIO15EventLoopFutureCyAC03GetbeF8ResponseVGAC0lbeF5InputV_AF0iJ0_pSgtF"></a>
-                    <a name="//apple_ref/swift/Method/getIdentityPoolRoles(_:on:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:18AWSCognitoIdentity07CognitoB0V03getB9PoolRoles_2on3NIO15EventLoopFutureCyAC03GetbeF8ResponseVGAC0lbeF5InputV_AF0iJ0_pSgtF">getIdentityPoolRoles(_:on:)</a>
+                    <a name="/s:19SotoCognitoIdentity0bC0V03getC9PoolRoles_2on6logger3NIO15EventLoopFutureCyAC03GetceF8ResponseVGAC0mceF5InputV_AG0jK0_pSg7Logging6LoggerVtF"></a>
+                    <a name="//apple_ref/swift/Method/getIdentityPoolRoles(_:on:logger:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:19SotoCognitoIdentity0bC0V03getC9PoolRoles_2on6logger3NIO15EventLoopFutureCyAC03GetceF8ResponseVGAC0mceF5InputV_AG0jK0_pSg7Logging6LoggerVtF">getIdentityPoolRoles(_:<wbr>on:<wbr>logger:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1127,9 +1196,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getIdentityPoolRoles</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/CognitoIdentity/GetIdentityPoolRolesInput.html">GetIdentityPoolRolesInput</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/CognitoIdentity/GetIdentityPoolRolesResponse.html">GetIdentityPoolRolesResponse</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getIdentityPoolRoles</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/CognitoIdentity/GetIdentityPoolRolesInput.html">GetIdentityPoolRolesInput</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">logger</span><span class="p">:</span> <span class="kt">Logger</span> <span class="o">=</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="o">.</span><span class="n">loggingDisabled</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/CognitoIdentity/GetIdentityPoolRolesResponse.html">GetIdentityPoolRolesResponse</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CognitoIdentity/CognitoIdentity_API.swift#L102-L104">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1137,9 +1209,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:18AWSCognitoIdentity07CognitoB0V14getOpenIdToken_2on3NIO15EventLoopFutureCyAC03GetefG8ResponseVGAC0mefG5InputV_AF0jK0_pSgtF"></a>
-                    <a name="//apple_ref/swift/Method/getOpenIdToken(_:on:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:18AWSCognitoIdentity07CognitoB0V14getOpenIdToken_2on3NIO15EventLoopFutureCyAC03GetefG8ResponseVGAC0mefG5InputV_AF0jK0_pSgtF">getOpenIdToken(_:on:)</a>
+                    <a name="/s:19SotoCognitoIdentity0bC0V14getOpenIdToken_2on6logger3NIO15EventLoopFutureCyAC03GetefG8ResponseVGAC0nefG5InputV_AG0kL0_pSg7Logging6LoggerVtF"></a>
+                    <a name="//apple_ref/swift/Method/getOpenIdToken(_:on:logger:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:19SotoCognitoIdentity0bC0V14getOpenIdToken_2on6logger3NIO15EventLoopFutureCyAC03GetefG8ResponseVGAC0nefG5InputV_AG0kL0_pSg7Logging6LoggerVtF">getOpenIdToken(_:<wbr>on:<wbr>logger:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1154,9 +1226,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getOpenIdToken</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/CognitoIdentity/GetOpenIdTokenInput.html">GetOpenIdTokenInput</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/CognitoIdentity/GetOpenIdTokenResponse.html">GetOpenIdTokenResponse</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getOpenIdToken</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/CognitoIdentity/GetOpenIdTokenInput.html">GetOpenIdTokenInput</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">logger</span><span class="p">:</span> <span class="kt">Logger</span> <span class="o">=</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="o">.</span><span class="n">loggingDisabled</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/CognitoIdentity/GetOpenIdTokenResponse.html">GetOpenIdTokenResponse</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CognitoIdentity/CognitoIdentity_API.swift#L107-L109">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1164,9 +1239,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:18AWSCognitoIdentity07CognitoB0V026getOpenIdTokenForDeveloperB0_2on3NIO15EventLoopFutureCyAC03GetefghiB8ResponseVGAC0oefghiB5InputV_AF0lM0_pSgtF"></a>
-                    <a name="//apple_ref/swift/Method/getOpenIdTokenForDeveloperIdentity(_:on:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:18AWSCognitoIdentity07CognitoB0V026getOpenIdTokenForDeveloperB0_2on3NIO15EventLoopFutureCyAC03GetefghiB8ResponseVGAC0oefghiB5InputV_AF0lM0_pSgtF">getOpenIdTokenForDeveloperIdentity(_:on:)</a>
+                    <a name="/s:19SotoCognitoIdentity0bC0V026getOpenIdTokenForDeveloperC0_2on6logger3NIO15EventLoopFutureCyAC03GetefghiC8ResponseVGAC0pefghiC5InputV_AG0mN0_pSg7Logging6LoggerVtF"></a>
+                    <a name="//apple_ref/swift/Method/getOpenIdTokenForDeveloperIdentity(_:on:logger:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:19SotoCognitoIdentity0bC0V026getOpenIdTokenForDeveloperC0_2on6logger3NIO15EventLoopFutureCyAC03GetefghiC8ResponseVGAC0pefghiC5InputV_AG0mN0_pSg7Logging6LoggerVtF">getOpenIdTokenForDeveloperIdentity(_:<wbr>on:<wbr>logger:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1181,9 +1256,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getOpenIdTokenForDeveloperIdentity</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/CognitoIdentity/GetOpenIdTokenForDeveloperIdentityInput.html">GetOpenIdTokenForDeveloperIdentityInput</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/CognitoIdentity/GetOpenIdTokenForDeveloperIdentityResponse.html">GetOpenIdTokenForDeveloperIdentityResponse</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getOpenIdTokenForDeveloperIdentity</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/CognitoIdentity/GetOpenIdTokenForDeveloperIdentityInput.html">GetOpenIdTokenForDeveloperIdentityInput</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">logger</span><span class="p">:</span> <span class="kt">Logger</span> <span class="o">=</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="o">.</span><span class="n">loggingDisabled</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/CognitoIdentity/GetOpenIdTokenForDeveloperIdentityResponse.html">GetOpenIdTokenForDeveloperIdentityResponse</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CognitoIdentity/CognitoIdentity_API.swift#L112-L114">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1191,9 +1269,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:18AWSCognitoIdentity07CognitoB0V14listIdentities_2on3NIO15EventLoopFutureCyAC04ListE8ResponseVGAC0kE5InputV_AF0hI0_pSgtF"></a>
-                    <a name="//apple_ref/swift/Method/listIdentities(_:on:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:18AWSCognitoIdentity07CognitoB0V14listIdentities_2on3NIO15EventLoopFutureCyAC04ListE8ResponseVGAC0kE5InputV_AF0hI0_pSgtF">listIdentities(_:on:)</a>
+                    <a name="/s:19SotoCognitoIdentity0bC0V14listIdentities_2on6logger3NIO15EventLoopFutureCyAC04ListE8ResponseVGAC0lE5InputV_AG0iJ0_pSg7Logging6LoggerVtF"></a>
+                    <a name="//apple_ref/swift/Method/listIdentities(_:on:logger:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:19SotoCognitoIdentity0bC0V14listIdentities_2on6logger3NIO15EventLoopFutureCyAC04ListE8ResponseVGAC0lE5InputV_AG0iJ0_pSg7Logging6LoggerVtF">listIdentities(_:<wbr>on:<wbr>logger:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1208,9 +1286,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">listIdentities</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/CognitoIdentity/ListIdentitiesInput.html">ListIdentitiesInput</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/CognitoIdentity/ListIdentitiesResponse.html">ListIdentitiesResponse</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">listIdentities</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/CognitoIdentity/ListIdentitiesInput.html">ListIdentitiesInput</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">logger</span><span class="p">:</span> <span class="kt">Logger</span> <span class="o">=</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="o">.</span><span class="n">loggingDisabled</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/CognitoIdentity/ListIdentitiesResponse.html">ListIdentitiesResponse</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CognitoIdentity/CognitoIdentity_API.swift#L117-L119">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1218,9 +1299,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:18AWSCognitoIdentity07CognitoB0V04listB5Pools_2on3NIO15EventLoopFutureCyAC04ListbE8ResponseVGAC0kbE5InputV_AF0hI0_pSgtF"></a>
-                    <a name="//apple_ref/swift/Method/listIdentityPools(_:on:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:18AWSCognitoIdentity07CognitoB0V04listB5Pools_2on3NIO15EventLoopFutureCyAC04ListbE8ResponseVGAC0kbE5InputV_AF0hI0_pSgtF">listIdentityPools(_:on:)</a>
+                    <a name="/s:19SotoCognitoIdentity0bC0V04listC5Pools_2on6logger3NIO15EventLoopFutureCyAC04ListcE8ResponseVGAC0lcE5InputV_AG0iJ0_pSg7Logging6LoggerVtF"></a>
+                    <a name="//apple_ref/swift/Method/listIdentityPools(_:on:logger:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:19SotoCognitoIdentity0bC0V04listC5Pools_2on6logger3NIO15EventLoopFutureCyAC04ListcE8ResponseVGAC0lcE5InputV_AG0iJ0_pSg7Logging6LoggerVtF">listIdentityPools(_:<wbr>on:<wbr>logger:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1235,9 +1316,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">listIdentityPools</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/CognitoIdentity/ListIdentityPoolsInput.html">ListIdentityPoolsInput</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/CognitoIdentity/ListIdentityPoolsResponse.html">ListIdentityPoolsResponse</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">listIdentityPools</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/CognitoIdentity/ListIdentityPoolsInput.html">ListIdentityPoolsInput</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">logger</span><span class="p">:</span> <span class="kt">Logger</span> <span class="o">=</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="o">.</span><span class="n">loggingDisabled</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/CognitoIdentity/ListIdentityPoolsResponse.html">ListIdentityPoolsResponse</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CognitoIdentity/CognitoIdentity_API.swift#L122-L124">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1245,9 +1329,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:18AWSCognitoIdentity07CognitoB0V19listTagsForResource_2on3NIO15EventLoopFutureCyAC04ListefG8ResponseVGAC0mefG5InputV_AF0jK0_pSgtF"></a>
-                    <a name="//apple_ref/swift/Method/listTagsForResource(_:on:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:18AWSCognitoIdentity07CognitoB0V19listTagsForResource_2on3NIO15EventLoopFutureCyAC04ListefG8ResponseVGAC0mefG5InputV_AF0jK0_pSgtF">listTagsForResource(_:on:)</a>
+                    <a name="/s:19SotoCognitoIdentity0bC0V19listTagsForResource_2on6logger3NIO15EventLoopFutureCyAC04ListefG8ResponseVGAC0nefG5InputV_AG0kL0_pSg7Logging6LoggerVtF"></a>
+                    <a name="//apple_ref/swift/Method/listTagsForResource(_:on:logger:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:19SotoCognitoIdentity0bC0V19listTagsForResource_2on6logger3NIO15EventLoopFutureCyAC04ListefG8ResponseVGAC0nefG5InputV_AG0kL0_pSg7Logging6LoggerVtF">listTagsForResource(_:<wbr>on:<wbr>logger:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1262,9 +1346,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">listTagsForResource</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/CognitoIdentity/ListTagsForResourceInput.html">ListTagsForResourceInput</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/CognitoIdentity/ListTagsForResourceResponse.html">ListTagsForResourceResponse</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">listTagsForResource</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/CognitoIdentity/ListTagsForResourceInput.html">ListTagsForResourceInput</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">logger</span><span class="p">:</span> <span class="kt">Logger</span> <span class="o">=</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="o">.</span><span class="n">loggingDisabled</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/CognitoIdentity/ListTagsForResourceResponse.html">ListTagsForResourceResponse</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CognitoIdentity/CognitoIdentity_API.swift#L127-L129">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1272,9 +1359,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:18AWSCognitoIdentity07CognitoB0V015lookupDeveloperB0_2on3NIO15EventLoopFutureCyAC06LookupeB8ResponseVGAC0keB5InputV_AF0hI0_pSgtF"></a>
-                    <a name="//apple_ref/swift/Method/lookupDeveloperIdentity(_:on:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:18AWSCognitoIdentity07CognitoB0V015lookupDeveloperB0_2on3NIO15EventLoopFutureCyAC06LookupeB8ResponseVGAC0keB5InputV_AF0hI0_pSgtF">lookupDeveloperIdentity(_:on:)</a>
+                    <a name="/s:19SotoCognitoIdentity0bC0V015lookupDeveloperC0_2on6logger3NIO15EventLoopFutureCyAC06LookupeC8ResponseVGAC0leC5InputV_AG0iJ0_pSg7Logging6LoggerVtF"></a>
+                    <a name="//apple_ref/swift/Method/lookupDeveloperIdentity(_:on:logger:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:19SotoCognitoIdentity0bC0V015lookupDeveloperC0_2on6logger3NIO15EventLoopFutureCyAC06LookupeC8ResponseVGAC0leC5InputV_AG0iJ0_pSg7Logging6LoggerVtF">lookupDeveloperIdentity(_:<wbr>on:<wbr>logger:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1289,9 +1376,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">lookupDeveloperIdentity</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/CognitoIdentity/LookupDeveloperIdentityInput.html">LookupDeveloperIdentityInput</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/CognitoIdentity/LookupDeveloperIdentityResponse.html">LookupDeveloperIdentityResponse</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">lookupDeveloperIdentity</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/CognitoIdentity/LookupDeveloperIdentityInput.html">LookupDeveloperIdentityInput</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">logger</span><span class="p">:</span> <span class="kt">Logger</span> <span class="o">=</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="o">.</span><span class="n">loggingDisabled</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/CognitoIdentity/LookupDeveloperIdentityResponse.html">LookupDeveloperIdentityResponse</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CognitoIdentity/CognitoIdentity_API.swift#L132-L134">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1299,9 +1389,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:18AWSCognitoIdentity07CognitoB0V24mergeDeveloperIdentities_2on3NIO15EventLoopFutureCyAC05MergeeF8ResponseVGAC0leF5InputV_AF0iJ0_pSgtF"></a>
-                    <a name="//apple_ref/swift/Method/mergeDeveloperIdentities(_:on:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:18AWSCognitoIdentity07CognitoB0V24mergeDeveloperIdentities_2on3NIO15EventLoopFutureCyAC05MergeeF8ResponseVGAC0leF5InputV_AF0iJ0_pSgtF">mergeDeveloperIdentities(_:on:)</a>
+                    <a name="/s:19SotoCognitoIdentity0bC0V24mergeDeveloperIdentities_2on6logger3NIO15EventLoopFutureCyAC05MergeeF8ResponseVGAC0meF5InputV_AG0jK0_pSg7Logging6LoggerVtF"></a>
+                    <a name="//apple_ref/swift/Method/mergeDeveloperIdentities(_:on:logger:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:19SotoCognitoIdentity0bC0V24mergeDeveloperIdentities_2on6logger3NIO15EventLoopFutureCyAC05MergeeF8ResponseVGAC0meF5InputV_AG0jK0_pSg7Logging6LoggerVtF">mergeDeveloperIdentities(_:<wbr>on:<wbr>logger:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1316,9 +1406,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">mergeDeveloperIdentities</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/CognitoIdentity/MergeDeveloperIdentitiesInput.html">MergeDeveloperIdentitiesInput</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/CognitoIdentity/MergeDeveloperIdentitiesResponse.html">MergeDeveloperIdentitiesResponse</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">mergeDeveloperIdentities</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/CognitoIdentity/MergeDeveloperIdentitiesInput.html">MergeDeveloperIdentitiesInput</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">logger</span><span class="p">:</span> <span class="kt">Logger</span> <span class="o">=</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="o">.</span><span class="n">loggingDisabled</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/CognitoIdentity/MergeDeveloperIdentitiesResponse.html">MergeDeveloperIdentitiesResponse</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CognitoIdentity/CognitoIdentity_API.swift#L137-L139">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1326,9 +1419,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:18AWSCognitoIdentity07CognitoB0V03setB9PoolRoles_2on3NIO15EventLoopFutureCyytGAC03SetbeF5InputV_AF0iJ0_pSgtF"></a>
-                    <a name="//apple_ref/swift/Method/setIdentityPoolRoles(_:on:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:18AWSCognitoIdentity07CognitoB0V03setB9PoolRoles_2on3NIO15EventLoopFutureCyytGAC03SetbeF5InputV_AF0iJ0_pSgtF">setIdentityPoolRoles(_:on:)</a>
+                    <a name="/s:19SotoCognitoIdentity0bC0V03setC9PoolRoles_2on6logger3NIO15EventLoopFutureCyytGAC03SetceF5InputV_AG0jK0_pSg7Logging6LoggerVtF"></a>
+                    <a name="//apple_ref/swift/Method/setIdentityPoolRoles(_:on:logger:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:19SotoCognitoIdentity0bC0V03setC9PoolRoles_2on6logger3NIO15EventLoopFutureCyytGAC03SetceF5InputV_AG0jK0_pSg7Logging6LoggerVtF">setIdentityPoolRoles(_:<wbr>on:<wbr>logger:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1344,9 +1437,12 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
-<span class="kd">public</span> <span class="kd">func</span> <span class="nf">setIdentityPoolRoles</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/CognitoIdentity/SetIdentityPoolRolesInput.html">SetIdentityPoolRolesInput</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Void</span><span class="o">&gt;</span></code></pre>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">setIdentityPoolRoles</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/CognitoIdentity/SetIdentityPoolRolesInput.html">SetIdentityPoolRolesInput</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">logger</span><span class="p">:</span> <span class="kt">Logger</span> <span class="o">=</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="o">.</span><span class="n">loggingDisabled</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Void</span><span class="o">&gt;</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CognitoIdentity/CognitoIdentity_API.swift#L142-L144">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1354,9 +1450,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:18AWSCognitoIdentity07CognitoB0V11tagResource_2on3NIO15EventLoopFutureCyAC03TagE8ResponseVGAC0kE5InputV_AF0hI0_pSgtF"></a>
-                    <a name="//apple_ref/swift/Method/tagResource(_:on:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:18AWSCognitoIdentity07CognitoB0V11tagResource_2on3NIO15EventLoopFutureCyAC03TagE8ResponseVGAC0kE5InputV_AF0hI0_pSgtF">tagResource(_:on:)</a>
+                    <a name="/s:19SotoCognitoIdentity0bC0V11tagResource_2on6logger3NIO15EventLoopFutureCyAC03TagE8ResponseVGAC0lE5InputV_AG0iJ0_pSg7Logging6LoggerVtF"></a>
+                    <a name="//apple_ref/swift/Method/tagResource(_:on:logger:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:19SotoCognitoIdentity0bC0V11tagResource_2on6logger3NIO15EventLoopFutureCyAC03TagE8ResponseVGAC0lE5InputV_AG0iJ0_pSg7Logging6LoggerVtF">tagResource(_:<wbr>on:<wbr>logger:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1371,9 +1467,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">tagResource</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/CognitoIdentity/TagResourceInput.html">TagResourceInput</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/CognitoIdentity/TagResourceResponse.html">TagResourceResponse</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">tagResource</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/CognitoIdentity/TagResourceInput.html">TagResourceInput</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">logger</span><span class="p">:</span> <span class="kt">Logger</span> <span class="o">=</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="o">.</span><span class="n">loggingDisabled</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/CognitoIdentity/TagResourceResponse.html">TagResourceResponse</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CognitoIdentity/CognitoIdentity_API.swift#L147-L149">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1381,9 +1480,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:18AWSCognitoIdentity07CognitoB0V015unlinkDeveloperB0_2on3NIO15EventLoopFutureCyytGAC06UnlinkeB5InputV_AF0hI0_pSgtF"></a>
-                    <a name="//apple_ref/swift/Method/unlinkDeveloperIdentity(_:on:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:18AWSCognitoIdentity07CognitoB0V015unlinkDeveloperB0_2on3NIO15EventLoopFutureCyytGAC06UnlinkeB5InputV_AF0hI0_pSgtF">unlinkDeveloperIdentity(_:on:)</a>
+                    <a name="/s:19SotoCognitoIdentity0bC0V015unlinkDeveloperC0_2on6logger3NIO15EventLoopFutureCyytGAC06UnlinkeC5InputV_AG0iJ0_pSg7Logging6LoggerVtF"></a>
+                    <a name="//apple_ref/swift/Method/unlinkDeveloperIdentity(_:on:logger:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:19SotoCognitoIdentity0bC0V015unlinkDeveloperC0_2on6logger3NIO15EventLoopFutureCyytGAC06UnlinkeC5InputV_AG0iJ0_pSg7Logging6LoggerVtF">unlinkDeveloperIdentity(_:<wbr>on:<wbr>logger:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1399,9 +1498,12 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
-<span class="kd">public</span> <span class="kd">func</span> <span class="nf">unlinkDeveloperIdentity</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/CognitoIdentity/UnlinkDeveloperIdentityInput.html">UnlinkDeveloperIdentityInput</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Void</span><span class="o">&gt;</span></code></pre>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">unlinkDeveloperIdentity</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/CognitoIdentity/UnlinkDeveloperIdentityInput.html">UnlinkDeveloperIdentityInput</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">logger</span><span class="p">:</span> <span class="kt">Logger</span> <span class="o">=</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="o">.</span><span class="n">loggingDisabled</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Void</span><span class="o">&gt;</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CognitoIdentity/CognitoIdentity_API.swift#L152-L154">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1409,9 +1511,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:18AWSCognitoIdentity07CognitoB0V06unlinkB0_2on3NIO15EventLoopFutureCyytGAC06UnlinkB5InputV_AF0gH0_pSgtF"></a>
-                    <a name="//apple_ref/swift/Method/unlinkIdentity(_:on:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:18AWSCognitoIdentity07CognitoB0V06unlinkB0_2on3NIO15EventLoopFutureCyytGAC06UnlinkB5InputV_AF0gH0_pSgtF">unlinkIdentity(_:on:)</a>
+                    <a name="/s:19SotoCognitoIdentity0bC0V06unlinkC0_2on6logger3NIO15EventLoopFutureCyytGAC06UnlinkC5InputV_AG0hI0_pSg7Logging6LoggerVtF"></a>
+                    <a name="//apple_ref/swift/Method/unlinkIdentity(_:on:logger:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:19SotoCognitoIdentity0bC0V06unlinkC0_2on6logger3NIO15EventLoopFutureCyytGAC06UnlinkC5InputV_AG0hI0_pSg7Logging6LoggerVtF">unlinkIdentity(_:<wbr>on:<wbr>logger:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1427,9 +1529,12 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
-<span class="kd">public</span> <span class="kd">func</span> <span class="nf">unlinkIdentity</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/CognitoIdentity/UnlinkIdentityInput.html">UnlinkIdentityInput</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Void</span><span class="o">&gt;</span></code></pre>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">unlinkIdentity</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/CognitoIdentity/UnlinkIdentityInput.html">UnlinkIdentityInput</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">logger</span><span class="p">:</span> <span class="kt">Logger</span> <span class="o">=</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="o">.</span><span class="n">loggingDisabled</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Void</span><span class="o">&gt;</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CognitoIdentity/CognitoIdentity_API.swift#L157-L159">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1437,9 +1542,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:18AWSCognitoIdentity07CognitoB0V13untagResource_2on3NIO15EventLoopFutureCyAC05UntagE8ResponseVGAC0kE5InputV_AF0hI0_pSgtF"></a>
-                    <a name="//apple_ref/swift/Method/untagResource(_:on:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:18AWSCognitoIdentity07CognitoB0V13untagResource_2on3NIO15EventLoopFutureCyAC05UntagE8ResponseVGAC0kE5InputV_AF0hI0_pSgtF">untagResource(_:on:)</a>
+                    <a name="/s:19SotoCognitoIdentity0bC0V13untagResource_2on6logger3NIO15EventLoopFutureCyAC05UntagE8ResponseVGAC0lE5InputV_AG0iJ0_pSg7Logging6LoggerVtF"></a>
+                    <a name="//apple_ref/swift/Method/untagResource(_:on:logger:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:19SotoCognitoIdentity0bC0V13untagResource_2on6logger3NIO15EventLoopFutureCyAC05UntagE8ResponseVGAC0lE5InputV_AG0iJ0_pSg7Logging6LoggerVtF">untagResource(_:<wbr>on:<wbr>logger:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1454,9 +1559,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">untagResource</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/CognitoIdentity/UntagResourceInput.html">UntagResourceInput</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/CognitoIdentity/UntagResourceResponse.html">UntagResourceResponse</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">untagResource</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/CognitoIdentity/UntagResourceInput.html">UntagResourceInput</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">logger</span><span class="p">:</span> <span class="kt">Logger</span> <span class="o">=</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="o">.</span><span class="n">loggingDisabled</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/CognitoIdentity/UntagResourceResponse.html">UntagResourceResponse</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CognitoIdentity/CognitoIdentity_API.swift#L162-L164">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1464,9 +1572,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:18AWSCognitoIdentity07CognitoB0V06updateB4Pool_2on3NIO15EventLoopFutureCyAC0bE0VGAJ_AF0hI0_pSgtF"></a>
-                    <a name="//apple_ref/swift/Method/updateIdentityPool(_:on:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:18AWSCognitoIdentity07CognitoB0V06updateB4Pool_2on3NIO15EventLoopFutureCyAC0bE0VGAJ_AF0hI0_pSgtF">updateIdentityPool(_:on:)</a>
+                    <a name="/s:19SotoCognitoIdentity0bC0V06updateC4Pool_2on6logger3NIO15EventLoopFutureCyAC0cE0VGAK_AG0iJ0_pSg7Logging6LoggerVtF"></a>
+                    <a name="//apple_ref/swift/Method/updateIdentityPool(_:on:logger:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:19SotoCognitoIdentity0bC0V06updateC4Pool_2on6logger3NIO15EventLoopFutureCyAC0cE0VGAK_AG0iJ0_pSg7Logging6LoggerVtF">updateIdentityPool(_:<wbr>on:<wbr>logger:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1481,9 +1589,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">updateIdentityPool</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/CognitoIdentity/IdentityPool.html">IdentityPool</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/CognitoIdentity/IdentityPool.html">IdentityPool</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">updateIdentityPool</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/CognitoIdentity/IdentityPool.html">IdentityPool</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">logger</span><span class="p">:</span> <span class="kt">Logger</span> <span class="o">=</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="o">.</span><span class="n">loggingDisabled</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/CognitoIdentity/IdentityPool.html">IdentityPool</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CognitoIdentity/CognitoIdentity_API.swift#L167-L169">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1494,17 +1605,19 @@
               <div class="task-name-container">
                 <a name="/Enums"></a>
                 <a name="//apple_ref/swift/Section/Enums" class="dashAnchor"></a>
-                <a href="#/Enums">
-                  <h3 class="section-name">Enums</h3>
-                </a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Enums"></a>
+                  <h3 class="section-name"><p>Enums</p>
+</h3>
+                </div>
               </div>
               <ul>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:18AWSCognitoIdentity07CognitoB0V27AmbiguousRoleResolutionTypeO"></a>
+                    <a name="/s:19SotoCognitoIdentity0bC0V27AmbiguousRoleResolutionTypeO"></a>
                     <a name="//apple_ref/swift/Enum/AmbiguousRoleResolutionType" class="dashAnchor"></a>
-                    <a class="token" href="#/s:18AWSCognitoIdentity07CognitoB0V27AmbiguousRoleResolutionTypeO">AmbiguousRoleResolutionType</a>
+                    <a class="token" href="#/s:19SotoCognitoIdentity0bC0V27AmbiguousRoleResolutionTypeO">AmbiguousRoleResolutionType</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1524,15 +1637,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CognitoIdentity/CognitoIdentity_Shapes.swift#L23-L27">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:18AWSCognitoIdentity07CognitoB0V9ErrorCodeO"></a>
+                    <a name="/s:19SotoCognitoIdentity0bC0V9ErrorCodeO"></a>
                     <a name="//apple_ref/swift/Enum/ErrorCode" class="dashAnchor"></a>
-                    <a class="token" href="#/s:18AWSCognitoIdentity07CognitoB0V9ErrorCodeO">ErrorCode</a>
+                    <a class="token" href="#/s:19SotoCognitoIdentity0bC0V9ErrorCodeO">ErrorCode</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1552,15 +1668,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CognitoIdentity/CognitoIdentity_Shapes.swift#L29-L33">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:18AWSCognitoIdentity07CognitoB0V20MappingRuleMatchTypeO"></a>
+                    <a name="/s:19SotoCognitoIdentity0bC0V20MappingRuleMatchTypeO"></a>
                     <a name="//apple_ref/swift/Enum/MappingRuleMatchType" class="dashAnchor"></a>
-                    <a class="token" href="#/s:18AWSCognitoIdentity07CognitoB0V20MappingRuleMatchTypeO">MappingRuleMatchType</a>
+                    <a class="token" href="#/s:19SotoCognitoIdentity0bC0V20MappingRuleMatchTypeO">MappingRuleMatchType</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1580,15 +1699,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CognitoIdentity/CognitoIdentity_Shapes.swift#L35-L41">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:18AWSCognitoIdentity07CognitoB0V15RoleMappingTypeO"></a>
+                    <a name="/s:19SotoCognitoIdentity0bC0V15RoleMappingTypeO"></a>
                     <a name="//apple_ref/swift/Enum/RoleMappingType" class="dashAnchor"></a>
-                    <a class="token" href="#/s:18AWSCognitoIdentity07CognitoB0V15RoleMappingTypeO">RoleMappingType</a>
+                    <a class="token" href="#/s:19SotoCognitoIdentity0bC0V15RoleMappingTypeO">RoleMappingType</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1608,6 +1730,9 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CognitoIdentity/CognitoIdentity_Shapes.swift#L43-L47">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
@@ -1617,17 +1742,19 @@
               <div class="task-name-container">
                 <a name="/Shapes"></a>
                 <a name="//apple_ref/swift/Section/Shapes" class="dashAnchor"></a>
-                <a href="#/Shapes">
-                  <h3 class="section-name">Shapes</h3>
-                </a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Shapes"></a>
+                  <h3 class="section-name"><p>Shapes</p>
+</h3>
+                </div>
               </div>
               <ul>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:18AWSCognitoIdentity07CognitoB0V0cB8ProviderV"></a>
+                    <a name="/s:19SotoCognitoIdentity0bC0V0bC8ProviderV"></a>
                     <a name="//apple_ref/swift/Struct/CognitoIdentityProvider" class="dashAnchor"></a>
-                    <a class="token" href="#/s:18AWSCognitoIdentity07CognitoB0V0cB8ProviderV">CognitoIdentityProvider</a>
+                    <a class="token" href="#/s:19SotoCognitoIdentity0bC0V0bC8ProviderV">CognitoIdentityProvider</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1643,9 +1770,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">CognitoIdentityProvider</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSEncodableShape.html">AWSEncodableShape</a></span> <span class="o">&amp;</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">CognitoIdentityProvider</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSEncodableShape.html">AWSEncodableShape</a></span> <span class="o">&amp;</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CognitoIdentity/CognitoIdentity_Shapes.swift#L51-L79">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1653,9 +1783,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:18AWSCognitoIdentity07CognitoB0V06CreateB9PoolInputV"></a>
+                    <a name="/s:19SotoCognitoIdentity0bC0V06CreateC9PoolInputV"></a>
                     <a name="//apple_ref/swift/Struct/CreateIdentityPoolInput" class="dashAnchor"></a>
-                    <a class="token" href="#/s:18AWSCognitoIdentity07CognitoB0V06CreateB9PoolInputV">CreateIdentityPoolInput</a>
+                    <a class="token" href="#/s:19SotoCognitoIdentity0bC0V06CreateC9PoolInputV">CreateIdentityPoolInput</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1675,15 +1805,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CognitoIdentity/CognitoIdentity_Shapes.swift#L81-L157">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:18AWSCognitoIdentity07CognitoB0V11CredentialsV"></a>
+                    <a name="/s:19SotoCognitoIdentity0bC0V11CredentialsV"></a>
                     <a name="//apple_ref/swift/Struct/Credentials" class="dashAnchor"></a>
-                    <a class="token" href="#/s:18AWSCognitoIdentity07CognitoB0V11CredentialsV">Credentials</a>
+                    <a class="token" href="#/s:19SotoCognitoIdentity0bC0V11CredentialsV">Credentials</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1699,9 +1832,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Credentials</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Credentials</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CognitoIdentity/CognitoIdentity_Shapes.swift#L159-L182">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1709,9 +1845,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:18AWSCognitoIdentity07CognitoB0V21DeleteIdentitiesInputV"></a>
+                    <a name="/s:19SotoCognitoIdentity0bC0V21DeleteIdentitiesInputV"></a>
                     <a name="//apple_ref/swift/Struct/DeleteIdentitiesInput" class="dashAnchor"></a>
-                    <a class="token" href="#/s:18AWSCognitoIdentity07CognitoB0V21DeleteIdentitiesInputV">DeleteIdentitiesInput</a>
+                    <a class="token" href="#/s:19SotoCognitoIdentity0bC0V21DeleteIdentitiesInputV">DeleteIdentitiesInput</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1731,15 +1867,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CognitoIdentity/CognitoIdentity_Shapes.swift#L184-L205">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:18AWSCognitoIdentity07CognitoB0V24DeleteIdentitiesResponseV"></a>
+                    <a name="/s:19SotoCognitoIdentity0bC0V24DeleteIdentitiesResponseV"></a>
                     <a name="//apple_ref/swift/Struct/DeleteIdentitiesResponse" class="dashAnchor"></a>
-                    <a class="token" href="#/s:18AWSCognitoIdentity07CognitoB0V24DeleteIdentitiesResponseV">DeleteIdentitiesResponse</a>
+                    <a class="token" href="#/s:19SotoCognitoIdentity0bC0V24DeleteIdentitiesResponseV">DeleteIdentitiesResponse</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1755,9 +1894,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DeleteIdentitiesResponse</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DeleteIdentitiesResponse</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CognitoIdentity/CognitoIdentity_Shapes.swift#L207-L218">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1765,9 +1907,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:18AWSCognitoIdentity07CognitoB0V06DeleteB9PoolInputV"></a>
+                    <a name="/s:19SotoCognitoIdentity0bC0V06DeleteC9PoolInputV"></a>
                     <a name="//apple_ref/swift/Struct/DeleteIdentityPoolInput" class="dashAnchor"></a>
-                    <a class="token" href="#/s:18AWSCognitoIdentity07CognitoB0V06DeleteB9PoolInputV">DeleteIdentityPoolInput</a>
+                    <a class="token" href="#/s:19SotoCognitoIdentity0bC0V06DeleteC9PoolInputV">DeleteIdentityPoolInput</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1787,15 +1929,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CognitoIdentity/CognitoIdentity_Shapes.swift#L220-L237">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:18AWSCognitoIdentity07CognitoB0V08DescribeB5InputV"></a>
+                    <a name="/s:19SotoCognitoIdentity0bC0V08DescribeC5InputV"></a>
                     <a name="//apple_ref/swift/Struct/DescribeIdentityInput" class="dashAnchor"></a>
-                    <a class="token" href="#/s:18AWSCognitoIdentity07CognitoB0V08DescribeB5InputV">DescribeIdentityInput</a>
+                    <a class="token" href="#/s:19SotoCognitoIdentity0bC0V08DescribeC5InputV">DescribeIdentityInput</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1815,15 +1960,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CognitoIdentity/CognitoIdentity_Shapes.swift#L239-L256">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:18AWSCognitoIdentity07CognitoB0V08DescribeB9PoolInputV"></a>
+                    <a name="/s:19SotoCognitoIdentity0bC0V08DescribeC9PoolInputV"></a>
                     <a name="//apple_ref/swift/Struct/DescribeIdentityPoolInput" class="dashAnchor"></a>
-                    <a class="token" href="#/s:18AWSCognitoIdentity07CognitoB0V08DescribeB9PoolInputV">DescribeIdentityPoolInput</a>
+                    <a class="token" href="#/s:19SotoCognitoIdentity0bC0V08DescribeC9PoolInputV">DescribeIdentityPoolInput</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1843,15 +1991,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CognitoIdentity/CognitoIdentity_Shapes.swift#L258-L275">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:18AWSCognitoIdentity07CognitoB0V017GetCredentialsForB5InputV"></a>
+                    <a name="/s:19SotoCognitoIdentity0bC0V017GetCredentialsForC5InputV"></a>
                     <a name="//apple_ref/swift/Struct/GetCredentialsForIdentityInput" class="dashAnchor"></a>
-                    <a class="token" href="#/s:18AWSCognitoIdentity07CognitoB0V017GetCredentialsForB5InputV">GetCredentialsForIdentityInput</a>
+                    <a class="token" href="#/s:19SotoCognitoIdentity0bC0V017GetCredentialsForC5InputV">GetCredentialsForIdentityInput</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1871,15 +2022,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CognitoIdentity/CognitoIdentity_Shapes.swift#L277-L310">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:18AWSCognitoIdentity07CognitoB0V017GetCredentialsForB8ResponseV"></a>
+                    <a name="/s:19SotoCognitoIdentity0bC0V017GetCredentialsForC8ResponseV"></a>
                     <a name="//apple_ref/swift/Struct/GetCredentialsForIdentityResponse" class="dashAnchor"></a>
-                    <a class="token" href="#/s:18AWSCognitoIdentity07CognitoB0V017GetCredentialsForB8ResponseV">GetCredentialsForIdentityResponse</a>
+                    <a class="token" href="#/s:19SotoCognitoIdentity0bC0V017GetCredentialsForC8ResponseV">GetCredentialsForIdentityResponse</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1895,9 +2049,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">GetCredentialsForIdentityResponse</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">GetCredentialsForIdentityResponse</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CognitoIdentity/CognitoIdentity_Shapes.swift#L312-L327">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1905,9 +2062,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:18AWSCognitoIdentity07CognitoB0V10GetIdInputV"></a>
+                    <a name="/s:19SotoCognitoIdentity0bC0V10GetIdInputV"></a>
                     <a name="//apple_ref/swift/Struct/GetIdInput" class="dashAnchor"></a>
-                    <a class="token" href="#/s:18AWSCognitoIdentity07CognitoB0V10GetIdInputV">GetIdInput</a>
+                    <a class="token" href="#/s:19SotoCognitoIdentity0bC0V10GetIdInputV">GetIdInput</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1927,15 +2084,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CognitoIdentity/CognitoIdentity_Shapes.swift#L329-L363">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:18AWSCognitoIdentity07CognitoB0V13GetIdResponseV"></a>
+                    <a name="/s:19SotoCognitoIdentity0bC0V13GetIdResponseV"></a>
                     <a name="//apple_ref/swift/Struct/GetIdResponse" class="dashAnchor"></a>
-                    <a class="token" href="#/s:18AWSCognitoIdentity07CognitoB0V13GetIdResponseV">GetIdResponse</a>
+                    <a class="token" href="#/s:19SotoCognitoIdentity0bC0V13GetIdResponseV">GetIdResponse</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1951,9 +2111,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">GetIdResponse</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">GetIdResponse</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CognitoIdentity/CognitoIdentity_Shapes.swift#L365-L376">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1961,9 +2124,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:18AWSCognitoIdentity07CognitoB0V03GetB14PoolRolesInputV"></a>
+                    <a name="/s:19SotoCognitoIdentity0bC0V03GetC14PoolRolesInputV"></a>
                     <a name="//apple_ref/swift/Struct/GetIdentityPoolRolesInput" class="dashAnchor"></a>
-                    <a class="token" href="#/s:18AWSCognitoIdentity07CognitoB0V03GetB14PoolRolesInputV">GetIdentityPoolRolesInput</a>
+                    <a class="token" href="#/s:19SotoCognitoIdentity0bC0V03GetC14PoolRolesInputV">GetIdentityPoolRolesInput</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1983,15 +2146,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CognitoIdentity/CognitoIdentity_Shapes.swift#L378-L395">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:18AWSCognitoIdentity07CognitoB0V03GetB17PoolRolesResponseV"></a>
+                    <a name="/s:19SotoCognitoIdentity0bC0V03GetC17PoolRolesResponseV"></a>
                     <a name="//apple_ref/swift/Struct/GetIdentityPoolRolesResponse" class="dashAnchor"></a>
-                    <a class="token" href="#/s:18AWSCognitoIdentity07CognitoB0V03GetB17PoolRolesResponseV">GetIdentityPoolRolesResponse</a>
+                    <a class="token" href="#/s:19SotoCognitoIdentity0bC0V03GetC17PoolRolesResponseV">GetIdentityPoolRolesResponse</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2007,9 +2173,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">GetIdentityPoolRolesResponse</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">GetIdentityPoolRolesResponse</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CognitoIdentity/CognitoIdentity_Shapes.swift#L397-L416">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -2017,9 +2186,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:18AWSCognitoIdentity07CognitoB0V026GetOpenIdTokenForDeveloperB5InputV"></a>
+                    <a name="/s:19SotoCognitoIdentity0bC0V026GetOpenIdTokenForDeveloperC5InputV"></a>
                     <a name="//apple_ref/swift/Struct/GetOpenIdTokenForDeveloperIdentityInput" class="dashAnchor"></a>
-                    <a class="token" href="#/s:18AWSCognitoIdentity07CognitoB0V026GetOpenIdTokenForDeveloperB5InputV">GetOpenIdTokenForDeveloperIdentityInput</a>
+                    <a class="token" href="#/s:19SotoCognitoIdentity0bC0V026GetOpenIdTokenForDeveloperC5InputV">GetOpenIdTokenForDeveloperIdentityInput</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2039,15 +2208,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CognitoIdentity/CognitoIdentity_Shapes.swift#L418-L458">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:18AWSCognitoIdentity07CognitoB0V026GetOpenIdTokenForDeveloperB8ResponseV"></a>
+                    <a name="/s:19SotoCognitoIdentity0bC0V026GetOpenIdTokenForDeveloperC8ResponseV"></a>
                     <a name="//apple_ref/swift/Struct/GetOpenIdTokenForDeveloperIdentityResponse" class="dashAnchor"></a>
-                    <a class="token" href="#/s:18AWSCognitoIdentity07CognitoB0V026GetOpenIdTokenForDeveloperB8ResponseV">GetOpenIdTokenForDeveloperIdentityResponse</a>
+                    <a class="token" href="#/s:19SotoCognitoIdentity0bC0V026GetOpenIdTokenForDeveloperC8ResponseV">GetOpenIdTokenForDeveloperIdentityResponse</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2063,9 +2235,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">GetOpenIdTokenForDeveloperIdentityResponse</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">GetOpenIdTokenForDeveloperIdentityResponse</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CognitoIdentity/CognitoIdentity_Shapes.swift#L460-L475">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -2073,9 +2248,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:18AWSCognitoIdentity07CognitoB0V19GetOpenIdTokenInputV"></a>
+                    <a name="/s:19SotoCognitoIdentity0bC0V19GetOpenIdTokenInputV"></a>
                     <a name="//apple_ref/swift/Struct/GetOpenIdTokenInput" class="dashAnchor"></a>
-                    <a class="token" href="#/s:18AWSCognitoIdentity07CognitoB0V19GetOpenIdTokenInputV">GetOpenIdTokenInput</a>
+                    <a class="token" href="#/s:19SotoCognitoIdentity0bC0V19GetOpenIdTokenInputV">GetOpenIdTokenInput</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2095,15 +2270,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CognitoIdentity/CognitoIdentity_Shapes.swift#L477-L504">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:18AWSCognitoIdentity07CognitoB0V22GetOpenIdTokenResponseV"></a>
+                    <a name="/s:19SotoCognitoIdentity0bC0V22GetOpenIdTokenResponseV"></a>
                     <a name="//apple_ref/swift/Struct/GetOpenIdTokenResponse" class="dashAnchor"></a>
-                    <a class="token" href="#/s:18AWSCognitoIdentity07CognitoB0V22GetOpenIdTokenResponseV">GetOpenIdTokenResponse</a>
+                    <a class="token" href="#/s:19SotoCognitoIdentity0bC0V22GetOpenIdTokenResponseV">GetOpenIdTokenResponse</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2119,9 +2297,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">GetOpenIdTokenResponse</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">GetOpenIdTokenResponse</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CognitoIdentity/CognitoIdentity_Shapes.swift#L506-L521">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -2129,9 +2310,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:18AWSCognitoIdentity07CognitoB0V0B11DescriptionV"></a>
+                    <a name="/s:19SotoCognitoIdentity0bC0V0C11DescriptionV"></a>
                     <a name="//apple_ref/swift/Struct/IdentityDescription" class="dashAnchor"></a>
-                    <a class="token" href="#/s:18AWSCognitoIdentity07CognitoB0V0B11DescriptionV">IdentityDescription</a>
+                    <a class="token" href="#/s:19SotoCognitoIdentity0bC0V0C11DescriptionV">IdentityDescription</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2147,9 +2328,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">IdentityDescription</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">IdentityDescription</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CognitoIdentity/CognitoIdentity_Shapes.swift#L523-L546">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -2157,9 +2341,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:18AWSCognitoIdentity07CognitoB0V0B4PoolV"></a>
+                    <a name="/s:19SotoCognitoIdentity0bC0V0C4PoolV"></a>
                     <a name="//apple_ref/swift/Struct/IdentityPool" class="dashAnchor"></a>
-                    <a class="token" href="#/s:18AWSCognitoIdentity07CognitoB0V0B4PoolV">IdentityPool</a>
+                    <a class="token" href="#/s:19SotoCognitoIdentity0bC0V0C4PoolV">IdentityPool</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2175,9 +2359,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">IdentityPool</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSEncodableShape.html">AWSEncodableShape</a></span> <span class="o">&amp;</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">IdentityPool</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSEncodableShape.html">AWSEncodableShape</a></span> <span class="o">&amp;</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CognitoIdentity/CognitoIdentity_Shapes.swift#L548-L631">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -2185,9 +2372,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:18AWSCognitoIdentity07CognitoB0V0B20PoolShortDescriptionV"></a>
+                    <a name="/s:19SotoCognitoIdentity0bC0V0C20PoolShortDescriptionV"></a>
                     <a name="//apple_ref/swift/Struct/IdentityPoolShortDescription" class="dashAnchor"></a>
-                    <a class="token" href="#/s:18AWSCognitoIdentity07CognitoB0V0B20PoolShortDescriptionV">IdentityPoolShortDescription</a>
+                    <a class="token" href="#/s:19SotoCognitoIdentity0bC0V0C20PoolShortDescriptionV">IdentityPoolShortDescription</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2203,9 +2390,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">IdentityPoolShortDescription</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">IdentityPoolShortDescription</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CognitoIdentity/CognitoIdentity_Shapes.swift#L633-L648">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -2213,9 +2403,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:18AWSCognitoIdentity07CognitoB0V19ListIdentitiesInputV"></a>
+                    <a name="/s:19SotoCognitoIdentity0bC0V19ListIdentitiesInputV"></a>
                     <a name="//apple_ref/swift/Struct/ListIdentitiesInput" class="dashAnchor"></a>
-                    <a class="token" href="#/s:18AWSCognitoIdentity07CognitoB0V19ListIdentitiesInputV">ListIdentitiesInput</a>
+                    <a class="token" href="#/s:19SotoCognitoIdentity0bC0V19ListIdentitiesInputV">ListIdentitiesInput</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2235,15 +2425,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CognitoIdentity/CognitoIdentity_Shapes.swift#L650-L683">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:18AWSCognitoIdentity07CognitoB0V22ListIdentitiesResponseV"></a>
+                    <a name="/s:19SotoCognitoIdentity0bC0V22ListIdentitiesResponseV"></a>
                     <a name="//apple_ref/swift/Struct/ListIdentitiesResponse" class="dashAnchor"></a>
-                    <a class="token" href="#/s:18AWSCognitoIdentity07CognitoB0V22ListIdentitiesResponseV">ListIdentitiesResponse</a>
+                    <a class="token" href="#/s:19SotoCognitoIdentity0bC0V22ListIdentitiesResponseV">ListIdentitiesResponse</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2259,9 +2452,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ListIdentitiesResponse</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ListIdentitiesResponse</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CognitoIdentity/CognitoIdentity_Shapes.swift#L685-L704">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -2269,9 +2465,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:18AWSCognitoIdentity07CognitoB0V04ListB10PoolsInputV"></a>
+                    <a name="/s:19SotoCognitoIdentity0bC0V04ListC10PoolsInputV"></a>
                     <a name="//apple_ref/swift/Struct/ListIdentityPoolsInput" class="dashAnchor"></a>
-                    <a class="token" href="#/s:18AWSCognitoIdentity07CognitoB0V04ListB10PoolsInputV">ListIdentityPoolsInput</a>
+                    <a class="token" href="#/s:19SotoCognitoIdentity0bC0V04ListC10PoolsInputV">ListIdentityPoolsInput</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2291,15 +2487,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CognitoIdentity/CognitoIdentity_Shapes.swift#L706-L728">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:18AWSCognitoIdentity07CognitoB0V04ListB13PoolsResponseV"></a>
+                    <a name="/s:19SotoCognitoIdentity0bC0V04ListC13PoolsResponseV"></a>
                     <a name="//apple_ref/swift/Struct/ListIdentityPoolsResponse" class="dashAnchor"></a>
-                    <a class="token" href="#/s:18AWSCognitoIdentity07CognitoB0V04ListB13PoolsResponseV">ListIdentityPoolsResponse</a>
+                    <a class="token" href="#/s:19SotoCognitoIdentity0bC0V04ListC13PoolsResponseV">ListIdentityPoolsResponse</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2315,9 +2514,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ListIdentityPoolsResponse</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ListIdentityPoolsResponse</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CognitoIdentity/CognitoIdentity_Shapes.swift#L730-L745">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -2325,9 +2527,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:18AWSCognitoIdentity07CognitoB0V24ListTagsForResourceInputV"></a>
+                    <a name="/s:19SotoCognitoIdentity0bC0V24ListTagsForResourceInputV"></a>
                     <a name="//apple_ref/swift/Struct/ListTagsForResourceInput" class="dashAnchor"></a>
-                    <a class="token" href="#/s:18AWSCognitoIdentity07CognitoB0V24ListTagsForResourceInputV">ListTagsForResourceInput</a>
+                    <a class="token" href="#/s:19SotoCognitoIdentity0bC0V24ListTagsForResourceInputV">ListTagsForResourceInput</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2347,15 +2549,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CognitoIdentity/CognitoIdentity_Shapes.swift#L747-L763">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:18AWSCognitoIdentity07CognitoB0V27ListTagsForResourceResponseV"></a>
+                    <a name="/s:19SotoCognitoIdentity0bC0V27ListTagsForResourceResponseV"></a>
                     <a name="//apple_ref/swift/Struct/ListTagsForResourceResponse" class="dashAnchor"></a>
-                    <a class="token" href="#/s:18AWSCognitoIdentity07CognitoB0V27ListTagsForResourceResponseV">ListTagsForResourceResponse</a>
+                    <a class="token" href="#/s:19SotoCognitoIdentity0bC0V27ListTagsForResourceResponseV">ListTagsForResourceResponse</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2371,9 +2576,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ListTagsForResourceResponse</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ListTagsForResourceResponse</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CognitoIdentity/CognitoIdentity_Shapes.swift#L765-L776">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -2381,9 +2589,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:18AWSCognitoIdentity07CognitoB0V015LookupDeveloperB5InputV"></a>
+                    <a name="/s:19SotoCognitoIdentity0bC0V015LookupDeveloperC5InputV"></a>
                     <a name="//apple_ref/swift/Struct/LookupDeveloperIdentityInput" class="dashAnchor"></a>
-                    <a class="token" href="#/s:18AWSCognitoIdentity07CognitoB0V015LookupDeveloperB5InputV">LookupDeveloperIdentityInput</a>
+                    <a class="token" href="#/s:19SotoCognitoIdentity0bC0V015LookupDeveloperC5InputV">LookupDeveloperIdentityInput</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2403,15 +2611,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CognitoIdentity/CognitoIdentity_Shapes.swift#L778-L820">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:18AWSCognitoIdentity07CognitoB0V015LookupDeveloperB8ResponseV"></a>
+                    <a name="/s:19SotoCognitoIdentity0bC0V015LookupDeveloperC8ResponseV"></a>
                     <a name="//apple_ref/swift/Struct/LookupDeveloperIdentityResponse" class="dashAnchor"></a>
-                    <a class="token" href="#/s:18AWSCognitoIdentity07CognitoB0V015LookupDeveloperB8ResponseV">LookupDeveloperIdentityResponse</a>
+                    <a class="token" href="#/s:19SotoCognitoIdentity0bC0V015LookupDeveloperC8ResponseV">LookupDeveloperIdentityResponse</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2427,9 +2638,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">LookupDeveloperIdentityResponse</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">LookupDeveloperIdentityResponse</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CognitoIdentity/CognitoIdentity_Shapes.swift#L822-L841">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -2437,9 +2651,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:18AWSCognitoIdentity07CognitoB0V11MappingRuleV"></a>
+                    <a name="/s:19SotoCognitoIdentity0bC0V11MappingRuleV"></a>
                     <a name="//apple_ref/swift/Struct/MappingRule" class="dashAnchor"></a>
-                    <a class="token" href="#/s:18AWSCognitoIdentity07CognitoB0V11MappingRuleV">MappingRule</a>
+                    <a class="token" href="#/s:19SotoCognitoIdentity0bC0V11MappingRuleV">MappingRule</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2455,9 +2669,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">MappingRule</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSEncodableShape.html">AWSEncodableShape</a></span> <span class="o">&amp;</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">MappingRule</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSEncodableShape.html">AWSEncodableShape</a></span> <span class="o">&amp;</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CognitoIdentity/CognitoIdentity_Shapes.swift#L843-L876">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -2465,9 +2682,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:18AWSCognitoIdentity07CognitoB0V29MergeDeveloperIdentitiesInputV"></a>
+                    <a name="/s:19SotoCognitoIdentity0bC0V29MergeDeveloperIdentitiesInputV"></a>
                     <a name="//apple_ref/swift/Struct/MergeDeveloperIdentitiesInput" class="dashAnchor"></a>
-                    <a class="token" href="#/s:18AWSCognitoIdentity07CognitoB0V29MergeDeveloperIdentitiesInputV">MergeDeveloperIdentitiesInput</a>
+                    <a class="token" href="#/s:19SotoCognitoIdentity0bC0V29MergeDeveloperIdentitiesInputV">MergeDeveloperIdentitiesInput</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2487,15 +2704,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CognitoIdentity/CognitoIdentity_Shapes.swift#L878-L914">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:18AWSCognitoIdentity07CognitoB0V32MergeDeveloperIdentitiesResponseV"></a>
+                    <a name="/s:19SotoCognitoIdentity0bC0V32MergeDeveloperIdentitiesResponseV"></a>
                     <a name="//apple_ref/swift/Struct/MergeDeveloperIdentitiesResponse" class="dashAnchor"></a>
-                    <a class="token" href="#/s:18AWSCognitoIdentity07CognitoB0V32MergeDeveloperIdentitiesResponseV">MergeDeveloperIdentitiesResponse</a>
+                    <a class="token" href="#/s:19SotoCognitoIdentity0bC0V32MergeDeveloperIdentitiesResponseV">MergeDeveloperIdentitiesResponse</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2511,9 +2731,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">MergeDeveloperIdentitiesResponse</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">MergeDeveloperIdentitiesResponse</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CognitoIdentity/CognitoIdentity_Shapes.swift#L916-L927">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -2521,9 +2744,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:18AWSCognitoIdentity07CognitoB0V11RoleMappingV"></a>
+                    <a name="/s:19SotoCognitoIdentity0bC0V11RoleMappingV"></a>
                     <a name="//apple_ref/swift/Struct/RoleMapping" class="dashAnchor"></a>
-                    <a class="token" href="#/s:18AWSCognitoIdentity07CognitoB0V11RoleMappingV">RoleMapping</a>
+                    <a class="token" href="#/s:19SotoCognitoIdentity0bC0V11RoleMappingV">RoleMapping</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2539,9 +2762,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">RoleMapping</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSEncodableShape.html">AWSEncodableShape</a></span> <span class="o">&amp;</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">RoleMapping</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSEncodableShape.html">AWSEncodableShape</a></span> <span class="o">&amp;</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CognitoIdentity/CognitoIdentity_Shapes.swift#L929-L952">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -2549,9 +2775,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:18AWSCognitoIdentity07CognitoB0V22RulesConfigurationTypeV"></a>
+                    <a name="/s:19SotoCognitoIdentity0bC0V22RulesConfigurationTypeV"></a>
                     <a name="//apple_ref/swift/Struct/RulesConfigurationType" class="dashAnchor"></a>
-                    <a class="token" href="#/s:18AWSCognitoIdentity07CognitoB0V22RulesConfigurationTypeV">RulesConfigurationType</a>
+                    <a class="token" href="#/s:19SotoCognitoIdentity0bC0V22RulesConfigurationTypeV">RulesConfigurationType</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2567,9 +2793,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">RulesConfigurationType</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSEncodableShape.html">AWSEncodableShape</a></span> <span class="o">&amp;</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">RulesConfigurationType</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSEncodableShape.html">AWSEncodableShape</a></span> <span class="o">&amp;</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CognitoIdentity/CognitoIdentity_Shapes.swift#L954-L973">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -2577,9 +2806,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:18AWSCognitoIdentity07CognitoB0V03SetB14PoolRolesInputV"></a>
+                    <a name="/s:19SotoCognitoIdentity0bC0V03SetC14PoolRolesInputV"></a>
                     <a name="//apple_ref/swift/Struct/SetIdentityPoolRolesInput" class="dashAnchor"></a>
-                    <a class="token" href="#/s:18AWSCognitoIdentity07CognitoB0V03SetB14PoolRolesInputV">SetIdentityPoolRolesInput</a>
+                    <a class="token" href="#/s:19SotoCognitoIdentity0bC0V03SetC14PoolRolesInputV">SetIdentityPoolRolesInput</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2599,15 +2828,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CognitoIdentity/CognitoIdentity_Shapes.swift#L975-L1010">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:18AWSCognitoIdentity07CognitoB0V16TagResourceInputV"></a>
+                    <a name="/s:19SotoCognitoIdentity0bC0V16TagResourceInputV"></a>
                     <a name="//apple_ref/swift/Struct/TagResourceInput" class="dashAnchor"></a>
-                    <a class="token" href="#/s:18AWSCognitoIdentity07CognitoB0V16TagResourceInputV">TagResourceInput</a>
+                    <a class="token" href="#/s:19SotoCognitoIdentity0bC0V16TagResourceInputV">TagResourceInput</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2627,15 +2859,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CognitoIdentity/CognitoIdentity_Shapes.swift#L1012-L1038">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:18AWSCognitoIdentity07CognitoB0V19TagResourceResponseV"></a>
+                    <a name="/s:19SotoCognitoIdentity0bC0V19TagResourceResponseV"></a>
                     <a name="//apple_ref/swift/Struct/TagResourceResponse" class="dashAnchor"></a>
-                    <a class="token" href="#/s:18AWSCognitoIdentity07CognitoB0V19TagResourceResponseV">TagResourceResponse</a>
+                    <a class="token" href="#/s:19SotoCognitoIdentity0bC0V19TagResourceResponseV">TagResourceResponse</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2651,9 +2886,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">TagResourceResponse</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">TagResourceResponse</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CognitoIdentity/CognitoIdentity_Shapes.swift#L1040-L1042">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -2661,9 +2899,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:18AWSCognitoIdentity07CognitoB0V015UnlinkDeveloperB5InputV"></a>
+                    <a name="/s:19SotoCognitoIdentity0bC0V015UnlinkDeveloperC5InputV"></a>
                     <a name="//apple_ref/swift/Struct/UnlinkDeveloperIdentityInput" class="dashAnchor"></a>
-                    <a class="token" href="#/s:18AWSCognitoIdentity07CognitoB0V015UnlinkDeveloperB5InputV">UnlinkDeveloperIdentityInput</a>
+                    <a class="token" href="#/s:19SotoCognitoIdentity0bC0V015UnlinkDeveloperC5InputV">UnlinkDeveloperIdentityInput</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2683,15 +2921,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CognitoIdentity/CognitoIdentity_Shapes.swift#L1044-L1081">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:18AWSCognitoIdentity07CognitoB0V06UnlinkB5InputV"></a>
+                    <a name="/s:19SotoCognitoIdentity0bC0V06UnlinkC5InputV"></a>
                     <a name="//apple_ref/swift/Struct/UnlinkIdentityInput" class="dashAnchor"></a>
-                    <a class="token" href="#/s:18AWSCognitoIdentity07CognitoB0V06UnlinkB5InputV">UnlinkIdentityInput</a>
+                    <a class="token" href="#/s:19SotoCognitoIdentity0bC0V06UnlinkC5InputV">UnlinkIdentityInput</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2711,15 +2952,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CognitoIdentity/CognitoIdentity_Shapes.swift#L1083-L1118">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:18AWSCognitoIdentity07CognitoB0V011UnprocessedB2IdV"></a>
+                    <a name="/s:19SotoCognitoIdentity0bC0V011UnprocessedC2IdV"></a>
                     <a name="//apple_ref/swift/Struct/UnprocessedIdentityId" class="dashAnchor"></a>
-                    <a class="token" href="#/s:18AWSCognitoIdentity07CognitoB0V011UnprocessedB2IdV">UnprocessedIdentityId</a>
+                    <a class="token" href="#/s:19SotoCognitoIdentity0bC0V011UnprocessedC2IdV">UnprocessedIdentityId</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2735,9 +2979,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">UnprocessedIdentityId</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">UnprocessedIdentityId</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CognitoIdentity/CognitoIdentity_Shapes.swift#L1120-L1135">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -2745,9 +2992,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:18AWSCognitoIdentity07CognitoB0V18UntagResourceInputV"></a>
+                    <a name="/s:19SotoCognitoIdentity0bC0V18UntagResourceInputV"></a>
                     <a name="//apple_ref/swift/Struct/UntagResourceInput" class="dashAnchor"></a>
-                    <a class="token" href="#/s:18AWSCognitoIdentity07CognitoB0V18UntagResourceInputV">UntagResourceInput</a>
+                    <a class="token" href="#/s:19SotoCognitoIdentity0bC0V18UntagResourceInputV">UntagResourceInput</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2767,15 +3014,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CognitoIdentity/CognitoIdentity_Shapes.swift#L1137-L1161">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:18AWSCognitoIdentity07CognitoB0V21UntagResourceResponseV"></a>
+                    <a name="/s:19SotoCognitoIdentity0bC0V21UntagResourceResponseV"></a>
                     <a name="//apple_ref/swift/Struct/UntagResourceResponse" class="dashAnchor"></a>
-                    <a class="token" href="#/s:18AWSCognitoIdentity07CognitoB0V21UntagResourceResponseV">UntagResourceResponse</a>
+                    <a class="token" href="#/s:19SotoCognitoIdentity0bC0V21UntagResourceResponseV">UntagResourceResponse</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2791,9 +3041,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">UntagResourceResponse</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">UntagResourceResponse</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CognitoIdentity/CognitoIdentity_Shapes.swift#L1163-L1165">Show on GitHub</a>
                       </div>
                     </section>
                   </div>

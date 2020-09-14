@@ -15,7 +15,7 @@
     <header>
       <div class="content-wrapper">
         <p><a href="../../index.html"> Docs</a> (54% documented)</p>
-        <p class="header-right"><a href="https://github.com/swift-aws/aws-sdk-swift"><img src="../../img/gh.png"/>View on GitHub</a></p>
+        <p class="header-right"><a href="https://github.com/soto-project/soto"><img src="../../img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -28,6 +28,9 @@
     <div class="content-wrapper">
       <nav class="sidebar">
         <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../../User%20Guides.html">User Guides</a>
+          </li>
           <li class="nav-group-name">
             <a href="../../AWSSDKSwiftCore.html">AWSSDKSwiftCore</a>
           </li>
@@ -68,6 +71,9 @@
             <a href="../../AppSync.html">AppSync</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../Appflow.html">Appflow</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../ApplicationAutoScaling.html">ApplicationAutoScaling</a>
           </li>
           <li class="nav-group-name">
@@ -93,6 +99,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../Batch.html">Batch</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../Braket.html">Braket</a>
           </li>
           <li class="nav-group-name">
             <a href="../../Budgets.html">Budgets</a>
@@ -335,6 +344,12 @@
             <a href="../../IAM.html">IAM</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../IVS.html">IVS</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../IdentityStore.html">IdentityStore</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../Imagebuilder.html">Imagebuilder</a>
           </li>
           <li class="nav-group-name">
@@ -557,6 +572,9 @@
             <a href="../../Redshift.html">Redshift</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../RedshiftDataAPIService.html">RedshiftDataAPIService</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../Rekognition.html">Rekognition</a>
           </li>
           <li class="nav-group-name">
@@ -606,6 +624,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../SSO.html">SSO</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../SSOAdmin.html">SSOAdmin</a>
           </li>
           <li class="nav-group-name">
             <a href="../../SSOOIDC.html">SSOOIDC</a>
@@ -735,6 +756,7 @@
             <h1>RegisterGameServerInput</h1>
               <div class="declaration">
                 <div class="language">
+                  
                   <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">RegisterGameServerInput</span> <span class="p">:</span> <span class="kt"><a href="../../Protocols/AWSEncodableShape.html">AWSEncodableShape</a></span></code></pre>
 
                 </div>
@@ -748,9 +770,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:11AWSGameLift04GameB0V08RegisterC11ServerInputV14connectionInfoSSSgvp"></a>
+                    <a name="/s:12SotoGameLift0bC0V08RegisterB11ServerInputV14connectionInfoSSSgvp"></a>
                     <a name="//apple_ref/swift/Property/connectionInfo" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11AWSGameLift04GameB0V08RegisterC11ServerInputV14connectionInfoSSSgvp">connectionInfo</a>
+                    <a class="token" href="#/s:12SotoGameLift0bC0V08RegisterB11ServerInputV14connectionInfoSSSgvp">connectionInfo</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -758,7 +780,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Information needed to make inbound client connections to the game server. This might include IP address and port, DNS name, etc.</p>
+                        <p>Information that is needed to make inbound client connections to the game server. This might include the IP address and port, DNS name, and other information.</p>
 
                       </div>
                       <div class="declaration">
@@ -769,32 +791,8 @@
 
                         </div>
                       </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:11AWSGameLift04GameB0V08RegisterC11ServerInputV13customSortKeySSSgvp"></a>
-                    <a name="//apple_ref/swift/Property/customSortKey" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11AWSGameLift04GameB0V08RegisterC11ServerInputV13customSortKeySSSgvp">customSortKey</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>A game server tag that can be used to request sorted lists of game servers using ListGameServers. Custom sort keys are developer-defined based on how you want to organize the retrieved game server information.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">customSortKey</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
-
-                        </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/GameLift/GameLift_Shapes.swift#L4496">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -802,9 +800,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:11AWSGameLift04GameB0V08RegisterC11ServerInputV04gameE4DataSSSgvp"></a>
+                    <a name="/s:12SotoGameLift0bC0V08RegisterB11ServerInputV04gameE4DataSSSgvp"></a>
                     <a name="//apple_ref/swift/Property/gameServerData" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11AWSGameLift04GameB0V08RegisterC11ServerInputV04gameE4DataSSSgvp">gameServerData</a>
+                    <a class="token" href="#/s:12SotoGameLift0bC0V08RegisterB11ServerInputV04gameE4DataSSSgvp">gameServerData</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -812,7 +810,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>A set of custom game server properties, formatted as a single string value. This data is passed to a game client or service when it requests information on a game servers using ListGameServers or ClaimGameServer.</p>
+                        <p>A set of custom game server properties, formatted as a single string value. This data is passed to a game client or service when it requests information on game servers using ListGameServers or ClaimGameServer.</p>
 
                       </div>
                       <div class="declaration">
@@ -823,15 +821,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/GameLift/GameLift_Shapes.swift#L4498">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:11AWSGameLift04GameB0V08RegisterC11ServerInputV04gameE9GroupNameSSvp"></a>
+                    <a name="/s:12SotoGameLift0bC0V08RegisterB11ServerInputV04gameE9GroupNameSSvp"></a>
                     <a name="//apple_ref/swift/Property/gameServerGroupName" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11AWSGameLift04GameB0V08RegisterC11ServerInputV04gameE9GroupNameSSvp">gameServerGroupName</a>
+                    <a class="token" href="#/s:12SotoGameLift0bC0V08RegisterB11ServerInputV04gameE9GroupNameSSvp">gameServerGroupName</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -839,7 +840,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>An identifier for the game server group where the game server is running. You can use either the GameServerGroup name or ARN value.</p>
+                        <p>A unique identifier for the game server group where the game server is running. Use either the GameServerGroup name or ARN value.</p>
 
                       </div>
                       <div class="declaration">
@@ -850,15 +851,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/GameLift/GameLift_Shapes.swift#L4500">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:11AWSGameLift04GameB0V08RegisterC11ServerInputV04gameE2IdSSvp"></a>
+                    <a name="/s:12SotoGameLift0bC0V08RegisterB11ServerInputV04gameE2IdSSvp"></a>
                     <a name="//apple_ref/swift/Property/gameServerId" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11AWSGameLift04GameB0V08RegisterC11ServerInputV04gameE2IdSSvp">gameServerId</a>
+                    <a class="token" href="#/s:12SotoGameLift0bC0V08RegisterB11ServerInputV04gameE2IdSSvp">gameServerId</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -866,7 +870,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>A custom string that uniquely identifies the new game server. Game server IDs are developer-defined and must be unique across all game server groups in your AWS account.</p>
+                        <p>A custom string that uniquely identifies the game server to register. Game server IDs are developer-defined and must be unique across all game server groups in your AWS account.</p>
 
                       </div>
                       <div class="declaration">
@@ -877,15 +881,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/GameLift/GameLift_Shapes.swift#L4502">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:11AWSGameLift04GameB0V08RegisterC11ServerInputV10instanceIdSSvp"></a>
+                    <a name="/s:12SotoGameLift0bC0V08RegisterB11ServerInputV10instanceIdSSvp"></a>
                     <a name="//apple_ref/swift/Property/instanceId" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11AWSGameLift04GameB0V08RegisterC11ServerInputV10instanceIdSSvp">instanceId</a>
+                    <a class="token" href="#/s:12SotoGameLift0bC0V08RegisterB11ServerInputV10instanceIdSSvp">instanceId</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -893,7 +900,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The unique identifier for the instance where the game server is running. This ID is available in the instance metadata.</p>
+                        <p>The unique identifier for the instance where the game server is running. This ID is available in the instance metadata. EC2 instance IDs use a 17-character format, for example: i-1234567890abcdef0.</p>
 
                       </div>
                       <div class="declaration">
@@ -904,32 +911,8 @@
 
                         </div>
                       </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:11AWSGameLift04GameB0V08RegisterC11ServerInputV4tagsSayAC3TagVGSgvp"></a>
-                    <a name="//apple_ref/swift/Property/tags" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11AWSGameLift04GameB0V08RegisterC11ServerInputV4tagsSayAC3TagVGSgvp">tags</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>A list of labels to assign to the new game server resource. Tags are developer-defined key-value pairs. Tagging AWS resources are useful for resource management, access management, and cost allocation. For more information, see  Tagging AWS Resources in the AWS General Reference. Once the resource is created, you can use TagResource, UntagResource, and ListTagsForResource to add, remove, and view tags. The maximum tag limit may be lower than stated. See the AWS General Reference for actual tagging limits.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">tags</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../../Structs/GameLift/Tag.html">Tag</a></span><span class="p">]?</span></code></pre>
-
-                        </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/GameLift/GameLift_Shapes.swift#L4504">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -937,9 +920,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:11AWSGameLift04GameB0V08RegisterC11ServerInputV14connectionInfo13customSortKey04gameE4Data0lE9GroupName0lE2Id08instanceP04tagsAESSSg_A2MS3SSayAC3TagVGSgtcfc"></a>
-                    <a name="//apple_ref/swift/Method/init(connectionInfo:customSortKey:gameServerData:gameServerGroupName:gameServerId:instanceId:tags:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11AWSGameLift04GameB0V08RegisterC11ServerInputV14connectionInfo13customSortKey04gameE4Data0lE9GroupName0lE2Id08instanceP04tagsAESSSg_A2MS3SSayAC3TagVGSgtcfc">init(connectionInfo:customSortKey:gameServerData:gameServerGroupName:gameServerId:instanceId:tags:)</a>
+                    <a name="/s:12SotoGameLift0bC0V08RegisterB11ServerInputV14connectionInfo04gameE4Data0iE9GroupName0iE2Id08instanceM0AESSSg_AKS3Stcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(connectionInfo:gameServerData:gameServerGroupName:gameServerId:instanceId:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SotoGameLift0bC0V08RegisterB11ServerInputV14connectionInfo04gameE4Data0iE9GroupName0iE2Id08instanceM0AESSSg_AKS3Stcfc">init(connectionInfo:<wbr>gameServerData:<wbr>gameServerGroupName:<wbr>gameServerId:<wbr>instanceId:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -954,9 +937,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">connectionInfo</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">customSortKey</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">gameServerData</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">gameServerGroupName</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">gameServerId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">instanceId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">tags</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../../Structs/GameLift/Tag.html">Tag</a></span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">connectionInfo</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">gameServerData</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">gameServerGroupName</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">gameServerId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">instanceId</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/GameLift/GameLift_Shapes.swift#L4506-L4512">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -964,9 +950,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:15AWSSDKSwiftCore17AWSEncodableShapeP8validate4nameySS_tKF"></a>
+                    <a name="/s:8SotoCore17AWSEncodableShapeP8validate4nameySS_tKF"></a>
                     <a name="//apple_ref/swift/Method/validate(name:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15AWSSDKSwiftCore17AWSEncodableShapeP8validate4nameySS_tKF">validate(name:)</a>
+                    <a class="token" href="#/s:8SotoCore17AWSEncodableShapeP8validate4nameySS_tKF">validate(name:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -983,6 +969,9 @@
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">validate</span><span class="p">(</span><span class="nv">name</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="k">throws</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/GameLift/GameLift_Shapes.swift#L4514-L4530">Show on GitHub</a>
                       </div>
                     </section>
                   </div>

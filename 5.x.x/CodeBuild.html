@@ -15,7 +15,7 @@
     <header>
       <div class="content-wrapper">
         <p><a href="index.html"> Docs</a> (54% documented)</p>
-        <p class="header-right"><a href="https://github.com/swift-aws/aws-sdk-swift"><img src="img/gh.png"/>View on GitHub</a></p>
+        <p class="header-right"><a href="https://github.com/soto-project/soto"><img src="img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -28,6 +28,9 @@
     <div class="content-wrapper">
       <nav class="sidebar">
         <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="User%20Guides.html">User Guides</a>
+          </li>
           <li class="nav-group-name">
             <a href="AWSSDKSwiftCore.html">AWSSDKSwiftCore</a>
           </li>
@@ -68,6 +71,9 @@
             <a href="AppSync.html">AppSync</a>
           </li>
           <li class="nav-group-name">
+            <a href="Appflow.html">Appflow</a>
+          </li>
+          <li class="nav-group-name">
             <a href="ApplicationAutoScaling.html">ApplicationAutoScaling</a>
           </li>
           <li class="nav-group-name">
@@ -93,6 +99,9 @@
           </li>
           <li class="nav-group-name">
             <a href="Batch.html">Batch</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="Braket.html">Braket</a>
           </li>
           <li class="nav-group-name">
             <a href="Budgets.html">Budgets</a>
@@ -335,6 +344,12 @@
             <a href="IAM.html">IAM</a>
           </li>
           <li class="nav-group-name">
+            <a href="IVS.html">IVS</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="IdentityStore.html">IdentityStore</a>
+          </li>
+          <li class="nav-group-name">
             <a href="Imagebuilder.html">Imagebuilder</a>
           </li>
           <li class="nav-group-name">
@@ -557,6 +572,9 @@
             <a href="Redshift.html">Redshift</a>
           </li>
           <li class="nav-group-name">
+            <a href="RedshiftDataAPIService.html">RedshiftDataAPIService</a>
+          </li>
+          <li class="nav-group-name">
             <a href="Rekognition.html">Rekognition</a>
           </li>
           <li class="nav-group-name">
@@ -606,6 +624,9 @@
           </li>
           <li class="nav-group-name">
             <a href="SSO.html">SSO</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="SSOAdmin.html">SSOAdmin</a>
           </li>
           <li class="nav-group-name">
             <a href="SSOOIDC.html">SSOOIDC</a>
@@ -741,9 +762,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:12AWSCodeBuild04CodeB0V"></a>
+                    <a name="/s:13SotoCodeBuild0bC0V"></a>
                     <a name="//apple_ref/swift/Struct/CodeBuild" class="dashAnchor"></a>
-                    <a class="token" href="#/s:12AWSCodeBuild04CodeB0V">CodeBuild</a>
+                    <a class="token" href="#/s:13SotoCodeBuild0bC0V">CodeBuild</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -751,9 +772,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Client object for interacting with AWS CodeBuild service.</p>
-
-<p>AWS CodeBuild AWS CodeBuild is a fully managed build service in the cloud. AWS CodeBuild compiles your source code, runs unit tests, and produces artifacts that are ready to deploy. AWS CodeBuild eliminates the need to provision, manage, and scale your own build servers. It provides prepackaged build environments for the most popular programming languages and build tools, such as Apache Maven, Gradle, and more. You can also fully customize build environments in AWS CodeBuild to use your own build tools. AWS CodeBuild scales automatically to meet peak build requests. You pay only for the build time you consume. For more information about AWS CodeBuild, see the  AWS CodeBuild User Guide.  AWS CodeBuild supports these operations:    BatchDeleteBuilds: Deletes one or more builds.    BatchGetBuilds: Gets information about one or more builds.    BatchGetProjects: Gets information about one or more build projects. A build project defines how AWS CodeBuild runs a build. This includes information such as where to get the source code to build, the build environment to use, the build commands to run, and where to store the build output. A build environment is a representation of operating system, programming language runtime, and tools that AWS CodeBuild uses to run a build. You can add tags to build projects to help manage your resources and costs.    BatchGetReportGroups: Returns an array of report groups.     BatchGetReports: Returns an array of reports.     CreateProject: Creates a build project.    CreateReportGroup: Creates a report group. A report group contains a collection of reports.     CreateWebhook: For an existing AWS CodeBuild build project that has its source code stored in a GitHub or Bitbucket repository, enables AWS CodeBuild to start rebuilding the source code every time a code change is pushed to the repository.    DeleteProject: Deletes a build project.    DeleteReport: Deletes a report.     DeleteReportGroup: Deletes a report group.     DeleteResourcePolicy: Deletes a resource policy that is identified by its resource ARN.     DeleteSourceCredentials: Deletes a set of GitHub, GitHub Enterprise, or Bitbucket source credentials.    DeleteWebhook: For an existing AWS CodeBuild build project that has its source code stored in a GitHub or Bitbucket repository, stops AWS CodeBuild from rebuilding the source code every time a code change is pushed to the repository.    DescribeTestCases: Returns a list of details about test cases for a report.     GetResourcePolicy: Gets a resource policy that is identified by its resource ARN.     ImportSourceCredentials: Imports the source repository credentials for an AWS CodeBuild project that has its source code stored in a GitHub, GitHub Enterprise, or Bitbucket repository.    InvalidateProjectCache: Resets the cache for a project.    ListBuilds: Gets a list of build IDs, with each build ID representing a single build.    ListBuildsForProject: Gets a list of build IDs for the specified build project, with each build ID representing a single build.    ListCuratedEnvironmentImages: Gets information about Docker images that are managed by AWS CodeBuild.    ListProjects: Gets a list of build project names, with each build project name representing a single build project.    ListReportGroups: Gets a list ARNs for the report groups in the current AWS account.     ListReports: Gets a list ARNs for the reports in the current AWS account.     ListReportsForReportGroup: Returns a list of ARNs for the reports that belong to a ReportGroup.     ListSharedProjects: Gets a list of ARNs associated with projects shared with the current AWS account or user.    ListSharedReportGroups: Gets a list of ARNs associated with report groups shared with the current AWS account or user    ListSourceCredentials: Returns a list of SourceCredentialsInfo objects. Each SourceCredentialsInfo object includes the authentication type, token ARN, and type of source provider for one set of credentials.    PutResourcePolicy: Stores a resource policy for the ARN of a Project or ReportGroup object.     StartBuild: Starts running a build.    StopBuild: Attempts to stop running a build.    UpdateProject: Changes the settings of an existing build project.    UpdateReportGroup: Changes a report group.    UpdateWebhook: Changes the settings of an existing webhook.</p>
+                        <p>Undocumented</p>
 
                         <a href="Structs/CodeBuild.html" class="slightly-smaller">See more</a>
                       </div>
@@ -761,9 +780,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">CodeBuild</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">CodeBuild</span> <span class="p">:</span> <span class="kt"><a href="Protocols/AWSService.html">AWSService</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CodeBuild/CodeBuild_API.swift#L24-L280">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -771,9 +793,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:12AWSCodeBuild04CodeB9ErrorTypeO"></a>
+                    <a name="/s:13SotoCodeBuild0bC9ErrorTypeO"></a>
                     <a name="//apple_ref/swift/Enum/CodeBuildErrorType" class="dashAnchor"></a>
-                    <a class="token" href="#/s:12AWSCodeBuild04CodeB9ErrorTypeO">CodeBuildErrorType</a>
+                    <a class="token" href="#/s:13SotoCodeBuild0bC9ErrorTypeO">CodeBuildErrorType</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -793,6 +815,9 @@
 <pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">CodeBuildErrorType</span><span class="p">:</span> <span class="kt">CustomStringConvertible</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CodeBuild/CodeBuild_Error.swift#L20-L26">Show on GitHub</a>
                       </div>
                     </section>
                   </div>

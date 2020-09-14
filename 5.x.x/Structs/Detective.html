@@ -15,7 +15,7 @@
     <header>
       <div class="content-wrapper">
         <p><a href="../index.html"> Docs</a> (54% documented)</p>
-        <p class="header-right"><a href="https://github.com/swift-aws/aws-sdk-swift"><img src="../img/gh.png"/>View on GitHub</a></p>
+        <p class="header-right"><a href="https://github.com/soto-project/soto"><img src="../img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -28,6 +28,9 @@
     <div class="content-wrapper">
       <nav class="sidebar">
         <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../User%20Guides.html">User Guides</a>
+          </li>
           <li class="nav-group-name">
             <a href="../AWSSDKSwiftCore.html">AWSSDKSwiftCore</a>
           </li>
@@ -68,6 +71,9 @@
             <a href="../AppSync.html">AppSync</a>
           </li>
           <li class="nav-group-name">
+            <a href="../Appflow.html">Appflow</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../ApplicationAutoScaling.html">ApplicationAutoScaling</a>
           </li>
           <li class="nav-group-name">
@@ -93,6 +99,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../Batch.html">Batch</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Braket.html">Braket</a>
           </li>
           <li class="nav-group-name">
             <a href="../Budgets.html">Budgets</a>
@@ -335,6 +344,12 @@
             <a href="../IAM.html">IAM</a>
           </li>
           <li class="nav-group-name">
+            <a href="../IVS.html">IVS</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../IdentityStore.html">IdentityStore</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../Imagebuilder.html">Imagebuilder</a>
           </li>
           <li class="nav-group-name">
@@ -557,6 +572,9 @@
             <a href="../Redshift.html">Redshift</a>
           </li>
           <li class="nav-group-name">
+            <a href="../RedshiftDataAPIService.html">RedshiftDataAPIService</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../Rekognition.html">Rekognition</a>
           </li>
           <li class="nav-group-name">
@@ -606,6 +624,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../SSO.html">SSO</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../SSOAdmin.html">SSOAdmin</a>
           </li>
           <li class="nav-group-name">
             <a href="../SSOOIDC.html">SSOOIDC</a>
@@ -735,13 +756,12 @@
             <h1>Detective</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Detective</span></code></pre>
+                  
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Detective</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSService.html">AWSService</a></span></code></pre>
 
                 </div>
               </div>
-            <p>Client object for interacting with AWS Detective service.</p>
-
-<p>Detective uses machine learning and purpose-built visualizations to help you analyze and investigate security issues across your Amazon Web Services (AWS) workloads. Detective automatically extracts time-based events such as login attempts, API calls, and network traffic from AWS CloudTrail and Amazon Virtual Private Cloud (Amazon VPC) flow logs. It also extracts findings detected by Amazon GuardDuty. The Detective API primarily supports the creation and management of behavior graphs. A behavior graph contains the extracted data from a set of member accounts, and is created and managed by a master account. Every behavior graph is specific to a Region. You can only use the API to manage graphs that belong to the Region that is associated with the currently selected endpoint. A Detective master account can use the Detective API to do the following:   Enable and disable Detective. Enabling Detective creates a new behavior graph.   View the list of member accounts in a behavior graph.   Add member accounts to a behavior graph.   Remove member accounts from a behavior graph.   A member account can use the Detective API to do the following:   View the list of behavior graphs that they are invited to.   Accept an invitation to contribute to a behavior graph.   Decline an invitation to contribute to a behavior graph.   Remove their account from a behavior graph.   All API actions are logged as CloudTrail events. See Logging Detective API Calls with CloudTrail.</p>
+            <p>Undocumented</p>
 
           </section>
           <section class="section task-group-section">
@@ -749,17 +769,19 @@
               <div class="task-name-container">
                 <a name="/Member%20variables"></a>
                 <a name="//apple_ref/swift/Section/Member variables" class="dashAnchor"></a>
-                <a href="#/Member%20variables">
-                  <h3 class="section-name">Member variables</h3>
-                </a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Member%20variables"></a>
+                  <h3 class="section-name"><p>Member variables</p>
+</h3>
+                </div>
               </div>
               <ul>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:12AWSDetective9DetectiveV6client15AWSSDKSwiftCore9AWSClientCvp"></a>
+                    <a name="/s:8SotoCore10AWSServiceP6clientAA9AWSClientCvp"></a>
                     <a name="//apple_ref/swift/Property/client" class="dashAnchor"></a>
-                    <a class="token" href="#/s:12AWSDetective9DetectiveV6client15AWSSDKSwiftCore9AWSClientCvp">client</a>
+                    <a class="token" href="#/s:8SotoCore10AWSServiceP6clientAA9AWSClientCvp">client</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -767,8 +789,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
-
+                        
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
@@ -778,15 +799,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Detective/Detective_API.swift#L19">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:12AWSDetective9DetectiveV13serviceConfig15AWSSDKSwiftCore010AWSServiceD0Cvp"></a>
-                    <a name="//apple_ref/swift/Property/serviceConfig" class="dashAnchor"></a>
-                    <a class="token" href="#/s:12AWSDetective9DetectiveV13serviceConfig15AWSSDKSwiftCore010AWSServiceD0Cvp">serviceConfig</a>
+                    <a name="/s:8SotoCore10AWSServiceP6configAA0C6ConfigCvp"></a>
+                    <a name="//apple_ref/swift/Property/config" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8SotoCore10AWSServiceP6configAA0C6ConfigCvp">config</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -794,16 +818,18 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
-
+                        
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">serviceConfig</span><span class="p">:</span> <span class="kt"><a href="../Classes/AWSServiceConfig.html">AWSServiceConfig</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">config</span><span class="p">:</span> <span class="kt"><a href="../Classes/AWSServiceConfig.html">AWSServiceConfig</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Detective/Detective_API.swift#L21">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -814,17 +840,19 @@
               <div class="task-name-container">
                 <a name="/Initialization"></a>
                 <a name="//apple_ref/swift/Section/Initialization" class="dashAnchor"></a>
-                <a href="#/Initialization">
-                  <h3 class="section-name">Initialization</h3>
-                </a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Initialization"></a>
+                  <h3 class="section-name"><p>Initialization</p>
+</h3>
+                </div>
               </div>
               <ul>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:12AWSDetective9DetectiveV6client6region9partition8endpointAC15AWSSDKSwiftCore9AWSClientC_AH6RegionVSgAH9PartitionVSSSgtcfc"></a>
-                    <a name="//apple_ref/swift/Method/init(client:region:partition:endpoint:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:12AWSDetective9DetectiveV6client6region9partition8endpointAC15AWSSDKSwiftCore9AWSClientC_AH6RegionVSgAH9PartitionVSSSgtcfc">init(client:region:partition:endpoint:)</a>
+                    <a name="/s:13SotoDetective0B0V6client6region9partition8endpoint7timeout19byteBufferAllocator7optionsAC0A4Core9AWSClientC_AK6RegionVSgAK12AWSPartitionVSSSg3NIO10TimeAmountVSgAT04ByteiJ0VAK16AWSServiceConfigC7OptionsVtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(client:region:partition:endpoint:timeout:byteBufferAllocator:options:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SotoDetective0B0V6client6region9partition8endpoint7timeout19byteBufferAllocator7optionsAC0A4Core9AWSClientC_AK6RegionVSgAK12AWSPartitionVSSSg3NIO10TimeAmountVSgAT04ByteiJ0VAK16AWSServiceConfigC7OptionsVtcfc">init(client:<wbr>region:<wbr>partition:<wbr>endpoint:<wbr>timeout:<wbr>byteBufferAllocator:<wbr>options:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -841,9 +869,12 @@
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span>
     <span class="nv">client</span><span class="p">:</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="p">,</span>
-    <span class="nv">region</span><span class="p">:</span> <span class="kt">AWSSDKSwiftCore</span><span class="o">.</span><span class="kt"><a href="../Structs/Region.html">Region</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
-    <span class="nv">partition</span><span class="p">:</span> <span class="kt">AWSSDKSwiftCore</span><span class="o">.</span><span class="kt"><a href="../Structs/Partition.html">Partition</a></span> <span class="o">=</span> <span class="o">.</span><span class="n">aws</span><span class="p">,</span>
-    <span class="nv">endpoint</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span>
+    <span class="nv">region</span><span class="p">:</span> <span class="kt">SotoCore</span><span class="o">.</span><span class="kt"><a href="../Structs/Region.html">Region</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="nv">partition</span><span class="p">:</span> <span class="kt"><a href="../Structs/AWSPartition.html">AWSPartition</a></span> <span class="o">=</span> <span class="o">.</span><span class="n">aws</span><span class="p">,</span>
+    <span class="nv">endpoint</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="nv">timeout</span><span class="p">:</span> <span class="kt">TimeAmount</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="nv">byteBufferAllocator</span><span class="p">:</span> <span class="kt">ByteBufferAllocator</span> <span class="o">=</span> <span class="kt">ByteBufferAllocator</span><span class="p">(),</span>
+    <span class="nv">options</span><span class="p">:</span> <span class="kt"><a href="../Classes/AWSServiceConfig.html">AWSServiceConfig</a></span><span class="o">.</span><span class="kt">Options</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="p">)</span></code></pre>
 
                         </div>
@@ -900,8 +931,23 @@
                                 </div>
                               </td>
                             </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>timeout</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Timeout value for HTTP requests</p>
+                                </div>
+                              </td>
+                            </tr>
                           </tbody>
                         </table>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Detective/Detective_API.swift#L39-L62">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -912,17 +958,19 @@
               <div class="task-name-container">
                 <a name="/API%20Calls"></a>
                 <a name="//apple_ref/swift/Section/API Calls" class="dashAnchor"></a>
-                <a href="#/API%20Calls">
-                  <h3 class="section-name">API Calls</h3>
-                </a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/API%20Calls"></a>
+                  <h3 class="section-name"><p>API Calls</p>
+</h3>
+                </div>
               </div>
               <ul>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:12AWSDetective9DetectiveV16acceptInvitation_2on3NIO15EventLoopFutureCyytGAC06AcceptD7RequestV_AF0gH0_pSgtF"></a>
-                    <a name="//apple_ref/swift/Method/acceptInvitation(_:on:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:12AWSDetective9DetectiveV16acceptInvitation_2on3NIO15EventLoopFutureCyytGAC06AcceptD7RequestV_AF0gH0_pSgtF">acceptInvitation(_:on:)</a>
+                    <a name="/s:13SotoDetective0B0V16acceptInvitation_2on6logger3NIO15EventLoopFutureCyytGAC06AcceptD7RequestV_AG0hI0_pSg7Logging6LoggerVtF"></a>
+                    <a name="//apple_ref/swift/Method/acceptInvitation(_:on:logger:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SotoDetective0B0V16acceptInvitation_2on6logger3NIO15EventLoopFutureCyytGAC06AcceptD7RequestV_AG0hI0_pSg7Logging6LoggerVtF">acceptInvitation(_:<wbr>on:<wbr>logger:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -938,9 +986,12 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
-<span class="kd">public</span> <span class="kd">func</span> <span class="nf">acceptInvitation</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/Detective/AcceptInvitationRequest.html">AcceptInvitationRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Void</span><span class="o">&gt;</span></code></pre>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">acceptInvitation</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/Detective/AcceptInvitationRequest.html">AcceptInvitationRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">logger</span><span class="p">:</span> <span class="kt">Logger</span> <span class="o">=</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="o">.</span><span class="n">loggingDisabled</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Void</span><span class="o">&gt;</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Detective/Detective_API.swift#L67-L69">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -948,9 +999,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:12AWSDetective9DetectiveV11createGraph2on3NIO15EventLoopFutureCyAC06CreateD8ResponseVGAF0gH0_pSg_tF"></a>
-                    <a name="//apple_ref/swift/Method/createGraph(on:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:12AWSDetective9DetectiveV11createGraph2on3NIO15EventLoopFutureCyAC06CreateD8ResponseVGAF0gH0_pSg_tF">createGraph(on:)</a>
+                    <a name="/s:13SotoDetective0B0V11createGraph2on6logger3NIO15EventLoopFutureCyAC06CreateD8ResponseVGAG0hI0_pSg_7Logging6LoggerVtF"></a>
+                    <a name="//apple_ref/swift/Method/createGraph(on:logger:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SotoDetective0B0V11createGraph2on6logger3NIO15EventLoopFutureCyAC06CreateD8ResponseVGAG0hI0_pSg_7Logging6LoggerVtF">createGraph(on:<wbr>logger:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -965,9 +1016,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">createGraph</span><span class="p">(</span><span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/Detective/CreateGraphResponse.html">CreateGraphResponse</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">createGraph</span><span class="p">(</span><span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">logger</span><span class="p">:</span> <span class="kt">Logger</span> <span class="o">=</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="o">.</span><span class="n">loggingDisabled</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/Detective/CreateGraphResponse.html">CreateGraphResponse</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Detective/Detective_API.swift#L72-L74">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -975,9 +1029,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:12AWSDetective9DetectiveV13createMembers_2on3NIO15EventLoopFutureCyAC06CreateD8ResponseVGAC0jD7RequestV_AF0gH0_pSgtF"></a>
-                    <a name="//apple_ref/swift/Method/createMembers(_:on:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:12AWSDetective9DetectiveV13createMembers_2on3NIO15EventLoopFutureCyAC06CreateD8ResponseVGAC0jD7RequestV_AF0gH0_pSgtF">createMembers(_:on:)</a>
+                    <a name="/s:13SotoDetective0B0V13createMembers_2on6logger3NIO15EventLoopFutureCyAC06CreateD8ResponseVGAC0kD7RequestV_AG0hI0_pSg7Logging6LoggerVtF"></a>
+                    <a name="//apple_ref/swift/Method/createMembers(_:on:logger:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SotoDetective0B0V13createMembers_2on6logger3NIO15EventLoopFutureCyAC06CreateD8ResponseVGAC0kD7RequestV_AG0hI0_pSg7Logging6LoggerVtF">createMembers(_:<wbr>on:<wbr>logger:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -992,9 +1046,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">createMembers</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/Detective/CreateMembersRequest.html">CreateMembersRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/Detective/CreateMembersResponse.html">CreateMembersResponse</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">createMembers</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/Detective/CreateMembersRequest.html">CreateMembersRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">logger</span><span class="p">:</span> <span class="kt">Logger</span> <span class="o">=</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="o">.</span><span class="n">loggingDisabled</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/Detective/CreateMembersResponse.html">CreateMembersResponse</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Detective/Detective_API.swift#L77-L79">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1002,9 +1059,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:12AWSDetective9DetectiveV11deleteGraph_2on3NIO15EventLoopFutureCyytGAC06DeleteD7RequestV_AF0gH0_pSgtF"></a>
-                    <a name="//apple_ref/swift/Method/deleteGraph(_:on:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:12AWSDetective9DetectiveV11deleteGraph_2on3NIO15EventLoopFutureCyytGAC06DeleteD7RequestV_AF0gH0_pSgtF">deleteGraph(_:on:)</a>
+                    <a name="/s:13SotoDetective0B0V11deleteGraph_2on6logger3NIO15EventLoopFutureCyytGAC06DeleteD7RequestV_AG0hI0_pSg7Logging6LoggerVtF"></a>
+                    <a name="//apple_ref/swift/Method/deleteGraph(_:on:logger:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SotoDetective0B0V11deleteGraph_2on6logger3NIO15EventLoopFutureCyytGAC06DeleteD7RequestV_AG0hI0_pSg7Logging6LoggerVtF">deleteGraph(_:<wbr>on:<wbr>logger:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1020,9 +1077,12 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
-<span class="kd">public</span> <span class="kd">func</span> <span class="nf">deleteGraph</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/Detective/DeleteGraphRequest.html">DeleteGraphRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Void</span><span class="o">&gt;</span></code></pre>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">deleteGraph</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/Detective/DeleteGraphRequest.html">DeleteGraphRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">logger</span><span class="p">:</span> <span class="kt">Logger</span> <span class="o">=</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="o">.</span><span class="n">loggingDisabled</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Void</span><span class="o">&gt;</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Detective/Detective_API.swift#L82-L84">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1030,9 +1090,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:12AWSDetective9DetectiveV13deleteMembers_2on3NIO15EventLoopFutureCyAC06DeleteD8ResponseVGAC0jD7RequestV_AF0gH0_pSgtF"></a>
-                    <a name="//apple_ref/swift/Method/deleteMembers(_:on:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:12AWSDetective9DetectiveV13deleteMembers_2on3NIO15EventLoopFutureCyAC06DeleteD8ResponseVGAC0jD7RequestV_AF0gH0_pSgtF">deleteMembers(_:on:)</a>
+                    <a name="/s:13SotoDetective0B0V13deleteMembers_2on6logger3NIO15EventLoopFutureCyAC06DeleteD8ResponseVGAC0kD7RequestV_AG0hI0_pSg7Logging6LoggerVtF"></a>
+                    <a name="//apple_ref/swift/Method/deleteMembers(_:on:logger:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SotoDetective0B0V13deleteMembers_2on6logger3NIO15EventLoopFutureCyAC06DeleteD8ResponseVGAC0kD7RequestV_AG0hI0_pSg7Logging6LoggerVtF">deleteMembers(_:<wbr>on:<wbr>logger:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1047,9 +1107,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">deleteMembers</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/Detective/DeleteMembersRequest.html">DeleteMembersRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/Detective/DeleteMembersResponse.html">DeleteMembersResponse</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">deleteMembers</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/Detective/DeleteMembersRequest.html">DeleteMembersRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">logger</span><span class="p">:</span> <span class="kt">Logger</span> <span class="o">=</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="o">.</span><span class="n">loggingDisabled</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/Detective/DeleteMembersResponse.html">DeleteMembersResponse</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Detective/Detective_API.swift#L87-L89">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1057,9 +1120,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:12AWSDetective9DetectiveV22disassociateMembership_2on3NIO15EventLoopFutureCyytGAC012DisassociateD7RequestV_AF0gH0_pSgtF"></a>
-                    <a name="//apple_ref/swift/Method/disassociateMembership(_:on:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:12AWSDetective9DetectiveV22disassociateMembership_2on3NIO15EventLoopFutureCyytGAC012DisassociateD7RequestV_AF0gH0_pSgtF">disassociateMembership(_:on:)</a>
+                    <a name="/s:13SotoDetective0B0V22disassociateMembership_2on6logger3NIO15EventLoopFutureCyytGAC012DisassociateD7RequestV_AG0hI0_pSg7Logging6LoggerVtF"></a>
+                    <a name="//apple_ref/swift/Method/disassociateMembership(_:on:logger:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SotoDetective0B0V22disassociateMembership_2on6logger3NIO15EventLoopFutureCyytGAC012DisassociateD7RequestV_AG0hI0_pSg7Logging6LoggerVtF">disassociateMembership(_:<wbr>on:<wbr>logger:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1075,9 +1138,12 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
-<span class="kd">public</span> <span class="kd">func</span> <span class="nf">disassociateMembership</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/Detective/DisassociateMembershipRequest.html">DisassociateMembershipRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Void</span><span class="o">&gt;</span></code></pre>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">disassociateMembership</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/Detective/DisassociateMembershipRequest.html">DisassociateMembershipRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">logger</span><span class="p">:</span> <span class="kt">Logger</span> <span class="o">=</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="o">.</span><span class="n">loggingDisabled</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Void</span><span class="o">&gt;</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Detective/Detective_API.swift#L92-L94">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1085,9 +1151,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:12AWSDetective9DetectiveV10getMembers_2on3NIO15EventLoopFutureCyAC03GetD8ResponseVGAC0jD7RequestV_AF0gH0_pSgtF"></a>
-                    <a name="//apple_ref/swift/Method/getMembers(_:on:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:12AWSDetective9DetectiveV10getMembers_2on3NIO15EventLoopFutureCyAC03GetD8ResponseVGAC0jD7RequestV_AF0gH0_pSgtF">getMembers(_:on:)</a>
+                    <a name="/s:13SotoDetective0B0V10getMembers_2on6logger3NIO15EventLoopFutureCyAC03GetD8ResponseVGAC0kD7RequestV_AG0hI0_pSg7Logging6LoggerVtF"></a>
+                    <a name="//apple_ref/swift/Method/getMembers(_:on:logger:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SotoDetective0B0V10getMembers_2on6logger3NIO15EventLoopFutureCyAC03GetD8ResponseVGAC0kD7RequestV_AG0hI0_pSg7Logging6LoggerVtF">getMembers(_:<wbr>on:<wbr>logger:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1102,9 +1168,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getMembers</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/Detective/GetMembersRequest.html">GetMembersRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/Detective/GetMembersResponse.html">GetMembersResponse</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getMembers</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/Detective/GetMembersRequest.html">GetMembersRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">logger</span><span class="p">:</span> <span class="kt">Logger</span> <span class="o">=</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="o">.</span><span class="n">loggingDisabled</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/Detective/GetMembersResponse.html">GetMembersResponse</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Detective/Detective_API.swift#L97-L99">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1112,9 +1181,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:12AWSDetective9DetectiveV10listGraphs_2on3NIO15EventLoopFutureCyAC04ListD8ResponseVGAC0jD7RequestV_AF0gH0_pSgtF"></a>
-                    <a name="//apple_ref/swift/Method/listGraphs(_:on:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:12AWSDetective9DetectiveV10listGraphs_2on3NIO15EventLoopFutureCyAC04ListD8ResponseVGAC0jD7RequestV_AF0gH0_pSgtF">listGraphs(_:on:)</a>
+                    <a name="/s:13SotoDetective0B0V10listGraphs_2on6logger3NIO15EventLoopFutureCyAC04ListD8ResponseVGAC0kD7RequestV_AG0hI0_pSg7Logging6LoggerVtF"></a>
+                    <a name="//apple_ref/swift/Method/listGraphs(_:on:logger:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SotoDetective0B0V10listGraphs_2on6logger3NIO15EventLoopFutureCyAC04ListD8ResponseVGAC0kD7RequestV_AG0hI0_pSg7Logging6LoggerVtF">listGraphs(_:<wbr>on:<wbr>logger:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1129,9 +1198,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">listGraphs</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/Detective/ListGraphsRequest.html">ListGraphsRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/Detective/ListGraphsResponse.html">ListGraphsResponse</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">listGraphs</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/Detective/ListGraphsRequest.html">ListGraphsRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">logger</span><span class="p">:</span> <span class="kt">Logger</span> <span class="o">=</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="o">.</span><span class="n">loggingDisabled</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/Detective/ListGraphsResponse.html">ListGraphsResponse</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Detective/Detective_API.swift#L102-L104">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1139,9 +1211,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:12AWSDetective9DetectiveV15listInvitations_2on3NIO15EventLoopFutureCyAC04ListD8ResponseVGAC0jD7RequestV_AF0gH0_pSgtF"></a>
-                    <a name="//apple_ref/swift/Method/listInvitations(_:on:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:12AWSDetective9DetectiveV15listInvitations_2on3NIO15EventLoopFutureCyAC04ListD8ResponseVGAC0jD7RequestV_AF0gH0_pSgtF">listInvitations(_:on:)</a>
+                    <a name="/s:13SotoDetective0B0V15listInvitations_2on6logger3NIO15EventLoopFutureCyAC04ListD8ResponseVGAC0kD7RequestV_AG0hI0_pSg7Logging6LoggerVtF"></a>
+                    <a name="//apple_ref/swift/Method/listInvitations(_:on:logger:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SotoDetective0B0V15listInvitations_2on6logger3NIO15EventLoopFutureCyAC04ListD8ResponseVGAC0kD7RequestV_AG0hI0_pSg7Logging6LoggerVtF">listInvitations(_:<wbr>on:<wbr>logger:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1156,9 +1228,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">listInvitations</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/Detective/ListInvitationsRequest.html">ListInvitationsRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/Detective/ListInvitationsResponse.html">ListInvitationsResponse</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">listInvitations</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/Detective/ListInvitationsRequest.html">ListInvitationsRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">logger</span><span class="p">:</span> <span class="kt">Logger</span> <span class="o">=</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="o">.</span><span class="n">loggingDisabled</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/Detective/ListInvitationsResponse.html">ListInvitationsResponse</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Detective/Detective_API.swift#L107-L109">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1166,9 +1241,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:12AWSDetective9DetectiveV11listMembers_2on3NIO15EventLoopFutureCyAC04ListD8ResponseVGAC0jD7RequestV_AF0gH0_pSgtF"></a>
-                    <a name="//apple_ref/swift/Method/listMembers(_:on:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:12AWSDetective9DetectiveV11listMembers_2on3NIO15EventLoopFutureCyAC04ListD8ResponseVGAC0jD7RequestV_AF0gH0_pSgtF">listMembers(_:on:)</a>
+                    <a name="/s:13SotoDetective0B0V11listMembers_2on6logger3NIO15EventLoopFutureCyAC04ListD8ResponseVGAC0kD7RequestV_AG0hI0_pSg7Logging6LoggerVtF"></a>
+                    <a name="//apple_ref/swift/Method/listMembers(_:on:logger:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SotoDetective0B0V11listMembers_2on6logger3NIO15EventLoopFutureCyAC04ListD8ResponseVGAC0kD7RequestV_AG0hI0_pSg7Logging6LoggerVtF">listMembers(_:<wbr>on:<wbr>logger:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1183,9 +1258,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">listMembers</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/Detective/ListMembersRequest.html">ListMembersRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/Detective/ListMembersResponse.html">ListMembersResponse</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">listMembers</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/Detective/ListMembersRequest.html">ListMembersRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">logger</span><span class="p">:</span> <span class="kt">Logger</span> <span class="o">=</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="o">.</span><span class="n">loggingDisabled</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/Detective/ListMembersResponse.html">ListMembersResponse</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Detective/Detective_API.swift#L112-L114">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1193,9 +1271,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:12AWSDetective9DetectiveV16rejectInvitation_2on3NIO15EventLoopFutureCyytGAC06RejectD7RequestV_AF0gH0_pSgtF"></a>
-                    <a name="//apple_ref/swift/Method/rejectInvitation(_:on:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:12AWSDetective9DetectiveV16rejectInvitation_2on3NIO15EventLoopFutureCyytGAC06RejectD7RequestV_AF0gH0_pSgtF">rejectInvitation(_:on:)</a>
+                    <a name="/s:13SotoDetective0B0V16rejectInvitation_2on6logger3NIO15EventLoopFutureCyytGAC06RejectD7RequestV_AG0hI0_pSg7Logging6LoggerVtF"></a>
+                    <a name="//apple_ref/swift/Method/rejectInvitation(_:on:logger:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SotoDetective0B0V16rejectInvitation_2on6logger3NIO15EventLoopFutureCyytGAC06RejectD7RequestV_AG0hI0_pSg7Logging6LoggerVtF">rejectInvitation(_:<wbr>on:<wbr>logger:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1211,9 +1289,12 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
-<span class="kd">public</span> <span class="kd">func</span> <span class="nf">rejectInvitation</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/Detective/RejectInvitationRequest.html">RejectInvitationRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Void</span><span class="o">&gt;</span></code></pre>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">rejectInvitation</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/Detective/RejectInvitationRequest.html">RejectInvitationRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">logger</span><span class="p">:</span> <span class="kt">Logger</span> <span class="o">=</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="o">.</span><span class="n">loggingDisabled</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Void</span><span class="o">&gt;</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Detective/Detective_API.swift#L117-L119">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1221,9 +1302,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:12AWSDetective9DetectiveV21startMonitoringMember_2on3NIO15EventLoopFutureCyytGAC05StartdE7RequestV_AF0hI0_pSgtF"></a>
-                    <a name="//apple_ref/swift/Method/startMonitoringMember(_:on:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:12AWSDetective9DetectiveV21startMonitoringMember_2on3NIO15EventLoopFutureCyytGAC05StartdE7RequestV_AF0hI0_pSgtF">startMonitoringMember(_:on:)</a>
+                    <a name="/s:13SotoDetective0B0V21startMonitoringMember_2on6logger3NIO15EventLoopFutureCyytGAC05StartdE7RequestV_AG0iJ0_pSg7Logging6LoggerVtF"></a>
+                    <a name="//apple_ref/swift/Method/startMonitoringMember(_:on:logger:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SotoDetective0B0V21startMonitoringMember_2on6logger3NIO15EventLoopFutureCyytGAC05StartdE7RequestV_AG0iJ0_pSg7Logging6LoggerVtF">startMonitoringMember(_:<wbr>on:<wbr>logger:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1239,9 +1320,12 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
-<span class="kd">public</span> <span class="kd">func</span> <span class="nf">startMonitoringMember</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/Detective/StartMonitoringMemberRequest.html">StartMonitoringMemberRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Void</span><span class="o">&gt;</span></code></pre>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">startMonitoringMember</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/Detective/StartMonitoringMemberRequest.html">StartMonitoringMemberRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">logger</span><span class="p">:</span> <span class="kt">Logger</span> <span class="o">=</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="o">.</span><span class="n">loggingDisabled</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Void</span><span class="o">&gt;</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Detective/Detective_API.swift#L122-L124">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1252,17 +1336,19 @@
               <div class="task-name-container">
                 <a name="/Paginators"></a>
                 <a name="//apple_ref/swift/Section/Paginators" class="dashAnchor"></a>
-                <a href="#/Paginators">
-                  <h3 class="section-name">Paginators</h3>
-                </a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Paginators"></a>
+                  <h3 class="section-name"><p>Paginators</p>
+</h3>
+                </div>
               </div>
               <ul>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:12AWSDetective9DetectiveV19listGraphsPaginator_2on0F4Page3NIO15EventLoopFutureCyytGAC04ListD7RequestV_AG0iJ0_pSgAIySbGAC0lD8ResponseV_AgM_ptctF"></a>
-                    <a name="//apple_ref/swift/Method/listGraphsPaginator(_:on:onPage:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:12AWSDetective9DetectiveV19listGraphsPaginator_2on0F4Page3NIO15EventLoopFutureCyytGAC04ListD7RequestV_AG0iJ0_pSgAIySbGAC0lD8ResponseV_AgM_ptctF">listGraphsPaginator(_:on:onPage:)</a>
+                    <a name="/s:13SotoDetective0B0V19listGraphsPaginator_2on6logger0F4Page3NIO15EventLoopFutureCyytGAC04ListD7RequestV_AH0jK0_pSg7Logging6LoggerVAJySbGAC0mD8ResponseV_AhN_ptctF"></a>
+                    <a name="//apple_ref/swift/Method/listGraphsPaginator(_:on:logger:onPage:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SotoDetective0B0V19listGraphsPaginator_2on6logger0F4Page3NIO15EventLoopFutureCyytGAC04ListD7RequestV_AH0jK0_pSg7Logging6LoggerVAJySbGAC0mD8ResponseV_AhN_ptctF">listGraphsPaginator(_:<wbr>on:<wbr>logger:<wbr>onPage:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1280,11 +1366,14 @@
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">listGraphsPaginator</span><span class="p">(</span>
     <span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/Detective/ListGraphsRequest.html">ListGraphsRequest</a></span><span class="p">,</span>
     <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
-    <span class="nv">onPage</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/Detective/ListGraphsResponse.html">ListGraphsResponse</a></span><span class="p">,</span>
-    <span class="kt">EventLoop</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Bool</span><span class="o">&gt;</span>
+    <span class="nv">logger</span><span class="p">:</span> <span class="kt">Logger</span> <span class="o">=</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="o">.</span><span class="n">loggingDisabled</span><span class="p">,</span>
+    <span class="nv">onPage</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/Detective/ListGraphsResponse.html">ListGraphsResponse</a></span><span class="p">,</span> <span class="kt">EventLoop</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Bool</span><span class="o">&gt;</span>
 <span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Void</span><span class="o">&gt;</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Detective/Detective_Paginator.swift#L23-L36">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1292,9 +1381,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:12AWSDetective9DetectiveV24listInvitationsPaginator_2on0F4Page3NIO15EventLoopFutureCyytGAC04ListD7RequestV_AG0iJ0_pSgAIySbGAC0lD8ResponseV_AgM_ptctF"></a>
-                    <a name="//apple_ref/swift/Method/listInvitationsPaginator(_:on:onPage:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:12AWSDetective9DetectiveV24listInvitationsPaginator_2on0F4Page3NIO15EventLoopFutureCyytGAC04ListD7RequestV_AG0iJ0_pSgAIySbGAC0lD8ResponseV_AgM_ptctF">listInvitationsPaginator(_:on:onPage:)</a>
+                    <a name="/s:13SotoDetective0B0V24listInvitationsPaginator_2on6logger0F4Page3NIO15EventLoopFutureCyytGAC04ListD7RequestV_AH0jK0_pSg7Logging6LoggerVAJySbGAC0mD8ResponseV_AhN_ptctF"></a>
+                    <a name="//apple_ref/swift/Method/listInvitationsPaginator(_:on:logger:onPage:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SotoDetective0B0V24listInvitationsPaginator_2on6logger0F4Page3NIO15EventLoopFutureCyytGAC04ListD7RequestV_AH0jK0_pSg7Logging6LoggerVAJySbGAC0mD8ResponseV_AhN_ptctF">listInvitationsPaginator(_:<wbr>on:<wbr>logger:<wbr>onPage:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1312,11 +1401,14 @@
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">listInvitationsPaginator</span><span class="p">(</span>
     <span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/Detective/ListInvitationsRequest.html">ListInvitationsRequest</a></span><span class="p">,</span>
     <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
-    <span class="nv">onPage</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/Detective/ListInvitationsResponse.html">ListInvitationsResponse</a></span><span class="p">,</span>
-    <span class="kt">EventLoop</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Bool</span><span class="o">&gt;</span>
+    <span class="nv">logger</span><span class="p">:</span> <span class="kt">Logger</span> <span class="o">=</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="o">.</span><span class="n">loggingDisabled</span><span class="p">,</span>
+    <span class="nv">onPage</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/Detective/ListInvitationsResponse.html">ListInvitationsResponse</a></span><span class="p">,</span> <span class="kt">EventLoop</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Bool</span><span class="o">&gt;</span>
 <span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Void</span><span class="o">&gt;</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Detective/Detective_Paginator.swift#L39-L52">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1324,9 +1416,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:12AWSDetective9DetectiveV20listMembersPaginator_2on0F4Page3NIO15EventLoopFutureCyytGAC04ListD7RequestV_AG0iJ0_pSgAIySbGAC0lD8ResponseV_AgM_ptctF"></a>
-                    <a name="//apple_ref/swift/Method/listMembersPaginator(_:on:onPage:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:12AWSDetective9DetectiveV20listMembersPaginator_2on0F4Page3NIO15EventLoopFutureCyytGAC04ListD7RequestV_AG0iJ0_pSgAIySbGAC0lD8ResponseV_AgM_ptctF">listMembersPaginator(_:on:onPage:)</a>
+                    <a name="/s:13SotoDetective0B0V20listMembersPaginator_2on6logger0F4Page3NIO15EventLoopFutureCyytGAC04ListD7RequestV_AH0jK0_pSg7Logging6LoggerVAJySbGAC0mD8ResponseV_AhN_ptctF"></a>
+                    <a name="//apple_ref/swift/Method/listMembersPaginator(_:on:logger:onPage:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SotoDetective0B0V20listMembersPaginator_2on6logger0F4Page3NIO15EventLoopFutureCyytGAC04ListD7RequestV_AH0jK0_pSg7Logging6LoggerVAJySbGAC0mD8ResponseV_AhN_ptctF">listMembersPaginator(_:<wbr>on:<wbr>logger:<wbr>onPage:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1344,11 +1436,14 @@
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">listMembersPaginator</span><span class="p">(</span>
     <span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/Detective/ListMembersRequest.html">ListMembersRequest</a></span><span class="p">,</span>
     <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
-    <span class="nv">onPage</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/Detective/ListMembersResponse.html">ListMembersResponse</a></span><span class="p">,</span>
-    <span class="kt">EventLoop</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Bool</span><span class="o">&gt;</span>
+    <span class="nv">logger</span><span class="p">:</span> <span class="kt">Logger</span> <span class="o">=</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="o">.</span><span class="n">loggingDisabled</span><span class="p">,</span>
+    <span class="nv">onPage</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/Detective/ListMembersResponse.html">ListMembersResponse</a></span><span class="p">,</span> <span class="kt">EventLoop</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Bool</span><span class="o">&gt;</span>
 <span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Void</span><span class="o">&gt;</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Detective/Detective_Paginator.swift#L55-L68">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1359,17 +1454,19 @@
               <div class="task-name-container">
                 <a name="/Shapes"></a>
                 <a name="//apple_ref/swift/Section/Shapes" class="dashAnchor"></a>
-                <a href="#/Shapes">
-                  <h3 class="section-name">Shapes</h3>
-                </a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Shapes"></a>
+                  <h3 class="section-name"><p>Shapes</p>
+</h3>
+                </div>
               </div>
               <ul>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:12AWSDetective9DetectiveV17ListGraphsRequestV"></a>
+                    <a name="/s:13SotoDetective0B0V17ListGraphsRequestV"></a>
                     <a name="//apple_ref/swift/Struct/ListGraphsRequest" class="dashAnchor"></a>
-                    <a class="token" href="#/s:12AWSDetective9DetectiveV17ListGraphsRequestV">ListGraphsRequest</a>
+                    <a class="token" href="#/s:13SotoDetective0B0V17ListGraphsRequestV">ListGraphsRequest</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1390,15 +1487,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Detective/Detective_Shapes.swift#L286-L308">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:12AWSDetective9DetectiveV22ListInvitationsRequestV"></a>
+                    <a name="/s:13SotoDetective0B0V22ListInvitationsRequestV"></a>
                     <a name="//apple_ref/swift/Struct/ListInvitationsRequest" class="dashAnchor"></a>
-                    <a class="token" href="#/s:12AWSDetective9DetectiveV22ListInvitationsRequestV">ListInvitationsRequest</a>
+                    <a class="token" href="#/s:13SotoDetective0B0V22ListInvitationsRequestV">ListInvitationsRequest</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1419,15 +1519,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Detective/Detective_Shapes.swift#L327-L349">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:12AWSDetective9DetectiveV18ListMembersRequestV"></a>
+                    <a name="/s:13SotoDetective0B0V18ListMembersRequestV"></a>
                     <a name="//apple_ref/swift/Struct/ListMembersRequest" class="dashAnchor"></a>
-                    <a class="token" href="#/s:12AWSDetective9DetectiveV18ListMembersRequestV">ListMembersRequest</a>
+                    <a class="token" href="#/s:13SotoDetective0B0V18ListMembersRequestV">ListMembersRequest</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1448,15 +1551,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Detective/Detective_Shapes.swift#L368-L395">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:12AWSDetective9DetectiveV23AcceptInvitationRequestV"></a>
+                    <a name="/s:13SotoDetective0B0V23AcceptInvitationRequestV"></a>
                     <a name="//apple_ref/swift/Struct/AcceptInvitationRequest" class="dashAnchor"></a>
-                    <a class="token" href="#/s:12AWSDetective9DetectiveV23AcceptInvitationRequestV">AcceptInvitationRequest</a>
+                    <a class="token" href="#/s:13SotoDetective0B0V23AcceptInvitationRequestV">AcceptInvitationRequest</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1476,15 +1582,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Detective/Detective_Shapes.swift#L40-L55">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:12AWSDetective9DetectiveV7AccountV"></a>
+                    <a name="/s:13SotoDetective0B0V7AccountV"></a>
                     <a name="//apple_ref/swift/Struct/Account" class="dashAnchor"></a>
-                    <a class="token" href="#/s:12AWSDetective9DetectiveV7AccountV">Account</a>
+                    <a class="token" href="#/s:13SotoDetective0B0V7AccountV">Account</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1504,15 +1613,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Detective/Detective_Shapes.swift#L57-L81">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:12AWSDetective9DetectiveV19CreateGraphResponseV"></a>
+                    <a name="/s:13SotoDetective0B0V19CreateGraphResponseV"></a>
                     <a name="//apple_ref/swift/Struct/CreateGraphResponse" class="dashAnchor"></a>
-                    <a class="token" href="#/s:12AWSDetective9DetectiveV19CreateGraphResponseV">CreateGraphResponse</a>
+                    <a class="token" href="#/s:13SotoDetective0B0V19CreateGraphResponseV">CreateGraphResponse</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1528,9 +1640,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">CreateGraphResponse</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">CreateGraphResponse</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Detective/Detective_Shapes.swift#L83-L94">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1538,9 +1653,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:12AWSDetective9DetectiveV20CreateMembersRequestV"></a>
+                    <a name="/s:13SotoDetective0B0V20CreateMembersRequestV"></a>
                     <a name="//apple_ref/swift/Struct/CreateMembersRequest" class="dashAnchor"></a>
-                    <a class="token" href="#/s:12AWSDetective9DetectiveV20CreateMembersRequestV">CreateMembersRequest</a>
+                    <a class="token" href="#/s:13SotoDetective0B0V20CreateMembersRequestV">CreateMembersRequest</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1560,15 +1675,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Detective/Detective_Shapes.swift#L96-L126">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:12AWSDetective9DetectiveV21CreateMembersResponseV"></a>
+                    <a name="/s:13SotoDetective0B0V21CreateMembersResponseV"></a>
                     <a name="//apple_ref/swift/Struct/CreateMembersResponse" class="dashAnchor"></a>
-                    <a class="token" href="#/s:12AWSDetective9DetectiveV21CreateMembersResponseV">CreateMembersResponse</a>
+                    <a class="token" href="#/s:13SotoDetective0B0V21CreateMembersResponseV">CreateMembersResponse</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1584,9 +1702,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">CreateMembersResponse</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">CreateMembersResponse</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Detective/Detective_Shapes.swift#L128-L143">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1594,9 +1715,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:12AWSDetective9DetectiveV18DeleteGraphRequestV"></a>
+                    <a name="/s:13SotoDetective0B0V18DeleteGraphRequestV"></a>
                     <a name="//apple_ref/swift/Struct/DeleteGraphRequest" class="dashAnchor"></a>
-                    <a class="token" href="#/s:12AWSDetective9DetectiveV18DeleteGraphRequestV">DeleteGraphRequest</a>
+                    <a class="token" href="#/s:13SotoDetective0B0V18DeleteGraphRequestV">DeleteGraphRequest</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1616,15 +1737,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Detective/Detective_Shapes.swift#L145-L160">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:12AWSDetective9DetectiveV20DeleteMembersRequestV"></a>
+                    <a name="/s:13SotoDetective0B0V20DeleteMembersRequestV"></a>
                     <a name="//apple_ref/swift/Struct/DeleteMembersRequest" class="dashAnchor"></a>
-                    <a class="token" href="#/s:12AWSDetective9DetectiveV20DeleteMembersRequestV">DeleteMembersRequest</a>
+                    <a class="token" href="#/s:13SotoDetective0B0V20DeleteMembersRequestV">DeleteMembersRequest</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1644,15 +1768,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Detective/Detective_Shapes.swift#L162-L188">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:12AWSDetective9DetectiveV21DeleteMembersResponseV"></a>
+                    <a name="/s:13SotoDetective0B0V21DeleteMembersResponseV"></a>
                     <a name="//apple_ref/swift/Struct/DeleteMembersResponse" class="dashAnchor"></a>
-                    <a class="token" href="#/s:12AWSDetective9DetectiveV21DeleteMembersResponseV">DeleteMembersResponse</a>
+                    <a class="token" href="#/s:13SotoDetective0B0V21DeleteMembersResponseV">DeleteMembersResponse</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1668,9 +1795,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DeleteMembersResponse</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DeleteMembersResponse</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Detective/Detective_Shapes.swift#L190-L205">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1678,9 +1808,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:12AWSDetective9DetectiveV29DisassociateMembershipRequestV"></a>
+                    <a name="/s:13SotoDetective0B0V29DisassociateMembershipRequestV"></a>
                     <a name="//apple_ref/swift/Struct/DisassociateMembershipRequest" class="dashAnchor"></a>
-                    <a class="token" href="#/s:12AWSDetective9DetectiveV29DisassociateMembershipRequestV">DisassociateMembershipRequest</a>
+                    <a class="token" href="#/s:13SotoDetective0B0V29DisassociateMembershipRequestV">DisassociateMembershipRequest</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1700,15 +1830,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Detective/Detective_Shapes.swift#L207-L222">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:12AWSDetective9DetectiveV17GetMembersRequestV"></a>
+                    <a name="/s:13SotoDetective0B0V17GetMembersRequestV"></a>
                     <a name="//apple_ref/swift/Struct/GetMembersRequest" class="dashAnchor"></a>
-                    <a class="token" href="#/s:12AWSDetective9DetectiveV17GetMembersRequestV">GetMembersRequest</a>
+                    <a class="token" href="#/s:13SotoDetective0B0V17GetMembersRequestV">GetMembersRequest</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1728,15 +1861,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Detective/Detective_Shapes.swift#L224-L250">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:12AWSDetective9DetectiveV18GetMembersResponseV"></a>
+                    <a name="/s:13SotoDetective0B0V18GetMembersResponseV"></a>
                     <a name="//apple_ref/swift/Struct/GetMembersResponse" class="dashAnchor"></a>
-                    <a class="token" href="#/s:12AWSDetective9DetectiveV18GetMembersResponseV">GetMembersResponse</a>
+                    <a class="token" href="#/s:13SotoDetective0B0V18GetMembersResponseV">GetMembersResponse</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1752,9 +1888,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">GetMembersResponse</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">GetMembersResponse</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Detective/Detective_Shapes.swift#L252-L267">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1762,9 +1901,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:12AWSDetective9DetectiveV5GraphV"></a>
+                    <a name="/s:13SotoDetective0B0V5GraphV"></a>
                     <a name="//apple_ref/swift/Struct/Graph" class="dashAnchor"></a>
-                    <a class="token" href="#/s:12AWSDetective9DetectiveV5GraphV">Graph</a>
+                    <a class="token" href="#/s:13SotoDetective0B0V5GraphV">Graph</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1780,9 +1919,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Graph</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Graph</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Detective/Detective_Shapes.swift#L269-L284">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1790,9 +1932,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:12AWSDetective9DetectiveV18ListGraphsResponseV"></a>
+                    <a name="/s:13SotoDetective0B0V18ListGraphsResponseV"></a>
                     <a name="//apple_ref/swift/Struct/ListGraphsResponse" class="dashAnchor"></a>
-                    <a class="token" href="#/s:12AWSDetective9DetectiveV18ListGraphsResponseV">ListGraphsResponse</a>
+                    <a class="token" href="#/s:13SotoDetective0B0V18ListGraphsResponseV">ListGraphsResponse</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1808,9 +1950,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ListGraphsResponse</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ListGraphsResponse</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Detective/Detective_Shapes.swift#L310-L325">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1818,9 +1963,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:12AWSDetective9DetectiveV23ListInvitationsResponseV"></a>
+                    <a name="/s:13SotoDetective0B0V23ListInvitationsResponseV"></a>
                     <a name="//apple_ref/swift/Struct/ListInvitationsResponse" class="dashAnchor"></a>
-                    <a class="token" href="#/s:12AWSDetective9DetectiveV23ListInvitationsResponseV">ListInvitationsResponse</a>
+                    <a class="token" href="#/s:13SotoDetective0B0V23ListInvitationsResponseV">ListInvitationsResponse</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1836,9 +1981,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ListInvitationsResponse</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ListInvitationsResponse</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Detective/Detective_Shapes.swift#L351-L366">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1846,9 +1994,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:12AWSDetective9DetectiveV19ListMembersResponseV"></a>
+                    <a name="/s:13SotoDetective0B0V19ListMembersResponseV"></a>
                     <a name="//apple_ref/swift/Struct/ListMembersResponse" class="dashAnchor"></a>
-                    <a class="token" href="#/s:12AWSDetective9DetectiveV19ListMembersResponseV">ListMembersResponse</a>
+                    <a class="token" href="#/s:13SotoDetective0B0V19ListMembersResponseV">ListMembersResponse</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1864,9 +2012,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ListMembersResponse</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ListMembersResponse</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Detective/Detective_Shapes.swift#L397-L412">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1874,9 +2025,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:12AWSDetective9DetectiveV12MemberDetailV"></a>
+                    <a name="/s:13SotoDetective0B0V12MemberDetailV"></a>
                     <a name="//apple_ref/swift/Struct/MemberDetail" class="dashAnchor"></a>
-                    <a class="token" href="#/s:12AWSDetective9DetectiveV12MemberDetailV">MemberDetail</a>
+                    <a class="token" href="#/s:13SotoDetective0B0V12MemberDetailV">MemberDetail</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1892,9 +2043,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">MemberDetail</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">MemberDetail</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Detective/Detective_Shapes.swift#L414-L461">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1902,9 +2056,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:12AWSDetective9DetectiveV23RejectInvitationRequestV"></a>
+                    <a name="/s:13SotoDetective0B0V23RejectInvitationRequestV"></a>
                     <a name="//apple_ref/swift/Struct/RejectInvitationRequest" class="dashAnchor"></a>
-                    <a class="token" href="#/s:12AWSDetective9DetectiveV23RejectInvitationRequestV">RejectInvitationRequest</a>
+                    <a class="token" href="#/s:13SotoDetective0B0V23RejectInvitationRequestV">RejectInvitationRequest</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1924,15 +2078,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Detective/Detective_Shapes.swift#L463-L478">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:12AWSDetective9DetectiveV28StartMonitoringMemberRequestV"></a>
+                    <a name="/s:13SotoDetective0B0V28StartMonitoringMemberRequestV"></a>
                     <a name="//apple_ref/swift/Struct/StartMonitoringMemberRequest" class="dashAnchor"></a>
-                    <a class="token" href="#/s:12AWSDetective9DetectiveV28StartMonitoringMemberRequestV">StartMonitoringMemberRequest</a>
+                    <a class="token" href="#/s:13SotoDetective0B0V28StartMonitoringMemberRequestV">StartMonitoringMemberRequest</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1952,15 +2109,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Detective/Detective_Shapes.swift#L480-L502">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:12AWSDetective9DetectiveV18UnprocessedAccountV"></a>
+                    <a name="/s:13SotoDetective0B0V18UnprocessedAccountV"></a>
                     <a name="//apple_ref/swift/Struct/UnprocessedAccount" class="dashAnchor"></a>
-                    <a class="token" href="#/s:12AWSDetective9DetectiveV18UnprocessedAccountV">UnprocessedAccount</a>
+                    <a class="token" href="#/s:13SotoDetective0B0V18UnprocessedAccountV">UnprocessedAccount</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1976,9 +2136,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">UnprocessedAccount</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">UnprocessedAccount</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Detective/Detective_Shapes.swift#L504-L519">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1989,17 +2152,19 @@
               <div class="task-name-container">
                 <a name="/Enums"></a>
                 <a name="//apple_ref/swift/Section/Enums" class="dashAnchor"></a>
-                <a href="#/Enums">
-                  <h3 class="section-name">Enums</h3>
-                </a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Enums"></a>
+                  <h3 class="section-name"><p>Enums</p>
+</h3>
+                </div>
               </div>
               <ul>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:12AWSDetective9DetectiveV20MemberDisabledReasonO"></a>
+                    <a name="/s:13SotoDetective0B0V20MemberDisabledReasonO"></a>
                     <a name="//apple_ref/swift/Enum/MemberDisabledReason" class="dashAnchor"></a>
-                    <a class="token" href="#/s:12AWSDetective9DetectiveV20MemberDisabledReasonO">MemberDisabledReason</a>
+                    <a class="token" href="#/s:13SotoDetective0B0V20MemberDisabledReasonO">MemberDisabledReason</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2019,15 +2184,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Detective/Detective_Shapes.swift#L23-L27">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:12AWSDetective9DetectiveV12MemberStatusO"></a>
+                    <a name="/s:13SotoDetective0B0V12MemberStatusO"></a>
                     <a name="//apple_ref/swift/Enum/MemberStatus" class="dashAnchor"></a>
-                    <a class="token" href="#/s:12AWSDetective9DetectiveV12MemberStatusO">MemberStatus</a>
+                    <a class="token" href="#/s:13SotoDetective0B0V12MemberStatusO">MemberStatus</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2046,6 +2214,9 @@
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">MemberStatus</span> <span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="kt">CustomStringConvertible</span><span class="p">,</span> <span class="kt">Codable</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Detective/Detective_Shapes.swift#L29-L36">Show on GitHub</a>
                       </div>
                     </section>
                   </div>

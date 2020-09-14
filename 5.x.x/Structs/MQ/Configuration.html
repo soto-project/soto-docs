@@ -15,7 +15,7 @@
     <header>
       <div class="content-wrapper">
         <p><a href="../../index.html"> Docs</a> (54% documented)</p>
-        <p class="header-right"><a href="https://github.com/swift-aws/aws-sdk-swift"><img src="../../img/gh.png"/>View on GitHub</a></p>
+        <p class="header-right"><a href="https://github.com/soto-project/soto"><img src="../../img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -28,6 +28,9 @@
     <div class="content-wrapper">
       <nav class="sidebar">
         <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../../User%20Guides.html">User Guides</a>
+          </li>
           <li class="nav-group-name">
             <a href="../../AWSSDKSwiftCore.html">AWSSDKSwiftCore</a>
           </li>
@@ -68,6 +71,9 @@
             <a href="../../AppSync.html">AppSync</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../Appflow.html">Appflow</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../ApplicationAutoScaling.html">ApplicationAutoScaling</a>
           </li>
           <li class="nav-group-name">
@@ -93,6 +99,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../Batch.html">Batch</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../Braket.html">Braket</a>
           </li>
           <li class="nav-group-name">
             <a href="../../Budgets.html">Budgets</a>
@@ -335,6 +344,12 @@
             <a href="../../IAM.html">IAM</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../IVS.html">IVS</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../IdentityStore.html">IdentityStore</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../Imagebuilder.html">Imagebuilder</a>
           </li>
           <li class="nav-group-name">
@@ -557,6 +572,9 @@
             <a href="../../Redshift.html">Redshift</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../RedshiftDataAPIService.html">RedshiftDataAPIService</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../Rekognition.html">Rekognition</a>
           </li>
           <li class="nav-group-name">
@@ -606,6 +624,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../SSO.html">SSO</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../SSOAdmin.html">SSOAdmin</a>
           </li>
           <li class="nav-group-name">
             <a href="../../SSOOIDC.html">SSOOIDC</a>
@@ -735,7 +756,8 @@
             <h1>Configuration</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Configuration</span> <span class="p">:</span> <span class="kt"><a href="../../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                  
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Configuration</span> <span class="p">:</span> <span class="kt"><a href="../../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                 </div>
               </div>
@@ -748,9 +770,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:5AWSMQ2MQV13ConfigurationV3arnSSSgvp"></a>
+                    <a name="/s:6SotoMQ0B0V13ConfigurationV3arnSSSgvp"></a>
                     <a name="//apple_ref/swift/Property/arn" class="dashAnchor"></a>
-                    <a class="token" href="#/s:5AWSMQ2MQV13ConfigurationV3arnSSSgvp">arn</a>
+                    <a class="token" href="#/s:6SotoMQ0B0V13ConfigurationV3arnSSSgvp">arn</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -769,15 +791,48 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/MQ/MQ_Shapes.swift#L206">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:5AWSMQ2MQV13ConfigurationV7created15AWSSDKSwiftCore9TimeStampVSgvp"></a>
+                    <a name="/s:6SotoMQ0B0V13ConfigurationV22authenticationStrategyAC014AuthenticationE0OSgvp"></a>
+                    <a name="//apple_ref/swift/Property/authenticationStrategy" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6SotoMQ0B0V13ConfigurationV22authenticationStrategyAC014AuthenticationE0OSgvp">authenticationStrategy</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The authentication strategy associated with the configuration.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">authenticationStrategy</span><span class="p">:</span> <span class="kt"><a href="../../Structs/MQ/AuthenticationStrategy.html">AuthenticationStrategy</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/MQ/MQ_Shapes.swift#L208">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6SotoMQ0B0V13ConfigurationV7created0A4Core9TimeStampVSgvp"></a>
                     <a name="//apple_ref/swift/Property/created" class="dashAnchor"></a>
-                    <a class="token" href="#/s:5AWSMQ2MQV13ConfigurationV7created15AWSSDKSwiftCore9TimeStampVSgvp">created</a>
+                    <a class="token" href="#/s:6SotoMQ0B0V13ConfigurationV7created0A4Core9TimeStampVSgvp">created</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -797,15 +852,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/MQ/MQ_Shapes.swift#L211">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:5AWSMQ2MQV13ConfigurationV11descriptionSSSgvp"></a>
+                    <a name="/s:6SotoMQ0B0V13ConfigurationV11descriptionSSSgvp"></a>
                     <a name="//apple_ref/swift/Property/description" class="dashAnchor"></a>
-                    <a class="token" href="#/s:5AWSMQ2MQV13ConfigurationV11descriptionSSSgvp">description</a>
+                    <a class="token" href="#/s:6SotoMQ0B0V13ConfigurationV11descriptionSSSgvp">description</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -824,15 +882,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/MQ/MQ_Shapes.swift#L213">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:5AWSMQ2MQV13ConfigurationV10engineTypeAC06EngineE0OSgvp"></a>
+                    <a name="/s:6SotoMQ0B0V13ConfigurationV10engineTypeAC06EngineE0OSgvp"></a>
                     <a name="//apple_ref/swift/Property/engineType" class="dashAnchor"></a>
-                    <a class="token" href="#/s:5AWSMQ2MQV13ConfigurationV10engineTypeAC06EngineE0OSgvp">engineType</a>
+                    <a class="token" href="#/s:6SotoMQ0B0V13ConfigurationV10engineTypeAC06EngineE0OSgvp">engineType</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -851,15 +912,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/MQ/MQ_Shapes.swift#L215">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:5AWSMQ2MQV13ConfigurationV13engineVersionSSSgvp"></a>
+                    <a name="/s:6SotoMQ0B0V13ConfigurationV13engineVersionSSSgvp"></a>
                     <a name="//apple_ref/swift/Property/engineVersion" class="dashAnchor"></a>
-                    <a class="token" href="#/s:5AWSMQ2MQV13ConfigurationV13engineVersionSSSgvp">engineVersion</a>
+                    <a class="token" href="#/s:6SotoMQ0B0V13ConfigurationV13engineVersionSSSgvp">engineVersion</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -878,15 +942,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/MQ/MQ_Shapes.swift#L217">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:5AWSMQ2MQV13ConfigurationV2idSSSgvp"></a>
+                    <a name="/s:6SotoMQ0B0V13ConfigurationV2idSSSgvp"></a>
                     <a name="//apple_ref/swift/Property/id" class="dashAnchor"></a>
-                    <a class="token" href="#/s:5AWSMQ2MQV13ConfigurationV2idSSSgvp">id</a>
+                    <a class="token" href="#/s:6SotoMQ0B0V13ConfigurationV2idSSSgvp">id</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -905,15 +972,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/MQ/MQ_Shapes.swift#L219">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:5AWSMQ2MQV13ConfigurationV14latestRevisionAC0cE0VSgvp"></a>
+                    <a name="/s:6SotoMQ0B0V13ConfigurationV14latestRevisionAC0cE0VSgvp"></a>
                     <a name="//apple_ref/swift/Property/latestRevision" class="dashAnchor"></a>
-                    <a class="token" href="#/s:5AWSMQ2MQV13ConfigurationV14latestRevisionAC0cE0VSgvp">latestRevision</a>
+                    <a class="token" href="#/s:6SotoMQ0B0V13ConfigurationV14latestRevisionAC0cE0VSgvp">latestRevision</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -932,15 +1002,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/MQ/MQ_Shapes.swift#L221">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:5AWSMQ2MQV13ConfigurationV4nameSSSgvp"></a>
+                    <a name="/s:6SotoMQ0B0V13ConfigurationV4nameSSSgvp"></a>
                     <a name="//apple_ref/swift/Property/name" class="dashAnchor"></a>
-                    <a class="token" href="#/s:5AWSMQ2MQV13ConfigurationV4nameSSSgvp">name</a>
+                    <a class="token" href="#/s:6SotoMQ0B0V13ConfigurationV4nameSSSgvp">name</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -959,15 +1032,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/MQ/MQ_Shapes.swift#L223">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:5AWSMQ2MQV13ConfigurationV4tagsSDyS2SGSgvp"></a>
+                    <a name="/s:6SotoMQ0B0V13ConfigurationV4tagsSDyS2SGSgvp"></a>
                     <a name="//apple_ref/swift/Property/tags" class="dashAnchor"></a>
-                    <a class="token" href="#/s:5AWSMQ2MQV13ConfigurationV4tagsSDyS2SGSgvp">tags</a>
+                    <a class="token" href="#/s:6SotoMQ0B0V13ConfigurationV4tagsSDyS2SGSgvp">tags</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -986,15 +1062,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/MQ/MQ_Shapes.swift#L225">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:5AWSMQ2MQV13ConfigurationV3arn7created11description10engineType0G7Version2id14latestRevision4name4tagsAESSSg_15AWSSDKSwiftCore9TimeStampVSgAoC06EngineH0OSgA2oC0cL0VSgAOSDyS2SGSgtcfc"></a>
-                    <a name="//apple_ref/swift/Method/init(arn:created:description:engineType:engineVersion:id:latestRevision:name:tags:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:5AWSMQ2MQV13ConfigurationV3arn7created11description10engineType0G7Version2id14latestRevision4name4tagsAESSSg_15AWSSDKSwiftCore9TimeStampVSgAoC06EngineH0OSgA2oC0cL0VSgAOSDyS2SGSgtcfc">init(arn:created:description:engineType:engineVersion:id:latestRevision:name:tags:)</a>
+                    <a name="/s:6SotoMQ0B0V13ConfigurationV3arn22authenticationStrategy7created11description10engineType0I7Version2id14latestRevision4name4tagsAESSSg_AC014AuthenticationF0OSg0A4Core9TimeStampVSgApC06EngineJ0OSgA2pC0cN0VSgAPSDyS2SGSgtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(arn:authenticationStrategy:created:description:engineType:engineVersion:id:latestRevision:name:tags:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6SotoMQ0B0V13ConfigurationV3arn22authenticationStrategy7created11description10engineType0I7Version2id14latestRevision4name4tagsAESSSg_AC014AuthenticationF0OSg0A4Core9TimeStampVSgApC06EngineJ0OSgA2pC0cN0VSgAPSDyS2SGSgtcfc">init(arn:<wbr>authenticationStrategy:<wbr>created:<wbr>description:<wbr>engineType:<wbr>engineVersion:<wbr>id:<wbr>latestRevision:<wbr>name:<wbr>tags:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1009,9 +1088,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">arn</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">created</span><span class="p">:</span> <span class="kt"><a href="../../Structs/TimeStamp.html">TimeStamp</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">description</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">engineType</span><span class="p">:</span> <span class="kt"><a href="../../Structs/MQ/EngineType.html">EngineType</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">engineVersion</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">id</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">latestRevision</span><span class="p">:</span> <span class="kt"><a href="../../Structs/MQ/ConfigurationRevision.html">ConfigurationRevision</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">name</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">tags</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt">String</span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">arn</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">authenticationStrategy</span><span class="p">:</span> <span class="kt"><a href="../../Structs/MQ/AuthenticationStrategy.html">AuthenticationStrategy</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">created</span><span class="p">:</span> <span class="kt"><a href="../../Structs/TimeStamp.html">TimeStamp</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">description</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">engineType</span><span class="p">:</span> <span class="kt"><a href="../../Structs/MQ/EngineType.html">EngineType</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">engineVersion</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">id</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">latestRevision</span><span class="p">:</span> <span class="kt"><a href="../../Structs/MQ/ConfigurationRevision.html">ConfigurationRevision</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">name</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">tags</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt">String</span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/MQ/MQ_Shapes.swift#L227-L238">Show on GitHub</a>
                       </div>
                     </section>
                   </div>

@@ -15,7 +15,7 @@
     <header>
       <div class="content-wrapper">
         <p><a href="../../index.html"> Docs</a> (54% documented)</p>
-        <p class="header-right"><a href="https://github.com/swift-aws/aws-sdk-swift"><img src="../../img/gh.png"/>View on GitHub</a></p>
+        <p class="header-right"><a href="https://github.com/soto-project/soto"><img src="../../img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -28,6 +28,9 @@
     <div class="content-wrapper">
       <nav class="sidebar">
         <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../../User%20Guides.html">User Guides</a>
+          </li>
           <li class="nav-group-name">
             <a href="../../AWSSDKSwiftCore.html">AWSSDKSwiftCore</a>
           </li>
@@ -68,6 +71,9 @@
             <a href="../../AppSync.html">AppSync</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../Appflow.html">Appflow</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../ApplicationAutoScaling.html">ApplicationAutoScaling</a>
           </li>
           <li class="nav-group-name">
@@ -93,6 +99,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../Batch.html">Batch</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../Braket.html">Braket</a>
           </li>
           <li class="nav-group-name">
             <a href="../../Budgets.html">Budgets</a>
@@ -335,6 +344,12 @@
             <a href="../../IAM.html">IAM</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../IVS.html">IVS</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../IdentityStore.html">IdentityStore</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../Imagebuilder.html">Imagebuilder</a>
           </li>
           <li class="nav-group-name">
@@ -557,6 +572,9 @@
             <a href="../../Redshift.html">Redshift</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../RedshiftDataAPIService.html">RedshiftDataAPIService</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../Rekognition.html">Rekognition</a>
           </li>
           <li class="nav-group-name">
@@ -606,6 +624,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../SSO.html">SSO</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../SSOAdmin.html">SSOAdmin</a>
           </li>
           <li class="nav-group-name">
             <a href="../../SSOOIDC.html">SSOOIDC</a>
@@ -735,6 +756,7 @@
             <h1>UpdateEventSourceMappingRequest</h1>
               <div class="declaration">
                 <div class="language">
+                  
                   <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">UpdateEventSourceMappingRequest</span> <span class="p">:</span> <span class="kt"><a href="../../Protocols/AWSEncodableShape.html">AWSEncodableShape</a></span></code></pre>
 
                 </div>
@@ -748,9 +770,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:15AWSSDKSwiftCore8AWSShapeP9_encodingSayAA17AWSMemberEncodingVGvpZ"></a>
+                    <a name="/s:8SotoCore8AWSShapeP9_encodingSayAA17AWSMemberEncodingVGvpZ"></a>
                     <a name="//apple_ref/swift/Variable/_encoding" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15AWSSDKSwiftCore8AWSShapeP9_encodingSayAA17AWSMemberEncodingVGvpZ">_encoding</a>
+                    <a class="token" href="#/s:8SotoCore8AWSShapeP9_encodingSayAA17AWSMemberEncodingVGvpZ">_encoding</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -768,15 +790,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Lambda/Lambda_Shapes.swift#L23">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9AWSLambda6LambdaV31UpdateEventSourceMappingRequestV9batchSizeSiSgvp"></a>
+                    <a name="/s:10SotoLambda0B0V31UpdateEventSourceMappingRequestV9batchSizeSiSgvp"></a>
                     <a name="//apple_ref/swift/Property/batchSize" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9AWSLambda6LambdaV31UpdateEventSourceMappingRequestV9batchSizeSiSgvp">batchSize</a>
+                    <a class="token" href="#/s:10SotoLambda0B0V31UpdateEventSourceMappingRequestV9batchSizeSiSgvp">batchSize</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -784,7 +809,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The maximum number of items to retrieve in a single batch.    Amazon Kinesis - Default 100. Max 10,000.    Amazon DynamoDB Streams - Default 100. Max 1,000.    Amazon Simple Queue Service - Default 10. Max 10.</p>
+                        <p>The maximum number of items to retrieve in a single batch.    Amazon Kinesis - Default 100. Max 10,000.    Amazon DynamoDB Streams - Default 100. Max 1,000.    Amazon Simple Queue Service - Default 10. Max 10.    Amazon Managed Streaming for Apache Kafka - Default 100. Max 10,000.</p>
 
                       </div>
                       <div class="declaration">
@@ -795,15 +820,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Lambda/Lambda_Shapes.swift#L2860">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9AWSLambda6LambdaV31UpdateEventSourceMappingRequestV26bisectBatchOnFunctionErrorSbSgvp"></a>
+                    <a name="/s:10SotoLambda0B0V31UpdateEventSourceMappingRequestV26bisectBatchOnFunctionErrorSbSgvp"></a>
                     <a name="//apple_ref/swift/Property/bisectBatchOnFunctionError" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9AWSLambda6LambdaV31UpdateEventSourceMappingRequestV26bisectBatchOnFunctionErrorSbSgvp">bisectBatchOnFunctionError</a>
+                    <a class="token" href="#/s:10SotoLambda0B0V31UpdateEventSourceMappingRequestV26bisectBatchOnFunctionErrorSbSgvp">bisectBatchOnFunctionError</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -822,15 +850,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Lambda/Lambda_Shapes.swift#L2862">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9AWSLambda6LambdaV31UpdateEventSourceMappingRequestV17destinationConfigAC011DestinationI0VSgvp"></a>
+                    <a name="/s:10SotoLambda0B0V31UpdateEventSourceMappingRequestV17destinationConfigAC011DestinationI0VSgvp"></a>
                     <a name="//apple_ref/swift/Property/destinationConfig" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9AWSLambda6LambdaV31UpdateEventSourceMappingRequestV17destinationConfigAC011DestinationI0VSgvp">destinationConfig</a>
+                    <a class="token" href="#/s:10SotoLambda0B0V31UpdateEventSourceMappingRequestV17destinationConfigAC011DestinationI0VSgvp">destinationConfig</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -849,15 +880,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Lambda/Lambda_Shapes.swift#L2864">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9AWSLambda6LambdaV31UpdateEventSourceMappingRequestV7enabledSbSgvp"></a>
+                    <a name="/s:10SotoLambda0B0V31UpdateEventSourceMappingRequestV7enabledSbSgvp"></a>
                     <a name="//apple_ref/swift/Property/enabled" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9AWSLambda6LambdaV31UpdateEventSourceMappingRequestV7enabledSbSgvp">enabled</a>
+                    <a class="token" href="#/s:10SotoLambda0B0V31UpdateEventSourceMappingRequestV7enabledSbSgvp">enabled</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -865,7 +899,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Disables the event source mapping to pause polling and invocation.</p>
+                        <p>If true, the event source mapping is active. Set to false to pause polling and invocation.</p>
 
                       </div>
                       <div class="declaration">
@@ -876,15 +910,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Lambda/Lambda_Shapes.swift#L2866">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9AWSLambda6LambdaV31UpdateEventSourceMappingRequestV12functionNameSSSgvp"></a>
+                    <a name="/s:10SotoLambda0B0V31UpdateEventSourceMappingRequestV12functionNameSSSgvp"></a>
                     <a name="//apple_ref/swift/Property/functionName" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9AWSLambda6LambdaV31UpdateEventSourceMappingRequestV12functionNameSSSgvp">functionName</a>
+                    <a class="token" href="#/s:10SotoLambda0B0V31UpdateEventSourceMappingRequestV12functionNameSSSgvp">functionName</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -903,15 +940,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Lambda/Lambda_Shapes.swift#L2868">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9AWSLambda6LambdaV31UpdateEventSourceMappingRequestV30maximumBatchingWindowInSecondsSiSgvp"></a>
+                    <a name="/s:10SotoLambda0B0V31UpdateEventSourceMappingRequestV30maximumBatchingWindowInSecondsSiSgvp"></a>
                     <a name="//apple_ref/swift/Property/maximumBatchingWindowInSeconds" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9AWSLambda6LambdaV31UpdateEventSourceMappingRequestV30maximumBatchingWindowInSecondsSiSgvp">maximumBatchingWindowInSeconds</a>
+                    <a class="token" href="#/s:10SotoLambda0B0V31UpdateEventSourceMappingRequestV30maximumBatchingWindowInSecondsSiSgvp">maximumBatchingWindowInSeconds</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -930,15 +970,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Lambda/Lambda_Shapes.swift#L2870">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9AWSLambda6LambdaV31UpdateEventSourceMappingRequestV25maximumRecordAgeInSecondsSiSgvp"></a>
+                    <a name="/s:10SotoLambda0B0V31UpdateEventSourceMappingRequestV25maximumRecordAgeInSecondsSiSgvp"></a>
                     <a name="//apple_ref/swift/Property/maximumRecordAgeInSeconds" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9AWSLambda6LambdaV31UpdateEventSourceMappingRequestV25maximumRecordAgeInSecondsSiSgvp">maximumRecordAgeInSeconds</a>
+                    <a class="token" href="#/s:10SotoLambda0B0V31UpdateEventSourceMappingRequestV25maximumRecordAgeInSecondsSiSgvp">maximumRecordAgeInSeconds</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -946,7 +989,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>(Streams) The maximum age of a record that Lambda sends to a function for processing.</p>
+                        <p>(Streams) Discard records older than the specified age. The default value is infinite (-1).</p>
 
                       </div>
                       <div class="declaration">
@@ -957,15 +1000,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Lambda/Lambda_Shapes.swift#L2872">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9AWSLambda6LambdaV31UpdateEventSourceMappingRequestV20maximumRetryAttemptsSiSgvp"></a>
+                    <a name="/s:10SotoLambda0B0V31UpdateEventSourceMappingRequestV20maximumRetryAttemptsSiSgvp"></a>
                     <a name="//apple_ref/swift/Property/maximumRetryAttempts" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9AWSLambda6LambdaV31UpdateEventSourceMappingRequestV20maximumRetryAttemptsSiSgvp">maximumRetryAttempts</a>
+                    <a class="token" href="#/s:10SotoLambda0B0V31UpdateEventSourceMappingRequestV20maximumRetryAttemptsSiSgvp">maximumRetryAttempts</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -973,7 +1019,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>(Streams) The maximum number of times to retry when the function returns an error.</p>
+                        <p>(Streams) Discard records after the specified number of retries. The default value is infinite (-1). When set to infinite (-1), failed records will be retried until the record expires.</p>
 
                       </div>
                       <div class="declaration">
@@ -984,15 +1030,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Lambda/Lambda_Shapes.swift#L2874">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9AWSLambda6LambdaV31UpdateEventSourceMappingRequestV21parallelizationFactorSiSgvp"></a>
+                    <a name="/s:10SotoLambda0B0V31UpdateEventSourceMappingRequestV21parallelizationFactorSiSgvp"></a>
                     <a name="//apple_ref/swift/Property/parallelizationFactor" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9AWSLambda6LambdaV31UpdateEventSourceMappingRequestV21parallelizationFactorSiSgvp">parallelizationFactor</a>
+                    <a class="token" href="#/s:10SotoLambda0B0V31UpdateEventSourceMappingRequestV21parallelizationFactorSiSgvp">parallelizationFactor</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1011,15 +1060,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Lambda/Lambda_Shapes.swift#L2876">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9AWSLambda6LambdaV31UpdateEventSourceMappingRequestV4uuidSSvp"></a>
+                    <a name="/s:10SotoLambda0B0V31UpdateEventSourceMappingRequestV4uuidSSvp"></a>
                     <a name="//apple_ref/swift/Property/uuid" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9AWSLambda6LambdaV31UpdateEventSourceMappingRequestV4uuidSSvp">uuid</a>
+                    <a class="token" href="#/s:10SotoLambda0B0V31UpdateEventSourceMappingRequestV4uuidSSvp">uuid</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1038,15 +1090,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Lambda/Lambda_Shapes.swift#L2878">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9AWSLambda6LambdaV31UpdateEventSourceMappingRequestV9batchSize26bisectBatchOnFunctionError17destinationConfig7enabled12functionName30maximumBatchingWindowInSeconds0t9RecordAgewX00T13RetryAttempts21parallelizationFactor4uuidAESiSg_SbSgAC011DestinationP0VSgAQSSSgA4PSStcfc"></a>
+                    <a name="/s:10SotoLambda0B0V31UpdateEventSourceMappingRequestV9batchSize26bisectBatchOnFunctionError17destinationConfig7enabled12functionName30maximumBatchingWindowInSeconds0t9RecordAgewX00T13RetryAttempts21parallelizationFactor4uuidAESiSg_SbSgAC011DestinationP0VSgAQSSSgA4PSStcfc"></a>
                     <a name="//apple_ref/swift/Method/init(batchSize:bisectBatchOnFunctionError:destinationConfig:enabled:functionName:maximumBatchingWindowInSeconds:maximumRecordAgeInSeconds:maximumRetryAttempts:parallelizationFactor:uuid:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9AWSLambda6LambdaV31UpdateEventSourceMappingRequestV9batchSize26bisectBatchOnFunctionError17destinationConfig7enabled12functionName30maximumBatchingWindowInSeconds0t9RecordAgewX00T13RetryAttempts21parallelizationFactor4uuidAESiSg_SbSgAC011DestinationP0VSgAQSSSgA4PSStcfc">init(batchSize:bisectBatchOnFunctionError:destinationConfig:enabled:functionName:maximumBatchingWindowInSeconds:maximumRecordAgeInSeconds:maximumRetryAttempts:parallelizationFactor:uuid:)</a>
+                    <a class="token" href="#/s:10SotoLambda0B0V31UpdateEventSourceMappingRequestV9batchSize26bisectBatchOnFunctionError17destinationConfig7enabled12functionName30maximumBatchingWindowInSeconds0t9RecordAgewX00T13RetryAttempts21parallelizationFactor4uuidAESiSg_SbSgAC011DestinationP0VSgAQSSSgA4PSStcfc">init(batchSize:<wbr>bisectBatchOnFunctionError:<wbr>destinationConfig:<wbr>enabled:<wbr>functionName:<wbr>maximumBatchingWindowInSeconds:<wbr>maximumRecordAgeInSeconds:<wbr>maximumRetryAttempts:<wbr>parallelizationFactor:<wbr>uuid:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1065,15 +1120,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Lambda/Lambda_Shapes.swift#L2880-L2891">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:15AWSSDKSwiftCore17AWSEncodableShapeP8validate4nameySS_tKF"></a>
+                    <a name="/s:8SotoCore17AWSEncodableShapeP8validate4nameySS_tKF"></a>
                     <a name="//apple_ref/swift/Method/validate(name:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15AWSSDKSwiftCore17AWSEncodableShapeP8validate4nameySS_tKF">validate(name:)</a>
+                    <a class="token" href="#/s:8SotoCore17AWSEncodableShapeP8validate4nameySS_tKF">validate(name:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1090,6 +1148,9 @@
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">validate</span><span class="p">(</span><span class="nv">name</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="k">throws</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Lambda/Lambda_Shapes.swift#L2893-L2908">Show on GitHub</a>
                       </div>
                     </section>
                   </div>

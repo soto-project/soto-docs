@@ -15,7 +15,7 @@
     <header>
       <div class="content-wrapper">
         <p><a href="../../index.html"> Docs</a> (54% documented)</p>
-        <p class="header-right"><a href="https://github.com/swift-aws/aws-sdk-swift"><img src="../../img/gh.png"/>View on GitHub</a></p>
+        <p class="header-right"><a href="https://github.com/soto-project/soto"><img src="../../img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -28,6 +28,9 @@
     <div class="content-wrapper">
       <nav class="sidebar">
         <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../../User%20Guides.html">User Guides</a>
+          </li>
           <li class="nav-group-name">
             <a href="../../AWSSDKSwiftCore.html">AWSSDKSwiftCore</a>
           </li>
@@ -68,6 +71,9 @@
             <a href="../../AppSync.html">AppSync</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../Appflow.html">Appflow</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../ApplicationAutoScaling.html">ApplicationAutoScaling</a>
           </li>
           <li class="nav-group-name">
@@ -93,6 +99,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../Batch.html">Batch</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../Braket.html">Braket</a>
           </li>
           <li class="nav-group-name">
             <a href="../../Budgets.html">Budgets</a>
@@ -335,6 +344,12 @@
             <a href="../../IAM.html">IAM</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../IVS.html">IVS</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../IdentityStore.html">IdentityStore</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../Imagebuilder.html">Imagebuilder</a>
           </li>
           <li class="nav-group-name">
@@ -557,6 +572,9 @@
             <a href="../../Redshift.html">Redshift</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../RedshiftDataAPIService.html">RedshiftDataAPIService</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../Rekognition.html">Rekognition</a>
           </li>
           <li class="nav-group-name">
@@ -606,6 +624,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../SSO.html">SSO</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../SSOAdmin.html">SSOAdmin</a>
           </li>
           <li class="nav-group-name">
             <a href="../../SSOOIDC.html">SSOOIDC</a>
@@ -735,6 +756,7 @@
             <h1>IssueCertificateRequest</h1>
               <div class="declaration">
                 <div class="language">
+                  
                   <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">IssueCertificateRequest</span> <span class="p">:</span> <span class="kt"><a href="../../Protocols/AWSEncodableShape.html">AWSEncodableShape</a></span></code></pre>
 
                 </div>
@@ -748,9 +770,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9AWSACMPCA6ACMPCAV23IssueCertificateRequestV23certificateAuthorityArnSSvp"></a>
+                    <a name="/s:10SotoACMPCA0B0V23IssueCertificateRequestV23certificateAuthorityArnSSvp"></a>
                     <a name="//apple_ref/swift/Property/certificateAuthorityArn" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9AWSACMPCA6ACMPCAV23IssueCertificateRequestV23certificateAuthorityArnSSvp">certificateAuthorityArn</a>
+                    <a class="token" href="#/s:10SotoACMPCA0B0V23IssueCertificateRequestV23certificateAuthorityArnSSvp">certificateAuthorityArn</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -769,15 +791,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ACMPCA/ACMPCA_Shapes.swift#L809">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9AWSACMPCA6ACMPCAV23IssueCertificateRequestV3csr10Foundation4DataVvp"></a>
+                    <a name="/s:10SotoACMPCA0B0V23IssueCertificateRequestV3csr10Foundation4DataVvp"></a>
                     <a name="//apple_ref/swift/Property/csr" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9AWSACMPCA6ACMPCAV23IssueCertificateRequestV3csr10Foundation4DataVvp">csr</a>
+                    <a class="token" href="#/s:10SotoACMPCA0B0V23IssueCertificateRequestV3csr10Foundation4DataVvp">csr</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -785,7 +810,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The certificate signing request (CSR) for the certificate you want to issue. You can use the following OpenSSL command to create the CSR and a 2048 bit RSA private key.   openssl req -new -newkey rsa:2048 -days 365 -keyout private/test_cert_priv_key.pem -out csr/test_cert_.csr  If you have a configuration file, you can use the following OpenSSL command. The usr_cert block in the configuration file contains your X509 version 3 extensions.   openssl req -new -config openssl_rsa.cnf -extensions usr_cert -newkey rsa:2048 -days -365 -keyout private/test_cert_priv_key.pem -out csr/test_cert_.csr</p>
+                        <p>The certificate signing request (CSR) for the certificate you want to issue. You can use the following OpenSSL command to create the CSR and a 2048 bit RSA private key.   openssl req -new -newkey rsa:2048 -days 365 -keyout private/test_cert_priv_key.pem -out csr/test_cert_.csr  If you have a configuration file, you can use the following OpenSSL command. The usr_cert block in the configuration file contains your X509 version 3 extensions.   openssl req -new -config openssl_rsa.cnf -extensions usr_cert -newkey rsa:2048 -days -365 -keyout private/test_cert_priv_key.pem -out csr/test_cert_.csr  Note: A CSR must provide either a subject name or a subject alternative name or the request will be rejected.</p>
 
                       </div>
                       <div class="declaration">
@@ -796,15 +821,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ACMPCA/ACMPCA_Shapes.swift#L811">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9AWSACMPCA6ACMPCAV23IssueCertificateRequestV16idempotencyTokenSSSgvp"></a>
+                    <a name="/s:10SotoACMPCA0B0V23IssueCertificateRequestV16idempotencyTokenSSSgvp"></a>
                     <a name="//apple_ref/swift/Property/idempotencyToken" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9AWSACMPCA6ACMPCAV23IssueCertificateRequestV16idempotencyTokenSSSgvp">idempotencyToken</a>
+                    <a class="token" href="#/s:10SotoACMPCA0B0V23IssueCertificateRequestV16idempotencyTokenSSSgvp">idempotencyToken</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -823,15 +851,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ACMPCA/ACMPCA_Shapes.swift#L813">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9AWSACMPCA6ACMPCAV23IssueCertificateRequestV16signingAlgorithmAC07SigningG0Ovp"></a>
+                    <a name="/s:10SotoACMPCA0B0V23IssueCertificateRequestV16signingAlgorithmAC07SigningG0Ovp"></a>
                     <a name="//apple_ref/swift/Property/signingAlgorithm" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9AWSACMPCA6ACMPCAV23IssueCertificateRequestV16signingAlgorithmAC07SigningG0Ovp">signingAlgorithm</a>
+                    <a class="token" href="#/s:10SotoACMPCA0B0V23IssueCertificateRequestV16signingAlgorithmAC07SigningG0Ovp">signingAlgorithm</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -839,7 +870,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The name of the algorithm that will be used to sign the certificate to be issued.</p>
+                        <p>The name of the algorithm that will be used to sign the certificate to be issued.  This parameter should not be confused with the SigningAlgorithm parameter used to sign a CSR.</p>
 
                       </div>
                       <div class="declaration">
@@ -850,15 +881,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ACMPCA/ACMPCA_Shapes.swift#L815">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9AWSACMPCA6ACMPCAV23IssueCertificateRequestV11templateArnSSSgvp"></a>
+                    <a name="/s:10SotoACMPCA0B0V23IssueCertificateRequestV11templateArnSSSgvp"></a>
                     <a name="//apple_ref/swift/Property/templateArn" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9AWSACMPCA6ACMPCAV23IssueCertificateRequestV11templateArnSSSgvp">templateArn</a>
+                    <a class="token" href="#/s:10SotoACMPCA0B0V23IssueCertificateRequestV11templateArnSSSgvp">templateArn</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -866,7 +900,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Specifies a custom configuration template to use when issuing a certificate. If this parameter is not provided, ACM Private CA defaults to the EndEntityCertificate/V1 template. The following service-owned TemplateArn values are supported by ACM Private CA:    arn:aws:acm-pca:::template/EndEntityCertificate/V1   arn:aws:acm-pca:::template/SubordinateCACertificate_PathLen0/V1   arn:aws:acm-pca:::template/SubordinateCACertificate_PathLen1/V1   arn:aws:acm-pca:::template/SubordinateCACertificate_PathLen2/V1   arn:aws:acm-pca:::template/SubordinateCACertificate_PathLen3/V1   arn:aws:acm-pca:::template/RootCACertificate/V1   For more information, see Using Templates.</p>
+                        <p>Specifies a custom configuration template to use when issuing a certificate. If this parameter is not provided, ACM Private CA defaults to the EndEntityCertificate/V1 template. For CA certificates, you should choose the shortest path length that meets your needs. The path length is indicated by the PathLenN portion of the ARN, where N is the CA depth. Note: The CA depth configured on a subordinate CA certificate must not exceed the limit set by its parents in the CA hierarchy. The following service-owned TemplateArn values are supported by ACM Private CA:    arn:aws:acm-pca:::template/CodeSigningCertificate/V1   arn:aws:acm-pca:::template/CodeSigningCertificate_CSRPassthrough/V1   arn:aws:acm-pca:::template/EndEntityCertificate/V1   arn:aws:acm-pca:::template/EndEntityCertificate_CSRPassthrough/V1   arn:aws:acm-pca:::template/EndEntityClientAuthCertificate/V1   arn:aws:acm-pca:::template/EndEntityClientAuthCertificate_CSRPassthrough/V1   arn:aws:acm-pca:::template/EndEntityServerAuthCertificate/V1   arn:aws:acm-pca:::template/EndEntityServerAuthCertificate_CSRPassthrough/V1   arn:aws:acm-pca:::template/OCSPSigningCertificate/V1   arn:aws:acm-pca:::template/OCSPSigningCertificate_CSRPassthrough/V1   arn:aws:acm-pca:::template/RootCACertificate/V1   arn:aws:acm-pca:::template/SubordinateCACertificate_PathLen0/V1   arn:aws:acm-pca:::template/SubordinateCACertificate_PathLen1/V1   arn:aws:acm-pca:::template/SubordinateCACertificate_PathLen2/V1   arn:aws:acm-pca:::template/SubordinateCACertificate_PathLen3/V1   For more information, see Using Templates.</p>
 
                       </div>
                       <div class="declaration">
@@ -877,15 +911,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ACMPCA/ACMPCA_Shapes.swift#L817">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9AWSACMPCA6ACMPCAV23IssueCertificateRequestV8validityAC8ValidityVvp"></a>
+                    <a name="/s:10SotoACMPCA0B0V23IssueCertificateRequestV8validityAC8ValidityVvp"></a>
                     <a name="//apple_ref/swift/Property/validity" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9AWSACMPCA6ACMPCAV23IssueCertificateRequestV8validityAC8ValidityVvp">validity</a>
+                    <a class="token" href="#/s:10SotoACMPCA0B0V23IssueCertificateRequestV8validityAC8ValidityVvp">validity</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -893,7 +930,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The type of the validity period.</p>
+                        <p>Information describing the validity period of the certificate. When issuing a certificate, ACM Private CA sets the &ldquo;Not Before&rdquo; date in the validity field to date and time minus 60 minutes. This is intended to compensate for time inconsistencies across systems of 60 minutes or less.  The validity period configured on a certificate must not exceed the limit set by its parents in the CA hierarchy.</p>
 
                       </div>
                       <div class="declaration">
@@ -904,15 +941,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ACMPCA/ACMPCA_Shapes.swift#L819">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9AWSACMPCA6ACMPCAV23IssueCertificateRequestV23certificateAuthorityArn3csr16idempotencyToken16signingAlgorithm08templateH08validityAESS_10Foundation4DataVSSSgAC07SigningM0OAoC8ValidityVtcfc"></a>
+                    <a name="/s:10SotoACMPCA0B0V23IssueCertificateRequestV23certificateAuthorityArn3csr16idempotencyToken16signingAlgorithm08templateH08validityAESS_10Foundation4DataVSSSgAC07SigningM0OAoC8ValidityVtcfc"></a>
                     <a name="//apple_ref/swift/Method/init(certificateAuthorityArn:csr:idempotencyToken:signingAlgorithm:templateArn:validity:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9AWSACMPCA6ACMPCAV23IssueCertificateRequestV23certificateAuthorityArn3csr16idempotencyToken16signingAlgorithm08templateH08validityAESS_10Foundation4DataVSSSgAC07SigningM0OAoC8ValidityVtcfc">init(certificateAuthorityArn:csr:idempotencyToken:signingAlgorithm:templateArn:validity:)</a>
+                    <a class="token" href="#/s:10SotoACMPCA0B0V23IssueCertificateRequestV23certificateAuthorityArn3csr16idempotencyToken16signingAlgorithm08templateH08validityAESS_10Foundation4DataVSSSgAC07SigningM0OAoC8ValidityVtcfc">init(certificateAuthorityArn:<wbr>csr:<wbr>idempotencyToken:<wbr>signingAlgorithm:<wbr>templateArn:<wbr>validity:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -931,15 +971,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ACMPCA/ACMPCA_Shapes.swift#L821-L828">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:15AWSSDKSwiftCore17AWSEncodableShapeP8validate4nameySS_tKF"></a>
+                    <a name="/s:8SotoCore17AWSEncodableShapeP8validate4nameySS_tKF"></a>
                     <a name="//apple_ref/swift/Method/validate(name:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15AWSSDKSwiftCore17AWSEncodableShapeP8validate4nameySS_tKF">validate(name:)</a>
+                    <a class="token" href="#/s:8SotoCore17AWSEncodableShapeP8validate4nameySS_tKF">validate(name:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -956,6 +999,9 @@
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">validate</span><span class="p">(</span><span class="nv">name</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="k">throws</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ACMPCA/ACMPCA_Shapes.swift#L830-L843">Show on GitHub</a>
                       </div>
                     </section>
                   </div>

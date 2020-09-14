@@ -15,7 +15,7 @@
     <header>
       <div class="content-wrapper">
         <p><a href="../index.html"> Docs</a> (54% documented)</p>
-        <p class="header-right"><a href="https://github.com/swift-aws/aws-sdk-swift"><img src="../img/gh.png"/>View on GitHub</a></p>
+        <p class="header-right"><a href="https://github.com/soto-project/soto"><img src="../img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -28,6 +28,9 @@
     <div class="content-wrapper">
       <nav class="sidebar">
         <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../User%20Guides.html">User Guides</a>
+          </li>
           <li class="nav-group-name">
             <a href="../AWSSDKSwiftCore.html">AWSSDKSwiftCore</a>
           </li>
@@ -68,6 +71,9 @@
             <a href="../AppSync.html">AppSync</a>
           </li>
           <li class="nav-group-name">
+            <a href="../Appflow.html">Appflow</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../ApplicationAutoScaling.html">ApplicationAutoScaling</a>
           </li>
           <li class="nav-group-name">
@@ -93,6 +99,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../Batch.html">Batch</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Braket.html">Braket</a>
           </li>
           <li class="nav-group-name">
             <a href="../Budgets.html">Budgets</a>
@@ -335,6 +344,12 @@
             <a href="../IAM.html">IAM</a>
           </li>
           <li class="nav-group-name">
+            <a href="../IVS.html">IVS</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../IdentityStore.html">IdentityStore</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../Imagebuilder.html">Imagebuilder</a>
           </li>
           <li class="nav-group-name">
@@ -557,6 +572,9 @@
             <a href="../Redshift.html">Redshift</a>
           </li>
           <li class="nav-group-name">
+            <a href="../RedshiftDataAPIService.html">RedshiftDataAPIService</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../Rekognition.html">Rekognition</a>
           </li>
           <li class="nav-group-name">
@@ -606,6 +624,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../SSO.html">SSO</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../SSOAdmin.html">SSOAdmin</a>
           </li>
           <li class="nav-group-name">
             <a href="../SSOOIDC.html">SSOOIDC</a>
@@ -735,13 +756,12 @@
             <h1>CloudTrail</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">CloudTrail</span></code></pre>
+                  
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">CloudTrail</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSService.html">AWSService</a></span></code></pre>
 
                 </div>
               </div>
-            <p>Client object for interacting with AWS CloudTrail service.</p>
-
-<p>AWS CloudTrail This is the CloudTrail API Reference. It provides descriptions of actions, data types, common parameters, and common errors for CloudTrail. CloudTrail is a web service that records AWS API calls for your AWS account and delivers log files to an Amazon S3 bucket. The recorded information includes the identity of the user, the start time of the AWS API call, the source IP address, the request parameters, and the response elements returned by the service.  As an alternative to the API, you can use one of the AWS SDKs, which consist of libraries and sample code for various programming languages and platforms (Java, Ruby, .NET, iOS, Android, etc.). The SDKs provide a convenient way to create programmatic access to AWSCloudTrail. For example, the SDKs take care of cryptographically signing requests, managing errors, and retrying requests automatically. For information about the AWS SDKs, including how to download and install them, see the Tools for Amazon Web Services page.  See the AWS CloudTrail User Guide for information about the data that is included with each AWS API call listed in the log files.</p>
+            <p>Undocumented</p>
 
           </section>
           <section class="section task-group-section">
@@ -749,17 +769,19 @@
               <div class="task-name-container">
                 <a name="/Member%20variables"></a>
                 <a name="//apple_ref/swift/Section/Member variables" class="dashAnchor"></a>
-                <a href="#/Member%20variables">
-                  <h3 class="section-name">Member variables</h3>
-                </a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Member%20variables"></a>
+                  <h3 class="section-name"><p>Member variables</p>
+</h3>
+                </div>
               </div>
               <ul>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:13AWSCloudTrail05CloudB0V6client15AWSSDKSwiftCore9AWSClientCvp"></a>
+                    <a name="/s:8SotoCore10AWSServiceP6clientAA9AWSClientCvp"></a>
                     <a name="//apple_ref/swift/Property/client" class="dashAnchor"></a>
-                    <a class="token" href="#/s:13AWSCloudTrail05CloudB0V6client15AWSSDKSwiftCore9AWSClientCvp">client</a>
+                    <a class="token" href="#/s:8SotoCore10AWSServiceP6clientAA9AWSClientCvp">client</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -767,8 +789,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
-
+                        
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
@@ -778,15 +799,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudTrail/CloudTrail_API.swift#L19">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:13AWSCloudTrail05CloudB0V13serviceConfig15AWSSDKSwiftCore010AWSServiceE0Cvp"></a>
-                    <a name="//apple_ref/swift/Property/serviceConfig" class="dashAnchor"></a>
-                    <a class="token" href="#/s:13AWSCloudTrail05CloudB0V13serviceConfig15AWSSDKSwiftCore010AWSServiceE0Cvp">serviceConfig</a>
+                    <a name="/s:8SotoCore10AWSServiceP6configAA0C6ConfigCvp"></a>
+                    <a name="//apple_ref/swift/Property/config" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8SotoCore10AWSServiceP6configAA0C6ConfigCvp">config</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -794,16 +818,18 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
-
+                        
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">serviceConfig</span><span class="p">:</span> <span class="kt"><a href="../Classes/AWSServiceConfig.html">AWSServiceConfig</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">config</span><span class="p">:</span> <span class="kt"><a href="../Classes/AWSServiceConfig.html">AWSServiceConfig</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudTrail/CloudTrail_API.swift#L21">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -814,17 +840,19 @@
               <div class="task-name-container">
                 <a name="/Initialization"></a>
                 <a name="//apple_ref/swift/Section/Initialization" class="dashAnchor"></a>
-                <a href="#/Initialization">
-                  <h3 class="section-name">Initialization</h3>
-                </a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Initialization"></a>
+                  <h3 class="section-name"><p>Initialization</p>
+</h3>
+                </div>
               </div>
               <ul>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:13AWSCloudTrail05CloudB0V6client6region9partition8endpointAC15AWSSDKSwiftCore9AWSClientC_AH6RegionVSgAH9PartitionVSSSgtcfc"></a>
-                    <a name="//apple_ref/swift/Method/init(client:region:partition:endpoint:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:13AWSCloudTrail05CloudB0V6client6region9partition8endpointAC15AWSSDKSwiftCore9AWSClientC_AH6RegionVSgAH9PartitionVSSSgtcfc">init(client:region:partition:endpoint:)</a>
+                    <a name="/s:14SotoCloudTrail0bC0V6client6region9partition8endpoint7timeout19byteBufferAllocator7optionsAC0A4Core9AWSClientC_AK6RegionVSgAK12AWSPartitionVSSSg3NIO10TimeAmountVSgAT04BytejK0VAK16AWSServiceConfigC7OptionsVtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(client:region:partition:endpoint:timeout:byteBufferAllocator:options:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14SotoCloudTrail0bC0V6client6region9partition8endpoint7timeout19byteBufferAllocator7optionsAC0A4Core9AWSClientC_AK6RegionVSgAK12AWSPartitionVSSSg3NIO10TimeAmountVSgAT04BytejK0VAK16AWSServiceConfigC7OptionsVtcfc">init(client:<wbr>region:<wbr>partition:<wbr>endpoint:<wbr>timeout:<wbr>byteBufferAllocator:<wbr>options:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -841,9 +869,12 @@
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span>
     <span class="nv">client</span><span class="p">:</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="p">,</span>
-    <span class="nv">region</span><span class="p">:</span> <span class="kt">AWSSDKSwiftCore</span><span class="o">.</span><span class="kt"><a href="../Structs/Region.html">Region</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
-    <span class="nv">partition</span><span class="p">:</span> <span class="kt">AWSSDKSwiftCore</span><span class="o">.</span><span class="kt"><a href="../Structs/Partition.html">Partition</a></span> <span class="o">=</span> <span class="o">.</span><span class="n">aws</span><span class="p">,</span>
-    <span class="nv">endpoint</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span>
+    <span class="nv">region</span><span class="p">:</span> <span class="kt">SotoCore</span><span class="o">.</span><span class="kt"><a href="../Structs/Region.html">Region</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="nv">partition</span><span class="p">:</span> <span class="kt"><a href="../Structs/AWSPartition.html">AWSPartition</a></span> <span class="o">=</span> <span class="o">.</span><span class="n">aws</span><span class="p">,</span>
+    <span class="nv">endpoint</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="nv">timeout</span><span class="p">:</span> <span class="kt">TimeAmount</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="nv">byteBufferAllocator</span><span class="p">:</span> <span class="kt">ByteBufferAllocator</span> <span class="o">=</span> <span class="kt">ByteBufferAllocator</span><span class="p">(),</span>
+    <span class="nv">options</span><span class="p">:</span> <span class="kt"><a href="../Classes/AWSServiceConfig.html">AWSServiceConfig</a></span><span class="o">.</span><span class="kt">Options</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="p">)</span></code></pre>
 
                         </div>
@@ -900,8 +931,23 @@
                                 </div>
                               </td>
                             </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>timeout</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Timeout value for HTTP requests</p>
+                                </div>
+                              </td>
+                            </tr>
                           </tbody>
                         </table>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudTrail/CloudTrail_API.swift#L39-L63">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -912,17 +958,19 @@
               <div class="task-name-container">
                 <a name="/API%20Calls"></a>
                 <a name="//apple_ref/swift/Section/API Calls" class="dashAnchor"></a>
-                <a href="#/API%20Calls">
-                  <h3 class="section-name">API Calls</h3>
-                </a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/API%20Calls"></a>
+                  <h3 class="section-name"><p>API Calls</p>
+</h3>
+                </div>
               </div>
               <ul>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:13AWSCloudTrail05CloudB0V7addTags_2on3NIO15EventLoopFutureCyAC03AddE8ResponseVGAC0kE7RequestV_AF0hI0_pSgtF"></a>
-                    <a name="//apple_ref/swift/Method/addTags(_:on:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:13AWSCloudTrail05CloudB0V7addTags_2on3NIO15EventLoopFutureCyAC03AddE8ResponseVGAC0kE7RequestV_AF0hI0_pSgtF">addTags(_:on:)</a>
+                    <a name="/s:14SotoCloudTrail0bC0V7addTags_2on6logger3NIO15EventLoopFutureCyAC03AddE8ResponseVGAC0lE7RequestV_AG0iJ0_pSg7Logging6LoggerVtF"></a>
+                    <a name="//apple_ref/swift/Method/addTags(_:on:logger:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14SotoCloudTrail0bC0V7addTags_2on6logger3NIO15EventLoopFutureCyAC03AddE8ResponseVGAC0lE7RequestV_AG0iJ0_pSg7Logging6LoggerVtF">addTags(_:<wbr>on:<wbr>logger:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -937,9 +985,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">addTags</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/CloudTrail/AddTagsRequest.html">AddTagsRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/CloudTrail/AddTagsResponse.html">AddTagsResponse</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">addTags</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/CloudTrail/AddTagsRequest.html">AddTagsRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">logger</span><span class="p">:</span> <span class="kt">Logger</span> <span class="o">=</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="o">.</span><span class="n">loggingDisabled</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/CloudTrail/AddTagsResponse.html">AddTagsResponse</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudTrail/CloudTrail_API.swift#L68-L70">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -947,9 +998,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:13AWSCloudTrail05CloudB0V06createB0_2on3NIO15EventLoopFutureCyAC06CreateB8ResponseVGAC0jB7RequestV_AF0gH0_pSgtF"></a>
-                    <a name="//apple_ref/swift/Method/createTrail(_:on:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:13AWSCloudTrail05CloudB0V06createB0_2on3NIO15EventLoopFutureCyAC06CreateB8ResponseVGAC0jB7RequestV_AF0gH0_pSgtF">createTrail(_:on:)</a>
+                    <a name="/s:14SotoCloudTrail0bC0V06createC0_2on6logger3NIO15EventLoopFutureCyAC06CreateC8ResponseVGAC0kC7RequestV_AG0hI0_pSg7Logging6LoggerVtF"></a>
+                    <a name="//apple_ref/swift/Method/createTrail(_:on:logger:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14SotoCloudTrail0bC0V06createC0_2on6logger3NIO15EventLoopFutureCyAC06CreateC8ResponseVGAC0kC7RequestV_AG0hI0_pSg7Logging6LoggerVtF">createTrail(_:<wbr>on:<wbr>logger:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -964,9 +1015,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">createTrail</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/CloudTrail/CreateTrailRequest.html">CreateTrailRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/CloudTrail/CreateTrailResponse.html">CreateTrailResponse</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">createTrail</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/CloudTrail/CreateTrailRequest.html">CreateTrailRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">logger</span><span class="p">:</span> <span class="kt">Logger</span> <span class="o">=</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="o">.</span><span class="n">loggingDisabled</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/CloudTrail/CreateTrailResponse.html">CreateTrailResponse</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudTrail/CloudTrail_API.swift#L73-L75">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -974,9 +1028,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:13AWSCloudTrail05CloudB0V06deleteB0_2on3NIO15EventLoopFutureCyAC06DeleteB8ResponseVGAC0jB7RequestV_AF0gH0_pSgtF"></a>
-                    <a name="//apple_ref/swift/Method/deleteTrail(_:on:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:13AWSCloudTrail05CloudB0V06deleteB0_2on3NIO15EventLoopFutureCyAC06DeleteB8ResponseVGAC0jB7RequestV_AF0gH0_pSgtF">deleteTrail(_:on:)</a>
+                    <a name="/s:14SotoCloudTrail0bC0V06deleteC0_2on6logger3NIO15EventLoopFutureCyAC06DeleteC8ResponseVGAC0kC7RequestV_AG0hI0_pSg7Logging6LoggerVtF"></a>
+                    <a name="//apple_ref/swift/Method/deleteTrail(_:on:logger:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14SotoCloudTrail0bC0V06deleteC0_2on6logger3NIO15EventLoopFutureCyAC06DeleteC8ResponseVGAC0kC7RequestV_AG0hI0_pSg7Logging6LoggerVtF">deleteTrail(_:<wbr>on:<wbr>logger:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -991,9 +1045,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">deleteTrail</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/CloudTrail/DeleteTrailRequest.html">DeleteTrailRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/CloudTrail/DeleteTrailResponse.html">DeleteTrailResponse</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">deleteTrail</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/CloudTrail/DeleteTrailRequest.html">DeleteTrailRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">logger</span><span class="p">:</span> <span class="kt">Logger</span> <span class="o">=</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="o">.</span><span class="n">loggingDisabled</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/CloudTrail/DeleteTrailResponse.html">DeleteTrailResponse</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudTrail/CloudTrail_API.swift#L78-L80">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1001,9 +1058,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:13AWSCloudTrail05CloudB0V14describeTrails_2on3NIO15EventLoopFutureCyAC08DescribeE8ResponseVGAC0kE7RequestV_AF0hI0_pSgtF"></a>
-                    <a name="//apple_ref/swift/Method/describeTrails(_:on:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:13AWSCloudTrail05CloudB0V14describeTrails_2on3NIO15EventLoopFutureCyAC08DescribeE8ResponseVGAC0kE7RequestV_AF0hI0_pSgtF">describeTrails(_:on:)</a>
+                    <a name="/s:14SotoCloudTrail0bC0V14describeTrails_2on6logger3NIO15EventLoopFutureCyAC08DescribeE8ResponseVGAC0lE7RequestV_AG0iJ0_pSg7Logging6LoggerVtF"></a>
+                    <a name="//apple_ref/swift/Method/describeTrails(_:on:logger:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14SotoCloudTrail0bC0V14describeTrails_2on6logger3NIO15EventLoopFutureCyAC08DescribeE8ResponseVGAC0lE7RequestV_AG0iJ0_pSg7Logging6LoggerVtF">describeTrails(_:<wbr>on:<wbr>logger:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1018,9 +1075,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">describeTrails</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/CloudTrail/DescribeTrailsRequest.html">DescribeTrailsRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/CloudTrail/DescribeTrailsResponse.html">DescribeTrailsResponse</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">describeTrails</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/CloudTrail/DescribeTrailsRequest.html">DescribeTrailsRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">logger</span><span class="p">:</span> <span class="kt">Logger</span> <span class="o">=</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="o">.</span><span class="n">loggingDisabled</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/CloudTrail/DescribeTrailsResponse.html">DescribeTrailsResponse</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudTrail/CloudTrail_API.swift#L83-L85">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1028,9 +1088,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:13AWSCloudTrail05CloudB0V17getEventSelectors_2on3NIO0E10LoopFutureCyAC03GeteF8ResponseVGAC0keF7RequestV_AF0eI0_pSgtF"></a>
-                    <a name="//apple_ref/swift/Method/getEventSelectors(_:on:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:13AWSCloudTrail05CloudB0V17getEventSelectors_2on3NIO0E10LoopFutureCyAC03GeteF8ResponseVGAC0keF7RequestV_AF0eI0_pSgtF">getEventSelectors(_:on:)</a>
+                    <a name="/s:14SotoCloudTrail0bC0V17getEventSelectors_2on6logger3NIO0E10LoopFutureCyAC03GeteF8ResponseVGAC0leF7RequestV_AG0eJ0_pSg7Logging6LoggerVtF"></a>
+                    <a name="//apple_ref/swift/Method/getEventSelectors(_:on:logger:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14SotoCloudTrail0bC0V17getEventSelectors_2on6logger3NIO0E10LoopFutureCyAC03GeteF8ResponseVGAC0leF7RequestV_AG0eJ0_pSg7Logging6LoggerVtF">getEventSelectors(_:<wbr>on:<wbr>logger:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1045,9 +1105,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getEventSelectors</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/CloudTrail/GetEventSelectorsRequest.html">GetEventSelectorsRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/CloudTrail/GetEventSelectorsResponse.html">GetEventSelectorsResponse</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getEventSelectors</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/CloudTrail/GetEventSelectorsRequest.html">GetEventSelectorsRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">logger</span><span class="p">:</span> <span class="kt">Logger</span> <span class="o">=</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="o">.</span><span class="n">loggingDisabled</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/CloudTrail/GetEventSelectorsResponse.html">GetEventSelectorsResponse</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudTrail/CloudTrail_API.swift#L88-L90">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1055,9 +1118,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:13AWSCloudTrail05CloudB0V19getInsightSelectors_2on3NIO15EventLoopFutureCyAC03GeteF8ResponseVGAC0leF7RequestV_AF0iJ0_pSgtF"></a>
-                    <a name="//apple_ref/swift/Method/getInsightSelectors(_:on:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:13AWSCloudTrail05CloudB0V19getInsightSelectors_2on3NIO15EventLoopFutureCyAC03GeteF8ResponseVGAC0leF7RequestV_AF0iJ0_pSgtF">getInsightSelectors(_:on:)</a>
+                    <a name="/s:14SotoCloudTrail0bC0V19getInsightSelectors_2on6logger3NIO15EventLoopFutureCyAC03GeteF8ResponseVGAC0meF7RequestV_AG0jK0_pSg7Logging6LoggerVtF"></a>
+                    <a name="//apple_ref/swift/Method/getInsightSelectors(_:on:logger:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14SotoCloudTrail0bC0V19getInsightSelectors_2on6logger3NIO15EventLoopFutureCyAC03GeteF8ResponseVGAC0meF7RequestV_AG0jK0_pSg7Logging6LoggerVtF">getInsightSelectors(_:<wbr>on:<wbr>logger:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1072,9 +1135,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getInsightSelectors</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/CloudTrail/GetInsightSelectorsRequest.html">GetInsightSelectorsRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/CloudTrail/GetInsightSelectorsResponse.html">GetInsightSelectorsResponse</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getInsightSelectors</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/CloudTrail/GetInsightSelectorsRequest.html">GetInsightSelectorsRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">logger</span><span class="p">:</span> <span class="kt">Logger</span> <span class="o">=</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="o">.</span><span class="n">loggingDisabled</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/CloudTrail/GetInsightSelectorsResponse.html">GetInsightSelectorsResponse</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudTrail/CloudTrail_API.swift#L93-L95">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1082,9 +1148,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:13AWSCloudTrail05CloudB0V03getB0_2on3NIO15EventLoopFutureCyAC03GetB8ResponseVGAC0jB7RequestV_AF0gH0_pSgtF"></a>
-                    <a name="//apple_ref/swift/Method/getTrail(_:on:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:13AWSCloudTrail05CloudB0V03getB0_2on3NIO15EventLoopFutureCyAC03GetB8ResponseVGAC0jB7RequestV_AF0gH0_pSgtF">getTrail(_:on:)</a>
+                    <a name="/s:14SotoCloudTrail0bC0V03getC0_2on6logger3NIO15EventLoopFutureCyAC03GetC8ResponseVGAC0kC7RequestV_AG0hI0_pSg7Logging6LoggerVtF"></a>
+                    <a name="//apple_ref/swift/Method/getTrail(_:on:logger:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14SotoCloudTrail0bC0V03getC0_2on6logger3NIO15EventLoopFutureCyAC03GetC8ResponseVGAC0kC7RequestV_AG0hI0_pSg7Logging6LoggerVtF">getTrail(_:<wbr>on:<wbr>logger:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1099,9 +1165,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getTrail</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/CloudTrail/GetTrailRequest.html">GetTrailRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/CloudTrail/GetTrailResponse.html">GetTrailResponse</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getTrail</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/CloudTrail/GetTrailRequest.html">GetTrailRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">logger</span><span class="p">:</span> <span class="kt">Logger</span> <span class="o">=</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="o">.</span><span class="n">loggingDisabled</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/CloudTrail/GetTrailResponse.html">GetTrailResponse</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudTrail/CloudTrail_API.swift#L98-L100">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1109,9 +1178,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:13AWSCloudTrail05CloudB0V03getB6Status_2on3NIO15EventLoopFutureCyAC03GetbE8ResponseVGAC0kbE7RequestV_AF0hI0_pSgtF"></a>
-                    <a name="//apple_ref/swift/Method/getTrailStatus(_:on:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:13AWSCloudTrail05CloudB0V03getB6Status_2on3NIO15EventLoopFutureCyAC03GetbE8ResponseVGAC0kbE7RequestV_AF0hI0_pSgtF">getTrailStatus(_:on:)</a>
+                    <a name="/s:14SotoCloudTrail0bC0V03getC6Status_2on6logger3NIO15EventLoopFutureCyAC03GetcE8ResponseVGAC0lcE7RequestV_AG0iJ0_pSg7Logging6LoggerVtF"></a>
+                    <a name="//apple_ref/swift/Method/getTrailStatus(_:on:logger:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14SotoCloudTrail0bC0V03getC6Status_2on6logger3NIO15EventLoopFutureCyAC03GetcE8ResponseVGAC0lcE7RequestV_AG0iJ0_pSg7Logging6LoggerVtF">getTrailStatus(_:<wbr>on:<wbr>logger:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1126,9 +1195,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getTrailStatus</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/CloudTrail/GetTrailStatusRequest.html">GetTrailStatusRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/CloudTrail/GetTrailStatusResponse.html">GetTrailStatusResponse</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getTrailStatus</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/CloudTrail/GetTrailStatusRequest.html">GetTrailStatusRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">logger</span><span class="p">:</span> <span class="kt">Logger</span> <span class="o">=</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="o">.</span><span class="n">loggingDisabled</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/CloudTrail/GetTrailStatusResponse.html">GetTrailStatusResponse</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudTrail/CloudTrail_API.swift#L103-L105">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1136,9 +1208,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:13AWSCloudTrail05CloudB0V14listPublicKeys_2on3NIO15EventLoopFutureCyAC04ListeF8ResponseVGAC0leF7RequestV_AF0iJ0_pSgtF"></a>
-                    <a name="//apple_ref/swift/Method/listPublicKeys(_:on:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:13AWSCloudTrail05CloudB0V14listPublicKeys_2on3NIO15EventLoopFutureCyAC04ListeF8ResponseVGAC0leF7RequestV_AF0iJ0_pSgtF">listPublicKeys(_:on:)</a>
+                    <a name="/s:14SotoCloudTrail0bC0V14listPublicKeys_2on6logger3NIO15EventLoopFutureCyAC04ListeF8ResponseVGAC0meF7RequestV_AG0jK0_pSg7Logging6LoggerVtF"></a>
+                    <a name="//apple_ref/swift/Method/listPublicKeys(_:on:logger:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14SotoCloudTrail0bC0V14listPublicKeys_2on6logger3NIO15EventLoopFutureCyAC04ListeF8ResponseVGAC0meF7RequestV_AG0jK0_pSg7Logging6LoggerVtF">listPublicKeys(_:<wbr>on:<wbr>logger:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1153,9 +1225,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">listPublicKeys</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/CloudTrail/ListPublicKeysRequest.html">ListPublicKeysRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/CloudTrail/ListPublicKeysResponse.html">ListPublicKeysResponse</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">listPublicKeys</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/CloudTrail/ListPublicKeysRequest.html">ListPublicKeysRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">logger</span><span class="p">:</span> <span class="kt">Logger</span> <span class="o">=</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="o">.</span><span class="n">loggingDisabled</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/CloudTrail/ListPublicKeysResponse.html">ListPublicKeysResponse</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudTrail/CloudTrail_API.swift#L108-L110">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1163,9 +1238,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:13AWSCloudTrail05CloudB0V8listTags_2on3NIO15EventLoopFutureCyAC04ListE8ResponseVGAC0kE7RequestV_AF0hI0_pSgtF"></a>
-                    <a name="//apple_ref/swift/Method/listTags(_:on:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:13AWSCloudTrail05CloudB0V8listTags_2on3NIO15EventLoopFutureCyAC04ListE8ResponseVGAC0kE7RequestV_AF0hI0_pSgtF">listTags(_:on:)</a>
+                    <a name="/s:14SotoCloudTrail0bC0V8listTags_2on6logger3NIO15EventLoopFutureCyAC04ListE8ResponseVGAC0lE7RequestV_AG0iJ0_pSg7Logging6LoggerVtF"></a>
+                    <a name="//apple_ref/swift/Method/listTags(_:on:logger:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14SotoCloudTrail0bC0V8listTags_2on6logger3NIO15EventLoopFutureCyAC04ListE8ResponseVGAC0lE7RequestV_AG0iJ0_pSg7Logging6LoggerVtF">listTags(_:<wbr>on:<wbr>logger:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1180,9 +1255,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">listTags</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/CloudTrail/ListTagsRequest.html">ListTagsRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/CloudTrail/ListTagsResponse.html">ListTagsResponse</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">listTags</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/CloudTrail/ListTagsRequest.html">ListTagsRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">logger</span><span class="p">:</span> <span class="kt">Logger</span> <span class="o">=</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="o">.</span><span class="n">loggingDisabled</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/CloudTrail/ListTagsResponse.html">ListTagsResponse</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudTrail/CloudTrail_API.swift#L113-L115">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1190,9 +1268,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:13AWSCloudTrail05CloudB0V10listTrails_2on3NIO15EventLoopFutureCyAC04ListE8ResponseVGAC0kE7RequestV_AF0hI0_pSgtF"></a>
-                    <a name="//apple_ref/swift/Method/listTrails(_:on:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:13AWSCloudTrail05CloudB0V10listTrails_2on3NIO15EventLoopFutureCyAC04ListE8ResponseVGAC0kE7RequestV_AF0hI0_pSgtF">listTrails(_:on:)</a>
+                    <a name="/s:14SotoCloudTrail0bC0V10listTrails_2on6logger3NIO15EventLoopFutureCyAC04ListE8ResponseVGAC0lE7RequestV_AG0iJ0_pSg7Logging6LoggerVtF"></a>
+                    <a name="//apple_ref/swift/Method/listTrails(_:on:logger:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14SotoCloudTrail0bC0V10listTrails_2on6logger3NIO15EventLoopFutureCyAC04ListE8ResponseVGAC0lE7RequestV_AG0iJ0_pSg7Logging6LoggerVtF">listTrails(_:<wbr>on:<wbr>logger:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1207,9 +1285,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">listTrails</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/CloudTrail/ListTrailsRequest.html">ListTrailsRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/CloudTrail/ListTrailsResponse.html">ListTrailsResponse</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">listTrails</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/CloudTrail/ListTrailsRequest.html">ListTrailsRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">logger</span><span class="p">:</span> <span class="kt">Logger</span> <span class="o">=</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="o">.</span><span class="n">loggingDisabled</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/CloudTrail/ListTrailsResponse.html">ListTrailsResponse</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudTrail/CloudTrail_API.swift#L118-L120">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1217,9 +1298,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:13AWSCloudTrail05CloudB0V12lookupEvents_2on3NIO15EventLoopFutureCyAC06LookupE8ResponseVGAC0kE7RequestV_AF0hI0_pSgtF"></a>
-                    <a name="//apple_ref/swift/Method/lookupEvents(_:on:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:13AWSCloudTrail05CloudB0V12lookupEvents_2on3NIO15EventLoopFutureCyAC06LookupE8ResponseVGAC0kE7RequestV_AF0hI0_pSgtF">lookupEvents(_:on:)</a>
+                    <a name="/s:14SotoCloudTrail0bC0V12lookupEvents_2on6logger3NIO15EventLoopFutureCyAC06LookupE8ResponseVGAC0lE7RequestV_AG0iJ0_pSg7Logging6LoggerVtF"></a>
+                    <a name="//apple_ref/swift/Method/lookupEvents(_:on:logger:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14SotoCloudTrail0bC0V12lookupEvents_2on6logger3NIO15EventLoopFutureCyAC06LookupE8ResponseVGAC0lE7RequestV_AG0iJ0_pSg7Logging6LoggerVtF">lookupEvents(_:<wbr>on:<wbr>logger:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1234,9 +1315,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">lookupEvents</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/CloudTrail/LookupEventsRequest.html">LookupEventsRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/CloudTrail/LookupEventsResponse.html">LookupEventsResponse</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">lookupEvents</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/CloudTrail/LookupEventsRequest.html">LookupEventsRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">logger</span><span class="p">:</span> <span class="kt">Logger</span> <span class="o">=</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="o">.</span><span class="n">loggingDisabled</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/CloudTrail/LookupEventsResponse.html">LookupEventsResponse</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudTrail/CloudTrail_API.swift#L123-L125">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1244,9 +1328,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:13AWSCloudTrail05CloudB0V17putEventSelectors_2on3NIO0E10LoopFutureCyAC03PuteF8ResponseVGAC0keF7RequestV_AF0eI0_pSgtF"></a>
-                    <a name="//apple_ref/swift/Method/putEventSelectors(_:on:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:13AWSCloudTrail05CloudB0V17putEventSelectors_2on3NIO0E10LoopFutureCyAC03PuteF8ResponseVGAC0keF7RequestV_AF0eI0_pSgtF">putEventSelectors(_:on:)</a>
+                    <a name="/s:14SotoCloudTrail0bC0V17putEventSelectors_2on6logger3NIO0E10LoopFutureCyAC03PuteF8ResponseVGAC0leF7RequestV_AG0eJ0_pSg7Logging6LoggerVtF"></a>
+                    <a name="//apple_ref/swift/Method/putEventSelectors(_:on:logger:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14SotoCloudTrail0bC0V17putEventSelectors_2on6logger3NIO0E10LoopFutureCyAC03PuteF8ResponseVGAC0leF7RequestV_AG0eJ0_pSg7Logging6LoggerVtF">putEventSelectors(_:<wbr>on:<wbr>logger:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1261,9 +1345,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">putEventSelectors</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/CloudTrail/PutEventSelectorsRequest.html">PutEventSelectorsRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/CloudTrail/PutEventSelectorsResponse.html">PutEventSelectorsResponse</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">putEventSelectors</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/CloudTrail/PutEventSelectorsRequest.html">PutEventSelectorsRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">logger</span><span class="p">:</span> <span class="kt">Logger</span> <span class="o">=</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="o">.</span><span class="n">loggingDisabled</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/CloudTrail/PutEventSelectorsResponse.html">PutEventSelectorsResponse</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudTrail/CloudTrail_API.swift#L128-L130">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1271,9 +1358,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:13AWSCloudTrail05CloudB0V19putInsightSelectors_2on3NIO15EventLoopFutureCyAC03PuteF8ResponseVGAC0leF7RequestV_AF0iJ0_pSgtF"></a>
-                    <a name="//apple_ref/swift/Method/putInsightSelectors(_:on:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:13AWSCloudTrail05CloudB0V19putInsightSelectors_2on3NIO15EventLoopFutureCyAC03PuteF8ResponseVGAC0leF7RequestV_AF0iJ0_pSgtF">putInsightSelectors(_:on:)</a>
+                    <a name="/s:14SotoCloudTrail0bC0V19putInsightSelectors_2on6logger3NIO15EventLoopFutureCyAC03PuteF8ResponseVGAC0meF7RequestV_AG0jK0_pSg7Logging6LoggerVtF"></a>
+                    <a name="//apple_ref/swift/Method/putInsightSelectors(_:on:logger:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14SotoCloudTrail0bC0V19putInsightSelectors_2on6logger3NIO15EventLoopFutureCyAC03PuteF8ResponseVGAC0meF7RequestV_AG0jK0_pSg7Logging6LoggerVtF">putInsightSelectors(_:<wbr>on:<wbr>logger:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1288,9 +1375,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">putInsightSelectors</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/CloudTrail/PutInsightSelectorsRequest.html">PutInsightSelectorsRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/CloudTrail/PutInsightSelectorsResponse.html">PutInsightSelectorsResponse</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">putInsightSelectors</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/CloudTrail/PutInsightSelectorsRequest.html">PutInsightSelectorsRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">logger</span><span class="p">:</span> <span class="kt">Logger</span> <span class="o">=</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="o">.</span><span class="n">loggingDisabled</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/CloudTrail/PutInsightSelectorsResponse.html">PutInsightSelectorsResponse</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudTrail/CloudTrail_API.swift#L133-L135">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1298,9 +1388,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:13AWSCloudTrail05CloudB0V10removeTags_2on3NIO15EventLoopFutureCyAC06RemoveE8ResponseVGAC0kE7RequestV_AF0hI0_pSgtF"></a>
-                    <a name="//apple_ref/swift/Method/removeTags(_:on:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:13AWSCloudTrail05CloudB0V10removeTags_2on3NIO15EventLoopFutureCyAC06RemoveE8ResponseVGAC0kE7RequestV_AF0hI0_pSgtF">removeTags(_:on:)</a>
+                    <a name="/s:14SotoCloudTrail0bC0V10removeTags_2on6logger3NIO15EventLoopFutureCyAC06RemoveE8ResponseVGAC0lE7RequestV_AG0iJ0_pSg7Logging6LoggerVtF"></a>
+                    <a name="//apple_ref/swift/Method/removeTags(_:on:logger:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14SotoCloudTrail0bC0V10removeTags_2on6logger3NIO15EventLoopFutureCyAC06RemoveE8ResponseVGAC0lE7RequestV_AG0iJ0_pSg7Logging6LoggerVtF">removeTags(_:<wbr>on:<wbr>logger:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1315,9 +1405,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">removeTags</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/CloudTrail/RemoveTagsRequest.html">RemoveTagsRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/CloudTrail/RemoveTagsResponse.html">RemoveTagsResponse</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">removeTags</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/CloudTrail/RemoveTagsRequest.html">RemoveTagsRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">logger</span><span class="p">:</span> <span class="kt">Logger</span> <span class="o">=</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="o">.</span><span class="n">loggingDisabled</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/CloudTrail/RemoveTagsResponse.html">RemoveTagsResponse</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudTrail/CloudTrail_API.swift#L138-L140">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1325,9 +1418,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:13AWSCloudTrail05CloudB0V12startLogging_2on3NIO15EventLoopFutureCyAC05StartE8ResponseVGAC0kE7RequestV_AF0hI0_pSgtF"></a>
-                    <a name="//apple_ref/swift/Method/startLogging(_:on:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:13AWSCloudTrail05CloudB0V12startLogging_2on3NIO15EventLoopFutureCyAC05StartE8ResponseVGAC0kE7RequestV_AF0hI0_pSgtF">startLogging(_:on:)</a>
+                    <a name="/s:14SotoCloudTrail0bC0V12startLogging_2on6logger3NIO15EventLoopFutureCyAC05StartE8ResponseVGAC0lE7RequestV_AG0iJ0_pSg0E06LoggerVtF"></a>
+                    <a name="//apple_ref/swift/Method/startLogging(_:on:logger:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14SotoCloudTrail0bC0V12startLogging_2on6logger3NIO15EventLoopFutureCyAC05StartE8ResponseVGAC0lE7RequestV_AG0iJ0_pSg0E06LoggerVtF">startLogging(_:<wbr>on:<wbr>logger:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1342,9 +1435,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">startLogging</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/CloudTrail/StartLoggingRequest.html">StartLoggingRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/CloudTrail/StartLoggingResponse.html">StartLoggingResponse</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">startLogging</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/CloudTrail/StartLoggingRequest.html">StartLoggingRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">logger</span><span class="p">:</span> <span class="kt">Logger</span> <span class="o">=</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="o">.</span><span class="n">loggingDisabled</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/CloudTrail/StartLoggingResponse.html">StartLoggingResponse</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudTrail/CloudTrail_API.swift#L143-L145">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1352,9 +1448,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:13AWSCloudTrail05CloudB0V11stopLogging_2on3NIO15EventLoopFutureCyAC04StopE8ResponseVGAC0kE7RequestV_AF0hI0_pSgtF"></a>
-                    <a name="//apple_ref/swift/Method/stopLogging(_:on:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:13AWSCloudTrail05CloudB0V11stopLogging_2on3NIO15EventLoopFutureCyAC04StopE8ResponseVGAC0kE7RequestV_AF0hI0_pSgtF">stopLogging(_:on:)</a>
+                    <a name="/s:14SotoCloudTrail0bC0V11stopLogging_2on6logger3NIO15EventLoopFutureCyAC04StopE8ResponseVGAC0lE7RequestV_AG0iJ0_pSg0E06LoggerVtF"></a>
+                    <a name="//apple_ref/swift/Method/stopLogging(_:on:logger:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14SotoCloudTrail0bC0V11stopLogging_2on6logger3NIO15EventLoopFutureCyAC04StopE8ResponseVGAC0lE7RequestV_AG0iJ0_pSg0E06LoggerVtF">stopLogging(_:<wbr>on:<wbr>logger:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1369,9 +1465,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">stopLogging</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/CloudTrail/StopLoggingRequest.html">StopLoggingRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/CloudTrail/StopLoggingResponse.html">StopLoggingResponse</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">stopLogging</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/CloudTrail/StopLoggingRequest.html">StopLoggingRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">logger</span><span class="p">:</span> <span class="kt">Logger</span> <span class="o">=</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="o">.</span><span class="n">loggingDisabled</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/CloudTrail/StopLoggingResponse.html">StopLoggingResponse</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudTrail/CloudTrail_API.swift#L148-L150">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1379,9 +1478,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:13AWSCloudTrail05CloudB0V06updateB0_2on3NIO15EventLoopFutureCyAC06UpdateB8ResponseVGAC0jB7RequestV_AF0gH0_pSgtF"></a>
-                    <a name="//apple_ref/swift/Method/updateTrail(_:on:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:13AWSCloudTrail05CloudB0V06updateB0_2on3NIO15EventLoopFutureCyAC06UpdateB8ResponseVGAC0jB7RequestV_AF0gH0_pSgtF">updateTrail(_:on:)</a>
+                    <a name="/s:14SotoCloudTrail0bC0V06updateC0_2on6logger3NIO15EventLoopFutureCyAC06UpdateC8ResponseVGAC0kC7RequestV_AG0hI0_pSg7Logging6LoggerVtF"></a>
+                    <a name="//apple_ref/swift/Method/updateTrail(_:on:logger:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14SotoCloudTrail0bC0V06updateC0_2on6logger3NIO15EventLoopFutureCyAC06UpdateC8ResponseVGAC0kC7RequestV_AG0hI0_pSg7Logging6LoggerVtF">updateTrail(_:<wbr>on:<wbr>logger:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1396,9 +1495,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">updateTrail</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/CloudTrail/UpdateTrailRequest.html">UpdateTrailRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/CloudTrail/UpdateTrailResponse.html">UpdateTrailResponse</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">updateTrail</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/CloudTrail/UpdateTrailRequest.html">UpdateTrailRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">logger</span><span class="p">:</span> <span class="kt">Logger</span> <span class="o">=</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="o">.</span><span class="n">loggingDisabled</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/CloudTrail/UpdateTrailResponse.html">UpdateTrailResponse</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudTrail/CloudTrail_API.swift#L153-L155">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1409,17 +1511,19 @@
               <div class="task-name-container">
                 <a name="/Paginators"></a>
                 <a name="//apple_ref/swift/Section/Paginators" class="dashAnchor"></a>
-                <a href="#/Paginators">
-                  <h3 class="section-name">Paginators</h3>
-                </a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Paginators"></a>
+                  <h3 class="section-name"><p>Paginators</p>
+</h3>
+                </div>
               </div>
               <ul>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:13AWSCloudTrail05CloudB0V23listPublicKeysPaginator_2on0H4Page3NIO15EventLoopFutureCyytGAC04ListeF7RequestV_AG0kL0_pSgAIySbGAC0neF8ResponseV_AgM_ptctF"></a>
-                    <a name="//apple_ref/swift/Method/listPublicKeysPaginator(_:on:onPage:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:13AWSCloudTrail05CloudB0V23listPublicKeysPaginator_2on0H4Page3NIO15EventLoopFutureCyytGAC04ListeF7RequestV_AG0kL0_pSgAIySbGAC0neF8ResponseV_AgM_ptctF">listPublicKeysPaginator(_:on:onPage:)</a>
+                    <a name="/s:14SotoCloudTrail0bC0V23listPublicKeysPaginator_2on6logger0H4Page3NIO15EventLoopFutureCyytGAC04ListeF7RequestV_AH0lM0_pSg7Logging6LoggerVAJySbGAC0oeF8ResponseV_AhN_ptctF"></a>
+                    <a name="//apple_ref/swift/Method/listPublicKeysPaginator(_:on:logger:onPage:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14SotoCloudTrail0bC0V23listPublicKeysPaginator_2on6logger0H4Page3NIO15EventLoopFutureCyytGAC04ListeF7RequestV_AH0lM0_pSg7Logging6LoggerVAJySbGAC0oeF8ResponseV_AhN_ptctF">listPublicKeysPaginator(_:<wbr>on:<wbr>logger:<wbr>onPage:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1437,11 +1541,14 @@
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">listPublicKeysPaginator</span><span class="p">(</span>
     <span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/CloudTrail/ListPublicKeysRequest.html">ListPublicKeysRequest</a></span><span class="p">,</span>
     <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
-    <span class="nv">onPage</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/CloudTrail/ListPublicKeysResponse.html">ListPublicKeysResponse</a></span><span class="p">,</span>
-    <span class="kt">EventLoop</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Bool</span><span class="o">&gt;</span>
+    <span class="nv">logger</span><span class="p">:</span> <span class="kt">Logger</span> <span class="o">=</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="o">.</span><span class="n">loggingDisabled</span><span class="p">,</span>
+    <span class="nv">onPage</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/CloudTrail/ListPublicKeysResponse.html">ListPublicKeysResponse</a></span><span class="p">,</span> <span class="kt">EventLoop</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Bool</span><span class="o">&gt;</span>
 <span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Void</span><span class="o">&gt;</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudTrail/CloudTrail_Paginator.swift#L23-L36">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1449,9 +1556,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:13AWSCloudTrail05CloudB0V17listTagsPaginator_2on0G4Page3NIO15EventLoopFutureCyytGAC04ListE7RequestV_AG0jK0_pSgAIySbGAC0mE8ResponseV_AgM_ptctF"></a>
-                    <a name="//apple_ref/swift/Method/listTagsPaginator(_:on:onPage:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:13AWSCloudTrail05CloudB0V17listTagsPaginator_2on0G4Page3NIO15EventLoopFutureCyytGAC04ListE7RequestV_AG0jK0_pSgAIySbGAC0mE8ResponseV_AgM_ptctF">listTagsPaginator(_:on:onPage:)</a>
+                    <a name="/s:14SotoCloudTrail0bC0V17listTagsPaginator_2on6logger0G4Page3NIO15EventLoopFutureCyytGAC04ListE7RequestV_AH0kL0_pSg7Logging6LoggerVAJySbGAC0nE8ResponseV_AhN_ptctF"></a>
+                    <a name="//apple_ref/swift/Method/listTagsPaginator(_:on:logger:onPage:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14SotoCloudTrail0bC0V17listTagsPaginator_2on6logger0G4Page3NIO15EventLoopFutureCyytGAC04ListE7RequestV_AH0kL0_pSg7Logging6LoggerVAJySbGAC0nE8ResponseV_AhN_ptctF">listTagsPaginator(_:<wbr>on:<wbr>logger:<wbr>onPage:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1469,11 +1576,14 @@
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">listTagsPaginator</span><span class="p">(</span>
     <span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/CloudTrail/ListTagsRequest.html">ListTagsRequest</a></span><span class="p">,</span>
     <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
-    <span class="nv">onPage</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/CloudTrail/ListTagsResponse.html">ListTagsResponse</a></span><span class="p">,</span>
-    <span class="kt">EventLoop</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Bool</span><span class="o">&gt;</span>
+    <span class="nv">logger</span><span class="p">:</span> <span class="kt">Logger</span> <span class="o">=</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="o">.</span><span class="n">loggingDisabled</span><span class="p">,</span>
+    <span class="nv">onPage</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/CloudTrail/ListTagsResponse.html">ListTagsResponse</a></span><span class="p">,</span> <span class="kt">EventLoop</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Bool</span><span class="o">&gt;</span>
 <span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Void</span><span class="o">&gt;</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudTrail/CloudTrail_Paginator.swift#L39-L52">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1481,9 +1591,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:13AWSCloudTrail05CloudB0V19listTrailsPaginator_2on0G4Page3NIO15EventLoopFutureCyytGAC04ListE7RequestV_AG0jK0_pSgAIySbGAC0mE8ResponseV_AgM_ptctF"></a>
-                    <a name="//apple_ref/swift/Method/listTrailsPaginator(_:on:onPage:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:13AWSCloudTrail05CloudB0V19listTrailsPaginator_2on0G4Page3NIO15EventLoopFutureCyytGAC04ListE7RequestV_AG0jK0_pSgAIySbGAC0mE8ResponseV_AgM_ptctF">listTrailsPaginator(_:on:onPage:)</a>
+                    <a name="/s:14SotoCloudTrail0bC0V19listTrailsPaginator_2on6logger0G4Page3NIO15EventLoopFutureCyytGAC04ListE7RequestV_AH0kL0_pSg7Logging6LoggerVAJySbGAC0nE8ResponseV_AhN_ptctF"></a>
+                    <a name="//apple_ref/swift/Method/listTrailsPaginator(_:on:logger:onPage:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14SotoCloudTrail0bC0V19listTrailsPaginator_2on6logger0G4Page3NIO15EventLoopFutureCyytGAC04ListE7RequestV_AH0kL0_pSg7Logging6LoggerVAJySbGAC0nE8ResponseV_AhN_ptctF">listTrailsPaginator(_:<wbr>on:<wbr>logger:<wbr>onPage:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1501,11 +1611,14 @@
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">listTrailsPaginator</span><span class="p">(</span>
     <span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/CloudTrail/ListTrailsRequest.html">ListTrailsRequest</a></span><span class="p">,</span>
     <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
-    <span class="nv">onPage</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/CloudTrail/ListTrailsResponse.html">ListTrailsResponse</a></span><span class="p">,</span>
-    <span class="kt">EventLoop</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Bool</span><span class="o">&gt;</span>
+    <span class="nv">logger</span><span class="p">:</span> <span class="kt">Logger</span> <span class="o">=</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="o">.</span><span class="n">loggingDisabled</span><span class="p">,</span>
+    <span class="nv">onPage</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/CloudTrail/ListTrailsResponse.html">ListTrailsResponse</a></span><span class="p">,</span> <span class="kt">EventLoop</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Bool</span><span class="o">&gt;</span>
 <span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Void</span><span class="o">&gt;</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudTrail/CloudTrail_Paginator.swift#L55-L68">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1513,9 +1626,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:13AWSCloudTrail05CloudB0V21lookupEventsPaginator_2on0G4Page3NIO15EventLoopFutureCyytGAC06LookupE7RequestV_AG0jK0_pSgAIySbGAC0mE8ResponseV_AgM_ptctF"></a>
-                    <a name="//apple_ref/swift/Method/lookupEventsPaginator(_:on:onPage:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:13AWSCloudTrail05CloudB0V21lookupEventsPaginator_2on0G4Page3NIO15EventLoopFutureCyytGAC06LookupE7RequestV_AG0jK0_pSgAIySbGAC0mE8ResponseV_AgM_ptctF">lookupEventsPaginator(_:on:onPage:)</a>
+                    <a name="/s:14SotoCloudTrail0bC0V21lookupEventsPaginator_2on6logger0G4Page3NIO15EventLoopFutureCyytGAC06LookupE7RequestV_AH0kL0_pSg7Logging6LoggerVAJySbGAC0nE8ResponseV_AhN_ptctF"></a>
+                    <a name="//apple_ref/swift/Method/lookupEventsPaginator(_:on:logger:onPage:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14SotoCloudTrail0bC0V21lookupEventsPaginator_2on6logger0G4Page3NIO15EventLoopFutureCyytGAC06LookupE7RequestV_AH0kL0_pSg7Logging6LoggerVAJySbGAC0nE8ResponseV_AhN_ptctF">lookupEventsPaginator(_:<wbr>on:<wbr>logger:<wbr>onPage:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1533,11 +1646,14 @@
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">lookupEventsPaginator</span><span class="p">(</span>
     <span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/CloudTrail/LookupEventsRequest.html">LookupEventsRequest</a></span><span class="p">,</span>
     <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
-    <span class="nv">onPage</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/CloudTrail/LookupEventsResponse.html">LookupEventsResponse</a></span><span class="p">,</span>
-    <span class="kt">EventLoop</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Bool</span><span class="o">&gt;</span>
+    <span class="nv">logger</span><span class="p">:</span> <span class="kt">Logger</span> <span class="o">=</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="o">.</span><span class="n">loggingDisabled</span><span class="p">,</span>
+    <span class="nv">onPage</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/CloudTrail/LookupEventsResponse.html">LookupEventsResponse</a></span><span class="p">,</span> <span class="kt">EventLoop</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Bool</span><span class="o">&gt;</span>
 <span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Void</span><span class="o">&gt;</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudTrail/CloudTrail_Paginator.swift#L71-L84">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1548,17 +1664,19 @@
               <div class="task-name-container">
                 <a name="/Shapes"></a>
                 <a name="//apple_ref/swift/Section/Shapes" class="dashAnchor"></a>
-                <a href="#/Shapes">
-                  <h3 class="section-name">Shapes</h3>
-                </a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Shapes"></a>
+                  <h3 class="section-name"><p>Shapes</p>
+</h3>
+                </div>
               </div>
               <ul>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:13AWSCloudTrail05CloudB0V21ListPublicKeysRequestV"></a>
+                    <a name="/s:14SotoCloudTrail0bC0V21ListPublicKeysRequestV"></a>
                     <a name="//apple_ref/swift/Struct/ListPublicKeysRequest" class="dashAnchor"></a>
-                    <a class="token" href="#/s:13AWSCloudTrail05CloudB0V21ListPublicKeysRequestV">ListPublicKeysRequest</a>
+                    <a class="token" href="#/s:14SotoCloudTrail0bC0V21ListPublicKeysRequestV">ListPublicKeysRequest</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1579,15 +1697,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudTrail/CloudTrail_Shapes.swift#L510-L531">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:13AWSCloudTrail05CloudB0V15ListTagsRequestV"></a>
+                    <a name="/s:14SotoCloudTrail0bC0V15ListTagsRequestV"></a>
                     <a name="//apple_ref/swift/Struct/ListTagsRequest" class="dashAnchor"></a>
-                    <a class="token" href="#/s:13AWSCloudTrail05CloudB0V15ListTagsRequestV">ListTagsRequest</a>
+                    <a class="token" href="#/s:14SotoCloudTrail0bC0V15ListTagsRequestV">ListTagsRequest</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1608,15 +1729,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudTrail/CloudTrail_Shapes.swift#L550-L565">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:13AWSCloudTrail05CloudB0V17ListTrailsRequestV"></a>
+                    <a name="/s:14SotoCloudTrail0bC0V17ListTrailsRequestV"></a>
                     <a name="//apple_ref/swift/Struct/ListTrailsRequest" class="dashAnchor"></a>
-                    <a class="token" href="#/s:13AWSCloudTrail05CloudB0V17ListTrailsRequestV">ListTrailsRequest</a>
+                    <a class="token" href="#/s:14SotoCloudTrail0bC0V17ListTrailsRequestV">ListTrailsRequest</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1637,15 +1761,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudTrail/CloudTrail_Shapes.swift#L584-L595">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:13AWSCloudTrail05CloudB0V19LookupEventsRequestV"></a>
+                    <a name="/s:14SotoCloudTrail0bC0V19LookupEventsRequestV"></a>
                     <a name="//apple_ref/swift/Struct/LookupEventsRequest" class="dashAnchor"></a>
-                    <a class="token" href="#/s:13AWSCloudTrail05CloudB0V19LookupEventsRequestV">LookupEventsRequest</a>
+                    <a class="token" href="#/s:14SotoCloudTrail0bC0V19LookupEventsRequestV">LookupEventsRequest</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1666,15 +1793,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudTrail/CloudTrail_Shapes.swift#L631-L669">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:13AWSCloudTrail05CloudB0V14AddTagsRequestV"></a>
+                    <a name="/s:14SotoCloudTrail0bC0V14AddTagsRequestV"></a>
                     <a name="//apple_ref/swift/Struct/AddTagsRequest" class="dashAnchor"></a>
-                    <a class="token" href="#/s:13AWSCloudTrail05CloudB0V14AddTagsRequestV">AddTagsRequest</a>
+                    <a class="token" href="#/s:14SotoCloudTrail0bC0V14AddTagsRequestV">AddTagsRequest</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1694,15 +1824,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudTrail/CloudTrail_Shapes.swift#L54-L69">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:13AWSCloudTrail05CloudB0V15AddTagsResponseV"></a>
+                    <a name="/s:14SotoCloudTrail0bC0V15AddTagsResponseV"></a>
                     <a name="//apple_ref/swift/Struct/AddTagsResponse" class="dashAnchor"></a>
-                    <a class="token" href="#/s:13AWSCloudTrail05CloudB0V15AddTagsResponseV">AddTagsResponse</a>
+                    <a class="token" href="#/s:14SotoCloudTrail0bC0V15AddTagsResponseV">AddTagsResponse</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1718,9 +1851,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">AddTagsResponse</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">AddTagsResponse</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudTrail/CloudTrail_Shapes.swift#L71-L73">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1728,9 +1864,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:13AWSCloudTrail05CloudB0V06CreateB7RequestV"></a>
+                    <a name="/s:14SotoCloudTrail0bC0V06CreateC7RequestV"></a>
                     <a name="//apple_ref/swift/Struct/CreateTrailRequest" class="dashAnchor"></a>
-                    <a class="token" href="#/s:13AWSCloudTrail05CloudB0V06CreateB7RequestV">CreateTrailRequest</a>
+                    <a class="token" href="#/s:14SotoCloudTrail0bC0V06CreateC7RequestV">CreateTrailRequest</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1750,15 +1886,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudTrail/CloudTrail_Shapes.swift#L75-L129">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:13AWSCloudTrail05CloudB0V06CreateB8ResponseV"></a>
+                    <a name="/s:14SotoCloudTrail0bC0V06CreateC8ResponseV"></a>
                     <a name="//apple_ref/swift/Struct/CreateTrailResponse" class="dashAnchor"></a>
-                    <a class="token" href="#/s:13AWSCloudTrail05CloudB0V06CreateB8ResponseV">CreateTrailResponse</a>
+                    <a class="token" href="#/s:14SotoCloudTrail0bC0V06CreateC8ResponseV">CreateTrailResponse</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1774,9 +1913,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">CreateTrailResponse</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">CreateTrailResponse</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudTrail/CloudTrail_Shapes.swift#L131-L186">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1784,9 +1926,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:13AWSCloudTrail05CloudB0V12DataResourceV"></a>
+                    <a name="/s:14SotoCloudTrail0bC0V12DataResourceV"></a>
                     <a name="//apple_ref/swift/Struct/DataResource" class="dashAnchor"></a>
-                    <a class="token" href="#/s:13AWSCloudTrail05CloudB0V12DataResourceV">DataResource</a>
+                    <a class="token" href="#/s:14SotoCloudTrail0bC0V12DataResourceV">DataResource</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1802,9 +1944,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DataResource</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSEncodableShape.html">AWSEncodableShape</a></span> <span class="o">&amp;</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DataResource</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSEncodableShape.html">AWSEncodableShape</a></span> <span class="o">&amp;</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudTrail/CloudTrail_Shapes.swift#L188-L203">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1812,9 +1957,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:13AWSCloudTrail05CloudB0V06DeleteB7RequestV"></a>
+                    <a name="/s:14SotoCloudTrail0bC0V06DeleteC7RequestV"></a>
                     <a name="//apple_ref/swift/Struct/DeleteTrailRequest" class="dashAnchor"></a>
-                    <a class="token" href="#/s:13AWSCloudTrail05CloudB0V06DeleteB7RequestV">DeleteTrailRequest</a>
+                    <a class="token" href="#/s:14SotoCloudTrail0bC0V06DeleteC7RequestV">DeleteTrailRequest</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1834,15 +1979,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudTrail/CloudTrail_Shapes.swift#L205-L216">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:13AWSCloudTrail05CloudB0V06DeleteB8ResponseV"></a>
+                    <a name="/s:14SotoCloudTrail0bC0V06DeleteC8ResponseV"></a>
                     <a name="//apple_ref/swift/Struct/DeleteTrailResponse" class="dashAnchor"></a>
-                    <a class="token" href="#/s:13AWSCloudTrail05CloudB0V06DeleteB8ResponseV">DeleteTrailResponse</a>
+                    <a class="token" href="#/s:14SotoCloudTrail0bC0V06DeleteC8ResponseV">DeleteTrailResponse</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1858,9 +2006,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DeleteTrailResponse</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DeleteTrailResponse</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudTrail/CloudTrail_Shapes.swift#L218-L220">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1868,9 +2019,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:13AWSCloudTrail05CloudB0V21DescribeTrailsRequestV"></a>
+                    <a name="/s:14SotoCloudTrail0bC0V21DescribeTrailsRequestV"></a>
                     <a name="//apple_ref/swift/Struct/DescribeTrailsRequest" class="dashAnchor"></a>
-                    <a class="token" href="#/s:13AWSCloudTrail05CloudB0V21DescribeTrailsRequestV">DescribeTrailsRequest</a>
+                    <a class="token" href="#/s:14SotoCloudTrail0bC0V21DescribeTrailsRequestV">DescribeTrailsRequest</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1890,15 +2041,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudTrail/CloudTrail_Shapes.swift#L222-L237">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:13AWSCloudTrail05CloudB0V22DescribeTrailsResponseV"></a>
+                    <a name="/s:14SotoCloudTrail0bC0V22DescribeTrailsResponseV"></a>
                     <a name="//apple_ref/swift/Struct/DescribeTrailsResponse" class="dashAnchor"></a>
-                    <a class="token" href="#/s:13AWSCloudTrail05CloudB0V22DescribeTrailsResponseV">DescribeTrailsResponse</a>
+                    <a class="token" href="#/s:14SotoCloudTrail0bC0V22DescribeTrailsResponseV">DescribeTrailsResponse</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1914,9 +2068,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DescribeTrailsResponse</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DescribeTrailsResponse</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudTrail/CloudTrail_Shapes.swift#L239-L250">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1924,9 +2081,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:13AWSCloudTrail05CloudB0V5EventV"></a>
+                    <a name="/s:14SotoCloudTrail0bC0V5EventV"></a>
                     <a name="//apple_ref/swift/Struct/Event" class="dashAnchor"></a>
-                    <a class="token" href="#/s:13AWSCloudTrail05CloudB0V5EventV">Event</a>
+                    <a class="token" href="#/s:14SotoCloudTrail0bC0V5EventV">Event</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1942,9 +2099,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Event</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Event</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudTrail/CloudTrail_Shapes.swift#L252-L295">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1952,9 +2112,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:13AWSCloudTrail05CloudB0V13EventSelectorV"></a>
+                    <a name="/s:14SotoCloudTrail0bC0V13EventSelectorV"></a>
                     <a name="//apple_ref/swift/Struct/EventSelector" class="dashAnchor"></a>
-                    <a class="token" href="#/s:13AWSCloudTrail05CloudB0V13EventSelectorV">EventSelector</a>
+                    <a class="token" href="#/s:14SotoCloudTrail0bC0V13EventSelectorV">EventSelector</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1970,9 +2130,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">EventSelector</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSEncodableShape.html">AWSEncodableShape</a></span> <span class="o">&amp;</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">EventSelector</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSEncodableShape.html">AWSEncodableShape</a></span> <span class="o">&amp;</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudTrail/CloudTrail_Shapes.swift#L297-L320">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1980,9 +2143,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:13AWSCloudTrail05CloudB0V24GetEventSelectorsRequestV"></a>
+                    <a name="/s:14SotoCloudTrail0bC0V24GetEventSelectorsRequestV"></a>
                     <a name="//apple_ref/swift/Struct/GetEventSelectorsRequest" class="dashAnchor"></a>
-                    <a class="token" href="#/s:13AWSCloudTrail05CloudB0V24GetEventSelectorsRequestV">GetEventSelectorsRequest</a>
+                    <a class="token" href="#/s:14SotoCloudTrail0bC0V24GetEventSelectorsRequestV">GetEventSelectorsRequest</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2002,15 +2165,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudTrail/CloudTrail_Shapes.swift#L322-L333">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:13AWSCloudTrail05CloudB0V25GetEventSelectorsResponseV"></a>
+                    <a name="/s:14SotoCloudTrail0bC0V25GetEventSelectorsResponseV"></a>
                     <a name="//apple_ref/swift/Struct/GetEventSelectorsResponse" class="dashAnchor"></a>
-                    <a class="token" href="#/s:13AWSCloudTrail05CloudB0V25GetEventSelectorsResponseV">GetEventSelectorsResponse</a>
+                    <a class="token" href="#/s:14SotoCloudTrail0bC0V25GetEventSelectorsResponseV">GetEventSelectorsResponse</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2026,9 +2192,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">GetEventSelectorsResponse</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">GetEventSelectorsResponse</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudTrail/CloudTrail_Shapes.swift#L335-L350">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -2036,9 +2205,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:13AWSCloudTrail05CloudB0V26GetInsightSelectorsRequestV"></a>
+                    <a name="/s:14SotoCloudTrail0bC0V26GetInsightSelectorsRequestV"></a>
                     <a name="//apple_ref/swift/Struct/GetInsightSelectorsRequest" class="dashAnchor"></a>
-                    <a class="token" href="#/s:13AWSCloudTrail05CloudB0V26GetInsightSelectorsRequestV">GetInsightSelectorsRequest</a>
+                    <a class="token" href="#/s:14SotoCloudTrail0bC0V26GetInsightSelectorsRequestV">GetInsightSelectorsRequest</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2058,15 +2227,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudTrail/CloudTrail_Shapes.swift#L352-L363">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:13AWSCloudTrail05CloudB0V27GetInsightSelectorsResponseV"></a>
+                    <a name="/s:14SotoCloudTrail0bC0V27GetInsightSelectorsResponseV"></a>
                     <a name="//apple_ref/swift/Struct/GetInsightSelectorsResponse" class="dashAnchor"></a>
-                    <a class="token" href="#/s:13AWSCloudTrail05CloudB0V27GetInsightSelectorsResponseV">GetInsightSelectorsResponse</a>
+                    <a class="token" href="#/s:14SotoCloudTrail0bC0V27GetInsightSelectorsResponseV">GetInsightSelectorsResponse</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2082,9 +2254,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">GetInsightSelectorsResponse</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">GetInsightSelectorsResponse</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudTrail/CloudTrail_Shapes.swift#L365-L380">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -2092,9 +2267,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:13AWSCloudTrail05CloudB0V03GetB7RequestV"></a>
+                    <a name="/s:14SotoCloudTrail0bC0V03GetC7RequestV"></a>
                     <a name="//apple_ref/swift/Struct/GetTrailRequest" class="dashAnchor"></a>
-                    <a class="token" href="#/s:13AWSCloudTrail05CloudB0V03GetB7RequestV">GetTrailRequest</a>
+                    <a class="token" href="#/s:14SotoCloudTrail0bC0V03GetC7RequestV">GetTrailRequest</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2114,15 +2289,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudTrail/CloudTrail_Shapes.swift#L382-L393">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:13AWSCloudTrail05CloudB0V03GetB8ResponseV"></a>
+                    <a name="/s:14SotoCloudTrail0bC0V03GetC8ResponseV"></a>
                     <a name="//apple_ref/swift/Struct/GetTrailResponse" class="dashAnchor"></a>
-                    <a class="token" href="#/s:13AWSCloudTrail05CloudB0V03GetB8ResponseV">GetTrailResponse</a>
+                    <a class="token" href="#/s:14SotoCloudTrail0bC0V03GetC8ResponseV">GetTrailResponse</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2138,9 +2316,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">GetTrailResponse</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">GetTrailResponse</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudTrail/CloudTrail_Shapes.swift#L395-L405">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -2148,9 +2329,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:13AWSCloudTrail05CloudB0V03GetB13StatusRequestV"></a>
+                    <a name="/s:14SotoCloudTrail0bC0V03GetC13StatusRequestV"></a>
                     <a name="//apple_ref/swift/Struct/GetTrailStatusRequest" class="dashAnchor"></a>
-                    <a class="token" href="#/s:13AWSCloudTrail05CloudB0V03GetB13StatusRequestV">GetTrailStatusRequest</a>
+                    <a class="token" href="#/s:14SotoCloudTrail0bC0V03GetC13StatusRequestV">GetTrailStatusRequest</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2170,15 +2351,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudTrail/CloudTrail_Shapes.swift#L407-L418">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:13AWSCloudTrail05CloudB0V03GetB14StatusResponseV"></a>
+                    <a name="/s:14SotoCloudTrail0bC0V03GetC14StatusResponseV"></a>
                     <a name="//apple_ref/swift/Struct/GetTrailStatusResponse" class="dashAnchor"></a>
-                    <a class="token" href="#/s:13AWSCloudTrail05CloudB0V03GetB14StatusResponseV">GetTrailStatusResponse</a>
+                    <a class="token" href="#/s:14SotoCloudTrail0bC0V03GetC14StatusResponseV">GetTrailStatusResponse</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2194,9 +2378,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">GetTrailStatusResponse</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">GetTrailStatusResponse</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudTrail/CloudTrail_Shapes.swift#L420-L495">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -2204,9 +2391,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:13AWSCloudTrail05CloudB0V15InsightSelectorV"></a>
+                    <a name="/s:14SotoCloudTrail0bC0V15InsightSelectorV"></a>
                     <a name="//apple_ref/swift/Struct/InsightSelector" class="dashAnchor"></a>
-                    <a class="token" href="#/s:13AWSCloudTrail05CloudB0V15InsightSelectorV">InsightSelector</a>
+                    <a class="token" href="#/s:14SotoCloudTrail0bC0V15InsightSelectorV">InsightSelector</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2222,9 +2409,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">InsightSelector</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSEncodableShape.html">AWSEncodableShape</a></span> <span class="o">&amp;</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">InsightSelector</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSEncodableShape.html">AWSEncodableShape</a></span> <span class="o">&amp;</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudTrail/CloudTrail_Shapes.swift#L497-L508">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -2232,9 +2422,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:13AWSCloudTrail05CloudB0V22ListPublicKeysResponseV"></a>
+                    <a name="/s:14SotoCloudTrail0bC0V22ListPublicKeysResponseV"></a>
                     <a name="//apple_ref/swift/Struct/ListPublicKeysResponse" class="dashAnchor"></a>
-                    <a class="token" href="#/s:13AWSCloudTrail05CloudB0V22ListPublicKeysResponseV">ListPublicKeysResponse</a>
+                    <a class="token" href="#/s:14SotoCloudTrail0bC0V22ListPublicKeysResponseV">ListPublicKeysResponse</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2250,9 +2440,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ListPublicKeysResponse</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ListPublicKeysResponse</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudTrail/CloudTrail_Shapes.swift#L533-L548">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -2260,9 +2453,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:13AWSCloudTrail05CloudB0V16ListTagsResponseV"></a>
+                    <a name="/s:14SotoCloudTrail0bC0V16ListTagsResponseV"></a>
                     <a name="//apple_ref/swift/Struct/ListTagsResponse" class="dashAnchor"></a>
-                    <a class="token" href="#/s:13AWSCloudTrail05CloudB0V16ListTagsResponseV">ListTagsResponse</a>
+                    <a class="token" href="#/s:14SotoCloudTrail0bC0V16ListTagsResponseV">ListTagsResponse</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2278,9 +2471,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ListTagsResponse</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ListTagsResponse</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudTrail/CloudTrail_Shapes.swift#L567-L582">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -2288,9 +2484,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:13AWSCloudTrail05CloudB0V18ListTrailsResponseV"></a>
+                    <a name="/s:14SotoCloudTrail0bC0V18ListTrailsResponseV"></a>
                     <a name="//apple_ref/swift/Struct/ListTrailsResponse" class="dashAnchor"></a>
-                    <a class="token" href="#/s:13AWSCloudTrail05CloudB0V18ListTrailsResponseV">ListTrailsResponse</a>
+                    <a class="token" href="#/s:14SotoCloudTrail0bC0V18ListTrailsResponseV">ListTrailsResponse</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2306,9 +2502,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ListTrailsResponse</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ListTrailsResponse</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudTrail/CloudTrail_Shapes.swift#L597-L612">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -2316,9 +2515,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:13AWSCloudTrail05CloudB0V15LookupAttributeV"></a>
+                    <a name="/s:14SotoCloudTrail0bC0V15LookupAttributeV"></a>
                     <a name="//apple_ref/swift/Struct/LookupAttribute" class="dashAnchor"></a>
-                    <a class="token" href="#/s:13AWSCloudTrail05CloudB0V15LookupAttributeV">LookupAttribute</a>
+                    <a class="token" href="#/s:14SotoCloudTrail0bC0V15LookupAttributeV">LookupAttribute</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2338,15 +2537,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudTrail/CloudTrail_Shapes.swift#L614-L629">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:13AWSCloudTrail05CloudB0V20LookupEventsResponseV"></a>
+                    <a name="/s:14SotoCloudTrail0bC0V20LookupEventsResponseV"></a>
                     <a name="//apple_ref/swift/Struct/LookupEventsResponse" class="dashAnchor"></a>
-                    <a class="token" href="#/s:13AWSCloudTrail05CloudB0V20LookupEventsResponseV">LookupEventsResponse</a>
+                    <a class="token" href="#/s:14SotoCloudTrail0bC0V20LookupEventsResponseV">LookupEventsResponse</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2362,9 +2564,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">LookupEventsResponse</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">LookupEventsResponse</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudTrail/CloudTrail_Shapes.swift#L671-L686">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -2372,9 +2577,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:13AWSCloudTrail05CloudB0V9PublicKeyV"></a>
+                    <a name="/s:14SotoCloudTrail0bC0V9PublicKeyV"></a>
                     <a name="//apple_ref/swift/Struct/PublicKey" class="dashAnchor"></a>
-                    <a class="token" href="#/s:13AWSCloudTrail05CloudB0V9PublicKeyV">PublicKey</a>
+                    <a class="token" href="#/s:14SotoCloudTrail0bC0V9PublicKeyV">PublicKey</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2390,9 +2595,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">PublicKey</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">PublicKey</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudTrail/CloudTrail_Shapes.swift#L688-L711">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -2400,9 +2608,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:13AWSCloudTrail05CloudB0V24PutEventSelectorsRequestV"></a>
+                    <a name="/s:14SotoCloudTrail0bC0V24PutEventSelectorsRequestV"></a>
                     <a name="//apple_ref/swift/Struct/PutEventSelectorsRequest" class="dashAnchor"></a>
-                    <a class="token" href="#/s:13AWSCloudTrail05CloudB0V24PutEventSelectorsRequestV">PutEventSelectorsRequest</a>
+                    <a class="token" href="#/s:14SotoCloudTrail0bC0V24PutEventSelectorsRequestV">PutEventSelectorsRequest</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2422,15 +2630,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudTrail/CloudTrail_Shapes.swift#L713-L728">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:13AWSCloudTrail05CloudB0V25PutEventSelectorsResponseV"></a>
+                    <a name="/s:14SotoCloudTrail0bC0V25PutEventSelectorsResponseV"></a>
                     <a name="//apple_ref/swift/Struct/PutEventSelectorsResponse" class="dashAnchor"></a>
-                    <a class="token" href="#/s:13AWSCloudTrail05CloudB0V25PutEventSelectorsResponseV">PutEventSelectorsResponse</a>
+                    <a class="token" href="#/s:14SotoCloudTrail0bC0V25PutEventSelectorsResponseV">PutEventSelectorsResponse</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2446,9 +2657,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">PutEventSelectorsResponse</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">PutEventSelectorsResponse</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudTrail/CloudTrail_Shapes.swift#L730-L745">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -2456,9 +2670,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:13AWSCloudTrail05CloudB0V26PutInsightSelectorsRequestV"></a>
+                    <a name="/s:14SotoCloudTrail0bC0V26PutInsightSelectorsRequestV"></a>
                     <a name="//apple_ref/swift/Struct/PutInsightSelectorsRequest" class="dashAnchor"></a>
-                    <a class="token" href="#/s:13AWSCloudTrail05CloudB0V26PutInsightSelectorsRequestV">PutInsightSelectorsRequest</a>
+                    <a class="token" href="#/s:14SotoCloudTrail0bC0V26PutInsightSelectorsRequestV">PutInsightSelectorsRequest</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2478,15 +2692,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudTrail/CloudTrail_Shapes.swift#L747-L762">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:13AWSCloudTrail05CloudB0V27PutInsightSelectorsResponseV"></a>
+                    <a name="/s:14SotoCloudTrail0bC0V27PutInsightSelectorsResponseV"></a>
                     <a name="//apple_ref/swift/Struct/PutInsightSelectorsResponse" class="dashAnchor"></a>
-                    <a class="token" href="#/s:13AWSCloudTrail05CloudB0V27PutInsightSelectorsResponseV">PutInsightSelectorsResponse</a>
+                    <a class="token" href="#/s:14SotoCloudTrail0bC0V27PutInsightSelectorsResponseV">PutInsightSelectorsResponse</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2502,9 +2719,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">PutInsightSelectorsResponse</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">PutInsightSelectorsResponse</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudTrail/CloudTrail_Shapes.swift#L764-L779">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -2512,9 +2732,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:13AWSCloudTrail05CloudB0V17RemoveTagsRequestV"></a>
+                    <a name="/s:14SotoCloudTrail0bC0V17RemoveTagsRequestV"></a>
                     <a name="//apple_ref/swift/Struct/RemoveTagsRequest" class="dashAnchor"></a>
-                    <a class="token" href="#/s:13AWSCloudTrail05CloudB0V17RemoveTagsRequestV">RemoveTagsRequest</a>
+                    <a class="token" href="#/s:14SotoCloudTrail0bC0V17RemoveTagsRequestV">RemoveTagsRequest</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2534,15 +2754,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudTrail/CloudTrail_Shapes.swift#L781-L796">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:13AWSCloudTrail05CloudB0V18RemoveTagsResponseV"></a>
+                    <a name="/s:14SotoCloudTrail0bC0V18RemoveTagsResponseV"></a>
                     <a name="//apple_ref/swift/Struct/RemoveTagsResponse" class="dashAnchor"></a>
-                    <a class="token" href="#/s:13AWSCloudTrail05CloudB0V18RemoveTagsResponseV">RemoveTagsResponse</a>
+                    <a class="token" href="#/s:14SotoCloudTrail0bC0V18RemoveTagsResponseV">RemoveTagsResponse</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2558,9 +2781,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">RemoveTagsResponse</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">RemoveTagsResponse</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudTrail/CloudTrail_Shapes.swift#L798-L800">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -2568,9 +2794,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:13AWSCloudTrail05CloudB0V8ResourceV"></a>
+                    <a name="/s:14SotoCloudTrail0bC0V8ResourceV"></a>
                     <a name="//apple_ref/swift/Struct/Resource" class="dashAnchor"></a>
-                    <a class="token" href="#/s:13AWSCloudTrail05CloudB0V8ResourceV">Resource</a>
+                    <a class="token" href="#/s:14SotoCloudTrail0bC0V8ResourceV">Resource</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2586,9 +2812,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Resource</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Resource</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudTrail/CloudTrail_Shapes.swift#L802-L817">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -2596,9 +2825,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:13AWSCloudTrail05CloudB0V11ResourceTagV"></a>
+                    <a name="/s:14SotoCloudTrail0bC0V11ResourceTagV"></a>
                     <a name="//apple_ref/swift/Struct/ResourceTag" class="dashAnchor"></a>
-                    <a class="token" href="#/s:13AWSCloudTrail05CloudB0V11ResourceTagV">ResourceTag</a>
+                    <a class="token" href="#/s:14SotoCloudTrail0bC0V11ResourceTagV">ResourceTag</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2614,9 +2843,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ResourceTag</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ResourceTag</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudTrail/CloudTrail_Shapes.swift#L819-L834">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -2624,9 +2856,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:13AWSCloudTrail05CloudB0V19StartLoggingRequestV"></a>
+                    <a name="/s:14SotoCloudTrail0bC0V19StartLoggingRequestV"></a>
                     <a name="//apple_ref/swift/Struct/StartLoggingRequest" class="dashAnchor"></a>
-                    <a class="token" href="#/s:13AWSCloudTrail05CloudB0V19StartLoggingRequestV">StartLoggingRequest</a>
+                    <a class="token" href="#/s:14SotoCloudTrail0bC0V19StartLoggingRequestV">StartLoggingRequest</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2646,15 +2878,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudTrail/CloudTrail_Shapes.swift#L836-L847">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:13AWSCloudTrail05CloudB0V20StartLoggingResponseV"></a>
+                    <a name="/s:14SotoCloudTrail0bC0V20StartLoggingResponseV"></a>
                     <a name="//apple_ref/swift/Struct/StartLoggingResponse" class="dashAnchor"></a>
-                    <a class="token" href="#/s:13AWSCloudTrail05CloudB0V20StartLoggingResponseV">StartLoggingResponse</a>
+                    <a class="token" href="#/s:14SotoCloudTrail0bC0V20StartLoggingResponseV">StartLoggingResponse</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2670,9 +2905,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">StartLoggingResponse</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">StartLoggingResponse</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudTrail/CloudTrail_Shapes.swift#L849-L851">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -2680,9 +2918,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:13AWSCloudTrail05CloudB0V18StopLoggingRequestV"></a>
+                    <a name="/s:14SotoCloudTrail0bC0V18StopLoggingRequestV"></a>
                     <a name="//apple_ref/swift/Struct/StopLoggingRequest" class="dashAnchor"></a>
-                    <a class="token" href="#/s:13AWSCloudTrail05CloudB0V18StopLoggingRequestV">StopLoggingRequest</a>
+                    <a class="token" href="#/s:14SotoCloudTrail0bC0V18StopLoggingRequestV">StopLoggingRequest</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2702,15 +2940,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudTrail/CloudTrail_Shapes.swift#L853-L864">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:13AWSCloudTrail05CloudB0V19StopLoggingResponseV"></a>
+                    <a name="/s:14SotoCloudTrail0bC0V19StopLoggingResponseV"></a>
                     <a name="//apple_ref/swift/Struct/StopLoggingResponse" class="dashAnchor"></a>
-                    <a class="token" href="#/s:13AWSCloudTrail05CloudB0V19StopLoggingResponseV">StopLoggingResponse</a>
+                    <a class="token" href="#/s:14SotoCloudTrail0bC0V19StopLoggingResponseV">StopLoggingResponse</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2726,9 +2967,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">StopLoggingResponse</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">StopLoggingResponse</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudTrail/CloudTrail_Shapes.swift#L866-L868">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -2736,9 +2980,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:13AWSCloudTrail05CloudB0V3TagV"></a>
+                    <a name="/s:14SotoCloudTrail0bC0V3TagV"></a>
                     <a name="//apple_ref/swift/Struct/Tag" class="dashAnchor"></a>
-                    <a class="token" href="#/s:13AWSCloudTrail05CloudB0V3TagV">Tag</a>
+                    <a class="token" href="#/s:14SotoCloudTrail0bC0V3TagV">Tag</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2754,9 +2998,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Tag</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSEncodableShape.html">AWSEncodableShape</a></span> <span class="o">&amp;</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Tag</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSEncodableShape.html">AWSEncodableShape</a></span> <span class="o">&amp;</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudTrail/CloudTrail_Shapes.swift#L870-L885">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -2764,9 +3011,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:13AWSCloudTrail05CloudB0V0B0V"></a>
+                    <a name="/s:14SotoCloudTrail0bC0V0C0V"></a>
                     <a name="//apple_ref/swift/Struct/Trail" class="dashAnchor"></a>
-                    <a class="token" href="#/s:13AWSCloudTrail05CloudB0V0B0V">Trail</a>
+                    <a class="token" href="#/s:14SotoCloudTrail0bC0V0C0V">Trail</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2782,9 +3029,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Trail</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Trail</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudTrail/CloudTrail_Shapes.swift#L887-L954">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -2792,9 +3042,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:13AWSCloudTrail05CloudB0V0B4InfoV"></a>
+                    <a name="/s:14SotoCloudTrail0bC0V0C4InfoV"></a>
                     <a name="//apple_ref/swift/Struct/TrailInfo" class="dashAnchor"></a>
-                    <a class="token" href="#/s:13AWSCloudTrail05CloudB0V0B4InfoV">TrailInfo</a>
+                    <a class="token" href="#/s:14SotoCloudTrail0bC0V0C4InfoV">TrailInfo</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2810,9 +3060,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">TrailInfo</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">TrailInfo</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudTrail/CloudTrail_Shapes.swift#L956-L975">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -2820,9 +3073,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:13AWSCloudTrail05CloudB0V06UpdateB7RequestV"></a>
+                    <a name="/s:14SotoCloudTrail0bC0V06UpdateC7RequestV"></a>
                     <a name="//apple_ref/swift/Struct/UpdateTrailRequest" class="dashAnchor"></a>
-                    <a class="token" href="#/s:13AWSCloudTrail05CloudB0V06UpdateB7RequestV">UpdateTrailRequest</a>
+                    <a class="token" href="#/s:14SotoCloudTrail0bC0V06UpdateC7RequestV">UpdateTrailRequest</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2842,15 +3095,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudTrail/CloudTrail_Shapes.swift#L977-L1028">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:13AWSCloudTrail05CloudB0V06UpdateB8ResponseV"></a>
+                    <a name="/s:14SotoCloudTrail0bC0V06UpdateC8ResponseV"></a>
                     <a name="//apple_ref/swift/Struct/UpdateTrailResponse" class="dashAnchor"></a>
-                    <a class="token" href="#/s:13AWSCloudTrail05CloudB0V06UpdateB8ResponseV">UpdateTrailResponse</a>
+                    <a class="token" href="#/s:14SotoCloudTrail0bC0V06UpdateC8ResponseV">UpdateTrailResponse</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2866,9 +3122,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">UpdateTrailResponse</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">UpdateTrailResponse</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudTrail/CloudTrail_Shapes.swift#L1030-L1085">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -2879,17 +3138,19 @@
               <div class="task-name-container">
                 <a name="/Enums"></a>
                 <a name="//apple_ref/swift/Section/Enums" class="dashAnchor"></a>
-                <a href="#/Enums">
-                  <h3 class="section-name">Enums</h3>
-                </a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Enums"></a>
+                  <h3 class="section-name"><p>Enums</p>
+</h3>
+                </div>
               </div>
               <ul>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:13AWSCloudTrail05CloudB0V13EventCategoryO"></a>
+                    <a name="/s:14SotoCloudTrail0bC0V13EventCategoryO"></a>
                     <a name="//apple_ref/swift/Enum/EventCategory" class="dashAnchor"></a>
-                    <a class="token" href="#/s:13AWSCloudTrail05CloudB0V13EventCategoryO">EventCategory</a>
+                    <a class="token" href="#/s:14SotoCloudTrail0bC0V13EventCategoryO">EventCategory</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2909,15 +3170,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudTrail/CloudTrail_Shapes.swift#L23-L26">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:13AWSCloudTrail05CloudB0V11InsightTypeO"></a>
+                    <a name="/s:14SotoCloudTrail0bC0V11InsightTypeO"></a>
                     <a name="//apple_ref/swift/Enum/InsightType" class="dashAnchor"></a>
-                    <a class="token" href="#/s:13AWSCloudTrail05CloudB0V11InsightTypeO">InsightType</a>
+                    <a class="token" href="#/s:14SotoCloudTrail0bC0V11InsightTypeO">InsightType</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2937,15 +3201,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudTrail/CloudTrail_Shapes.swift#L28-L31">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:13AWSCloudTrail05CloudB0V18LookupAttributeKeyO"></a>
+                    <a name="/s:14SotoCloudTrail0bC0V18LookupAttributeKeyO"></a>
                     <a name="//apple_ref/swift/Enum/LookupAttributeKey" class="dashAnchor"></a>
-                    <a class="token" href="#/s:13AWSCloudTrail05CloudB0V18LookupAttributeKeyO">LookupAttributeKey</a>
+                    <a class="token" href="#/s:14SotoCloudTrail0bC0V18LookupAttributeKeyO">LookupAttributeKey</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2965,15 +3232,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudTrail/CloudTrail_Shapes.swift#L33-L43">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:13AWSCloudTrail05CloudB0V13ReadWriteTypeO"></a>
+                    <a name="/s:14SotoCloudTrail0bC0V13ReadWriteTypeO"></a>
                     <a name="//apple_ref/swift/Enum/ReadWriteType" class="dashAnchor"></a>
-                    <a class="token" href="#/s:13AWSCloudTrail05CloudB0V13ReadWriteTypeO">ReadWriteType</a>
+                    <a class="token" href="#/s:14SotoCloudTrail0bC0V13ReadWriteTypeO">ReadWriteType</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2992,6 +3262,9 @@
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">ReadWriteType</span> <span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="kt">CustomStringConvertible</span><span class="p">,</span> <span class="kt">Codable</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudTrail/CloudTrail_Shapes.swift#L45-L50">Show on GitHub</a>
                       </div>
                     </section>
                   </div>

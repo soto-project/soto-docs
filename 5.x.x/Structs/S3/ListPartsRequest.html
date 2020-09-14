@@ -15,7 +15,7 @@
     <header>
       <div class="content-wrapper">
         <p><a href="../../index.html"> Docs</a> (54% documented)</p>
-        <p class="header-right"><a href="https://github.com/swift-aws/aws-sdk-swift"><img src="../../img/gh.png"/>View on GitHub</a></p>
+        <p class="header-right"><a href="https://github.com/soto-project/soto"><img src="../../img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -28,6 +28,9 @@
     <div class="content-wrapper">
       <nav class="sidebar">
         <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../../User%20Guides.html">User Guides</a>
+          </li>
           <li class="nav-group-name">
             <a href="../../AWSSDKSwiftCore.html">AWSSDKSwiftCore</a>
           </li>
@@ -68,6 +71,9 @@
             <a href="../../AppSync.html">AppSync</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../Appflow.html">Appflow</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../ApplicationAutoScaling.html">ApplicationAutoScaling</a>
           </li>
           <li class="nav-group-name">
@@ -93,6 +99,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../Batch.html">Batch</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../Braket.html">Braket</a>
           </li>
           <li class="nav-group-name">
             <a href="../../Budgets.html">Budgets</a>
@@ -335,6 +344,12 @@
             <a href="../../IAM.html">IAM</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../IVS.html">IVS</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../IdentityStore.html">IdentityStore</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../Imagebuilder.html">Imagebuilder</a>
           </li>
           <li class="nav-group-name">
@@ -557,6 +572,9 @@
             <a href="../../Redshift.html">Redshift</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../RedshiftDataAPIService.html">RedshiftDataAPIService</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../Rekognition.html">Rekognition</a>
           </li>
           <li class="nav-group-name">
@@ -606,6 +624,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../SSO.html">SSO</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../SSOAdmin.html">SSOAdmin</a>
           </li>
           <li class="nav-group-name">
             <a href="../../SSOOIDC.html">SSOOIDC</a>
@@ -735,6 +756,7 @@
             <h1>ListPartsRequest</h1>
               <div class="declaration">
                 <div class="language">
+                  
                   <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ListPartsRequest</span> <span class="p">:</span> <span class="kt"><a href="../../Protocols/AWSEncodableShape.html">AWSEncodableShape</a></span></code></pre>
 <pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt"><a href="../../Structs/S3.html">S3</a></span><span class="o">.</span><span class="kt">ListPartsRequest</span><span class="p">:</span> <span class="kt"><a href="../../Protocols/AWSPaginateToken.html">AWSPaginateToken</a></span></code></pre>
 
@@ -749,9 +771,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:15AWSSDKSwiftCore8AWSShapeP9_encodingSayAA17AWSMemberEncodingVGvpZ"></a>
+                    <a name="/s:8SotoCore8AWSShapeP9_encodingSayAA17AWSMemberEncodingVGvpZ"></a>
                     <a name="//apple_ref/swift/Variable/_encoding" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15AWSSDKSwiftCore8AWSShapeP9_encodingSayAA17AWSMemberEncodingVGvpZ">_encoding</a>
+                    <a class="token" href="#/s:8SotoCore8AWSShapeP9_encodingSayAA17AWSMemberEncodingVGvpZ">_encoding</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -769,15 +791,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/S3/S3_Shapes.swift#L23">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:5AWSS32S3V16ListPartsRequestV6bucketSSvp"></a>
+                    <a name="/s:6SotoS30B0V16ListPartsRequestV6bucketSSvp"></a>
                     <a name="//apple_ref/swift/Property/bucket" class="dashAnchor"></a>
-                    <a class="token" href="#/s:5AWSS32S3V16ListPartsRequestV6bucketSSvp">bucket</a>
+                    <a class="token" href="#/s:6SotoS30B0V16ListPartsRequestV6bucketSSvp">bucket</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -796,15 +821,48 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/S3/S3_Shapes.swift#L4780">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:5AWSS32S3V16ListPartsRequestV3keySSvp"></a>
+                    <a name="/s:6SotoS30B0V16ListPartsRequestV19expectedBucketOwnerSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/expectedBucketOwner" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6SotoS30B0V16ListPartsRequestV19expectedBucketOwnerSSSgvp">expectedBucketOwner</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The account id of the expected bucket owner. If the bucket is owned by a different account, the request will fail with an HTTP 403 (Access Denied) error.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">expectedBucketOwner</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/S3/S3_Shapes.swift#L4782">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6SotoS30B0V16ListPartsRequestV3keySSvp"></a>
                     <a name="//apple_ref/swift/Property/key" class="dashAnchor"></a>
-                    <a class="token" href="#/s:5AWSS32S3V16ListPartsRequestV3keySSvp">key</a>
+                    <a class="token" href="#/s:6SotoS30B0V16ListPartsRequestV3keySSvp">key</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -823,15 +881,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/S3/S3_Shapes.swift#L4784">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:5AWSS32S3V16ListPartsRequestV03maxD0SiSgvp"></a>
+                    <a name="/s:6SotoS30B0V16ListPartsRequestV03maxD0SiSgvp"></a>
                     <a name="//apple_ref/swift/Property/maxParts" class="dashAnchor"></a>
-                    <a class="token" href="#/s:5AWSS32S3V16ListPartsRequestV03maxD0SiSgvp">maxParts</a>
+                    <a class="token" href="#/s:6SotoS30B0V16ListPartsRequestV03maxD0SiSgvp">maxParts</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -850,15 +911,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/S3/S3_Shapes.swift#L4786">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:5AWSS32S3V16ListPartsRequestV16partNumberMarkerSiSgvp"></a>
+                    <a name="/s:6SotoS30B0V16ListPartsRequestV16partNumberMarkerSiSgvp"></a>
                     <a name="//apple_ref/swift/Property/partNumberMarker" class="dashAnchor"></a>
-                    <a class="token" href="#/s:5AWSS32S3V16ListPartsRequestV16partNumberMarkerSiSgvp">partNumberMarker</a>
+                    <a class="token" href="#/s:6SotoS30B0V16ListPartsRequestV16partNumberMarkerSiSgvp">partNumberMarker</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -877,15 +941,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/S3/S3_Shapes.swift#L4788">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:5AWSS32S3V16ListPartsRequestV12requestPayerAC0eG0OSgvp"></a>
+                    <a name="/s:6SotoS30B0V16ListPartsRequestV12requestPayerAC0eG0OSgvp"></a>
                     <a name="//apple_ref/swift/Property/requestPayer" class="dashAnchor"></a>
-                    <a class="token" href="#/s:5AWSS32S3V16ListPartsRequestV12requestPayerAC0eG0OSgvp">requestPayer</a>
+                    <a class="token" href="#/s:6SotoS30B0V16ListPartsRequestV12requestPayerAC0eG0OSgvp">requestPayer</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -904,15 +971,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/S3/S3_Shapes.swift#L">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:5AWSS32S3V16ListPartsRequestV8uploadIdSSvp"></a>
+                    <a name="/s:6SotoS30B0V16ListPartsRequestV8uploadIdSSvp"></a>
                     <a name="//apple_ref/swift/Property/uploadId" class="dashAnchor"></a>
-                    <a class="token" href="#/s:5AWSS32S3V16ListPartsRequestV8uploadIdSSvp">uploadId</a>
+                    <a class="token" href="#/s:6SotoS30B0V16ListPartsRequestV8uploadIdSSvp">uploadId</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -931,15 +1001,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/S3/S3_Shapes.swift#L4791">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:5AWSS32S3V16ListPartsRequestV6bucket3key03maxD016partNumberMarker12requestPayer8uploadIdAESS_SSSiSgAlC0eM0OSgSStcfc"></a>
-                    <a name="//apple_ref/swift/Method/init(bucket:key:maxParts:partNumberMarker:requestPayer:uploadId:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:5AWSS32S3V16ListPartsRequestV6bucket3key03maxD016partNumberMarker12requestPayer8uploadIdAESS_SSSiSgAlC0eM0OSgSStcfc">init(bucket:key:maxParts:partNumberMarker:requestPayer:uploadId:)</a>
+                    <a name="/s:6SotoS30B0V16ListPartsRequestV6bucket19expectedBucketOwner3key03maxD016partNumberMarker12requestPayer8uploadIdAESS_SSSgSSSiSgAnC0eP0OSgSStcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(bucket:expectedBucketOwner:key:maxParts:partNumberMarker:requestPayer:uploadId:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6SotoS30B0V16ListPartsRequestV6bucket19expectedBucketOwner3key03maxD016partNumberMarker12requestPayer8uploadIdAESS_SSSgSSSiSgAnC0eP0OSgSStcfc">init(bucket:<wbr>expectedBucketOwner:<wbr>key:<wbr>maxParts:<wbr>partNumberMarker:<wbr>requestPayer:<wbr>uploadId:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -954,9 +1027,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">bucket</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">key</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">maxParts</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">partNumberMarker</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">requestPayer</span><span class="p">:</span> <span class="kt"><a href="../../Structs/S3/RequestPayer.html">RequestPayer</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">uploadId</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">bucket</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">expectedBucketOwner</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">key</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">maxParts</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">partNumberMarker</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">requestPayer</span><span class="p">:</span> <span class="kt"><a href="../../Structs/S3/RequestPayer.html">RequestPayer</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">uploadId</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/S3/S3_Shapes.swift#L4793-L4801">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -964,9 +1040,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:15AWSSDKSwiftCore17AWSEncodableShapeP8validate4nameySS_tKF"></a>
+                    <a name="/s:8SotoCore17AWSEncodableShapeP8validate4nameySS_tKF"></a>
                     <a name="//apple_ref/swift/Method/validate(name:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15AWSSDKSwiftCore17AWSEncodableShapeP8validate4nameySS_tKF">validate(name:)</a>
+                    <a class="token" href="#/s:8SotoCore17AWSEncodableShapeP8validate4nameySS_tKF">validate(name:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -984,6 +1060,9 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/S3/S3_Shapes.swift#L4803-L4805">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
@@ -993,17 +1072,19 @@
               <div class="task-name-container">
                 <a name="/Paginators"></a>
                 <a name="//apple_ref/swift/Section/Paginators" class="dashAnchor"></a>
-                <a href="#/Paginators">
-                  <h3 class="section-name">Paginators</h3>
-                </a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Paginators"></a>
+                  <h3 class="section-name"><p>Paginators</p>
+</h3>
+                </div>
               </div>
               <ul>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:5AWSS32S3V16ListPartsRequestV20usingPaginationTokenyAESiF"></a>
+                    <a name="/s:6SotoS30B0V16ListPartsRequestV20usingPaginationTokenyAESiF"></a>
                     <a name="//apple_ref/swift/Method/usingPaginationToken(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:5AWSS32S3V16ListPartsRequestV20usingPaginationTokenyAESiF">usingPaginationToken(_:)</a>
+                    <a class="token" href="#/s:6SotoS30B0V16ListPartsRequestV20usingPaginationTokenyAESiF">usingPaginationToken(_:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1021,6 +1102,9 @@
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">usingPaginationToken</span><span class="p">(</span><span class="n">_</span> <span class="nv">token</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../../Structs/S3.html">S3</a></span><span class="o">.</span><span class="kt">ListPartsRequest</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/S3/S3_Paginator.swift#L170-L180">Show on GitHub</a>
                       </div>
                     </section>
                   </div>

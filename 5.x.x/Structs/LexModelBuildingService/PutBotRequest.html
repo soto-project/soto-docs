@@ -15,7 +15,7 @@
     <header>
       <div class="content-wrapper">
         <p><a href="../../index.html"> Docs</a> (54% documented)</p>
-        <p class="header-right"><a href="https://github.com/swift-aws/aws-sdk-swift"><img src="../../img/gh.png"/>View on GitHub</a></p>
+        <p class="header-right"><a href="https://github.com/soto-project/soto"><img src="../../img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -28,6 +28,9 @@
     <div class="content-wrapper">
       <nav class="sidebar">
         <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../../User%20Guides.html">User Guides</a>
+          </li>
           <li class="nav-group-name">
             <a href="../../AWSSDKSwiftCore.html">AWSSDKSwiftCore</a>
           </li>
@@ -68,6 +71,9 @@
             <a href="../../AppSync.html">AppSync</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../Appflow.html">Appflow</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../ApplicationAutoScaling.html">ApplicationAutoScaling</a>
           </li>
           <li class="nav-group-name">
@@ -93,6 +99,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../Batch.html">Batch</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../Braket.html">Braket</a>
           </li>
           <li class="nav-group-name">
             <a href="../../Budgets.html">Budgets</a>
@@ -335,6 +344,12 @@
             <a href="../../IAM.html">IAM</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../IVS.html">IVS</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../IdentityStore.html">IdentityStore</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../Imagebuilder.html">Imagebuilder</a>
           </li>
           <li class="nav-group-name">
@@ -557,6 +572,9 @@
             <a href="../../Redshift.html">Redshift</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../RedshiftDataAPIService.html">RedshiftDataAPIService</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../Rekognition.html">Rekognition</a>
           </li>
           <li class="nav-group-name">
@@ -606,6 +624,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../SSO.html">SSO</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../SSOAdmin.html">SSOAdmin</a>
           </li>
           <li class="nav-group-name">
             <a href="../../SSOOIDC.html">SSOOIDC</a>
@@ -735,6 +756,7 @@
             <h1>PutBotRequest</h1>
               <div class="declaration">
                 <div class="language">
+                  
                   <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">PutBotRequest</span> <span class="p">:</span> <span class="kt"><a href="../../Protocols/AWSEncodableShape.html">AWSEncodableShape</a></span></code></pre>
 
                 </div>
@@ -748,9 +770,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:15AWSSDKSwiftCore8AWSShapeP9_encodingSayAA17AWSMemberEncodingVGvpZ"></a>
+                    <a name="/s:8SotoCore8AWSShapeP9_encodingSayAA17AWSMemberEncodingVGvpZ"></a>
                     <a name="//apple_ref/swift/Variable/_encoding" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15AWSSDKSwiftCore8AWSShapeP9_encodingSayAA17AWSMemberEncodingVGvpZ">_encoding</a>
+                    <a class="token" href="#/s:8SotoCore8AWSShapeP9_encodingSayAA17AWSMemberEncodingVGvpZ">_encoding</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -768,15 +790,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/LexModelBuildingService/LexModelBuildingService_Shapes.swift#L23">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:26AWSLexModelBuildingService03LexbcD0V13PutBotRequestV14abortStatementAC0J0VSgvp"></a>
+                    <a name="/s:27SotoLexModelBuildingService0bcdE0V13PutBotRequestV14abortStatementAC0J0VSgvp"></a>
                     <a name="//apple_ref/swift/Property/abortStatement" class="dashAnchor"></a>
-                    <a class="token" href="#/s:26AWSLexModelBuildingService03LexbcD0V13PutBotRequestV14abortStatementAC0J0VSgvp">abortStatement</a>
+                    <a class="token" href="#/s:27SotoLexModelBuildingService0bcdE0V13PutBotRequestV14abortStatementAC0J0VSgvp">abortStatement</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -784,7 +809,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>When Amazon Lex can&rsquo;t understand the user&rsquo;s input in context, it tries to elicit the information a few times. After that, Amazon Lex sends the message defined in abortStatement to the user, and then aborts the conversation. To set the number of retries, use the valueElicitationPrompt field for the slot type.  For example, in a pizza ordering bot, Amazon Lex might ask a user &ldquo;What type of crust would you like?&rdquo; If the user&rsquo;s response is not one of the expected responses (for example, &ldquo;thin crust, &quot;deep dish,&rdquo; etc.), Amazon Lex tries to elicit a correct response a few more times.  For example, in a pizza ordering application, OrderPizza might be one of the intents. This intent might require the CrustType slot. You specify the valueElicitationPrompt field when you create the CrustType slot. If you have defined a fallback intent the abort statement will not be sent to the user, the fallback intent is used instead. For more information, see  AMAZON.FallbackIntent.</p>
+                        <p>When Amazon Lex can&rsquo;t understand the user&rsquo;s input in context, it tries to elicit the information a few times. After that, Amazon Lex sends the message defined in abortStatement to the user, and then cancels the conversation. To set the number of retries, use the valueElicitationPrompt field for the slot type.  For example, in a pizza ordering bot, Amazon Lex might ask a user &ldquo;What type of crust would you like?&rdquo; If the user&rsquo;s response is not one of the expected responses (for example, &ldquo;thin crust, &quot;deep dish,&rdquo; etc.), Amazon Lex tries to elicit a correct response a few more times.  For example, in a pizza ordering application, OrderPizza might be one of the intents. This intent might require the CrustType slot. You specify the valueElicitationPrompt field when you create the CrustType slot. If you have defined a fallback intent the cancel statement will not be sent to the user, the fallback intent is used instead. For more information, see  AMAZON.FallbackIntent.</p>
 
                       </div>
                       <div class="declaration">
@@ -795,15 +820,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/LexModelBuildingService/LexModelBuildingService_Shapes.swift#L2466">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:26AWSLexModelBuildingService03LexbcD0V13PutBotRequestV8checksumSSSgvp"></a>
+                    <a name="/s:27SotoLexModelBuildingService0bcdE0V13PutBotRequestV8checksumSSSgvp"></a>
                     <a name="//apple_ref/swift/Property/checksum" class="dashAnchor"></a>
-                    <a class="token" href="#/s:26AWSLexModelBuildingService03LexbcD0V13PutBotRequestV8checksumSSSgvp">checksum</a>
+                    <a class="token" href="#/s:27SotoLexModelBuildingService0bcdE0V13PutBotRequestV8checksumSSSgvp">checksum</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -822,15 +850,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/LexModelBuildingService/LexModelBuildingService_Shapes.swift#L2468">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:26AWSLexModelBuildingService03LexbcD0V13PutBotRequestV13childDirectedSbvp"></a>
+                    <a name="/s:27SotoLexModelBuildingService0bcdE0V13PutBotRequestV13childDirectedSbvp"></a>
                     <a name="//apple_ref/swift/Property/childDirected" class="dashAnchor"></a>
-                    <a class="token" href="#/s:26AWSLexModelBuildingService03LexbcD0V13PutBotRequestV13childDirectedSbvp">childDirected</a>
+                    <a class="token" href="#/s:27SotoLexModelBuildingService0bcdE0V13PutBotRequestV13childDirectedSbvp">childDirected</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -849,15 +880,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/LexModelBuildingService/LexModelBuildingService_Shapes.swift#L2470">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:26AWSLexModelBuildingService03LexbcD0V13PutBotRequestV19clarificationPromptAC0J0VSgvp"></a>
+                    <a name="/s:27SotoLexModelBuildingService0bcdE0V13PutBotRequestV19clarificationPromptAC0J0VSgvp"></a>
                     <a name="//apple_ref/swift/Property/clarificationPrompt" class="dashAnchor"></a>
-                    <a class="token" href="#/s:26AWSLexModelBuildingService03LexbcD0V13PutBotRequestV19clarificationPromptAC0J0VSgvp">clarificationPrompt</a>
+                    <a class="token" href="#/s:27SotoLexModelBuildingService0bcdE0V13PutBotRequestV19clarificationPromptAC0J0VSgvp">clarificationPrompt</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -876,15 +910,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/LexModelBuildingService/LexModelBuildingService_Shapes.swift#L2472">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:26AWSLexModelBuildingService03LexbcD0V13PutBotRequestV13createVersionSbSgvp"></a>
+                    <a name="/s:27SotoLexModelBuildingService0bcdE0V13PutBotRequestV13createVersionSbSgvp"></a>
                     <a name="//apple_ref/swift/Property/createVersion" class="dashAnchor"></a>
-                    <a class="token" href="#/s:26AWSLexModelBuildingService03LexbcD0V13PutBotRequestV13createVersionSbSgvp">createVersion</a>
+                    <a class="token" href="#/s:27SotoLexModelBuildingService0bcdE0V13PutBotRequestV13createVersionSbSgvp">createVersion</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -903,15 +940,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/LexModelBuildingService/LexModelBuildingService_Shapes.swift#L2474">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:26AWSLexModelBuildingService03LexbcD0V13PutBotRequestV11descriptionSSSgvp"></a>
+                    <a name="/s:27SotoLexModelBuildingService0bcdE0V13PutBotRequestV11descriptionSSSgvp"></a>
                     <a name="//apple_ref/swift/Property/description" class="dashAnchor"></a>
-                    <a class="token" href="#/s:26AWSLexModelBuildingService03LexbcD0V13PutBotRequestV11descriptionSSSgvp">description</a>
+                    <a class="token" href="#/s:27SotoLexModelBuildingService0bcdE0V13PutBotRequestV11descriptionSSSgvp">description</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -930,15 +970,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/LexModelBuildingService/LexModelBuildingService_Shapes.swift#L2476">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:26AWSLexModelBuildingService03LexbcD0V13PutBotRequestV15detectSentimentSbSgvp"></a>
+                    <a name="/s:27SotoLexModelBuildingService0bcdE0V13PutBotRequestV15detectSentimentSbSgvp"></a>
                     <a name="//apple_ref/swift/Property/detectSentiment" class="dashAnchor"></a>
-                    <a class="token" href="#/s:26AWSLexModelBuildingService03LexbcD0V13PutBotRequestV15detectSentimentSbSgvp">detectSentiment</a>
+                    <a class="token" href="#/s:27SotoLexModelBuildingService0bcdE0V13PutBotRequestV15detectSentimentSbSgvp">detectSentiment</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -957,15 +1000,48 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/LexModelBuildingService/LexModelBuildingService_Shapes.swift#L2478">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:26AWSLexModelBuildingService03LexbcD0V13PutBotRequestV23idleSessionTTLInSecondsSiSgvp"></a>
+                    <a name="/s:27SotoLexModelBuildingService0bcdE0V13PutBotRequestV06enableC12ImprovementsSbSgvp"></a>
+                    <a name="//apple_ref/swift/Property/enableModelImprovements" class="dashAnchor"></a>
+                    <a class="token" href="#/s:27SotoLexModelBuildingService0bcdE0V13PutBotRequestV06enableC12ImprovementsSbSgvp">enableModelImprovements</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Set to true to enable access to natural language understanding improvements.  When you set the enableModelImprovements parameter to true you can use the nluIntentConfidenceThreshold parameter to configure confidence scores. For more information, see Confidence Scores. You can only set the enableModelImprovements parameter in certain Regions. If you set the parameter to true, your bot has access to accuracy improvements. The Regions where you can set the enableModelImprovements parameter to true are:   US East (N. Virginia) (us-east-1)   US West (Oregon) (us-west-2)   Asia Pacific (Sydney) (ap-southeast-2)   EU (Ireland) (eu-west-1)   In other Regions, the enableModelImprovements parameter is set to true by default. In these Regions setting the parameter to false throws a ValidationException exception.   Asia Pacific (Singapore) (ap-southeast-1)   Asia Pacific (Tokyo) (ap-northeast-1)   EU (Frankfurt) (eu-central-1)   EU (London) (eu-west-2)</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">enableModelImprovements</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/LexModelBuildingService/LexModelBuildingService_Shapes.swift#L2480">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:27SotoLexModelBuildingService0bcdE0V13PutBotRequestV23idleSessionTTLInSecondsSiSgvp"></a>
                     <a name="//apple_ref/swift/Property/idleSessionTTLInSeconds" class="dashAnchor"></a>
-                    <a class="token" href="#/s:26AWSLexModelBuildingService03LexbcD0V13PutBotRequestV23idleSessionTTLInSecondsSiSgvp">idleSessionTTLInSeconds</a>
+                    <a class="token" href="#/s:27SotoLexModelBuildingService0bcdE0V13PutBotRequestV23idleSessionTTLInSecondsSiSgvp">idleSessionTTLInSeconds</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -984,15 +1060,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/LexModelBuildingService/LexModelBuildingService_Shapes.swift#L2482">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:26AWSLexModelBuildingService03LexbcD0V13PutBotRequestV7intentsSayAC6IntentVGSgvp"></a>
+                    <a name="/s:27SotoLexModelBuildingService0bcdE0V13PutBotRequestV7intentsSayAC6IntentVGSgvp"></a>
                     <a name="//apple_ref/swift/Property/intents" class="dashAnchor"></a>
-                    <a class="token" href="#/s:26AWSLexModelBuildingService03LexbcD0V13PutBotRequestV7intentsSayAC6IntentVGSgvp">intents</a>
+                    <a class="token" href="#/s:27SotoLexModelBuildingService0bcdE0V13PutBotRequestV7intentsSayAC6IntentVGSgvp">intents</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1011,15 +1090,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/LexModelBuildingService/LexModelBuildingService_Shapes.swift#L2484">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:26AWSLexModelBuildingService03LexbcD0V13PutBotRequestV6localeAC6LocaleOvp"></a>
+                    <a name="/s:27SotoLexModelBuildingService0bcdE0V13PutBotRequestV6localeAC6LocaleOvp"></a>
                     <a name="//apple_ref/swift/Property/locale" class="dashAnchor"></a>
-                    <a class="token" href="#/s:26AWSLexModelBuildingService03LexbcD0V13PutBotRequestV6localeAC6LocaleOvp">locale</a>
+                    <a class="token" href="#/s:27SotoLexModelBuildingService0bcdE0V13PutBotRequestV6localeAC6LocaleOvp">locale</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1038,15 +1120,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/LexModelBuildingService/LexModelBuildingService_Shapes.swift#L2486">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:26AWSLexModelBuildingService03LexbcD0V13PutBotRequestV4nameSSvp"></a>
+                    <a name="/s:27SotoLexModelBuildingService0bcdE0V13PutBotRequestV4nameSSvp"></a>
                     <a name="//apple_ref/swift/Property/name" class="dashAnchor"></a>
-                    <a class="token" href="#/s:26AWSLexModelBuildingService03LexbcD0V13PutBotRequestV4nameSSvp">name</a>
+                    <a class="token" href="#/s:27SotoLexModelBuildingService0bcdE0V13PutBotRequestV4nameSSvp">name</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1065,15 +1150,48 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/LexModelBuildingService/LexModelBuildingService_Shapes.swift#L2488">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:26AWSLexModelBuildingService03LexbcD0V13PutBotRequestV15processBehaviorAC07ProcessJ0OSgvp"></a>
+                    <a name="/s:27SotoLexModelBuildingService0bcdE0V13PutBotRequestV28nluIntentConfidenceThresholdSdSgvp"></a>
+                    <a name="//apple_ref/swift/Property/nluIntentConfidenceThreshold" class="dashAnchor"></a>
+                    <a class="token" href="#/s:27SotoLexModelBuildingService0bcdE0V13PutBotRequestV28nluIntentConfidenceThresholdSdSgvp">nluIntentConfidenceThreshold</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Determines the threshold where Amazon Lex will insert the AMAZON.FallbackIntent, AMAZON.KendraSearchIntent, or both when returning alternative intents in a PostContent or PostText response. AMAZON.FallbackIntent and AMAZON.KendraSearchIntent are only inserted if they are configured for the bot. You must set the enableModelImprovements parameter to true to use confidence scores.   US East (N. Virginia) (us-east-1)   US West (Oregon) (us-west-2)   Asia Pacific (Sydney) (ap-southeast-2)   EU (Ireland) (eu-west-1)   In other Regions, the enableModelImprovements parameter is set to true by default. For example, suppose a bot is configured with the confidence threshold of 0.80 and the AMAZON.FallbackIntent. Amazon Lex returns three alternative intents with the following confidence scores: IntentA (0.70), IntentB (0.60), IntentC (0.50). The response from the PostText operation would be:   AMAZON.FallbackIntent   IntentA   IntentB   IntentC</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">nluIntentConfidenceThreshold</span><span class="p">:</span> <span class="kt">Double</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/LexModelBuildingService/LexModelBuildingService_Shapes.swift#L2490">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:27SotoLexModelBuildingService0bcdE0V13PutBotRequestV15processBehaviorAC07ProcessJ0OSgvp"></a>
                     <a name="//apple_ref/swift/Property/processBehavior" class="dashAnchor"></a>
-                    <a class="token" href="#/s:26AWSLexModelBuildingService03LexbcD0V13PutBotRequestV15processBehaviorAC07ProcessJ0OSgvp">processBehavior</a>
+                    <a class="token" href="#/s:27SotoLexModelBuildingService0bcdE0V13PutBotRequestV15processBehaviorAC07ProcessJ0OSgvp">processBehavior</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1092,15 +1210,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/LexModelBuildingService/LexModelBuildingService_Shapes.swift#L2492">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:26AWSLexModelBuildingService03LexbcD0V13PutBotRequestV4tagsSayAC3TagVGSgvp"></a>
+                    <a name="/s:27SotoLexModelBuildingService0bcdE0V13PutBotRequestV4tagsSayAC3TagVGSgvp"></a>
                     <a name="//apple_ref/swift/Property/tags" class="dashAnchor"></a>
-                    <a class="token" href="#/s:26AWSLexModelBuildingService03LexbcD0V13PutBotRequestV4tagsSayAC3TagVGSgvp">tags</a>
+                    <a class="token" href="#/s:27SotoLexModelBuildingService0bcdE0V13PutBotRequestV4tagsSayAC3TagVGSgvp">tags</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1119,15 +1240,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/LexModelBuildingService/LexModelBuildingService_Shapes.swift#L2494">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:26AWSLexModelBuildingService03LexbcD0V13PutBotRequestV7voiceIdSSSgvp"></a>
+                    <a name="/s:27SotoLexModelBuildingService0bcdE0V13PutBotRequestV7voiceIdSSSgvp"></a>
                     <a name="//apple_ref/swift/Property/voiceId" class="dashAnchor"></a>
-                    <a class="token" href="#/s:26AWSLexModelBuildingService03LexbcD0V13PutBotRequestV7voiceIdSSSgvp">voiceId</a>
+                    <a class="token" href="#/s:27SotoLexModelBuildingService0bcdE0V13PutBotRequestV7voiceIdSSSgvp">voiceId</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1146,15 +1270,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/LexModelBuildingService/LexModelBuildingService_Shapes.swift#L2496">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:26AWSLexModelBuildingService03LexbcD0V13PutBotRequestV14abortStatement8checksum13childDirected19clarificationPrompt13createVersion11description15detectSentiment23idleSessionTTLInSeconds7intents6locale4name15processBehavior4tags7voiceIdAeC0J0VSg_SSSgSbAC0O0VSgSbSgAWA_SiSgSayAC6IntentVGSgAC6LocaleOSSAC15ProcessBehaviorOSgSayAC3TagVGSgAWtcfc"></a>
-                    <a name="//apple_ref/swift/Method/init(abortStatement:checksum:childDirected:clarificationPrompt:createVersion:description:detectSentiment:idleSessionTTLInSeconds:intents:locale:name:processBehavior:tags:voiceId:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:26AWSLexModelBuildingService03LexbcD0V13PutBotRequestV14abortStatement8checksum13childDirected19clarificationPrompt13createVersion11description15detectSentiment23idleSessionTTLInSeconds7intents6locale4name15processBehavior4tags7voiceIdAeC0J0VSg_SSSgSbAC0O0VSgSbSgAWA_SiSgSayAC6IntentVGSgAC6LocaleOSSAC15ProcessBehaviorOSgSayAC3TagVGSgAWtcfc">init(abortStatement:checksum:childDirected:clarificationPrompt:createVersion:description:detectSentiment:idleSessionTTLInSeconds:intents:locale:name:processBehavior:tags:voiceId:)</a>
+                    <a name="/s:27SotoLexModelBuildingService0bcdE0V13PutBotRequestV14abortStatement8checksum13childDirected19clarificationPrompt13createVersion11description15detectSentiment06enableC12Improvements23idleSessionTTLInSeconds7intents6locale4name28nluIntentConfidenceThreshold15processBehavior4tags7voiceIdAeC0J0VSg_SSSgSbAC0O0VSgSbSgAYA1_A1_SiSgSayAC6IntentVGSgAC6LocaleOSSSdSgAC15ProcessBehaviorOSgSayAC3TagVGSgAYtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(abortStatement:checksum:childDirected:clarificationPrompt:createVersion:description:detectSentiment:enableModelImprovements:idleSessionTTLInSeconds:intents:locale:name:nluIntentConfidenceThreshold:processBehavior:tags:voiceId:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:27SotoLexModelBuildingService0bcdE0V13PutBotRequestV14abortStatement8checksum13childDirected19clarificationPrompt13createVersion11description15detectSentiment06enableC12Improvements23idleSessionTTLInSeconds7intents6locale4name28nluIntentConfidenceThreshold15processBehavior4tags7voiceIdAeC0J0VSg_SSSgSbAC0O0VSgSbSgAYA1_A1_SiSgSayAC6IntentVGSgAC6LocaleOSSSdSgAC15ProcessBehaviorOSgSayAC3TagVGSgAYtcfc">init(abortStatement:<wbr>checksum:<wbr>childDirected:<wbr>clarificationPrompt:<wbr>createVersion:<wbr>description:<wbr>detectSentiment:<wbr>enableModelImprovements:<wbr>idleSessionTTLInSeconds:<wbr>intents:<wbr>locale:<wbr>name:<wbr>nluIntentConfidenceThreshold:<wbr>processBehavior:<wbr>tags:<wbr>voiceId:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1169,9 +1296,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">abortStatement</span><span class="p">:</span> <span class="kt"><a href="../../Structs/LexModelBuildingService/Statement.html">Statement</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">checksum</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">childDirected</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span> <span class="nv">clarificationPrompt</span><span class="p">:</span> <span class="kt"><a href="../../Structs/LexModelBuildingService/Prompt.html">Prompt</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">createVersion</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">description</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">detectSentiment</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">idleSessionTTLInSeconds</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">intents</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../../Structs/LexModelBuildingService/Intent.html">Intent</a></span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">locale</span><span class="p">:</span> <span class="kt"><a href="../../Structs/LexModelBuildingService/Locale.html">Locale</a></span><span class="p">,</span> <span class="nv">name</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">processBehavior</span><span class="p">:</span> <span class="kt"><a href="../../Structs/LexModelBuildingService/ProcessBehavior.html">ProcessBehavior</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">tags</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../../Structs/LexModelBuildingService/Tag.html">Tag</a></span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">voiceId</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">abortStatement</span><span class="p">:</span> <span class="kt"><a href="../../Structs/LexModelBuildingService/Statement.html">Statement</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">checksum</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">childDirected</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span> <span class="nv">clarificationPrompt</span><span class="p">:</span> <span class="kt"><a href="../../Structs/LexModelBuildingService/Prompt.html">Prompt</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">createVersion</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">description</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">detectSentiment</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">enableModelImprovements</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">idleSessionTTLInSeconds</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">intents</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../../Structs/LexModelBuildingService/Intent.html">Intent</a></span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">locale</span><span class="p">:</span> <span class="kt"><a href="../../Structs/LexModelBuildingService/Locale.html">Locale</a></span><span class="p">,</span> <span class="nv">name</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">nluIntentConfidenceThreshold</span><span class="p">:</span> <span class="kt">Double</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">processBehavior</span><span class="p">:</span> <span class="kt"><a href="../../Structs/LexModelBuildingService/ProcessBehavior.html">ProcessBehavior</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">tags</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../../Structs/LexModelBuildingService/Tag.html">Tag</a></span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">voiceId</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/LexModelBuildingService/LexModelBuildingService_Shapes.swift#L2498-L2515">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1179,9 +1309,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:15AWSSDKSwiftCore17AWSEncodableShapeP8validate4nameySS_tKF"></a>
+                    <a name="/s:8SotoCore17AWSEncodableShapeP8validate4nameySS_tKF"></a>
                     <a name="//apple_ref/swift/Method/validate(name:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15AWSSDKSwiftCore17AWSEncodableShapeP8validate4nameySS_tKF">validate(name:)</a>
+                    <a class="token" href="#/s:8SotoCore17AWSEncodableShapeP8validate4nameySS_tKF">validate(name:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1198,6 +1328,9 @@
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">validate</span><span class="p">(</span><span class="nv">name</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="k">throws</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/LexModelBuildingService/LexModelBuildingService_Shapes.swift#L2517-L2537">Show on GitHub</a>
                       </div>
                     </section>
                   </div>

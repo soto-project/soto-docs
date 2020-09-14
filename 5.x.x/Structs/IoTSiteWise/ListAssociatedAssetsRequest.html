@@ -15,7 +15,7 @@
     <header>
       <div class="content-wrapper">
         <p><a href="../../index.html"> Docs</a> (54% documented)</p>
-        <p class="header-right"><a href="https://github.com/swift-aws/aws-sdk-swift"><img src="../../img/gh.png"/>View on GitHub</a></p>
+        <p class="header-right"><a href="https://github.com/soto-project/soto"><img src="../../img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -28,6 +28,9 @@
     <div class="content-wrapper">
       <nav class="sidebar">
         <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../../User%20Guides.html">User Guides</a>
+          </li>
           <li class="nav-group-name">
             <a href="../../AWSSDKSwiftCore.html">AWSSDKSwiftCore</a>
           </li>
@@ -68,6 +71,9 @@
             <a href="../../AppSync.html">AppSync</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../Appflow.html">Appflow</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../ApplicationAutoScaling.html">ApplicationAutoScaling</a>
           </li>
           <li class="nav-group-name">
@@ -93,6 +99,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../Batch.html">Batch</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../Braket.html">Braket</a>
           </li>
           <li class="nav-group-name">
             <a href="../../Budgets.html">Budgets</a>
@@ -335,6 +344,12 @@
             <a href="../../IAM.html">IAM</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../IVS.html">IVS</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../IdentityStore.html">IdentityStore</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../Imagebuilder.html">Imagebuilder</a>
           </li>
           <li class="nav-group-name">
@@ -557,6 +572,9 @@
             <a href="../../Redshift.html">Redshift</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../RedshiftDataAPIService.html">RedshiftDataAPIService</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../Rekognition.html">Rekognition</a>
           </li>
           <li class="nav-group-name">
@@ -606,6 +624,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../SSO.html">SSO</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../SSOAdmin.html">SSOAdmin</a>
           </li>
           <li class="nav-group-name">
             <a href="../../SSOOIDC.html">SSOOIDC</a>
@@ -735,6 +756,7 @@
             <h1>ListAssociatedAssetsRequest</h1>
               <div class="declaration">
                 <div class="language">
+                  
                   <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ListAssociatedAssetsRequest</span> <span class="p">:</span> <span class="kt"><a href="../../Protocols/AWSEncodableShape.html">AWSEncodableShape</a></span></code></pre>
 <pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt"><a href="../../Structs/IoTSiteWise.html">IoTSiteWise</a></span><span class="o">.</span><span class="kt">ListAssociatedAssetsRequest</span><span class="p">:</span> <span class="kt"><a href="../../Protocols/AWSPaginateToken.html">AWSPaginateToken</a></span></code></pre>
 
@@ -749,9 +771,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:15AWSSDKSwiftCore8AWSShapeP9_encodingSayAA17AWSMemberEncodingVGvpZ"></a>
+                    <a name="/s:8SotoCore8AWSShapeP9_encodingSayAA17AWSMemberEncodingVGvpZ"></a>
                     <a name="//apple_ref/swift/Variable/_encoding" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15AWSSDKSwiftCore8AWSShapeP9_encodingSayAA17AWSMemberEncodingVGvpZ">_encoding</a>
+                    <a class="token" href="#/s:8SotoCore8AWSShapeP9_encodingSayAA17AWSMemberEncodingVGvpZ">_encoding</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -769,15 +791,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/IoTSiteWise/IoTSiteWise_Shapes.swift#L23">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:14AWSIoTSiteWise02IobC0V27ListAssociatedAssetsRequestV7assetIdSSvp"></a>
+                    <a name="/s:15SotoIoTSiteWise0bcD0V27ListAssociatedAssetsRequestV7assetIdSSvp"></a>
                     <a name="//apple_ref/swift/Property/assetId" class="dashAnchor"></a>
-                    <a class="token" href="#/s:14AWSIoTSiteWise02IobC0V27ListAssociatedAssetsRequestV7assetIdSSvp">assetId</a>
+                    <a class="token" href="#/s:15SotoIoTSiteWise0bcD0V27ListAssociatedAssetsRequestV7assetIdSSvp">assetId</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -785,7 +810,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The ID of the parent asset.</p>
+                        <p>The ID of the asset to query.</p>
 
                       </div>
                       <div class="declaration">
@@ -796,15 +821,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/IoTSiteWise/IoTSiteWise_Shapes.swift#L2874">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:14AWSIoTSiteWise02IobC0V27ListAssociatedAssetsRequestV11hierarchyIdSSvp"></a>
+                    <a name="/s:15SotoIoTSiteWise0bcD0V27ListAssociatedAssetsRequestV11hierarchyIdSSSgvp"></a>
                     <a name="//apple_ref/swift/Property/hierarchyId" class="dashAnchor"></a>
-                    <a class="token" href="#/s:14AWSIoTSiteWise02IobC0V27ListAssociatedAssetsRequestV11hierarchyIdSSvp">hierarchyId</a>
+                    <a class="token" href="#/s:15SotoIoTSiteWise0bcD0V27ListAssociatedAssetsRequestV11hierarchyIdSSSgvp">hierarchyId</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -812,16 +840,19 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The hierarchy ID (of the parent asset model) whose associated assets are returned. To find a hierarchy ID, use the DescribeAsset or DescribeAssetModel actions. For more information, see Asset Hierarchies in the AWS IoT SiteWise User Guide.</p>
+                        <p>The ID of the hierarchy by which child assets are associated to the asset. To find a hierarchy ID, use the DescribeAsset or DescribeAssetModel operations. This parameter is required if you choose CHILD for traversalDirection. For more information, see Asset hierarchies in the AWS IoT SiteWise User Guide.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">hierarchyId</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">hierarchyId</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/IoTSiteWise/IoTSiteWise_Shapes.swift#L2876">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -829,9 +860,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:14AWSIoTSiteWise02IobC0V27ListAssociatedAssetsRequestV10maxResultsSiSgvp"></a>
+                    <a name="/s:15SotoIoTSiteWise0bcD0V27ListAssociatedAssetsRequestV10maxResultsSiSgvp"></a>
                     <a name="//apple_ref/swift/Property/maxResults" class="dashAnchor"></a>
-                    <a class="token" href="#/s:14AWSIoTSiteWise02IobC0V27ListAssociatedAssetsRequestV10maxResultsSiSgvp">maxResults</a>
+                    <a class="token" href="#/s:15SotoIoTSiteWise0bcD0V27ListAssociatedAssetsRequestV10maxResultsSiSgvp">maxResults</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -839,7 +870,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The maximum number of results to be returned per paginated request.</p>
+                        <p>The maximum number of results to be returned per paginated request. Default: 50</p>
 
                       </div>
                       <div class="declaration">
@@ -850,15 +881,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/IoTSiteWise/IoTSiteWise_Shapes.swift#L2878">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:14AWSIoTSiteWise02IobC0V27ListAssociatedAssetsRequestV9nextTokenSSSgvp"></a>
+                    <a name="/s:15SotoIoTSiteWise0bcD0V27ListAssociatedAssetsRequestV9nextTokenSSSgvp"></a>
                     <a name="//apple_ref/swift/Property/nextToken" class="dashAnchor"></a>
-                    <a class="token" href="#/s:14AWSIoTSiteWise02IobC0V27ListAssociatedAssetsRequestV9nextTokenSSSgvp">nextToken</a>
+                    <a class="token" href="#/s:15SotoIoTSiteWise0bcD0V27ListAssociatedAssetsRequestV9nextTokenSSSgvp">nextToken</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -877,15 +911,48 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/IoTSiteWise/IoTSiteWise_Shapes.swift#L2880">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:14AWSIoTSiteWise02IobC0V27ListAssociatedAssetsRequestV7assetId09hierarchyJ010maxResults9nextTokenAESS_SSSiSgSSSgtcfc"></a>
-                    <a name="//apple_ref/swift/Method/init(assetId:hierarchyId:maxResults:nextToken:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:14AWSIoTSiteWise02IobC0V27ListAssociatedAssetsRequestV7assetId09hierarchyJ010maxResults9nextTokenAESS_SSSiSgSSSgtcfc">init(assetId:hierarchyId:maxResults:nextToken:)</a>
+                    <a name="/s:15SotoIoTSiteWise0bcD0V27ListAssociatedAssetsRequestV18traversalDirectionAC09TraversalJ0OSgvp"></a>
+                    <a name="//apple_ref/swift/Property/traversalDirection" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15SotoIoTSiteWise0bcD0V27ListAssociatedAssetsRequestV18traversalDirectionAC09TraversalJ0OSgvp">traversalDirection</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The direction to list associated assets. Choose one of the following options:    CHILD – The list includes all child assets associated to the asset. The hierarchyId parameter is required if you choose CHILD.    PARENT – The list includes the asset&rsquo;s parent asset.   Default: CHILD</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">traversalDirection</span><span class="p">:</span> <span class="kt"><a href="../../Structs/IoTSiteWise/TraversalDirection.html">TraversalDirection</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/IoTSiteWise/IoTSiteWise_Shapes.swift#L2882">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:15SotoIoTSiteWise0bcD0V27ListAssociatedAssetsRequestV7assetId09hierarchyJ010maxResults9nextToken18traversalDirectionAESS_SSSgSiSgAkC09TraversalQ0OSgtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(assetId:hierarchyId:maxResults:nextToken:traversalDirection:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15SotoIoTSiteWise0bcD0V27ListAssociatedAssetsRequestV7assetId09hierarchyJ010maxResults9nextToken18traversalDirectionAESS_SSSgSiSgAkC09TraversalQ0OSgtcfc">init(assetId:<wbr>hierarchyId:<wbr>maxResults:<wbr>nextToken:<wbr>traversalDirection:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -900,9 +967,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">assetId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">hierarchyId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">maxResults</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">nextToken</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">assetId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">hierarchyId</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">maxResults</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">nextToken</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">traversalDirection</span><span class="p">:</span> <span class="kt"><a href="../../Structs/IoTSiteWise/TraversalDirection.html">TraversalDirection</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/IoTSiteWise/IoTSiteWise_Shapes.swift#L2884-L2890">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -910,9 +980,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:15AWSSDKSwiftCore17AWSEncodableShapeP8validate4nameySS_tKF"></a>
+                    <a name="/s:8SotoCore17AWSEncodableShapeP8validate4nameySS_tKF"></a>
                     <a name="//apple_ref/swift/Method/validate(name:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15AWSSDKSwiftCore17AWSEncodableShapeP8validate4nameySS_tKF">validate(name:)</a>
+                    <a class="token" href="#/s:8SotoCore17AWSEncodableShapeP8validate4nameySS_tKF">validate(name:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -930,6 +1000,9 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/IoTSiteWise/IoTSiteWise_Shapes.swift#L2892-L2904">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
@@ -939,17 +1012,19 @@
               <div class="task-name-container">
                 <a name="/Paginators"></a>
                 <a name="//apple_ref/swift/Section/Paginators" class="dashAnchor"></a>
-                <a href="#/Paginators">
-                  <h3 class="section-name">Paginators</h3>
-                </a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Paginators"></a>
+                  <h3 class="section-name"><p>Paginators</p>
+</h3>
+                </div>
               </div>
               <ul>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:14AWSIoTSiteWise02IobC0V27ListAssociatedAssetsRequestV20usingPaginationTokenyAESSF"></a>
+                    <a name="/s:15SotoIoTSiteWise0bcD0V27ListAssociatedAssetsRequestV20usingPaginationTokenyAESSF"></a>
                     <a name="//apple_ref/swift/Method/usingPaginationToken(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:14AWSIoTSiteWise02IobC0V27ListAssociatedAssetsRequestV20usingPaginationTokenyAESSF">usingPaginationToken(_:)</a>
+                    <a class="token" href="#/s:15SotoIoTSiteWise0bcD0V27ListAssociatedAssetsRequestV20usingPaginationTokenyAESSF">usingPaginationToken(_:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -967,6 +1042,9 @@
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">usingPaginationToken</span><span class="p">(</span><span class="n">_</span> <span class="nv">token</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../../Structs/IoTSiteWise.html">IoTSiteWise</a></span><span class="o">.</span><span class="kt">ListAssociatedAssetsRequest</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/IoTSiteWise/IoTSiteWise_Paginator.swift#L267-L275">Show on GitHub</a>
                       </div>
                     </section>
                   </div>

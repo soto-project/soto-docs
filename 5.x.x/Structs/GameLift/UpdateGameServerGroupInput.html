@@ -15,7 +15,7 @@
     <header>
       <div class="content-wrapper">
         <p><a href="../../index.html"> Docs</a> (54% documented)</p>
-        <p class="header-right"><a href="https://github.com/swift-aws/aws-sdk-swift"><img src="../../img/gh.png"/>View on GitHub</a></p>
+        <p class="header-right"><a href="https://github.com/soto-project/soto"><img src="../../img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -28,6 +28,9 @@
     <div class="content-wrapper">
       <nav class="sidebar">
         <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../../User%20Guides.html">User Guides</a>
+          </li>
           <li class="nav-group-name">
             <a href="../../AWSSDKSwiftCore.html">AWSSDKSwiftCore</a>
           </li>
@@ -68,6 +71,9 @@
             <a href="../../AppSync.html">AppSync</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../Appflow.html">Appflow</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../ApplicationAutoScaling.html">ApplicationAutoScaling</a>
           </li>
           <li class="nav-group-name">
@@ -93,6 +99,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../Batch.html">Batch</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../Braket.html">Braket</a>
           </li>
           <li class="nav-group-name">
             <a href="../../Budgets.html">Budgets</a>
@@ -335,6 +344,12 @@
             <a href="../../IAM.html">IAM</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../IVS.html">IVS</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../IdentityStore.html">IdentityStore</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../Imagebuilder.html">Imagebuilder</a>
           </li>
           <li class="nav-group-name">
@@ -557,6 +572,9 @@
             <a href="../../Redshift.html">Redshift</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../RedshiftDataAPIService.html">RedshiftDataAPIService</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../Rekognition.html">Rekognition</a>
           </li>
           <li class="nav-group-name">
@@ -606,6 +624,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../SSO.html">SSO</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../SSOAdmin.html">SSOAdmin</a>
           </li>
           <li class="nav-group-name">
             <a href="../../SSOOIDC.html">SSOOIDC</a>
@@ -735,6 +756,7 @@
             <h1>UpdateGameServerGroupInput</h1>
               <div class="declaration">
                 <div class="language">
+                  
                   <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">UpdateGameServerGroupInput</span> <span class="p">:</span> <span class="kt"><a href="../../Protocols/AWSEncodableShape.html">AWSEncodableShape</a></span></code></pre>
 
                 </div>
@@ -748,9 +770,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:11AWSGameLift04GameB0V06UpdateC16ServerGroupInputV17balancingStrategyAC09BalancingI0OSgvp"></a>
+                    <a name="/s:12SotoGameLift0bC0V06UpdateB16ServerGroupInputV17balancingStrategyAC09BalancingI0OSgvp"></a>
                     <a name="//apple_ref/swift/Property/balancingStrategy" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11AWSGameLift04GameB0V06UpdateC16ServerGroupInputV17balancingStrategyAC09BalancingI0OSgvp">balancingStrategy</a>
+                    <a class="token" href="#/s:12SotoGameLift0bC0V06UpdateB16ServerGroupInputV17balancingStrategyAC09BalancingI0OSgvp">balancingStrategy</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -758,7 +780,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The fallback balancing method to use for the game server group when Spot instances in a Region become unavailable or are not viable for game hosting. Once triggered, this method remains active until Spot instances can once again be used. Method options include:   SPOT_ONLY &ndash; If Spot instances are unavailable, the game server group provides no hosting capacity. No new instances are started, and the existing nonviable Spot instances are terminated (once current gameplay ends) and not replaced.   SPOT_PREFERRED &ndash; If Spot instances are unavailable, the game server group continues to provide hosting capacity by using On-Demand instances. Existing nonviable Spot instances are terminated (once current gameplay ends) and replaced with new On-Demand instances.</p>
+                        <p>Indicates how GameLift FleetIQ balances the use of Spot Instances and On-Demand Instances in the game server group. Method options include the following:    SPOT_ONLY - Only Spot Instances are used in the game server group. If Spot Instances are unavailable or not viable for game hosting, the game server group provides no hosting capacity until Spot Instances can again be used. Until then, no new instances are started, and the existing nonviable Spot Instances are terminated (after current gameplay ends) and are not replaced.    SPOT_PREFERRED - (default value) Spot Instances are used whenever available in the game server group. If Spot Instances are unavailable, the game server group continues to provide hosting capacity by falling back to On-Demand Instances. Existing nonviable Spot Instances are terminated (after current gameplay ends) and are replaced with new On-Demand Instances.    ON_DEMAND_ONLY - Only On-Demand Instances are used in the game server group. No Spot Instances are used, even when available, while this balancing strategy is in force.</p>
 
                       </div>
                       <div class="declaration">
@@ -769,15 +791,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/GameLift/GameLift_Shapes.swift#L5633">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:11AWSGameLift04GameB0V06UpdateC16ServerGroupInputV04gameeF4NameSSvp"></a>
+                    <a name="/s:12SotoGameLift0bC0V06UpdateB16ServerGroupInputV04gameeF4NameSSvp"></a>
                     <a name="//apple_ref/swift/Property/gameServerGroupName" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11AWSGameLift04GameB0V06UpdateC16ServerGroupInputV04gameeF4NameSSvp">gameServerGroupName</a>
+                    <a class="token" href="#/s:12SotoGameLift0bC0V06UpdateB16ServerGroupInputV04gameeF4NameSSvp">gameServerGroupName</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -785,7 +810,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The unique identifier of the game server group to update. Use either the GameServerGroup name or ARN value.</p>
+                        <p>A unique identifier for the game server group. Use either the GameServerGroup name or ARN value.</p>
 
                       </div>
                       <div class="declaration">
@@ -796,15 +821,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/GameLift/GameLift_Shapes.swift#L5635">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:11AWSGameLift04GameB0V06UpdateC16ServerGroupInputV04gameE16ProtectionPolicyAC0ceiJ0OSgvp"></a>
+                    <a name="/s:12SotoGameLift0bC0V06UpdateB16ServerGroupInputV04gameE16ProtectionPolicyAC0beiJ0OSgvp"></a>
                     <a name="//apple_ref/swift/Property/gameServerProtectionPolicy" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11AWSGameLift04GameB0V06UpdateC16ServerGroupInputV04gameE16ProtectionPolicyAC0ceiJ0OSgvp">gameServerProtectionPolicy</a>
+                    <a class="token" href="#/s:12SotoGameLift0bC0V06UpdateB16ServerGroupInputV04gameE16ProtectionPolicyAC0beiJ0OSgvp">gameServerProtectionPolicy</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -812,7 +840,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>A flag that indicates whether instances in the game server group are protected from early termination. Unprotected instances that have active game servers running may by terminated during a scale-down event, causing players to be dropped from the game. Protected instances cannot be terminated while there are active game servers running. An exception to this is Spot Instances, which may be terminated by AWS regardless of protection status. This property is set to NO_PROTECTION by default.</p>
+                        <p>A flag that indicates whether instances in the game server group are protected from early termination. Unprotected instances that have active game servers running might be terminated during a scale-down event, causing players to be dropped from the game. Protected instances cannot be terminated while there are active game servers running except in the event of a forced game server group deletion (see ). An exception to this is with Spot Instances, which can be terminated by AWS regardless of protection status. This property is set to NO_PROTECTION by default.</p>
 
                       </div>
                       <div class="declaration">
@@ -823,15 +851,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/GameLift/GameLift_Shapes.swift#L5637">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:11AWSGameLift04GameB0V06UpdateC16ServerGroupInputV19instanceDefinitionsSayAC18InstanceDefinitionVGSgvp"></a>
+                    <a name="/s:12SotoGameLift0bC0V06UpdateB16ServerGroupInputV19instanceDefinitionsSayAC18InstanceDefinitionVGSgvp"></a>
                     <a name="//apple_ref/swift/Property/instanceDefinitions" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11AWSGameLift04GameB0V06UpdateC16ServerGroupInputV19instanceDefinitionsSayAC18InstanceDefinitionVGSgvp">instanceDefinitions</a>
+                    <a class="token" href="#/s:12SotoGameLift0bC0V06UpdateB16ServerGroupInputV19instanceDefinitionsSayAC18InstanceDefinitionVGSgvp">instanceDefinitions</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -839,7 +870,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>An updated list of EC2 instance types to use when creating instances in the group. The instance definition must specify instance types that are supported by GameLift FleetIQ, and must include at least two instance types. This updated list replaces the entire current list of instance definitions for the game server group. For more information on instance types, see EC2 Instance Types in the Amazon EC2 User Guide..</p>
+                        <p>An updated list of EC2 instance types to use in the Auto Scaling group. The instance definitions must specify at least two different instance types that are supported by GameLift FleetIQ. This updated list replaces the entire current list of instance definitions for the game server group. For more information on instance types, see EC2 Instance Types in the Amazon EC2 User Guide. You can optionally specify capacity weighting for each instance type. If no weight value is specified for an instance type, it is set to the default value &ldquo;1&rdquo;. For more information about capacity weighting, see  Instance Weighting for Amazon EC2 Auto Scaling in the Amazon EC2 Auto Scaling User Guide.</p>
 
                       </div>
                       <div class="declaration">
@@ -850,15 +881,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/GameLift/GameLift_Shapes.swift#L5639">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:11AWSGameLift04GameB0V06UpdateC16ServerGroupInputV7roleArnSSSgvp"></a>
+                    <a name="/s:12SotoGameLift0bC0V06UpdateB16ServerGroupInputV7roleArnSSSgvp"></a>
                     <a name="//apple_ref/swift/Property/roleArn" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11AWSGameLift04GameB0V06UpdateC16ServerGroupInputV7roleArnSSSgvp">roleArn</a>
+                    <a class="token" href="#/s:12SotoGameLift0bC0V06UpdateB16ServerGroupInputV7roleArnSSSgvp">roleArn</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -866,7 +900,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The Amazon Resource Name (ARN) for an IAM role that allows Amazon GameLift to access your EC2 Auto Scaling groups. The submitted role is validated to ensure that it contains the necessary permissions for game server groups.</p>
+                        <p>The Amazon Resource Name (ARN) for an IAM role that allows Amazon GameLift to access your EC2 Auto Scaling groups.</p>
 
                       </div>
                       <div class="declaration">
@@ -877,15 +911,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/GameLift/GameLift_Shapes.swift#L5641">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:11AWSGameLift04GameB0V06UpdateC16ServerGroupInputV17balancingStrategy04gameeF4Name0jE16ProtectionPolicy19instanceDefinitions7roleArnAeC09BalancingI0OSg_SSAC0celM0OSgSayAC18InstanceDefinitionVGSgSSSgtcfc"></a>
+                    <a name="/s:12SotoGameLift0bC0V06UpdateB16ServerGroupInputV17balancingStrategy04gameeF4Name0jE16ProtectionPolicy19instanceDefinitions7roleArnAeC09BalancingI0OSg_SSAC0belM0OSgSayAC18InstanceDefinitionVGSgSSSgtcfc"></a>
                     <a name="//apple_ref/swift/Method/init(balancingStrategy:gameServerGroupName:gameServerProtectionPolicy:instanceDefinitions:roleArn:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11AWSGameLift04GameB0V06UpdateC16ServerGroupInputV17balancingStrategy04gameeF4Name0jE16ProtectionPolicy19instanceDefinitions7roleArnAeC09BalancingI0OSg_SSAC0celM0OSgSayAC18InstanceDefinitionVGSgSSSgtcfc">init(balancingStrategy:gameServerGroupName:gameServerProtectionPolicy:instanceDefinitions:roleArn:)</a>
+                    <a class="token" href="#/s:12SotoGameLift0bC0V06UpdateB16ServerGroupInputV17balancingStrategy04gameeF4Name0jE16ProtectionPolicy19instanceDefinitions7roleArnAeC09BalancingI0OSg_SSAC0belM0OSgSayAC18InstanceDefinitionVGSgSSSgtcfc">init(balancingStrategy:<wbr>gameServerGroupName:<wbr>gameServerProtectionPolicy:<wbr>instanceDefinitions:<wbr>roleArn:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -904,15 +941,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/GameLift/GameLift_Shapes.swift#L5643-L5649">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:15AWSSDKSwiftCore17AWSEncodableShapeP8validate4nameySS_tKF"></a>
+                    <a name="/s:8SotoCore17AWSEncodableShapeP8validate4nameySS_tKF"></a>
                     <a name="//apple_ref/swift/Method/validate(name:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15AWSSDKSwiftCore17AWSEncodableShapeP8validate4nameySS_tKF">validate(name:)</a>
+                    <a class="token" href="#/s:8SotoCore17AWSEncodableShapeP8validate4nameySS_tKF">validate(name:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -929,6 +969,9 @@
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">validate</span><span class="p">(</span><span class="nv">name</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="k">throws</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/GameLift/GameLift_Shapes.swift#L5651-L5663">Show on GitHub</a>
                       </div>
                     </section>
                   </div>

@@ -15,7 +15,7 @@
     <header>
       <div class="content-wrapper">
         <p><a href="../../index.html"> Docs</a> (54% documented)</p>
-        <p class="header-right"><a href="https://github.com/swift-aws/aws-sdk-swift"><img src="../../img/gh.png"/>View on GitHub</a></p>
+        <p class="header-right"><a href="https://github.com/soto-project/soto"><img src="../../img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -28,6 +28,9 @@
     <div class="content-wrapper">
       <nav class="sidebar">
         <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../../User%20Guides.html">User Guides</a>
+          </li>
           <li class="nav-group-name">
             <a href="../../AWSSDKSwiftCore.html">AWSSDKSwiftCore</a>
           </li>
@@ -68,6 +71,9 @@
             <a href="../../AppSync.html">AppSync</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../Appflow.html">Appflow</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../ApplicationAutoScaling.html">ApplicationAutoScaling</a>
           </li>
           <li class="nav-group-name">
@@ -93,6 +99,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../Batch.html">Batch</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../Braket.html">Braket</a>
           </li>
           <li class="nav-group-name">
             <a href="../../Budgets.html">Budgets</a>
@@ -335,6 +344,12 @@
             <a href="../../IAM.html">IAM</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../IVS.html">IVS</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../IdentityStore.html">IdentityStore</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../Imagebuilder.html">Imagebuilder</a>
           </li>
           <li class="nav-group-name">
@@ -557,6 +572,9 @@
             <a href="../../Redshift.html">Redshift</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../RedshiftDataAPIService.html">RedshiftDataAPIService</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../Rekognition.html">Rekognition</a>
           </li>
           <li class="nav-group-name">
@@ -606,6 +624,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../SSO.html">SSO</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../SSOAdmin.html">SSOAdmin</a>
           </li>
           <li class="nav-group-name">
             <a href="../../SSOOIDC.html">SSOOIDC</a>
@@ -735,6 +756,7 @@
             <h1>HTTPClientProvider</h1>
               <div class="declaration">
                 <div class="language">
+                  
                   <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">HTTPClientProvider</span></code></pre>
 
                 </div>
@@ -748,9 +770,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:15AWSSDKSwiftCore9AWSClientC18HTTPClientProviderO6sharedyAeA13AWSHTTPClient_pcAEmF"></a>
+                    <a name="/s:8SotoCore9AWSClientC18HTTPClientProviderO6sharedyAeA13AWSHTTPClient_pcAEmF"></a>
                     <a name="//apple_ref/swift/Element/shared(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15AWSSDKSwiftCore9AWSClientC18HTTPClientProviderO6sharedyAeA13AWSHTTPClient_pcAEmF">shared(_:)</a>
+                    <a class="token" href="#/s:8SotoCore9AWSClientC18HTTPClientProviderO6sharedyAeA13AWSHTTPClient_pcAEmF">shared(_:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -758,7 +780,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p><code>HTTPClient</code> will be provided by the user. Owner of this group is responsible for its lifecycle. Any HTTPClient that conforms to
+                        <p>HTTP Client will be provided by the user. Owner of this group is responsible for its lifecycle. Any HTTPClient that conforms to
 <code><a href="../../Protocols/AWSHTTPClient.html">AWSHTTPClient</a></code> can be specified here including AsyncHTTPClient</p>
 
                       </div>
@@ -770,15 +792,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/.build/checkouts/soto-core/Sources/SotoCore/AWSClient.swift#L58">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:15AWSSDKSwiftCore9AWSClientC18HTTPClientProviderO9createNewyA2EmF"></a>
+                    <a name="/s:8SotoCore9AWSClientC18HTTPClientProviderO9createNewyA2EmF"></a>
                     <a name="//apple_ref/swift/Element/createNew" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15AWSSDKSwiftCore9AWSClientC18HTTPClientProviderO9createNewyA2EmF">createNew</a>
+                    <a class="token" href="#/s:8SotoCore9AWSClientC18HTTPClientProviderO9createNewyA2EmF">createNew</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -786,7 +811,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p><code>HTTPClient</code> will be created by the client. When <code>deinit</code> is called, created <code>HTTPClient</code> will be shut down as well.</p>
+                        <p>HTTP Client will be created by the client. When <code>shutdown</code> is called, created <code>HTTPClient</code> will be shut down as well.</p>
 
                       </div>
                       <div class="declaration">
@@ -796,6 +821,9 @@
                           <pre class="highlight swift"><code><span class="k">case</span> <span class="n">createNew</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/.build/checkouts/soto-core/Sources/SotoCore/AWSClient.swift#L60">Show on GitHub</a>
                       </div>
                     </section>
                   </div>

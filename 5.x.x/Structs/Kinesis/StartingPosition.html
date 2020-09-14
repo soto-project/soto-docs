@@ -15,7 +15,7 @@
     <header>
       <div class="content-wrapper">
         <p><a href="../../index.html"> Docs</a> (54% documented)</p>
-        <p class="header-right"><a href="https://github.com/swift-aws/aws-sdk-swift"><img src="../../img/gh.png"/>View on GitHub</a></p>
+        <p class="header-right"><a href="https://github.com/soto-project/soto"><img src="../../img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -28,6 +28,9 @@
     <div class="content-wrapper">
       <nav class="sidebar">
         <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../../User%20Guides.html">User Guides</a>
+          </li>
           <li class="nav-group-name">
             <a href="../../AWSSDKSwiftCore.html">AWSSDKSwiftCore</a>
           </li>
@@ -68,6 +71,9 @@
             <a href="../../AppSync.html">AppSync</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../Appflow.html">Appflow</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../ApplicationAutoScaling.html">ApplicationAutoScaling</a>
           </li>
           <li class="nav-group-name">
@@ -93,6 +99,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../Batch.html">Batch</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../Braket.html">Braket</a>
           </li>
           <li class="nav-group-name">
             <a href="../../Budgets.html">Budgets</a>
@@ -335,6 +344,12 @@
             <a href="../../IAM.html">IAM</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../IVS.html">IVS</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../IdentityStore.html">IdentityStore</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../Imagebuilder.html">Imagebuilder</a>
           </li>
           <li class="nav-group-name">
@@ -557,6 +572,9 @@
             <a href="../../Redshift.html">Redshift</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../RedshiftDataAPIService.html">RedshiftDataAPIService</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../Rekognition.html">Rekognition</a>
           </li>
           <li class="nav-group-name">
@@ -606,6 +624,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../SSO.html">SSO</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../SSOAdmin.html">SSOAdmin</a>
           </li>
           <li class="nav-group-name">
             <a href="../../SSOOIDC.html">SSOOIDC</a>
@@ -735,6 +756,7 @@
             <h1>StartingPosition</h1>
               <div class="declaration">
                 <div class="language">
+                  
                   <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">StartingPosition</span> <span class="p">:</span> <span class="kt"><a href="../../Protocols/AWSEncodableShape.html">AWSEncodableShape</a></span></code></pre>
 
                 </div>
@@ -748,9 +770,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:10AWSKinesis7KinesisV16StartingPositionV14sequenceNumberSSSgvp"></a>
+                    <a name="/s:11SotoKinesis0B0V16StartingPositionV14sequenceNumberSSSgvp"></a>
                     <a name="//apple_ref/swift/Property/sequenceNumber" class="dashAnchor"></a>
-                    <a class="token" href="#/s:10AWSKinesis7KinesisV16StartingPositionV14sequenceNumberSSSgvp">sequenceNumber</a>
+                    <a class="token" href="#/s:11SotoKinesis0B0V16StartingPositionV14sequenceNumberSSSgvp">sequenceNumber</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -758,7 +780,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>The sequence number of the data record in the shard from which to start streaming. To specify a sequence number, set StartingPosition to AT_SEQUENCE_NUMBER or AFTER_SEQUENCE_NUMBER.</p>
 
                       </div>
                       <div class="declaration">
@@ -769,15 +791,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Kinesis/Kinesis_Shapes.swift#L1400">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:10AWSKinesis7KinesisV16StartingPositionV9timestamp15AWSSDKSwiftCore9TimeStampVSgvp"></a>
+                    <a name="/s:11SotoKinesis0B0V16StartingPositionV9timestamp0A4Core9TimeStampVSgvp"></a>
                     <a name="//apple_ref/swift/Property/timestamp" class="dashAnchor"></a>
-                    <a class="token" href="#/s:10AWSKinesis7KinesisV16StartingPositionV9timestamp15AWSSDKSwiftCore9TimeStampVSgvp">timestamp</a>
+                    <a class="token" href="#/s:11SotoKinesis0B0V16StartingPositionV9timestamp0A4Core9TimeStampVSgvp">timestamp</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -785,7 +810,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>The time stamp of the data record from which to start reading. To specify a time stamp, set StartingPosition to Type AT_TIMESTAMP. A time stamp is the Unix epoch date with precision in milliseconds. For example, 2016-04-04T19:58:46.480-00:00 or 1459799926.480. If a record with this exact time stamp does not exist, records will be streamed from the next (later) record. If the time stamp is older than the current trim horizon, records will be streamed from the oldest untrimmed data record (TRIM_HORIZON).</p>
 
                       </div>
                       <div class="declaration">
@@ -796,15 +821,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Kinesis/Kinesis_Shapes.swift#L1402">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:10AWSKinesis7KinesisV16StartingPositionV4typeAC17ShardIteratorTypeOvp"></a>
+                    <a name="/s:11SotoKinesis0B0V16StartingPositionV4typeAC17ShardIteratorTypeOvp"></a>
                     <a name="//apple_ref/swift/Property/type" class="dashAnchor"></a>
-                    <a class="token" href="#/s:10AWSKinesis7KinesisV16StartingPositionV4typeAC17ShardIteratorTypeOvp">type</a>
+                    <a class="token" href="#/s:11SotoKinesis0B0V16StartingPositionV4typeAC17ShardIteratorTypeOvp">type</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -812,7 +840,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>You can set the starting position to one of the following values:  AT_SEQUENCE_NUMBER: Start streaming from the position denoted by the sequence number specified in the SequenceNumber field.  AFTER_SEQUENCE_NUMBER: Start streaming right after the position denoted by the sequence number specified in the SequenceNumber field.  AT_TIMESTAMP: Start streaming from the position denoted by the time stamp specified in the Timestamp field.  TRIM_HORIZON: Start streaming at the last untrimmed record in the shard, which is the oldest data record in the shard.  LATEST: Start streaming just after the most recent record in the shard, so that you always read the most recent data in the shard.</p>
 
                       </div>
                       <div class="declaration">
@@ -823,15 +851,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Kinesis/Kinesis_Shapes.swift#L1404">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:10AWSKinesis7KinesisV16StartingPositionV14sequenceNumber9timestamp4typeAESSSg_15AWSSDKSwiftCore9TimeStampVSgAC17ShardIteratorTypeOtcfc"></a>
+                    <a name="/s:11SotoKinesis0B0V16StartingPositionV14sequenceNumber9timestamp4typeAESSSg_0A4Core9TimeStampVSgAC17ShardIteratorTypeOtcfc"></a>
                     <a name="//apple_ref/swift/Method/init(sequenceNumber:timestamp:type:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:10AWSKinesis7KinesisV16StartingPositionV14sequenceNumber9timestamp4typeAESSSg_15AWSSDKSwiftCore9TimeStampVSgAC17ShardIteratorTypeOtcfc">init(sequenceNumber:timestamp:type:)</a>
+                    <a class="token" href="#/s:11SotoKinesis0B0V16StartingPositionV14sequenceNumber9timestamp4typeAESSSg_0A4Core9TimeStampVSgAC17ShardIteratorTypeOtcfc">init(sequenceNumber:<wbr>timestamp:<wbr>type:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -850,15 +881,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Kinesis/Kinesis_Shapes.swift#L1406-L1410">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:15AWSSDKSwiftCore17AWSEncodableShapeP8validate4nameySS_tKF"></a>
+                    <a name="/s:8SotoCore17AWSEncodableShapeP8validate4nameySS_tKF"></a>
                     <a name="//apple_ref/swift/Method/validate(name:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15AWSSDKSwiftCore17AWSEncodableShapeP8validate4nameySS_tKF">validate(name:)</a>
+                    <a class="token" href="#/s:8SotoCore17AWSEncodableShapeP8validate4nameySS_tKF">validate(name:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -875,6 +909,9 @@
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">validate</span><span class="p">(</span><span class="nv">name</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="k">throws</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Kinesis/Kinesis_Shapes.swift#L1412-L1414">Show on GitHub</a>
                       </div>
                     </section>
                   </div>

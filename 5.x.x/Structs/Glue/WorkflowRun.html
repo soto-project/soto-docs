@@ -15,7 +15,7 @@
     <header>
       <div class="content-wrapper">
         <p><a href="../../index.html"> Docs</a> (54% documented)</p>
-        <p class="header-right"><a href="https://github.com/swift-aws/aws-sdk-swift"><img src="../../img/gh.png"/>View on GitHub</a></p>
+        <p class="header-right"><a href="https://github.com/soto-project/soto"><img src="../../img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -28,6 +28,9 @@
     <div class="content-wrapper">
       <nav class="sidebar">
         <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../../User%20Guides.html">User Guides</a>
+          </li>
           <li class="nav-group-name">
             <a href="../../AWSSDKSwiftCore.html">AWSSDKSwiftCore</a>
           </li>
@@ -68,6 +71,9 @@
             <a href="../../AppSync.html">AppSync</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../Appflow.html">Appflow</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../ApplicationAutoScaling.html">ApplicationAutoScaling</a>
           </li>
           <li class="nav-group-name">
@@ -93,6 +99,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../Batch.html">Batch</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../Braket.html">Braket</a>
           </li>
           <li class="nav-group-name">
             <a href="../../Budgets.html">Budgets</a>
@@ -335,6 +344,12 @@
             <a href="../../IAM.html">IAM</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../IVS.html">IVS</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../IdentityStore.html">IdentityStore</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../Imagebuilder.html">Imagebuilder</a>
           </li>
           <li class="nav-group-name">
@@ -557,6 +572,9 @@
             <a href="../../Redshift.html">Redshift</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../RedshiftDataAPIService.html">RedshiftDataAPIService</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../Rekognition.html">Rekognition</a>
           </li>
           <li class="nav-group-name">
@@ -606,6 +624,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../SSO.html">SSO</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../SSOAdmin.html">SSOAdmin</a>
           </li>
           <li class="nav-group-name">
             <a href="../../SSOOIDC.html">SSOOIDC</a>
@@ -735,7 +756,8 @@
             <h1>WorkflowRun</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">WorkflowRun</span> <span class="p">:</span> <span class="kt"><a href="../../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                  
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">WorkflowRun</span> <span class="p">:</span> <span class="kt"><a href="../../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                 </div>
               </div>
@@ -748,9 +770,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:7AWSGlue4GlueV11WorkflowRunV11completedOn15AWSSDKSwiftCore9TimeStampVSgvp"></a>
+                    <a name="/s:8SotoGlue0B0V11WorkflowRunV11completedOn0A4Core9TimeStampVSgvp"></a>
                     <a name="//apple_ref/swift/Property/completedOn" class="dashAnchor"></a>
-                    <a class="token" href="#/s:7AWSGlue4GlueV11WorkflowRunV11completedOn15AWSSDKSwiftCore9TimeStampVSgvp">completedOn</a>
+                    <a class="token" href="#/s:8SotoGlue0B0V11WorkflowRunV11completedOn0A4Core9TimeStampVSgvp">completedOn</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -769,15 +791,48 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Glue/Glue_Shapes.swift#L10517">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:7AWSGlue4GlueV11WorkflowRunV5graphAC0C5GraphVSgvp"></a>
+                    <a name="/s:8SotoGlue0B0V11WorkflowRunV12errorMessageSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/errorMessage" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8SotoGlue0B0V11WorkflowRunV12errorMessageSSSgvp">errorMessage</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This error message describes any error that may have occurred in starting the workflow run. Currently the only error message is &ldquo;Concurrent runs exceeded for workflow: foo.&rdquo;</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">errorMessage</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Glue/Glue_Shapes.swift#L10519">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8SotoGlue0B0V11WorkflowRunV5graphAC0C5GraphVSgvp"></a>
                     <a name="//apple_ref/swift/Property/graph" class="dashAnchor"></a>
-                    <a class="token" href="#/s:7AWSGlue4GlueV11WorkflowRunV5graphAC0C5GraphVSgvp">graph</a>
+                    <a class="token" href="#/s:8SotoGlue0B0V11WorkflowRunV5graphAC0C5GraphVSgvp">graph</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -796,15 +851,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Glue/Glue_Shapes.swift#L10521">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:7AWSGlue4GlueV11WorkflowRunV4nameSSSgvp"></a>
+                    <a name="/s:8SotoGlue0B0V11WorkflowRunV4nameSSSgvp"></a>
                     <a name="//apple_ref/swift/Property/name" class="dashAnchor"></a>
-                    <a class="token" href="#/s:7AWSGlue4GlueV11WorkflowRunV4nameSSSgvp">name</a>
+                    <a class="token" href="#/s:8SotoGlue0B0V11WorkflowRunV4nameSSSgvp">name</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -812,7 +870,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Name of the workflow which was executed.</p>
+                        <p>Name of the workflow that was executed.</p>
 
                       </div>
                       <div class="declaration">
@@ -823,15 +881,48 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Glue/Glue_Shapes.swift#L10523">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:7AWSGlue4GlueV11WorkflowRunV9startedOn15AWSSDKSwiftCore9TimeStampVSgvp"></a>
+                    <a name="/s:8SotoGlue0B0V11WorkflowRunV08previousD2IdSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/previousRunId" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8SotoGlue0B0V11WorkflowRunV08previousD2IdSSSgvp">previousRunId</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The ID of the previous workflow run.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">previousRunId</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Glue/Glue_Shapes.swift#L10525">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8SotoGlue0B0V11WorkflowRunV9startedOn0A4Core9TimeStampVSgvp"></a>
                     <a name="//apple_ref/swift/Property/startedOn" class="dashAnchor"></a>
-                    <a class="token" href="#/s:7AWSGlue4GlueV11WorkflowRunV9startedOn15AWSSDKSwiftCore9TimeStampVSgvp">startedOn</a>
+                    <a class="token" href="#/s:8SotoGlue0B0V11WorkflowRunV9startedOn0A4Core9TimeStampVSgvp">startedOn</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -850,15 +941,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Glue/Glue_Shapes.swift#L10527">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:7AWSGlue4GlueV11WorkflowRunV10statisticsAC0cD10StatisticsVSgvp"></a>
+                    <a name="/s:8SotoGlue0B0V11WorkflowRunV10statisticsAC0cD10StatisticsVSgvp"></a>
                     <a name="//apple_ref/swift/Property/statistics" class="dashAnchor"></a>
-                    <a class="token" href="#/s:7AWSGlue4GlueV11WorkflowRunV10statisticsAC0cD10StatisticsVSgvp">statistics</a>
+                    <a class="token" href="#/s:8SotoGlue0B0V11WorkflowRunV10statisticsAC0cD10StatisticsVSgvp">statistics</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -877,15 +971,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Glue/Glue_Shapes.swift#L10529">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:7AWSGlue4GlueV11WorkflowRunV6statusAC0cD6StatusOSgvp"></a>
+                    <a name="/s:8SotoGlue0B0V11WorkflowRunV6statusAC0cD6StatusOSgvp"></a>
                     <a name="//apple_ref/swift/Property/status" class="dashAnchor"></a>
-                    <a class="token" href="#/s:7AWSGlue4GlueV11WorkflowRunV6statusAC0cD6StatusOSgvp">status</a>
+                    <a class="token" href="#/s:8SotoGlue0B0V11WorkflowRunV6statusAC0cD6StatusOSgvp">status</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -904,15 +1001,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Glue/Glue_Shapes.swift#L10531">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:7AWSGlue4GlueV11WorkflowRunV08workflowD2IdSSSgvp"></a>
+                    <a name="/s:8SotoGlue0B0V11WorkflowRunV08workflowD2IdSSSgvp"></a>
                     <a name="//apple_ref/swift/Property/workflowRunId" class="dashAnchor"></a>
-                    <a class="token" href="#/s:7AWSGlue4GlueV11WorkflowRunV08workflowD2IdSSSgvp">workflowRunId</a>
+                    <a class="token" href="#/s:8SotoGlue0B0V11WorkflowRunV08workflowD2IdSSSgvp">workflowRunId</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -931,15 +1031,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Glue/Glue_Shapes.swift#L10533">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:7AWSGlue4GlueV11WorkflowRunV08workflowD10PropertiesSDyS2SGSgvp"></a>
+                    <a name="/s:8SotoGlue0B0V11WorkflowRunV08workflowD10PropertiesSDyS2SGSgvp"></a>
                     <a name="//apple_ref/swift/Property/workflowRunProperties" class="dashAnchor"></a>
-                    <a class="token" href="#/s:7AWSGlue4GlueV11WorkflowRunV08workflowD10PropertiesSDyS2SGSgvp">workflowRunProperties</a>
+                    <a class="token" href="#/s:8SotoGlue0B0V11WorkflowRunV08workflowD10PropertiesSDyS2SGSgvp">workflowRunProperties</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -958,15 +1061,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Glue/Glue_Shapes.swift#L10535">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:7AWSGlue4GlueV11WorkflowRunV11completedOn5graph4name07startedF010statistics6status08workflowD2Id0lD10PropertiesAE15AWSSDKSwiftCore9TimeStampVSg_AC0C5GraphVSgSSSgAqC0cD10StatisticsVSgAC0cD6StatusOSgAUSDyS2SGSgtcfc"></a>
-                    <a name="//apple_ref/swift/Method/init(completedOn:graph:name:startedOn:statistics:status:workflowRunId:workflowRunProperties:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:7AWSGlue4GlueV11WorkflowRunV11completedOn5graph4name07startedF010statistics6status08workflowD2Id0lD10PropertiesAE15AWSSDKSwiftCore9TimeStampVSg_AC0C5GraphVSgSSSgAqC0cD10StatisticsVSgAC0cD6StatusOSgAUSDyS2SGSgtcfc">init(completedOn:graph:name:startedOn:statistics:status:workflowRunId:workflowRunProperties:)</a>
+                    <a name="/s:8SotoGlue0B0V11WorkflowRunV11completedOn12errorMessage5graph4name08previousD2Id07startedF010statistics6status08workflowdL00pD10PropertiesAE0A4Core9TimeStampVSg_SSSgAC0C5GraphVSgA2tsC0cD10StatisticsVSgAC0cD6StatusOSgATSDyS2SGSgtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(completedOn:errorMessage:graph:name:previousRunId:startedOn:statistics:status:workflowRunId:workflowRunProperties:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8SotoGlue0B0V11WorkflowRunV11completedOn12errorMessage5graph4name08previousD2Id07startedF010statistics6status08workflowdL00pD10PropertiesAE0A4Core9TimeStampVSg_SSSgAC0C5GraphVSgA2tsC0cD10StatisticsVSgAC0cD6StatusOSgATSDyS2SGSgtcfc">init(completedOn:<wbr>errorMessage:<wbr>graph:<wbr>name:<wbr>previousRunId:<wbr>startedOn:<wbr>statistics:<wbr>status:<wbr>workflowRunId:<wbr>workflowRunProperties:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -981,9 +1087,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">completedOn</span><span class="p">:</span> <span class="kt"><a href="../../Structs/TimeStamp.html">TimeStamp</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">graph</span><span class="p">:</span> <span class="kt"><a href="../../Structs/Glue/WorkflowGraph.html">WorkflowGraph</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">name</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">startedOn</span><span class="p">:</span> <span class="kt"><a href="../../Structs/TimeStamp.html">TimeStamp</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">statistics</span><span class="p">:</span> <span class="kt"><a href="../../Structs/Glue/WorkflowRunStatistics.html">WorkflowRunStatistics</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">status</span><span class="p">:</span> <span class="kt"><a href="../../Structs/Glue/WorkflowRunStatus.html">WorkflowRunStatus</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">workflowRunId</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">workflowRunProperties</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt">String</span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">completedOn</span><span class="p">:</span> <span class="kt"><a href="../../Structs/TimeStamp.html">TimeStamp</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">errorMessage</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">graph</span><span class="p">:</span> <span class="kt"><a href="../../Structs/Glue/WorkflowGraph.html">WorkflowGraph</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">name</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">previousRunId</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">startedOn</span><span class="p">:</span> <span class="kt"><a href="../../Structs/TimeStamp.html">TimeStamp</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">statistics</span><span class="p">:</span> <span class="kt"><a href="../../Structs/Glue/WorkflowRunStatistics.html">WorkflowRunStatistics</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">status</span><span class="p">:</span> <span class="kt"><a href="../../Structs/Glue/WorkflowRunStatus.html">WorkflowRunStatus</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">workflowRunId</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">workflowRunProperties</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt">String</span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Glue/Glue_Shapes.swift#L10537-L10548">Show on GitHub</a>
                       </div>
                     </section>
                   </div>

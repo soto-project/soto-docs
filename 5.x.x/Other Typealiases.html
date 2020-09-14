@@ -15,7 +15,7 @@
     <header>
       <div class="content-wrapper">
         <p><a href="index.html"> Docs</a> (54% documented)</p>
-        <p class="header-right"><a href="https://github.com/swift-aws/aws-sdk-swift"><img src="img/gh.png"/>View on GitHub</a></p>
+        <p class="header-right"><a href="https://github.com/soto-project/soto"><img src="img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -28,6 +28,9 @@
     <div class="content-wrapper">
       <nav class="sidebar">
         <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="User%20Guides.html">User Guides</a>
+          </li>
           <li class="nav-group-name">
             <a href="AWSSDKSwiftCore.html">AWSSDKSwiftCore</a>
           </li>
@@ -68,6 +71,9 @@
             <a href="AppSync.html">AppSync</a>
           </li>
           <li class="nav-group-name">
+            <a href="Appflow.html">Appflow</a>
+          </li>
+          <li class="nav-group-name">
             <a href="ApplicationAutoScaling.html">ApplicationAutoScaling</a>
           </li>
           <li class="nav-group-name">
@@ -93,6 +99,9 @@
           </li>
           <li class="nav-group-name">
             <a href="Batch.html">Batch</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="Braket.html">Braket</a>
           </li>
           <li class="nav-group-name">
             <a href="Budgets.html">Budgets</a>
@@ -335,6 +344,12 @@
             <a href="IAM.html">IAM</a>
           </li>
           <li class="nav-group-name">
+            <a href="IVS.html">IVS</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="IdentityStore.html">IdentityStore</a>
+          </li>
+          <li class="nav-group-name">
             <a href="Imagebuilder.html">Imagebuilder</a>
           </li>
           <li class="nav-group-name">
@@ -557,6 +572,9 @@
             <a href="Redshift.html">Redshift</a>
           </li>
           <li class="nav-group-name">
+            <a href="RedshiftDataAPIService.html">RedshiftDataAPIService</a>
+          </li>
+          <li class="nav-group-name">
             <a href="Rekognition.html">Rekognition</a>
           </li>
           <li class="nav-group-name">
@@ -606,6 +624,9 @@
           </li>
           <li class="nav-group-name">
             <a href="SSO.html">SSO</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="SSOAdmin.html">SSOAdmin</a>
           </li>
           <li class="nav-group-name">
             <a href="SSOOIDC.html">SSOOIDC</a>
@@ -741,17 +762,19 @@
               <div class="task-name-container">
                 <a name="/Collection%20Coders"></a>
                 <a name="//apple_ref/swift/Section/Collection Coders" class="dashAnchor"></a>
-                <a href="#/Collection%20Coders">
-                  <h3 class="section-name">Collection Coders</h3>
-                </a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Collection%20Coders"></a>
+                  <h3 class="section-name"><p>Collection Coders</p>
+</h3>
+                </div>
               </div>
               <ul>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:15AWSSDKSwiftCore17DefaultArrayCodera"></a>
+                    <a name="/s:8SotoCore17DefaultArrayCodera"></a>
                     <a name="//apple_ref/swift/Alias/DefaultArrayCoder" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15AWSSDKSwiftCore17DefaultArrayCodera">DefaultArrayCoder</a>
+                    <a class="token" href="#/s:8SotoCore17DefaultArrayCodera">DefaultArrayCoder</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -770,15 +793,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/.build/checkouts/soto-core/Sources/SotoCore/Encoder/CodableProperties/CollectionCoders.swift#L">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:15AWSSDKSwiftCore22DefaultDictionaryCodera"></a>
+                    <a name="/s:8SotoCore22DefaultDictionaryCodera"></a>
                     <a name="//apple_ref/swift/Alias/DefaultDictionaryCoder" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15AWSSDKSwiftCore22DefaultDictionaryCodera">DefaultDictionaryCoder</a>
+                    <a class="token" href="#/s:8SotoCore22DefaultDictionaryCodera">DefaultDictionaryCoder</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -796,6 +822,9 @@
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">typealias</span> <span class="kt">DefaultDictionaryCoder</span><span class="o">&lt;</span><span class="kt">Key</span><span class="p">,</span> <span class="kt">Value</span><span class="o">&gt;</span> <span class="o">=</span> <span class="kt"><a href="Structs/DictionaryCoder.html">DictionaryCoder</a></span><span class="o">&lt;</span><span class="kt"><a href="Structs/DefaultDictionaryCoderProperties.html">DefaultDictionaryCoderProperties</a></span><span class="p">,</span> <span class="kt">Key</span><span class="p">,</span> <span class="kt">Value</span><span class="o">&gt;</span> <span class="k">where</span> <span class="kt">Key</span> <span class="p">:</span> <span class="kt">Decodable</span><span class="p">,</span> <span class="kt">Key</span> <span class="p">:</span> <span class="kt">Encodable</span><span class="p">,</span> <span class="kt">Key</span> <span class="p">:</span> <span class="kt">Hashable</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/.build/checkouts/soto-core/Sources/SotoCore/Encoder/CodableProperties/CollectionCoders.swift#L">Show on GitHub</a>
                       </div>
                     </section>
                   </div>

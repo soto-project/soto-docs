@@ -15,7 +15,7 @@
     <header>
       <div class="content-wrapper">
         <p><a href="../../index.html"> Docs</a> (54% documented)</p>
-        <p class="header-right"><a href="https://github.com/swift-aws/aws-sdk-swift"><img src="../../img/gh.png"/>View on GitHub</a></p>
+        <p class="header-right"><a href="https://github.com/soto-project/soto"><img src="../../img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -28,6 +28,9 @@
     <div class="content-wrapper">
       <nav class="sidebar">
         <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../../User%20Guides.html">User Guides</a>
+          </li>
           <li class="nav-group-name">
             <a href="../../AWSSDKSwiftCore.html">AWSSDKSwiftCore</a>
           </li>
@@ -68,6 +71,9 @@
             <a href="../../AppSync.html">AppSync</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../Appflow.html">Appflow</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../ApplicationAutoScaling.html">ApplicationAutoScaling</a>
           </li>
           <li class="nav-group-name">
@@ -93,6 +99,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../Batch.html">Batch</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../Braket.html">Braket</a>
           </li>
           <li class="nav-group-name">
             <a href="../../Budgets.html">Budgets</a>
@@ -335,6 +344,12 @@
             <a href="../../IAM.html">IAM</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../IVS.html">IVS</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../IdentityStore.html">IdentityStore</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../Imagebuilder.html">Imagebuilder</a>
           </li>
           <li class="nav-group-name">
@@ -557,6 +572,9 @@
             <a href="../../Redshift.html">Redshift</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../RedshiftDataAPIService.html">RedshiftDataAPIService</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../Rekognition.html">Rekognition</a>
           </li>
           <li class="nav-group-name">
@@ -606,6 +624,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../SSO.html">SSO</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../SSOAdmin.html">SSOAdmin</a>
           </li>
           <li class="nav-group-name">
             <a href="../../SSOOIDC.html">SSOOIDC</a>
@@ -735,7 +756,8 @@
             <h1>Connection</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Connection</span> <span class="p">:</span> <span class="kt"><a href="../../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                  
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Connection</span> <span class="p">:</span> <span class="kt"><a href="../../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                 </div>
               </div>
@@ -748,9 +770,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:7AWSGlue4GlueV10ConnectionV20connectionPropertiesSDyAC0C11PropertyKeyOSSGSgvp"></a>
+                    <a name="/s:8SotoGlue0B0V10ConnectionV20connectionPropertiesSDyAC0C11PropertyKeyOSSGSgvp"></a>
                     <a name="//apple_ref/swift/Property/connectionProperties" class="dashAnchor"></a>
-                    <a class="token" href="#/s:7AWSGlue4GlueV10ConnectionV20connectionPropertiesSDyAC0C11PropertyKeyOSSGSgvp">connectionProperties</a>
+                    <a class="token" href="#/s:8SotoGlue0B0V10ConnectionV20connectionPropertiesSDyAC0C11PropertyKeyOSSGSgvp">connectionProperties</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -769,15 +791,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Glue/Glue_Shapes.swift#L1520">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:7AWSGlue4GlueV10ConnectionV14connectionTypeAC0cE0OSgvp"></a>
+                    <a name="/s:8SotoGlue0B0V10ConnectionV14connectionTypeAC0cE0OSgvp"></a>
                     <a name="//apple_ref/swift/Property/connectionType" class="dashAnchor"></a>
-                    <a class="token" href="#/s:7AWSGlue4GlueV10ConnectionV14connectionTypeAC0cE0OSgvp">connectionType</a>
+                    <a class="token" href="#/s:8SotoGlue0B0V10ConnectionV14connectionTypeAC0cE0OSgvp">connectionType</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -785,7 +810,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The type of the connection. Currently, only JDBC is supported; SFTP is not supported.</p>
+                        <p>The type of the connection. Currently, SFTP is not supported.</p>
 
                       </div>
                       <div class="declaration">
@@ -796,15 +821,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Glue/Glue_Shapes.swift#L1522">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:7AWSGlue4GlueV10ConnectionV12creationTime15AWSSDKSwiftCore0E5StampVSgvp"></a>
+                    <a name="/s:8SotoGlue0B0V10ConnectionV12creationTime0A4Core0E5StampVSgvp"></a>
                     <a name="//apple_ref/swift/Property/creationTime" class="dashAnchor"></a>
-                    <a class="token" href="#/s:7AWSGlue4GlueV10ConnectionV12creationTime15AWSSDKSwiftCore0E5StampVSgvp">creationTime</a>
+                    <a class="token" href="#/s:8SotoGlue0B0V10ConnectionV12creationTime0A4Core0E5StampVSgvp">creationTime</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -823,15 +851,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Glue/Glue_Shapes.swift#L1524">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:7AWSGlue4GlueV10ConnectionV11descriptionSSSgvp"></a>
+                    <a name="/s:8SotoGlue0B0V10ConnectionV11descriptionSSSgvp"></a>
                     <a name="//apple_ref/swift/Property/description" class="dashAnchor"></a>
-                    <a class="token" href="#/s:7AWSGlue4GlueV10ConnectionV11descriptionSSSgvp">description</a>
+                    <a class="token" href="#/s:8SotoGlue0B0V10ConnectionV11descriptionSSSgvp">description</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -850,15 +881,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Glue/Glue_Shapes.swift#L1526">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:7AWSGlue4GlueV10ConnectionV13lastUpdatedBySSSgvp"></a>
+                    <a name="/s:8SotoGlue0B0V10ConnectionV13lastUpdatedBySSSgvp"></a>
                     <a name="//apple_ref/swift/Property/lastUpdatedBy" class="dashAnchor"></a>
-                    <a class="token" href="#/s:7AWSGlue4GlueV10ConnectionV13lastUpdatedBySSSgvp">lastUpdatedBy</a>
+                    <a class="token" href="#/s:8SotoGlue0B0V10ConnectionV13lastUpdatedBySSSgvp">lastUpdatedBy</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -877,15 +911,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Glue/Glue_Shapes.swift#L1528">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:7AWSGlue4GlueV10ConnectionV15lastUpdatedTime15AWSSDKSwiftCore0F5StampVSgvp"></a>
+                    <a name="/s:8SotoGlue0B0V10ConnectionV15lastUpdatedTime0A4Core0F5StampVSgvp"></a>
                     <a name="//apple_ref/swift/Property/lastUpdatedTime" class="dashAnchor"></a>
-                    <a class="token" href="#/s:7AWSGlue4GlueV10ConnectionV15lastUpdatedTime15AWSSDKSwiftCore0F5StampVSgvp">lastUpdatedTime</a>
+                    <a class="token" href="#/s:8SotoGlue0B0V10ConnectionV15lastUpdatedTime0A4Core0F5StampVSgvp">lastUpdatedTime</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -904,15 +941,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Glue/Glue_Shapes.swift#L1530">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:7AWSGlue4GlueV10ConnectionV13matchCriteriaSaySSGSgvp"></a>
+                    <a name="/s:8SotoGlue0B0V10ConnectionV13matchCriteriaSaySSGSgvp"></a>
                     <a name="//apple_ref/swift/Property/matchCriteria" class="dashAnchor"></a>
-                    <a class="token" href="#/s:7AWSGlue4GlueV10ConnectionV13matchCriteriaSaySSGSgvp">matchCriteria</a>
+                    <a class="token" href="#/s:8SotoGlue0B0V10ConnectionV13matchCriteriaSaySSGSgvp">matchCriteria</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -931,15 +971,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Glue/Glue_Shapes.swift#L1532">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:7AWSGlue4GlueV10ConnectionV4nameSSSgvp"></a>
+                    <a name="/s:8SotoGlue0B0V10ConnectionV4nameSSSgvp"></a>
                     <a name="//apple_ref/swift/Property/name" class="dashAnchor"></a>
-                    <a class="token" href="#/s:7AWSGlue4GlueV10ConnectionV4nameSSSgvp">name</a>
+                    <a class="token" href="#/s:8SotoGlue0B0V10ConnectionV4nameSSSgvp">name</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -958,15 +1001,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Glue/Glue_Shapes.swift#L1534">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:7AWSGlue4GlueV10ConnectionV08physicalC12RequirementsAC08PhysicalcE0VSgvp"></a>
+                    <a name="/s:8SotoGlue0B0V10ConnectionV08physicalC12RequirementsAC08PhysicalcE0VSgvp"></a>
                     <a name="//apple_ref/swift/Property/physicalConnectionRequirements" class="dashAnchor"></a>
-                    <a class="token" href="#/s:7AWSGlue4GlueV10ConnectionV08physicalC12RequirementsAC08PhysicalcE0VSgvp">physicalConnectionRequirements</a>
+                    <a class="token" href="#/s:8SotoGlue0B0V10ConnectionV08physicalC12RequirementsAC08PhysicalcE0VSgvp">physicalConnectionRequirements</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -985,15 +1031,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Glue/Glue_Shapes.swift#L1536">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:7AWSGlue4GlueV10ConnectionV20connectionProperties0D4Type12creationTime11description13lastUpdatedBy0jkH013matchCriteria4name08physicalC12RequirementsAESDyAC0C11PropertyKeyOSSGSg_AC0cF0OSg15AWSSDKSwiftCore0H5StampVSgSSSgAzYSaySSGSgAzC08PhysicalcQ0VSgtcfc"></a>
+                    <a name="/s:8SotoGlue0B0V10ConnectionV20connectionProperties0D4Type12creationTime11description13lastUpdatedBy0jkH013matchCriteria4name08physicalC12RequirementsAESDyAC0C11PropertyKeyOSSGSg_AC0cF0OSg0A4Core0H5StampVSgSSSgAzYSaySSGSgAzC08PhysicalcQ0VSgtcfc"></a>
                     <a name="//apple_ref/swift/Method/init(connectionProperties:connectionType:creationTime:description:lastUpdatedBy:lastUpdatedTime:matchCriteria:name:physicalConnectionRequirements:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:7AWSGlue4GlueV10ConnectionV20connectionProperties0D4Type12creationTime11description13lastUpdatedBy0jkH013matchCriteria4name08physicalC12RequirementsAESDyAC0C11PropertyKeyOSSGSg_AC0cF0OSg15AWSSDKSwiftCore0H5StampVSgSSSgAzYSaySSGSgAzC08PhysicalcQ0VSgtcfc">init(connectionProperties:connectionType:creationTime:description:lastUpdatedBy:lastUpdatedTime:matchCriteria:name:physicalConnectionRequirements:)</a>
+                    <a class="token" href="#/s:8SotoGlue0B0V10ConnectionV20connectionProperties0D4Type12creationTime11description13lastUpdatedBy0jkH013matchCriteria4name08physicalC12RequirementsAESDyAC0C11PropertyKeyOSSGSg_AC0cF0OSg0A4Core0H5StampVSgSSSgAzYSaySSGSgAzC08PhysicalcQ0VSgtcfc">init(connectionProperties:<wbr>connectionType:<wbr>creationTime:<wbr>description:<wbr>lastUpdatedBy:<wbr>lastUpdatedTime:<wbr>matchCriteria:<wbr>name:<wbr>physicalConnectionRequirements:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1011,6 +1060,9 @@
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">connectionProperties</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../../Structs/Glue/ConnectionPropertyKey.html">ConnectionPropertyKey</a></span> <span class="p">:</span> <span class="kt">String</span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">connectionType</span><span class="p">:</span> <span class="kt"><a href="../../Structs/Glue/ConnectionType.html">ConnectionType</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">creationTime</span><span class="p">:</span> <span class="kt"><a href="../../Structs/TimeStamp.html">TimeStamp</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">description</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">lastUpdatedBy</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">lastUpdatedTime</span><span class="p">:</span> <span class="kt"><a href="../../Structs/TimeStamp.html">TimeStamp</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">matchCriteria</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">name</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">physicalConnectionRequirements</span><span class="p">:</span> <span class="kt"><a href="../../Structs/Glue/PhysicalConnectionRequirements.html">PhysicalConnectionRequirements</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Glue/Glue_Shapes.swift#L1538-L1548">Show on GitHub</a>
                       </div>
                     </section>
                   </div>

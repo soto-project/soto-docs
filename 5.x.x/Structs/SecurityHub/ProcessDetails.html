@@ -15,7 +15,7 @@
     <header>
       <div class="content-wrapper">
         <p><a href="../../index.html"> Docs</a> (54% documented)</p>
-        <p class="header-right"><a href="https://github.com/swift-aws/aws-sdk-swift"><img src="../../img/gh.png"/>View on GitHub</a></p>
+        <p class="header-right"><a href="https://github.com/soto-project/soto"><img src="../../img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -28,6 +28,9 @@
     <div class="content-wrapper">
       <nav class="sidebar">
         <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../../User%20Guides.html">User Guides</a>
+          </li>
           <li class="nav-group-name">
             <a href="../../AWSSDKSwiftCore.html">AWSSDKSwiftCore</a>
           </li>
@@ -68,6 +71,9 @@
             <a href="../../AppSync.html">AppSync</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../Appflow.html">Appflow</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../ApplicationAutoScaling.html">ApplicationAutoScaling</a>
           </li>
           <li class="nav-group-name">
@@ -93,6 +99,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../Batch.html">Batch</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../Braket.html">Braket</a>
           </li>
           <li class="nav-group-name">
             <a href="../../Budgets.html">Budgets</a>
@@ -335,6 +344,12 @@
             <a href="../../IAM.html">IAM</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../IVS.html">IVS</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../IdentityStore.html">IdentityStore</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../Imagebuilder.html">Imagebuilder</a>
           </li>
           <li class="nav-group-name">
@@ -557,6 +572,9 @@
             <a href="../../Redshift.html">Redshift</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../RedshiftDataAPIService.html">RedshiftDataAPIService</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../Rekognition.html">Rekognition</a>
           </li>
           <li class="nav-group-name">
@@ -606,6 +624,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../SSO.html">SSO</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../SSOAdmin.html">SSOAdmin</a>
           </li>
           <li class="nav-group-name">
             <a href="../../SSOOIDC.html">SSOOIDC</a>
@@ -735,7 +756,8 @@
             <h1>ProcessDetails</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ProcessDetails</span> <span class="p">:</span> <span class="kt"><a href="../../Protocols/AWSEncodableShape.html">AWSEncodableShape</a></span> <span class="o">&amp;</span> <span class="kt"><a href="../../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                  
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ProcessDetails</span> <span class="p">:</span> <span class="kt"><a href="../../Protocols/AWSEncodableShape.html">AWSEncodableShape</a></span> <span class="o">&amp;</span> <span class="kt"><a href="../../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                 </div>
               </div>
@@ -748,9 +770,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:14AWSSecurityHub08SecurityB0V14ProcessDetailsV10launchedAtSSSgvp"></a>
+                    <a name="/s:15SotoSecurityHub0bC0V14ProcessDetailsV10launchedAtSSSgvp"></a>
                     <a name="//apple_ref/swift/Property/launchedAt" class="dashAnchor"></a>
-                    <a class="token" href="#/s:14AWSSecurityHub08SecurityB0V14ProcessDetailsV10launchedAtSSSgvp">launchedAt</a>
+                    <a class="token" href="#/s:15SotoSecurityHub0bC0V14ProcessDetailsV10launchedAtSSSgvp">launchedAt</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -758,7 +780,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The date/time that the process was launched.</p>
+                        <p>Indicates when the process was launched. Uses the date-time format specified in RFC 3339 section 5.6, Internet Date/Time Format. The value cannot contain spaces. For example, 2020-03-22T13:22:13.933Z.</p>
 
                       </div>
                       <div class="declaration">
@@ -769,15 +791,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/SecurityHub/SecurityHub_Shapes.swift#L6809">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:14AWSSecurityHub08SecurityB0V14ProcessDetailsV4nameSSSgvp"></a>
+                    <a name="/s:15SotoSecurityHub0bC0V14ProcessDetailsV4nameSSSgvp"></a>
                     <a name="//apple_ref/swift/Property/name" class="dashAnchor"></a>
-                    <a class="token" href="#/s:14AWSSecurityHub08SecurityB0V14ProcessDetailsV4nameSSSgvp">name</a>
+                    <a class="token" href="#/s:15SotoSecurityHub0bC0V14ProcessDetailsV4nameSSSgvp">name</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -796,15 +821,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/SecurityHub/SecurityHub_Shapes.swift#L6811">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:14AWSSecurityHub08SecurityB0V14ProcessDetailsV9parentPidSiSgvp"></a>
+                    <a name="/s:15SotoSecurityHub0bC0V14ProcessDetailsV9parentPidSiSgvp"></a>
                     <a name="//apple_ref/swift/Property/parentPid" class="dashAnchor"></a>
-                    <a class="token" href="#/s:14AWSSecurityHub08SecurityB0V14ProcessDetailsV9parentPidSiSgvp">parentPid</a>
+                    <a class="token" href="#/s:15SotoSecurityHub0bC0V14ProcessDetailsV9parentPidSiSgvp">parentPid</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -823,15 +851,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/SecurityHub/SecurityHub_Shapes.swift#L6813">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:14AWSSecurityHub08SecurityB0V14ProcessDetailsV4pathSSSgvp"></a>
+                    <a name="/s:15SotoSecurityHub0bC0V14ProcessDetailsV4pathSSSgvp"></a>
                     <a name="//apple_ref/swift/Property/path" class="dashAnchor"></a>
-                    <a class="token" href="#/s:14AWSSecurityHub08SecurityB0V14ProcessDetailsV4pathSSSgvp">path</a>
+                    <a class="token" href="#/s:15SotoSecurityHub0bC0V14ProcessDetailsV4pathSSSgvp">path</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -850,15 +881,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/SecurityHub/SecurityHub_Shapes.swift#L6815">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:14AWSSecurityHub08SecurityB0V14ProcessDetailsV3pidSiSgvp"></a>
+                    <a name="/s:15SotoSecurityHub0bC0V14ProcessDetailsV3pidSiSgvp"></a>
                     <a name="//apple_ref/swift/Property/pid" class="dashAnchor"></a>
-                    <a class="token" href="#/s:14AWSSecurityHub08SecurityB0V14ProcessDetailsV3pidSiSgvp">pid</a>
+                    <a class="token" href="#/s:15SotoSecurityHub0bC0V14ProcessDetailsV3pidSiSgvp">pid</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -877,15 +911,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/SecurityHub/SecurityHub_Shapes.swift#L6817">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:14AWSSecurityHub08SecurityB0V14ProcessDetailsV12terminatedAtSSSgvp"></a>
+                    <a name="/s:15SotoSecurityHub0bC0V14ProcessDetailsV12terminatedAtSSSgvp"></a>
                     <a name="//apple_ref/swift/Property/terminatedAt" class="dashAnchor"></a>
-                    <a class="token" href="#/s:14AWSSecurityHub08SecurityB0V14ProcessDetailsV12terminatedAtSSSgvp">terminatedAt</a>
+                    <a class="token" href="#/s:15SotoSecurityHub0bC0V14ProcessDetailsV12terminatedAtSSSgvp">terminatedAt</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -893,7 +930,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The date and time when the process was terminated.</p>
+                        <p>Indicates when the process was terminated. Uses the date-time format specified in RFC 3339 section 5.6, Internet Date/Time Format. The value cannot contain spaces. For example, 2020-03-22T13:22:13.933Z.</p>
 
                       </div>
                       <div class="declaration">
@@ -904,15 +941,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/SecurityHub/SecurityHub_Shapes.swift#L6819">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:14AWSSecurityHub08SecurityB0V14ProcessDetailsV10launchedAt4name9parentPid4path3pid010terminatedG0AESSSg_ALSiSgAlmLtcfc"></a>
+                    <a name="/s:15SotoSecurityHub0bC0V14ProcessDetailsV10launchedAt4name9parentPid4path3pid010terminatedG0AESSSg_ALSiSgAlmLtcfc"></a>
                     <a name="//apple_ref/swift/Method/init(launchedAt:name:parentPid:path:pid:terminatedAt:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:14AWSSecurityHub08SecurityB0V14ProcessDetailsV10launchedAt4name9parentPid4path3pid010terminatedG0AESSSg_ALSiSgAlmLtcfc">init(launchedAt:name:parentPid:path:pid:terminatedAt:)</a>
+                    <a class="token" href="#/s:15SotoSecurityHub0bC0V14ProcessDetailsV10launchedAt4name9parentPid4path3pid010terminatedG0AESSSg_ALSiSgAlmLtcfc">init(launchedAt:<wbr>name:<wbr>parentPid:<wbr>path:<wbr>pid:<wbr>terminatedAt:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -931,15 +971,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/SecurityHub/SecurityHub_Shapes.swift#L6821-L6828">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:15AWSSDKSwiftCore17AWSEncodableShapeP8validate4nameySS_tKF"></a>
+                    <a name="/s:8SotoCore17AWSEncodableShapeP8validate4nameySS_tKF"></a>
                     <a name="//apple_ref/swift/Method/validate(name:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15AWSSDKSwiftCore17AWSEncodableShapeP8validate4nameySS_tKF">validate(name:)</a>
+                    <a class="token" href="#/s:8SotoCore17AWSEncodableShapeP8validate4nameySS_tKF">validate(name:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -956,6 +999,9 @@
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">validate</span><span class="p">(</span><span class="nv">name</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="k">throws</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/SecurityHub/SecurityHub_Shapes.swift#L6830-L6835">Show on GitHub</a>
                       </div>
                     </section>
                   </div>

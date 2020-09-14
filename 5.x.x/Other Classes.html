@@ -15,7 +15,7 @@
     <header>
       <div class="content-wrapper">
         <p><a href="index.html"> Docs</a> (54% documented)</p>
-        <p class="header-right"><a href="https://github.com/swift-aws/aws-sdk-swift"><img src="img/gh.png"/>View on GitHub</a></p>
+        <p class="header-right"><a href="https://github.com/soto-project/soto"><img src="img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -28,6 +28,9 @@
     <div class="content-wrapper">
       <nav class="sidebar">
         <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="User%20Guides.html">User Guides</a>
+          </li>
           <li class="nav-group-name">
             <a href="AWSSDKSwiftCore.html">AWSSDKSwiftCore</a>
           </li>
@@ -68,6 +71,9 @@
             <a href="AppSync.html">AppSync</a>
           </li>
           <li class="nav-group-name">
+            <a href="Appflow.html">Appflow</a>
+          </li>
+          <li class="nav-group-name">
             <a href="ApplicationAutoScaling.html">ApplicationAutoScaling</a>
           </li>
           <li class="nav-group-name">
@@ -93,6 +99,9 @@
           </li>
           <li class="nav-group-name">
             <a href="Batch.html">Batch</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="Braket.html">Braket</a>
           </li>
           <li class="nav-group-name">
             <a href="Budgets.html">Budgets</a>
@@ -335,6 +344,12 @@
             <a href="IAM.html">IAM</a>
           </li>
           <li class="nav-group-name">
+            <a href="IVS.html">IVS</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="IdentityStore.html">IdentityStore</a>
+          </li>
+          <li class="nav-group-name">
             <a href="Imagebuilder.html">Imagebuilder</a>
           </li>
           <li class="nav-group-name">
@@ -557,6 +572,9 @@
             <a href="Redshift.html">Redshift</a>
           </li>
           <li class="nav-group-name">
+            <a href="RedshiftDataAPIService.html">RedshiftDataAPIService</a>
+          </li>
+          <li class="nav-group-name">
             <a href="Rekognition.html">Rekognition</a>
           </li>
           <li class="nav-group-name">
@@ -606,6 +624,9 @@
           </li>
           <li class="nav-group-name">
             <a href="SSO.html">SSO</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="SSOAdmin.html">SSOAdmin</a>
           </li>
           <li class="nav-group-name">
             <a href="SSOOIDC.html">SSOOIDC</a>
@@ -742,9 +763,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:15AWSSDKSwiftCore16AWSServiceConfigC"></a>
+                    <a name="/s:8SotoCore16AWSServiceConfigC"></a>
                     <a name="//apple_ref/swift/Class/AWSServiceConfig" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15AWSSDKSwiftCore16AWSServiceConfigC">AWSServiceConfig</a>
+                    <a class="token" href="#/s:8SotoCore16AWSServiceConfigC">AWSServiceConfig</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -760,9 +781,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">AWSServiceConfig</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">final</span> <span class="kd">class</span> <span class="kt">AWSServiceConfig</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/.build/checkouts/soto-core/Sources/SotoCore/AWSServiceConfig.swift#L18-L132">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -770,9 +794,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:15AWSSDKSwiftCore26DeferredCredentialProviderC"></a>
-                    <a name="//apple_ref/swift/Class/DeferredCredentialProvider" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15AWSSDKSwiftCore26DeferredCredentialProviderC">DeferredCredentialProvider</a>
+                    <a name="/s:12SotoDynamoDB0B9DBDecoderC"></a>
+                    <a name="//apple_ref/swift/Class/DynamoDBDecoder" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SotoDynamoDB0B9DBDecoderC">DynamoDBDecoder</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -780,19 +804,20 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Used for wrapping another credential provider whose <code>getCredential</code> method doesn&rsquo;t return instantly and
-it only needs to be called once. After the wrapped <code><a href="Protocols/CredentialProvider.html">CredentialProvider</a></code> has generated a credential this is
-returned instead of calling the wrapped <code>CredentialProvider&#39;s</code> <code>getCredentials</code> again.</p>
+                        <p>Undocumented</p>
 
-                        <a href="Classes/DeferredCredentialProvider.html" class="slightly-smaller">See more</a>
+                        <a href="Classes/DynamoDBDecoder.html" class="slightly-smaller">See more</a>
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">DeferredCredentialProvider</span> <span class="p">:</span> <span class="kt"><a href="Protocols/CredentialProvider.html">CredentialProvider</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">DynamoDBDecoder</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Extensions/DynamoDB/DynamoDBDecoder.swift#L17-L27">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -800,9 +825,9 @@ returned instead of calling the wrapped <code>CredentialProvider&#39;s</code> <c
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:15AWSSDKSwiftCore26RotatingCredentialProviderC"></a>
-                    <a name="//apple_ref/swift/Class/RotatingCredentialProvider" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15AWSSDKSwiftCore26RotatingCredentialProviderC">RotatingCredentialProvider</a>
+                    <a name="/s:12SotoDynamoDB0B9DBEncoderC"></a>
+                    <a name="//apple_ref/swift/Class/DynamoDBEncoder" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12SotoDynamoDB0B9DBEncoderC">DynamoDBEncoder</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -810,50 +835,20 @@ returned instead of calling the wrapped <code>CredentialProvider&#39;s</code> <c
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The <code>RotatingCredentialProvider</code> shall be of help if you wish to implement your own provider
-strategy. If your Credential conforms to the <code><a href="Protocols/ExpiringCredential.html">ExpiringCredential</a></code> protocol, the <code>RotatingCredentialProvider</code>
-checks whether your <code>credential</code> is still valid before every request.
-If needed the <code>RotatingCrendentialProvider</code> requests a new credential from the provided <code>Client</code>.</p>
+                        <p>Undocumented</p>
 
-                        <a href="Classes/RotatingCredentialProvider.html" class="slightly-smaller">See more</a>
+                        <a href="Classes/DynamoDBEncoder.html" class="slightly-smaller">See more</a>
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">final</span> <span class="kd">class</span> <span class="kt">RotatingCredentialProvider</span> <span class="p">:</span> <span class="kt"><a href="Protocols/CredentialProvider.html">CredentialProvider</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">DynamoDBEncoder</span></code></pre>
 
                         </div>
                       </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:15AWSSDKSwiftCore15NIOTSHTTPClientC"></a>
-                    <a name="//apple_ref/swift/Class/NIOTSHTTPClient" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15AWSSDKSwiftCore15NIOTSHTTPClientC">NIOTSHTTPClient</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>HTTP Client class providing API for sending HTTP requests</p>
-
-                        <a href="Classes/NIOTSHTTPClient.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@available</span><span class="p">(</span><span class="kt">OSX</span> <span class="mf">10.14</span><span class="p">,</span> <span class="n">iOS</span> <span class="mf">12.0</span><span class="p">,</span> <span class="n">tvOS</span> <span class="mf">12.0</span><span class="p">,</span> <span class="n">watchOS</span> <span class="mf">6.0</span><span class="p">,</span> <span class="o">*</span><span class="p">)</span>
-<span class="kd">public</span> <span class="kd">final</span> <span class="kd">class</span> <span class="kt">NIOTSHTTPClient</span></code></pre>
-<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">NIOTSHTTPClient</span><span class="p">:</span> <span class="kt"><a href="Protocols/AWSHTTPClient.html">AWSHTTPClient</a></span></code></pre>
-
-                        </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Extensions/DynamoDB/DynamoDBEncoder.swift#L17-L27">Show on GitHub</a>
                       </div>
                     </section>
                   </div>

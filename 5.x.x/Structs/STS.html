@@ -15,7 +15,7 @@
     <header>
       <div class="content-wrapper">
         <p><a href="../index.html"> Docs</a> (54% documented)</p>
-        <p class="header-right"><a href="https://github.com/swift-aws/aws-sdk-swift"><img src="../img/gh.png"/>View on GitHub</a></p>
+        <p class="header-right"><a href="https://github.com/soto-project/soto"><img src="../img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -28,6 +28,9 @@
     <div class="content-wrapper">
       <nav class="sidebar">
         <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../User%20Guides.html">User Guides</a>
+          </li>
           <li class="nav-group-name">
             <a href="../AWSSDKSwiftCore.html">AWSSDKSwiftCore</a>
           </li>
@@ -68,6 +71,9 @@
             <a href="../AppSync.html">AppSync</a>
           </li>
           <li class="nav-group-name">
+            <a href="../Appflow.html">Appflow</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../ApplicationAutoScaling.html">ApplicationAutoScaling</a>
           </li>
           <li class="nav-group-name">
@@ -93,6 +99,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../Batch.html">Batch</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Braket.html">Braket</a>
           </li>
           <li class="nav-group-name">
             <a href="../Budgets.html">Budgets</a>
@@ -335,6 +344,12 @@
             <a href="../IAM.html">IAM</a>
           </li>
           <li class="nav-group-name">
+            <a href="../IVS.html">IVS</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../IdentityStore.html">IdentityStore</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../Imagebuilder.html">Imagebuilder</a>
           </li>
           <li class="nav-group-name">
@@ -557,6 +572,9 @@
             <a href="../Redshift.html">Redshift</a>
           </li>
           <li class="nav-group-name">
+            <a href="../RedshiftDataAPIService.html">RedshiftDataAPIService</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../Rekognition.html">Rekognition</a>
           </li>
           <li class="nav-group-name">
@@ -606,6 +624,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../SSO.html">SSO</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../SSOAdmin.html">SSOAdmin</a>
           </li>
           <li class="nav-group-name">
             <a href="../SSOOIDC.html">SSOOIDC</a>
@@ -735,13 +756,12 @@
             <h1>STS</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">STS</span></code></pre>
+                  
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">STS</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSService.html">AWSService</a></span></code></pre>
 
                 </div>
               </div>
-            <p>Client object for interacting with AWS STS service.</p>
-
-<p>AWS Security Token Service The AWS Security Token Service (STS) is a web service that enables you to request temporary, limited-privilege credentials for AWS Identity and Access Management (IAM) users or for users that you authenticate (federated users). This guide provides descriptions of the STS API. For more detailed information about using this service, go to Temporary Security Credentials.  For information about setting up signatures and authorization through the API, go to Signing AWS API Requests in the AWS General Reference. For general information about the Query API, go to Making Query Requests in Using IAM. For information about using security tokens with other AWS products, go to AWS Services That Work with IAM in the IAM User Guide.  If you&rsquo;re new to AWS and need additional technical information about a specific AWS product, you can find the product&rsquo;s technical documentation at <a href="http://aws.amazon.com/documentation/">http://aws.amazon.com/documentation/</a>.   Endpoints  By default, AWS Security Token Service (STS) is available as a global service, and all AWS STS requests go to a single endpoint at <a href="https://sts.amazonaws.com">https://sts.amazonaws.com</a>. Global requests map to the US East (N. Virginia) region. AWS recommends using Regional AWS STS endpoints instead of the global endpoint to reduce latency, build in redundancy, and increase session token validity. For more information, see Managing AWS STS in an AWS Region in the IAM User Guide. Most AWS Regions are enabled for operations in all AWS services by default. Those Regions are automatically activated for use with AWS STS. Some Regions, such as Asia Pacific (Hong Kong), must be manually enabled. To learn more about enabling and disabling AWS Regions, see Managing AWS Regions in the AWS General Reference. When you enable these AWS Regions, they are automatically activated for use with AWS STS. You cannot activate the STS endpoint for a Region that is disabled. Tokens that are valid in all AWS Regions are longer than tokens that are valid in Regions that are enabled by default. Changing this setting might affect existing systems where you temporarily store tokens. For more information, see Managing Global Endpoint Session Tokens in the IAM User Guide. After you activate a Region for use with AWS STS, you can direct AWS STS API calls to that Region. AWS STS recommends that you provide both the Region and endpoint when you make calls to a Regional endpoint. You can provide the Region alone for manually enabled Regions, such as Asia Pacific (Hong Kong). In this case, the calls are directed to the STS Regional endpoint. However, if you provide the Region alone for Regions enabled by default, the calls are directed to the global endpoint of <a href="https://sts.amazonaws.com">https://sts.amazonaws.com</a>. To view the list of AWS STS endpoints and whether they are active by default, see Writing Code to Use AWS STS Regions in the IAM User Guide.  Recording API requests  STS supports AWS CloudTrail, which is a service that records AWS calls for your AWS account and delivers log files to an Amazon S3 bucket. By using information collected by CloudTrail, you can determine what requests were successfully made to STS, who made the request, when it was made, and so on. If you activate AWS STS endpoints in Regions other than the default global endpoint, then you must also turn on CloudTrail logging in those Regions. This is necessary to record any AWS STS API calls that are made in those Regions. For more information, see Turning On CloudTrail in Additional Regions in the AWS CloudTrail User Guide. AWS Security Token Service (STS) is a global service with a single endpoint at <a href="https://sts.amazonaws.com">https://sts.amazonaws.com</a>. Calls to this endpoint are logged as calls to a global service. However, because this endpoint is physically located in the US East (N. Virginia) Region, your logs list us-east-1 as the event Region. CloudTrail does not write these logs to the US East (Ohio) Region unless you choose to include global service logs in that Region. CloudTrail writes calls to all Regional endpoints to their respective Regions. For example, calls to sts.us-east-2.amazonaws.com are published to the US East (Ohio) Region and calls to sts.eu-central-1.amazonaws.com are published to the EU (Frankfurt) Region. To learn more about CloudTrail, including how to turn it on and find your log files, see the AWS CloudTrail User Guide.</p>
+            <p>Undocumented</p>
 
           </section>
           <section class="section task-group-section">
@@ -749,17 +769,19 @@
               <div class="task-name-container">
                 <a name="/Member%20variables"></a>
                 <a name="//apple_ref/swift/Section/Member variables" class="dashAnchor"></a>
-                <a href="#/Member%20variables">
-                  <h3 class="section-name">Member variables</h3>
-                </a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Member%20variables"></a>
+                  <h3 class="section-name"><p>Member variables</p>
+</h3>
+                </div>
               </div>
               <ul>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6AWSSTS3STSV6client15AWSSDKSwiftCore9AWSClientCvp"></a>
+                    <a name="/s:8SotoCore10AWSServiceP6clientAA9AWSClientCvp"></a>
                     <a name="//apple_ref/swift/Property/client" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6AWSSTS3STSV6client15AWSSDKSwiftCore9AWSClientCvp">client</a>
+                    <a class="token" href="#/s:8SotoCore10AWSServiceP6clientAA9AWSClientCvp">client</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -767,8 +789,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
-
+                        
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
@@ -778,15 +799,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/STS/STS_API.swift#L19">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6AWSSTS3STSV13serviceConfig15AWSSDKSwiftCore010AWSServiceD0Cvp"></a>
-                    <a name="//apple_ref/swift/Property/serviceConfig" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6AWSSTS3STSV13serviceConfig15AWSSDKSwiftCore010AWSServiceD0Cvp">serviceConfig</a>
+                    <a name="/s:8SotoCore10AWSServiceP6configAA0C6ConfigCvp"></a>
+                    <a name="//apple_ref/swift/Property/config" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8SotoCore10AWSServiceP6configAA0C6ConfigCvp">config</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -794,16 +818,18 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
-
+                        
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">serviceConfig</span><span class="p">:</span> <span class="kt"><a href="../Classes/AWSServiceConfig.html">AWSServiceConfig</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">config</span><span class="p">:</span> <span class="kt"><a href="../Classes/AWSServiceConfig.html">AWSServiceConfig</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/STS/STS_API.swift#L21">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -814,17 +840,19 @@
               <div class="task-name-container">
                 <a name="/Initialization"></a>
                 <a name="//apple_ref/swift/Section/Initialization" class="dashAnchor"></a>
-                <a href="#/Initialization">
-                  <h3 class="section-name">Initialization</h3>
-                </a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Initialization"></a>
+                  <h3 class="section-name"><p>Initialization</p>
+</h3>
+                </div>
               </div>
               <ul>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6AWSSTS3STSV6client6region9partition8endpointAC15AWSSDKSwiftCore9AWSClientC_AH6RegionVSgAH9PartitionVSSSgtcfc"></a>
-                    <a name="//apple_ref/swift/Method/init(client:region:partition:endpoint:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6AWSSTS3STSV6client6region9partition8endpointAC15AWSSDKSwiftCore9AWSClientC_AH6RegionVSgAH9PartitionVSSSgtcfc">init(client:region:partition:endpoint:)</a>
+                    <a name="/s:7SotoSTS0B0V6client6region9partition8endpoint7timeout19byteBufferAllocator7optionsAC0A4Core9AWSClientC_AK6RegionVSgAK12AWSPartitionVSSSg3NIO10TimeAmountVSgAT04ByteiJ0VAK16AWSServiceConfigC7OptionsVtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(client:region:partition:endpoint:timeout:byteBufferAllocator:options:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7SotoSTS0B0V6client6region9partition8endpoint7timeout19byteBufferAllocator7optionsAC0A4Core9AWSClientC_AK6RegionVSgAK12AWSPartitionVSSSg3NIO10TimeAmountVSgAT04ByteiJ0VAK16AWSServiceConfigC7OptionsVtcfc">init(client:<wbr>region:<wbr>partition:<wbr>endpoint:<wbr>timeout:<wbr>byteBufferAllocator:<wbr>options:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -841,9 +869,12 @@
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span>
     <span class="nv">client</span><span class="p">:</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="p">,</span>
-    <span class="nv">region</span><span class="p">:</span> <span class="kt">AWSSDKSwiftCore</span><span class="o">.</span><span class="kt"><a href="../Structs/Region.html">Region</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
-    <span class="nv">partition</span><span class="p">:</span> <span class="kt">AWSSDKSwiftCore</span><span class="o">.</span><span class="kt"><a href="../Structs/Partition.html">Partition</a></span> <span class="o">=</span> <span class="o">.</span><span class="n">aws</span><span class="p">,</span>
-    <span class="nv">endpoint</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span>
+    <span class="nv">region</span><span class="p">:</span> <span class="kt">SotoCore</span><span class="o">.</span><span class="kt"><a href="../Structs/Region.html">Region</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="nv">partition</span><span class="p">:</span> <span class="kt"><a href="../Structs/AWSPartition.html">AWSPartition</a></span> <span class="o">=</span> <span class="o">.</span><span class="n">aws</span><span class="p">,</span>
+    <span class="nv">endpoint</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="nv">timeout</span><span class="p">:</span> <span class="kt">TimeAmount</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="nv">byteBufferAllocator</span><span class="p">:</span> <span class="kt">ByteBufferAllocator</span> <span class="o">=</span> <span class="kt">ByteBufferAllocator</span><span class="p">(),</span>
+    <span class="nv">options</span><span class="p">:</span> <span class="kt"><a href="../Classes/AWSServiceConfig.html">AWSServiceConfig</a></span><span class="o">.</span><span class="kt">Options</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="p">)</span></code></pre>
 
                         </div>
@@ -900,8 +931,23 @@
                                 </div>
                               </td>
                             </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>timeout</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Timeout value for HTTP requests</p>
+                                </div>
+                              </td>
+                            </tr>
                           </tbody>
                         </table>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/STS/STS_API.swift#L39-L63">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -912,17 +958,19 @@
               <div class="task-name-container">
                 <a name="/API%20Calls"></a>
                 <a name="//apple_ref/swift/Section/API Calls" class="dashAnchor"></a>
-                <a href="#/API%20Calls">
-                  <h3 class="section-name">API Calls</h3>
-                </a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/API%20Calls"></a>
+                  <h3 class="section-name"><p>API Calls</p>
+</h3>
+                </div>
               </div>
               <ul>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6AWSSTS3STSV10assumeRole_2on3NIO15EventLoopFutureCyAC06AssumeD8ResponseVGAC0jD7RequestV_AF0gH0_pSgtF"></a>
-                    <a name="//apple_ref/swift/Method/assumeRole(_:on:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6AWSSTS3STSV10assumeRole_2on3NIO15EventLoopFutureCyAC06AssumeD8ResponseVGAC0jD7RequestV_AF0gH0_pSgtF">assumeRole(_:on:)</a>
+                    <a name="/s:7SotoSTS0B0V10assumeRole_2on6logger3NIO15EventLoopFutureCyAC06AssumeD8ResponseVGAC0kD7RequestV_AG0hI0_pSg7Logging6LoggerVtF"></a>
+                    <a name="//apple_ref/swift/Method/assumeRole(_:on:logger:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7SotoSTS0B0V10assumeRole_2on6logger3NIO15EventLoopFutureCyAC06AssumeD8ResponseVGAC0kD7RequestV_AG0hI0_pSg7Logging6LoggerVtF">assumeRole(_:<wbr>on:<wbr>logger:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -937,9 +985,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">assumeRole</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/STS/AssumeRoleRequest.html">AssumeRoleRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/STS/AssumeRoleResponse.html">AssumeRoleResponse</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">assumeRole</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/STS/AssumeRoleRequest.html">AssumeRoleRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">logger</span><span class="p">:</span> <span class="kt">Logger</span> <span class="o">=</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="o">.</span><span class="n">loggingDisabled</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/STS/AssumeRoleResponse.html">AssumeRoleResponse</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/STS/STS_API.swift#L68-L70">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -947,9 +998,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6AWSSTS3STSV18assumeRoleWithSAML_2on3NIO15EventLoopFutureCyAC06AssumedE12SAMLResponseVGAC0ldE11SAMLRequestV_AF0iJ0_pSgtF"></a>
-                    <a name="//apple_ref/swift/Method/assumeRoleWithSAML(_:on:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6AWSSTS3STSV18assumeRoleWithSAML_2on3NIO15EventLoopFutureCyAC06AssumedE12SAMLResponseVGAC0ldE11SAMLRequestV_AF0iJ0_pSgtF">assumeRoleWithSAML(_:on:)</a>
+                    <a name="/s:7SotoSTS0B0V18assumeRoleWithSAML_2on6logger3NIO15EventLoopFutureCyAC06AssumedE12SAMLResponseVGAC0mdE11SAMLRequestV_AG0jK0_pSg7Logging6LoggerVtF"></a>
+                    <a name="//apple_ref/swift/Method/assumeRoleWithSAML(_:on:logger:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7SotoSTS0B0V18assumeRoleWithSAML_2on6logger3NIO15EventLoopFutureCyAC06AssumedE12SAMLResponseVGAC0mdE11SAMLRequestV_AG0jK0_pSg7Logging6LoggerVtF">assumeRoleWithSAML(_:<wbr>on:<wbr>logger:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -964,9 +1015,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">assumeRoleWithSAML</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/STS/AssumeRoleWithSAMLRequest.html">AssumeRoleWithSAMLRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/STS/AssumeRoleWithSAMLResponse.html">AssumeRoleWithSAMLResponse</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">assumeRoleWithSAML</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/STS/AssumeRoleWithSAMLRequest.html">AssumeRoleWithSAMLRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">logger</span><span class="p">:</span> <span class="kt">Logger</span> <span class="o">=</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="o">.</span><span class="n">loggingDisabled</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/STS/AssumeRoleWithSAMLResponse.html">AssumeRoleWithSAMLResponse</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/STS/STS_API.swift#L73-L75">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -974,9 +1028,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6AWSSTS3STSV25assumeRoleWithWebIdentity_2on3NIO15EventLoopFutureCyAC06AssumedefG8ResponseVGAC0mdefG7RequestV_AF0jK0_pSgtF"></a>
-                    <a name="//apple_ref/swift/Method/assumeRoleWithWebIdentity(_:on:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6AWSSTS3STSV25assumeRoleWithWebIdentity_2on3NIO15EventLoopFutureCyAC06AssumedefG8ResponseVGAC0mdefG7RequestV_AF0jK0_pSgtF">assumeRoleWithWebIdentity(_:on:)</a>
+                    <a name="/s:7SotoSTS0B0V25assumeRoleWithWebIdentity_2on6logger3NIO15EventLoopFutureCyAC06AssumedefG8ResponseVGAC0ndefG7RequestV_AG0kL0_pSg7Logging6LoggerVtF"></a>
+                    <a name="//apple_ref/swift/Method/assumeRoleWithWebIdentity(_:on:logger:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7SotoSTS0B0V25assumeRoleWithWebIdentity_2on6logger3NIO15EventLoopFutureCyAC06AssumedefG8ResponseVGAC0ndefG7RequestV_AG0kL0_pSg7Logging6LoggerVtF">assumeRoleWithWebIdentity(_:<wbr>on:<wbr>logger:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -991,9 +1045,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">assumeRoleWithWebIdentity</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/STS/AssumeRoleWithWebIdentityRequest.html">AssumeRoleWithWebIdentityRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/STS/AssumeRoleWithWebIdentityResponse.html">AssumeRoleWithWebIdentityResponse</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">assumeRoleWithWebIdentity</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/STS/AssumeRoleWithWebIdentityRequest.html">AssumeRoleWithWebIdentityRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">logger</span><span class="p">:</span> <span class="kt">Logger</span> <span class="o">=</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="o">.</span><span class="n">loggingDisabled</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/STS/AssumeRoleWithWebIdentityResponse.html">AssumeRoleWithWebIdentityResponse</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/STS/STS_API.swift#L78-L80">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1001,9 +1058,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6AWSSTS3STSV26decodeAuthorizationMessage_2on3NIO15EventLoopFutureCyAC06DecodedE8ResponseVGAC0kdE7RequestV_AF0hI0_pSgtF"></a>
-                    <a name="//apple_ref/swift/Method/decodeAuthorizationMessage(_:on:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6AWSSTS3STSV26decodeAuthorizationMessage_2on3NIO15EventLoopFutureCyAC06DecodedE8ResponseVGAC0kdE7RequestV_AF0hI0_pSgtF">decodeAuthorizationMessage(_:on:)</a>
+                    <a name="/s:7SotoSTS0B0V26decodeAuthorizationMessage_2on6logger3NIO15EventLoopFutureCyAC06DecodedE8ResponseVGAC0ldE7RequestV_AG0iJ0_pSg7Logging6LoggerVtF"></a>
+                    <a name="//apple_ref/swift/Method/decodeAuthorizationMessage(_:on:logger:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7SotoSTS0B0V26decodeAuthorizationMessage_2on6logger3NIO15EventLoopFutureCyAC06DecodedE8ResponseVGAC0ldE7RequestV_AG0iJ0_pSg7Logging6LoggerVtF">decodeAuthorizationMessage(_:<wbr>on:<wbr>logger:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1018,9 +1075,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">decodeAuthorizationMessage</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/STS/DecodeAuthorizationMessageRequest.html">DecodeAuthorizationMessageRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/STS/DecodeAuthorizationMessageResponse.html">DecodeAuthorizationMessageResponse</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">decodeAuthorizationMessage</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/STS/DecodeAuthorizationMessageRequest.html">DecodeAuthorizationMessageRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">logger</span><span class="p">:</span> <span class="kt">Logger</span> <span class="o">=</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="o">.</span><span class="n">loggingDisabled</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/STS/DecodeAuthorizationMessageResponse.html">DecodeAuthorizationMessageResponse</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/STS/STS_API.swift#L83-L85">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1028,9 +1088,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6AWSSTS3STSV16getAccessKeyInfo_2on3NIO15EventLoopFutureCyAC03GetdeF8ResponseVGAC0ldeF7RequestV_AF0iJ0_pSgtF"></a>
-                    <a name="//apple_ref/swift/Method/getAccessKeyInfo(_:on:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6AWSSTS3STSV16getAccessKeyInfo_2on3NIO15EventLoopFutureCyAC03GetdeF8ResponseVGAC0ldeF7RequestV_AF0iJ0_pSgtF">getAccessKeyInfo(_:on:)</a>
+                    <a name="/s:7SotoSTS0B0V16getAccessKeyInfo_2on6logger3NIO15EventLoopFutureCyAC03GetdeF8ResponseVGAC0mdeF7RequestV_AG0jK0_pSg7Logging6LoggerVtF"></a>
+                    <a name="//apple_ref/swift/Method/getAccessKeyInfo(_:on:logger:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7SotoSTS0B0V16getAccessKeyInfo_2on6logger3NIO15EventLoopFutureCyAC03GetdeF8ResponseVGAC0mdeF7RequestV_AG0jK0_pSg7Logging6LoggerVtF">getAccessKeyInfo(_:<wbr>on:<wbr>logger:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1045,9 +1105,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getAccessKeyInfo</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/STS/GetAccessKeyInfoRequest.html">GetAccessKeyInfoRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/STS/GetAccessKeyInfoResponse.html">GetAccessKeyInfoResponse</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getAccessKeyInfo</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/STS/GetAccessKeyInfoRequest.html">GetAccessKeyInfoRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">logger</span><span class="p">:</span> <span class="kt">Logger</span> <span class="o">=</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="o">.</span><span class="n">loggingDisabled</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/STS/GetAccessKeyInfoResponse.html">GetAccessKeyInfoResponse</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/STS/STS_API.swift#L88-L90">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1055,9 +1118,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6AWSSTS3STSV17getCallerIdentity_2on3NIO15EventLoopFutureCyAC03GetdE8ResponseVGAC0kdE7RequestV_AF0hI0_pSgtF"></a>
-                    <a name="//apple_ref/swift/Method/getCallerIdentity(_:on:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6AWSSTS3STSV17getCallerIdentity_2on3NIO15EventLoopFutureCyAC03GetdE8ResponseVGAC0kdE7RequestV_AF0hI0_pSgtF">getCallerIdentity(_:on:)</a>
+                    <a name="/s:7SotoSTS0B0V17getCallerIdentity_2on6logger3NIO15EventLoopFutureCyAC03GetdE8ResponseVGAC0ldE7RequestV_AG0iJ0_pSg7Logging6LoggerVtF"></a>
+                    <a name="//apple_ref/swift/Method/getCallerIdentity(_:on:logger:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7SotoSTS0B0V17getCallerIdentity_2on6logger3NIO15EventLoopFutureCyAC03GetdE8ResponseVGAC0ldE7RequestV_AG0iJ0_pSg7Logging6LoggerVtF">getCallerIdentity(_:<wbr>on:<wbr>logger:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1072,9 +1135,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getCallerIdentity</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/STS/GetCallerIdentityRequest.html">GetCallerIdentityRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/STS/GetCallerIdentityResponse.html">GetCallerIdentityResponse</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getCallerIdentity</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/STS/GetCallerIdentityRequest.html">GetCallerIdentityRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">logger</span><span class="p">:</span> <span class="kt">Logger</span> <span class="o">=</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="o">.</span><span class="n">loggingDisabled</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/STS/GetCallerIdentityResponse.html">GetCallerIdentityResponse</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/STS/STS_API.swift#L93-L95">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1082,9 +1148,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6AWSSTS3STSV18getFederationToken_2on3NIO15EventLoopFutureCyAC03GetdE8ResponseVGAC0kdE7RequestV_AF0hI0_pSgtF"></a>
-                    <a name="//apple_ref/swift/Method/getFederationToken(_:on:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6AWSSTS3STSV18getFederationToken_2on3NIO15EventLoopFutureCyAC03GetdE8ResponseVGAC0kdE7RequestV_AF0hI0_pSgtF">getFederationToken(_:on:)</a>
+                    <a name="/s:7SotoSTS0B0V18getFederationToken_2on6logger3NIO15EventLoopFutureCyAC03GetdE8ResponseVGAC0ldE7RequestV_AG0iJ0_pSg7Logging6LoggerVtF"></a>
+                    <a name="//apple_ref/swift/Method/getFederationToken(_:on:logger:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7SotoSTS0B0V18getFederationToken_2on6logger3NIO15EventLoopFutureCyAC03GetdE8ResponseVGAC0ldE7RequestV_AG0iJ0_pSg7Logging6LoggerVtF">getFederationToken(_:<wbr>on:<wbr>logger:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1099,9 +1165,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getFederationToken</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/STS/GetFederationTokenRequest.html">GetFederationTokenRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/STS/GetFederationTokenResponse.html">GetFederationTokenResponse</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getFederationToken</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/STS/GetFederationTokenRequest.html">GetFederationTokenRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">logger</span><span class="p">:</span> <span class="kt">Logger</span> <span class="o">=</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="o">.</span><span class="n">loggingDisabled</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/STS/GetFederationTokenResponse.html">GetFederationTokenResponse</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/STS/STS_API.swift#L98-L100">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1109,9 +1178,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6AWSSTS3STSV15getSessionToken_2on3NIO15EventLoopFutureCyAC03GetdE8ResponseVGAC0kdE7RequestV_AF0hI0_pSgtF"></a>
-                    <a name="//apple_ref/swift/Method/getSessionToken(_:on:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6AWSSTS3STSV15getSessionToken_2on3NIO15EventLoopFutureCyAC03GetdE8ResponseVGAC0kdE7RequestV_AF0hI0_pSgtF">getSessionToken(_:on:)</a>
+                    <a name="/s:7SotoSTS0B0V15getSessionToken_2on6logger3NIO15EventLoopFutureCyAC03GetdE8ResponseVGAC0ldE7RequestV_AG0iJ0_pSg7Logging6LoggerVtF"></a>
+                    <a name="//apple_ref/swift/Method/getSessionToken(_:on:logger:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7SotoSTS0B0V15getSessionToken_2on6logger3NIO15EventLoopFutureCyAC03GetdE8ResponseVGAC0ldE7RequestV_AG0iJ0_pSg7Logging6LoggerVtF">getSessionToken(_:<wbr>on:<wbr>logger:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1126,9 +1195,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getSessionToken</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/STS/GetSessionTokenRequest.html">GetSessionTokenRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/STS/GetSessionTokenResponse.html">GetSessionTokenResponse</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getSessionToken</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/STS/GetSessionTokenRequest.html">GetSessionTokenRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">logger</span><span class="p">:</span> <span class="kt">Logger</span> <span class="o">=</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="o">.</span><span class="n">loggingDisabled</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/STS/GetSessionTokenResponse.html">GetSessionTokenResponse</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/STS/STS_API.swift#L103-L105">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1139,17 +1211,19 @@
               <div class="task-name-container">
                 <a name="/Shapes"></a>
                 <a name="//apple_ref/swift/Section/Shapes" class="dashAnchor"></a>
-                <a href="#/Shapes">
-                  <h3 class="section-name">Shapes</h3>
-                </a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Shapes"></a>
+                  <h3 class="section-name"><p>Shapes</p>
+</h3>
+                </div>
               </div>
               <ul>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6AWSSTS3STSV17AssumeRoleRequestV"></a>
+                    <a name="/s:7SotoSTS0B0V17AssumeRoleRequestV"></a>
                     <a name="//apple_ref/swift/Struct/AssumeRoleRequest" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6AWSSTS3STSV17AssumeRoleRequestV">AssumeRoleRequest</a>
+                    <a class="token" href="#/s:7SotoSTS0B0V17AssumeRoleRequestV">AssumeRoleRequest</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1169,15 +1243,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/STS/STS_Shapes.swift#L25-L111">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6AWSSTS3STSV18AssumeRoleResponseV"></a>
+                    <a name="/s:7SotoSTS0B0V18AssumeRoleResponseV"></a>
                     <a name="//apple_ref/swift/Struct/AssumeRoleResponse" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6AWSSTS3STSV18AssumeRoleResponseV">AssumeRoleResponse</a>
+                    <a class="token" href="#/s:7SotoSTS0B0V18AssumeRoleResponseV">AssumeRoleResponse</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1193,9 +1270,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">AssumeRoleResponse</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">AssumeRoleResponse</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/STS/STS_Shapes.swift#L113-L132">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1203,9 +1283,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6AWSSTS3STSV25AssumeRoleWithSAMLRequestV"></a>
+                    <a name="/s:7SotoSTS0B0V25AssumeRoleWithSAMLRequestV"></a>
                     <a name="//apple_ref/swift/Struct/AssumeRoleWithSAMLRequest" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6AWSSTS3STSV25AssumeRoleWithSAMLRequestV">AssumeRoleWithSAMLRequest</a>
+                    <a class="token" href="#/s:7SotoSTS0B0V25AssumeRoleWithSAMLRequestV">AssumeRoleWithSAMLRequest</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1225,15 +1305,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/STS/STS_Shapes.swift#L134-L185">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6AWSSTS3STSV26AssumeRoleWithSAMLResponseV"></a>
+                    <a name="/s:7SotoSTS0B0V26AssumeRoleWithSAMLResponseV"></a>
                     <a name="//apple_ref/swift/Struct/AssumeRoleWithSAMLResponse" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6AWSSTS3STSV26AssumeRoleWithSAMLResponseV">AssumeRoleWithSAMLResponse</a>
+                    <a class="token" href="#/s:7SotoSTS0B0V26AssumeRoleWithSAMLResponseV">AssumeRoleWithSAMLResponse</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1249,9 +1332,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">AssumeRoleWithSAMLResponse</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">AssumeRoleWithSAMLResponse</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/STS/STS_Shapes.swift#L187-L226">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1259,9 +1345,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6AWSSTS3STSV32AssumeRoleWithWebIdentityRequestV"></a>
+                    <a name="/s:7SotoSTS0B0V32AssumeRoleWithWebIdentityRequestV"></a>
                     <a name="//apple_ref/swift/Struct/AssumeRoleWithWebIdentityRequest" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6AWSSTS3STSV32AssumeRoleWithWebIdentityRequestV">AssumeRoleWithWebIdentityRequest</a>
+                    <a class="token" href="#/s:7SotoSTS0B0V32AssumeRoleWithWebIdentityRequestV">AssumeRoleWithWebIdentityRequest</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1281,15 +1367,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/STS/STS_Shapes.swift#L228-L285">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6AWSSTS3STSV33AssumeRoleWithWebIdentityResponseV"></a>
+                    <a name="/s:7SotoSTS0B0V33AssumeRoleWithWebIdentityResponseV"></a>
                     <a name="//apple_ref/swift/Struct/AssumeRoleWithWebIdentityResponse" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6AWSSTS3STSV33AssumeRoleWithWebIdentityResponseV">AssumeRoleWithWebIdentityResponse</a>
+                    <a class="token" href="#/s:7SotoSTS0B0V33AssumeRoleWithWebIdentityResponseV">AssumeRoleWithWebIdentityResponse</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1305,9 +1394,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">AssumeRoleWithWebIdentityResponse</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">AssumeRoleWithWebIdentityResponse</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/STS/STS_Shapes.swift#L287-L318">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1315,9 +1407,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6AWSSTS3STSV15AssumedRoleUserV"></a>
+                    <a name="/s:7SotoSTS0B0V15AssumedRoleUserV"></a>
                     <a name="//apple_ref/swift/Struct/AssumedRoleUser" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6AWSSTS3STSV15AssumedRoleUserV">AssumedRoleUser</a>
+                    <a class="token" href="#/s:7SotoSTS0B0V15AssumedRoleUserV">AssumedRoleUser</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1333,9 +1425,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">AssumedRoleUser</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">AssumedRoleUser</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/STS/STS_Shapes.swift#L320-L335">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1343,9 +1438,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6AWSSTS3STSV11CredentialsV"></a>
+                    <a name="/s:7SotoSTS0B0V11CredentialsV"></a>
                     <a name="//apple_ref/swift/Struct/Credentials" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6AWSSTS3STSV11CredentialsV">Credentials</a>
+                    <a class="token" href="#/s:7SotoSTS0B0V11CredentialsV">Credentials</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1361,9 +1456,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Credentials</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Credentials</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/STS/STS_Shapes.swift#L337-L360">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1371,9 +1469,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6AWSSTS3STSV33DecodeAuthorizationMessageRequestV"></a>
+                    <a name="/s:7SotoSTS0B0V33DecodeAuthorizationMessageRequestV"></a>
                     <a name="//apple_ref/swift/Struct/DecodeAuthorizationMessageRequest" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6AWSSTS3STSV33DecodeAuthorizationMessageRequestV">DecodeAuthorizationMessageRequest</a>
+                    <a class="token" href="#/s:7SotoSTS0B0V33DecodeAuthorizationMessageRequestV">DecodeAuthorizationMessageRequest</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1393,15 +1491,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/STS/STS_Shapes.swift#L362-L378">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6AWSSTS3STSV34DecodeAuthorizationMessageResponseV"></a>
+                    <a name="/s:7SotoSTS0B0V34DecodeAuthorizationMessageResponseV"></a>
                     <a name="//apple_ref/swift/Struct/DecodeAuthorizationMessageResponse" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6AWSSTS3STSV34DecodeAuthorizationMessageResponseV">DecodeAuthorizationMessageResponse</a>
+                    <a class="token" href="#/s:7SotoSTS0B0V34DecodeAuthorizationMessageResponseV">DecodeAuthorizationMessageResponse</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1417,9 +1518,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DecodeAuthorizationMessageResponse</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DecodeAuthorizationMessageResponse</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/STS/STS_Shapes.swift#L380-L391">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1427,9 +1531,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6AWSSTS3STSV13FederatedUserV"></a>
+                    <a name="/s:7SotoSTS0B0V13FederatedUserV"></a>
                     <a name="//apple_ref/swift/Struct/FederatedUser" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6AWSSTS3STSV13FederatedUserV">FederatedUser</a>
+                    <a class="token" href="#/s:7SotoSTS0B0V13FederatedUserV">FederatedUser</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1445,9 +1549,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">FederatedUser</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">FederatedUser</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/STS/STS_Shapes.swift#L393-L408">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1455,9 +1562,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6AWSSTS3STSV23GetAccessKeyInfoRequestV"></a>
+                    <a name="/s:7SotoSTS0B0V23GetAccessKeyInfoRequestV"></a>
                     <a name="//apple_ref/swift/Struct/GetAccessKeyInfoRequest" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6AWSSTS3STSV23GetAccessKeyInfoRequestV">GetAccessKeyInfoRequest</a>
+                    <a class="token" href="#/s:7SotoSTS0B0V23GetAccessKeyInfoRequestV">GetAccessKeyInfoRequest</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1477,15 +1584,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/STS/STS_Shapes.swift#L410-L427">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6AWSSTS3STSV24GetAccessKeyInfoResponseV"></a>
+                    <a name="/s:7SotoSTS0B0V24GetAccessKeyInfoResponseV"></a>
                     <a name="//apple_ref/swift/Struct/GetAccessKeyInfoResponse" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6AWSSTS3STSV24GetAccessKeyInfoResponseV">GetAccessKeyInfoResponse</a>
+                    <a class="token" href="#/s:7SotoSTS0B0V24GetAccessKeyInfoResponseV">GetAccessKeyInfoResponse</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1501,9 +1611,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">GetAccessKeyInfoResponse</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">GetAccessKeyInfoResponse</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/STS/STS_Shapes.swift#L429-L440">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1511,9 +1624,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6AWSSTS3STSV24GetCallerIdentityRequestV"></a>
+                    <a name="/s:7SotoSTS0B0V24GetCallerIdentityRequestV"></a>
                     <a name="//apple_ref/swift/Struct/GetCallerIdentityRequest" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6AWSSTS3STSV24GetCallerIdentityRequestV">GetCallerIdentityRequest</a>
+                    <a class="token" href="#/s:7SotoSTS0B0V24GetCallerIdentityRequestV">GetCallerIdentityRequest</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1533,15 +1646,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/STS/STS_Shapes.swift#L442-L444">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6AWSSTS3STSV25GetCallerIdentityResponseV"></a>
+                    <a name="/s:7SotoSTS0B0V25GetCallerIdentityResponseV"></a>
                     <a name="//apple_ref/swift/Struct/GetCallerIdentityResponse" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6AWSSTS3STSV25GetCallerIdentityResponseV">GetCallerIdentityResponse</a>
+                    <a class="token" href="#/s:7SotoSTS0B0V25GetCallerIdentityResponseV">GetCallerIdentityResponse</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1557,9 +1673,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">GetCallerIdentityResponse</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">GetCallerIdentityResponse</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/STS/STS_Shapes.swift#L446-L465">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1567,9 +1686,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6AWSSTS3STSV25GetFederationTokenRequestV"></a>
+                    <a name="/s:7SotoSTS0B0V25GetFederationTokenRequestV"></a>
                     <a name="//apple_ref/swift/Struct/GetFederationTokenRequest" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6AWSSTS3STSV25GetFederationTokenRequestV">GetFederationTokenRequest</a>
+                    <a class="token" href="#/s:7SotoSTS0B0V25GetFederationTokenRequestV">GetFederationTokenRequest</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1589,15 +1708,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/STS/STS_Shapes.swift#L467-L514">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6AWSSTS3STSV26GetFederationTokenResponseV"></a>
+                    <a name="/s:7SotoSTS0B0V26GetFederationTokenResponseV"></a>
                     <a name="//apple_ref/swift/Struct/GetFederationTokenResponse" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6AWSSTS3STSV26GetFederationTokenResponseV">GetFederationTokenResponse</a>
+                    <a class="token" href="#/s:7SotoSTS0B0V26GetFederationTokenResponseV">GetFederationTokenResponse</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1613,9 +1735,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">GetFederationTokenResponse</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">GetFederationTokenResponse</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/STS/STS_Shapes.swift#L516-L535">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1623,9 +1748,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6AWSSTS3STSV22GetSessionTokenRequestV"></a>
+                    <a name="/s:7SotoSTS0B0V22GetSessionTokenRequestV"></a>
                     <a name="//apple_ref/swift/Struct/GetSessionTokenRequest" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6AWSSTS3STSV22GetSessionTokenRequestV">GetSessionTokenRequest</a>
+                    <a class="token" href="#/s:7SotoSTS0B0V22GetSessionTokenRequestV">GetSessionTokenRequest</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1645,15 +1770,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/STS/STS_Shapes.swift#L537-L567">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6AWSSTS3STSV23GetSessionTokenResponseV"></a>
+                    <a name="/s:7SotoSTS0B0V23GetSessionTokenResponseV"></a>
                     <a name="//apple_ref/swift/Struct/GetSessionTokenResponse" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6AWSSTS3STSV23GetSessionTokenResponseV">GetSessionTokenResponse</a>
+                    <a class="token" href="#/s:7SotoSTS0B0V23GetSessionTokenResponseV">GetSessionTokenResponse</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1669,9 +1797,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">GetSessionTokenResponse</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">GetSessionTokenResponse</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/STS/STS_Shapes.swift#L569-L580">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1679,9 +1810,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6AWSSTS3STSV20PolicyDescriptorTypeV"></a>
+                    <a name="/s:7SotoSTS0B0V20PolicyDescriptorTypeV"></a>
                     <a name="//apple_ref/swift/Struct/PolicyDescriptorType" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6AWSSTS3STSV20PolicyDescriptorTypeV">PolicyDescriptorType</a>
+                    <a class="token" href="#/s:7SotoSTS0B0V20PolicyDescriptorTypeV">PolicyDescriptorType</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1701,15 +1832,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/STS/STS_Shapes.swift#L582-L599">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6AWSSTS3STSV3TagV"></a>
+                    <a name="/s:7SotoSTS0B0V3TagV"></a>
                     <a name="//apple_ref/swift/Struct/Tag" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6AWSSTS3STSV3TagV">Tag</a>
+                    <a class="token" href="#/s:7SotoSTS0B0V3TagV">Tag</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1728,6 +1862,9 @@
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Tag</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSEncodableShape.html">AWSEncodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/STS/STS_Shapes.swift#L601-L625">Show on GitHub</a>
                       </div>
                     </section>
                   </div>

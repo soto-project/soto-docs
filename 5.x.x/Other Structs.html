@@ -15,7 +15,7 @@
     <header>
       <div class="content-wrapper">
         <p><a href="index.html"> Docs</a> (54% documented)</p>
-        <p class="header-right"><a href="https://github.com/swift-aws/aws-sdk-swift"><img src="img/gh.png"/>View on GitHub</a></p>
+        <p class="header-right"><a href="https://github.com/soto-project/soto"><img src="img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -28,6 +28,9 @@
     <div class="content-wrapper">
       <nav class="sidebar">
         <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="User%20Guides.html">User Guides</a>
+          </li>
           <li class="nav-group-name">
             <a href="AWSSDKSwiftCore.html">AWSSDKSwiftCore</a>
           </li>
@@ -68,6 +71,9 @@
             <a href="AppSync.html">AppSync</a>
           </li>
           <li class="nav-group-name">
+            <a href="Appflow.html">Appflow</a>
+          </li>
+          <li class="nav-group-name">
             <a href="ApplicationAutoScaling.html">ApplicationAutoScaling</a>
           </li>
           <li class="nav-group-name">
@@ -93,6 +99,9 @@
           </li>
           <li class="nav-group-name">
             <a href="Batch.html">Batch</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="Braket.html">Braket</a>
           </li>
           <li class="nav-group-name">
             <a href="Budgets.html">Budgets</a>
@@ -335,6 +344,12 @@
             <a href="IAM.html">IAM</a>
           </li>
           <li class="nav-group-name">
+            <a href="IVS.html">IVS</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="IdentityStore.html">IdentityStore</a>
+          </li>
+          <li class="nav-group-name">
             <a href="Imagebuilder.html">Imagebuilder</a>
           </li>
           <li class="nav-group-name">
@@ -557,6 +572,9 @@
             <a href="Redshift.html">Redshift</a>
           </li>
           <li class="nav-group-name">
+            <a href="RedshiftDataAPIService.html">RedshiftDataAPIService</a>
+          </li>
+          <li class="nav-group-name">
             <a href="Rekognition.html">Rekognition</a>
           </li>
           <li class="nav-group-name">
@@ -606,6 +624,9 @@
           </li>
           <li class="nav-group-name">
             <a href="SSO.html">SSO</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="SSOAdmin.html">SSOAdmin</a>
           </li>
           <li class="nav-group-name">
             <a href="SSOOIDC.html">SSOOIDC</a>
@@ -742,9 +763,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:15AWSSDKSwiftCore9TimeStampV"></a>
+                    <a name="/s:8SotoCore9TimeStampV"></a>
                     <a name="//apple_ref/swift/Struct/TimeStamp" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15AWSSDKSwiftCore9TimeStampV">TimeStamp</a>
+                    <a class="token" href="#/s:8SotoCore9TimeStampV">TimeStamp</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -765,33 +786,8 @@
 
                         </div>
                       </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:15AWSSDKSwiftCore25CredentialProviderFactoryV"></a>
-                    <a name="//apple_ref/swift/Struct/CredentialProviderFactory" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15AWSSDKSwiftCore25CredentialProviderFactoryV">CredentialProviderFactory</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>A helper struct to defer the creation of a <code><a href="Protocols/CredentialProvider.html">CredentialProvider</a></code> until after the AWSClient has been created.</p>
-
-                        <a href="Structs/CredentialProviderFactory.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">CredentialProviderFactory</span></code></pre>
-
-                        </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/.build/checkouts/soto-core/Sources/SotoCore/AWSShapes/TimeStamp.swift#L21-L85">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -799,9 +795,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:15AWSSDKSwiftCore23CredentialProviderErrorV"></a>
+                    <a name="/s:8SotoCore23CredentialProviderErrorV"></a>
                     <a name="//apple_ref/swift/Struct/CredentialProviderError" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15AWSSDKSwiftCore23CredentialProviderErrorV">CredentialProviderError</a>
+                    <a class="token" href="#/s:8SotoCore23CredentialProviderErrorV">CredentialProviderError</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -818,8 +814,12 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">CredentialProviderError</span> <span class="p">:</span> <span class="kt">Error</span><span class="p">,</span> <span class="kt">Equatable</span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">CredentialProviderError</span><span class="p">:</span> <span class="kt">CustomStringConvertible</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/.build/checkouts/soto-core/Sources/SotoCore/Credential/CredentialProviderError.swift#L15-L23">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -827,9 +827,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:15AWSSDKSwiftCore22NullCredentialProviderV"></a>
+                    <a name="/s:8SotoCore22NullCredentialProviderV"></a>
                     <a name="//apple_ref/swift/Struct/NullCredentialProvider" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15AWSSDKSwiftCore22NullCredentialProviderV">NullCredentialProvider</a>
+                    <a class="token" href="#/s:8SotoCore22NullCredentialProviderV">NullCredentialProvider</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -849,15 +849,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/.build/checkouts/soto-core/Sources/SotoCore/Credential/NullCredentialProvider.swift#L20-L24">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:15AWSSDKSwiftCore17AWSMemberEncodingV"></a>
+                    <a name="/s:8SotoCore17AWSMemberEncodingV"></a>
                     <a name="//apple_ref/swift/Struct/AWSMemberEncoding" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15AWSSDKSwiftCore17AWSMemberEncodingV">AWSMemberEncoding</a>
+                    <a class="token" href="#/s:8SotoCore17AWSMemberEncodingV">AWSMemberEncoding</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -877,15 +880,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/.build/checkouts/soto-core/Sources/SotoCore/Doc/AWSMemberEncoding.swift#L16-L35">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:15AWSSDKSwiftCore14PayloadOptionsV"></a>
-                    <a name="//apple_ref/swift/Struct/PayloadOptions" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15AWSSDKSwiftCore14PayloadOptionsV">PayloadOptions</a>
+                    <a name="/s:8SotoCore22AWSShapePayloadOptionsV"></a>
+                    <a name="//apple_ref/swift/Struct/AWSShapePayloadOptions" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8SotoCore22AWSShapePayloadOptionsV">AWSShapePayloadOptions</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -895,15 +901,18 @@
                       <div class="abstract">
                         <p>AWSShapeWithPayload options.</p>
 
-                        <a href="Structs/PayloadOptions.html" class="slightly-smaller">See more</a>
+                        <a href="Structs/AWSShapePayloadOptions.html" class="slightly-smaller">See more</a>
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">PayloadOptions</span> <span class="p">:</span> <span class="kt">OptionSet</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">AWSShapePayloadOptions</span> <span class="p">:</span> <span class="kt">OptionSet</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/.build/checkouts/soto-core/Sources/SotoCore/Doc/AWSShape.swift#L186-L196">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -911,9 +920,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:15AWSSDKSwiftCore9PartitionV"></a>
-                    <a name="//apple_ref/swift/Struct/Partition" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15AWSSDKSwiftCore9PartitionV">Partition</a>
+                    <a name="/s:8SotoCore6RegionV"></a>
+                    <a name="//apple_ref/swift/Struct/Region" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8SotoCore6RegionV">Region</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -923,15 +932,18 @@
                       <div class="abstract">
                         <p>Undocumented</p>
 
-                        <a href="Structs/Partition.html" class="slightly-smaller">See more</a>
+                        <a href="Structs/Region.html" class="slightly-smaller">See more</a>
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Partition</span> <span class="p">:</span> <span class="kt">RawRepresentable</span><span class="p">,</span> <span class="kt">Equatable</span><span class="p">,</span> <span class="kt">Hashable</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Region</span> <span class="p">:</span> <span class="kt">RawRepresentable</span><span class="p">,</span> <span class="kt">Equatable</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/.build/checkouts/soto-core/Sources/SotoCore/Doc/Region.swift#L17-L80">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -939,9 +951,40 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:15AWSSDKSwiftCore6CodingV"></a>
+                    <a name="/s:8SotoCore12AWSPartitionV"></a>
+                    <a name="//apple_ref/swift/Struct/AWSPartition" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8SotoCore12AWSPartitionV">AWSPartition</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="Structs/AWSPartition.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">AWSPartition</span> <span class="p">:</span> <span class="kt">RawRepresentable</span><span class="p">,</span> <span class="kt">Equatable</span><span class="p">,</span> <span class="kt">Hashable</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/.build/checkouts/soto-core/Sources/SotoCore/Doc/Region.swift#L117-L149">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8SotoCore6CodingV"></a>
                     <a name="//apple_ref/swift/Struct/Coding" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15AWSSDKSwiftCore6CodingV">Coding</a>
+                    <a class="token" href="#/s:8SotoCore6CodingV">Coding</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -964,15 +1007,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/.build/checkouts/soto-core/Sources/SotoCore/Encoder/CodableProperties/CodableProperties.swift#L33-L44">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:15AWSSDKSwiftCore14OptionalCodingV"></a>
+                    <a name="/s:8SotoCore14OptionalCodingV"></a>
                     <a name="//apple_ref/swift/Struct/OptionalCoding" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15AWSSDKSwiftCore14OptionalCodingV">OptionalCoding</a>
+                    <a class="token" href="#/s:8SotoCore14OptionalCodingV">OptionalCoding</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -996,6 +1042,9 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/.build/checkouts/soto-core/Sources/SotoCore/Encoder/CodableProperties/CodableProperties.swift#L61-L72">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
@@ -1005,17 +1054,19 @@
               <div class="task-name-container">
                 <a name="/Collection%20Coders"></a>
                 <a name="//apple_ref/swift/Section/Collection Coders" class="dashAnchor"></a>
-                <a href="#/Collection%20Coders">
-                  <h3 class="section-name">Collection Coders</h3>
-                </a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Collection%20Coders"></a>
+                  <h3 class="section-name"><p>Collection Coders</p>
+</h3>
+                </div>
               </div>
               <ul>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:15AWSSDKSwiftCore10ArrayCoderV"></a>
+                    <a name="/s:8SotoCore10ArrayCoderV"></a>
                     <a name="//apple_ref/swift/Struct/ArrayCoder" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15AWSSDKSwiftCore10ArrayCoderV">ArrayCoder</a>
+                    <a class="token" href="#/s:8SotoCore10ArrayCoderV">ArrayCoder</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1037,15 +1088,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/.build/checkouts/soto-core/Sources/SotoCore/Encoder/CodableProperties/CollectionCoders.swift#L25-L27">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:15AWSSDKSwiftCore15DictionaryCoderV"></a>
+                    <a name="/s:8SotoCore15DictionaryCoderV"></a>
                     <a name="//apple_ref/swift/Struct/DictionaryCoder" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15AWSSDKSwiftCore15DictionaryCoderV">DictionaryCoder</a>
+                    <a class="token" href="#/s:8SotoCore15DictionaryCoderV">DictionaryCoder</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1067,15 +1121,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/.build/checkouts/soto-core/Sources/SotoCore/Encoder/CodableProperties/CollectionCoders.swift#L66-L68">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:15AWSSDKSwiftCore27DefaultArrayCoderPropertiesV"></a>
+                    <a name="/s:8SotoCore27DefaultArrayCoderPropertiesV"></a>
                     <a name="//apple_ref/swift/Struct/DefaultArrayCoderProperties" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15AWSSDKSwiftCore27DefaultArrayCoderPropertiesV">DefaultArrayCoderProperties</a>
+                    <a class="token" href="#/s:8SotoCore27DefaultArrayCoderPropertiesV">DefaultArrayCoderProperties</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1095,15 +1152,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/.build/checkouts/soto-core/Sources/SotoCore/Encoder/CodableProperties/CollectionCoders.swift#L122-L124">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:15AWSSDKSwiftCore32DefaultDictionaryCoderPropertiesV"></a>
+                    <a name="/s:8SotoCore32DefaultDictionaryCoderPropertiesV"></a>
                     <a name="//apple_ref/swift/Struct/DefaultDictionaryCoderProperties" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15AWSSDKSwiftCore32DefaultDictionaryCoderPropertiesV">DefaultDictionaryCoderProperties</a>
+                    <a class="token" href="#/s:8SotoCore32DefaultDictionaryCoderPropertiesV">DefaultDictionaryCoderProperties</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1123,6 +1183,9 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/.build/checkouts/soto-core/Sources/SotoCore/Encoder/CodableProperties/CollectionCoders.swift#L127-L131">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
@@ -1132,17 +1195,19 @@
               <div class="task-name-container">
                 <a name="/TimeStamp%20Coders"></a>
                 <a name="//apple_ref/swift/Section/TimeStamp Coders" class="dashAnchor"></a>
-                <a href="#/TimeStamp%20Coders">
-                  <h3 class="section-name">TimeStamp Coders</h3>
-                </a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/TimeStamp%20Coders"></a>
+                  <h3 class="section-name"><p>TimeStamp Coders</p>
+</h3>
+                </div>
               </div>
               <ul>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:15AWSSDKSwiftCore21ISO8601TimeStampCoderV"></a>
+                    <a name="/s:8SotoCore21ISO8601TimeStampCoderV"></a>
                     <a name="//apple_ref/swift/Struct/ISO8601TimeStampCoder" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15AWSSDKSwiftCore21ISO8601TimeStampCoderV">ISO8601TimeStampCoder</a>
+                    <a class="token" href="#/s:8SotoCore21ISO8601TimeStampCoderV">ISO8601TimeStampCoder</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1162,15 +1227,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/.build/checkouts/soto-core/Sources/SotoCore/Encoder/CodableProperties/TimeStampCoder.swift#L58-L61">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:15AWSSDKSwiftCore24HTTPHeaderTimeStampCoderV"></a>
+                    <a name="/s:8SotoCore24HTTPHeaderTimeStampCoderV"></a>
                     <a name="//apple_ref/swift/Struct/HTTPHeaderTimeStampCoder" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15AWSSDKSwiftCore24HTTPHeaderTimeStampCoderV">HTTPHeaderTimeStampCoder</a>
+                    <a class="token" href="#/s:8SotoCore24HTTPHeaderTimeStampCoderV">HTTPHeaderTimeStampCoder</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1190,15 +1258,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/.build/checkouts/soto-core/Sources/SotoCore/Encoder/CodableProperties/TimeStampCoder.swift#L64-L67">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:15AWSSDKSwiftCore23UnixEpochTimeStampCoderV"></a>
+                    <a name="/s:8SotoCore23UnixEpochTimeStampCoderV"></a>
                     <a name="//apple_ref/swift/Struct/UnixEpochTimeStampCoder" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15AWSSDKSwiftCore23UnixEpochTimeStampCoderV">UnixEpochTimeStampCoder</a>
+                    <a class="token" href="#/s:8SotoCore23UnixEpochTimeStampCoderV">UnixEpochTimeStampCoder</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1218,15 +1289,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/.build/checkouts/soto-core/Sources/SotoCore/Encoder/CodableProperties/TimeStampCoder.swift#L70-L83">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:15AWSSDKSwiftCore14AWSClientErrorV"></a>
+                    <a name="/s:8SotoCore14AWSClientErrorV"></a>
                     <a name="//apple_ref/swift/Struct/AWSClientError" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15AWSSDKSwiftCore14AWSClientErrorV">AWSClientError</a>
+                    <a class="token" href="#/s:8SotoCore14AWSClientErrorV">AWSClientError</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1244,9 +1318,12 @@
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">AWSClientError</span> <span class="p">:</span> <span class="kt"><a href="Protocols/AWSErrorType.html">AWSErrorType</a></span></code></pre>
 <pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">AWSClientError</span><span class="p">:</span> <span class="kt">Equatable</span></code></pre>
-<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">AWSClientError</span> <span class="p">:</span> <span class="kt">CustomStringConvertible</span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">AWSClientError</span><span class="p">:</span> <span class="kt">CustomStringConvertible</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/.build/checkouts/soto-core/Sources/SotoCore/Errors/ClientErrors.swift#L17-L85">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1254,9 +1331,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:15AWSSDKSwiftCore16AWSResponseErrorV"></a>
+                    <a name="/s:8SotoCore16AWSResponseErrorV"></a>
                     <a name="//apple_ref/swift/Struct/AWSResponseError" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15AWSSDKSwiftCore16AWSResponseErrorV">AWSResponseError</a>
+                    <a class="token" href="#/s:8SotoCore16AWSResponseErrorV">AWSResponseError</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1264,7 +1341,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Standard Response Error type returned by aws-sdk-swift. If the error is unrecognised then this is returned</p>
+                        <p>Standard Response Error type returned by Soto. If the error is unrecognised then this is returned</p>
 
                         <a href="Structs/AWSResponseError.html" class="slightly-smaller">See more</a>
                       </div>
@@ -1276,15 +1353,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/.build/checkouts/soto-core/Sources/SotoCore/Errors/Error.swift#L29-L41">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:15AWSSDKSwiftCore8AWSErrorV"></a>
+                    <a name="/s:8SotoCore8AWSErrorV"></a>
                     <a name="//apple_ref/swift/Struct/AWSError" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15AWSSDKSwiftCore8AWSErrorV">AWSError</a>
+                    <a class="token" href="#/s:8SotoCore8AWSErrorV">AWSError</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1304,15 +1384,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/.build/checkouts/soto-core/Sources/SotoCore/Errors/Error.swift#L44-L58">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:15AWSSDKSwiftCore14AWSServerErrorV"></a>
+                    <a name="/s:8SotoCore14AWSServerErrorV"></a>
                     <a name="//apple_ref/swift/Struct/AWSServerError" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15AWSSDKSwiftCore14AWSServerErrorV">AWSServerError</a>
+                    <a class="token" href="#/s:8SotoCore14AWSServerErrorV">AWSServerError</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1330,9 +1413,12 @@
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">AWSServerError</span> <span class="p">:</span> <span class="kt"><a href="Protocols/AWSErrorType.html">AWSErrorType</a></span></code></pre>
 <pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">AWSServerError</span><span class="p">:</span> <span class="kt">Equatable</span></code></pre>
-<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">AWSServerError</span> <span class="p">:</span> <span class="kt">CustomStringConvertible</span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">AWSServerError</span><span class="p">:</span> <span class="kt">CustomStringConvertible</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/.build/checkouts/soto-core/Sources/SotoCore/Errors/ServerErrors.swift#L17-L46">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1340,9 +1426,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:15AWSSDKSwiftCore14AWSHTTPRequestV"></a>
+                    <a name="/s:8SotoCore14AWSHTTPRequestV"></a>
                     <a name="//apple_ref/swift/Struct/AWSHTTPRequest" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15AWSSDKSwiftCore14AWSHTTPRequestV">AWSHTTPRequest</a>
+                    <a class="token" href="#/s:8SotoCore14AWSHTTPRequestV">AWSHTTPRequest</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1362,15 +1448,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/.build/checkouts/soto-core/Sources/SotoCore/HTTP/AWSHTTPClient.swift#L21-L33">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:15AWSSDKSwiftCore7NoRetryV"></a>
-                    <a name="//apple_ref/swift/Struct/NoRetry" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15AWSSDKSwiftCore7NoRetryV">NoRetry</a>
+                    <a name="/s:8SotoCore20AWSMiddlewareContextV"></a>
+                    <a name="//apple_ref/swift/Struct/AWSMiddlewareContext" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8SotoCore20AWSMiddlewareContextV">AWSMiddlewareContext</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1378,17 +1467,20 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Retry controller that never returns a retry wait time</p>
+                        <p>Context object sent to <code><a href="Protocols/AWSServiceMiddleware.html">AWSServiceMiddleware</a></code> <code>chain</code> functions</p>
 
-                        <a href="Structs/NoRetry.html" class="slightly-smaller">See more</a>
+                        <a href="Structs/AWSMiddlewareContext.html" class="slightly-smaller">See more</a>
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">NoRetry</span> <span class="p">:</span> <span class="kt"><a href="Protocols/RetryPolicy.html">RetryPolicy</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">AWSMiddlewareContext</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/.build/checkouts/soto-core/Sources/SotoCore/Message/AWSMiddleware.swift#L18-L20">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1396,9 +1488,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:15AWSSDKSwiftCore16ExponentialRetryV"></a>
-                    <a name="//apple_ref/swift/Struct/ExponentialRetry" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15AWSSDKSwiftCore16ExponentialRetryV">ExponentialRetry</a>
+                    <a name="/s:8SotoCore18RetryPolicyFactoryV"></a>
+                    <a name="//apple_ref/swift/Struct/RetryPolicyFactory" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8SotoCore18RetryPolicyFactoryV">RetryPolicyFactory</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1406,17 +1498,20 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Retry with an exponentially increasing wait time between wait times</p>
+                        <p>Creates a RetryPolicy for AWSClient to use</p>
 
-                        <a href="Structs/ExponentialRetry.html" class="slightly-smaller">See more</a>
+                        <a href="Structs/RetryPolicyFactory.html" class="slightly-smaller">See more</a>
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ExponentialRetry</span> <span class="p">:</span> <span class="kt"><a href="Protocols/StandardRetryPolicy.html">StandardRetryPolicy</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">RetryPolicyFactory</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/.build/checkouts/soto-core/Sources/SotoCore/RetryPolicy.swift#L19-L39">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1424,39 +1519,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:15AWSSDKSwiftCore11JitterRetryV"></a>
-                    <a name="//apple_ref/swift/Struct/JitterRetry" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15AWSSDKSwiftCore11JitterRetryV">JitterRetry</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Exponential jitter retry. Instead of returning an exponentially increasing retry time it returns a jittered version. In a heavy load situation
-where a large number of clients all hit the servers at the same time, jitter helps to smooth out the server response. See
-<a href="https://aws.amazon.com/blogs/architecture/exponential-backoff-and-jitter/">https://aws.amazon.com/blogs/architecture/exponential-backoff-and-jitter/</a> for details.</p>
-
-                        <a href="Structs/JitterRetry.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">JitterRetry</span> <span class="p">:</span> <span class="kt"><a href="Protocols/StandardRetryPolicy.html">StandardRetryPolicy</a></span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:13AWSAPIGateway20APIGatewayMiddlewareV"></a>
+                    <a name="/s:14SotoAPIGateway0B10MiddlewareV"></a>
                     <a name="//apple_ref/swift/Struct/APIGatewayMiddleware" class="dashAnchor"></a>
-                    <a class="token" href="#/s:13AWSAPIGateway20APIGatewayMiddlewareV">APIGatewayMiddleware</a>
+                    <a class="token" href="#/s:14SotoAPIGateway0B10MiddlewareV">APIGatewayMiddleware</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1476,15 +1541,18 @@ where a large number of clients all hit the servers at the same time, jitter hel
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Extensions/APIGateway/APIGatewayMiddleware.swift#L17-L26">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:10AWSGlacier24GlacierRequestMiddlewareV"></a>
+                    <a name="/s:11SotoGlacier0B17RequestMiddlewareV"></a>
                     <a name="//apple_ref/swift/Struct/GlacierRequestMiddleware" class="dashAnchor"></a>
-                    <a class="token" href="#/s:10AWSGlacier24GlacierRequestMiddlewareV">GlacierRequestMiddleware</a>
+                    <a class="token" href="#/s:11SotoGlacier0B17RequestMiddlewareV">GlacierRequestMiddleware</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1504,15 +1572,18 @@ where a large number of clients all hit the servers at the same time, jitter hel
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Extensions/Glacier/GlacierRequestMiddleware.swift#L25-L112">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:5AWSS319S3RequestMiddlewareV"></a>
+                    <a name="/s:6SotoS30B17RequestMiddlewareV"></a>
                     <a name="//apple_ref/swift/Struct/S3RequestMiddleware" class="dashAnchor"></a>
-                    <a class="token" href="#/s:5AWSS319S3RequestMiddlewareV">S3RequestMiddleware</a>
+                    <a class="token" href="#/s:6SotoS30B17RequestMiddlewareV">S3RequestMiddleware</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1532,15 +1603,18 @@ where a large number of clients all hit the servers at the same time, jitter hel
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Extensions/S3/S3RequestMiddleware.swift#L21-L143">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:12AWSS3Control02S3B10MiddlewareV"></a>
+                    <a name="/s:13SotoS3Control0bC10MiddlewareV"></a>
                     <a name="//apple_ref/swift/Struct/S3ControlMiddleware" class="dashAnchor"></a>
-                    <a class="token" href="#/s:12AWSS3Control02S3B10MiddlewareV">S3ControlMiddleware</a>
+                    <a class="token" href="#/s:13SotoS3Control0bC10MiddlewareV">S3ControlMiddleware</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1559,6 +1633,9 @@ where a large number of clients all hit the servers at the same time, jitter hel
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">S3ControlMiddleware</span> <span class="p">:</span> <span class="kt"><a href="Protocols/AWSServiceMiddleware.html">AWSServiceMiddleware</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Extensions/S3Control/S3ControlMiddleware.swift#L22-L48">Show on GitHub</a>
                       </div>
                     </section>
                   </div>

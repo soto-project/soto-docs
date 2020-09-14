@@ -15,7 +15,7 @@
     <header>
       <div class="content-wrapper">
         <p><a href="../index.html"> Docs</a> (54% documented)</p>
-        <p class="header-right"><a href="https://github.com/swift-aws/aws-sdk-swift"><img src="../img/gh.png"/>View on GitHub</a></p>
+        <p class="header-right"><a href="https://github.com/soto-project/soto"><img src="../img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -28,6 +28,9 @@
     <div class="content-wrapper">
       <nav class="sidebar">
         <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../User%20Guides.html">User Guides</a>
+          </li>
           <li class="nav-group-name">
             <a href="../AWSSDKSwiftCore.html">AWSSDKSwiftCore</a>
           </li>
@@ -68,6 +71,9 @@
             <a href="../AppSync.html">AppSync</a>
           </li>
           <li class="nav-group-name">
+            <a href="../Appflow.html">Appflow</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../ApplicationAutoScaling.html">ApplicationAutoScaling</a>
           </li>
           <li class="nav-group-name">
@@ -93,6 +99,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../Batch.html">Batch</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Braket.html">Braket</a>
           </li>
           <li class="nav-group-name">
             <a href="../Budgets.html">Budgets</a>
@@ -335,6 +344,12 @@
             <a href="../IAM.html">IAM</a>
           </li>
           <li class="nav-group-name">
+            <a href="../IVS.html">IVS</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../IdentityStore.html">IdentityStore</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../Imagebuilder.html">Imagebuilder</a>
           </li>
           <li class="nav-group-name">
@@ -557,6 +572,9 @@
             <a href="../Redshift.html">Redshift</a>
           </li>
           <li class="nav-group-name">
+            <a href="../RedshiftDataAPIService.html">RedshiftDataAPIService</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../Rekognition.html">Rekognition</a>
           </li>
           <li class="nav-group-name">
@@ -606,6 +624,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../SSO.html">SSO</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../SSOAdmin.html">SSOAdmin</a>
           </li>
           <li class="nav-group-name">
             <a href="../SSOOIDC.html">SSOOIDC</a>
@@ -735,13 +756,12 @@
             <h1>Pricing</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Pricing</span></code></pre>
+                  
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Pricing</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSService.html">AWSService</a></span></code></pre>
 
                 </div>
               </div>
-            <p>Client object for interacting with AWS Pricing service.</p>
-
-<p>AWS Price List Service API (AWS Price List Service) is a centralized and convenient way to programmatically query Amazon Web Services for services, products, and pricing information. The AWS Price List Service uses standardized product attributes such as Location, Storage Class, and Operating System, and provides prices at the SKU level. You can use the AWS Price List Service to build cost control and scenario planning tools, reconcile billing data, forecast future spend for budgeting purposes, and provide cost benefit analysis that compare your internal workloads with AWS. Use GetServices without a service code to retrieve the service codes for all AWS services, then GetServices with a service code to retreive the attribute names for that service. After you have the service code and attribute names, you can use GetAttributeValues to see what values are available for an attribute. With the service code and an attribute name and value, you can use GetProducts to find specific products that you&rsquo;re interested in, such as an AmazonEC2 instance, with a Provisioned IOPS volumeType. Service Endpoint AWS Price List Service API provides the following two endpoints:   <a href="https://api.pricing.us-east-1.amazonaws.com">https://api.pricing.us-east-1.amazonaws.com</a>   <a href="https://api.pricing.ap-south-1.amazonaws.com">https://api.pricing.ap-south-1.amazonaws.com</a></p>
+            <p>Undocumented</p>
 
           </section>
           <section class="section task-group-section">
@@ -749,17 +769,19 @@
               <div class="task-name-container">
                 <a name="/Member%20variables"></a>
                 <a name="//apple_ref/swift/Section/Member variables" class="dashAnchor"></a>
-                <a href="#/Member%20variables">
-                  <h3 class="section-name">Member variables</h3>
-                </a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Member%20variables"></a>
+                  <h3 class="section-name"><p>Member variables</p>
+</h3>
+                </div>
               </div>
               <ul>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:10AWSPricing7PricingV6client15AWSSDKSwiftCore9AWSClientCvp"></a>
+                    <a name="/s:8SotoCore10AWSServiceP6clientAA9AWSClientCvp"></a>
                     <a name="//apple_ref/swift/Property/client" class="dashAnchor"></a>
-                    <a class="token" href="#/s:10AWSPricing7PricingV6client15AWSSDKSwiftCore9AWSClientCvp">client</a>
+                    <a class="token" href="#/s:8SotoCore10AWSServiceP6clientAA9AWSClientCvp">client</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -767,8 +789,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
-
+                        
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
@@ -778,15 +799,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Pricing/Pricing_API.swift#L19">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:10AWSPricing7PricingV13serviceConfig15AWSSDKSwiftCore010AWSServiceD0Cvp"></a>
-                    <a name="//apple_ref/swift/Property/serviceConfig" class="dashAnchor"></a>
-                    <a class="token" href="#/s:10AWSPricing7PricingV13serviceConfig15AWSSDKSwiftCore010AWSServiceD0Cvp">serviceConfig</a>
+                    <a name="/s:8SotoCore10AWSServiceP6configAA0C6ConfigCvp"></a>
+                    <a name="//apple_ref/swift/Property/config" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8SotoCore10AWSServiceP6configAA0C6ConfigCvp">config</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -794,16 +818,18 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
-
+                        
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">serviceConfig</span><span class="p">:</span> <span class="kt"><a href="../Classes/AWSServiceConfig.html">AWSServiceConfig</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">config</span><span class="p">:</span> <span class="kt"><a href="../Classes/AWSServiceConfig.html">AWSServiceConfig</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Pricing/Pricing_API.swift#L21">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -814,17 +840,19 @@
               <div class="task-name-container">
                 <a name="/Initialization"></a>
                 <a name="//apple_ref/swift/Section/Initialization" class="dashAnchor"></a>
-                <a href="#/Initialization">
-                  <h3 class="section-name">Initialization</h3>
-                </a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Initialization"></a>
+                  <h3 class="section-name"><p>Initialization</p>
+</h3>
+                </div>
               </div>
               <ul>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:10AWSPricing7PricingV6client6region9partition8endpointAC15AWSSDKSwiftCore9AWSClientC_AH6RegionVSgAH9PartitionVSSSgtcfc"></a>
-                    <a name="//apple_ref/swift/Method/init(client:region:partition:endpoint:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:10AWSPricing7PricingV6client6region9partition8endpointAC15AWSSDKSwiftCore9AWSClientC_AH6RegionVSgAH9PartitionVSSSgtcfc">init(client:region:partition:endpoint:)</a>
+                    <a name="/s:11SotoPricing0B0V6client6region9partition8endpoint7timeout19byteBufferAllocator7optionsAC0A4Core9AWSClientC_AK6RegionVSgAK12AWSPartitionVSSSg3NIO10TimeAmountVSgAT04ByteiJ0VAK16AWSServiceConfigC7OptionsVtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(client:region:partition:endpoint:timeout:byteBufferAllocator:options:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11SotoPricing0B0V6client6region9partition8endpoint7timeout19byteBufferAllocator7optionsAC0A4Core9AWSClientC_AK6RegionVSgAK12AWSPartitionVSSSg3NIO10TimeAmountVSgAT04ByteiJ0VAK16AWSServiceConfigC7OptionsVtcfc">init(client:<wbr>region:<wbr>partition:<wbr>endpoint:<wbr>timeout:<wbr>byteBufferAllocator:<wbr>options:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -841,9 +869,12 @@
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span>
     <span class="nv">client</span><span class="p">:</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="p">,</span>
-    <span class="nv">region</span><span class="p">:</span> <span class="kt">AWSSDKSwiftCore</span><span class="o">.</span><span class="kt"><a href="../Structs/Region.html">Region</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
-    <span class="nv">partition</span><span class="p">:</span> <span class="kt">AWSSDKSwiftCore</span><span class="o">.</span><span class="kt"><a href="../Structs/Partition.html">Partition</a></span> <span class="o">=</span> <span class="o">.</span><span class="n">aws</span><span class="p">,</span>
-    <span class="nv">endpoint</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span>
+    <span class="nv">region</span><span class="p">:</span> <span class="kt">SotoCore</span><span class="o">.</span><span class="kt"><a href="../Structs/Region.html">Region</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="nv">partition</span><span class="p">:</span> <span class="kt"><a href="../Structs/AWSPartition.html">AWSPartition</a></span> <span class="o">=</span> <span class="o">.</span><span class="n">aws</span><span class="p">,</span>
+    <span class="nv">endpoint</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="nv">timeout</span><span class="p">:</span> <span class="kt">TimeAmount</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="nv">byteBufferAllocator</span><span class="p">:</span> <span class="kt">ByteBufferAllocator</span> <span class="o">=</span> <span class="kt">ByteBufferAllocator</span><span class="p">(),</span>
+    <span class="nv">options</span><span class="p">:</span> <span class="kt"><a href="../Classes/AWSServiceConfig.html">AWSServiceConfig</a></span><span class="o">.</span><span class="kt">Options</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="p">)</span></code></pre>
 
                         </div>
@@ -900,8 +931,23 @@
                                 </div>
                               </td>
                             </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>timeout</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Timeout value for HTTP requests</p>
+                                </div>
+                              </td>
+                            </tr>
                           </tbody>
                         </table>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Pricing/Pricing_API.swift#L39-L63">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -912,17 +958,19 @@
               <div class="task-name-container">
                 <a name="/API%20Calls"></a>
                 <a name="//apple_ref/swift/Section/API Calls" class="dashAnchor"></a>
-                <a href="#/API%20Calls">
-                  <h3 class="section-name">API Calls</h3>
-                </a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/API%20Calls"></a>
+                  <h3 class="section-name"><p>API Calls</p>
+</h3>
+                </div>
               </div>
               <ul>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:10AWSPricing7PricingV16describeServices_2on3NIO15EventLoopFutureCyAC08DescribeD8ResponseVGAC0jD7RequestV_AF0gH0_pSgtF"></a>
-                    <a name="//apple_ref/swift/Method/describeServices(_:on:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:10AWSPricing7PricingV16describeServices_2on3NIO15EventLoopFutureCyAC08DescribeD8ResponseVGAC0jD7RequestV_AF0gH0_pSgtF">describeServices(_:on:)</a>
+                    <a name="/s:11SotoPricing0B0V16describeServices_2on6logger3NIO15EventLoopFutureCyAC08DescribeD8ResponseVGAC0kD7RequestV_AG0hI0_pSg7Logging6LoggerVtF"></a>
+                    <a name="//apple_ref/swift/Method/describeServices(_:on:logger:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11SotoPricing0B0V16describeServices_2on6logger3NIO15EventLoopFutureCyAC08DescribeD8ResponseVGAC0kD7RequestV_AG0hI0_pSg7Logging6LoggerVtF">describeServices(_:<wbr>on:<wbr>logger:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -937,9 +985,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">describeServices</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/Pricing/DescribeServicesRequest.html">DescribeServicesRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/Pricing/DescribeServicesResponse.html">DescribeServicesResponse</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">describeServices</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/Pricing/DescribeServicesRequest.html">DescribeServicesRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">logger</span><span class="p">:</span> <span class="kt">Logger</span> <span class="o">=</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="o">.</span><span class="n">loggingDisabled</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/Pricing/DescribeServicesResponse.html">DescribeServicesResponse</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Pricing/Pricing_API.swift#L68-L70">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -947,9 +998,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:10AWSPricing7PricingV18getAttributeValues_2on3NIO15EventLoopFutureCyAC03GetdE8ResponseVGAC0kdE7RequestV_AF0hI0_pSgtF"></a>
-                    <a name="//apple_ref/swift/Method/getAttributeValues(_:on:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:10AWSPricing7PricingV18getAttributeValues_2on3NIO15EventLoopFutureCyAC03GetdE8ResponseVGAC0kdE7RequestV_AF0hI0_pSgtF">getAttributeValues(_:on:)</a>
+                    <a name="/s:11SotoPricing0B0V18getAttributeValues_2on6logger3NIO15EventLoopFutureCyAC03GetdE8ResponseVGAC0ldE7RequestV_AG0iJ0_pSg7Logging6LoggerVtF"></a>
+                    <a name="//apple_ref/swift/Method/getAttributeValues(_:on:logger:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11SotoPricing0B0V18getAttributeValues_2on6logger3NIO15EventLoopFutureCyAC03GetdE8ResponseVGAC0ldE7RequestV_AG0iJ0_pSg7Logging6LoggerVtF">getAttributeValues(_:<wbr>on:<wbr>logger:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -964,9 +1015,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getAttributeValues</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/Pricing/GetAttributeValuesRequest.html">GetAttributeValuesRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/Pricing/GetAttributeValuesResponse.html">GetAttributeValuesResponse</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getAttributeValues</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/Pricing/GetAttributeValuesRequest.html">GetAttributeValuesRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">logger</span><span class="p">:</span> <span class="kt">Logger</span> <span class="o">=</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="o">.</span><span class="n">loggingDisabled</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/Pricing/GetAttributeValuesResponse.html">GetAttributeValuesResponse</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Pricing/Pricing_API.swift#L73-L75">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -974,9 +1028,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:10AWSPricing7PricingV11getProducts_2on3NIO15EventLoopFutureCyAC03GetD8ResponseVGAC0jD7RequestV_AF0gH0_pSgtF"></a>
-                    <a name="//apple_ref/swift/Method/getProducts(_:on:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:10AWSPricing7PricingV11getProducts_2on3NIO15EventLoopFutureCyAC03GetD8ResponseVGAC0jD7RequestV_AF0gH0_pSgtF">getProducts(_:on:)</a>
+                    <a name="/s:11SotoPricing0B0V11getProducts_2on6logger3NIO15EventLoopFutureCyAC03GetD8ResponseVGAC0kD7RequestV_AG0hI0_pSg7Logging6LoggerVtF"></a>
+                    <a name="//apple_ref/swift/Method/getProducts(_:on:logger:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11SotoPricing0B0V11getProducts_2on6logger3NIO15EventLoopFutureCyAC03GetD8ResponseVGAC0kD7RequestV_AG0hI0_pSg7Logging6LoggerVtF">getProducts(_:<wbr>on:<wbr>logger:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -991,9 +1045,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getProducts</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/Pricing/GetProductsRequest.html">GetProductsRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/Pricing/GetProductsResponse.html">GetProductsResponse</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getProducts</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/Pricing/GetProductsRequest.html">GetProductsRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">logger</span><span class="p">:</span> <span class="kt">Logger</span> <span class="o">=</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="o">.</span><span class="n">loggingDisabled</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/Pricing/GetProductsResponse.html">GetProductsResponse</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Pricing/Pricing_API.swift#L78-L80">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1004,17 +1061,19 @@
               <div class="task-name-container">
                 <a name="/Paginators"></a>
                 <a name="//apple_ref/swift/Section/Paginators" class="dashAnchor"></a>
-                <a href="#/Paginators">
-                  <h3 class="section-name">Paginators</h3>
-                </a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Paginators"></a>
+                  <h3 class="section-name"><p>Paginators</p>
+</h3>
+                </div>
               </div>
               <ul>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:10AWSPricing7PricingV25describeServicesPaginator_2on0F4Page3NIO15EventLoopFutureCyytGAC08DescribeD7RequestV_AG0iJ0_pSgAIySbGAC0lD8ResponseV_AgM_ptctF"></a>
-                    <a name="//apple_ref/swift/Method/describeServicesPaginator(_:on:onPage:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:10AWSPricing7PricingV25describeServicesPaginator_2on0F4Page3NIO15EventLoopFutureCyytGAC08DescribeD7RequestV_AG0iJ0_pSgAIySbGAC0lD8ResponseV_AgM_ptctF">describeServicesPaginator(_:on:onPage:)</a>
+                    <a name="/s:11SotoPricing0B0V25describeServicesPaginator_2on6logger0F4Page3NIO15EventLoopFutureCyytGAC08DescribeD7RequestV_AH0jK0_pSg7Logging6LoggerVAJySbGAC0mD8ResponseV_AhN_ptctF"></a>
+                    <a name="//apple_ref/swift/Method/describeServicesPaginator(_:on:logger:onPage:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11SotoPricing0B0V25describeServicesPaginator_2on6logger0F4Page3NIO15EventLoopFutureCyytGAC08DescribeD7RequestV_AH0jK0_pSg7Logging6LoggerVAJySbGAC0mD8ResponseV_AhN_ptctF">describeServicesPaginator(_:<wbr>on:<wbr>logger:<wbr>onPage:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1032,11 +1091,14 @@
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">describeServicesPaginator</span><span class="p">(</span>
     <span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/Pricing/DescribeServicesRequest.html">DescribeServicesRequest</a></span><span class="p">,</span>
     <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
-    <span class="nv">onPage</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/Pricing/DescribeServicesResponse.html">DescribeServicesResponse</a></span><span class="p">,</span>
-    <span class="kt">EventLoop</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Bool</span><span class="o">&gt;</span>
+    <span class="nv">logger</span><span class="p">:</span> <span class="kt">Logger</span> <span class="o">=</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="o">.</span><span class="n">loggingDisabled</span><span class="p">,</span>
+    <span class="nv">onPage</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/Pricing/DescribeServicesResponse.html">DescribeServicesResponse</a></span><span class="p">,</span> <span class="kt">EventLoop</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Bool</span><span class="o">&gt;</span>
 <span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Void</span><span class="o">&gt;</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Pricing/Pricing_Paginator.swift#L23-L36">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1044,9 +1106,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:10AWSPricing7PricingV27getAttributeValuesPaginator_2on0G4Page3NIO15EventLoopFutureCyytGAC03GetdE7RequestV_AG0jK0_pSgAIySbGAC0mdE8ResponseV_AgM_ptctF"></a>
-                    <a name="//apple_ref/swift/Method/getAttributeValuesPaginator(_:on:onPage:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:10AWSPricing7PricingV27getAttributeValuesPaginator_2on0G4Page3NIO15EventLoopFutureCyytGAC03GetdE7RequestV_AG0jK0_pSgAIySbGAC0mdE8ResponseV_AgM_ptctF">getAttributeValuesPaginator(_:on:onPage:)</a>
+                    <a name="/s:11SotoPricing0B0V27getAttributeValuesPaginator_2on6logger0G4Page3NIO15EventLoopFutureCyytGAC03GetdE7RequestV_AH0kL0_pSg7Logging6LoggerVAJySbGAC0ndE8ResponseV_AhN_ptctF"></a>
+                    <a name="//apple_ref/swift/Method/getAttributeValuesPaginator(_:on:logger:onPage:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11SotoPricing0B0V27getAttributeValuesPaginator_2on6logger0G4Page3NIO15EventLoopFutureCyytGAC03GetdE7RequestV_AH0kL0_pSg7Logging6LoggerVAJySbGAC0ndE8ResponseV_AhN_ptctF">getAttributeValuesPaginator(_:<wbr>on:<wbr>logger:<wbr>onPage:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1064,11 +1126,14 @@
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getAttributeValuesPaginator</span><span class="p">(</span>
     <span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/Pricing/GetAttributeValuesRequest.html">GetAttributeValuesRequest</a></span><span class="p">,</span>
     <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
-    <span class="nv">onPage</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/Pricing/GetAttributeValuesResponse.html">GetAttributeValuesResponse</a></span><span class="p">,</span>
-    <span class="kt">EventLoop</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Bool</span><span class="o">&gt;</span>
+    <span class="nv">logger</span><span class="p">:</span> <span class="kt">Logger</span> <span class="o">=</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="o">.</span><span class="n">loggingDisabled</span><span class="p">,</span>
+    <span class="nv">onPage</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/Pricing/GetAttributeValuesResponse.html">GetAttributeValuesResponse</a></span><span class="p">,</span> <span class="kt">EventLoop</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Bool</span><span class="o">&gt;</span>
 <span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Void</span><span class="o">&gt;</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Pricing/Pricing_Paginator.swift#L39-L52">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1076,9 +1141,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:10AWSPricing7PricingV20getProductsPaginator_2on0F4Page3NIO15EventLoopFutureCyytGAC03GetD7RequestV_AG0iJ0_pSgAIySbGAC0lD8ResponseV_AgM_ptctF"></a>
-                    <a name="//apple_ref/swift/Method/getProductsPaginator(_:on:onPage:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:10AWSPricing7PricingV20getProductsPaginator_2on0F4Page3NIO15EventLoopFutureCyytGAC03GetD7RequestV_AG0iJ0_pSgAIySbGAC0lD8ResponseV_AgM_ptctF">getProductsPaginator(_:on:onPage:)</a>
+                    <a name="/s:11SotoPricing0B0V20getProductsPaginator_2on6logger0F4Page3NIO15EventLoopFutureCyytGAC03GetD7RequestV_AH0jK0_pSg7Logging6LoggerVAJySbGAC0mD8ResponseV_AhN_ptctF"></a>
+                    <a name="//apple_ref/swift/Method/getProductsPaginator(_:on:logger:onPage:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11SotoPricing0B0V20getProductsPaginator_2on6logger0F4Page3NIO15EventLoopFutureCyytGAC03GetD7RequestV_AH0jK0_pSg7Logging6LoggerVAJySbGAC0mD8ResponseV_AhN_ptctF">getProductsPaginator(_:<wbr>on:<wbr>logger:<wbr>onPage:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1096,11 +1161,14 @@
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getProductsPaginator</span><span class="p">(</span>
     <span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/Pricing/GetProductsRequest.html">GetProductsRequest</a></span><span class="p">,</span>
     <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
-    <span class="nv">onPage</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/Pricing/GetProductsResponse.html">GetProductsResponse</a></span><span class="p">,</span>
-    <span class="kt">EventLoop</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Bool</span><span class="o">&gt;</span>
+    <span class="nv">logger</span><span class="p">:</span> <span class="kt">Logger</span> <span class="o">=</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="o">.</span><span class="n">loggingDisabled</span><span class="p">,</span>
+    <span class="nv">onPage</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/Pricing/GetProductsResponse.html">GetProductsResponse</a></span><span class="p">,</span> <span class="kt">EventLoop</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Bool</span><span class="o">&gt;</span>
 <span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Void</span><span class="o">&gt;</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Pricing/Pricing_Paginator.swift#L55-L68">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1111,17 +1179,19 @@
               <div class="task-name-container">
                 <a name="/Shapes"></a>
                 <a name="//apple_ref/swift/Section/Shapes" class="dashAnchor"></a>
-                <a href="#/Shapes">
-                  <h3 class="section-name">Shapes</h3>
-                </a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Shapes"></a>
+                  <h3 class="section-name"><p>Shapes</p>
+</h3>
+                </div>
               </div>
               <ul>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:10AWSPricing7PricingV23DescribeServicesRequestV"></a>
+                    <a name="/s:11SotoPricing0B0V23DescribeServicesRequestV"></a>
                     <a name="//apple_ref/swift/Struct/DescribeServicesRequest" class="dashAnchor"></a>
-                    <a class="token" href="#/s:10AWSPricing7PricingV23DescribeServicesRequestV">DescribeServicesRequest</a>
+                    <a class="token" href="#/s:11SotoPricing0B0V23DescribeServicesRequestV">DescribeServicesRequest</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1142,15 +1212,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Pricing/Pricing_Shapes.swift#L43-L71">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:10AWSPricing7PricingV25GetAttributeValuesRequestV"></a>
+                    <a name="/s:11SotoPricing0B0V25GetAttributeValuesRequestV"></a>
                     <a name="//apple_ref/swift/Struct/GetAttributeValuesRequest" class="dashAnchor"></a>
-                    <a class="token" href="#/s:10AWSPricing7PricingV25GetAttributeValuesRequestV">GetAttributeValuesRequest</a>
+                    <a class="token" href="#/s:11SotoPricing0B0V25GetAttributeValuesRequestV">GetAttributeValuesRequest</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1171,15 +1244,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Pricing/Pricing_Shapes.swift#L115-L143">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:10AWSPricing7PricingV18GetProductsRequestV"></a>
+                    <a name="/s:11SotoPricing0B0V18GetProductsRequestV"></a>
                     <a name="//apple_ref/swift/Struct/GetProductsRequest" class="dashAnchor"></a>
-                    <a class="token" href="#/s:10AWSPricing7PricingV18GetProductsRequestV">GetProductsRequest</a>
+                    <a class="token" href="#/s:11SotoPricing0B0V18GetProductsRequestV">GetProductsRequest</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1200,15 +1276,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Pricing/Pricing_Shapes.swift#L162-L194">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:10AWSPricing7PricingV14AttributeValueV"></a>
+                    <a name="/s:11SotoPricing0B0V14AttributeValueV"></a>
                     <a name="//apple_ref/swift/Struct/AttributeValue" class="dashAnchor"></a>
-                    <a class="token" href="#/s:10AWSPricing7PricingV14AttributeValueV">AttributeValue</a>
+                    <a class="token" href="#/s:11SotoPricing0B0V14AttributeValueV">AttributeValue</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1224,9 +1303,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">AttributeValue</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">AttributeValue</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Pricing/Pricing_Shapes.swift#L30-L41">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1234,9 +1316,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:10AWSPricing7PricingV24DescribeServicesResponseV"></a>
+                    <a name="/s:11SotoPricing0B0V24DescribeServicesResponseV"></a>
                     <a name="//apple_ref/swift/Struct/DescribeServicesResponse" class="dashAnchor"></a>
-                    <a class="token" href="#/s:10AWSPricing7PricingV24DescribeServicesResponseV">DescribeServicesResponse</a>
+                    <a class="token" href="#/s:11SotoPricing0B0V24DescribeServicesResponseV">DescribeServicesResponse</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1252,9 +1334,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DescribeServicesResponse</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DescribeServicesResponse</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Pricing/Pricing_Shapes.swift#L73-L92">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1262,9 +1347,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:10AWSPricing7PricingV6FilterV"></a>
+                    <a name="/s:11SotoPricing0B0V6FilterV"></a>
                     <a name="//apple_ref/swift/Struct/Filter" class="dashAnchor"></a>
-                    <a class="token" href="#/s:10AWSPricing7PricingV6FilterV">Filter</a>
+                    <a class="token" href="#/s:11SotoPricing0B0V6FilterV">Filter</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1284,15 +1369,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Pricing/Pricing_Shapes.swift#L94-L113">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:10AWSPricing7PricingV26GetAttributeValuesResponseV"></a>
+                    <a name="/s:11SotoPricing0B0V26GetAttributeValuesResponseV"></a>
                     <a name="//apple_ref/swift/Struct/GetAttributeValuesResponse" class="dashAnchor"></a>
-                    <a class="token" href="#/s:10AWSPricing7PricingV26GetAttributeValuesResponseV">GetAttributeValuesResponse</a>
+                    <a class="token" href="#/s:11SotoPricing0B0V26GetAttributeValuesResponseV">GetAttributeValuesResponse</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1308,9 +1396,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">GetAttributeValuesResponse</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">GetAttributeValuesResponse</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Pricing/Pricing_Shapes.swift#L145-L160">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1318,9 +1409,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:10AWSPricing7PricingV19GetProductsResponseV"></a>
+                    <a name="/s:11SotoPricing0B0V19GetProductsResponseV"></a>
                     <a name="//apple_ref/swift/Struct/GetProductsResponse" class="dashAnchor"></a>
-                    <a class="token" href="#/s:10AWSPricing7PricingV19GetProductsResponseV">GetProductsResponse</a>
+                    <a class="token" href="#/s:11SotoPricing0B0V19GetProductsResponseV">GetProductsResponse</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1336,9 +1427,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">GetProductsResponse</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">GetProductsResponse</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Pricing/Pricing_Shapes.swift#L196-L215">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1346,9 +1440,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:10AWSPricing7PricingV7ServiceV"></a>
+                    <a name="/s:11SotoPricing0B0V7ServiceV"></a>
                     <a name="//apple_ref/swift/Struct/Service" class="dashAnchor"></a>
-                    <a class="token" href="#/s:10AWSPricing7PricingV7ServiceV">Service</a>
+                    <a class="token" href="#/s:11SotoPricing0B0V7ServiceV">Service</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1364,9 +1458,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Service</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Service</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Pricing/Pricing_Shapes.swift#L217-L232">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1377,17 +1474,19 @@
               <div class="task-name-container">
                 <a name="/Enums"></a>
                 <a name="//apple_ref/swift/Section/Enums" class="dashAnchor"></a>
-                <a href="#/Enums">
-                  <h3 class="section-name">Enums</h3>
-                </a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Enums"></a>
+                  <h3 class="section-name"><p>Enums</p>
+</h3>
+                </div>
               </div>
               <ul>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:10AWSPricing7PricingV10FilterTypeO"></a>
+                    <a name="/s:11SotoPricing0B0V10FilterTypeO"></a>
                     <a name="//apple_ref/swift/Enum/FilterType" class="dashAnchor"></a>
-                    <a class="token" href="#/s:10AWSPricing7PricingV10FilterTypeO">FilterType</a>
+                    <a class="token" href="#/s:11SotoPricing0B0V10FilterTypeO">FilterType</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1406,6 +1505,9 @@
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">FilterType</span> <span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="kt">CustomStringConvertible</span><span class="p">,</span> <span class="kt">Codable</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Pricing/Pricing_Shapes.swift#L23-L26">Show on GitHub</a>
                       </div>
                     </section>
                   </div>

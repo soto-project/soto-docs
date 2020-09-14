@@ -15,7 +15,7 @@
     <header>
       <div class="content-wrapper">
         <p><a href="../../index.html"> Docs</a> (54% documented)</p>
-        <p class="header-right"><a href="https://github.com/swift-aws/aws-sdk-swift"><img src="../../img/gh.png"/>View on GitHub</a></p>
+        <p class="header-right"><a href="https://github.com/soto-project/soto"><img src="../../img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -28,6 +28,9 @@
     <div class="content-wrapper">
       <nav class="sidebar">
         <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../../User%20Guides.html">User Guides</a>
+          </li>
           <li class="nav-group-name">
             <a href="../../AWSSDKSwiftCore.html">AWSSDKSwiftCore</a>
           </li>
@@ -68,6 +71,9 @@
             <a href="../../AppSync.html">AppSync</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../Appflow.html">Appflow</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../ApplicationAutoScaling.html">ApplicationAutoScaling</a>
           </li>
           <li class="nav-group-name">
@@ -93,6 +99,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../Batch.html">Batch</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../Braket.html">Braket</a>
           </li>
           <li class="nav-group-name">
             <a href="../../Budgets.html">Budgets</a>
@@ -335,6 +344,12 @@
             <a href="../../IAM.html">IAM</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../IVS.html">IVS</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../IdentityStore.html">IdentityStore</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../Imagebuilder.html">Imagebuilder</a>
           </li>
           <li class="nav-group-name">
@@ -557,6 +572,9 @@
             <a href="../../Redshift.html">Redshift</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../RedshiftDataAPIService.html">RedshiftDataAPIService</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../Rekognition.html">Rekognition</a>
           </li>
           <li class="nav-group-name">
@@ -606,6 +624,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../SSO.html">SSO</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../SSOAdmin.html">SSOAdmin</a>
           </li>
           <li class="nav-group-name">
             <a href="../../SSOOIDC.html">SSOOIDC</a>
@@ -735,6 +756,7 @@
             <h1>UpdateWorkforceRequest</h1>
               <div class="declaration">
                 <div class="language">
+                  
                   <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">UpdateWorkforceRequest</span> <span class="p">:</span> <span class="kt"><a href="../../Protocols/AWSEncodableShape.html">AWSEncodableShape</a></span></code></pre>
 
                 </div>
@@ -748,9 +770,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:12AWSSageMaker04SageB0V22UpdateWorkforceRequestV14sourceIpConfigAC06SourcehI0VSgvp"></a>
-                    <a name="//apple_ref/swift/Property/sourceIpConfig" class="dashAnchor"></a>
-                    <a class="token" href="#/s:12AWSSageMaker04SageB0V22UpdateWorkforceRequestV14sourceIpConfigAC06SourcehI0VSgvp">sourceIpConfig</a>
+                    <a name="/s:13SotoSageMaker0bC0V22UpdateWorkforceRequestV10oidcConfigAC04OidcH0VSgvp"></a>
+                    <a name="//apple_ref/swift/Property/oidcConfig" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SotoSageMaker0bC0V22UpdateWorkforceRequestV10oidcConfigAC04OidcH0VSgvp">oidcConfig</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -758,7 +780,37 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>A list of one to four worker IP address ranges (CIDRs) that can be used to access tasks assigned to this workforce. Maximum: Four CIDR values</p>
+                        <p>Use this parameter to update your OIDC Identity Provider (IdP) configuration for a workforce made using your own IdP.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">oidcConfig</span><span class="p">:</span> <span class="kt"><a href="../../Structs/SageMaker/OidcConfig.html">OidcConfig</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/SageMaker/SageMaker_Shapes.swift#L14844">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SotoSageMaker0bC0V22UpdateWorkforceRequestV14sourceIpConfigAC06SourcehI0VSgvp"></a>
+                    <a name="//apple_ref/swift/Property/sourceIpConfig" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SotoSageMaker0bC0V22UpdateWorkforceRequestV14sourceIpConfigAC06SourcehI0VSgvp">sourceIpConfig</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A list of one to ten worker IP address ranges (CIDRs) that can be used to access tasks assigned to this workforce. Maximum: Ten CIDR values</p>
 
                       </div>
                       <div class="declaration">
@@ -769,15 +821,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/SageMaker/SageMaker_Shapes.swift#L14846">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:12AWSSageMaker04SageB0V22UpdateWorkforceRequestV13workforceNameSSvp"></a>
+                    <a name="/s:13SotoSageMaker0bC0V22UpdateWorkforceRequestV13workforceNameSSvp"></a>
                     <a name="//apple_ref/swift/Property/workforceName" class="dashAnchor"></a>
-                    <a class="token" href="#/s:12AWSSageMaker04SageB0V22UpdateWorkforceRequestV13workforceNameSSvp">workforceName</a>
+                    <a class="token" href="#/s:13SotoSageMaker0bC0V22UpdateWorkforceRequestV13workforceNameSSvp">workforceName</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -785,7 +840,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The name of the private workforce whose access you want to restrict. WorkforceName is automatically set to default when a workforce is created and cannot be modified.</p>
+                        <p>The name of the private workforce that you want to update. You can find your workforce name by using the operation.</p>
 
                       </div>
                       <div class="declaration">
@@ -796,15 +851,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/SageMaker/SageMaker_Shapes.swift#L14848">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:12AWSSageMaker04SageB0V22UpdateWorkforceRequestV14sourceIpConfig13workforceNameAeC06SourcehI0VSg_SStcfc"></a>
-                    <a name="//apple_ref/swift/Method/init(sourceIpConfig:workforceName:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:12AWSSageMaker04SageB0V22UpdateWorkforceRequestV14sourceIpConfig13workforceNameAeC06SourcehI0VSg_SStcfc">init(sourceIpConfig:workforceName:)</a>
+                    <a name="/s:13SotoSageMaker0bC0V22UpdateWorkforceRequestV10oidcConfig08sourceIpH013workforceNameAeC04OidcH0VSg_AC06SourcejH0VSgSStcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(oidcConfig:sourceIpConfig:workforceName:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SotoSageMaker0bC0V22UpdateWorkforceRequestV10oidcConfig08sourceIpH013workforceNameAeC04OidcH0VSg_AC06SourcejH0VSgSStcfc">init(oidcConfig:<wbr>sourceIpConfig:<wbr>workforceName:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -819,9 +877,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">sourceIpConfig</span><span class="p">:</span> <span class="kt"><a href="../../Structs/SageMaker/SourceIpConfig.html">SourceIpConfig</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">workforceName</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">oidcConfig</span><span class="p">:</span> <span class="kt"><a href="../../Structs/SageMaker/OidcConfig.html">OidcConfig</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">sourceIpConfig</span><span class="p">:</span> <span class="kt"><a href="../../Structs/SageMaker/SourceIpConfig.html">SourceIpConfig</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">workforceName</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/SageMaker/SageMaker_Shapes.swift#L14850-L14854">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -829,9 +890,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:15AWSSDKSwiftCore17AWSEncodableShapeP8validate4nameySS_tKF"></a>
+                    <a name="/s:8SotoCore17AWSEncodableShapeP8validate4nameySS_tKF"></a>
                     <a name="//apple_ref/swift/Method/validate(name:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15AWSSDKSwiftCore17AWSEncodableShapeP8validate4nameySS_tKF">validate(name:)</a>
+                    <a class="token" href="#/s:8SotoCore17AWSEncodableShapeP8validate4nameySS_tKF">validate(name:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -848,6 +909,9 @@
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">validate</span><span class="p">(</span><span class="nv">name</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="k">throws</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/SageMaker/SageMaker_Shapes.swift#L14856-L14862">Show on GitHub</a>
                       </div>
                     </section>
                   </div>

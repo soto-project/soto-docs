@@ -15,7 +15,7 @@
     <header>
       <div class="content-wrapper">
         <p><a href="../../index.html"> Docs</a> (54% documented)</p>
-        <p class="header-right"><a href="https://github.com/swift-aws/aws-sdk-swift"><img src="../../img/gh.png"/>View on GitHub</a></p>
+        <p class="header-right"><a href="https://github.com/soto-project/soto"><img src="../../img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -28,6 +28,9 @@
     <div class="content-wrapper">
       <nav class="sidebar">
         <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../../User%20Guides.html">User Guides</a>
+          </li>
           <li class="nav-group-name">
             <a href="../../AWSSDKSwiftCore.html">AWSSDKSwiftCore</a>
           </li>
@@ -68,6 +71,9 @@
             <a href="../../AppSync.html">AppSync</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../Appflow.html">Appflow</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../ApplicationAutoScaling.html">ApplicationAutoScaling</a>
           </li>
           <li class="nav-group-name">
@@ -93,6 +99,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../Batch.html">Batch</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../Braket.html">Braket</a>
           </li>
           <li class="nav-group-name">
             <a href="../../Budgets.html">Budgets</a>
@@ -335,6 +344,12 @@
             <a href="../../IAM.html">IAM</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../IVS.html">IVS</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../IdentityStore.html">IdentityStore</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../Imagebuilder.html">Imagebuilder</a>
           </li>
           <li class="nav-group-name">
@@ -557,6 +572,9 @@
             <a href="../../Redshift.html">Redshift</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../RedshiftDataAPIService.html">RedshiftDataAPIService</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../Rekognition.html">Rekognition</a>
           </li>
           <li class="nav-group-name">
@@ -606,6 +624,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../SSO.html">SSO</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../SSOAdmin.html">SSOAdmin</a>
           </li>
           <li class="nav-group-name">
             <a href="../../SSOOIDC.html">SSOOIDC</a>
@@ -735,7 +756,8 @@
             <h1>PrincipalResourcePermissions</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">PrincipalResourcePermissions</span> <span class="p">:</span> <span class="kt"><a href="../../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                  
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">PrincipalResourcePermissions</span> <span class="p">:</span> <span class="kt"><a href="../../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                 </div>
               </div>
@@ -748,9 +770,39 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:16AWSLakeFormation04LakeB0V28PrincipalResourcePermissionsV11permissionsSayAC10PermissionOGSgvp"></a>
+                    <a name="/s:17SotoLakeFormation0bC0V28PrincipalResourcePermissionsV17additionalDetailsAC0H3MapVSgvp"></a>
+                    <a name="//apple_ref/swift/Property/additionalDetails" class="dashAnchor"></a>
+                    <a class="token" href="#/s:17SotoLakeFormation0bC0V28PrincipalResourcePermissionsV17additionalDetailsAC0H3MapVSgvp">additionalDetails</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This attribute can be used to return any additional details of PrincipalResourcePermissions. Currently returns only as a RAM share resource ARN.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">additionalDetails</span><span class="p">:</span> <span class="kt"><a href="../../Structs/LakeFormation/DetailsMap.html">DetailsMap</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/LakeFormation/LakeFormation_Shapes.swift#L681">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:17SotoLakeFormation0bC0V28PrincipalResourcePermissionsV11permissionsSayAC10PermissionOGSgvp"></a>
                     <a name="//apple_ref/swift/Property/permissions" class="dashAnchor"></a>
-                    <a class="token" href="#/s:16AWSLakeFormation04LakeB0V28PrincipalResourcePermissionsV11permissionsSayAC10PermissionOGSgvp">permissions</a>
+                    <a class="token" href="#/s:17SotoLakeFormation0bC0V28PrincipalResourcePermissionsV11permissionsSayAC10PermissionOGSgvp">permissions</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -769,15 +821,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/LakeFormation/LakeFormation_Shapes.swift#L683">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:16AWSLakeFormation04LakeB0V28PrincipalResourcePermissionsV26permissionsWithGrantOptionSayAC10PermissionOGSgvp"></a>
+                    <a name="/s:17SotoLakeFormation0bC0V28PrincipalResourcePermissionsV26permissionsWithGrantOptionSayAC10PermissionOGSgvp"></a>
                     <a name="//apple_ref/swift/Property/permissionsWithGrantOption" class="dashAnchor"></a>
-                    <a class="token" href="#/s:16AWSLakeFormation04LakeB0V28PrincipalResourcePermissionsV26permissionsWithGrantOptionSayAC10PermissionOGSgvp">permissionsWithGrantOption</a>
+                    <a class="token" href="#/s:17SotoLakeFormation0bC0V28PrincipalResourcePermissionsV26permissionsWithGrantOptionSayAC10PermissionOGSgvp">permissionsWithGrantOption</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -796,15 +851,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/LakeFormation/LakeFormation_Shapes.swift#L685">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:16AWSLakeFormation04LakeB0V28PrincipalResourcePermissionsV9principalAC04DatacD0VSgvp"></a>
+                    <a name="/s:17SotoLakeFormation0bC0V28PrincipalResourcePermissionsV9principalAC04DatabD0VSgvp"></a>
                     <a name="//apple_ref/swift/Property/principal" class="dashAnchor"></a>
-                    <a class="token" href="#/s:16AWSLakeFormation04LakeB0V28PrincipalResourcePermissionsV9principalAC04DatacD0VSgvp">principal</a>
+                    <a class="token" href="#/s:17SotoLakeFormation0bC0V28PrincipalResourcePermissionsV9principalAC04DatabD0VSgvp">principal</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -823,15 +881,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/LakeFormation/LakeFormation_Shapes.swift#L687">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:16AWSLakeFormation04LakeB0V28PrincipalResourcePermissionsV8resourceAC0E0VSgvp"></a>
+                    <a name="/s:17SotoLakeFormation0bC0V28PrincipalResourcePermissionsV8resourceAC0E0VSgvp"></a>
                     <a name="//apple_ref/swift/Property/resource" class="dashAnchor"></a>
-                    <a class="token" href="#/s:16AWSLakeFormation04LakeB0V28PrincipalResourcePermissionsV8resourceAC0E0VSgvp">resource</a>
+                    <a class="token" href="#/s:17SotoLakeFormation0bC0V28PrincipalResourcePermissionsV8resourceAC0E0VSgvp">resource</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -850,15 +911,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/LakeFormation/LakeFormation_Shapes.swift#L689">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:16AWSLakeFormation04LakeB0V28PrincipalResourcePermissionsV11permissions0G15WithGrantOption9principal8resourceAESayAC10PermissionOGSg_AmC04DatacD0VSgAC0E0VSgtcfc"></a>
-                    <a name="//apple_ref/swift/Method/init(permissions:permissionsWithGrantOption:principal:resource:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:16AWSLakeFormation04LakeB0V28PrincipalResourcePermissionsV11permissions0G15WithGrantOption9principal8resourceAESayAC10PermissionOGSg_AmC04DatacD0VSgAC0E0VSgtcfc">init(permissions:permissionsWithGrantOption:principal:resource:)</a>
+                    <a name="/s:17SotoLakeFormation0bC0V28PrincipalResourcePermissionsV17additionalDetails11permissions0I15WithGrantOption9principal8resourceAeC0H3MapVSg_SayAC10PermissionOGSgAqC04DatabD0VSgAC0E0VSgtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(additionalDetails:permissions:permissionsWithGrantOption:principal:resource:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:17SotoLakeFormation0bC0V28PrincipalResourcePermissionsV17additionalDetails11permissions0I15WithGrantOption9principal8resourceAeC0H3MapVSg_SayAC10PermissionOGSgAqC04DatabD0VSgAC0E0VSgtcfc">init(additionalDetails:<wbr>permissions:<wbr>permissionsWithGrantOption:<wbr>principal:<wbr>resource:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -873,9 +937,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">permissions</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../../Structs/LakeFormation/Permission.html">Permission</a></span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">permissionsWithGrantOption</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../../Structs/LakeFormation/Permission.html">Permission</a></span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">principal</span><span class="p">:</span> <span class="kt"><a href="../../Structs/LakeFormation/DataLakePrincipal.html">DataLakePrincipal</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">resource</span><span class="p">:</span> <span class="kt"><a href="../../Structs/LakeFormation/Resource.html">Resource</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">additionalDetails</span><span class="p">:</span> <span class="kt"><a href="../../Structs/LakeFormation/DetailsMap.html">DetailsMap</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">permissions</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../../Structs/LakeFormation/Permission.html">Permission</a></span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">permissionsWithGrantOption</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../../Structs/LakeFormation/Permission.html">Permission</a></span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">principal</span><span class="p">:</span> <span class="kt"><a href="../../Structs/LakeFormation/DataLakePrincipal.html">DataLakePrincipal</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">resource</span><span class="p">:</span> <span class="kt"><a href="../../Structs/LakeFormation/Resource.html">Resource</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/LakeFormation/LakeFormation_Shapes.swift#L691-L697">Show on GitHub</a>
                       </div>
                     </section>
                   </div>

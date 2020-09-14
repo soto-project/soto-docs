@@ -15,7 +15,7 @@
     <header>
       <div class="content-wrapper">
         <p><a href="../../index.html"> Docs</a> (54% documented)</p>
-        <p class="header-right"><a href="https://github.com/swift-aws/aws-sdk-swift"><img src="../../img/gh.png"/>View on GitHub</a></p>
+        <p class="header-right"><a href="https://github.com/soto-project/soto"><img src="../../img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -28,6 +28,9 @@
     <div class="content-wrapper">
       <nav class="sidebar">
         <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../../User%20Guides.html">User Guides</a>
+          </li>
           <li class="nav-group-name">
             <a href="../../AWSSDKSwiftCore.html">AWSSDKSwiftCore</a>
           </li>
@@ -68,6 +71,9 @@
             <a href="../../AppSync.html">AppSync</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../Appflow.html">Appflow</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../ApplicationAutoScaling.html">ApplicationAutoScaling</a>
           </li>
           <li class="nav-group-name">
@@ -93,6 +99,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../Batch.html">Batch</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../Braket.html">Braket</a>
           </li>
           <li class="nav-group-name">
             <a href="../../Budgets.html">Budgets</a>
@@ -335,6 +344,12 @@
             <a href="../../IAM.html">IAM</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../IVS.html">IVS</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../IdentityStore.html">IdentityStore</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../Imagebuilder.html">Imagebuilder</a>
           </li>
           <li class="nav-group-name">
@@ -557,6 +572,9 @@
             <a href="../../Redshift.html">Redshift</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../RedshiftDataAPIService.html">RedshiftDataAPIService</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../Rekognition.html">Rekognition</a>
           </li>
           <li class="nav-group-name">
@@ -606,6 +624,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../SSO.html">SSO</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../SSOAdmin.html">SSOAdmin</a>
           </li>
           <li class="nav-group-name">
             <a href="../../SSOOIDC.html">SSOOIDC</a>
@@ -735,7 +756,8 @@
             <h1>Authorizer</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Authorizer</span> <span class="p">:</span> <span class="kt"><a href="../../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                  
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Authorizer</span> <span class="p">:</span> <span class="kt"><a href="../../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                 </div>
               </div>
@@ -748,9 +770,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:15AWSApiGatewayV203ApibC0V10AuthorizerV24authorizerCredentialsArnSSSgvp"></a>
+                    <a name="/s:16SotoApiGatewayV20bcD0V10AuthorizerV24authorizerCredentialsArnSSSgvp"></a>
                     <a name="//apple_ref/swift/Property/authorizerCredentialsArn" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15AWSApiGatewayV203ApibC0V10AuthorizerV24authorizerCredentialsArnSSSgvp">authorizerCredentialsArn</a>
+                    <a class="token" href="#/s:16SotoApiGatewayV20bcD0V10AuthorizerV24authorizerCredentialsArnSSSgvp">authorizerCredentialsArn</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -758,7 +780,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Specifies the required credentials as an IAM role for API Gateway to invoke the authorizer. To specify an IAM role for API Gateway to assume, use the role&rsquo;s Amazon Resource Name (ARN). To use resource-based permissions on the Lambda function, specify null. Supported only for REQUEST authorizers.</p>
+                        <p>Specifies the required credentials as an IAM role for API Gateway to invoke the authorizer. To specify an IAM role for API Gateway to assume, use the role&rsquo;s Amazon Resource Name (ARN). To use resource-based permissions on the Lambda function, don&rsquo;t specify this parameter. Supported only for REQUEST authorizers.</p>
 
                       </div>
                       <div class="declaration">
@@ -769,15 +791,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ApiGatewayV2/ApiGatewayV2_Shapes.swift#L233">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:15AWSApiGatewayV203ApibC0V10AuthorizerV12authorizerIdSSSgvp"></a>
+                    <a name="/s:16SotoApiGatewayV20bcD0V10AuthorizerV12authorizerIdSSSgvp"></a>
                     <a name="//apple_ref/swift/Property/authorizerId" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15AWSApiGatewayV203ApibC0V10AuthorizerV12authorizerIdSSSgvp">authorizerId</a>
+                    <a class="token" href="#/s:16SotoApiGatewayV20bcD0V10AuthorizerV12authorizerIdSSSgvp">authorizerId</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -796,15 +821,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ApiGatewayV2/ApiGatewayV2_Shapes.swift#L235">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:15AWSApiGatewayV203ApibC0V10AuthorizerV28authorizerResultTtlInSecondsSiSgvp"></a>
-                    <a name="//apple_ref/swift/Property/authorizerResultTtlInSeconds" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15AWSApiGatewayV203ApibC0V10AuthorizerV28authorizerResultTtlInSecondsSiSgvp">authorizerResultTtlInSeconds</a>
+                    <a name="/s:16SotoApiGatewayV20bcD0V10AuthorizerV30authorizerPayloadFormatVersionSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/authorizerPayloadFormatVersion" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16SotoApiGatewayV20bcD0V10AuthorizerV30authorizerPayloadFormatVersionSSSgvp">authorizerPayloadFormatVersion</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -812,7 +840,37 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Authorizer caching is not currently supported. Don&rsquo;t specify this value for authorizers.</p>
+                        <p>Specifies the format of the payload sent to an HTTP API Lambda authorizer. Required for HTTP API Lambda authorizers. Supported values are 1.0 and 2.0. To learn more, see Working with AWS Lambda authorizers for HTTP APIs.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">authorizerPayloadFormatVersion</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ApiGatewayV2/ApiGatewayV2_Shapes.swift#L237">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16SotoApiGatewayV20bcD0V10AuthorizerV28authorizerResultTtlInSecondsSiSgvp"></a>
+                    <a name="//apple_ref/swift/Property/authorizerResultTtlInSeconds" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16SotoApiGatewayV20bcD0V10AuthorizerV28authorizerResultTtlInSecondsSiSgvp">authorizerResultTtlInSeconds</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The time to live (TTL) for cached authorizer results, in seconds. If it equals 0, authorization caching is disabled. If it is greater than 0, API Gateway caches authorizer responses. The maximum value is 3600, or 1 hour. Supported only for HTTP API Lambda authorizers.</p>
 
                       </div>
                       <div class="declaration">
@@ -823,15 +881,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ApiGatewayV2/ApiGatewayV2_Shapes.swift#L239">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:15AWSApiGatewayV203ApibC0V10AuthorizerV14authorizerTypeAC0eG0OSgvp"></a>
+                    <a name="/s:16SotoApiGatewayV20bcD0V10AuthorizerV14authorizerTypeAC0eG0OSgvp"></a>
                     <a name="//apple_ref/swift/Property/authorizerType" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15AWSApiGatewayV203ApibC0V10AuthorizerV14authorizerTypeAC0eG0OSgvp">authorizerType</a>
+                    <a class="token" href="#/s:16SotoApiGatewayV20bcD0V10AuthorizerV14authorizerTypeAC0eG0OSgvp">authorizerType</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -839,7 +900,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The authorizer type. For WebSocket APIs, specify REQUEST for a Lambda function using incoming request parameters. For HTTP APIs, specify JWT to use JSON Web Tokens.</p>
+                        <p>The authorizer type. Specify REQUEST for a Lambda function using incoming request parameters. Specify JWT to use JSON Web Tokens (supported only for HTTP APIs).</p>
 
                       </div>
                       <div class="declaration">
@@ -850,15 +911,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ApiGatewayV2/ApiGatewayV2_Shapes.swift#L241">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:15AWSApiGatewayV203ApibC0V10AuthorizerV13authorizerUriSSSgvp"></a>
+                    <a name="/s:16SotoApiGatewayV20bcD0V10AuthorizerV13authorizerUriSSSgvp"></a>
                     <a name="//apple_ref/swift/Property/authorizerUri" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15AWSApiGatewayV203ApibC0V10AuthorizerV13authorizerUriSSSgvp">authorizerUri</a>
+                    <a class="token" href="#/s:16SotoApiGatewayV20bcD0V10AuthorizerV13authorizerUriSSSgvp">authorizerUri</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -866,7 +930,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The authorizer&rsquo;s Uniform Resource Identifier (URI). ForREQUEST authorizers, this must be a well-formed Lambda function URI, for example, arn:aws:apigateway:us-west-2:lambda:path/2015-03-31/functions/arn:aws:lambda:us-west-2:{account_id}:function:{lambda_function_name}/invocations. In general, the URI has this form: arn:aws:apigateway:{region}:lambda:path/{service_api}
+                        <p>The authorizer&rsquo;s Uniform Resource Identifier (URI). For REQUEST authorizers, this must be a well-formed Lambda function URI, for example, arn:aws:apigateway:us-west-2:lambda:path/2015-03-31/functions/arn:aws:lambda:us-west-2:{account_id}:function:{lambda_function_name}/invocations. In general, the URI has this form: arn:aws:apigateway:{region}:lambda:path/{service_api}
                , where {region} is the same as the region hosting the Lambda function, path indicates that the remaining substring in the URI should be treated as the path to the resource, including the initial /. For Lambda functions, this is usually of the form /2015-03-31/functions/[FunctionARN]/invocations. Supported only for REQUEST authorizers.</p>
 
                       </div>
@@ -878,15 +942,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ApiGatewayV2/ApiGatewayV2_Shapes.swift#L244">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:15AWSApiGatewayV203ApibC0V10AuthorizerV14identitySourceSaySSGSgvp"></a>
-                    <a name="//apple_ref/swift/Property/identitySource" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15AWSApiGatewayV203ApibC0V10AuthorizerV14identitySourceSaySSGSgvp">identitySource</a>
+                    <a name="/s:16SotoApiGatewayV20bcD0V10AuthorizerV21enableSimpleResponsesSbSgvp"></a>
+                    <a name="//apple_ref/swift/Property/enableSimpleResponses" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16SotoApiGatewayV20bcD0V10AuthorizerV21enableSimpleResponsesSbSgvp">enableSimpleResponses</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -894,7 +961,37 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The identity source for which authorization is requested. For a REQUEST authorizer, this is optional. The value is a set of one or more mapping expressions of the specified request parameters. Currently, the identity source can be headers, query string parameters, stage variables, and context parameters. For example, if an Auth header and a Name query string parameter are defined as identity sources, this value is route.request.header.Auth, route.request.querystring.Name. These parameters will be used to perform runtime validation for Lambda-based authorizers by verifying all of the identity-related request parameters are present in the request, not null, and non-empty. Only when this is true does the authorizer invoke the authorizer Lambda function. Otherwise, it returns a 401 Unauthorized response without calling the Lambda function. For JWT, a single entry that specifies where to extract the JSON Web Token (JWT) from inbound requests. Currently only header-based and query parameter-based selections are supported, for example &ldquo;$request.header.Authorization&rdquo;.</p>
+                        <p>Specifies whether a Lambda authorizer returns a response in a simple format. If enabled, the Lambda authorizer can return a boolean value instead of an IAM policy. Supported only for HTTP APIs. To learn more, see Working with AWS Lambda authorizers for HTTP APIs</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">enableSimpleResponses</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ApiGatewayV2/ApiGatewayV2_Shapes.swift#L246">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16SotoApiGatewayV20bcD0V10AuthorizerV14identitySourceSaySSGSgvp"></a>
+                    <a name="//apple_ref/swift/Property/identitySource" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16SotoApiGatewayV20bcD0V10AuthorizerV14identitySourceSaySSGSgvp">identitySource</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The identity source for which authorization is requested. For a REQUEST authorizer, this is optional. The value is a set of one or more mapping expressions of the specified request parameters. The identity source can be headers, query string parameters, stage variables, and context parameters. For example, if an Auth header and a Name query string parameter are defined as identity sources, this value is route.request.header.Auth, route.request.querystring.Name for WebSocket APIs. For HTTP APIs, use selection expressions prefixed with $, for example, $request.header.Auth, $request.querystring.Name. These parameters are used to perform runtime validation for Lambda-based authorizers by verifying all of the identity-related request parameters are present in the request, not null, and non-empty. Only when this is true does the authorizer invoke the authorizer Lambda function. Otherwise, it returns a 401 Unauthorized response without calling the Lambda function. For HTTP APIs, identity sources are also used as the cache key when caching is enabled. To learn more, see Working with AWS Lambda authorizers for HTTP APIs. For JWT, a single entry that specifies where to extract the JSON Web Token (JWT) from inbound requests. Currently only header-based and query parameter-based selections are supported, for example $request.header.Authorization.</p>
 
                       </div>
                       <div class="declaration">
@@ -905,15 +1002,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ApiGatewayV2/ApiGatewayV2_Shapes.swift#L248">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:15AWSApiGatewayV203ApibC0V10AuthorizerV28identityValidationExpressionSSSgvp"></a>
+                    <a name="/s:16SotoApiGatewayV20bcD0V10AuthorizerV28identityValidationExpressionSSSgvp"></a>
                     <a name="//apple_ref/swift/Property/identityValidationExpression" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15AWSApiGatewayV203ApibC0V10AuthorizerV28identityValidationExpressionSSSgvp">identityValidationExpression</a>
+                    <a class="token" href="#/s:16SotoApiGatewayV20bcD0V10AuthorizerV28identityValidationExpressionSSSgvp">identityValidationExpression</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -932,15 +1032,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ApiGatewayV2/ApiGatewayV2_Shapes.swift#L250">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:15AWSApiGatewayV203ApibC0V10AuthorizerV16jwtConfigurationAC16JWTConfigurationVSgvp"></a>
+                    <a name="/s:16SotoApiGatewayV20bcD0V10AuthorizerV16jwtConfigurationAC16JWTConfigurationVSgvp"></a>
                     <a name="//apple_ref/swift/Property/jwtConfiguration" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15AWSApiGatewayV203ApibC0V10AuthorizerV16jwtConfigurationAC16JWTConfigurationVSgvp">jwtConfiguration</a>
+                    <a class="token" href="#/s:16SotoApiGatewayV20bcD0V10AuthorizerV16jwtConfigurationAC16JWTConfigurationVSgvp">jwtConfiguration</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -959,15 +1062,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ApiGatewayV2/ApiGatewayV2_Shapes.swift#L252">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:15AWSApiGatewayV203ApibC0V10AuthorizerV4nameSSvp"></a>
+                    <a name="/s:16SotoApiGatewayV20bcD0V10AuthorizerV4nameSSvp"></a>
                     <a name="//apple_ref/swift/Property/name" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15AWSApiGatewayV203ApibC0V10AuthorizerV4nameSSvp">name</a>
+                    <a class="token" href="#/s:16SotoApiGatewayV20bcD0V10AuthorizerV4nameSSvp">name</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -986,15 +1092,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ApiGatewayV2/ApiGatewayV2_Shapes.swift#L254">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:15AWSApiGatewayV203ApibC0V10AuthorizerV24authorizerCredentialsArn0F2Id0F18ResultTtlInSeconds0F4Type0F3Uri14identitySource0P20ValidationExpression16jwtConfiguration4nameAESSSg_AOSiSgAC0eN0OSgAOSaySSGSgAoC16JWTConfigurationVSgSStcfc"></a>
-                    <a name="//apple_ref/swift/Method/init(authorizerCredentialsArn:authorizerId:authorizerResultTtlInSeconds:authorizerType:authorizerUri:identitySource:identityValidationExpression:jwtConfiguration:name:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15AWSApiGatewayV203ApibC0V10AuthorizerV24authorizerCredentialsArn0F2Id0F18ResultTtlInSeconds0F4Type0F3Uri14identitySource0P20ValidationExpression16jwtConfiguration4nameAESSSg_AOSiSgAC0eN0OSgAOSaySSGSgAoC16JWTConfigurationVSgSStcfc">init(authorizerCredentialsArn:authorizerId:authorizerResultTtlInSeconds:authorizerType:authorizerUri:identitySource:identityValidationExpression:jwtConfiguration:name:)</a>
+                    <a name="/s:16SotoApiGatewayV20bcD0V10AuthorizerV24authorizerCredentialsArn0F2Id0F20PayloadFormatVersion0F18ResultTtlInSeconds0F4Type0F3Uri21enableSimpleResponses14identitySource0V20ValidationExpression16jwtConfiguration4nameAESSSg_A2QSiSgAC0eQ0OSgAQSbSgSaySSGSgAqC16JWTConfigurationVSgSStcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(authorizerCredentialsArn:authorizerId:authorizerPayloadFormatVersion:authorizerResultTtlInSeconds:authorizerType:authorizerUri:enableSimpleResponses:identitySource:identityValidationExpression:jwtConfiguration:name:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16SotoApiGatewayV20bcD0V10AuthorizerV24authorizerCredentialsArn0F2Id0F20PayloadFormatVersion0F18ResultTtlInSeconds0F4Type0F3Uri21enableSimpleResponses14identitySource0V20ValidationExpression16jwtConfiguration4nameAESSSg_A2QSiSgAC0eQ0OSgAQSbSgSaySSGSgAqC16JWTConfigurationVSgSStcfc">init(authorizerCredentialsArn:<wbr>authorizerId:<wbr>authorizerPayloadFormatVersion:<wbr>authorizerResultTtlInSeconds:<wbr>authorizerType:<wbr>authorizerUri:<wbr>enableSimpleResponses:<wbr>identitySource:<wbr>identityValidationExpression:<wbr>jwtConfiguration:<wbr>name:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1009,9 +1118,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">authorizerCredentialsArn</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">authorizerId</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">authorizerResultTtlInSeconds</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">authorizerType</span><span class="p">:</span> <span class="kt"><a href="../../Structs/ApiGatewayV2/AuthorizerType.html">AuthorizerType</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">authorizerUri</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">identitySource</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">identityValidationExpression</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">jwtConfiguration</span><span class="p">:</span> <span class="kt"><a href="../../Structs/ApiGatewayV2/JWTConfiguration.html">JWTConfiguration</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">name</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">authorizerCredentialsArn</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">authorizerId</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">authorizerPayloadFormatVersion</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">authorizerResultTtlInSeconds</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">authorizerType</span><span class="p">:</span> <span class="kt"><a href="../../Structs/ApiGatewayV2/AuthorizerType.html">AuthorizerType</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">authorizerUri</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">enableSimpleResponses</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">identitySource</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">identityValidationExpression</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">jwtConfiguration</span><span class="p">:</span> <span class="kt"><a href="../../Structs/ApiGatewayV2/JWTConfiguration.html">JWTConfiguration</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">name</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ApiGatewayV2/ApiGatewayV2_Shapes.swift#L256-L268">Show on GitHub</a>
                       </div>
                     </section>
                   </div>

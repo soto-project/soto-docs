@@ -15,7 +15,7 @@
     <header>
       <div class="content-wrapper">
         <p><a href="../index.html"> Docs</a> (54% documented)</p>
-        <p class="header-right"><a href="https://github.com/swift-aws/aws-sdk-swift"><img src="../img/gh.png"/>View on GitHub</a></p>
+        <p class="header-right"><a href="https://github.com/soto-project/soto"><img src="../img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -28,6 +28,9 @@
     <div class="content-wrapper">
       <nav class="sidebar">
         <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../User%20Guides.html">User Guides</a>
+          </li>
           <li class="nav-group-name">
             <a href="../AWSSDKSwiftCore.html">AWSSDKSwiftCore</a>
           </li>
@@ -68,6 +71,9 @@
             <a href="../AppSync.html">AppSync</a>
           </li>
           <li class="nav-group-name">
+            <a href="../Appflow.html">Appflow</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../ApplicationAutoScaling.html">ApplicationAutoScaling</a>
           </li>
           <li class="nav-group-name">
@@ -93,6 +99,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../Batch.html">Batch</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Braket.html">Braket</a>
           </li>
           <li class="nav-group-name">
             <a href="../Budgets.html">Budgets</a>
@@ -335,6 +344,12 @@
             <a href="../IAM.html">IAM</a>
           </li>
           <li class="nav-group-name">
+            <a href="../IVS.html">IVS</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../IdentityStore.html">IdentityStore</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../Imagebuilder.html">Imagebuilder</a>
           </li>
           <li class="nav-group-name">
@@ -557,6 +572,9 @@
             <a href="../Redshift.html">Redshift</a>
           </li>
           <li class="nav-group-name">
+            <a href="../RedshiftDataAPIService.html">RedshiftDataAPIService</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../Rekognition.html">Rekognition</a>
           </li>
           <li class="nav-group-name">
@@ -606,6 +624,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../SSO.html">SSO</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../SSOAdmin.html">SSOAdmin</a>
           </li>
           <li class="nav-group-name">
             <a href="../SSOOIDC.html">SSOOIDC</a>
@@ -735,13 +756,12 @@
             <h1>Health</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Health</span></code></pre>
+                  
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Health</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSService.html">AWSService</a></span></code></pre>
 
                 </div>
               </div>
-            <p>Client object for interacting with AWS Health service.</p>
-
-<p>AWS Health The AWS Health API provides programmatic access to the AWS Health information that is presented in the AWS Personal Health Dashboard. You can get information about events that affect your AWS resources:    DescribeEvents: Summary information about events.    DescribeEventDetails: Detailed information about one or more events.    DescribeAffectedEntities: Information about AWS resources that are affected by one or more events.   In addition, these operations provide information about event types and summary counts of events or affected entities:    DescribeEventTypes: Information about the kinds of events that AWS Health tracks.    DescribeEventAggregates: A count of the number of events that meet specified criteria.    DescribeEntityAggregates: A count of the number of affected entities that meet specified criteria.   AWS Health integrates with AWS Organizations to provide a centralized view of AWS Health events across all accounts in your organization.    DescribeEventsForOrganization: Summary information about events across the organization.    DescribeAffectedAccountsForOrganization: List of accounts in your organization impacted by an event.    DescribeEventDetailsForOrganization: Detailed information about events in your organization.    DescribeAffectedEntitiesForOrganization: Information about AWS resources in your organization that are affected by events.   You can use the following operations to enable or disable AWS Health from working with AWS Organizations.    EnableHealthServiceAccessForOrganization: Enables AWS Health to work with AWS Organizations.    DisableHealthServiceAccessForOrganization: Disables AWS Health from working with AWS Organizations.    DescribeHealthServiceStatusForOrganization: Status information about enabling or disabling AWS Health from working with AWS Organizations.   The Health API requires a Business or Enterprise support plan from AWS Support. Calling the Health API from an account that does not have a Business or Enterprise support plan causes a SubscriptionRequiredException. For authentication of requests, AWS Health uses the Signature Version 4 Signing Process. See the AWS Health User Guide for information about how to use the API.  Service Endpoint  The HTTP endpoint for the AWS Health API is:   <a href="https://health.us-east-1.amazonaws.com">https://health.us-east-1.amazonaws.com</a></p>
+            <p>Undocumented</p>
 
           </section>
           <section class="section task-group-section">
@@ -749,17 +769,19 @@
               <div class="task-name-container">
                 <a name="/Member%20variables"></a>
                 <a name="//apple_ref/swift/Section/Member variables" class="dashAnchor"></a>
-                <a href="#/Member%20variables">
-                  <h3 class="section-name">Member variables</h3>
-                </a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Member%20variables"></a>
+                  <h3 class="section-name"><p>Member variables</p>
+</h3>
+                </div>
               </div>
               <ul>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9AWSHealth6HealthV6client15AWSSDKSwiftCore9AWSClientCvp"></a>
+                    <a name="/s:8SotoCore10AWSServiceP6clientAA9AWSClientCvp"></a>
                     <a name="//apple_ref/swift/Property/client" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9AWSHealth6HealthV6client15AWSSDKSwiftCore9AWSClientCvp">client</a>
+                    <a class="token" href="#/s:8SotoCore10AWSServiceP6clientAA9AWSClientCvp">client</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -767,8 +789,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
-
+                        
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
@@ -778,15 +799,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Health/Health_API.swift#L19">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9AWSHealth6HealthV13serviceConfig15AWSSDKSwiftCore010AWSServiceD0Cvp"></a>
-                    <a name="//apple_ref/swift/Property/serviceConfig" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9AWSHealth6HealthV13serviceConfig15AWSSDKSwiftCore010AWSServiceD0Cvp">serviceConfig</a>
+                    <a name="/s:8SotoCore10AWSServiceP6configAA0C6ConfigCvp"></a>
+                    <a name="//apple_ref/swift/Property/config" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8SotoCore10AWSServiceP6configAA0C6ConfigCvp">config</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -794,16 +818,18 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
-
+                        
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">serviceConfig</span><span class="p">:</span> <span class="kt"><a href="../Classes/AWSServiceConfig.html">AWSServiceConfig</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">config</span><span class="p">:</span> <span class="kt"><a href="../Classes/AWSServiceConfig.html">AWSServiceConfig</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Health/Health_API.swift#L21">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -814,17 +840,19 @@
               <div class="task-name-container">
                 <a name="/Initialization"></a>
                 <a name="//apple_ref/swift/Section/Initialization" class="dashAnchor"></a>
-                <a href="#/Initialization">
-                  <h3 class="section-name">Initialization</h3>
-                </a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Initialization"></a>
+                  <h3 class="section-name"><p>Initialization</p>
+</h3>
+                </div>
               </div>
               <ul>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9AWSHealth6HealthV6client6region9partition8endpointAC15AWSSDKSwiftCore9AWSClientC_AH6RegionVSgAH9PartitionVSSSgtcfc"></a>
-                    <a name="//apple_ref/swift/Method/init(client:region:partition:endpoint:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9AWSHealth6HealthV6client6region9partition8endpointAC15AWSSDKSwiftCore9AWSClientC_AH6RegionVSgAH9PartitionVSSSgtcfc">init(client:region:partition:endpoint:)</a>
+                    <a name="/s:10SotoHealth0B0V6client6region9partition8endpoint7timeout19byteBufferAllocator7optionsAC0A4Core9AWSClientC_AK6RegionVSgAK12AWSPartitionVSSSg3NIO10TimeAmountVSgAT04ByteiJ0VAK16AWSServiceConfigC7OptionsVtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(client:region:partition:endpoint:timeout:byteBufferAllocator:options:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SotoHealth0B0V6client6region9partition8endpoint7timeout19byteBufferAllocator7optionsAC0A4Core9AWSClientC_AK6RegionVSgAK12AWSPartitionVSSSg3NIO10TimeAmountVSgAT04ByteiJ0VAK16AWSServiceConfigC7OptionsVtcfc">init(client:<wbr>region:<wbr>partition:<wbr>endpoint:<wbr>timeout:<wbr>byteBufferAllocator:<wbr>options:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -841,9 +869,12 @@
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span>
     <span class="nv">client</span><span class="p">:</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="p">,</span>
-    <span class="nv">region</span><span class="p">:</span> <span class="kt">AWSSDKSwiftCore</span><span class="o">.</span><span class="kt"><a href="../Structs/Region.html">Region</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
-    <span class="nv">partition</span><span class="p">:</span> <span class="kt">AWSSDKSwiftCore</span><span class="o">.</span><span class="kt"><a href="../Structs/Partition.html">Partition</a></span> <span class="o">=</span> <span class="o">.</span><span class="n">aws</span><span class="p">,</span>
-    <span class="nv">endpoint</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span>
+    <span class="nv">region</span><span class="p">:</span> <span class="kt">SotoCore</span><span class="o">.</span><span class="kt"><a href="../Structs/Region.html">Region</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="nv">partition</span><span class="p">:</span> <span class="kt"><a href="../Structs/AWSPartition.html">AWSPartition</a></span> <span class="o">=</span> <span class="o">.</span><span class="n">aws</span><span class="p">,</span>
+    <span class="nv">endpoint</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="nv">timeout</span><span class="p">:</span> <span class="kt">TimeAmount</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="nv">byteBufferAllocator</span><span class="p">:</span> <span class="kt">ByteBufferAllocator</span> <span class="o">=</span> <span class="kt">ByteBufferAllocator</span><span class="p">(),</span>
+    <span class="nv">options</span><span class="p">:</span> <span class="kt"><a href="../Classes/AWSServiceConfig.html">AWSServiceConfig</a></span><span class="o">.</span><span class="kt">Options</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="p">)</span></code></pre>
 
                         </div>
@@ -900,8 +931,23 @@
                                 </div>
                               </td>
                             </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>timeout</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Timeout value for HTTP requests</p>
+                                </div>
+                              </td>
+                            </tr>
                           </tbody>
                         </table>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Health/Health_API.swift#L39-L62">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -912,17 +958,19 @@
               <div class="task-name-container">
                 <a name="/API%20Calls"></a>
                 <a name="//apple_ref/swift/Section/API Calls" class="dashAnchor"></a>
-                <a href="#/API%20Calls">
-                  <h3 class="section-name">API Calls</h3>
-                </a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/API%20Calls"></a>
+                  <h3 class="section-name"><p>API Calls</p>
+</h3>
+                </div>
               </div>
               <ul>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9AWSHealth6HealthV39describeAffectedAccountsForOrganization_2on3NIO15EventLoopFutureCyAC08DescribedefG8ResponseVGAC0mdefG7RequestV_AF0jK0_pSgtF"></a>
-                    <a name="//apple_ref/swift/Method/describeAffectedAccountsForOrganization(_:on:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9AWSHealth6HealthV39describeAffectedAccountsForOrganization_2on3NIO15EventLoopFutureCyAC08DescribedefG8ResponseVGAC0mdefG7RequestV_AF0jK0_pSgtF">describeAffectedAccountsForOrganization(_:on:)</a>
+                    <a name="/s:10SotoHealth0B0V39describeAffectedAccountsForOrganization_2on6logger3NIO15EventLoopFutureCyAC08DescribedefG8ResponseVGAC0ndefG7RequestV_AG0kL0_pSg7Logging6LoggerVtF"></a>
+                    <a name="//apple_ref/swift/Method/describeAffectedAccountsForOrganization(_:on:logger:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SotoHealth0B0V39describeAffectedAccountsForOrganization_2on6logger3NIO15EventLoopFutureCyAC08DescribedefG8ResponseVGAC0ndefG7RequestV_AG0kL0_pSg7Logging6LoggerVtF">describeAffectedAccountsForOrganization(_:<wbr>on:<wbr>logger:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -930,16 +978,19 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Returns a list of accounts in the organization from AWS Organizations that are affected by the provided event. Before you can call this operation, you must first enable AWS Health to work with AWS Organizations. To do this, call the EnableHealthServiceAccessForOrganization operation from your organization&rsquo;s master account.</p>
+                        <p>Returns a list of accounts in the organization from AWS Organizations that are affected by the provided event. For more information about the different types of AWS Health events, see Event.  Before you can call this operation, you must first enable AWS Health to work with AWS Organizations. To do this, call the EnableHealthServiceAccessForOrganization operation from your organization&rsquo;s master account.  This API operation uses pagination. Specify the nextToken parameter in the next request to return more results.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">describeAffectedAccountsForOrganization</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/Health/DescribeAffectedAccountsForOrganizationRequest.html">DescribeAffectedAccountsForOrganizationRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/Health/DescribeAffectedAccountsForOrganizationResponse.html">DescribeAffectedAccountsForOrganizationResponse</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">describeAffectedAccountsForOrganization</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/Health/DescribeAffectedAccountsForOrganizationRequest.html">DescribeAffectedAccountsForOrganizationRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">logger</span><span class="p">:</span> <span class="kt">Logger</span> <span class="o">=</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="o">.</span><span class="n">loggingDisabled</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/Health/DescribeAffectedAccountsForOrganizationResponse.html">DescribeAffectedAccountsForOrganizationResponse</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Health/Health_API.swift#L67-L69">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -947,9 +998,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9AWSHealth6HealthV24describeAffectedEntities_2on3NIO15EventLoopFutureCyAC08DescribedE8ResponseVGAC0kdE7RequestV_AF0hI0_pSgtF"></a>
-                    <a name="//apple_ref/swift/Method/describeAffectedEntities(_:on:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9AWSHealth6HealthV24describeAffectedEntities_2on3NIO15EventLoopFutureCyAC08DescribedE8ResponseVGAC0kdE7RequestV_AF0hI0_pSgtF">describeAffectedEntities(_:on:)</a>
+                    <a name="/s:10SotoHealth0B0V24describeAffectedEntities_2on6logger3NIO15EventLoopFutureCyAC08DescribedE8ResponseVGAC0ldE7RequestV_AG0iJ0_pSg7Logging6LoggerVtF"></a>
+                    <a name="//apple_ref/swift/Method/describeAffectedEntities(_:on:logger:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SotoHealth0B0V24describeAffectedEntities_2on6logger3NIO15EventLoopFutureCyAC08DescribedE8ResponseVGAC0ldE7RequestV_AG0iJ0_pSg7Logging6LoggerVtF">describeAffectedEntities(_:<wbr>on:<wbr>logger:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -957,16 +1008,19 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Returns a list of entities that have been affected by the specified events, based on the specified filter criteria. Entities can refer to individual customer resources, groups of customer resources, or any other construct, depending on the AWS service. Events that have impact beyond that of the affected entities, or where the extent of impact is unknown, include at least one entity indicating this. At least one event ARN is required. Results are sorted by the lastUpdatedTime of the entity, starting with the most recent.</p>
+                        <p>Returns a list of entities that have been affected by the specified events, based on the specified filter criteria. Entities can refer to individual customer resources, groups of customer resources, or any other construct, depending on the AWS service. Events that have impact beyond that of the affected entities, or where the extent of impact is unknown, include at least one entity indicating this. At least one event ARN is required. Results are sorted by the lastUpdatedTime of the entity, starting with the most recent.  This API operation uses pagination. Specify the nextToken parameter in the next request to return more results.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">describeAffectedEntities</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/Health/DescribeAffectedEntitiesRequest.html">DescribeAffectedEntitiesRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/Health/DescribeAffectedEntitiesResponse.html">DescribeAffectedEntitiesResponse</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">describeAffectedEntities</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/Health/DescribeAffectedEntitiesRequest.html">DescribeAffectedEntitiesRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">logger</span><span class="p">:</span> <span class="kt">Logger</span> <span class="o">=</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="o">.</span><span class="n">loggingDisabled</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/Health/DescribeAffectedEntitiesResponse.html">DescribeAffectedEntitiesResponse</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Health/Health_API.swift#L72-L74">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -974,9 +1028,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9AWSHealth6HealthV39describeAffectedEntitiesForOrganization_2on3NIO15EventLoopFutureCyAC08DescribedefG8ResponseVGAC0mdefG7RequestV_AF0jK0_pSgtF"></a>
-                    <a name="//apple_ref/swift/Method/describeAffectedEntitiesForOrganization(_:on:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9AWSHealth6HealthV39describeAffectedEntitiesForOrganization_2on3NIO15EventLoopFutureCyAC08DescribedefG8ResponseVGAC0mdefG7RequestV_AF0jK0_pSgtF">describeAffectedEntitiesForOrganization(_:on:)</a>
+                    <a name="/s:10SotoHealth0B0V39describeAffectedEntitiesForOrganization_2on6logger3NIO15EventLoopFutureCyAC08DescribedefG8ResponseVGAC0ndefG7RequestV_AG0kL0_pSg7Logging6LoggerVtF"></a>
+                    <a name="//apple_ref/swift/Method/describeAffectedEntitiesForOrganization(_:on:logger:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SotoHealth0B0V39describeAffectedEntitiesForOrganization_2on6logger3NIO15EventLoopFutureCyAC08DescribedefG8ResponseVGAC0ndefG7RequestV_AG0kL0_pSg7Logging6LoggerVtF">describeAffectedEntitiesForOrganization(_:<wbr>on:<wbr>logger:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -984,16 +1038,19 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Returns a list of entities that have been affected by one or more events for one or more accounts in your organization in AWS Organizations, based on the filter criteria. Entities can refer to individual customer resources, groups of customer resources, or any other construct, depending on the AWS service. At least one event ARN and account ID are required. Results are sorted by the lastUpdatedTime of the entity, starting with the most recent. Before you can call this operation, you must first enable AWS Health to work with AWS Organizations. To do this, call the EnableHealthServiceAccessForOrganization operation from your organization&rsquo;s master account.</p>
+                        <p>Returns a list of entities that have been affected by one or more events for one or more accounts in your organization in AWS Organizations, based on the filter criteria. Entities can refer to individual customer resources, groups of customer resources, or any other construct, depending on the AWS service. At least one event Amazon Resource Name (ARN) and account ID are required. Results are sorted by the lastUpdatedTime of the entity, starting with the most recent. Before you can call this operation, you must first enable AWS Health to work with AWS Organizations. To do this, call the EnableHealthServiceAccessForOrganization operation from your organization&rsquo;s master account.   This API operation uses pagination. Specify the nextToken parameter in the next request to return more results.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">describeAffectedEntitiesForOrganization</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/Health/DescribeAffectedEntitiesForOrganizationRequest.html">DescribeAffectedEntitiesForOrganizationRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/Health/DescribeAffectedEntitiesForOrganizationResponse.html">DescribeAffectedEntitiesForOrganizationResponse</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">describeAffectedEntitiesForOrganization</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/Health/DescribeAffectedEntitiesForOrganizationRequest.html">DescribeAffectedEntitiesForOrganizationRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">logger</span><span class="p">:</span> <span class="kt">Logger</span> <span class="o">=</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="o">.</span><span class="n">loggingDisabled</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/Health/DescribeAffectedEntitiesForOrganizationResponse.html">DescribeAffectedEntitiesForOrganizationResponse</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Health/Health_API.swift#L77-L79">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1001,9 +1058,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9AWSHealth6HealthV24describeEntityAggregates_2on3NIO15EventLoopFutureCyAC08DescribedE8ResponseVGAC0kdE7RequestV_AF0hI0_pSgtF"></a>
-                    <a name="//apple_ref/swift/Method/describeEntityAggregates(_:on:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9AWSHealth6HealthV24describeEntityAggregates_2on3NIO15EventLoopFutureCyAC08DescribedE8ResponseVGAC0kdE7RequestV_AF0hI0_pSgtF">describeEntityAggregates(_:on:)</a>
+                    <a name="/s:10SotoHealth0B0V24describeEntityAggregates_2on6logger3NIO15EventLoopFutureCyAC08DescribedE8ResponseVGAC0ldE7RequestV_AG0iJ0_pSg7Logging6LoggerVtF"></a>
+                    <a name="//apple_ref/swift/Method/describeEntityAggregates(_:on:logger:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SotoHealth0B0V24describeEntityAggregates_2on6logger3NIO15EventLoopFutureCyAC08DescribedE8ResponseVGAC0ldE7RequestV_AG0iJ0_pSg7Logging6LoggerVtF">describeEntityAggregates(_:<wbr>on:<wbr>logger:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1018,9 +1075,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">describeEntityAggregates</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/Health/DescribeEntityAggregatesRequest.html">DescribeEntityAggregatesRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/Health/DescribeEntityAggregatesResponse.html">DescribeEntityAggregatesResponse</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">describeEntityAggregates</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/Health/DescribeEntityAggregatesRequest.html">DescribeEntityAggregatesRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">logger</span><span class="p">:</span> <span class="kt">Logger</span> <span class="o">=</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="o">.</span><span class="n">loggingDisabled</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/Health/DescribeEntityAggregatesResponse.html">DescribeEntityAggregatesResponse</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Health/Health_API.swift#L82-L84">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1028,9 +1088,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9AWSHealth6HealthV23describeEventAggregates_2on3NIO0D10LoopFutureCyAC08DescribedE8ResponseVGAC0jdE7RequestV_AF0dH0_pSgtF"></a>
-                    <a name="//apple_ref/swift/Method/describeEventAggregates(_:on:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9AWSHealth6HealthV23describeEventAggregates_2on3NIO0D10LoopFutureCyAC08DescribedE8ResponseVGAC0jdE7RequestV_AF0dH0_pSgtF">describeEventAggregates(_:on:)</a>
+                    <a name="/s:10SotoHealth0B0V23describeEventAggregates_2on6logger3NIO0D10LoopFutureCyAC08DescribedE8ResponseVGAC0kdE7RequestV_AG0dI0_pSg7Logging6LoggerVtF"></a>
+                    <a name="//apple_ref/swift/Method/describeEventAggregates(_:on:logger:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SotoHealth0B0V23describeEventAggregates_2on6logger3NIO0D10LoopFutureCyAC08DescribedE8ResponseVGAC0kdE7RequestV_AG0dI0_pSg7Logging6LoggerVtF">describeEventAggregates(_:<wbr>on:<wbr>logger:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1038,16 +1098,19 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Returns the number of events of each event type (issue, scheduled change, and account notification). If no filter is specified, the counts of all events in each category are returned.</p>
+                        <p>Returns the number of events of each event type (issue, scheduled change, and account notification). If no filter is specified, the counts of all events in each category are returned.  This API operation uses pagination. Specify the nextToken parameter in the next request to return more results.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">describeEventAggregates</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/Health/DescribeEventAggregatesRequest.html">DescribeEventAggregatesRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/Health/DescribeEventAggregatesResponse.html">DescribeEventAggregatesResponse</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">describeEventAggregates</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/Health/DescribeEventAggregatesRequest.html">DescribeEventAggregatesRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">logger</span><span class="p">:</span> <span class="kt">Logger</span> <span class="o">=</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="o">.</span><span class="n">loggingDisabled</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/Health/DescribeEventAggregatesResponse.html">DescribeEventAggregatesResponse</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Health/Health_API.swift#L87-L89">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1055,9 +1118,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9AWSHealth6HealthV20describeEventDetails_2on3NIO0D10LoopFutureCyAC08DescribedE8ResponseVGAC0jdE7RequestV_AF0dH0_pSgtF"></a>
-                    <a name="//apple_ref/swift/Method/describeEventDetails(_:on:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9AWSHealth6HealthV20describeEventDetails_2on3NIO0D10LoopFutureCyAC08DescribedE8ResponseVGAC0jdE7RequestV_AF0dH0_pSgtF">describeEventDetails(_:on:)</a>
+                    <a name="/s:10SotoHealth0B0V20describeEventDetails_2on6logger3NIO0D10LoopFutureCyAC08DescribedE8ResponseVGAC0kdE7RequestV_AG0dI0_pSg7Logging6LoggerVtF"></a>
+                    <a name="//apple_ref/swift/Method/describeEventDetails(_:on:logger:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SotoHealth0B0V20describeEventDetails_2on6logger3NIO0D10LoopFutureCyAC08DescribedE8ResponseVGAC0kdE7RequestV_AG0dI0_pSg7Logging6LoggerVtF">describeEventDetails(_:<wbr>on:<wbr>logger:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1065,16 +1128,19 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Returns detailed information about one or more specified events. Information includes standard event data (region, service, and so on, as returned by DescribeEvents), a detailed event description, and possible additional metadata that depends upon the nature of the event. Affected entities are not included; to retrieve those, use the DescribeAffectedEntities operation. If a specified event cannot be retrieved, an error message is returned for that event.</p>
+                        <p>Returns detailed information about one or more specified events. Information includes standard event data (Region, service, and so on, as returned by DescribeEvents), a detailed event description, and possible additional metadata that depends upon the nature of the event. Affected entities are not included. To retrieve those, use the DescribeAffectedEntities operation. If a specified event cannot be retrieved, an error message is returned for that event.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">describeEventDetails</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/Health/DescribeEventDetailsRequest.html">DescribeEventDetailsRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/Health/DescribeEventDetailsResponse.html">DescribeEventDetailsResponse</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">describeEventDetails</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/Health/DescribeEventDetailsRequest.html">DescribeEventDetailsRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">logger</span><span class="p">:</span> <span class="kt">Logger</span> <span class="o">=</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="o">.</span><span class="n">loggingDisabled</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/Health/DescribeEventDetailsResponse.html">DescribeEventDetailsResponse</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Health/Health_API.swift#L92-L94">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1082,9 +1148,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9AWSHealth6HealthV35describeEventDetailsForOrganization_2on3NIO0D10LoopFutureCyAC08DescribedefG8ResponseVGAC0ldefG7RequestV_AF0dJ0_pSgtF"></a>
-                    <a name="//apple_ref/swift/Method/describeEventDetailsForOrganization(_:on:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9AWSHealth6HealthV35describeEventDetailsForOrganization_2on3NIO0D10LoopFutureCyAC08DescribedefG8ResponseVGAC0ldefG7RequestV_AF0dJ0_pSgtF">describeEventDetailsForOrganization(_:on:)</a>
+                    <a name="/s:10SotoHealth0B0V35describeEventDetailsForOrganization_2on6logger3NIO0D10LoopFutureCyAC08DescribedefG8ResponseVGAC0mdefG7RequestV_AG0dK0_pSg7Logging6LoggerVtF"></a>
+                    <a name="//apple_ref/swift/Method/describeEventDetailsForOrganization(_:on:logger:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SotoHealth0B0V35describeEventDetailsForOrganization_2on6logger3NIO0D10LoopFutureCyAC08DescribedefG8ResponseVGAC0mdefG7RequestV_AG0dK0_pSg7Logging6LoggerVtF">describeEventDetailsForOrganization(_:<wbr>on:<wbr>logger:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1092,16 +1158,19 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Returns detailed information about one or more specified events for one or more accounts in your organization. Information includes standard event data (Region, service, and so on, as returned by DescribeEventsForOrganization, a detailed event description, and possible additional metadata that depends upon the nature of the event. Affected entities are not included; to retrieve those, use the DescribeAffectedEntitiesForOrganization operation. Before you can call this operation, you must first enable AWS Health to work with AWS Organizations. To do this, call the EnableHealthServiceAccessForOrganization operation from your organization&rsquo;s master account.</p>
+                        <p>Returns detailed information about one or more specified events for one or more accounts in your organization. Information includes standard event data (Region, service, and so on, as returned by DescribeEventsForOrganization), a detailed event description, and possible additional metadata that depends upon the nature of the event. Affected entities are not included; to retrieve those, use the DescribeAffectedEntitiesForOrganization operation. Before you can call this operation, you must first enable AWS Health to work with AWS Organizations. To do this, call the EnableHealthServiceAccessForOrganization operation from your organization&rsquo;s master account. When you call the DescribeEventDetailsForOrganization operation, you specify the organizationEventDetailFilters object in the request. Depending on the AWS Health event type, note the following differences:   If the event is public, the awsAccountId parameter must be empty. If you specify an account ID for a public event, then an error message is returned. That&rsquo;s because the event might apply to all AWS accounts and isn&rsquo;t specific to an account in your organization.   If the event is specific to an account, then you must specify the awsAccountId parameter in the request. If you don&rsquo;t specify an account ID, an error message returns because the event is specific to an AWS account in your organization.    For more information, see Event.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">describeEventDetailsForOrganization</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/Health/DescribeEventDetailsForOrganizationRequest.html">DescribeEventDetailsForOrganizationRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/Health/DescribeEventDetailsForOrganizationResponse.html">DescribeEventDetailsForOrganizationResponse</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">describeEventDetailsForOrganization</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/Health/DescribeEventDetailsForOrganizationRequest.html">DescribeEventDetailsForOrganizationRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">logger</span><span class="p">:</span> <span class="kt">Logger</span> <span class="o">=</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="o">.</span><span class="n">loggingDisabled</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/Health/DescribeEventDetailsForOrganizationResponse.html">DescribeEventDetailsForOrganizationResponse</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Health/Health_API.swift#L97-L99">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1109,9 +1178,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9AWSHealth6HealthV18describeEventTypes_2on3NIO0D10LoopFutureCyAC08DescribedE8ResponseVGAC0jdE7RequestV_AF0dH0_pSgtF"></a>
-                    <a name="//apple_ref/swift/Method/describeEventTypes(_:on:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9AWSHealth6HealthV18describeEventTypes_2on3NIO0D10LoopFutureCyAC08DescribedE8ResponseVGAC0jdE7RequestV_AF0dH0_pSgtF">describeEventTypes(_:on:)</a>
+                    <a name="/s:10SotoHealth0B0V18describeEventTypes_2on6logger3NIO0D10LoopFutureCyAC08DescribedE8ResponseVGAC0kdE7RequestV_AG0dI0_pSg7Logging6LoggerVtF"></a>
+                    <a name="//apple_ref/swift/Method/describeEventTypes(_:on:logger:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SotoHealth0B0V18describeEventTypes_2on6logger3NIO0D10LoopFutureCyAC08DescribedE8ResponseVGAC0kdE7RequestV_AG0dI0_pSg7Logging6LoggerVtF">describeEventTypes(_:<wbr>on:<wbr>logger:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1119,16 +1188,19 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Returns the event types that meet the specified filter criteria. If no filter criteria are specified, all event types are returned, in no particular order.</p>
+                        <p>Returns the event types that meet the specified filter criteria. If no filter criteria are specified, all event types are returned, in no particular order.  This API operation uses pagination. Specify the nextToken parameter in the next request to return more results.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">describeEventTypes</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/Health/DescribeEventTypesRequest.html">DescribeEventTypesRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/Health/DescribeEventTypesResponse.html">DescribeEventTypesResponse</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">describeEventTypes</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/Health/DescribeEventTypesRequest.html">DescribeEventTypesRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">logger</span><span class="p">:</span> <span class="kt">Logger</span> <span class="o">=</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="o">.</span><span class="n">loggingDisabled</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/Health/DescribeEventTypesResponse.html">DescribeEventTypesResponse</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Health/Health_API.swift#L102-L104">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1136,9 +1208,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9AWSHealth6HealthV14describeEvents_2on3NIO15EventLoopFutureCyAC08DescribeD8ResponseVGAC0jD7RequestV_AF0gH0_pSgtF"></a>
-                    <a name="//apple_ref/swift/Method/describeEvents(_:on:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9AWSHealth6HealthV14describeEvents_2on3NIO15EventLoopFutureCyAC08DescribeD8ResponseVGAC0jD7RequestV_AF0gH0_pSgtF">describeEvents(_:on:)</a>
+                    <a name="/s:10SotoHealth0B0V14describeEvents_2on6logger3NIO15EventLoopFutureCyAC08DescribeD8ResponseVGAC0kD7RequestV_AG0hI0_pSg7Logging6LoggerVtF"></a>
+                    <a name="//apple_ref/swift/Method/describeEvents(_:on:logger:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SotoHealth0B0V14describeEvents_2on6logger3NIO15EventLoopFutureCyAC08DescribeD8ResponseVGAC0kD7RequestV_AG0hI0_pSg7Logging6LoggerVtF">describeEvents(_:<wbr>on:<wbr>logger:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1146,16 +1218,19 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Returns information about events that meet the specified filter criteria. Events are returned in a summary form and do not include the detailed description, any additional metadata that depends on the event type, or any affected resources. To retrieve that information, use the DescribeEventDetails and DescribeAffectedEntities operations. If no filter criteria are specified, all events are returned. Results are sorted by lastModifiedTime, starting with the most recent.</p>
+                        <p>Returns information about events that meet the specified filter criteria. Events are returned in a summary form and do not include the detailed description, any additional metadata that depends on the event type, or any affected resources. To retrieve that information, use the DescribeEventDetails and DescribeAffectedEntities operations. If no filter criteria are specified, all events are returned. Results are sorted by lastModifiedTime, starting with the most recent event.    When you call the DescribeEvents operation and specify an entity for the entityValues parameter, AWS Health might return public events that aren&rsquo;t specific to that resource. For example, if you call DescribeEvents and specify an ID for an Amazon Elastic Compute Cloud (Amazon EC2) instance, AWS Health might return events that aren&rsquo;t specific to that resource or service. To get events that are specific to a service, use the services parameter in the filter object. For more information, see Event.   This API operation uses pagination. Specify the nextToken parameter in the next request to return more results.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">describeEvents</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/Health/DescribeEventsRequest.html">DescribeEventsRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/Health/DescribeEventsResponse.html">DescribeEventsResponse</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">describeEvents</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/Health/DescribeEventsRequest.html">DescribeEventsRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">logger</span><span class="p">:</span> <span class="kt">Logger</span> <span class="o">=</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="o">.</span><span class="n">loggingDisabled</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/Health/DescribeEventsResponse.html">DescribeEventsResponse</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Health/Health_API.swift#L107-L109">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1163,9 +1238,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9AWSHealth6HealthV29describeEventsForOrganization_2on3NIO15EventLoopFutureCyAC08DescribedeF8ResponseVGAC0ldeF7RequestV_AF0iJ0_pSgtF"></a>
-                    <a name="//apple_ref/swift/Method/describeEventsForOrganization(_:on:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9AWSHealth6HealthV29describeEventsForOrganization_2on3NIO15EventLoopFutureCyAC08DescribedeF8ResponseVGAC0ldeF7RequestV_AF0iJ0_pSgtF">describeEventsForOrganization(_:on:)</a>
+                    <a name="/s:10SotoHealth0B0V29describeEventsForOrganization_2on6logger3NIO15EventLoopFutureCyAC08DescribedeF8ResponseVGAC0mdeF7RequestV_AG0jK0_pSg7Logging6LoggerVtF"></a>
+                    <a name="//apple_ref/swift/Method/describeEventsForOrganization(_:on:logger:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SotoHealth0B0V29describeEventsForOrganization_2on6logger3NIO15EventLoopFutureCyAC08DescribedeF8ResponseVGAC0mdeF7RequestV_AG0jK0_pSg7Logging6LoggerVtF">describeEventsForOrganization(_:<wbr>on:<wbr>logger:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1173,16 +1248,19 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Returns information about events across your organization in AWS Organizations, meeting the specified filter criteria. Events are returned in a summary form and do not include the accounts impacted, detailed description, any additional metadata that depends on the event type, or any affected resources. To retrieve that information, use the DescribeAffectedAccountsForOrganization, DescribeEventDetailsForOrganization, and DescribeAffectedEntitiesForOrganization operations. If no filter criteria are specified, all events across your organization are returned. Results are sorted by lastModifiedTime, starting with the most recent. Before you can call this operation, you must first enable Health to work with AWS Organizations. To do this, call the EnableHealthServiceAccessForOrganization operation from your organization&rsquo;s master account.</p>
+                        <p>Returns information about events across your organization in AWS Organizations. You can use thefilters parameter to specify the events that you want to return. Events are returned in a summary form and don&rsquo;t include the affected accounts, detailed description, any additional metadata that depends on the event type, or any affected resources. To retrieve that information, use the following operations:    DescribeAffectedAccountsForOrganization     DescribeEventDetailsForOrganization     DescribeAffectedEntitiesForOrganization    If you don&rsquo;t specify a filter, the DescribeEventsForOrganizations returns all events across your organization. Results are sorted by lastModifiedTime, starting with the most recent event.  For more information about the different types of AWS Health events, see Event. Before you can call this operation, you must first enable AWS Health to work with AWS Organizations. To do this, call the EnableHealthServiceAccessForOrganization operation from your organization&rsquo;s master AWS account.  This API operation uses pagination. Specify the nextToken parameter in the next request to return more results.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">describeEventsForOrganization</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/Health/DescribeEventsForOrganizationRequest.html">DescribeEventsForOrganizationRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/Health/DescribeEventsForOrganizationResponse.html">DescribeEventsForOrganizationResponse</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">describeEventsForOrganization</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/Health/DescribeEventsForOrganizationRequest.html">DescribeEventsForOrganizationRequest</a></span><span class="p">,</span> <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">logger</span><span class="p">:</span> <span class="kt">Logger</span> <span class="o">=</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="o">.</span><span class="n">loggingDisabled</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/Health/DescribeEventsForOrganizationResponse.html">DescribeEventsForOrganizationResponse</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Health/Health_API.swift#L112-L114">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1190,9 +1268,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9AWSHealth6HealthV08describeB28ServiceStatusForOrganization2on3NIO15EventLoopFutureCyAC08DescribebdefG8ResponseVGAF0jK0_pSg_tF"></a>
-                    <a name="//apple_ref/swift/Method/describeHealthServiceStatusForOrganization(on:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9AWSHealth6HealthV08describeB28ServiceStatusForOrganization2on3NIO15EventLoopFutureCyAC08DescribebdefG8ResponseVGAF0jK0_pSg_tF">describeHealthServiceStatusForOrganization(on:)</a>
+                    <a name="/s:10SotoHealth0B0V08describeB28ServiceStatusForOrganization2on6logger3NIO15EventLoopFutureCyAC08DescribebdefG8ResponseVGAG0kL0_pSg_7Logging6LoggerVtF"></a>
+                    <a name="//apple_ref/swift/Method/describeHealthServiceStatusForOrganization(on:logger:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SotoHealth0B0V08describeB28ServiceStatusForOrganization2on6logger3NIO15EventLoopFutureCyAC08DescribebdefG8ResponseVGAG0kL0_pSg_7Logging6LoggerVtF">describeHealthServiceStatusForOrganization(on:<wbr>logger:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1207,9 +1285,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">describeHealthServiceStatusForOrganization</span><span class="p">(</span><span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/Health/DescribeHealthServiceStatusForOrganizationResponse.html">DescribeHealthServiceStatusForOrganizationResponse</a></span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">describeHealthServiceStatusForOrganization</span><span class="p">(</span><span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">logger</span><span class="p">:</span> <span class="kt">Logger</span> <span class="o">=</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="o">.</span><span class="n">loggingDisabled</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/Health/DescribeHealthServiceStatusForOrganizationResponse.html">DescribeHealthServiceStatusForOrganizationResponse</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Health/Health_API.swift#L117-L119">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1217,9 +1298,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9AWSHealth6HealthV07disableB28ServiceAccessForOrganization2on3NIO15EventLoopFutureCyytGAF0jK0_pSg_tF"></a>
-                    <a name="//apple_ref/swift/Method/disableHealthServiceAccessForOrganization(on:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9AWSHealth6HealthV07disableB28ServiceAccessForOrganization2on3NIO15EventLoopFutureCyytGAF0jK0_pSg_tF">disableHealthServiceAccessForOrganization(on:)</a>
+                    <a name="/s:10SotoHealth0B0V07disableB28ServiceAccessForOrganization2on6logger3NIO15EventLoopFutureCyytGAG0kL0_pSg_7Logging6LoggerVtF"></a>
+                    <a name="//apple_ref/swift/Method/disableHealthServiceAccessForOrganization(on:logger:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SotoHealth0B0V07disableB28ServiceAccessForOrganization2on6logger3NIO15EventLoopFutureCyytGAG0kL0_pSg_7Logging6LoggerVtF">disableHealthServiceAccessForOrganization(on:<wbr>logger:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1227,7 +1308,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Calling this operation disables Health from working with AWS Organizations. This does not remove the Service Linked Role (SLR) from the the master account in your organization. Use the IAM console, API, or AWS CLI to remove the SLR if desired. To call this operation, you must sign in as an IAM user, assume an IAM role, or sign in as the root user (not recommended) in the organization&rsquo;s master account.</p>
+                        <p>Disables AWS Health from working with AWS Organizations. To call this operation, you must sign in as an AWS Identity and Access Management (IAM) user, assume an IAM role, or sign in as the root user (not recommended) in the organization&rsquo;s master AWS account. For more information, see Aggregating AWS Health events in the AWS Health User Guide. This operation doesn&rsquo;t remove the service-linked role (SLR) from the AWS master account in your organization. You must use the IAM console, API, or AWS Command Line Interface (AWS CLI) to remove the SLR. For more information, see Deleting a Service-Linked Role in the IAM User Guide.  You can also disable the organizational feature by using the Organizations DisableAWSServiceAccess API operation. After you call this operation, AWS Health stops aggregating events for all other AWS accounts in your organization. If you call the AWS Health API operations for organizational view, AWS Health returns an error. AWS Health continues to aggregate health events for your AWS account.</p>
 
                       </div>
                       <div class="declaration">
@@ -1235,9 +1316,12 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
-<span class="kd">public</span> <span class="kd">func</span> <span class="nf">disableHealthServiceAccessForOrganization</span><span class="p">(</span><span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Void</span><span class="o">&gt;</span></code></pre>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">disableHealthServiceAccessForOrganization</span><span class="p">(</span><span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">logger</span><span class="p">:</span> <span class="kt">Logger</span> <span class="o">=</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="o">.</span><span class="n">loggingDisabled</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Void</span><span class="o">&gt;</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Health/Health_API.swift#L122-L124">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1245,9 +1329,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9AWSHealth6HealthV06enableB28ServiceAccessForOrganization2on3NIO15EventLoopFutureCyytGAF0jK0_pSg_tF"></a>
-                    <a name="//apple_ref/swift/Method/enableHealthServiceAccessForOrganization(on:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9AWSHealth6HealthV06enableB28ServiceAccessForOrganization2on3NIO15EventLoopFutureCyytGAF0jK0_pSg_tF">enableHealthServiceAccessForOrganization(on:)</a>
+                    <a name="/s:10SotoHealth0B0V06enableB28ServiceAccessForOrganization2on6logger3NIO15EventLoopFutureCyytGAG0kL0_pSg_7Logging6LoggerVtF"></a>
+                    <a name="//apple_ref/swift/Method/enableHealthServiceAccessForOrganization(on:logger:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SotoHealth0B0V06enableB28ServiceAccessForOrganization2on6logger3NIO15EventLoopFutureCyytGAG0kL0_pSg_7Logging6LoggerVtF">enableHealthServiceAccessForOrganization(on:<wbr>logger:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1255,7 +1339,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Calling this operation enables AWS Health to work with AWS Organizations. This applies a Service Linked Role (SLR) to the master account in the organization. To learn more about the steps in this process, visit enabling service access for AWS Health in AWS Organizations. To call this operation, you must sign in as an IAM user, assume an IAM role, or sign in as the root user (not recommended) in the organization&rsquo;s master account.</p>
+                        <p>Calling this operation enables AWS Health to work with AWS Organizations. This applies a service-linked role (SLR) to the master account in the organization. To call this operation, you must sign in as an IAM user, assume an IAM role, or sign in as the root user (not recommended) in the organization&rsquo;s master account. For more information, see Aggregating AWS Health events in the AWS Health User Guide.</p>
 
                       </div>
                       <div class="declaration">
@@ -1263,9 +1347,12 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
-<span class="kd">public</span> <span class="kd">func</span> <span class="nf">enableHealthServiceAccessForOrganization</span><span class="p">(</span><span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Void</span><span class="o">&gt;</span></code></pre>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">enableHealthServiceAccessForOrganization</span><span class="p">(</span><span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">logger</span><span class="p">:</span> <span class="kt">Logger</span> <span class="o">=</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="o">.</span><span class="n">loggingDisabled</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Void</span><span class="o">&gt;</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Health/Health_API.swift#L127-L129">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1276,17 +1363,19 @@
               <div class="task-name-container">
                 <a name="/Paginators"></a>
                 <a name="//apple_ref/swift/Section/Paginators" class="dashAnchor"></a>
-                <a href="#/Paginators">
-                  <h3 class="section-name">Paginators</h3>
-                </a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Paginators"></a>
+                  <h3 class="section-name"><p>Paginators</p>
+</h3>
+                </div>
               </div>
               <ul>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9AWSHealth6HealthV48describeAffectedAccountsForOrganizationPaginator_2on0I4Page3NIO15EventLoopFutureCyytGAC08DescribedefG7RequestV_AG0lM0_pSgAIySbGAC0odefG8ResponseV_AgM_ptctF"></a>
-                    <a name="//apple_ref/swift/Method/describeAffectedAccountsForOrganizationPaginator(_:on:onPage:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9AWSHealth6HealthV48describeAffectedAccountsForOrganizationPaginator_2on0I4Page3NIO15EventLoopFutureCyytGAC08DescribedefG7RequestV_AG0lM0_pSgAIySbGAC0odefG8ResponseV_AgM_ptctF">describeAffectedAccountsForOrganizationPaginator(_:on:onPage:)</a>
+                    <a name="/s:10SotoHealth0B0V48describeAffectedAccountsForOrganizationPaginator_2on6logger0I4Page3NIO15EventLoopFutureCyytGAC08DescribedefG7RequestV_AH0mN0_pSg7Logging6LoggerVAJySbGAC0pdefG8ResponseV_AhN_ptctF"></a>
+                    <a name="//apple_ref/swift/Method/describeAffectedAccountsForOrganizationPaginator(_:on:logger:onPage:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SotoHealth0B0V48describeAffectedAccountsForOrganizationPaginator_2on6logger0I4Page3NIO15EventLoopFutureCyytGAC08DescribedefG7RequestV_AH0mN0_pSg7Logging6LoggerVAJySbGAC0pdefG8ResponseV_AhN_ptctF">describeAffectedAccountsForOrganizationPaginator(_:<wbr>on:<wbr>logger:<wbr>onPage:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1294,7 +1383,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Returns a list of accounts in the organization from AWS Organizations that are affected by the provided event. Before you can call this operation, you must first enable AWS Health to work with AWS Organizations. To do this, call the EnableHealthServiceAccessForOrganization operation from your organization&rsquo;s master account.</p>
+                        <p>Returns a list of accounts in the organization from AWS Organizations that are affected by the provided event. For more information about the different types of AWS Health events, see Event.  Before you can call this operation, you must first enable AWS Health to work with AWS Organizations. To do this, call the EnableHealthServiceAccessForOrganization operation from your organization&rsquo;s master account.  This API operation uses pagination. Specify the nextToken parameter in the next request to return more results.</p>
 
                       </div>
                       <div class="declaration">
@@ -1304,11 +1393,14 @@
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">describeAffectedAccountsForOrganizationPaginator</span><span class="p">(</span>
     <span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/Health/DescribeAffectedAccountsForOrganizationRequest.html">DescribeAffectedAccountsForOrganizationRequest</a></span><span class="p">,</span>
     <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
-    <span class="nv">onPage</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/Health/DescribeAffectedAccountsForOrganizationResponse.html">DescribeAffectedAccountsForOrganizationResponse</a></span><span class="p">,</span>
-    <span class="kt">EventLoop</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Bool</span><span class="o">&gt;</span>
+    <span class="nv">logger</span><span class="p">:</span> <span class="kt">Logger</span> <span class="o">=</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="o">.</span><span class="n">loggingDisabled</span><span class="p">,</span>
+    <span class="nv">onPage</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/Health/DescribeAffectedAccountsForOrganizationResponse.html">DescribeAffectedAccountsForOrganizationResponse</a></span><span class="p">,</span> <span class="kt">EventLoop</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Bool</span><span class="o">&gt;</span>
 <span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Void</span><span class="o">&gt;</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Health/Health_Paginator.swift#L23-L36">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1316,9 +1408,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9AWSHealth6HealthV33describeAffectedEntitiesPaginator_2on0G4Page3NIO15EventLoopFutureCyytGAC08DescribedE7RequestV_AG0jK0_pSgAIySbGAC0mdE8ResponseV_AgM_ptctF"></a>
-                    <a name="//apple_ref/swift/Method/describeAffectedEntitiesPaginator(_:on:onPage:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9AWSHealth6HealthV33describeAffectedEntitiesPaginator_2on0G4Page3NIO15EventLoopFutureCyytGAC08DescribedE7RequestV_AG0jK0_pSgAIySbGAC0mdE8ResponseV_AgM_ptctF">describeAffectedEntitiesPaginator(_:on:onPage:)</a>
+                    <a name="/s:10SotoHealth0B0V33describeAffectedEntitiesPaginator_2on6logger0G4Page3NIO15EventLoopFutureCyytGAC08DescribedE7RequestV_AH0kL0_pSg7Logging6LoggerVAJySbGAC0ndE8ResponseV_AhN_ptctF"></a>
+                    <a name="//apple_ref/swift/Method/describeAffectedEntitiesPaginator(_:on:logger:onPage:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SotoHealth0B0V33describeAffectedEntitiesPaginator_2on6logger0G4Page3NIO15EventLoopFutureCyytGAC08DescribedE7RequestV_AH0kL0_pSg7Logging6LoggerVAJySbGAC0ndE8ResponseV_AhN_ptctF">describeAffectedEntitiesPaginator(_:<wbr>on:<wbr>logger:<wbr>onPage:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1326,7 +1418,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Returns a list of entities that have been affected by the specified events, based on the specified filter criteria. Entities can refer to individual customer resources, groups of customer resources, or any other construct, depending on the AWS service. Events that have impact beyond that of the affected entities, or where the extent of impact is unknown, include at least one entity indicating this. At least one event ARN is required. Results are sorted by the lastUpdatedTime of the entity, starting with the most recent.</p>
+                        <p>Returns a list of entities that have been affected by the specified events, based on the specified filter criteria. Entities can refer to individual customer resources, groups of customer resources, or any other construct, depending on the AWS service. Events that have impact beyond that of the affected entities, or where the extent of impact is unknown, include at least one entity indicating this. At least one event ARN is required. Results are sorted by the lastUpdatedTime of the entity, starting with the most recent.  This API operation uses pagination. Specify the nextToken parameter in the next request to return more results.</p>
 
                       </div>
                       <div class="declaration">
@@ -1336,11 +1428,14 @@
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">describeAffectedEntitiesPaginator</span><span class="p">(</span>
     <span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/Health/DescribeAffectedEntitiesRequest.html">DescribeAffectedEntitiesRequest</a></span><span class="p">,</span>
     <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
-    <span class="nv">onPage</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/Health/DescribeAffectedEntitiesResponse.html">DescribeAffectedEntitiesResponse</a></span><span class="p">,</span>
-    <span class="kt">EventLoop</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Bool</span><span class="o">&gt;</span>
+    <span class="nv">logger</span><span class="p">:</span> <span class="kt">Logger</span> <span class="o">=</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="o">.</span><span class="n">loggingDisabled</span><span class="p">,</span>
+    <span class="nv">onPage</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/Health/DescribeAffectedEntitiesResponse.html">DescribeAffectedEntitiesResponse</a></span><span class="p">,</span> <span class="kt">EventLoop</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Bool</span><span class="o">&gt;</span>
 <span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Void</span><span class="o">&gt;</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Health/Health_Paginator.swift#L39-L52">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1348,9 +1443,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9AWSHealth6HealthV48describeAffectedEntitiesForOrganizationPaginator_2on0I4Page3NIO15EventLoopFutureCyytGAC08DescribedefG7RequestV_AG0lM0_pSgAIySbGAC0odefG8ResponseV_AgM_ptctF"></a>
-                    <a name="//apple_ref/swift/Method/describeAffectedEntitiesForOrganizationPaginator(_:on:onPage:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9AWSHealth6HealthV48describeAffectedEntitiesForOrganizationPaginator_2on0I4Page3NIO15EventLoopFutureCyytGAC08DescribedefG7RequestV_AG0lM0_pSgAIySbGAC0odefG8ResponseV_AgM_ptctF">describeAffectedEntitiesForOrganizationPaginator(_:on:onPage:)</a>
+                    <a name="/s:10SotoHealth0B0V48describeAffectedEntitiesForOrganizationPaginator_2on6logger0I4Page3NIO15EventLoopFutureCyytGAC08DescribedefG7RequestV_AH0mN0_pSg7Logging6LoggerVAJySbGAC0pdefG8ResponseV_AhN_ptctF"></a>
+                    <a name="//apple_ref/swift/Method/describeAffectedEntitiesForOrganizationPaginator(_:on:logger:onPage:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SotoHealth0B0V48describeAffectedEntitiesForOrganizationPaginator_2on6logger0I4Page3NIO15EventLoopFutureCyytGAC08DescribedefG7RequestV_AH0mN0_pSg7Logging6LoggerVAJySbGAC0pdefG8ResponseV_AhN_ptctF">describeAffectedEntitiesForOrganizationPaginator(_:<wbr>on:<wbr>logger:<wbr>onPage:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1358,7 +1453,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Returns a list of entities that have been affected by one or more events for one or more accounts in your organization in AWS Organizations, based on the filter criteria. Entities can refer to individual customer resources, groups of customer resources, or any other construct, depending on the AWS service. At least one event ARN and account ID are required. Results are sorted by the lastUpdatedTime of the entity, starting with the most recent. Before you can call this operation, you must first enable AWS Health to work with AWS Organizations. To do this, call the EnableHealthServiceAccessForOrganization operation from your organization&rsquo;s master account.</p>
+                        <p>Returns a list of entities that have been affected by one or more events for one or more accounts in your organization in AWS Organizations, based on the filter criteria. Entities can refer to individual customer resources, groups of customer resources, or any other construct, depending on the AWS service. At least one event Amazon Resource Name (ARN) and account ID are required. Results are sorted by the lastUpdatedTime of the entity, starting with the most recent. Before you can call this operation, you must first enable AWS Health to work with AWS Organizations. To do this, call the EnableHealthServiceAccessForOrganization operation from your organization&rsquo;s master account.   This API operation uses pagination. Specify the nextToken parameter in the next request to return more results.</p>
 
                       </div>
                       <div class="declaration">
@@ -1368,11 +1463,14 @@
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">describeAffectedEntitiesForOrganizationPaginator</span><span class="p">(</span>
     <span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/Health/DescribeAffectedEntitiesForOrganizationRequest.html">DescribeAffectedEntitiesForOrganizationRequest</a></span><span class="p">,</span>
     <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
-    <span class="nv">onPage</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/Health/DescribeAffectedEntitiesForOrganizationResponse.html">DescribeAffectedEntitiesForOrganizationResponse</a></span><span class="p">,</span>
-    <span class="kt">EventLoop</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Bool</span><span class="o">&gt;</span>
+    <span class="nv">logger</span><span class="p">:</span> <span class="kt">Logger</span> <span class="o">=</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="o">.</span><span class="n">loggingDisabled</span><span class="p">,</span>
+    <span class="nv">onPage</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/Health/DescribeAffectedEntitiesForOrganizationResponse.html">DescribeAffectedEntitiesForOrganizationResponse</a></span><span class="p">,</span> <span class="kt">EventLoop</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Bool</span><span class="o">&gt;</span>
 <span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Void</span><span class="o">&gt;</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Health/Health_Paginator.swift#L55-L68">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1380,9 +1478,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9AWSHealth6HealthV32describeEventAggregatesPaginator_2on0G4Page3NIO0D10LoopFutureCyytGAC08DescribedE7RequestV_AG0dJ0_pSgAIySbGAC0ldE8ResponseV_AgM_ptctF"></a>
-                    <a name="//apple_ref/swift/Method/describeEventAggregatesPaginator(_:on:onPage:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9AWSHealth6HealthV32describeEventAggregatesPaginator_2on0G4Page3NIO0D10LoopFutureCyytGAC08DescribedE7RequestV_AG0dJ0_pSgAIySbGAC0ldE8ResponseV_AgM_ptctF">describeEventAggregatesPaginator(_:on:onPage:)</a>
+                    <a name="/s:10SotoHealth0B0V32describeEventAggregatesPaginator_2on6logger0G4Page3NIO0D10LoopFutureCyytGAC08DescribedE7RequestV_AH0dK0_pSg7Logging6LoggerVAJySbGAC0mdE8ResponseV_AhN_ptctF"></a>
+                    <a name="//apple_ref/swift/Method/describeEventAggregatesPaginator(_:on:logger:onPage:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SotoHealth0B0V32describeEventAggregatesPaginator_2on6logger0G4Page3NIO0D10LoopFutureCyytGAC08DescribedE7RequestV_AH0dK0_pSg7Logging6LoggerVAJySbGAC0mdE8ResponseV_AhN_ptctF">describeEventAggregatesPaginator(_:<wbr>on:<wbr>logger:<wbr>onPage:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1390,7 +1488,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Returns the number of events of each event type (issue, scheduled change, and account notification). If no filter is specified, the counts of all events in each category are returned.</p>
+                        <p>Returns the number of events of each event type (issue, scheduled change, and account notification). If no filter is specified, the counts of all events in each category are returned.  This API operation uses pagination. Specify the nextToken parameter in the next request to return more results.</p>
 
                       </div>
                       <div class="declaration">
@@ -1400,11 +1498,14 @@
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">describeEventAggregatesPaginator</span><span class="p">(</span>
     <span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/Health/DescribeEventAggregatesRequest.html">DescribeEventAggregatesRequest</a></span><span class="p">,</span>
     <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
-    <span class="nv">onPage</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/Health/DescribeEventAggregatesResponse.html">DescribeEventAggregatesResponse</a></span><span class="p">,</span>
-    <span class="kt">EventLoop</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Bool</span><span class="o">&gt;</span>
+    <span class="nv">logger</span><span class="p">:</span> <span class="kt">Logger</span> <span class="o">=</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="o">.</span><span class="n">loggingDisabled</span><span class="p">,</span>
+    <span class="nv">onPage</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/Health/DescribeEventAggregatesResponse.html">DescribeEventAggregatesResponse</a></span><span class="p">,</span> <span class="kt">EventLoop</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Bool</span><span class="o">&gt;</span>
 <span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Void</span><span class="o">&gt;</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Health/Health_Paginator.swift#L71-L84">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1412,9 +1513,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9AWSHealth6HealthV27describeEventTypesPaginator_2on0G4Page3NIO0D10LoopFutureCyytGAC08DescribedE7RequestV_AG0dJ0_pSgAIySbGAC0ldE8ResponseV_AgM_ptctF"></a>
-                    <a name="//apple_ref/swift/Method/describeEventTypesPaginator(_:on:onPage:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9AWSHealth6HealthV27describeEventTypesPaginator_2on0G4Page3NIO0D10LoopFutureCyytGAC08DescribedE7RequestV_AG0dJ0_pSgAIySbGAC0ldE8ResponseV_AgM_ptctF">describeEventTypesPaginator(_:on:onPage:)</a>
+                    <a name="/s:10SotoHealth0B0V27describeEventTypesPaginator_2on6logger0G4Page3NIO0D10LoopFutureCyytGAC08DescribedE7RequestV_AH0dK0_pSg7Logging6LoggerVAJySbGAC0mdE8ResponseV_AhN_ptctF"></a>
+                    <a name="//apple_ref/swift/Method/describeEventTypesPaginator(_:on:logger:onPage:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SotoHealth0B0V27describeEventTypesPaginator_2on6logger0G4Page3NIO0D10LoopFutureCyytGAC08DescribedE7RequestV_AH0dK0_pSg7Logging6LoggerVAJySbGAC0mdE8ResponseV_AhN_ptctF">describeEventTypesPaginator(_:<wbr>on:<wbr>logger:<wbr>onPage:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1422,7 +1523,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Returns the event types that meet the specified filter criteria. If no filter criteria are specified, all event types are returned, in no particular order.</p>
+                        <p>Returns the event types that meet the specified filter criteria. If no filter criteria are specified, all event types are returned, in no particular order.  This API operation uses pagination. Specify the nextToken parameter in the next request to return more results.</p>
 
                       </div>
                       <div class="declaration">
@@ -1432,11 +1533,14 @@
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">describeEventTypesPaginator</span><span class="p">(</span>
     <span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/Health/DescribeEventTypesRequest.html">DescribeEventTypesRequest</a></span><span class="p">,</span>
     <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
-    <span class="nv">onPage</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/Health/DescribeEventTypesResponse.html">DescribeEventTypesResponse</a></span><span class="p">,</span>
-    <span class="kt">EventLoop</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Bool</span><span class="o">&gt;</span>
+    <span class="nv">logger</span><span class="p">:</span> <span class="kt">Logger</span> <span class="o">=</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="o">.</span><span class="n">loggingDisabled</span><span class="p">,</span>
+    <span class="nv">onPage</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/Health/DescribeEventTypesResponse.html">DescribeEventTypesResponse</a></span><span class="p">,</span> <span class="kt">EventLoop</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Bool</span><span class="o">&gt;</span>
 <span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Void</span><span class="o">&gt;</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Health/Health_Paginator.swift#L87-L100">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1444,9 +1548,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9AWSHealth6HealthV23describeEventsPaginator_2on0F4Page3NIO15EventLoopFutureCyytGAC08DescribeD7RequestV_AG0iJ0_pSgAIySbGAC0lD8ResponseV_AgM_ptctF"></a>
-                    <a name="//apple_ref/swift/Method/describeEventsPaginator(_:on:onPage:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9AWSHealth6HealthV23describeEventsPaginator_2on0F4Page3NIO15EventLoopFutureCyytGAC08DescribeD7RequestV_AG0iJ0_pSgAIySbGAC0lD8ResponseV_AgM_ptctF">describeEventsPaginator(_:on:onPage:)</a>
+                    <a name="/s:10SotoHealth0B0V23describeEventsPaginator_2on6logger0F4Page3NIO15EventLoopFutureCyytGAC08DescribeD7RequestV_AH0jK0_pSg7Logging6LoggerVAJySbGAC0mD8ResponseV_AhN_ptctF"></a>
+                    <a name="//apple_ref/swift/Method/describeEventsPaginator(_:on:logger:onPage:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SotoHealth0B0V23describeEventsPaginator_2on6logger0F4Page3NIO15EventLoopFutureCyytGAC08DescribeD7RequestV_AH0jK0_pSg7Logging6LoggerVAJySbGAC0mD8ResponseV_AhN_ptctF">describeEventsPaginator(_:<wbr>on:<wbr>logger:<wbr>onPage:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1454,7 +1558,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Returns information about events that meet the specified filter criteria. Events are returned in a summary form and do not include the detailed description, any additional metadata that depends on the event type, or any affected resources. To retrieve that information, use the DescribeEventDetails and DescribeAffectedEntities operations. If no filter criteria are specified, all events are returned. Results are sorted by lastModifiedTime, starting with the most recent.</p>
+                        <p>Returns information about events that meet the specified filter criteria. Events are returned in a summary form and do not include the detailed description, any additional metadata that depends on the event type, or any affected resources. To retrieve that information, use the DescribeEventDetails and DescribeAffectedEntities operations. If no filter criteria are specified, all events are returned. Results are sorted by lastModifiedTime, starting with the most recent event.    When you call the DescribeEvents operation and specify an entity for the entityValues parameter, AWS Health might return public events that aren&rsquo;t specific to that resource. For example, if you call DescribeEvents and specify an ID for an Amazon Elastic Compute Cloud (Amazon EC2) instance, AWS Health might return events that aren&rsquo;t specific to that resource or service. To get events that are specific to a service, use the services parameter in the filter object. For more information, see Event.   This API operation uses pagination. Specify the nextToken parameter in the next request to return more results.</p>
 
                       </div>
                       <div class="declaration">
@@ -1464,11 +1568,14 @@
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">describeEventsPaginator</span><span class="p">(</span>
     <span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/Health/DescribeEventsRequest.html">DescribeEventsRequest</a></span><span class="p">,</span>
     <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
-    <span class="nv">onPage</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/Health/DescribeEventsResponse.html">DescribeEventsResponse</a></span><span class="p">,</span>
-    <span class="kt">EventLoop</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Bool</span><span class="o">&gt;</span>
+    <span class="nv">logger</span><span class="p">:</span> <span class="kt">Logger</span> <span class="o">=</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="o">.</span><span class="n">loggingDisabled</span><span class="p">,</span>
+    <span class="nv">onPage</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/Health/DescribeEventsResponse.html">DescribeEventsResponse</a></span><span class="p">,</span> <span class="kt">EventLoop</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Bool</span><span class="o">&gt;</span>
 <span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Void</span><span class="o">&gt;</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Health/Health_Paginator.swift#L103-L116">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1476,9 +1583,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9AWSHealth6HealthV38describeEventsForOrganizationPaginator_2on0H4Page3NIO15EventLoopFutureCyytGAC08DescribedeF7RequestV_AG0kL0_pSgAIySbGAC0ndeF8ResponseV_AgM_ptctF"></a>
-                    <a name="//apple_ref/swift/Method/describeEventsForOrganizationPaginator(_:on:onPage:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9AWSHealth6HealthV38describeEventsForOrganizationPaginator_2on0H4Page3NIO15EventLoopFutureCyytGAC08DescribedeF7RequestV_AG0kL0_pSgAIySbGAC0ndeF8ResponseV_AgM_ptctF">describeEventsForOrganizationPaginator(_:on:onPage:)</a>
+                    <a name="/s:10SotoHealth0B0V38describeEventsForOrganizationPaginator_2on6logger0H4Page3NIO15EventLoopFutureCyytGAC08DescribedeF7RequestV_AH0lM0_pSg7Logging6LoggerVAJySbGAC0odeF8ResponseV_AhN_ptctF"></a>
+                    <a name="//apple_ref/swift/Method/describeEventsForOrganizationPaginator(_:on:logger:onPage:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SotoHealth0B0V38describeEventsForOrganizationPaginator_2on6logger0H4Page3NIO15EventLoopFutureCyytGAC08DescribedeF7RequestV_AH0lM0_pSg7Logging6LoggerVAJySbGAC0odeF8ResponseV_AhN_ptctF">describeEventsForOrganizationPaginator(_:<wbr>on:<wbr>logger:<wbr>onPage:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1486,7 +1593,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Returns information about events across your organization in AWS Organizations, meeting the specified filter criteria. Events are returned in a summary form and do not include the accounts impacted, detailed description, any additional metadata that depends on the event type, or any affected resources. To retrieve that information, use the DescribeAffectedAccountsForOrganization, DescribeEventDetailsForOrganization, and DescribeAffectedEntitiesForOrganization operations. If no filter criteria are specified, all events across your organization are returned. Results are sorted by lastModifiedTime, starting with the most recent. Before you can call this operation, you must first enable Health to work with AWS Organizations. To do this, call the EnableHealthServiceAccessForOrganization operation from your organization&rsquo;s master account.</p>
+                        <p>Returns information about events across your organization in AWS Organizations. You can use thefilters parameter to specify the events that you want to return. Events are returned in a summary form and don&rsquo;t include the affected accounts, detailed description, any additional metadata that depends on the event type, or any affected resources. To retrieve that information, use the following operations:    DescribeAffectedAccountsForOrganization     DescribeEventDetailsForOrganization     DescribeAffectedEntitiesForOrganization    If you don&rsquo;t specify a filter, the DescribeEventsForOrganizations returns all events across your organization. Results are sorted by lastModifiedTime, starting with the most recent event.  For more information about the different types of AWS Health events, see Event. Before you can call this operation, you must first enable AWS Health to work with AWS Organizations. To do this, call the EnableHealthServiceAccessForOrganization operation from your organization&rsquo;s master AWS account.  This API operation uses pagination. Specify the nextToken parameter in the next request to return more results.</p>
 
                       </div>
                       <div class="declaration">
@@ -1496,11 +1603,14 @@
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">describeEventsForOrganizationPaginator</span><span class="p">(</span>
     <span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/Health/DescribeEventsForOrganizationRequest.html">DescribeEventsForOrganizationRequest</a></span><span class="p">,</span>
     <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
-    <span class="nv">onPage</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/Health/DescribeEventsForOrganizationResponse.html">DescribeEventsForOrganizationResponse</a></span><span class="p">,</span>
-    <span class="kt">EventLoop</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Bool</span><span class="o">&gt;</span>
+    <span class="nv">logger</span><span class="p">:</span> <span class="kt">Logger</span> <span class="o">=</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="o">.</span><span class="n">loggingDisabled</span><span class="p">,</span>
+    <span class="nv">onPage</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/Health/DescribeEventsForOrganizationResponse.html">DescribeEventsForOrganizationResponse</a></span><span class="p">,</span> <span class="kt">EventLoop</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Bool</span><span class="o">&gt;</span>
 <span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Void</span><span class="o">&gt;</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Health/Health_Paginator.swift#L119-L132">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1511,17 +1621,19 @@
               <div class="task-name-container">
                 <a name="/Shapes"></a>
                 <a name="//apple_ref/swift/Section/Shapes" class="dashAnchor"></a>
-                <a href="#/Shapes">
-                  <h3 class="section-name">Shapes</h3>
-                </a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Shapes"></a>
+                  <h3 class="section-name"><p>Shapes</p>
+</h3>
+                </div>
               </div>
               <ul>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9AWSHealth6HealthV46DescribeAffectedAccountsForOrganizationRequestV"></a>
+                    <a name="/s:10SotoHealth0B0V46DescribeAffectedAccountsForOrganizationRequestV"></a>
                     <a name="//apple_ref/swift/Struct/DescribeAffectedAccountsForOrganizationRequest" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9AWSHealth6HealthV46DescribeAffectedAccountsForOrganizationRequestV">DescribeAffectedAccountsForOrganizationRequest</a>
+                    <a class="token" href="#/s:10SotoHealth0B0V46DescribeAffectedAccountsForOrganizationRequestV">DescribeAffectedAccountsForOrganizationRequest</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1542,15 +1654,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Health/Health_Shapes.swift#L117-L146">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9AWSHealth6HealthV31DescribeAffectedEntitiesRequestV"></a>
+                    <a name="/s:10SotoHealth0B0V31DescribeAffectedEntitiesRequestV"></a>
                     <a name="//apple_ref/swift/Struct/DescribeAffectedEntitiesRequest" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9AWSHealth6HealthV31DescribeAffectedEntitiesRequestV">DescribeAffectedEntitiesRequest</a>
+                    <a class="token" href="#/s:10SotoHealth0B0V31DescribeAffectedEntitiesRequestV">DescribeAffectedEntitiesRequest</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1571,15 +1686,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Health/Health_Shapes.swift#L231-L266">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9AWSHealth6HealthV46DescribeAffectedEntitiesForOrganizationRequestV"></a>
+                    <a name="/s:10SotoHealth0B0V46DescribeAffectedEntitiesForOrganizationRequestV"></a>
                     <a name="//apple_ref/swift/Struct/DescribeAffectedEntitiesForOrganizationRequest" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9AWSHealth6HealthV46DescribeAffectedEntitiesForOrganizationRequestV">DescribeAffectedEntitiesForOrganizationRequest</a>
+                    <a class="token" href="#/s:10SotoHealth0B0V46DescribeAffectedEntitiesForOrganizationRequestV">DescribeAffectedEntitiesForOrganizationRequest</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1600,15 +1718,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Health/Health_Shapes.swift#L169-L208">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9AWSHealth6HealthV30DescribeEventAggregatesRequestV"></a>
+                    <a name="/s:10SotoHealth0B0V30DescribeEventAggregatesRequestV"></a>
                     <a name="//apple_ref/swift/Struct/DescribeEventAggregatesRequest" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9AWSHealth6HealthV30DescribeEventAggregatesRequestV">DescribeEventAggregatesRequest</a>
+                    <a class="token" href="#/s:10SotoHealth0B0V30DescribeEventAggregatesRequestV">DescribeEventAggregatesRequest</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1629,15 +1750,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Health/Health_Shapes.swift#L320-L352">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9AWSHealth6HealthV25DescribeEventTypesRequestV"></a>
+                    <a name="/s:10SotoHealth0B0V25DescribeEventTypesRequestV"></a>
                     <a name="//apple_ref/swift/Struct/DescribeEventTypesRequest" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9AWSHealth6HealthV25DescribeEventTypesRequestV">DescribeEventTypesRequest</a>
+                    <a class="token" href="#/s:10SotoHealth0B0V25DescribeEventTypesRequestV">DescribeEventTypesRequest</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1658,15 +1782,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Health/Health_Shapes.swift#L462-L497">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9AWSHealth6HealthV21DescribeEventsRequestV"></a>
+                    <a name="/s:10SotoHealth0B0V21DescribeEventsRequestV"></a>
                     <a name="//apple_ref/swift/Struct/DescribeEventsRequest" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9AWSHealth6HealthV21DescribeEventsRequestV">DescribeEventsRequest</a>
+                    <a class="token" href="#/s:10SotoHealth0B0V21DescribeEventsRequestV">DescribeEventsRequest</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1687,15 +1814,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Health/Health_Shapes.swift#L570-L605">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9AWSHealth6HealthV36DescribeEventsForOrganizationRequestV"></a>
+                    <a name="/s:10SotoHealth0B0V36DescribeEventsForOrganizationRequestV"></a>
                     <a name="//apple_ref/swift/Struct/DescribeEventsForOrganizationRequest" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9AWSHealth6HealthV36DescribeEventsForOrganizationRequestV">DescribeEventsForOrganizationRequest</a>
+                    <a class="token" href="#/s:10SotoHealth0B0V36DescribeEventsForOrganizationRequestV">DescribeEventsForOrganizationRequest</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1716,15 +1846,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Health/Health_Shapes.swift#L516-L551">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9AWSHealth6HealthV14AffectedEntityV"></a>
+                    <a name="/s:10SotoHealth0B0V14AffectedEntityV"></a>
                     <a name="//apple_ref/swift/Struct/AffectedEntity" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9AWSHealth6HealthV14AffectedEntityV">AffectedEntity</a>
+                    <a class="token" href="#/s:10SotoHealth0B0V14AffectedEntityV">AffectedEntity</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1740,9 +1873,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">AffectedEntity</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">AffectedEntity</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Health/Health_Shapes.swift#L59-L98">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1750,9 +1886,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9AWSHealth6HealthV13DateTimeRangeV"></a>
+                    <a name="/s:10SotoHealth0B0V13DateTimeRangeV"></a>
                     <a name="//apple_ref/swift/Struct/DateTimeRange" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9AWSHealth6HealthV13DateTimeRangeV">DateTimeRange</a>
+                    <a class="token" href="#/s:10SotoHealth0B0V13DateTimeRangeV">DateTimeRange</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1772,15 +1908,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Health/Health_Shapes.swift#L100-L115">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9AWSHealth6HealthV47DescribeAffectedAccountsForOrganizationResponseV"></a>
+                    <a name="/s:10SotoHealth0B0V47DescribeAffectedAccountsForOrganizationResponseV"></a>
                     <a name="//apple_ref/swift/Struct/DescribeAffectedAccountsForOrganizationResponse" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9AWSHealth6HealthV47DescribeAffectedAccountsForOrganizationResponseV">DescribeAffectedAccountsForOrganizationResponse</a>
+                    <a class="token" href="#/s:10SotoHealth0B0V47DescribeAffectedAccountsForOrganizationResponseV">DescribeAffectedAccountsForOrganizationResponse</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1796,9 +1935,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DescribeAffectedAccountsForOrganizationResponse</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DescribeAffectedAccountsForOrganizationResponse</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Health/Health_Shapes.swift#L148-L167">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1806,9 +1948,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9AWSHealth6HealthV47DescribeAffectedEntitiesForOrganizationResponseV"></a>
+                    <a name="/s:10SotoHealth0B0V47DescribeAffectedEntitiesForOrganizationResponseV"></a>
                     <a name="//apple_ref/swift/Struct/DescribeAffectedEntitiesForOrganizationResponse" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9AWSHealth6HealthV47DescribeAffectedEntitiesForOrganizationResponseV">DescribeAffectedEntitiesForOrganizationResponse</a>
+                    <a class="token" href="#/s:10SotoHealth0B0V47DescribeAffectedEntitiesForOrganizationResponseV">DescribeAffectedEntitiesForOrganizationResponse</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1824,9 +1966,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DescribeAffectedEntitiesForOrganizationResponse</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DescribeAffectedEntitiesForOrganizationResponse</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Health/Health_Shapes.swift#L210-L229">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1834,9 +1979,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9AWSHealth6HealthV32DescribeAffectedEntitiesResponseV"></a>
+                    <a name="/s:10SotoHealth0B0V32DescribeAffectedEntitiesResponseV"></a>
                     <a name="//apple_ref/swift/Struct/DescribeAffectedEntitiesResponse" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9AWSHealth6HealthV32DescribeAffectedEntitiesResponseV">DescribeAffectedEntitiesResponse</a>
+                    <a class="token" href="#/s:10SotoHealth0B0V32DescribeAffectedEntitiesResponseV">DescribeAffectedEntitiesResponse</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1852,9 +1997,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DescribeAffectedEntitiesResponse</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DescribeAffectedEntitiesResponse</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Health/Health_Shapes.swift#L268-L283">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1862,9 +2010,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9AWSHealth6HealthV31DescribeEntityAggregatesRequestV"></a>
+                    <a name="/s:10SotoHealth0B0V31DescribeEntityAggregatesRequestV"></a>
                     <a name="//apple_ref/swift/Struct/DescribeEntityAggregatesRequest" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9AWSHealth6HealthV31DescribeEntityAggregatesRequestV">DescribeEntityAggregatesRequest</a>
+                    <a class="token" href="#/s:10SotoHealth0B0V31DescribeEntityAggregatesRequestV">DescribeEntityAggregatesRequest</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1884,15 +2032,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Health/Health_Shapes.swift#L285-L305">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9AWSHealth6HealthV32DescribeEntityAggregatesResponseV"></a>
+                    <a name="/s:10SotoHealth0B0V32DescribeEntityAggregatesResponseV"></a>
                     <a name="//apple_ref/swift/Struct/DescribeEntityAggregatesResponse" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9AWSHealth6HealthV32DescribeEntityAggregatesResponseV">DescribeEntityAggregatesResponse</a>
+                    <a class="token" href="#/s:10SotoHealth0B0V32DescribeEntityAggregatesResponseV">DescribeEntityAggregatesResponse</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1908,9 +2059,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DescribeEntityAggregatesResponse</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DescribeEntityAggregatesResponse</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Health/Health_Shapes.swift#L307-L318">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1918,9 +2072,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9AWSHealth6HealthV31DescribeEventAggregatesResponseV"></a>
+                    <a name="/s:10SotoHealth0B0V31DescribeEventAggregatesResponseV"></a>
                     <a name="//apple_ref/swift/Struct/DescribeEventAggregatesResponse" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9AWSHealth6HealthV31DescribeEventAggregatesResponseV">DescribeEventAggregatesResponse</a>
+                    <a class="token" href="#/s:10SotoHealth0B0V31DescribeEventAggregatesResponseV">DescribeEventAggregatesResponse</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1936,9 +2090,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DescribeEventAggregatesResponse</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DescribeEventAggregatesResponse</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Health/Health_Shapes.swift#L354-L369">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1946,9 +2103,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9AWSHealth6HealthV42DescribeEventDetailsForOrganizationRequestV"></a>
+                    <a name="/s:10SotoHealth0B0V42DescribeEventDetailsForOrganizationRequestV"></a>
                     <a name="//apple_ref/swift/Struct/DescribeEventDetailsForOrganizationRequest" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9AWSHealth6HealthV42DescribeEventDetailsForOrganizationRequestV">DescribeEventDetailsForOrganizationRequest</a>
+                    <a class="token" href="#/s:10SotoHealth0B0V42DescribeEventDetailsForOrganizationRequestV">DescribeEventDetailsForOrganizationRequest</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1968,15 +2125,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Health/Health_Shapes.swift#L371-L397">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9AWSHealth6HealthV43DescribeEventDetailsForOrganizationResponseV"></a>
+                    <a name="/s:10SotoHealth0B0V43DescribeEventDetailsForOrganizationResponseV"></a>
                     <a name="//apple_ref/swift/Struct/DescribeEventDetailsForOrganizationResponse" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9AWSHealth6HealthV43DescribeEventDetailsForOrganizationResponseV">DescribeEventDetailsForOrganizationResponse</a>
+                    <a class="token" href="#/s:10SotoHealth0B0V43DescribeEventDetailsForOrganizationResponseV">DescribeEventDetailsForOrganizationResponse</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1992,9 +2152,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DescribeEventDetailsForOrganizationResponse</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DescribeEventDetailsForOrganizationResponse</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Health/Health_Shapes.swift#L399-L414">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -2002,9 +2165,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9AWSHealth6HealthV27DescribeEventDetailsRequestV"></a>
+                    <a name="/s:10SotoHealth0B0V27DescribeEventDetailsRequestV"></a>
                     <a name="//apple_ref/swift/Struct/DescribeEventDetailsRequest" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9AWSHealth6HealthV27DescribeEventDetailsRequestV">DescribeEventDetailsRequest</a>
+                    <a class="token" href="#/s:10SotoHealth0B0V27DescribeEventDetailsRequestV">DescribeEventDetailsRequest</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2024,15 +2187,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Health/Health_Shapes.swift#L416-L443">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9AWSHealth6HealthV28DescribeEventDetailsResponseV"></a>
+                    <a name="/s:10SotoHealth0B0V28DescribeEventDetailsResponseV"></a>
                     <a name="//apple_ref/swift/Struct/DescribeEventDetailsResponse" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9AWSHealth6HealthV28DescribeEventDetailsResponseV">DescribeEventDetailsResponse</a>
+                    <a class="token" href="#/s:10SotoHealth0B0V28DescribeEventDetailsResponseV">DescribeEventDetailsResponse</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2048,9 +2214,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DescribeEventDetailsResponse</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DescribeEventDetailsResponse</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Health/Health_Shapes.swift#L445-L460">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -2058,9 +2227,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9AWSHealth6HealthV26DescribeEventTypesResponseV"></a>
+                    <a name="/s:10SotoHealth0B0V26DescribeEventTypesResponseV"></a>
                     <a name="//apple_ref/swift/Struct/DescribeEventTypesResponse" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9AWSHealth6HealthV26DescribeEventTypesResponseV">DescribeEventTypesResponse</a>
+                    <a class="token" href="#/s:10SotoHealth0B0V26DescribeEventTypesResponseV">DescribeEventTypesResponse</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2076,9 +2245,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DescribeEventTypesResponse</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DescribeEventTypesResponse</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Health/Health_Shapes.swift#L499-L514">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -2086,9 +2258,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9AWSHealth6HealthV37DescribeEventsForOrganizationResponseV"></a>
+                    <a name="/s:10SotoHealth0B0V37DescribeEventsForOrganizationResponseV"></a>
                     <a name="//apple_ref/swift/Struct/DescribeEventsForOrganizationResponse" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9AWSHealth6HealthV37DescribeEventsForOrganizationResponseV">DescribeEventsForOrganizationResponse</a>
+                    <a class="token" href="#/s:10SotoHealth0B0V37DescribeEventsForOrganizationResponseV">DescribeEventsForOrganizationResponse</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2104,9 +2276,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DescribeEventsForOrganizationResponse</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DescribeEventsForOrganizationResponse</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Health/Health_Shapes.swift#L553-L568">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -2114,9 +2289,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9AWSHealth6HealthV22DescribeEventsResponseV"></a>
+                    <a name="/s:10SotoHealth0B0V22DescribeEventsResponseV"></a>
                     <a name="//apple_ref/swift/Struct/DescribeEventsResponse" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9AWSHealth6HealthV22DescribeEventsResponseV">DescribeEventsResponse</a>
+                    <a class="token" href="#/s:10SotoHealth0B0V22DescribeEventsResponseV">DescribeEventsResponse</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2132,9 +2307,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DescribeEventsResponse</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DescribeEventsResponse</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Health/Health_Shapes.swift#L607-L622">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -2142,9 +2320,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9AWSHealth6HealthV08DescribeB36ServiceStatusForOrganizationResponseV"></a>
+                    <a name="/s:10SotoHealth0B0V08DescribeB36ServiceStatusForOrganizationResponseV"></a>
                     <a name="//apple_ref/swift/Struct/DescribeHealthServiceStatusForOrganizationResponse" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9AWSHealth6HealthV08DescribeB36ServiceStatusForOrganizationResponseV">DescribeHealthServiceStatusForOrganizationResponse</a>
+                    <a class="token" href="#/s:10SotoHealth0B0V08DescribeB36ServiceStatusForOrganizationResponseV">DescribeHealthServiceStatusForOrganizationResponse</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2160,9 +2338,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DescribeHealthServiceStatusForOrganizationResponse</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DescribeHealthServiceStatusForOrganizationResponse</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Health/Health_Shapes.swift#L624-L635">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -2170,9 +2351,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9AWSHealth6HealthV15EntityAggregateV"></a>
+                    <a name="/s:10SotoHealth0B0V15EntityAggregateV"></a>
                     <a name="//apple_ref/swift/Struct/EntityAggregate" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9AWSHealth6HealthV15EntityAggregateV">EntityAggregate</a>
+                    <a class="token" href="#/s:10SotoHealth0B0V15EntityAggregateV">EntityAggregate</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2188,9 +2369,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">EntityAggregate</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">EntityAggregate</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Health/Health_Shapes.swift#L637-L652">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -2198,9 +2382,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9AWSHealth6HealthV12EntityFilterV"></a>
+                    <a name="/s:10SotoHealth0B0V12EntityFilterV"></a>
                     <a name="//apple_ref/swift/Struct/EntityFilter" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9AWSHealth6HealthV12EntityFilterV">EntityFilter</a>
+                    <a class="token" href="#/s:10SotoHealth0B0V12EntityFilterV">EntityFilter</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2220,15 +2404,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Health/Health_Shapes.swift#L654-L711">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9AWSHealth6HealthV5EventV"></a>
+                    <a name="/s:10SotoHealth0B0V5EventV"></a>
                     <a name="//apple_ref/swift/Struct/Event" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9AWSHealth6HealthV5EventV">Event</a>
+                    <a class="token" href="#/s:10SotoHealth0B0V5EventV">Event</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2244,9 +2431,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Event</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Event</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Health/Health_Shapes.swift#L713-L764">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -2254,9 +2444,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9AWSHealth6HealthV18EventAccountFilterV"></a>
+                    <a name="/s:10SotoHealth0B0V18EventAccountFilterV"></a>
                     <a name="//apple_ref/swift/Struct/EventAccountFilter" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9AWSHealth6HealthV18EventAccountFilterV">EventAccountFilter</a>
+                    <a class="token" href="#/s:10SotoHealth0B0V18EventAccountFilterV">EventAccountFilter</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2276,15 +2466,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Health/Health_Shapes.swift#L766-L788">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9AWSHealth6HealthV14EventAggregateV"></a>
+                    <a name="/s:10SotoHealth0B0V14EventAggregateV"></a>
                     <a name="//apple_ref/swift/Struct/EventAggregate" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9AWSHealth6HealthV14EventAggregateV">EventAggregate</a>
+                    <a class="token" href="#/s:10SotoHealth0B0V14EventAggregateV">EventAggregate</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2300,9 +2493,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">EventAggregate</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">EventAggregate</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Health/Health_Shapes.swift#L790-L805">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -2310,9 +2506,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9AWSHealth6HealthV16EventDescriptionV"></a>
+                    <a name="/s:10SotoHealth0B0V16EventDescriptionV"></a>
                     <a name="//apple_ref/swift/Struct/EventDescription" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9AWSHealth6HealthV16EventDescriptionV">EventDescription</a>
+                    <a class="token" href="#/s:10SotoHealth0B0V16EventDescriptionV">EventDescription</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2328,9 +2524,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">EventDescription</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">EventDescription</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Health/Health_Shapes.swift#L807-L818">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -2338,9 +2537,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9AWSHealth6HealthV12EventDetailsV"></a>
+                    <a name="/s:10SotoHealth0B0V12EventDetailsV"></a>
                     <a name="//apple_ref/swift/Struct/EventDetails" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9AWSHealth6HealthV12EventDetailsV">EventDetails</a>
+                    <a class="token" href="#/s:10SotoHealth0B0V12EventDetailsV">EventDetails</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2356,9 +2555,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">EventDetails</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">EventDetails</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Health/Health_Shapes.swift#L820-L839">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -2366,9 +2568,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9AWSHealth6HealthV21EventDetailsErrorItemV"></a>
+                    <a name="/s:10SotoHealth0B0V21EventDetailsErrorItemV"></a>
                     <a name="//apple_ref/swift/Struct/EventDetailsErrorItem" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9AWSHealth6HealthV21EventDetailsErrorItemV">EventDetailsErrorItem</a>
+                    <a class="token" href="#/s:10SotoHealth0B0V21EventDetailsErrorItemV">EventDetailsErrorItem</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2384,9 +2586,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">EventDetailsErrorItem</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">EventDetailsErrorItem</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Health/Health_Shapes.swift#L841-L860">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -2394,9 +2599,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9AWSHealth6HealthV11EventFilterV"></a>
+                    <a name="/s:10SotoHealth0B0V11EventFilterV"></a>
                     <a name="//apple_ref/swift/Struct/EventFilter" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9AWSHealth6HealthV11EventFilterV">EventFilter</a>
+                    <a class="token" href="#/s:10SotoHealth0B0V11EventFilterV">EventFilter</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2416,15 +2621,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Health/Health_Shapes.swift#L862-L979">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9AWSHealth6HealthV9EventTypeV"></a>
+                    <a name="/s:10SotoHealth0B0V9EventTypeV"></a>
                     <a name="//apple_ref/swift/Struct/EventType" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9AWSHealth6HealthV9EventTypeV">EventType</a>
+                    <a class="token" href="#/s:10SotoHealth0B0V9EventTypeV">EventType</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2440,9 +2648,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">EventType</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">EventType</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Health/Health_Shapes.swift#L981-L1000">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -2450,9 +2661,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9AWSHealth6HealthV15EventTypeFilterV"></a>
+                    <a name="/s:10SotoHealth0B0V15EventTypeFilterV"></a>
                     <a name="//apple_ref/swift/Struct/EventTypeFilter" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9AWSHealth6HealthV15EventTypeFilterV">EventTypeFilter</a>
+                    <a class="token" href="#/s:10SotoHealth0B0V15EventTypeFilterV">EventTypeFilter</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2472,15 +2683,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Health/Health_Shapes.swift#L1002-L1040">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9AWSHealth6HealthV37OrganizationAffectedEntitiesErrorItemV"></a>
+                    <a name="/s:10SotoHealth0B0V37OrganizationAffectedEntitiesErrorItemV"></a>
                     <a name="//apple_ref/swift/Struct/OrganizationAffectedEntitiesErrorItem" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9AWSHealth6HealthV37OrganizationAffectedEntitiesErrorItemV">OrganizationAffectedEntitiesErrorItem</a>
+                    <a class="token" href="#/s:10SotoHealth0B0V37OrganizationAffectedEntitiesErrorItemV">OrganizationAffectedEntitiesErrorItem</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2496,9 +2710,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">OrganizationAffectedEntitiesErrorItem</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">OrganizationAffectedEntitiesErrorItem</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Health/Health_Shapes.swift#L1042-L1065">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -2506,9 +2723,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9AWSHealth6HealthV17OrganizationEventV"></a>
+                    <a name="/s:10SotoHealth0B0V17OrganizationEventV"></a>
                     <a name="//apple_ref/swift/Struct/OrganizationEvent" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9AWSHealth6HealthV17OrganizationEventV">OrganizationEvent</a>
+                    <a class="token" href="#/s:10SotoHealth0B0V17OrganizationEventV">OrganizationEvent</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2524,9 +2741,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">OrganizationEvent</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">OrganizationEvent</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Health/Health_Shapes.swift#L1067-L1114">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -2534,9 +2754,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9AWSHealth6HealthV24OrganizationEventDetailsV"></a>
+                    <a name="/s:10SotoHealth0B0V24OrganizationEventDetailsV"></a>
                     <a name="//apple_ref/swift/Struct/OrganizationEventDetails" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9AWSHealth6HealthV24OrganizationEventDetailsV">OrganizationEventDetails</a>
+                    <a class="token" href="#/s:10SotoHealth0B0V24OrganizationEventDetailsV">OrganizationEventDetails</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2552,9 +2772,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">OrganizationEventDetails</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">OrganizationEventDetails</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Health/Health_Shapes.swift#L1116-L1137">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -2562,9 +2785,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9AWSHealth6HealthV33OrganizationEventDetailsErrorItemV"></a>
+                    <a name="/s:10SotoHealth0B0V33OrganizationEventDetailsErrorItemV"></a>
                     <a name="//apple_ref/swift/Struct/OrganizationEventDetailsErrorItem" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9AWSHealth6HealthV33OrganizationEventDetailsErrorItemV">OrganizationEventDetailsErrorItem</a>
+                    <a class="token" href="#/s:10SotoHealth0B0V33OrganizationEventDetailsErrorItemV">OrganizationEventDetailsErrorItem</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2580,9 +2803,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">OrganizationEventDetailsErrorItem</span> <span class="p">:</span> <span class="kt"><a href="../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">OrganizationEventDetailsErrorItem</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Health/Health_Shapes.swift#L1139-L1162">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -2590,9 +2816,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9AWSHealth6HealthV23OrganizationEventFilterV"></a>
+                    <a name="/s:10SotoHealth0B0V23OrganizationEventFilterV"></a>
                     <a name="//apple_ref/swift/Struct/OrganizationEventFilter" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9AWSHealth6HealthV23OrganizationEventFilterV">OrganizationEventFilter</a>
+                    <a class="token" href="#/s:10SotoHealth0B0V23OrganizationEventFilterV">OrganizationEventFilter</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2612,6 +2838,9 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Health/Health_Shapes.swift#L1164-L1258">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
@@ -2621,17 +2850,19 @@
               <div class="task-name-container">
                 <a name="/Enums"></a>
                 <a name="//apple_ref/swift/Section/Enums" class="dashAnchor"></a>
-                <a href="#/Enums">
-                  <h3 class="section-name">Enums</h3>
-                </a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Enums"></a>
+                  <h3 class="section-name"><p>Enums</p>
+</h3>
+                </div>
               </div>
               <ul>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9AWSHealth6HealthV16EntityStatusCodeO"></a>
+                    <a name="/s:10SotoHealth0B0V16EntityStatusCodeO"></a>
                     <a name="//apple_ref/swift/Enum/EntityStatusCode" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9AWSHealth6HealthV16EntityStatusCodeO">EntityStatusCode</a>
+                    <a class="token" href="#/s:10SotoHealth0B0V16EntityStatusCodeO">EntityStatusCode</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2651,15 +2882,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Health/Health_Shapes.swift#L23-L28">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9AWSHealth6HealthV19EventAggregateFieldO"></a>
+                    <a name="/s:10SotoHealth0B0V19EventAggregateFieldO"></a>
                     <a name="//apple_ref/swift/Enum/EventAggregateField" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9AWSHealth6HealthV19EventAggregateFieldO">EventAggregateField</a>
+                    <a class="token" href="#/s:10SotoHealth0B0V19EventAggregateFieldO">EventAggregateField</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2679,15 +2913,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Health/Health_Shapes.swift#L30-L33">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9AWSHealth6HealthV14EventScopeCodeO"></a>
+                    <a name="/s:10SotoHealth0B0V14EventScopeCodeO"></a>
                     <a name="//apple_ref/swift/Enum/EventScopeCode" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9AWSHealth6HealthV14EventScopeCodeO">EventScopeCode</a>
+                    <a class="token" href="#/s:10SotoHealth0B0V14EventScopeCodeO">EventScopeCode</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2707,15 +2944,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Health/Health_Shapes.swift#L35-L40">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9AWSHealth6HealthV15EventStatusCodeO"></a>
+                    <a name="/s:10SotoHealth0B0V15EventStatusCodeO"></a>
                     <a name="//apple_ref/swift/Enum/EventStatusCode" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9AWSHealth6HealthV15EventStatusCodeO">EventStatusCode</a>
+                    <a class="token" href="#/s:10SotoHealth0B0V15EventStatusCodeO">EventStatusCode</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2735,15 +2975,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Health/Health_Shapes.swift#L42-L47">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9AWSHealth6HealthV17EventTypeCategoryO"></a>
+                    <a name="/s:10SotoHealth0B0V17EventTypeCategoryO"></a>
                     <a name="//apple_ref/swift/Enum/EventTypeCategory" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9AWSHealth6HealthV17EventTypeCategoryO">EventTypeCategory</a>
+                    <a class="token" href="#/s:10SotoHealth0B0V17EventTypeCategoryO">EventTypeCategory</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2762,6 +3005,9 @@
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">EventTypeCategory</span> <span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="kt">CustomStringConvertible</span><span class="p">,</span> <span class="kt">Codable</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Health/Health_Shapes.swift#L49-L55">Show on GitHub</a>
                       </div>
                     </section>
                   </div>

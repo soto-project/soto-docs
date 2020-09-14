@@ -15,7 +15,7 @@
     <header>
       <div class="content-wrapper">
         <p><a href="../../index.html"> Docs</a> (54% documented)</p>
-        <p class="header-right"><a href="https://github.com/swift-aws/aws-sdk-swift"><img src="../../img/gh.png"/>View on GitHub</a></p>
+        <p class="header-right"><a href="https://github.com/soto-project/soto"><img src="../../img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -28,6 +28,9 @@
     <div class="content-wrapper">
       <nav class="sidebar">
         <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../../User%20Guides.html">User Guides</a>
+          </li>
           <li class="nav-group-name">
             <a href="../../AWSSDKSwiftCore.html">AWSSDKSwiftCore</a>
           </li>
@@ -68,6 +71,9 @@
             <a href="../../AppSync.html">AppSync</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../Appflow.html">Appflow</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../ApplicationAutoScaling.html">ApplicationAutoScaling</a>
           </li>
           <li class="nav-group-name">
@@ -93,6 +99,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../Batch.html">Batch</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../Braket.html">Braket</a>
           </li>
           <li class="nav-group-name">
             <a href="../../Budgets.html">Budgets</a>
@@ -335,6 +344,12 @@
             <a href="../../IAM.html">IAM</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../IVS.html">IVS</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../IdentityStore.html">IdentityStore</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../Imagebuilder.html">Imagebuilder</a>
           </li>
           <li class="nav-group-name">
@@ -557,6 +572,9 @@
             <a href="../../Redshift.html">Redshift</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../RedshiftDataAPIService.html">RedshiftDataAPIService</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../Rekognition.html">Rekognition</a>
           </li>
           <li class="nav-group-name">
@@ -606,6 +624,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../SSO.html">SSO</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../SSOAdmin.html">SSOAdmin</a>
           </li>
           <li class="nav-group-name">
             <a href="../../SSOOIDC.html">SSOOIDC</a>
@@ -735,7 +756,8 @@
             <h1>AvailabilityZone</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">AvailabilityZone</span> <span class="p">:</span> <span class="kt"><a href="../../AWSSDKSwiftCore.html#/s:15AWSSDKSwiftCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                  
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">AvailabilityZone</span> <span class="p">:</span> <span class="kt"><a href="../../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                 </div>
               </div>
@@ -748,9 +770,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6AWSEC23EC2V16AvailabilityZoneV17_MessagesEncodingV"></a>
+                    <a name="/s:7SotoEC20B0V16AvailabilityZoneV17_MessagesEncodingV"></a>
                     <a name="//apple_ref/swift/Struct/_MessagesEncoding" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6AWSEC23EC2V16AvailabilityZoneV17_MessagesEncodingV">_MessagesEncoding</a>
+                    <a class="token" href="#/s:7SotoEC20B0V16AvailabilityZoneV17_MessagesEncodingV">_MessagesEncoding</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -770,15 +792,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6AWSEC23EC2V16AvailabilityZoneV9groupNameSSSgvp"></a>
+                    <a name="/s:7SotoEC20B0V16AvailabilityZoneV9groupNameSSSgvp"></a>
                     <a name="//apple_ref/swift/Property/groupName" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6AWSEC23EC2V16AvailabilityZoneV9groupNameSSSgvp">groupName</a>
+                    <a class="token" href="#/s:7SotoEC20B0V16AvailabilityZoneV9groupNameSSSgvp">groupName</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -786,7 +811,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>For Availability Zones, this parameter has the same value as the Region name. For Local Zones, the name of the associated group, for example us-west-2-lax-1.</p>
+                        <p>For Availability Zones, this parameter has the same value as the Region name. For Local Zones, the name of the associated group, for example us-west-2-lax-1. For Wavelength Zones, the name of the associated group, for example us-east-1-wl1-bos-wlz-1.</p>
 
                       </div>
                       <div class="declaration">
@@ -797,15 +822,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L3264">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6AWSEC23EC2V16AvailabilityZoneV8messagesSayAC0cD7MessageVGSgvp"></a>
+                    <a name="/s:7SotoEC20B0V16AvailabilityZoneV8messagesSayAC0cD7MessageVGSgvp"></a>
                     <a name="//apple_ref/swift/Property/messages" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6AWSEC23EC2V16AvailabilityZoneV8messagesSayAC0cD7MessageVGSgvp">messages</a>
+                    <a class="token" href="#/s:7SotoEC20B0V16AvailabilityZoneV8messagesSayAC0cD7MessageVGSgvp">messages</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -813,7 +841,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Any messages about the Availability Zone or Local Zone.</p>
+                        <p>Any messages about the Availability Zone, Local Zone, or Wavelength Zone.</p>
 
                       </div>
                       <div class="declaration">
@@ -825,15 +853,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L3267">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6AWSEC23EC2V16AvailabilityZoneV18networkBorderGroupSSSgvp"></a>
+                    <a name="/s:7SotoEC20B0V16AvailabilityZoneV18networkBorderGroupSSSgvp"></a>
                     <a name="//apple_ref/swift/Property/networkBorderGroup" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6AWSEC23EC2V16AvailabilityZoneV18networkBorderGroupSSSgvp">networkBorderGroup</a>
+                    <a class="token" href="#/s:7SotoEC20B0V16AvailabilityZoneV18networkBorderGroupSSSgvp">networkBorderGroup</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -841,7 +872,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The name of the location from which the address is advertised.</p>
+                        <p>The name of the network border group.</p>
 
                       </div>
                       <div class="declaration">
@@ -852,15 +883,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L3269">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6AWSEC23EC2V16AvailabilityZoneV11optInStatusAC0cd3OptfG0OSgvp"></a>
+                    <a name="/s:7SotoEC20B0V16AvailabilityZoneV11optInStatusAC0cd3OptfG0OSgvp"></a>
                     <a name="//apple_ref/swift/Property/optInStatus" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6AWSEC23EC2V16AvailabilityZoneV11optInStatusAC0cd3OptfG0OSgvp">optInStatus</a>
+                    <a class="token" href="#/s:7SotoEC20B0V16AvailabilityZoneV11optInStatusAC0cd3OptfG0OSgvp">optInStatus</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -868,7 +902,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>For Availability Zones, this parameter always has the value of opt-in-not-required. For Local Zones, this parameter is the opt in status. The possible values are opted-in, and not-opted-in.</p>
+                        <p>For Availability Zones, this parameter always has the value of opt-in-not-required. For Local Zones and Wavelength Zones, this parameter is the opt-in status. The possible values are opted-in, and not-opted-in.</p>
 
                       </div>
                       <div class="declaration">
@@ -879,15 +913,78 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L3271">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6AWSEC23EC2V16AvailabilityZoneV10regionNameSSSgvp"></a>
+                    <a name="/s:7SotoEC20B0V16AvailabilityZoneV06parentD2IdSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/parentZoneId" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7SotoEC20B0V16AvailabilityZoneV06parentD2IdSSSgvp">parentZoneId</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The ID of the zone that handles some of the Local Zone or Wavelength Zone control plane operations, such as API calls.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">parentZoneId</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L3273">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7SotoEC20B0V16AvailabilityZoneV06parentD4NameSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/parentZoneName" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7SotoEC20B0V16AvailabilityZoneV06parentD4NameSSSgvp">parentZoneName</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The name of the zone that handles some of the Local Zone or Wavelength Zone control plane operations, such as API calls.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">parentZoneName</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L3275">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7SotoEC20B0V16AvailabilityZoneV10regionNameSSSgvp"></a>
                     <a name="//apple_ref/swift/Property/regionName" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6AWSEC23EC2V16AvailabilityZoneV10regionNameSSSgvp">regionName</a>
+                    <a class="token" href="#/s:7SotoEC20B0V16AvailabilityZoneV10regionNameSSSgvp">regionName</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -906,15 +1003,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L3277">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6AWSEC23EC2V16AvailabilityZoneV5stateAC0cD5StateOSgvp"></a>
+                    <a name="/s:7SotoEC20B0V16AvailabilityZoneV5stateAC0cD5StateOSgvp"></a>
                     <a name="//apple_ref/swift/Property/state" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6AWSEC23EC2V16AvailabilityZoneV5stateAC0cD5StateOSgvp">state</a>
+                    <a class="token" href="#/s:7SotoEC20B0V16AvailabilityZoneV5stateAC0cD5StateOSgvp">state</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -922,7 +1022,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The state of the Availability Zone or Local Zone.</p>
+                        <p>The state of the Availability Zone, Local Zone, or Wavelength Zone.</p>
 
                       </div>
                       <div class="declaration">
@@ -933,15 +1033,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L3279">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6AWSEC23EC2V16AvailabilityZoneV6zoneIdSSSgvp"></a>
+                    <a name="/s:7SotoEC20B0V16AvailabilityZoneV6zoneIdSSSgvp"></a>
                     <a name="//apple_ref/swift/Property/zoneId" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6AWSEC23EC2V16AvailabilityZoneV6zoneIdSSSgvp">zoneId</a>
+                    <a class="token" href="#/s:7SotoEC20B0V16AvailabilityZoneV6zoneIdSSSgvp">zoneId</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -949,7 +1052,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The ID of the Availability Zone or Local Zone.</p>
+                        <p>The ID of the Availability Zone, Local Zone, or Wavelength Zone.</p>
 
                       </div>
                       <div class="declaration">
@@ -960,15 +1063,18 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L3281">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6AWSEC23EC2V16AvailabilityZoneV8zoneNameSSSgvp"></a>
+                    <a name="/s:7SotoEC20B0V16AvailabilityZoneV8zoneNameSSSgvp"></a>
                     <a name="//apple_ref/swift/Property/zoneName" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6AWSEC23EC2V16AvailabilityZoneV8zoneNameSSSgvp">zoneName</a>
+                    <a class="token" href="#/s:7SotoEC20B0V16AvailabilityZoneV8zoneNameSSSgvp">zoneName</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -976,7 +1082,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The name of the Availability Zone or Local Zone.</p>
+                        <p>The name of the Availability Zone, Local Zone, or Wavelength Zone.</p>
 
                       </div>
                       <div class="declaration">
@@ -987,15 +1093,48 @@
 
                         </div>
                       </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L3283">Show on GitHub</a>
+                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:6AWSEC23EC2V16AvailabilityZoneV9groupName8messages18networkBorderGroup11optInStatus06regionF05state6zoneId0pF0AESSSg_SayAC0cD7MessageVGSgAnC0cd3OptlM0OSgAnC0cD5StateOSgA2Ntcfc"></a>
-                    <a name="//apple_ref/swift/Method/init(groupName:messages:networkBorderGroup:optInStatus:regionName:state:zoneId:zoneName:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:6AWSEC23EC2V16AvailabilityZoneV9groupName8messages18networkBorderGroup11optInStatus06regionF05state6zoneId0pF0AESSSg_SayAC0cD7MessageVGSgAnC0cd3OptlM0OSgAnC0cD5StateOSgA2Ntcfc">init(groupName:messages:networkBorderGroup:optInStatus:regionName:state:zoneId:zoneName:)</a>
+                    <a name="/s:7SotoEC20B0V16AvailabilityZoneV8zoneTypeSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/zoneType" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7SotoEC20B0V16AvailabilityZoneV8zoneTypeSSSgvp">zoneType</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The type of zone. The valid values are availability-zone, local-zone, and wavelength-zone.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">zoneType</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L3285">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7SotoEC20B0V16AvailabilityZoneV9groupName8messages18networkBorderGroup11optInStatus06parentD2Id0ndF006regionF05state04zoneO00rF00R4TypeAESSSg_SayAC0cD7MessageVGSgAqC0cd3OptlM0OSgA3qC0cD5StateOSgA3Qtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(groupName:messages:networkBorderGroup:optInStatus:parentZoneId:parentZoneName:regionName:state:zoneId:zoneName:zoneType:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7SotoEC20B0V16AvailabilityZoneV9groupName8messages18networkBorderGroup11optInStatus06parentD2Id0ndF006regionF05state04zoneO00rF00R4TypeAESSSg_SayAC0cD7MessageVGSgAqC0cd3OptlM0OSgA3qC0cD5StateOSgA3Qtcfc">init(groupName:<wbr>messages:<wbr>networkBorderGroup:<wbr>optInStatus:<wbr>parentZoneId:<wbr>parentZoneName:<wbr>regionName:<wbr>state:<wbr>zoneId:<wbr>zoneName:<wbr>zoneType:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1010,9 +1149,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">groupName</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">messages</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../../Structs/EC2/AvailabilityZoneMessage.html">AvailabilityZoneMessage</a></span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">networkBorderGroup</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">optInStatus</span><span class="p">:</span> <span class="kt"><a href="../../Structs/EC2/AvailabilityZoneOptInStatus.html">AvailabilityZoneOptInStatus</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">regionName</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">state</span><span class="p">:</span> <span class="kt"><a href="../../Structs/EC2/AvailabilityZoneState.html">AvailabilityZoneState</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">zoneId</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">zoneName</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">groupName</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">messages</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../../Structs/EC2/AvailabilityZoneMessage.html">AvailabilityZoneMessage</a></span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">networkBorderGroup</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">optInStatus</span><span class="p">:</span> <span class="kt"><a href="../../Structs/EC2/AvailabilityZoneOptInStatus.html">AvailabilityZoneOptInStatus</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">parentZoneId</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">parentZoneName</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">regionName</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">state</span><span class="p">:</span> <span class="kt"><a href="../../Structs/EC2/AvailabilityZoneState.html">AvailabilityZoneState</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">zoneId</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">zoneName</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">zoneType</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
 
                         </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L3287-L3299">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
