@@ -14,7 +14,7 @@
     <a title="EBS Structure Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html"> Docs</a> (60% documented)</p>
+        <p><a href="../index.html"> Docs</a> (59% documented)</p>
         <p class="header-right"><a href="https://github.com/swift-aws/aws-sdk-swift"><img src="../img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
@@ -74,6 +74,9 @@
             <a href="../AppSync.html">AppSync</a>
           </li>
           <li class="nav-group-name">
+            <a href="../Appflow.html">Appflow</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../ApplicationAutoScaling.html">ApplicationAutoScaling</a>
           </li>
           <li class="nav-group-name">
@@ -96,6 +99,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../Batch.html">Batch</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Braket.html">Braket</a>
           </li>
           <li class="nav-group-name">
             <a href="../Budgets.html">Budgets</a>
@@ -138,6 +144,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../CloudWatchLogs.html">CloudWatchLogs</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../CodeArtifact.html">CodeArtifact</a>
           </li>
           <li class="nav-group-name">
             <a href="../CodeBuild.html">CodeBuild</a>
@@ -326,7 +335,16 @@
             <a href="../Health.html">Health</a>
           </li>
           <li class="nav-group-name">
+            <a href="../Honeycode.html">Honeycode</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../IAM.html">IAM</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../IVS.html">IVS</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../IdentityStore.html">IdentityStore</a>
           </li>
           <li class="nav-group-name">
             <a href="../Imagebuilder.html">Imagebuilder</a>
@@ -363,6 +381,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../IoTSecureTunneling.html">IoTSecureTunneling</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../IoTSiteWise.html">IoTSiteWise</a>
           </li>
           <li class="nav-group-name">
             <a href="../IoTThingsGraph.html">IoTThingsGraph</a>
@@ -426,6 +447,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../Macie.html">Macie</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Macie2.html">Macie2</a>
           </li>
           <li class="nav-group-name">
             <a href="../ManagedBlockchain.html">ManagedBlockchain</a>
@@ -545,6 +569,9 @@
             <a href="../Redshift.html">Redshift</a>
           </li>
           <li class="nav-group-name">
+            <a href="../RedshiftDataAPIService.html">RedshiftDataAPIService</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../Rekognition.html">Rekognition</a>
           </li>
           <li class="nav-group-name">
@@ -594,6 +621,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../SSO.html">SSO</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../SSOAdmin.html">SSOAdmin</a>
           </li>
           <li class="nav-group-name">
             <a href="../SSOOIDC.html">SSOOIDC</a>
@@ -651,6 +681,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../Support.html">Support</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Synthetics.html">Synthetics</a>
           </li>
           <li class="nav-group-name">
             <a href="../Textract.html">Textract</a>
@@ -729,7 +762,7 @@
               </div>
             <p>Client object for interacting with AWS EBS service.</p>
 
-<p>You can use the Amazon Elastic Block Store (EBS) direct APIs to directly read the data on your EBS snapshots, and identify the difference between two snapshots. You can view the details of blocks in an EBS snapshot, compare the block difference between two snapshots, and directly access the data in a snapshot. If you’re an independent software vendor (ISV) who offers backup services for EBS, the EBS direct APIs make it easier and more cost-effective to track incremental changes on your EBS volumes via EBS snapshots. This can be done without having to create new volumes from EBS snapshots. This API reference provides detailed information about the actions, data types, parameters, and errors of the EBS direct APIs. For more information about the elements that make up the EBS direct APIs, and examples of how to use them effectively, see Accessing the Contents of an EBS Snapshot in the Amazon Elastic Compute Cloud User Guide. For more information about the supported AWS Regions, endpoints, and service quotas for the EBS direct APIs, see Amazon Elastic Block Store Endpoints and Quotas in the AWS General Reference.</p>
+<p>You can use the Amazon Elastic Block Store (Amazon EBS) direct APIs to create EBS snapshots, write data directly to your snapshots, read data on your snapshots, and identify the differences or changes between two snapshots. If you’re an independent software vendor (ISV) who offers backup services for Amazon EBS, the EBS direct APIs make it more efficient and cost-effective to track incremental changes on your EBS volumes through snapshots. This can be done without having to create new volumes from snapshots, and then use Amazon Elastic Compute Cloud (Amazon EC2) instances to compare the differences. You can create incremental snapshots directly from data on-premises into EBS volumes and the cloud to use for quick disaster recovery. With the ability to write and read snapshots, you can write your on-premises data to an EBS snapshot during a disaster. Then after recovery, you can restore it back to AWS or on-premises from the snapshot. You no longer need to build and maintain complex mechanisms to copy data to and from Amazon EBS. This API reference provides detailed information about the actions, data types, parameters, and errors of the EBS direct APIs. For more information about the elements that make up the EBS direct APIs, and examples of how to use them effectively, see Accessing the Contents of an EBS Snapshot in the Amazon Elastic Compute Cloud User Guide. For more information about the supported AWS Regions, endpoints, and service quotas for the EBS direct APIs, see Amazon Elastic Block Store Endpoints and Quotas in the AWS General Reference.</p>
 
           </section>
           <section class="section task-group-section">
@@ -912,6 +945,33 @@
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/s:3EBSAAV16completeSnapshoty3NIO15EventLoopFutureCyAB08CompleteC8ResponseVGAB0hC7RequestVF"></a>
+                    <a name="//apple_ref/swift/Method/completeSnapshot(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3EBSAAV16completeSnapshoty3NIO15EventLoopFutureCyAB08CompleteC8ResponseVGAB0hC7RequestVF">completeSnapshot(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Seals and completes the snapshot after all of the required blocks of data have been written to it. Completing the snapshot changes the status to completed. You cannot write new blocks to a snapshot after it has been completed.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">completeSnapshot</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/EBS/CompleteSnapshotRequest.html">CompleteSnapshotRequest</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/EBS/CompleteSnapshotResponse.html">CompleteSnapshotResponse</a></span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/s:3EBSAAV16getSnapshotBlocky3NIO15EventLoopFutureCyAB03GetcD8ResponseVGAB0icD7RequestVF"></a>
                     <a name="//apple_ref/swift/Method/getSnapshotBlock(_:)" class="dashAnchor"></a>
                     <a class="token" href="#/s:3EBSAAV16getSnapshotBlocky3NIO15EventLoopFutureCyAB03GetcD8ResponseVGAB0icD7RequestVF">getSnapshotBlock(_:)</a>
@@ -949,7 +1009,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Returns the block indexes and block tokens for blocks that are different between two Amazon Elastic Block Store snapshots of the same volume/snapshot lineage.</p>
+                        <p>Returns information about the blocks that are different between two Amazon Elastic Block Store snapshots of the same volume/snapshot lineage.</p>
 
                       </div>
                       <div class="declaration">
@@ -976,7 +1036,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Returns the block indexes and block tokens for blocks in an Amazon Elastic Block Store snapshot.</p>
+                        <p>Returns information about the blocks in an Amazon Elastic Block Store snapshot.</p>
 
                       </div>
                       <div class="declaration">
@@ -984,6 +1044,60 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">listSnapshotBlocks</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/EBS/ListSnapshotBlocksRequest.html">ListSnapshotBlocksRequest</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/EBS/ListSnapshotBlocksResponse.html">ListSnapshotBlocksResponse</a></span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:3EBSAAV16putSnapshotBlocky3NIO15EventLoopFutureCyAB03PutcD8ResponseVGAB0icD7RequestVF"></a>
+                    <a name="//apple_ref/swift/Method/putSnapshotBlock(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3EBSAAV16putSnapshotBlocky3NIO15EventLoopFutureCyAB03PutcD8ResponseVGAB0icD7RequestVF">putSnapshotBlock(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Writes a block of data to a snapshot. If the specified block contains data, the existing data is overwritten. The target snapshot must be in the pending state. Data written to a snapshot must be aligned with 512-byte sectors.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">putSnapshotBlock</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/EBS/PutSnapshotBlockRequest.html">PutSnapshotBlockRequest</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/EBS/PutSnapshotBlockResponse.html">PutSnapshotBlockResponse</a></span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:3EBSAAV13startSnapshoty3NIO15EventLoopFutureCyAB05StartC8ResponseVGAB0hC7RequestVF"></a>
+                    <a name="//apple_ref/swift/Method/startSnapshot(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3EBSAAV13startSnapshoty3NIO15EventLoopFutureCyAB05StartC8ResponseVGAB0hC7RequestVF">startSnapshot(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a new Amazon EBS snapshot. The new snapshot enters the pending state after the request completes.  After creating the snapshot, use  PutSnapshotBlock to write blocks of data to the snapshot.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">startSnapshot</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/EBS/StartSnapshotRequest.html">StartSnapshotRequest</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/EBS/StartSnapshotResponse.html">StartSnapshotResponse</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
                       </div>
@@ -1014,7 +1128,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Returns the block indexes and block tokens for blocks that are different between two Amazon Elastic Block Store snapshots of the same volume/snapshot lineage.</p>
+                        <p>Returns information about the blocks that are different between two Amazon Elastic Block Store snapshots of the same volume/snapshot lineage.</p>
 
                       </div>
                       <div class="declaration">
@@ -1041,7 +1155,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Returns the block indexes and block tokens for blocks in an Amazon Elastic Block Store snapshot.</p>
+                        <p>Returns information about the blocks in an Amazon Elastic Block Store snapshot.</p>
 
                       </div>
                       <div class="declaration">
@@ -1183,6 +1297,62 @@
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/s:3EBSAAV23CompleteSnapshotRequestV"></a>
+                    <a name="//apple_ref/swift/Struct/CompleteSnapshotRequest" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3EBSAAV23CompleteSnapshotRequestV">CompleteSnapshotRequest</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/EBS/CompleteSnapshotRequest.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">CompleteSnapshotRequest</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:3EBSAAV24CompleteSnapshotResponseV"></a>
+                    <a name="//apple_ref/swift/Struct/CompleteSnapshotResponse" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3EBSAAV24CompleteSnapshotResponseV">CompleteSnapshotResponse</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/EBS/CompleteSnapshotResponse.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">CompleteSnapshotResponse</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/s:3EBSAAV23GetSnapshotBlockRequestV"></a>
                     <a name="//apple_ref/swift/Struct/GetSnapshotBlockRequest" class="dashAnchor"></a>
                     <a class="token" href="#/s:3EBSAAV23GetSnapshotBlockRequestV">GetSnapshotBlockRequest</a>
@@ -1292,6 +1462,146 @@
                     </section>
                   </div>
                 </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:3EBSAAV23PutSnapshotBlockRequestV"></a>
+                    <a name="//apple_ref/swift/Struct/PutSnapshotBlockRequest" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3EBSAAV23PutSnapshotBlockRequestV">PutSnapshotBlockRequest</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/EBS/PutSnapshotBlockRequest.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">PutSnapshotBlockRequest</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:3EBSAAV24PutSnapshotBlockResponseV"></a>
+                    <a name="//apple_ref/swift/Struct/PutSnapshotBlockResponse" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3EBSAAV24PutSnapshotBlockResponseV">PutSnapshotBlockResponse</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/EBS/PutSnapshotBlockResponse.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">PutSnapshotBlockResponse</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:3EBSAAV20StartSnapshotRequestV"></a>
+                    <a name="//apple_ref/swift/Struct/StartSnapshotRequest" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3EBSAAV20StartSnapshotRequestV">StartSnapshotRequest</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/EBS/StartSnapshotRequest.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">StartSnapshotRequest</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:3EBSAAV21StartSnapshotResponseV"></a>
+                    <a name="//apple_ref/swift/Struct/StartSnapshotResponse" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3EBSAAV21StartSnapshotResponseV">StartSnapshotResponse</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/EBS/StartSnapshotResponse.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">StartSnapshotResponse</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:3EBSAAV3TagV"></a>
+                    <a name="//apple_ref/swift/Struct/Tag" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3EBSAAV3TagV">Tag</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/EBS/Tag.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Tag</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
               </ul>
             </div>
             <div class="task-group">
@@ -1303,6 +1613,34 @@
                 </a>
               </div>
               <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:3EBSAAV25ChecksumAggregationMethodO"></a>
+                    <a name="//apple_ref/swift/Enum/ChecksumAggregationMethod" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3EBSAAV25ChecksumAggregationMethodO">ChecksumAggregationMethod</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/EBS/ChecksumAggregationMethod.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">ChecksumAggregationMethod</span> <span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="kt">CustomStringConvertible</span><span class="p">,</span> <span class="kt">Codable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
                 <li class="item">
                   <div>
                     <code>
@@ -1325,6 +1663,34 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">ChecksumAlgorithm</span> <span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="kt">CustomStringConvertible</span><span class="p">,</span> <span class="kt">Codable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:3EBSAAV6StatusO"></a>
+                    <a name="//apple_ref/swift/Enum/Status" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3EBSAAV6StatusO">Status</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/EBS/Status.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">Status</span> <span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="kt">CustomStringConvertible</span><span class="p">,</span> <span class="kt">Codable</span></code></pre>
 
                         </div>
                       </div>

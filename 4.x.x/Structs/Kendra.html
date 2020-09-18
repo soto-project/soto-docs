@@ -14,7 +14,7 @@
     <a title="Kendra Structure Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html"> Docs</a> (60% documented)</p>
+        <p><a href="../index.html"> Docs</a> (59% documented)</p>
         <p class="header-right"><a href="https://github.com/swift-aws/aws-sdk-swift"><img src="../img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
@@ -74,6 +74,9 @@
             <a href="../AppSync.html">AppSync</a>
           </li>
           <li class="nav-group-name">
+            <a href="../Appflow.html">Appflow</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../ApplicationAutoScaling.html">ApplicationAutoScaling</a>
           </li>
           <li class="nav-group-name">
@@ -96,6 +99,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../Batch.html">Batch</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Braket.html">Braket</a>
           </li>
           <li class="nav-group-name">
             <a href="../Budgets.html">Budgets</a>
@@ -138,6 +144,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../CloudWatchLogs.html">CloudWatchLogs</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../CodeArtifact.html">CodeArtifact</a>
           </li>
           <li class="nav-group-name">
             <a href="../CodeBuild.html">CodeBuild</a>
@@ -326,7 +335,16 @@
             <a href="../Health.html">Health</a>
           </li>
           <li class="nav-group-name">
+            <a href="../Honeycode.html">Honeycode</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../IAM.html">IAM</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../IVS.html">IVS</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../IdentityStore.html">IdentityStore</a>
           </li>
           <li class="nav-group-name">
             <a href="../Imagebuilder.html">Imagebuilder</a>
@@ -363,6 +381,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../IoTSecureTunneling.html">IoTSecureTunneling</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../IoTSiteWise.html">IoTSiteWise</a>
           </li>
           <li class="nav-group-name">
             <a href="../IoTThingsGraph.html">IoTThingsGraph</a>
@@ -426,6 +447,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../Macie.html">Macie</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Macie2.html">Macie2</a>
           </li>
           <li class="nav-group-name">
             <a href="../ManagedBlockchain.html">ManagedBlockchain</a>
@@ -545,6 +569,9 @@
             <a href="../Redshift.html">Redshift</a>
           </li>
           <li class="nav-group-name">
+            <a href="../RedshiftDataAPIService.html">RedshiftDataAPIService</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../Rekognition.html">Rekognition</a>
           </li>
           <li class="nav-group-name">
@@ -594,6 +621,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../SSO.html">SSO</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../SSOAdmin.html">SSOAdmin</a>
           </li>
           <li class="nav-group-name">
             <a href="../SSOOIDC.html">SSOOIDC</a>
@@ -651,6 +681,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../Support.html">Support</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Synthetics.html">Synthetics</a>
           </li>
           <li class="nav-group-name">
             <a href="../Textract.html">Textract</a>
@@ -1047,6 +1080,34 @@
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/s:6KendraAAV16deleteDataSourcey3NIO15EventLoopFutureCyytGAB06DeletecD7RequestVF"></a>
+                    <a name="//apple_ref/swift/Method/deleteDataSource(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6KendraAAV16deleteDataSourcey3NIO15EventLoopFutureCyytGAB06DeletecD7RequestVF">deleteDataSource(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Deletes an Amazon Kendra data source. An exception is not thrown if the data source is already being deleted. While the data source is being deleted, the Status field returned by a call to the operation is set to DELETING. For more information, see Deleting Data Sources.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">deleteDataSource</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/Kendra/DeleteDataSourceRequest.html">DeleteDataSourceRequest</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Void</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/s:6KendraAAV9deleteFaqy3NIO15EventLoopFutureCyytGAB06DeleteC7RequestVF"></a>
                     <a name="//apple_ref/swift/Method/deleteFaq(_:)" class="dashAnchor"></a>
                     <a class="token" href="#/s:6KendraAAV9deleteFaqy3NIO15EventLoopFutureCyytGAB06DeleteC7RequestVF">deleteFaq(_:)</a>
@@ -1292,6 +1353,33 @@
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/s:6KendraAAV19listTagsForResourcey3NIO15EventLoopFutureCyAB04ListcdE8ResponseVGAB0jcdE7RequestVF"></a>
+                    <a name="//apple_ref/swift/Method/listTagsForResource(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6KendraAAV19listTagsForResourcey3NIO15EventLoopFutureCyAB04ListcdE8ResponseVGAB0jcdE7RequestVF">listTagsForResource(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Gets a list of tags associated with a specified resource. Indexes, FAQs, and data sources can have tags associated with them.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">listTagsForResource</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/Kendra/ListTagsForResourceRequest.html">ListTagsForResourceRequest</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/Kendra/ListTagsForResourceResponse.html">ListTagsForResourceResponse</a></span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/s:6KendraAAV5queryy3NIO15EventLoopFutureCyAB11QueryResultVGAB0G7RequestVF"></a>
                     <a name="//apple_ref/swift/Method/query(_:)" class="dashAnchor"></a>
                     <a class="token" href="#/s:6KendraAAV5queryy3NIO15EventLoopFutureCyAB11QueryResultVGAB0G7RequestVF">query(_:)</a>
@@ -1393,6 +1481,60 @@
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
 <span class="kd">public</span> <span class="kd">func</span> <span class="nf">submitFeedback</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/Kendra/SubmitFeedbackRequest.html">SubmitFeedbackRequest</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Void</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6KendraAAV11tagResourcey3NIO15EventLoopFutureCyAB03TagC8ResponseVGAB0hC7RequestVF"></a>
+                    <a name="//apple_ref/swift/Method/tagResource(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6KendraAAV11tagResourcey3NIO15EventLoopFutureCyAB03TagC8ResponseVGAB0hC7RequestVF">tagResource(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Adds the specified tag to the specified index, FAQ, or data source resource. If the tag already exists, the existing value is replaced with the new value.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">tagResource</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/Kendra/TagResourceRequest.html">TagResourceRequest</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/Kendra/TagResourceResponse.html">TagResourceResponse</a></span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6KendraAAV13untagResourcey3NIO15EventLoopFutureCyAB05UntagC8ResponseVGAB0hC7RequestVF"></a>
+                    <a name="//apple_ref/swift/Method/untagResource(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6KendraAAV13untagResourcey3NIO15EventLoopFutureCyAB05UntagC8ResponseVGAB0hC7RequestVF">untagResource(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Removes a tag from an index, FAQ, or a data source.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">untagResource</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/Kendra/UntagResourceRequest.html">UntagResourceRequest</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/Kendra/UntagResourceResponse.html">UntagResourceResponse</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
                       </div>
@@ -1956,6 +2098,34 @@
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/s:6KendraAAV26CapacityUnitsConfigurationV"></a>
+                    <a name="//apple_ref/swift/Struct/CapacityUnitsConfiguration" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6KendraAAV26CapacityUnitsConfigurationV">CapacityUnitsConfiguration</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/Kendra/CapacityUnitsConfiguration.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">CapacityUnitsConfiguration</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/s:6KendraAAV13ClickFeedbackV"></a>
                     <a name="//apple_ref/swift/Struct/ClickFeedback" class="dashAnchor"></a>
                     <a class="token" href="#/s:6KendraAAV13ClickFeedbackV">ClickFeedback</a>
@@ -2292,6 +2462,62 @@
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/s:6KendraAAV29DataSourceSyncJobMetricTargetV"></a>
+                    <a name="//apple_ref/swift/Struct/DataSourceSyncJobMetricTarget" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6KendraAAV29DataSourceSyncJobMetricTargetV">DataSourceSyncJobMetricTarget</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/Kendra/DataSourceSyncJobMetricTarget.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DataSourceSyncJobMetricTarget</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6KendraAAV24DataSourceSyncJobMetricsV"></a>
+                    <a name="//apple_ref/swift/Struct/DataSourceSyncJobMetrics" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6KendraAAV24DataSourceSyncJobMetricsV">DataSourceSyncJobMetrics</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/Kendra/DataSourceSyncJobMetrics.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DataSourceSyncJobMetrics</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/s:6KendraAAV29DataSourceToIndexFieldMappingV"></a>
                     <a name="//apple_ref/swift/Struct/DataSourceToIndexFieldMapping" class="dashAnchor"></a>
                     <a class="token" href="#/s:6KendraAAV29DataSourceToIndexFieldMappingV">DataSourceToIndexFieldMapping</a>
@@ -2367,6 +2593,34 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DatabaseConfiguration</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6KendraAAV23DeleteDataSourceRequestV"></a>
+                    <a name="//apple_ref/swift/Struct/DeleteDataSourceRequest" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6KendraAAV23DeleteDataSourceRequestV">DeleteDataSourceRequest</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/Kendra/DeleteDataSourceRequest.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DeleteDataSourceRequest</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
 
                         </div>
                       </div>
@@ -3104,6 +3358,118 @@
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/s:6KendraAAV26ListTagsForResourceRequestV"></a>
+                    <a name="//apple_ref/swift/Struct/ListTagsForResourceRequest" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6KendraAAV26ListTagsForResourceRequestV">ListTagsForResourceRequest</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/Kendra/ListTagsForResourceRequest.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ListTagsForResourceRequest</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6KendraAAV27ListTagsForResourceResponseV"></a>
+                    <a name="//apple_ref/swift/Struct/ListTagsForResourceResponse" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6KendraAAV27ListTagsForResourceResponseV">ListTagsForResourceResponse</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/Kendra/ListTagsForResourceResponse.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ListTagsForResourceResponse</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6KendraAAV21OneDriveConfigurationV"></a>
+                    <a name="//apple_ref/swift/Struct/OneDriveConfiguration" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6KendraAAV21OneDriveConfigurationV">OneDriveConfiguration</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/Kendra/OneDriveConfiguration.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">OneDriveConfiguration</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6KendraAAV13OneDriveUsersV"></a>
+                    <a name="//apple_ref/swift/Struct/OneDriveUsers" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6KendraAAV13OneDriveUsersV">OneDriveUsers</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/Kendra/OneDriveUsers.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">OneDriveUsers</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/s:6KendraAAV9PrincipalV"></a>
                     <a name="//apple_ref/swift/Struct/Principal" class="dashAnchor"></a>
                     <a class="token" href="#/s:6KendraAAV9PrincipalV">Principal</a>
@@ -3328,6 +3694,230 @@
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/s:6KendraAAV34SalesforceChatterFeedConfigurationV"></a>
+                    <a name="//apple_ref/swift/Struct/SalesforceChatterFeedConfiguration" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6KendraAAV34SalesforceChatterFeedConfigurationV">SalesforceChatterFeedConfiguration</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/Kendra/SalesforceChatterFeedConfiguration.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">SalesforceChatterFeedConfiguration</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6KendraAAV23SalesforceConfigurationV"></a>
+                    <a name="//apple_ref/swift/Struct/SalesforceConfiguration" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6KendraAAV23SalesforceConfigurationV">SalesforceConfiguration</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/Kendra/SalesforceConfiguration.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">SalesforceConfiguration</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6KendraAAV49SalesforceCustomKnowledgeArticleTypeConfigurationV"></a>
+                    <a name="//apple_ref/swift/Struct/SalesforceCustomKnowledgeArticleTypeConfiguration" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6KendraAAV49SalesforceCustomKnowledgeArticleTypeConfigurationV">SalesforceCustomKnowledgeArticleTypeConfiguration</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/Kendra/SalesforceCustomKnowledgeArticleTypeConfiguration.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">SalesforceCustomKnowledgeArticleTypeConfiguration</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6KendraAAV39SalesforceKnowledgeArticleConfigurationV"></a>
+                    <a name="//apple_ref/swift/Struct/SalesforceKnowledgeArticleConfiguration" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6KendraAAV39SalesforceKnowledgeArticleConfigurationV">SalesforceKnowledgeArticleConfiguration</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/Kendra/SalesforceKnowledgeArticleConfiguration.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">SalesforceKnowledgeArticleConfiguration</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6KendraAAV51SalesforceStandardKnowledgeArticleTypeConfigurationV"></a>
+                    <a name="//apple_ref/swift/Struct/SalesforceStandardKnowledgeArticleTypeConfiguration" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6KendraAAV51SalesforceStandardKnowledgeArticleTypeConfigurationV">SalesforceStandardKnowledgeArticleTypeConfiguration</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/Kendra/SalesforceStandardKnowledgeArticleTypeConfiguration.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">SalesforceStandardKnowledgeArticleTypeConfiguration</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6KendraAAV47SalesforceStandardObjectAttachmentConfigurationV"></a>
+                    <a name="//apple_ref/swift/Struct/SalesforceStandardObjectAttachmentConfiguration" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6KendraAAV47SalesforceStandardObjectAttachmentConfigurationV">SalesforceStandardObjectAttachmentConfiguration</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/Kendra/SalesforceStandardObjectAttachmentConfiguration.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">SalesforceStandardObjectAttachmentConfiguration</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6KendraAAV37SalesforceStandardObjectConfigurationV"></a>
+                    <a name="//apple_ref/swift/Struct/SalesforceStandardObjectConfiguration" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6KendraAAV37SalesforceStandardObjectConfigurationV">SalesforceStandardObjectConfiguration</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/Kendra/SalesforceStandardObjectConfiguration.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">SalesforceStandardObjectConfiguration</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6KendraAAV15ScoreAttributesV"></a>
+                    <a name="//apple_ref/swift/Struct/ScoreAttributes" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6KendraAAV15ScoreAttributesV">ScoreAttributes</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/Kendra/ScoreAttributes.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ScoreAttributes</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/s:6KendraAAV6SearchV"></a>
                     <a name="//apple_ref/swift/Struct/Search" class="dashAnchor"></a>
                     <a class="token" href="#/s:6KendraAAV6SearchV">Search</a>
@@ -3384,6 +3974,90 @@
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/s:6KendraAAV23ServiceNowConfigurationV"></a>
+                    <a name="//apple_ref/swift/Struct/ServiceNowConfiguration" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6KendraAAV23ServiceNowConfigurationV">ServiceNowConfiguration</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/Kendra/ServiceNowConfiguration.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ServiceNowConfiguration</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6KendraAAV39ServiceNowKnowledgeArticleConfigurationV"></a>
+                    <a name="//apple_ref/swift/Struct/ServiceNowKnowledgeArticleConfiguration" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6KendraAAV39ServiceNowKnowledgeArticleConfigurationV">ServiceNowKnowledgeArticleConfiguration</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/Kendra/ServiceNowKnowledgeArticleConfiguration.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ServiceNowKnowledgeArticleConfiguration</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6KendraAAV010ServiceNowB20CatalogConfigurationV"></a>
+                    <a name="//apple_ref/swift/Struct/ServiceNowServiceCatalogConfiguration" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6KendraAAV010ServiceNowB20CatalogConfigurationV">ServiceNowServiceCatalogConfiguration</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/Kendra/ServiceNowServiceCatalogConfiguration.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ServiceNowServiceCatalogConfiguration</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/s:6KendraAAV23SharePointConfigurationV"></a>
                     <a name="//apple_ref/swift/Struct/SharePointConfiguration" class="dashAnchor"></a>
                     <a class="token" href="#/s:6KendraAAV23SharePointConfigurationV">SharePointConfiguration</a>
@@ -3403,6 +4077,62 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">SharePointConfiguration</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6KendraAAV20SortingConfigurationV"></a>
+                    <a name="//apple_ref/swift/Struct/SortingConfiguration" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6KendraAAV20SortingConfigurationV">SortingConfiguration</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/Kendra/SortingConfiguration.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">SortingConfiguration</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6KendraAAV16SqlConfigurationV"></a>
+                    <a name="//apple_ref/swift/Struct/SqlConfiguration" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6KendraAAV16SqlConfigurationV">SqlConfiguration</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/Kendra/SqlConfiguration.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">SqlConfiguration</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
 
                         </div>
                       </div>
@@ -3524,6 +4254,90 @@
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/s:6KendraAAV3TagV"></a>
+                    <a name="//apple_ref/swift/Struct/Tag" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6KendraAAV3TagV">Tag</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/Kendra/Tag.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Tag</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6KendraAAV18TagResourceRequestV"></a>
+                    <a name="//apple_ref/swift/Struct/TagResourceRequest" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6KendraAAV18TagResourceRequestV">TagResourceRequest</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/Kendra/TagResourceRequest.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">TagResourceRequest</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6KendraAAV19TagResourceResponseV"></a>
+                    <a name="//apple_ref/swift/Struct/TagResourceResponse" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6KendraAAV19TagResourceResponseV">TagResourceResponse</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/Kendra/TagResourceResponse.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">TagResourceResponse</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/s:6KendraAAV22TextDocumentStatisticsV"></a>
                     <a name="//apple_ref/swift/Struct/TextDocumentStatistics" class="dashAnchor"></a>
                     <a class="token" href="#/s:6KendraAAV22TextDocumentStatisticsV">TextDocumentStatistics</a>
@@ -3599,6 +4413,62 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">TimeRange</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6KendraAAV20UntagResourceRequestV"></a>
+                    <a name="//apple_ref/swift/Struct/UntagResourceRequest" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6KendraAAV20UntagResourceRequestV">UntagResourceRequest</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/Kendra/UntagResourceRequest.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">UntagResourceRequest</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6KendraAAV21UntagResourceResponseV"></a>
+                    <a name="//apple_ref/swift/Struct/UntagResourceResponse" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6KendraAAV21UntagResourceResponseV">UntagResourceResponse</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/Kendra/UntagResourceResponse.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">UntagResourceResponse</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
 
                         </div>
                       </div>
@@ -3927,6 +4797,34 @@
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/s:6KendraAAV12IndexEditionO"></a>
+                    <a name="//apple_ref/swift/Enum/IndexEdition" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6KendraAAV12IndexEditionO">IndexEdition</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/Kendra/IndexEdition.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">IndexEdition</span> <span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="kt">CustomStringConvertible</span><span class="p">,</span> <span class="kt">Codable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/s:6KendraAAV11IndexStatusO"></a>
                     <a name="//apple_ref/swift/Enum/IndexStatus" class="dashAnchor"></a>
                     <a class="token" href="#/s:6KendraAAV11IndexStatusO">IndexStatus</a>
@@ -4002,6 +4900,34 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">PrincipalType</span> <span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="kt">CustomStringConvertible</span><span class="p">,</span> <span class="kt">Codable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6KendraAAV31QueryIdentifiersEnclosingOptionO"></a>
+                    <a name="//apple_ref/swift/Enum/QueryIdentifiersEnclosingOption" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6KendraAAV31QueryIdentifiersEnclosingOptionO">QueryIdentifiersEnclosingOption</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/Kendra/QueryIdentifiersEnclosingOption.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">QueryIdentifiersEnclosingOption</span> <span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="kt">CustomStringConvertible</span><span class="p">,</span> <span class="kt">Codable</span></code></pre>
 
                         </div>
                       </div>
@@ -4095,6 +5021,146 @@
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/s:6KendraAAV38SalesforceChatterFeedIncludeFilterTypeO"></a>
+                    <a name="//apple_ref/swift/Enum/SalesforceChatterFeedIncludeFilterType" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6KendraAAV38SalesforceChatterFeedIncludeFilterTypeO">SalesforceChatterFeedIncludeFilterType</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/Kendra/SalesforceChatterFeedIncludeFilterType.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">SalesforceChatterFeedIncludeFilterType</span> <span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="kt">CustomStringConvertible</span><span class="p">,</span> <span class="kt">Codable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6KendraAAV31SalesforceKnowledgeArticleStateO"></a>
+                    <a name="//apple_ref/swift/Enum/SalesforceKnowledgeArticleState" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6KendraAAV31SalesforceKnowledgeArticleStateO">SalesforceKnowledgeArticleState</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/Kendra/SalesforceKnowledgeArticleState.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">SalesforceKnowledgeArticleState</span> <span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="kt">CustomStringConvertible</span><span class="p">,</span> <span class="kt">Codable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6KendraAAV28SalesforceStandardObjectNameO"></a>
+                    <a name="//apple_ref/swift/Enum/SalesforceStandardObjectName" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6KendraAAV28SalesforceStandardObjectNameO">SalesforceStandardObjectName</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/Kendra/SalesforceStandardObjectName.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">SalesforceStandardObjectName</span> <span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="kt">CustomStringConvertible</span><span class="p">,</span> <span class="kt">Codable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6KendraAAV15ScoreConfidenceO"></a>
+                    <a name="//apple_ref/swift/Enum/ScoreConfidence" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6KendraAAV15ScoreConfidenceO">ScoreConfidence</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/Kendra/ScoreConfidence.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">ScoreConfidence</span> <span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="kt">CustomStringConvertible</span><span class="p">,</span> <span class="kt">Codable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6KendraAAV26ServiceNowBuildVersionTypeO"></a>
+                    <a name="//apple_ref/swift/Enum/ServiceNowBuildVersionType" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6KendraAAV26ServiceNowBuildVersionTypeO">ServiceNowBuildVersionType</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/Kendra/ServiceNowBuildVersionType.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">ServiceNowBuildVersionType</span> <span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="kt">CustomStringConvertible</span><span class="p">,</span> <span class="kt">Codable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/s:6KendraAAV17SharePointVersionO"></a>
                     <a name="//apple_ref/swift/Enum/SharePointVersion" class="dashAnchor"></a>
                     <a class="token" href="#/s:6KendraAAV17SharePointVersionO">SharePointVersion</a>
@@ -4114,6 +5180,34 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">SharePointVersion</span> <span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="kt">CustomStringConvertible</span><span class="p">,</span> <span class="kt">Codable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6KendraAAV9SortOrderO"></a>
+                    <a name="//apple_ref/swift/Enum/SortOrder" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6KendraAAV9SortOrderO">SortOrder</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/Kendra/SortOrder.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">SortOrder</span> <span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="kt">CustomStringConvertible</span><span class="p">,</span> <span class="kt">Codable</span></code></pre>
 
                         </div>
                       </div>

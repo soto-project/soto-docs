@@ -13,7 +13,7 @@
     <a title="  Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="index.html"> Docs</a> (60% documented)</p>
+        <p><a href="index.html"> Docs</a> (59% documented)</p>
         <p class="header-right"><a href="https://github.com/swift-aws/aws-sdk-swift"><img src="img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
@@ -73,6 +73,9 @@
             <a href="AppSync.html">AppSync</a>
           </li>
           <li class="nav-group-name">
+            <a href="Appflow.html">Appflow</a>
+          </li>
+          <li class="nav-group-name">
             <a href="ApplicationAutoScaling.html">ApplicationAutoScaling</a>
           </li>
           <li class="nav-group-name">
@@ -95,6 +98,9 @@
           </li>
           <li class="nav-group-name">
             <a href="Batch.html">Batch</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="Braket.html">Braket</a>
           </li>
           <li class="nav-group-name">
             <a href="Budgets.html">Budgets</a>
@@ -137,6 +143,9 @@
           </li>
           <li class="nav-group-name">
             <a href="CloudWatchLogs.html">CloudWatchLogs</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="CodeArtifact.html">CodeArtifact</a>
           </li>
           <li class="nav-group-name">
             <a href="CodeBuild.html">CodeBuild</a>
@@ -325,7 +334,16 @@
             <a href="Health.html">Health</a>
           </li>
           <li class="nav-group-name">
+            <a href="Honeycode.html">Honeycode</a>
+          </li>
+          <li class="nav-group-name">
             <a href="IAM.html">IAM</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="IVS.html">IVS</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="IdentityStore.html">IdentityStore</a>
           </li>
           <li class="nav-group-name">
             <a href="Imagebuilder.html">Imagebuilder</a>
@@ -362,6 +380,9 @@
           </li>
           <li class="nav-group-name">
             <a href="IoTSecureTunneling.html">IoTSecureTunneling</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="IoTSiteWise.html">IoTSiteWise</a>
           </li>
           <li class="nav-group-name">
             <a href="IoTThingsGraph.html">IoTThingsGraph</a>
@@ -425,6 +446,9 @@
           </li>
           <li class="nav-group-name">
             <a href="Macie.html">Macie</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="Macie2.html">Macie2</a>
           </li>
           <li class="nav-group-name">
             <a href="ManagedBlockchain.html">ManagedBlockchain</a>
@@ -544,6 +568,9 @@
             <a href="Redshift.html">Redshift</a>
           </li>
           <li class="nav-group-name">
+            <a href="RedshiftDataAPIService.html">RedshiftDataAPIService</a>
+          </li>
+          <li class="nav-group-name">
             <a href="Rekognition.html">Rekognition</a>
           </li>
           <li class="nav-group-name">
@@ -593,6 +620,9 @@
           </li>
           <li class="nav-group-name">
             <a href="SSO.html">SSO</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="SSOAdmin.html">SSOAdmin</a>
           </li>
           <li class="nav-group-name">
             <a href="SSOOIDC.html">SSOOIDC</a>
@@ -650,6 +680,9 @@
           </li>
           <li class="nav-group-name">
             <a href="Support.html">Support</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="Synthetics.html">Synthetics</a>
           </li>
           <li class="nav-group-name">
             <a href="Textract.html">Textract</a>
@@ -720,16 +753,17 @@
         <section>
           <section class="section">
             
-            <h1 id='aws-sdk-swift' class='heading'>AWS SDK Swift</h1>
+            <p>Soto is the new name for AWS SDK Swift. Amazon have asked that we don&rsquo;t use the name AWS SDK Swift. They are protecting their trademark and want to avoid confusing their customers who might think we are affiliated or are being sponsored by them, which we aren&rsquo;t.</p>
+<h1 id='soto-for-aws' class='heading'>Soto for AWS</h1>
 
-<p>AWS SDK for the Swift programming language working on Linux, macOS and iOS.</p>
+<p>Soto is a Swift language SDK for AWS services working on Linux, macOS and iOS.</p>
 
 <p><a href="https://swift.org"><img src="http://img.shields.io/badge/swift-5.0-brightgreen.svg" alt="Swift 5.0" /></a>
 <a href="https://swift.org"><img src="http://img.shields.io/badge/swift-5.1-brightgreen.svg" alt="Swift 5.1" /></a>
-<a href="https://github.com/swift-aws/aws-sdk-swift/actions"><img src="https://github.com/swift-aws/aws-sdk-swift/workflows/Swift/badge.svg" /></a></p>
+<a href="https://github.com/soto-project/soto/actions"><img src="https://github.com/soto-project/soto/workflows/Swift/badge.svg" /></a></p>
 <h2 id='compatibility' class='heading'>Compatibility</h2>
 
-<p>AWSSDKSwift works on Linux, macOS and iOS. Version 4 is dependent on <a href="https://github.com/apple/swift-nio">swift-nio</a> 2. Libraries/frameworks that are dependent on an earlier version of swift-nio will not work with version 4 of AWSSDKSwift. In this case Version 3 can be used. For example Vapor 3 uses swift-nio 1.13 so you can only use versions 3.x of AWSSDKSwift with Vapor 3. Below is a compatibility table for versions 3 and 4 of AWSSDKSwift.</p>
+<p>Soto works on Linux, macOS and iOS. Version 4 is dependent on <a href="https://github.com/apple/swift-nio">swift-nio</a> 2. Libraries/frameworks that are dependent on an earlier version of swift-nio will not work with version 4 of Soto. In this case Version 3 can be used. For example Vapor 3 uses swift-nio 1.13 so you can only use versions 3.x of Soto with Vapor 3. Below is a compatibility table for versions 3 and 4 of Soto.</p>
 
 <table><thead>
 <tr>
@@ -760,24 +794,24 @@
 </tbody></table>
 <h2 id='documentation' class='heading'>Documentation</h2>
 
-<p>Visit the <code>aws-sdk-swift</code> <a href="https://swift-aws.github.io/aws-sdk-swift/index.html">documentation</a> to browse the api reference.</p>
+<p>Visit the <code>Soto</code> <a href="https://soto-project.github.io/soto-docs/4.x.x/index.html">documentation</a> to browse the api reference.</p>
 <h2 id='installation' class='heading'>Installation</h2>
 <h3 id='swift-package-manager' class='heading'>Swift Package Manager</h3>
 
-<p>AWSSDKSwift uses the Swift Package Manager to manage its code dependencies. To use AWSSDKSwift in your codebase it is recommended you do the same. Add a dependency to the package in your own Package.swift dependencies.</p>
+<p>Soto uses the Swift Package Manager to manage its code dependencies. To use Soto in your codebase it is recommended you do the same. Add a dependency to the package in your own Package.swift dependencies.</p>
 <pre class="highlight swift"><code>    <span class="nv">dependencies</span><span class="p">:</span> <span class="p">[</span>
-        <span class="o">.</span><span class="nf">package</span><span class="p">(</span><span class="nv">url</span><span class="p">:</span> <span class="s">"https://github.com/swift-aws/aws-sdk-swift.git"</span><span class="p">,</span> <span class="nv">from</span><span class="p">:</span> <span class="s">"4.0.0"</span><span class="p">)</span>
+        <span class="o">.</span><span class="nf">package</span><span class="p">(</span><span class="nv">url</span><span class="p">:</span> <span class="s">"https://github.com/soto-project/soto.git"</span><span class="p">,</span> <span class="nv">from</span><span class="p">:</span> <span class="s">"4.0.0"</span><span class="p">)</span>
     <span class="p">],</span>
 </code></pre>
 
-<p>Then add target dependencies for each of the AWSSDKSwift targets you want to use.</p>
+<p>Then add target dependencies for each of the Soto targets you want to use.</p>
 <pre class="highlight swift"><code>    <span class="nv">targets</span><span class="p">:</span> <span class="p">[</span>
       <span class="o">.</span><span class="nf">target</span><span class="p">(</span><span class="nv">name</span><span class="p">:</span> <span class="s">"MyAWSApp"</span><span class="p">,</span> <span class="nv">dependencies</span><span class="p">:</span> <span class="p">[</span><span class="s">"S3"</span><span class="p">,</span> <span class="s">"SES"</span><span class="p">,</span> <span class="s">"CloudFront"</span><span class="p">,</span> <span class="s">"ELBV2"</span><span class="p">,</span> <span class="s">"IAM"</span><span class="p">,</span> <span class="s">"Kinesis"</span><span class="p">]),</span>
     <span class="p">]</span>
 <span class="p">)</span>
 </code></pre>
 
-<p>Alternatively if you are using Xcode 11+ you can use the Swift Package integration and add a dependency to AWSSDKSwift through that.</p>
+<p>Alternatively if you are using Xcode 11+ you can use the Swift Package integration and add a dependency to Soto through that.</p>
 <h2 id='configuring-credentials' class='heading'>Configuring Credentials</h2>
 
 <p>Before using the SDK, you will need AWS credentials to sign all your requests. Credentials can be provided in the following ways.</p>
@@ -817,11 +851,11 @@
 <h3 id='without-credentials' class='heading'>Without Credentials</h3>
 
 <p>Some services like CognitoIdentityProvider don&rsquo;t require credentials to access some of their functions. Explicitly set <code>accessKeyId</code> and <code>secretAccessKey</code> to &ldquo;&rdquo;. This will disable all other credential access functions and send requests unsigned.</p>
-<h2 id='using-code-aws-sdk-swift-code' class='heading'>Using <code>aws-sdk-swift</code></h2>
+<h2 id='using-soto' class='heading'>Using Soto</h2>
 
 <p>AWS Swift Modules can be imported into any swift project. Each module provides a struct that can be initialized, with instance methods to call aws services. See documentation for details on specific services.</p>
 
-<p>The underlying aws-sdk-swift httpclient returns a <a href="https://apple.github.io/swift-nio/docs/current/NIO/Classes/EventLoopFuture.html">swift-nio EventLoopFuture object</a>. An EventLoopFuture <em>is not</em> the response, but rather a container object that will be populated with the response sometime later. In this manner calls to AWS do not block the main thread.</p>
+<p>The underlying Soto httpclient returns a <a href="https://apple.github.io/swift-nio/docs/current/NIO/Classes/EventLoopFuture.html">swift-nio EventLoopFuture object</a>. An EventLoopFuture <em>is not</em> the response, but rather a container object that will be populated with the response sometime later. In this manner calls to AWS do not block the main thread.</p>
 
 <p>The recommended manner to interact with futures is chaining. The following function returns an EventLoopFuture that creates an S3 bucket, puts a file in the bucket, reads the file back from the bucket and finally prints the contents of the file. Each of these operations are chained together. The output of one being the input of the next. </p>
 <pre class="highlight swift"><code><span class="kd">import</span> <span class="kt">S3</span> <span class="c1">//ensure this module is specified as a dependency in your package.swift</span>
@@ -857,14 +891,14 @@
 <p>The simplest way to upgrade from an existing 1.0 or 2.0 implementation is to call <code>.wait()</code> on existing synchronous calls. However it is recommend to rewrite your synchronous code to work with the returned future objects. It is no longer necessary to use a DispatchQueue.</p>
 <h2 id='eventloopgroup-management' class='heading'>EventLoopGroup management</h2>
 
-<p>The AWS SDK has its own <code>EventLoopGroup</code> but it is recommended that you provide your own <code>EventLoopGroup</code> for the SDK to work off. You can do this when you construct your client.</p>
+<p>Soto has its own <code>EventLoopGroup</code> but it is recommended that you provide your own <code>EventLoopGroup</code> for the SDK to work off. You can do this when you construct your client.</p>
 <pre class="highlight plaintext"><code>let s3 = S3(region:.uswest2, eventLoopGroupProvider: .shared(myEventLoopGroup)
 </code></pre>
 
 <p>The EventLoopGroup types you can use depend on the platform you are running on. On Linux use <code>MultiThreadedEventLoopGroup</code>, on macOS use <code>MultiThreadedEventLoopGroup</code> or <code>NIOTSEventLoopGroup</code> and iOS use <code>NIOTSEventLoopGroup</code>. Using the <code>NIOTSEventLoopGroup</code> will mean you use <a href="https://github.com/apple/swift-nio-transport-services">NIO Transport Services</a> and the Apple Network framework.</p>
-<h2 id='using-code-aws-sdk-swift-code-with-vapor' class='heading'>Using <code>aws-sdk-swift</code> with Vapor</h2>
+<h2 id='using-soto-with-vapor' class='heading'>Using Soto with Vapor</h2>
 
-<p>Integration with Vapor is pretty straight forward. Although be sure you use the correct version of AWSSDKSwift depending on which version of Vapor you are using. See the compatibility section for details. Below is a simple Vapor 3 example that extracts an email address, subject and message from a request and then sends an email using these details. Take note of the <code>hopTo(eventLoop:)</code> call. If your AWS SDK is not working off the same <code>EventLoopGroup</code> as the Vapor <code>Request</code> this is a requirement.</p>
+<p>Integration with Vapor is pretty straight forward. Although be sure you use the correct version of Soto depending on which version of Vapor you are using. See the compatibility section for details. Below is a simple Vapor 3 example that extracts an email address, subject and message from a request and then sends an email using these details. Take note of the <code>hopTo(eventLoop:)</code> call. If your AWS SDK is not working off the same <code>EventLoopGroup</code> as the Vapor <code>Request</code> this is a requirement.</p>
 <pre class="highlight swift"><code><span class="kd">import</span> <span class="kt">Vapor</span>
 <span class="kd">import</span> <span class="kt">HTTP</span>
 <span class="kd">import</span> <span class="kt">SES</span>
@@ -882,7 +916,7 @@
 
                 <span class="k">let</span> <span class="nv">destination</span> <span class="o">=</span> <span class="kt">SES</span><span class="o">.</span><span class="kt">Destination</span><span class="p">(</span><span class="nv">toAddresses</span><span class="p">:</span> <span class="p">[</span><span class="n">emailData</span><span class="o">.</span><span class="n">address</span><span class="p">])</span>
                 <span class="k">let</span> <span class="nv">message</span> <span class="o">=</span> <span class="kt">SES</span><span class="o">.</span><span class="kt">Message</span><span class="p">(</span><span class="nv">body</span><span class="p">:</span><span class="kt">SES</span><span class="o">.</span><span class="kt">Body</span><span class="p">(</span><span class="nv">text</span><span class="p">:</span><span class="kt">SES</span><span class="o">.</span><span class="kt">Content</span><span class="p">(</span><span class="nv">data</span><span class="p">:</span><span class="n">emailData</span><span class="o">.</span><span class="n">message</span><span class="p">)),</span> <span class="nv">subject</span><span class="p">:</span><span class="kt">SES</span><span class="o">.</span><span class="kt">Content</span><span class="p">(</span><span class="nv">data</span><span class="p">:</span><span class="n">emailData</span><span class="o">.</span><span class="n">subject</span><span class="p">))</span>
-                <span class="k">let</span> <span class="nv">sendEmailRequest</span> <span class="o">=</span> <span class="kt">SES</span><span class="o">.</span><span class="kt">SendEmailRequest</span><span class="p">(</span><span class="nv">destination</span><span class="p">:</span> <span class="n">destination</span><span class="p">,</span> <span class="nv">message</span><span class="p">:</span> <span class="n">message</span><span class="p">,</span> <span class="nv">source</span><span class="p">:</span><span class="s">"awssdkswift@me.com"</span><span class="p">)</span>
+                <span class="k">let</span> <span class="nv">sendEmailRequest</span> <span class="o">=</span> <span class="kt">SES</span><span class="o">.</span><span class="kt">SendEmailRequest</span><span class="p">(</span><span class="nv">destination</span><span class="p">:</span> <span class="n">destination</span><span class="p">,</span> <span class="nv">message</span><span class="p">:</span> <span class="n">message</span><span class="p">,</span> <span class="nv">source</span><span class="p">:</span><span class="s">"soto@me.com"</span><span class="p">)</span>
 
                 <span class="k">return</span> <span class="n">client</span><span class="o">.</span><span class="nf">sendEmail</span><span class="p">(</span><span class="n">sendEmailRequest</span><span class="p">)</span>
             <span class="p">}</span>
@@ -895,7 +929,7 @@
 </code></pre>
 
 <!--
-## Using the `aws-sdk-swift` with the swift REPL (macOS)
+## Using the Soto with the swift REPL (macOS)
 
 
 ```swift
@@ -924,7 +958,7 @@ s3.createBucket(createBucketRequest).whenSuccess { response in
 <p>If you want to create a module for your service, you can try using the module-exporter to build a separate repo for any of the modules.</p>
 <h2 id='license' class='heading'>License</h2>
 
-<p><code>aws-sdk-swift</code> is released under the <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache License, Version 2.0</a>. See LICENSE for details.</p>
+<p>Soto is released under the <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache License, Version 2.0</a>. See LICENSE for details.</p>
 
           </section>
         </section>

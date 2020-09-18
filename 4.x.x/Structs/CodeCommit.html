@@ -14,7 +14,7 @@
     <a title="CodeCommit Structure Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html"> Docs</a> (60% documented)</p>
+        <p><a href="../index.html"> Docs</a> (59% documented)</p>
         <p class="header-right"><a href="https://github.com/swift-aws/aws-sdk-swift"><img src="../img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
@@ -74,6 +74,9 @@
             <a href="../AppSync.html">AppSync</a>
           </li>
           <li class="nav-group-name">
+            <a href="../Appflow.html">Appflow</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../ApplicationAutoScaling.html">ApplicationAutoScaling</a>
           </li>
           <li class="nav-group-name">
@@ -96,6 +99,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../Batch.html">Batch</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Braket.html">Braket</a>
           </li>
           <li class="nav-group-name">
             <a href="../Budgets.html">Budgets</a>
@@ -138,6 +144,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../CloudWatchLogs.html">CloudWatchLogs</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../CodeArtifact.html">CodeArtifact</a>
           </li>
           <li class="nav-group-name">
             <a href="../CodeBuild.html">CodeBuild</a>
@@ -326,7 +335,16 @@
             <a href="../Health.html">Health</a>
           </li>
           <li class="nav-group-name">
+            <a href="../Honeycode.html">Honeycode</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../IAM.html">IAM</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../IVS.html">IVS</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../IdentityStore.html">IdentityStore</a>
           </li>
           <li class="nav-group-name">
             <a href="../Imagebuilder.html">Imagebuilder</a>
@@ -363,6 +381,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../IoTSecureTunneling.html">IoTSecureTunneling</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../IoTSiteWise.html">IoTSiteWise</a>
           </li>
           <li class="nav-group-name">
             <a href="../IoTThingsGraph.html">IoTThingsGraph</a>
@@ -426,6 +447,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../Macie.html">Macie</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Macie2.html">Macie2</a>
           </li>
           <li class="nav-group-name">
             <a href="../ManagedBlockchain.html">ManagedBlockchain</a>
@@ -545,6 +569,9 @@
             <a href="../Redshift.html">Redshift</a>
           </li>
           <li class="nav-group-name">
+            <a href="../RedshiftDataAPIService.html">RedshiftDataAPIService</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../Rekognition.html">Rekognition</a>
           </li>
           <li class="nav-group-name">
@@ -594,6 +621,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../SSO.html">SSO</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../SSOAdmin.html">SSOAdmin</a>
           </li>
           <li class="nav-group-name">
             <a href="../SSOOIDC.html">SSOOIDC</a>
@@ -651,6 +681,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../Support.html">Support</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Synthetics.html">Synthetics</a>
           </li>
           <li class="nav-group-name">
             <a href="../Textract.html">Textract</a>
@@ -729,7 +762,7 @@
               </div>
             <p>Client object for interacting with AWS CodeCommit service.</p>
 
-<p>AWS CodeCommit This is the AWS CodeCommit API Reference. This reference provides descriptions of the operations and data types for AWS CodeCommit API along with usage examples. You can use the AWS CodeCommit API to work with the following objects: Repositories, by calling the following:    BatchGetRepositories, which returns information about one or more repositories associated with your AWS account.    CreateRepository, which creates an AWS CodeCommit repository.    DeleteRepository, which deletes an AWS CodeCommit repository.    GetRepository, which returns information about a specified repository.    ListRepositories, which lists all AWS CodeCommit repositories associated with your AWS account.    UpdateRepositoryDescription, which sets or updates the description of the repository.    UpdateRepositoryName, which changes the name of the repository. If you change the name of a repository, no other users of that repository can access it until you send them the new HTTPS or SSH URL to use.   Branches, by calling the following:    CreateBranch, which creates a branch in a specified repository.    DeleteBranch, which deletes the specified branch in a repository unless it is the default branch.    GetBranch, which returns information about a specified branch.    ListBranches, which lists all branches for a specified repository.    UpdateDefaultBranch, which changes the default branch for a repository.   Files, by calling the following:    DeleteFile, which deletes the content of a specified file from a specified branch.    GetBlob, which returns the base-64 encoded content of an individual Git blob object in a repository.    GetFile, which returns the base-64 encoded content of a specified file.    GetFolder, which returns the contents of a specified folder or directory.    PutFile, which adds or modifies a single file in a specified repository and branch.   Commits, by calling the following:    BatchGetCommits, which returns information about one or more commits in a repository.    CreateCommit, which creates a commit for changes to a repository.    GetCommit, which returns information about a commit, including commit messages and author and committer information.    GetDifferences, which returns information about the differences in a valid commit specifier (such as a branch, tag, HEAD, commit ID, or other fully qualified reference).   Merges, by calling the following:    BatchDescribeMergeConflicts, which returns information about conflicts in a merge between commits in a repository.    CreateUnreferencedMergeCommit, which creates an unreferenced commit between two branches or commits for the purpose of comparing them and identifying any potential conflicts.    DescribeMergeConflicts, which returns information about merge conflicts between the base, source, and destination versions of a file in a potential merge.    GetMergeCommit, which returns information about the merge between a source and destination commit.     GetMergeConflicts, which returns information about merge conflicts between the source and destination branch in a pull request.    GetMergeOptions, which returns information about the available merge options between two branches or commit specifiers.    MergeBranchesByFastForward, which merges two branches using the fast-forward merge option.    MergeBranchesBySquash, which merges two branches using the squash merge option.    MergeBranchesByThreeWay, which merges two branches using the three-way merge option.   Pull requests, by calling the following:    CreatePullRequest, which creates a pull request in a specified repository.    CreatePullRequestApprovalRule, which creates an approval rule for a specified pull request.    DeletePullRequestApprovalRule, which deletes an approval rule for a specified pull request.    DescribePullRequestEvents, which returns information about one or more pull request events.    EvaluatePullRequestApprovalRules, which evaluates whether a pull request has met all the conditions specified in its associated approval rules.    GetCommentsForPullRequest, which returns information about comments on a specified pull request.    GetPullRequest, which returns information about a specified pull request.    GetPullRequestApprovalStates, which returns information about the approval states for a specified pull request.    GetPullRequestOverrideState, which returns information about whether approval rules have been set aside (overriden) for a pull request, and if so, the Amazon Resource Name (ARN) of the user or identity that overrode the rules and their requirements for the pull request.    ListPullRequests, which lists all pull requests for a repository.    MergePullRequestByFastForward, which merges the source destination branch of a pull request into the specified destination branch for that pull request using the fast-forward merge option.    MergePullRequestBySquash, which merges the source destination branch of a pull request into the specified destination branch for that pull request using the squash merge option.    MergePullRequestByThreeWay. which merges the source destination branch of a pull request into the specified destination branch for that pull request using the three-way merge option.    OverridePullRequestApprovalRules, which sets aside all approval rule requirements for a pull request.    PostCommentForPullRequest, which posts a comment to a pull request at the specified line, file, or request.    UpdatePullRequestApprovalRuleContent, which updates the structure of an approval rule for a pull request.    UpdatePullRequestApprovalState, which updates the state of an approval on a pull request.    UpdatePullRequestDescription, which updates the description of a pull request.    UpdatePullRequestStatus, which updates the status of a pull request.    UpdatePullRequestTitle, which updates the title of a pull request.   Approval rule templates, by calling the following:    AssociateApprovalRuleTemplateWithRepository, which associates a template with a specified repository. After the template is associated with a repository, AWS CodeCommit creates approval rules that match the template conditions on every pull request created in the specified repository.    BatchAssociateApprovalRuleTemplateWithRepositories, which associates a template with one or more specified repositories. After the template is associated with a repository, AWS CodeCommit creates approval rules that match the template conditions on every pull request created in the specified repositories.    BatchDisassociateApprovalRuleTemplateFromRepositories, which removes the association between a template and specified repositories so that approval rules based on the template are not automatically created when pull requests are created in those repositories.    CreateApprovalRuleTemplate, which creates a template for approval rules that can then be associated with one or more repositories in your AWS account.    DeleteApprovalRuleTemplate, which deletes the specified template. It does not remove approval rules on pull requests already created with the template.    DisassociateApprovalRuleTemplateFromRepository, which removes the association between a template and a repository so that approval rules based on the template are not automatically created when pull requests are created in the specified repository.    GetApprovalRuleTemplate, which returns information about an approval rule template.    ListApprovalRuleTemplates, which lists all approval rule templates in the AWS Region in your AWS account.    ListAssociatedApprovalRuleTemplatesForRepository, which lists all approval rule templates that are associated with a specified repository.    ListRepositoriesForApprovalRuleTemplate, which lists all repositories associated with the specified approval rule template.    UpdateApprovalRuleTemplateDescription, which updates the description of an approval rule template.    UpdateApprovalRuleTemplateName, which updates the name of an approval rule template.    UpdateApprovalRuleTemplateContent, which updates the content of an approval rule template.   Comments in a repository, by calling the following:    DeleteCommentContent, which deletes the content of a comment on a commit in a repository.    GetComment, which returns information about a comment on a commit.    GetCommentsForComparedCommit, which returns information about comments on the comparison between two commit specifiers in a repository.    PostCommentForComparedCommit, which creates a comment on the comparison between two commit specifiers in a repository.    PostCommentReply, which creates a reply to a comment.    UpdateComment, which updates the content of a comment on a commit in a repository.   Tags used to tag resources in AWS CodeCommit (not Git tags), by calling the following:    ListTagsForResource, which gets information about AWS tags for a specified Amazon Resource Name (ARN) in AWS CodeCommit.    TagResource, which adds or updates tags for a resource in AWS CodeCommit.    UntagResource, which removes tags for a resource in AWS CodeCommit.   Triggers, by calling the following:    GetRepositoryTriggers, which returns information about triggers configured for a repository.    PutRepositoryTriggers, which replaces all triggers for a repository and can be used to create or delete triggers.    TestRepositoryTriggers, which tests the functionality of a repository trigger by sending data to the trigger target.   For information about how to use AWS CodeCommit, see the AWS CodeCommit User Guide.</p>
+<p>AWS CodeCommit This is the AWS CodeCommit API Reference. This reference provides descriptions of the operations and data types for AWS CodeCommit API along with usage examples. You can use the AWS CodeCommit API to work with the following objects: Repositories, by calling the following:    BatchGetRepositories, which returns information about one or more repositories associated with your AWS account.    CreateRepository, which creates an AWS CodeCommit repository.    DeleteRepository, which deletes an AWS CodeCommit repository.    GetRepository, which returns information about a specified repository.    ListRepositories, which lists all AWS CodeCommit repositories associated with your AWS account.    UpdateRepositoryDescription, which sets or updates the description of the repository.    UpdateRepositoryName, which changes the name of the repository. If you change the name of a repository, no other users of that repository can access it until you send them the new HTTPS or SSH URL to use.   Branches, by calling the following:    CreateBranch, which creates a branch in a specified repository.    DeleteBranch, which deletes the specified branch in a repository unless it is the default branch.    GetBranch, which returns information about a specified branch.    ListBranches, which lists all branches for a specified repository.    UpdateDefaultBranch, which changes the default branch for a repository.   Files, by calling the following:    DeleteFile, which deletes the content of a specified file from a specified branch.    GetBlob, which returns the base-64 encoded content of an individual Git blob object in a repository.    GetFile, which returns the base-64 encoded content of a specified file.    GetFolder, which returns the contents of a specified folder or directory.    PutFile, which adds or modifies a single file in a specified repository and branch.   Commits, by calling the following:    BatchGetCommits, which returns information about one or more commits in a repository.    CreateCommit, which creates a commit for changes to a repository.    GetCommit, which returns information about a commit, including commit messages and author and committer information.    GetDifferences, which returns information about the differences in a valid commit specifier (such as a branch, tag, HEAD, commit ID, or other fully qualified reference).   Merges, by calling the following:    BatchDescribeMergeConflicts, which returns information about conflicts in a merge between commits in a repository.    CreateUnreferencedMergeCommit, which creates an unreferenced commit between two branches or commits for the purpose of comparing them and identifying any potential conflicts.    DescribeMergeConflicts, which returns information about merge conflicts between the base, source, and destination versions of a file in a potential merge.    GetMergeCommit, which returns information about the merge between a source and destination commit.     GetMergeConflicts, which returns information about merge conflicts between the source and destination branch in a pull request.    GetMergeOptions, which returns information about the available merge options between two branches or commit specifiers.    MergeBranchesByFastForward, which merges two branches using the fast-forward merge option.    MergeBranchesBySquash, which merges two branches using the squash merge option.    MergeBranchesByThreeWay, which merges two branches using the three-way merge option.   Pull requests, by calling the following:    CreatePullRequest, which creates a pull request in a specified repository.    CreatePullRequestApprovalRule, which creates an approval rule for a specified pull request.    DeletePullRequestApprovalRule, which deletes an approval rule for a specified pull request.    DescribePullRequestEvents, which returns information about one or more pull request events.    EvaluatePullRequestApprovalRules, which evaluates whether a pull request has met all the conditions specified in its associated approval rules.    GetCommentsForPullRequest, which returns information about comments on a specified pull request.    GetPullRequest, which returns information about a specified pull request.    GetPullRequestApprovalStates, which returns information about the approval states for a specified pull request.    GetPullRequestOverrideState, which returns information about whether approval rules have been set aside (overriden) for a pull request, and if so, the Amazon Resource Name (ARN) of the user or identity that overrode the rules and their requirements for the pull request.    ListPullRequests, which lists all pull requests for a repository.    MergePullRequestByFastForward, which merges the source destination branch of a pull request into the specified destination branch for that pull request using the fast-forward merge option.    MergePullRequestBySquash, which merges the source destination branch of a pull request into the specified destination branch for that pull request using the squash merge option.    MergePullRequestByThreeWay. which merges the source destination branch of a pull request into the specified destination branch for that pull request using the three-way merge option.    OverridePullRequestApprovalRules, which sets aside all approval rule requirements for a pull request.    PostCommentForPullRequest, which posts a comment to a pull request at the specified line, file, or request.    UpdatePullRequestApprovalRuleContent, which updates the structure of an approval rule for a pull request.    UpdatePullRequestApprovalState, which updates the state of an approval on a pull request.    UpdatePullRequestDescription, which updates the description of a pull request.    UpdatePullRequestStatus, which updates the status of a pull request.    UpdatePullRequestTitle, which updates the title of a pull request.   Approval rule templates, by calling the following:    AssociateApprovalRuleTemplateWithRepository, which associates a template with a specified repository. After the template is associated with a repository, AWS CodeCommit creates approval rules that match the template conditions on every pull request created in the specified repository.    BatchAssociateApprovalRuleTemplateWithRepositories, which associates a template with one or more specified repositories. After the template is associated with a repository, AWS CodeCommit creates approval rules that match the template conditions on every pull request created in the specified repositories.    BatchDisassociateApprovalRuleTemplateFromRepositories, which removes the association between a template and specified repositories so that approval rules based on the template are not automatically created when pull requests are created in those repositories.    CreateApprovalRuleTemplate, which creates a template for approval rules that can then be associated with one or more repositories in your AWS account.    DeleteApprovalRuleTemplate, which deletes the specified template. It does not remove approval rules on pull requests already created with the template.    DisassociateApprovalRuleTemplateFromRepository, which removes the association between a template and a repository so that approval rules based on the template are not automatically created when pull requests are created in the specified repository.    GetApprovalRuleTemplate, which returns information about an approval rule template.    ListApprovalRuleTemplates, which lists all approval rule templates in the AWS Region in your AWS account.    ListAssociatedApprovalRuleTemplatesForRepository, which lists all approval rule templates that are associated with a specified repository.    ListRepositoriesForApprovalRuleTemplate, which lists all repositories associated with the specified approval rule template.    UpdateApprovalRuleTemplateDescription, which updates the description of an approval rule template.    UpdateApprovalRuleTemplateName, which updates the name of an approval rule template.    UpdateApprovalRuleTemplateContent, which updates the content of an approval rule template.   Comments in a repository, by calling the following:    DeleteCommentContent, which deletes the content of a comment on a commit in a repository.    GetComment, which returns information about a comment on a commit.    GetCommentReactions, which returns information about emoji reactions to comments.    GetCommentsForComparedCommit, which returns information about comments on the comparison between two commit specifiers in a repository.    PostCommentForComparedCommit, which creates a comment on the comparison between two commit specifiers in a repository.    PostCommentReply, which creates a reply to a comment.    PutCommentReaction, which creates or updates an emoji reaction to a comment.    UpdateComment, which updates the content of a comment on a commit in a repository.   Tags used to tag resources in AWS CodeCommit (not Git tags), by calling the following:    ListTagsForResource, which gets information about AWS tags for a specified Amazon Resource Name (ARN) in AWS CodeCommit.    TagResource, which adds or updates tags for a resource in AWS CodeCommit.    UntagResource, which removes tags for a resource in AWS CodeCommit.   Triggers, by calling the following:    GetRepositoryTriggers, which returns information about triggers configured for a repository.    PutRepositoryTriggers, which replaces all triggers for a repository and can be used to create or delete triggers.    TestRepositoryTriggers, which tests the functionality of a repository trigger by sending data to the trigger target.   For information about how to use AWS CodeCommit, see the AWS CodeCommit User Guide.</p>
 
           </section>
           <section class="section task-group-section">
@@ -1627,7 +1660,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Returns the content of a comment made on a change, file, or commit in a repository.</p>
+                        <p>Returns the content of a comment made on a change, file, or commit in a repository.   Reaction counts might include numbers from user identities who were deleted after the reaction was made. For a count of reactions from active identities, use GetCommentReactions.</p>
 
                       </div>
                       <div class="declaration">
@@ -1635,6 +1668,33 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getComment</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/CodeCommit/GetCommentInput.html">GetCommentInput</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/CodeCommit/GetCommentOutput.html">GetCommentOutput</a></span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10CodeCommitAAV19getCommentReactionsy3NIO15EventLoopFutureCyAB03GetdE6OutputVGAB0jdE5InputVF"></a>
+                    <a name="//apple_ref/swift/Method/getCommentReactions(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10CodeCommitAAV19getCommentReactionsy3NIO15EventLoopFutureCyAB03GetdE6OutputVGAB0jdE5InputVF">getCommentReactions(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns information about reactions to a specified comment ID. Reactions from users who have been deleted will not be included in the count.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getCommentReactions</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/CodeCommit/GetCommentReactionsInput.html">GetCommentReactionsInput</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/CodeCommit/GetCommentReactionsOutput.html">GetCommentReactionsOutput</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
                       </div>
@@ -1654,7 +1714,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Returns information about comments made on the comparison between two commits.</p>
+                        <p>Returns information about comments made on the comparison between two commits.  Reaction counts might include numbers from user identities who were deleted after the reaction was made. For a count of reactions from active identities, use GetCommentReactions.</p>
 
                       </div>
                       <div class="declaration">
@@ -1681,7 +1741,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Returns comments made on a pull request.</p>
+                        <p>Returns comments made on a pull request.  Reaction counts might include numbers from user identities who were deleted after the reaction was made. For a count of reactions from active identities, use GetCommentReactions.</p>
 
                       </div>
                       <div class="declaration">
@@ -2482,6 +2542,34 @@
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/s:10CodeCommitAAV18putCommentReactiony3NIO15EventLoopFutureCyytGAB03PutdE5InputVF"></a>
+                    <a name="//apple_ref/swift/Method/putCommentReaction(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10CodeCommitAAV18putCommentReactiony3NIO15EventLoopFutureCyytGAB03PutdE5InputVF">putCommentReaction(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Adds or updates a reaction to a specified comment for the user whose identity is used to make the request. You can only add or update a reaction for yourself. You cannot add, modify, or delete a reaction for another user.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">putCommentReaction</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/CodeCommit/PutCommentReactionInput.html">PutCommentReactionInput</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Void</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/s:10CodeCommitAAV7putFiley3NIO15EventLoopFutureCyAB03PutD6OutputVGAB0iD5InputVF"></a>
                     <a name="//apple_ref/swift/Method/putFile(_:)" class="dashAnchor"></a>
                     <a class="token" href="#/s:10CodeCommitAAV7putFiley3NIO15EventLoopFutureCyAB03PutD6OutputVGAB0iD5InputVF">putFile(_:)</a>
@@ -3012,6 +3100,33 @@
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/s:10CodeCommitAAV28getCommentReactionsPaginator_6onPage3NIO15EventLoopFutureCyytGAB03GetdE5InputV_AGySbGAB0mdE6OutputV_AE0jK0_ptctF"></a>
+                    <a name="//apple_ref/swift/Method/getCommentReactionsPaginator(_:onPage:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10CodeCommitAAV28getCommentReactionsPaginator_6onPage3NIO15EventLoopFutureCyytGAB03GetdE5InputV_AGySbGAB0mdE6OutputV_AE0jK0_ptctF">getCommentReactionsPaginator(_:onPage:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns information about reactions to a specified comment ID. Reactions from users who have been deleted will not be included in the count.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getCommentReactionsPaginator</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/CodeCommit/GetCommentReactionsInput.html">GetCommentReactionsInput</a></span><span class="p">,</span> <span class="nv">onPage</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/CodeCommit/GetCommentReactionsOutput.html">GetCommentReactionsOutput</a></span><span class="p">,</span> <span class="kt">EventLoop</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Bool</span><span class="o">&gt;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Void</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/s:10CodeCommitAAV022getCommentsForComparedB9Paginator_6onPage3NIO15EventLoopFutureCyytGAB03GetdefB5InputV_AGySbGAB0ndefB6OutputV_AE0kL0_ptctF"></a>
                     <a name="//apple_ref/swift/Method/getCommentsForComparedCommitPaginator(_:onPage:)" class="dashAnchor"></a>
                     <a class="token" href="#/s:10CodeCommitAAV022getCommentsForComparedB9Paginator_6onPage3NIO15EventLoopFutureCyytGAB03GetdefB5InputV_AGySbGAB0ndefB6OutputV_AE0kL0_ptctF">getCommentsForComparedCommitPaginator(_:onPage:)</a>
@@ -3022,7 +3137,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Returns information about comments made on the comparison between two commits.</p>
+                        <p>Returns information about comments made on the comparison between two commits.  Reaction counts might include numbers from user identities who were deleted after the reaction was made. For a count of reactions from active identities, use GetCommentReactions.</p>
 
                       </div>
                       <div class="declaration">
@@ -3049,7 +3164,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Returns comments made on a pull request.</p>
+                        <p>Returns comments made on a pull request.  Reaction counts might include numbers from user identities who were deleted after the reaction was made. For a count of reactions from active identities, use GetCommentReactions.</p>
 
                       </div>
                       <div class="declaration">
@@ -3342,6 +3457,35 @@
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DescribePullRequestEventsInput</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
 <pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt"><a href="../Structs/CodeCommit.html">CodeCommit</a></span><span class="o">.</span><span class="kt">DescribePullRequestEventsInput</span><span class="p">:</span> <span class="kt"><a href="../Protocols/AWSPaginateStringToken.html">AWSPaginateStringToken</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10CodeCommitAAV24GetCommentReactionsInputV"></a>
+                    <a name="//apple_ref/swift/Struct/GetCommentReactionsInput" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10CodeCommitAAV24GetCommentReactionsInputV">GetCommentReactionsInput</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/CodeCommit/GetCommentReactionsInput.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">GetCommentReactionsInput</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt"><a href="../Structs/CodeCommit.html">CodeCommit</a></span><span class="o">.</span><span class="kt">GetCommentReactionsInput</span><span class="p">:</span> <span class="kt"><a href="../Protocols/AWSPaginateStringToken.html">AWSPaginateStringToken</a></span></code></pre>
 
                         </div>
                       </div>
@@ -5769,6 +5913,34 @@
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/s:10CodeCommitAAV25GetCommentReactionsOutputV"></a>
+                    <a name="//apple_ref/swift/Struct/GetCommentReactionsOutput" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10CodeCommitAAV25GetCommentReactionsOutputV">GetCommentReactionsOutput</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/CodeCommit/GetCommentReactionsOutput.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">GetCommentReactionsOutput</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/s:10CodeCommitAAV022GetCommentsForComparedB6OutputV"></a>
                     <a name="//apple_ref/swift/Struct/GetCommentsForComparedCommitOutput" class="dashAnchor"></a>
                     <a class="token" href="#/s:10CodeCommitAAV022GetCommentsForComparedB6OutputV">GetCommentsForComparedCommitOutput</a>
@@ -7617,6 +7789,34 @@
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/s:10CodeCommitAAV23PutCommentReactionInputV"></a>
+                    <a name="//apple_ref/swift/Struct/PutCommentReactionInput" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10CodeCommitAAV23PutCommentReactionInputV">PutCommentReactionInput</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/CodeCommit/PutCommentReactionInput.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">PutCommentReactionInput</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/s:10CodeCommitAAV12PutFileEntryV"></a>
                     <a name="//apple_ref/swift/Struct/PutFileEntry" class="dashAnchor"></a>
                     <a class="token" href="#/s:10CodeCommitAAV12PutFileEntryV">PutFileEntry</a>
@@ -7748,6 +7948,62 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">PutRepositoryTriggersOutput</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10CodeCommitAAV18ReactionForCommentV"></a>
+                    <a name="//apple_ref/swift/Struct/ReactionForComment" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10CodeCommitAAV18ReactionForCommentV">ReactionForComment</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/CodeCommit/ReactionForComment.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ReactionForComment</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10CodeCommitAAV20ReactionValueFormatsV"></a>
+                    <a name="//apple_ref/swift/Struct/ReactionValueFormats" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10CodeCommitAAV20ReactionValueFormatsV">ReactionValueFormats</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/CodeCommit/ReactionValueFormats.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ReactionValueFormats</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
 
                         </div>
                       </div>

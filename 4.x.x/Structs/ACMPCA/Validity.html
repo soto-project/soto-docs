@@ -14,7 +14,7 @@
     <a title="Validity Structure Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../../index.html"> Docs</a> (60% documented)</p>
+        <p><a href="../../index.html"> Docs</a> (59% documented)</p>
         <p class="header-right"><a href="https://github.com/swift-aws/aws-sdk-swift"><img src="../../img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
@@ -74,6 +74,9 @@
             <a href="../../AppSync.html">AppSync</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../Appflow.html">Appflow</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../ApplicationAutoScaling.html">ApplicationAutoScaling</a>
           </li>
           <li class="nav-group-name">
@@ -96,6 +99,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../Batch.html">Batch</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../Braket.html">Braket</a>
           </li>
           <li class="nav-group-name">
             <a href="../../Budgets.html">Budgets</a>
@@ -138,6 +144,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../CloudWatchLogs.html">CloudWatchLogs</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../CodeArtifact.html">CodeArtifact</a>
           </li>
           <li class="nav-group-name">
             <a href="../../CodeBuild.html">CodeBuild</a>
@@ -326,7 +335,16 @@
             <a href="../../Health.html">Health</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../Honeycode.html">Honeycode</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../IAM.html">IAM</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../IVS.html">IVS</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../IdentityStore.html">IdentityStore</a>
           </li>
           <li class="nav-group-name">
             <a href="../../Imagebuilder.html">Imagebuilder</a>
@@ -363,6 +381,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../IoTSecureTunneling.html">IoTSecureTunneling</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../IoTSiteWise.html">IoTSiteWise</a>
           </li>
           <li class="nav-group-name">
             <a href="../../IoTThingsGraph.html">IoTThingsGraph</a>
@@ -426,6 +447,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../Macie.html">Macie</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../Macie2.html">Macie2</a>
           </li>
           <li class="nav-group-name">
             <a href="../../ManagedBlockchain.html">ManagedBlockchain</a>
@@ -545,6 +569,9 @@
             <a href="../../Redshift.html">Redshift</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../RedshiftDataAPIService.html">RedshiftDataAPIService</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../Rekognition.html">Rekognition</a>
           </li>
           <li class="nav-group-name">
@@ -594,6 +621,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../SSO.html">SSO</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../SSOAdmin.html">SSOAdmin</a>
           </li>
           <li class="nav-group-name">
             <a href="../../SSOOIDC.html">SSOOIDC</a>
@@ -651,6 +681,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../Support.html">Support</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../Synthetics.html">Synthetics</a>
           </li>
           <li class="nav-group-name">
             <a href="../../Textract.html">Textract</a>
@@ -772,7 +805,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Specifies whether the Value parameter represents days, months, or years.</p>
+                        <p>Determines how ACM Private CA interprets the Value parameter, an integer. Supported validity types include those listed below. Type definitions with values include a sample input value and the resulting output.   END_DATE: The specific date and time when the certificate will expire, expressed using UTCTime (YYMMDDHHMMSS) or GeneralizedTime (YYYYMMDDHHMMSS) format. When UTCTime is used, if the year field (YY) is greater than or equal to 50, the year is interpreted as 19YY. If the year field is less than 50, the year is interpreted as 20YY.   Sample input value: 491231235959 (UTCTime format)   Output expiration date/time: 12/31/2049 23:59:59    ABSOLUTE: The specific date and time when the certificate will expire, expressed in seconds since the Unix Epoch.    Sample input value: 2524608000   Output expiration date/time: 01/01/2050 00:00:00    DAYS, MONTHS, YEARS: The relative time from the moment of issuance until the certificate will expire, expressed in days, months, or years.  Example if DAYS, issued on 10/12/2020 at 12:34:54 UTC:   Sample input value: 90   Output expiration date: 01/10/2020 12:34:54 UTC</p>
 
                       </div>
                       <div class="declaration">
@@ -799,7 +832,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Time period.</p>
+                        <p>A long integer interpreted according to the value of Type, below.</p>
 
                       </div>
                       <div class="declaration">

@@ -14,7 +14,7 @@
     <a title="ResourceGroups Structure Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html"> Docs</a> (60% documented)</p>
+        <p><a href="../index.html"> Docs</a> (59% documented)</p>
         <p class="header-right"><a href="https://github.com/swift-aws/aws-sdk-swift"><img src="../img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
@@ -74,6 +74,9 @@
             <a href="../AppSync.html">AppSync</a>
           </li>
           <li class="nav-group-name">
+            <a href="../Appflow.html">Appflow</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../ApplicationAutoScaling.html">ApplicationAutoScaling</a>
           </li>
           <li class="nav-group-name">
@@ -96,6 +99,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../Batch.html">Batch</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Braket.html">Braket</a>
           </li>
           <li class="nav-group-name">
             <a href="../Budgets.html">Budgets</a>
@@ -138,6 +144,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../CloudWatchLogs.html">CloudWatchLogs</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../CodeArtifact.html">CodeArtifact</a>
           </li>
           <li class="nav-group-name">
             <a href="../CodeBuild.html">CodeBuild</a>
@@ -326,7 +335,16 @@
             <a href="../Health.html">Health</a>
           </li>
           <li class="nav-group-name">
+            <a href="../Honeycode.html">Honeycode</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../IAM.html">IAM</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../IVS.html">IVS</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../IdentityStore.html">IdentityStore</a>
           </li>
           <li class="nav-group-name">
             <a href="../Imagebuilder.html">Imagebuilder</a>
@@ -363,6 +381,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../IoTSecureTunneling.html">IoTSecureTunneling</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../IoTSiteWise.html">IoTSiteWise</a>
           </li>
           <li class="nav-group-name">
             <a href="../IoTThingsGraph.html">IoTThingsGraph</a>
@@ -426,6 +447,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../Macie.html">Macie</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Macie2.html">Macie2</a>
           </li>
           <li class="nav-group-name">
             <a href="../ManagedBlockchain.html">ManagedBlockchain</a>
@@ -545,6 +569,9 @@
             <a href="../Redshift.html">Redshift</a>
           </li>
           <li class="nav-group-name">
+            <a href="../RedshiftDataAPIService.html">RedshiftDataAPIService</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../Rekognition.html">Rekognition</a>
           </li>
           <li class="nav-group-name">
@@ -594,6 +621,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../SSO.html">SSO</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../SSOAdmin.html">SSOAdmin</a>
           </li>
           <li class="nav-group-name">
             <a href="../SSOOIDC.html">SSOOIDC</a>
@@ -651,6 +681,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../Support.html">Support</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Synthetics.html">Synthetics</a>
           </li>
           <li class="nav-group-name">
             <a href="../Textract.html">Textract</a>
@@ -922,7 +955,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Creates a group with a specified name, description, and resource query.</p>
+                        <p>Creates a resource group with the specified name and description. You can optionally include a resource query, or a service configuration.</p>
 
                       </div>
                       <div class="declaration">
@@ -949,7 +982,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Deletes a specified resource group. Deleting a resource group does not delete resources that are members of the group; it only deletes the group structure.</p>
+                        <p>Deletes the specified resource group. Deleting a resource group does not delete any resources that are members of the group; it only deletes the group structure.</p>
 
                       </div>
                       <div class="declaration">
@@ -993,6 +1026,33 @@
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/s:14ResourceGroupsAAV21getGroupConfigurationy3NIO15EventLoopFutureCyAB03GetdE6OutputVGAB0jdE5InputVF"></a>
+                    <a name="//apple_ref/swift/Method/getGroupConfiguration(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14ResourceGroupsAAV21getGroupConfigurationy3NIO15EventLoopFutureCyAB03GetdE6OutputVGAB0jdE5InputVF">getGroupConfiguration(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the service configuration associated with the specified resource group. AWS Resource Groups supports configurations for the following resource group types:    AWS::EC2::CapacityReservationPool - Amazon EC2 capacity reservation pools. For more information, see Working with capacity reservation groups in the EC2 Users Guide.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getGroupConfiguration</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/ResourceGroups/GetGroupConfigurationInput.html">GetGroupConfigurationInput</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/ResourceGroups/GetGroupConfigurationOutput.html">GetGroupConfigurationOutput</a></span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/s:14ResourceGroupsAAV13getGroupQueryy3NIO15EventLoopFutureCyAB03GetdE6OutputVGAB0jdE5InputVF"></a>
                     <a name="//apple_ref/swift/Method/getGroupQuery(_:)" class="dashAnchor"></a>
                     <a class="token" href="#/s:14ResourceGroupsAAV13getGroupQueryy3NIO15EventLoopFutureCyAB03GetdE6OutputVGAB0jdE5InputVF">getGroupQuery(_:)</a>
@@ -1003,7 +1063,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Returns the resource query associated with the specified resource group.</p>
+                        <p>Retrieves the resource query associated with the specified resource group.</p>
 
                       </div>
                       <div class="declaration">
@@ -1047,6 +1107,33 @@
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/s:14ResourceGroupsAAV14groupResourcesy3NIO15EventLoopFutureCyAB05GroupD6OutputVGAB0iD5InputVF"></a>
+                    <a name="//apple_ref/swift/Method/groupResources(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14ResourceGroupsAAV14groupResourcesy3NIO15EventLoopFutureCyAB05GroupD6OutputVGAB0iD5InputVF">groupResources(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Adds the specified resources to the specified group.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">groupResources</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/ResourceGroups/GroupResourcesInput.html">GroupResourcesInput</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/ResourceGroups/GroupResourcesOutput.html">GroupResourcesOutput</a></span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/s:14ResourceGroupsAAV18listGroupResourcesy3NIO15EventLoopFutureCyAB04ListdE6OutputVGAB0jdE5InputVF"></a>
                     <a name="//apple_ref/swift/Method/listGroupResources(_:)" class="dashAnchor"></a>
                     <a class="token" href="#/s:14ResourceGroupsAAV18listGroupResourcesy3NIO15EventLoopFutureCyAB04ListdE6OutputVGAB0jdE5InputVF">listGroupResources(_:)</a>
@@ -1057,7 +1144,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Returns a list of ARNs of resources that are members of a specified resource group.</p>
+                        <p>Returns a list of ARNs of the resources that are members of a specified resource group.</p>
 
                       </div>
                       <div class="declaration">
@@ -1111,7 +1198,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Returns a list of AWS resource identifiers that matches a specified query. The query uses the same format as a resource query in a CreateGroup or UpdateGroupQuery operation.</p>
+                        <p>Returns a list of AWS resource identifiers that matches tne specified query. The query uses the same format as a resource query in a CreateGroup or UpdateGroupQuery operation.</p>
 
                       </div>
                       <div class="declaration">
@@ -1138,7 +1225,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Adds tags to a resource group with the specified ARN. Existing tags on a resource group are not changed if they are not specified in the request parameters.</p>
+                        <p>Adds tags to a resource group with the specified ARN. Existing tags on a resource group are not changed if they are not specified in the request parameters.  Do not store personally identifiable information (PII) or other confidential or sensitive information in tags. We use tags to provide you with billing and administration services. Tags are not intended to be used for private or sensitive data.</p>
 
                       </div>
                       <div class="declaration">
@@ -1146,6 +1233,33 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">tag</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/ResourceGroups/TagInput.html">TagInput</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/ResourceGroups/TagOutput.html">TagOutput</a></span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14ResourceGroupsAAV16ungroupResourcesy3NIO15EventLoopFutureCyAB07UngroupD6OutputVGAB0iD5InputVF"></a>
+                    <a name="//apple_ref/swift/Method/ungroupResources(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14ResourceGroupsAAV16ungroupResourcesy3NIO15EventLoopFutureCyAB07UngroupD6OutputVGAB0iD5InputVF">ungroupResources(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Removes the specified resources from the specified group.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">ungroupResources</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/ResourceGroups/UngroupResourcesInput.html">UngroupResourcesInput</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/ResourceGroups/UngroupResourcesOutput.html">UngroupResourcesOutput</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
                       </div>
@@ -1165,7 +1279,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Deletes specified tags from a specified resource.</p>
+                        <p>Deletes tags from a specified resource group.</p>
 
                       </div>
                       <div class="declaration">
@@ -1192,7 +1306,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Updates an existing group with a new or changed description. You cannot update the name of a resource group.</p>
+                        <p>Updates the description for an existing group. You cannot update the name of a resource group.</p>
 
                       </div>
                       <div class="declaration">
@@ -1257,7 +1371,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Returns a list of ARNs of resources that are members of a specified resource group.</p>
+                        <p>Returns a list of ARNs of the resources that are members of a specified resource group.</p>
 
                       </div>
                       <div class="declaration">
@@ -1311,7 +1425,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Returns a list of AWS resource identifiers that matches a specified query. The query uses the same format as a resource query in a CreateGroup or UpdateGroupQuery operation.</p>
+                        <p>Returns a list of AWS resource identifiers that matches tne specified query. The query uses the same format as a resource query in a CreateGroup or UpdateGroupQuery operation.</p>
 
                       </div>
                       <div class="declaration">
@@ -1538,6 +1652,90 @@
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/s:14ResourceGroupsAAV06FailedA0V"></a>
+                    <a name="//apple_ref/swift/Struct/FailedResource" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14ResourceGroupsAAV06FailedA0V">FailedResource</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/ResourceGroups/FailedResource.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">FailedResource</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14ResourceGroupsAAV26GetGroupConfigurationInputV"></a>
+                    <a name="//apple_ref/swift/Struct/GetGroupConfigurationInput" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14ResourceGroupsAAV26GetGroupConfigurationInputV">GetGroupConfigurationInput</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/ResourceGroups/GetGroupConfigurationInput.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">GetGroupConfigurationInput</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14ResourceGroupsAAV27GetGroupConfigurationOutputV"></a>
+                    <a name="//apple_ref/swift/Struct/GetGroupConfigurationOutput" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14ResourceGroupsAAV27GetGroupConfigurationOutputV">GetGroupConfigurationOutput</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/ResourceGroups/GetGroupConfigurationOutput.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">GetGroupConfigurationOutput</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/s:14ResourceGroupsAAV13GetGroupInputV"></a>
                     <a name="//apple_ref/swift/Struct/GetGroupInput" class="dashAnchor"></a>
                     <a class="token" href="#/s:14ResourceGroupsAAV13GetGroupInputV">GetGroupInput</a>
@@ -1734,6 +1932,90 @@
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/s:14ResourceGroupsAAV18GroupConfigurationV"></a>
+                    <a name="//apple_ref/swift/Struct/GroupConfiguration" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14ResourceGroupsAAV18GroupConfigurationV">GroupConfiguration</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/ResourceGroups/GroupConfiguration.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">GroupConfiguration</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14ResourceGroupsAAV22GroupConfigurationItemV"></a>
+                    <a name="//apple_ref/swift/Struct/GroupConfigurationItem" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14ResourceGroupsAAV22GroupConfigurationItemV">GroupConfigurationItem</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/ResourceGroups/GroupConfigurationItem.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">GroupConfigurationItem</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14ResourceGroupsAAV27GroupConfigurationParameterV"></a>
+                    <a name="//apple_ref/swift/Struct/GroupConfigurationParameter" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14ResourceGroupsAAV27GroupConfigurationParameterV">GroupConfigurationParameter</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/ResourceGroups/GroupConfigurationParameter.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">GroupConfigurationParameter</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/s:14ResourceGroupsAAV11GroupFilterV"></a>
                     <a name="//apple_ref/swift/Struct/GroupFilter" class="dashAnchor"></a>
                     <a class="token" href="#/s:14ResourceGroupsAAV11GroupFilterV">GroupFilter</a>
@@ -1809,6 +2091,62 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">GroupQuery</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14ResourceGroupsAAV19GroupResourcesInputV"></a>
+                    <a name="//apple_ref/swift/Struct/GroupResourcesInput" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14ResourceGroupsAAV19GroupResourcesInputV">GroupResourcesInput</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/ResourceGroups/GroupResourcesInput.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">GroupResourcesInput</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14ResourceGroupsAAV20GroupResourcesOutputV"></a>
+                    <a name="//apple_ref/swift/Struct/GroupResourcesOutput" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14ResourceGroupsAAV20GroupResourcesOutputV">GroupResourcesOutput</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/ResourceGroups/GroupResourcesOutput.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">GroupResourcesOutput</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
 
                         </div>
                       </div>
@@ -2070,6 +2408,62 @@
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/s:14ResourceGroupsAAV21UngroupResourcesInputV"></a>
+                    <a name="//apple_ref/swift/Struct/UngroupResourcesInput" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14ResourceGroupsAAV21UngroupResourcesInputV">UngroupResourcesInput</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/ResourceGroups/UngroupResourcesInput.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">UngroupResourcesInput</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14ResourceGroupsAAV22UngroupResourcesOutputV"></a>
+                    <a name="//apple_ref/swift/Struct/UngroupResourcesOutput" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14ResourceGroupsAAV22UngroupResourcesOutputV">UngroupResourcesOutput</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/ResourceGroups/UngroupResourcesOutput.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">UngroupResourcesOutput</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/s:14ResourceGroupsAAV10UntagInputV"></a>
                     <a name="//apple_ref/swift/Struct/UntagInput" class="dashAnchor"></a>
                     <a class="token" href="#/s:14ResourceGroupsAAV10UntagInputV">UntagInput</a>
@@ -2246,6 +2640,34 @@
                 </a>
               </div>
               <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14ResourceGroupsAAV24GroupConfigurationStatusO"></a>
+                    <a name="//apple_ref/swift/Enum/GroupConfigurationStatus" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14ResourceGroupsAAV24GroupConfigurationStatusO">GroupConfigurationStatus</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/ResourceGroups/GroupConfigurationStatus.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">GroupConfigurationStatus</span> <span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="kt">CustomStringConvertible</span><span class="p">,</span> <span class="kt">Codable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
                 <li class="item">
                   <div>
                     <code>

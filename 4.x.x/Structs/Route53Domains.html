@@ -14,7 +14,7 @@
     <a title="Route53Domains Structure Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html"> Docs</a> (60% documented)</p>
+        <p><a href="../index.html"> Docs</a> (59% documented)</p>
         <p class="header-right"><a href="https://github.com/swift-aws/aws-sdk-swift"><img src="../img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
@@ -74,6 +74,9 @@
             <a href="../AppSync.html">AppSync</a>
           </li>
           <li class="nav-group-name">
+            <a href="../Appflow.html">Appflow</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../ApplicationAutoScaling.html">ApplicationAutoScaling</a>
           </li>
           <li class="nav-group-name">
@@ -96,6 +99,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../Batch.html">Batch</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Braket.html">Braket</a>
           </li>
           <li class="nav-group-name">
             <a href="../Budgets.html">Budgets</a>
@@ -138,6 +144,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../CloudWatchLogs.html">CloudWatchLogs</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../CodeArtifact.html">CodeArtifact</a>
           </li>
           <li class="nav-group-name">
             <a href="../CodeBuild.html">CodeBuild</a>
@@ -326,7 +335,16 @@
             <a href="../Health.html">Health</a>
           </li>
           <li class="nav-group-name">
+            <a href="../Honeycode.html">Honeycode</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../IAM.html">IAM</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../IVS.html">IVS</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../IdentityStore.html">IdentityStore</a>
           </li>
           <li class="nav-group-name">
             <a href="../Imagebuilder.html">Imagebuilder</a>
@@ -363,6 +381,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../IoTSecureTunneling.html">IoTSecureTunneling</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../IoTSiteWise.html">IoTSiteWise</a>
           </li>
           <li class="nav-group-name">
             <a href="../IoTThingsGraph.html">IoTThingsGraph</a>
@@ -426,6 +447,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../Macie.html">Macie</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Macie2.html">Macie2</a>
           </li>
           <li class="nav-group-name">
             <a href="../ManagedBlockchain.html">ManagedBlockchain</a>
@@ -545,6 +569,9 @@
             <a href="../Redshift.html">Redshift</a>
           </li>
           <li class="nav-group-name">
+            <a href="../RedshiftDataAPIService.html">RedshiftDataAPIService</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../Rekognition.html">Rekognition</a>
           </li>
           <li class="nav-group-name">
@@ -594,6 +621,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../SSO.html">SSO</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../SSOAdmin.html">SSOAdmin</a>
           </li>
           <li class="nav-group-name">
             <a href="../SSOOIDC.html">SSOOIDC</a>
@@ -651,6 +681,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../Support.html">Support</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Synthetics.html">Synthetics</a>
           </li>
           <li class="nav-group-name">
             <a href="../Textract.html">Textract</a>
@@ -912,6 +945,60 @@
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/s:14Route53DomainsAAV41acceptDomainTransferFromAnotherAwsAccounty3NIO15EventLoopFutureCyAB06AcceptdefghI8ResponseVGAB0ndefghI7RequestVF"></a>
+                    <a name="//apple_ref/swift/Method/acceptDomainTransferFromAnotherAwsAccount(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14Route53DomainsAAV41acceptDomainTransferFromAnotherAwsAccounty3NIO15EventLoopFutureCyAB06AcceptdefghI8ResponseVGAB0ndefghI7RequestVF">acceptDomainTransferFromAnotherAwsAccount(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Accepts the transfer of a domain from another AWS account to the current AWS account. You initiate a transfer between AWS accounts using TransferDomainToAnotherAwsAccount.  Use either ListOperations or GetOperationDetail to determine whether the operation succeeded. GetOperationDetail provides additional information, for example, Domain Transfer from Aws Account 111122223333 has been cancelled.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">acceptDomainTransferFromAnotherAwsAccount</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/Route53Domains/AcceptDomainTransferFromAnotherAwsAccountRequest.html">AcceptDomainTransferFromAnotherAwsAccountRequest</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/Route53Domains/AcceptDomainTransferFromAnotherAwsAccountResponse.html">AcceptDomainTransferFromAnotherAwsAccountResponse</a></span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14Route53DomainsAAV39cancelDomainTransferToAnotherAwsAccounty3NIO15EventLoopFutureCyAB06CanceldefghI8ResponseVGAB0ndefghI7RequestVF"></a>
+                    <a name="//apple_ref/swift/Method/cancelDomainTransferToAnotherAwsAccount(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14Route53DomainsAAV39cancelDomainTransferToAnotherAwsAccounty3NIO15EventLoopFutureCyAB06CanceldefghI8ResponseVGAB0ndefghI7RequestVF">cancelDomainTransferToAnotherAwsAccount(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Cancels the transfer of a domain from the current AWS account to another AWS account. You initiate a transfer between AWS accounts using TransferDomainToAnotherAwsAccount.   You must cancel the transfer before the other AWS account accepts the transfer using AcceptDomainTransferFromAnotherAwsAccount.  Use either ListOperations or GetOperationDetail to determine whether the operation succeeded. GetOperationDetail provides additional information, for example, Domain Transfer from Aws Account 111122223333 has been cancelled.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">cancelDomainTransferToAnotherAwsAccount</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/Route53Domains/CancelDomainTransferToAnotherAwsAccountRequest.html">CancelDomainTransferToAnotherAwsAccountRequest</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/Route53Domains/CancelDomainTransferToAnotherAwsAccountResponse.html">CancelDomainTransferToAnotherAwsAccountResponse</a></span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/s:14Route53DomainsAAV23checkDomainAvailabilityy3NIO15EventLoopFutureCyAB05CheckdE8ResponseVGAB0jdE7RequestVF"></a>
                     <a name="//apple_ref/swift/Method/checkDomainAvailability(_:)" class="dashAnchor"></a>
                     <a class="token" href="#/s:14Route53DomainsAAV23checkDomainAvailabilityy3NIO15EventLoopFutureCyAB05CheckdE8ResponseVGAB0jdE7RequestVF">checkDomainAvailability(_:)</a>
@@ -1057,7 +1144,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>This operation configures Amazon Route 53 to automatically renew the specified domain before the domain registration expires. The cost of renewing your domain registration is billed to your AWS account. The period during which you can renew a domain name varies by TLD. For a list of TLDs and their renewal policies, see &ldquo;Renewal, restoration, and deletion times&rdquo; on the website for our registrar associate, Gandi. Amazon Route 53 requires that you renew before the end of the renewal period that is listed on the Gandi website so we can complete processing before the deadline.</p>
+                        <p>This operation configures Amazon Route 53 to automatically renew the specified domain before the domain registration expires. The cost of renewing your domain registration is billed to your AWS account. The period during which you can renew a domain name varies by TLD. For a list of TLDs and their renewal policies, see Domains That You Can Register with Amazon Route 53 in the Amazon Route 53 Developer Guide. Route 53 requires that you renew before the end of the renewal period so we can complete processing before the deadline.</p>
 
                       </div>
                       <div class="declaration">
@@ -1165,7 +1252,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The GetDomainSuggestions operation returns a list of suggested domain names given a string, which can either be a domain name or simply a word or phrase (without spaces).</p>
+                        <p>The GetDomainSuggestions operation returns a list of suggested domain names.</p>
 
                       </div>
                       <div class="declaration">
@@ -1246,7 +1333,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>This operation returns the operation IDs of operations that are not yet complete.</p>
+                        <p>Returns information about all of the operations that return an operation ID and that have ever been performed on domains that were registered by the current account.</p>
 
                       </div>
                       <div class="declaration">
@@ -1300,7 +1387,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>This operation registers a domain. Domains are registered either by Amazon Registrar (for .com, .net, and .org domains) or by our registrar associate, Gandi (for all other domains). For some top-level domains (TLDs), this operation requires extra parameters. When you register a domain, Amazon Route 53 does the following:   Creates a Amazon Route 53 hosted zone that has the same name as the domain. Amazon Route 53 assigns four name servers to your hosted zone and automatically updates your domain registration with the names of these name servers.   Enables autorenew, so your domain registration will renew automatically each year. We&rsquo;ll notify you in advance of the renewal date so you can choose whether to renew the registration.   Optionally enables privacy protection, so WHOIS queries return contact information either for Amazon Registrar (for .com, .net, and .org domains) or for our registrar associate, Gandi (for all other TLDs). If you don&rsquo;t enable privacy protection, WHOIS queries return the information that you entered for the registrant, admin, and tech contacts.   If registration is successful, returns an operation ID that you can use to track the progress and completion of the action. If the request is not completed successfully, the domain registrant is notified by email.   Charges your AWS account an amount based on the top-level domain. For more information, see Amazon Route 53 Pricing.</p>
+                        <p>This operation registers a domain. Domains are registered either by Amazon Registrar (for .com, .net, and .org domains) or by our registrar associate, Gandi (for all other domains). For some top-level domains (TLDs), this operation requires extra parameters. When you register a domain, Amazon Route 53 does the following:   Creates a Route 53 hosted zone that has the same name as the domain. Route 53 assigns four name servers to your hosted zone and automatically updates your domain registration with the names of these name servers.   Enables autorenew, so your domain registration will renew automatically each year. We&rsquo;ll notify you in advance of the renewal date so you can choose whether to renew the registration.   Optionally enables privacy protection, so WHOIS queries return contact information either for Amazon Registrar (for .com, .net, and .org domains) or for our registrar associate, Gandi (for all other TLDs). If you don&rsquo;t enable privacy protection, WHOIS queries return the information that you entered for the registrant, admin, and tech contacts.   If registration is successful, returns an operation ID that you can use to track the progress and completion of the action. If the request is not completed successfully, the domain registrant is notified by email.   Charges your AWS account an amount based on the top-level domain. For more information, see Amazon Route 53 Pricing.</p>
 
                       </div>
                       <div class="declaration">
@@ -1308,6 +1395,33 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">registerDomain</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/Route53Domains/RegisterDomainRequest.html">RegisterDomainRequest</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/Route53Domains/RegisterDomainResponse.html">RegisterDomainResponse</a></span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14Route53DomainsAAV41rejectDomainTransferFromAnotherAwsAccounty3NIO15EventLoopFutureCyAB06RejectdefghI8ResponseVGAB0ndefghI7RequestVF"></a>
+                    <a name="//apple_ref/swift/Method/rejectDomainTransferFromAnotherAwsAccount(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14Route53DomainsAAV41rejectDomainTransferFromAnotherAwsAccounty3NIO15EventLoopFutureCyAB06RejectdefghI8ResponseVGAB0ndefghI7RequestVF">rejectDomainTransferFromAnotherAwsAccount(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Rejects the transfer of a domain from another AWS account to the current AWS account. You initiate a transfer between AWS accounts using TransferDomainToAnotherAwsAccount.  Use either ListOperations or GetOperationDetail to determine whether the operation succeeded. GetOperationDetail provides additional information, for example, Domain Transfer from Aws Account 111122223333 has been cancelled.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">rejectDomainTransferFromAnotherAwsAccount</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/Route53Domains/RejectDomainTransferFromAnotherAwsAccountRequest.html">RejectDomainTransferFromAnotherAwsAccountRequest</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/Route53Domains/RejectDomainTransferFromAnotherAwsAccountResponse.html">RejectDomainTransferFromAnotherAwsAccountResponse</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
                       </div>
@@ -1408,7 +1522,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>This operation transfers a domain from another registrar to Amazon Route 53. When the transfer is complete, the domain is registered either with Amazon Registrar (for .com, .net, and .org domains) or with our registrar associate, Gandi (for all other TLDs). For transfer requirements, a detailed procedure, and information about viewing the status of a domain transfer, see Transferring Registration for a Domain to Amazon Route 53 in the Amazon Route 53 Developer Guide. If the registrar for your domain is also the DNS service provider for the domain, we highly recommend that you consider transferring your DNS service to Amazon Route 53 or to another DNS service provider before you transfer your registration. Some registrars provide free DNS service when you purchase a domain registration. When you transfer the registration, the previous registrar will not renew your domain registration and could end your DNS service at any time.  If the registrar for your domain is also the DNS service provider for the domain and you don&rsquo;t transfer DNS service to another provider, your website, email, and the web applications associated with the domain might become unavailable.  If the transfer is successful, this method returns an operation ID that you can use to track the progress and completion of the action. If the transfer doesn&rsquo;t complete successfully, the domain registrant will be notified by email.</p>
+                        <p>Transfers a domain from another registrar to Amazon Route 53. When the transfer is complete, the domain is registered either with Amazon Registrar (for .com, .net, and .org domains) or with our registrar associate, Gandi (for all other TLDs). For more information about transferring domains, see the following topics:   For transfer requirements, a detailed procedure, and information about viewing the status of a domain that you&rsquo;re transferring to Route 53, see Transferring Registration for a Domain to Amazon Route 53 in the Amazon Route 53 Developer Guide.   For information about how to transfer a domain from one AWS account to another, see TransferDomainToAnotherAwsAccount.    For information about how to transfer a domain to another domain registrar, see Transferring a Domain from Amazon Route 53 to Another Registrar in the Amazon Route 53 Developer Guide.   If the registrar for your domain is also the DNS service provider for the domain, we highly recommend that you transfer your DNS service to Route 53 or to another DNS service provider before you transfer your registration. Some registrars provide free DNS service when you purchase a domain registration. When you transfer the registration, the previous registrar will not renew your domain registration and could end your DNS service at any time.  If the registrar for your domain is also the DNS service provider for the domain and you don&rsquo;t transfer DNS service to another provider, your website, email, and the web applications associated with the domain might become unavailable.  If the transfer is successful, this method returns an operation ID that you can use to track the progress and completion of the action. If the transfer doesn&rsquo;t complete successfully, the domain registrant will be notified by email.</p>
 
                       </div>
                       <div class="declaration">
@@ -1416,6 +1530,33 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">transferDomain</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/Route53Domains/TransferDomainRequest.html">TransferDomainRequest</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/Route53Domains/TransferDomainResponse.html">TransferDomainResponse</a></span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14Route53DomainsAAV33transferDomainToAnotherAwsAccounty3NIO15EventLoopFutureCyAB08TransferdefgH8ResponseVGAB0mdefgH7RequestVF"></a>
+                    <a name="//apple_ref/swift/Method/transferDomainToAnotherAwsAccount(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14Route53DomainsAAV33transferDomainToAnotherAwsAccounty3NIO15EventLoopFutureCyAB08TransferdefgH8ResponseVGAB0mdefgH7RequestVF">transferDomainToAnotherAwsAccount(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Transfers a domain from the current AWS account to another AWS account. Note the following:   The AWS account that you&rsquo;re transferring the domain to must accept the transfer. If the other account doesn&rsquo;t accept the transfer within 3 days, we cancel the transfer. See AcceptDomainTransferFromAnotherAwsAccount.    You can cancel the transfer before the other account accepts it. See CancelDomainTransferToAnotherAwsAccount.    The other account can reject the transfer. See RejectDomainTransferFromAnotherAwsAccount.     When you transfer a domain from one AWS account to another, Route 53 doesn&rsquo;t transfer the hosted zone that is associated with the domain. DNS resolution isn&rsquo;t affected if the domain and the hosted zone are owned by separate accounts, so transferring the hosted zone is optional. For information about transferring the hosted zone to another AWS account, see Migrating a Hosted Zone to a Different AWS Account in the Amazon Route 53 Developer Guide.  Use either ListOperations or GetOperationDetail to determine whether the operation succeeded. GetOperationDetail provides additional information, for example, Domain Transfer from Aws Account 111122223333 has been cancelled.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">transferDomainToAnotherAwsAccount</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/Route53Domains/TransferDomainToAnotherAwsAccountRequest.html">TransferDomainToAnotherAwsAccountRequest</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/Route53Domains/TransferDomainToAnotherAwsAccountResponse.html">TransferDomainToAnotherAwsAccountResponse</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
                       </div>
@@ -1462,7 +1603,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>This operation updates the specified domain contact&rsquo;s privacy setting. When privacy protection is enabled, contact information such as email address is replaced either with contact information for Amazon Registrar (for .com, .net, and .org domains) or with contact information for our registrar associate, Gandi. This operation affects only the contact information for the specified contact type (registrant, administrator, or tech). If the request succeeds, Amazon Route 53 returns an operation ID that you can use with GetOperationDetail to track the progress and completion of the action. If the request doesn&rsquo;t complete successfully, the domain registrant will be notified by email.</p>
+                        <p>This operation updates the specified domain contact&rsquo;s privacy setting. When privacy protection is enabled, contact information such as email address is replaced either with contact information for Amazon Registrar (for .com, .net, and .org domains) or with contact information for our registrar associate, Gandi. This operation affects only the contact information for the specified contact type (registrant, administrator, or tech). If the request succeeds, Amazon Route 53 returns an operation ID that you can use with GetOperationDetail to track the progress and completion of the action. If the request doesn&rsquo;t complete successfully, the domain registrant will be notified by email.  By disabling the privacy service via API, you consent to the publication of the contact information provided for this domain via the public WHOIS database. You certify that you are the registrant of this domain name and have the authority to make this decision. You may withdraw your consent at any time by enabling privacy protection using either UpdateDomainContactPrivacy or the Route 53 console. Enabling privacy protection removes the contact information provided for this domain from the WHOIS database. For more information on our privacy practices, see <a href="https://aws.amazon.com/privacy/">https://aws.amazon.com/privacy/</a>.</p>
 
                       </div>
                       <div class="declaration">
@@ -1608,7 +1749,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>This operation returns the operation IDs of operations that are not yet complete.</p>
+                        <p>Returns information about all of the operations that return an operation ID and that have ever been performed on domains that were registered by the current account.</p>
 
                       </div>
                       <div class="declaration">
@@ -1694,6 +1835,62 @@
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/s:14Route53DomainsAAV48AcceptDomainTransferFromAnotherAwsAccountRequestV"></a>
+                    <a name="//apple_ref/swift/Struct/AcceptDomainTransferFromAnotherAwsAccountRequest" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14Route53DomainsAAV48AcceptDomainTransferFromAnotherAwsAccountRequestV">AcceptDomainTransferFromAnotherAwsAccountRequest</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/Route53Domains/AcceptDomainTransferFromAnotherAwsAccountRequest.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">AcceptDomainTransferFromAnotherAwsAccountRequest</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14Route53DomainsAAV49AcceptDomainTransferFromAnotherAwsAccountResponseV"></a>
+                    <a name="//apple_ref/swift/Struct/AcceptDomainTransferFromAnotherAwsAccountResponse" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14Route53DomainsAAV49AcceptDomainTransferFromAnotherAwsAccountResponseV">AcceptDomainTransferFromAnotherAwsAccountResponse</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/Route53Domains/AcceptDomainTransferFromAnotherAwsAccountResponse.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">AcceptDomainTransferFromAnotherAwsAccountResponse</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/s:14Route53DomainsAAV13BillingRecordV"></a>
                     <a name="//apple_ref/swift/Struct/BillingRecord" class="dashAnchor"></a>
                     <a class="token" href="#/s:14Route53DomainsAAV13BillingRecordV">BillingRecord</a>
@@ -1713,6 +1910,62 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">BillingRecord</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14Route53DomainsAAV46CancelDomainTransferToAnotherAwsAccountRequestV"></a>
+                    <a name="//apple_ref/swift/Struct/CancelDomainTransferToAnotherAwsAccountRequest" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14Route53DomainsAAV46CancelDomainTransferToAnotherAwsAccountRequestV">CancelDomainTransferToAnotherAwsAccountRequest</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/Route53Domains/CancelDomainTransferToAnotherAwsAccountRequest.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">CancelDomainTransferToAnotherAwsAccountRequest</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14Route53DomainsAAV47CancelDomainTransferToAnotherAwsAccountResponseV"></a>
+                    <a name="//apple_ref/swift/Struct/CancelDomainTransferToAnotherAwsAccountResponse" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14Route53DomainsAAV47CancelDomainTransferToAnotherAwsAccountResponseV">CancelDomainTransferToAnotherAwsAccountResponse</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/Route53Domains/CancelDomainTransferToAnotherAwsAccountResponse.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">CancelDomainTransferToAnotherAwsAccountResponse</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
 
                         </div>
                       </div>
@@ -2702,6 +2955,62 @@
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/s:14Route53DomainsAAV48RejectDomainTransferFromAnotherAwsAccountRequestV"></a>
+                    <a name="//apple_ref/swift/Struct/RejectDomainTransferFromAnotherAwsAccountRequest" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14Route53DomainsAAV48RejectDomainTransferFromAnotherAwsAccountRequestV">RejectDomainTransferFromAnotherAwsAccountRequest</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/Route53Domains/RejectDomainTransferFromAnotherAwsAccountRequest.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">RejectDomainTransferFromAnotherAwsAccountRequest</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14Route53DomainsAAV49RejectDomainTransferFromAnotherAwsAccountResponseV"></a>
+                    <a name="//apple_ref/swift/Struct/RejectDomainTransferFromAnotherAwsAccountResponse" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14Route53DomainsAAV49RejectDomainTransferFromAnotherAwsAccountResponseV">RejectDomainTransferFromAnotherAwsAccountResponse</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/Route53Domains/RejectDomainTransferFromAnotherAwsAccountResponse.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">RejectDomainTransferFromAnotherAwsAccountResponse</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/s:14Route53DomainsAAV18RenewDomainRequestV"></a>
                     <a name="//apple_ref/swift/Struct/RenewDomainRequest" class="dashAnchor"></a>
                     <a class="token" href="#/s:14Route53DomainsAAV18RenewDomainRequestV">RenewDomainRequest</a>
@@ -2945,6 +3254,62 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">TransferDomainResponse</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14Route53DomainsAAV40TransferDomainToAnotherAwsAccountRequestV"></a>
+                    <a name="//apple_ref/swift/Struct/TransferDomainToAnotherAwsAccountRequest" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14Route53DomainsAAV40TransferDomainToAnotherAwsAccountRequestV">TransferDomainToAnotherAwsAccountRequest</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/Route53Domains/TransferDomainToAnotherAwsAccountRequest.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">TransferDomainToAnotherAwsAccountRequest</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14Route53DomainsAAV41TransferDomainToAnotherAwsAccountResponseV"></a>
+                    <a name="//apple_ref/swift/Struct/TransferDomainToAnotherAwsAccountResponse" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14Route53DomainsAAV41TransferDomainToAnotherAwsAccountResponseV">TransferDomainToAnotherAwsAccountResponse</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/Route53Domains/TransferDomainToAnotherAwsAccountResponse.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">TransferDomainToAnotherAwsAccountResponse</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
 
                         </div>
                       </div>

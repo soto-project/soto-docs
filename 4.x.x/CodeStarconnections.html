@@ -14,7 +14,7 @@
     <a title="CodeStarconnections  Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="index.html"> Docs</a> (60% documented)</p>
+        <p><a href="index.html"> Docs</a> (59% documented)</p>
         <p class="header-right"><a href="https://github.com/swift-aws/aws-sdk-swift"><img src="img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
@@ -74,6 +74,9 @@
             <a href="AppSync.html">AppSync</a>
           </li>
           <li class="nav-group-name">
+            <a href="Appflow.html">Appflow</a>
+          </li>
+          <li class="nav-group-name">
             <a href="ApplicationAutoScaling.html">ApplicationAutoScaling</a>
           </li>
           <li class="nav-group-name">
@@ -96,6 +99,9 @@
           </li>
           <li class="nav-group-name">
             <a href="Batch.html">Batch</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="Braket.html">Braket</a>
           </li>
           <li class="nav-group-name">
             <a href="Budgets.html">Budgets</a>
@@ -138,6 +144,9 @@
           </li>
           <li class="nav-group-name">
             <a href="CloudWatchLogs.html">CloudWatchLogs</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="CodeArtifact.html">CodeArtifact</a>
           </li>
           <li class="nav-group-name">
             <a href="CodeBuild.html">CodeBuild</a>
@@ -326,7 +335,16 @@
             <a href="Health.html">Health</a>
           </li>
           <li class="nav-group-name">
+            <a href="Honeycode.html">Honeycode</a>
+          </li>
+          <li class="nav-group-name">
             <a href="IAM.html">IAM</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="IVS.html">IVS</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="IdentityStore.html">IdentityStore</a>
           </li>
           <li class="nav-group-name">
             <a href="Imagebuilder.html">Imagebuilder</a>
@@ -363,6 +381,9 @@
           </li>
           <li class="nav-group-name">
             <a href="IoTSecureTunneling.html">IoTSecureTunneling</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="IoTSiteWise.html">IoTSiteWise</a>
           </li>
           <li class="nav-group-name">
             <a href="IoTThingsGraph.html">IoTThingsGraph</a>
@@ -426,6 +447,9 @@
           </li>
           <li class="nav-group-name">
             <a href="Macie.html">Macie</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="Macie2.html">Macie2</a>
           </li>
           <li class="nav-group-name">
             <a href="ManagedBlockchain.html">ManagedBlockchain</a>
@@ -545,6 +569,9 @@
             <a href="Redshift.html">Redshift</a>
           </li>
           <li class="nav-group-name">
+            <a href="RedshiftDataAPIService.html">RedshiftDataAPIService</a>
+          </li>
+          <li class="nav-group-name">
             <a href="Rekognition.html">Rekognition</a>
           </li>
           <li class="nav-group-name">
@@ -594,6 +621,9 @@
           </li>
           <li class="nav-group-name">
             <a href="SSO.html">SSO</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="SSOAdmin.html">SSOAdmin</a>
           </li>
           <li class="nav-group-name">
             <a href="SSOOIDC.html">SSOOIDC</a>
@@ -651,6 +681,9 @@
           </li>
           <li class="nav-group-name">
             <a href="Support.html">Support</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="Synthetics.html">Synthetics</a>
           </li>
           <li class="nav-group-name">
             <a href="Textract.html">Textract</a>
@@ -741,7 +774,7 @@
                       <div class="abstract">
                         <p>Client object for interacting with AWS CodeStarconnections service.</p>
 
-<p>This AWS CodeStar Connections API Reference provides descriptions and usage examples of the operations and data types for the AWS CodeStar Connections API. You can use the Connections API to work with connections and installations.  Connections are configurations that you use to connect AWS resources to external code repositories. Each connection is a resource that can be given to services such as CodePipeline to connect to a third-party repository such as Bitbucket. For example, you can add the connection in CodePipeline so that it triggers your pipeline when a code change is made to your third-party code repository. Each connection is named and associated with a unique ARN that is used to reference the connection. When you create a connection, the console initiates a third-party connection handshake. Installations are the apps that are used to conduct this handshake. For example, the installation for the Bitbucket provider type is the Bitbucket Cloud app. When you create a connection, you can choose an existing installation or create one. You can work with connections by calling:    CreateConnection, which creates a uniquely named connection that can be referenced by services such as CodePipeline.    DeleteConnection, which deletes the specified connection.    GetConnection, which returns information about the connection, including the connection status.    ListConnections, which lists the connections associated with your account.   For information about how to use AWS CodeStar Connections, see the AWS CodePipeline User Guide.</p>
+<p>AWS CodeStar Connections  The CodeStar Connections feature is in preview release and is subject to change.  This AWS CodeStar Connections API Reference provides descriptions and usage examples of the operations and data types for the AWS CodeStar Connections API. You can use the connections API to work with connections and installations.  Connections are configurations that you use to connect AWS resources to external code repositories. Each connection is a resource that can be given to services such as CodePipeline to connect to a third-party repository such as Bitbucket. For example, you can add the connection in CodePipeline so that it triggers your pipeline when a code change is made to your third-party code repository. Each connection is named and associated with a unique ARN that is used to reference the connection. When you create a connection, the console initiates a third-party connection handshake. Installations are the apps that are used to conduct this handshake. For example, the installation for the Bitbucket provider type is the Bitbucket Cloud app. When you create a connection, you can choose an existing installation or create one. When you want to create a connection to an installed provider type such as GitHub Enterprise Server, you create a host for your connections. You can work with connections by calling:    CreateConnection, which creates a uniquely named connection that can be referenced by services such as CodePipeline.    DeleteConnection, which deletes the specified connection.    GetConnection, which returns information about the connection, including the connection status.    ListConnections, which lists the connections associated with your account.   You can work with hosts by calling:    CreateHost, which creates a host that represents the infrastructure where your provider is installed.    DeleteHost, which deletes the specified host.    GetHost, which returns information about the host, including the setup status.    ListHosts, which lists the hosts associated with your account.   You can work with tags in AWS CodeStar Connections by calling the following:    ListTagsForResource, which gets information about AWS tags for a specified Amazon Resource Name (ARN) in AWS CodeStar Connections.    TagResource, which adds or updates tags for a resource in AWS CodeStar Connections.    UntagResource, which removes tags for a resource in AWS CodeStar Connections.   For information about how to use AWS CodeStar Connections, see the Developer Tools User Guide.</p>
 
                         <a href="Structs/CodeStarconnections.html" class="slightly-smaller">See more</a>
                       </div>

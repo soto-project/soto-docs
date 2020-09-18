@@ -14,7 +14,7 @@
     <a title="WorkspaceCreationProperties Structure Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../../index.html"> Docs</a> (60% documented)</p>
+        <p><a href="../../index.html"> Docs</a> (59% documented)</p>
         <p class="header-right"><a href="https://github.com/swift-aws/aws-sdk-swift"><img src="../../img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
@@ -74,6 +74,9 @@
             <a href="../../AppSync.html">AppSync</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../Appflow.html">Appflow</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../ApplicationAutoScaling.html">ApplicationAutoScaling</a>
           </li>
           <li class="nav-group-name">
@@ -96,6 +99,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../Batch.html">Batch</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../Braket.html">Braket</a>
           </li>
           <li class="nav-group-name">
             <a href="../../Budgets.html">Budgets</a>
@@ -138,6 +144,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../CloudWatchLogs.html">CloudWatchLogs</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../CodeArtifact.html">CodeArtifact</a>
           </li>
           <li class="nav-group-name">
             <a href="../../CodeBuild.html">CodeBuild</a>
@@ -326,7 +335,16 @@
             <a href="../../Health.html">Health</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../Honeycode.html">Honeycode</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../IAM.html">IAM</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../IVS.html">IVS</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../IdentityStore.html">IdentityStore</a>
           </li>
           <li class="nav-group-name">
             <a href="../../Imagebuilder.html">Imagebuilder</a>
@@ -363,6 +381,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../IoTSecureTunneling.html">IoTSecureTunneling</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../IoTSiteWise.html">IoTSiteWise</a>
           </li>
           <li class="nav-group-name">
             <a href="../../IoTThingsGraph.html">IoTThingsGraph</a>
@@ -426,6 +447,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../Macie.html">Macie</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../Macie2.html">Macie2</a>
           </li>
           <li class="nav-group-name">
             <a href="../../ManagedBlockchain.html">ManagedBlockchain</a>
@@ -545,6 +569,9 @@
             <a href="../../Redshift.html">Redshift</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../RedshiftDataAPIService.html">RedshiftDataAPIService</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../Rekognition.html">Rekognition</a>
           </li>
           <li class="nav-group-name">
@@ -594,6 +621,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../SSO.html">SSO</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../SSOAdmin.html">SSOAdmin</a>
           </li>
           <li class="nav-group-name">
             <a href="../../SSOOIDC.html">SSOOIDC</a>
@@ -651,6 +681,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../Support.html">Support</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../Synthetics.html">Synthetics</a>
           </li>
           <li class="nav-group-name">
             <a href="../../Textract.html">Textract</a>
@@ -799,7 +832,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The default organizational unit (OU) for your WorkSpace directories.</p>
+                        <p>The default organizational unit (OU) for your WorkSpaces directories. This string must be the full Lightweight Directory Access Protocol (LDAP) distinguished name for the target domain and OU. It must be in the form &ldquo;OU=value,DC=value,DC=value&rdquo;, where value is any string of characters, and the number of domain components (DCs) is two or more. For example, OU=WorkSpaces_machines,DC=machines,DC=example,DC=com.     To avoid errors, certain characters in the distinguished name must be escaped. For more information, see  Distinguished Names in the Microsoft documentation.   The API doesn&rsquo;t validate whether the OU exists.</p>
 
                       </div>
                       <div class="declaration">
@@ -870,6 +903,33 @@
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/s:10WorkSpacesAAV27WorkspaceCreationPropertiesV06enableA4DocsSbSgvp"></a>
+                    <a name="//apple_ref/swift/Property/enableWorkDocs" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10WorkSpacesAAV27WorkspaceCreationPropertiesV06enableA4DocsSbSgvp">enableWorkDocs</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Indicates whether Amazon WorkDocs is enabled for your WorkSpaces.  If WorkDocs is already enabled for a WorkSpaces directory and you disable it, new WorkSpaces launched in the directory will not have WorkDocs enabled. However, WorkDocs remains enabled for any existing WorkSpaces, unless you either disable users&rsquo; access to WorkDocs or you delete the WorkDocs site. To disable users&rsquo; access to WorkDocs, see Disabling Users in the Amazon WorkDocs Administration Guide. To delete a WorkDocs site, see Deleting a Site in the Amazon WorkDocs Administration Guide. If you enable WorkDocs on a directory that already has existing WorkSpaces, the existing WorkSpaces and any new WorkSpaces that are launched in the directory will have WorkDocs enabled.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">enableWorkDocs</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/s:10WorkSpacesAAV27WorkspaceCreationPropertiesV31userEnabledAsLocalAdministratorSbSgvp"></a>
                     <a name="//apple_ref/swift/Property/userEnabledAsLocalAdministrator" class="dashAnchor"></a>
                     <a class="token" href="#/s:10WorkSpacesAAV27WorkspaceCreationPropertiesV31userEnabledAsLocalAdministratorSbSgvp">userEnabledAsLocalAdministrator</a>
@@ -897,9 +957,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:10WorkSpacesAAV27WorkspaceCreationPropertiesV21customSecurityGroupId9defaultOu20enableInternetAccess0L15MaintenanceMode31userEnabledAsLocalAdministratorADSSSg_AJSbSgA2Ktcfc"></a>
-                    <a name="//apple_ref/swift/Method/init(customSecurityGroupId:defaultOu:enableInternetAccess:enableMaintenanceMode:userEnabledAsLocalAdministrator:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:10WorkSpacesAAV27WorkspaceCreationPropertiesV21customSecurityGroupId9defaultOu20enableInternetAccess0L15MaintenanceMode31userEnabledAsLocalAdministratorADSSSg_AJSbSgA2Ktcfc">init(customSecurityGroupId:defaultOu:enableInternetAccess:enableMaintenanceMode:userEnabledAsLocalAdministrator:)</a>
+                    <a name="/s:10WorkSpacesAAV27WorkspaceCreationPropertiesV21customSecurityGroupId9defaultOu20enableInternetAccess0L15MaintenanceMode0lA4Docs31userEnabledAsLocalAdministratorADSSSg_AKSbSgA3Ltcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(customSecurityGroupId:defaultOu:enableInternetAccess:enableMaintenanceMode:enableWorkDocs:userEnabledAsLocalAdministrator:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10WorkSpacesAAV27WorkspaceCreationPropertiesV21customSecurityGroupId9defaultOu20enableInternetAccess0L15MaintenanceMode0lA4Docs31userEnabledAsLocalAdministratorADSSSg_AKSbSgA3Ltcfc">init(customSecurityGroupId:defaultOu:enableInternetAccess:enableMaintenanceMode:enableWorkDocs:userEnabledAsLocalAdministrator:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -914,7 +974,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">customSecurityGroupId</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="n"><a href="../../Structs/WorkSpaces/WorkspaceCreationProperties.html#/s:10WorkSpacesAAV27WorkspaceCreationPropertiesV9defaultOuSSSgvp">defaultOu</a></span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">enableInternetAccess</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">enableMaintenanceMode</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">userEnabledAsLocalAdministrator</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">customSecurityGroupId</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="n"><a href="../../Structs/WorkSpaces/WorkspaceCreationProperties.html#/s:10WorkSpacesAAV27WorkspaceCreationPropertiesV9defaultOuSSSgvp">defaultOu</a></span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">enableInternetAccess</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">enableMaintenanceMode</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">enableWorkDocs</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">userEnabledAsLocalAdministrator</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>

@@ -14,7 +14,7 @@
     <a title="RDS Structure Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html"> Docs</a> (60% documented)</p>
+        <p><a href="../index.html"> Docs</a> (59% documented)</p>
         <p class="header-right"><a href="https://github.com/swift-aws/aws-sdk-swift"><img src="../img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
@@ -74,6 +74,9 @@
             <a href="../AppSync.html">AppSync</a>
           </li>
           <li class="nav-group-name">
+            <a href="../Appflow.html">Appflow</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../ApplicationAutoScaling.html">ApplicationAutoScaling</a>
           </li>
           <li class="nav-group-name">
@@ -96,6 +99,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../Batch.html">Batch</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Braket.html">Braket</a>
           </li>
           <li class="nav-group-name">
             <a href="../Budgets.html">Budgets</a>
@@ -138,6 +144,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../CloudWatchLogs.html">CloudWatchLogs</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../CodeArtifact.html">CodeArtifact</a>
           </li>
           <li class="nav-group-name">
             <a href="../CodeBuild.html">CodeBuild</a>
@@ -326,7 +335,16 @@
             <a href="../Health.html">Health</a>
           </li>
           <li class="nav-group-name">
+            <a href="../Honeycode.html">Honeycode</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../IAM.html">IAM</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../IVS.html">IVS</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../IdentityStore.html">IdentityStore</a>
           </li>
           <li class="nav-group-name">
             <a href="../Imagebuilder.html">Imagebuilder</a>
@@ -363,6 +381,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../IoTSecureTunneling.html">IoTSecureTunneling</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../IoTSiteWise.html">IoTSiteWise</a>
           </li>
           <li class="nav-group-name">
             <a href="../IoTThingsGraph.html">IoTThingsGraph</a>
@@ -426,6 +447,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../Macie.html">Macie</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Macie2.html">Macie2</a>
           </li>
           <li class="nav-group-name">
             <a href="../ManagedBlockchain.html">ManagedBlockchain</a>
@@ -545,6 +569,9 @@
             <a href="../Redshift.html">Redshift</a>
           </li>
           <li class="nav-group-name">
+            <a href="../RedshiftDataAPIService.html">RedshiftDataAPIService</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../Rekognition.html">Rekognition</a>
           </li>
           <li class="nav-group-name">
@@ -594,6 +621,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../SSO.html">SSO</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../SSOAdmin.html">SSOAdmin</a>
           </li>
           <li class="nav-group-name">
             <a href="../SSOOIDC.html">SSOOIDC</a>
@@ -651,6 +681,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../Support.html">Support</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Synthetics.html">Synthetics</a>
           </li>
           <li class="nav-group-name">
             <a href="../Textract.html">Textract</a>
@@ -1087,7 +1120,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Backtracks a DB cluster to a specific time, without creating a new DB cluster. For more information on backtracking, see  Backtracking an Aurora DB Cluster in the Amazon Aurora User Guide.   This action only applies to Aurora DB clusters.</p>
+                        <p>Backtracks a DB cluster to a specific time, without creating a new DB cluster. For more information on backtracking, see  Backtracking an Aurora DB Cluster in the Amazon Aurora User Guide.   This action only applies to Aurora MySQL DB clusters.</p>
 
                       </div>
                       <div class="declaration">
@@ -1492,7 +1525,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>This is prerelease documentation for the RDS Database Proxy feature in preview release. It is subject to change.  Creates a new DB proxy.</p>
+                        <p>Creates a new DB proxy.</p>
 
                       </div>
                       <div class="declaration">
@@ -1600,7 +1633,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Creates an RDS event notification subscription. This action requires a topic Amazon Resource Name (ARN) created by either the RDS console, the SNS console, or the SNS API. To obtain an ARN with SNS, you must create a topic in Amazon SNS and subscribe to the topic. The ARN is displayed in the SNS console. You can specify the type of source (SourceType) you want to be notified of, provide a list of RDS sources (SourceIds) that triggers the events, and provide a list of event categories (EventCategories) for events you want to be notified of. For example, you can specify SourceType = db-instance, SourceIds = mydbinstance1, mydbinstance2 and EventCategories = Availability, Backup. If you specify both the SourceType and SourceIds, such as SourceType = db-instance and SourceIdentifier = myDBInstance1, you are notified of all the db-instance events for the specified source. If you specify a SourceType but do not specify a SourceIdentifier, you receive notice of the events for that source type for all your RDS sources. If you don&rsquo;t specify either the SourceType or the SourceIdentifier, you are notified of events generated from all RDS sources belonging to your customer account.  RDS event notification is only available for unencrypted SNS topics. If you specify an encrypted SNS topic, event notifications aren&rsquo;t sent for the topic.</p>
+                        <p>Creates an RDS event notification subscription. This action requires a topic Amazon Resource Name (ARN) created by either the RDS console, the SNS console, or the SNS API. To obtain an ARN with SNS, you must create a topic in Amazon SNS and subscribe to the topic. The ARN is displayed in the SNS console. You can specify the type of source (SourceType) that you want to be notified of and provide a list of RDS sources (SourceIds) that triggers the events. You can also provide a list of event categories (EventCategories) for events that you want to be notified of. For example, you can specify SourceType = db-instance, SourceIds = mydbinstance1, mydbinstance2 and EventCategories = Availability, Backup. If you specify both the SourceType and SourceIds, such as SourceType = db-instance and SourceIdentifier = myDBInstance1, you are notified of all the db-instance events for the specified source. If you specify a SourceType but do not specify a SourceIdentifier, you receive notice of the events for that source type for all your RDS sources. If you don&rsquo;t specify either the SourceType or the SourceIdentifier, you are notified of events generated from all RDS sources belonging to your customer account.  RDS event notification is only available for unencrypted SNS topics. If you specify an encrypted SNS topic, event notifications aren&rsquo;t sent for the topic.</p>
 
                       </div>
                       <div class="declaration">
@@ -1899,7 +1932,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>This is prerelease documentation for the RDS Database Proxy feature in preview release. It is subject to change.  Deletes an existing proxy.</p>
+                        <p>Deletes an existing proxy.</p>
 
                       </div>
                       <div class="declaration">
@@ -2118,7 +2151,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>This is prerelease documentation for the RDS Database Proxy feature in preview release. It is subject to change.  Remove the association between one or more DBProxyTarget data structures and a DBProxyTargetGroup.</p>
+                        <p>Remove the association between one or more DBProxyTarget data structures and a DBProxyTargetGroup.</p>
 
                       </div>
                       <div class="declaration">
@@ -2226,7 +2259,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Returns information about backtracks for a DB cluster. For more information on Amazon Aurora, see  What Is Amazon Aurora? in the Amazon Aurora User Guide.   This action only applies to Aurora DB clusters.</p>
+                        <p>Returns information about backtracks for a DB cluster. For more information on Amazon Aurora, see  What Is Amazon Aurora? in the Amazon Aurora User Guide.   This action only applies to Aurora MySQL DB clusters.</p>
 
                       </div>
                       <div class="declaration">
@@ -2577,7 +2610,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>This is prerelease documentation for the RDS Database Proxy feature in preview release. It is subject to change.  Returns information about DB proxies.</p>
+                        <p>Returns information about DB proxies.</p>
 
                       </div>
                       <div class="declaration">
@@ -2604,7 +2637,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>This is prerelease documentation for the RDS Database Proxy feature in preview release. It is subject to change.  Returns information about DB proxy target groups, represented by DBProxyTargetGroup data structures.</p>
+                        <p>Returns information about DB proxy target groups, represented by DBProxyTargetGroup data structures.</p>
 
                       </div>
                       <div class="declaration">
@@ -2631,7 +2664,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>This is prerelease documentation for the RDS Database Proxy feature in preview release. It is subject to change.  Returns information about DBProxyTarget objects. This API supports pagination.</p>
+                        <p>Returns information about DBProxyTarget objects. This API supports pagination.</p>
 
                       </div>
                       <div class="declaration">
@@ -2820,7 +2853,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Displays a list of categories for all event source types, or, if specified, for a specified source type. You can see a list of the event categories and source types in the  Events topic in the Amazon RDS User Guide.</p>
+                        <p>Displays a list of categories for all event source types, or, if specified, for a specified source type. You can see a list of the event categories and source types in  Events in the Amazon RDS User Guide.</p>
 
                       </div>
                       <div class="declaration">
@@ -2874,7 +2907,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Returns events related to DB instances, DB security groups, DB snapshots, and DB parameter groups for the past 14 days. Events specific to a particular DB instance, DB security group, database snapshot, or DB parameter group can be obtained by providing the name as a parameter. By default, the past hour of events are returned.</p>
+                        <p>Returns events related to DB instances, DB clusters, DB parameter groups, DB security groups, DB snapshots, and DB cluster snapshots for the past 14 days. Events specific to a particular DB instances, DB clusters, DB parameter groups, DB security groups, DB snapshots, and DB cluster snapshots group can be obtained by providing the name as a parameter. By default, the past hour of events are returned.</p>
 
                       </div>
                       <div class="declaration">
@@ -3441,7 +3474,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Adds an attribute and values to, or removes an attribute and values from, a manual DB cluster snapshot. To share a manual DB cluster snapshot with other AWS accounts, specify restore as the AttributeName and use the ValuesToAdd parameter to add a list of IDs of the AWS accounts that are authorized to restore the manual DB cluster snapshot. Use the value all to make the manual DB cluster snapshot public, which means that it can be copied or restored by all AWS accounts. Do not add the all value for any manual DB cluster snapshots that contain private information that you don&rsquo;t want available to all AWS accounts. If a manual DB cluster snapshot is encrypted, it can be shared, but only by specifying a list of authorized AWS account IDs for the ValuesToAdd parameter. You can&rsquo;t use all as a value for that parameter in this case. To view which AWS accounts have access to copy or restore a manual DB cluster snapshot, or whether a manual DB cluster snapshot public or private, use the DescribeDBClusterSnapshotAttributes API action.  This action only applies to Aurora DB clusters.</p>
+                        <p>Adds an attribute and values to, or removes an attribute and values from, a manual DB cluster snapshot. To share a manual DB cluster snapshot with other AWS accounts, specify restore as the AttributeName and use the ValuesToAdd parameter to add a list of IDs of the AWS accounts that are authorized to restore the manual DB cluster snapshot. Use the value all to make the manual DB cluster snapshot public, which means that it can be copied or restored by all AWS accounts.  Don&rsquo;t add the all value for any manual DB cluster snapshots that contain private information that you don&rsquo;t want available to all AWS accounts.  If a manual DB cluster snapshot is encrypted, it can be shared, but only by specifying a list of authorized AWS account IDs for the ValuesToAdd parameter. You can&rsquo;t use all as a value for that parameter in this case. To view which AWS accounts have access to copy or restore a manual DB cluster snapshot, or whether a manual DB cluster snapshot is public or private, use the DescribeDBClusterSnapshotAttributes API action. The accounts are returned as values for the restore attribute.  This action only applies to Aurora DB clusters.</p>
 
                       </div>
                       <div class="declaration">
@@ -3522,7 +3555,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>This is prerelease documentation for the RDS Database Proxy feature in preview release. It is subject to change.  Changes the settings for an existing DB proxy.</p>
+                        <p>Changes the settings for an existing DB proxy.</p>
 
                       </div>
                       <div class="declaration">
@@ -3549,7 +3582,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>This is prerelease documentation for the RDS Database Proxy feature in preview release. It is subject to change.  Modifies the properties of a DBProxyTargetGroup.</p>
+                        <p>Modifies the properties of a DBProxyTargetGroup.</p>
 
                       </div>
                       <div class="declaration">
@@ -3603,7 +3636,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Adds an attribute and values to, or removes an attribute and values from, a manual DB snapshot. To share a manual DB snapshot with other AWS accounts, specify restore as the AttributeName and use the ValuesToAdd parameter to add a list of IDs of the AWS accounts that are authorized to restore the manual DB snapshot. Uses the value all to make the manual DB snapshot public, which means it can be copied or restored by all AWS accounts. Do not add the all value for any manual DB snapshots that contain private information that you don&rsquo;t want available to all AWS accounts. If the manual DB snapshot is encrypted, it can be shared, but only by specifying a list of authorized AWS account IDs for the ValuesToAdd parameter. You can&rsquo;t use all as a value for that parameter in this case. To view which AWS accounts have access to copy or restore a manual DB snapshot, or whether a manual DB snapshot public or private, use the DescribeDBSnapshotAttributes API action.</p>
+                        <p>Adds an attribute and values to, or removes an attribute and values from, a manual DB snapshot. To share a manual DB snapshot with other AWS accounts, specify restore as the AttributeName and use the ValuesToAdd parameter to add a list of IDs of the AWS accounts that are authorized to restore the manual DB snapshot. Uses the value all to make the manual DB snapshot public, which means it can be copied or restored by all AWS accounts.  Don&rsquo;t add the all value for any manual DB snapshots that contain private information that you don&rsquo;t want available to all AWS accounts.  If the manual DB snapshot is encrypted, it can be shared, but only by specifying a list of authorized AWS account IDs for the ValuesToAdd parameter. You can&rsquo;t use all as a value for that parameter in this case. To view which AWS accounts have access to copy or restore a manual DB snapshot, or whether a manual DB snapshot public or private, use the DescribeDBSnapshotAttributes API action. The accounts are returned as values for the restore attribute.</p>
 
                       </div>
                       <div class="declaration">
@@ -3657,7 +3690,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Modifies an existing RDS event notification subscription. You can&rsquo;t modify the source identifiers using this call. To change source identifiers for a subscription, use the AddSourceIdentifierToSubscription and RemoveSourceIdentifierFromSubscription calls. You can see a list of the event categories for a given SourceType in the Events topic in the Amazon RDS User Guide or by using the DescribeEventCategories action.</p>
+                        <p>Modifies an existing RDS event notification subscription. You can&rsquo;t modify the source identifiers using this call. To change source identifiers for a subscription, use the AddSourceIdentifierToSubscription and RemoveSourceIdentifierFromSubscription calls. You can see a list of the event categories for a given source type (SourceType) in Events in the Amazon RDS User Guide or by using the DescribeEventCategories operation.</p>
 
                       </div>
                       <div class="declaration">
@@ -3846,7 +3879,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>This is prerelease documentation for the RDS Database Proxy feature in preview release. It is subject to change.  Associate one or more DBProxyTarget data structures with a DBProxyTargetGroup.</p>
+                        <p>Associate one or more DBProxyTarget data structures with a DBProxyTargetGroup.</p>
 
                       </div>
                       <div class="declaration">
@@ -4065,7 +4098,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Creates an Amazon Aurora DB cluster from data stored in an Amazon S3 bucket. Amazon RDS must be authorized to access the Amazon S3 bucket and the data must be created using the Percona XtraBackup utility as described in  Migrating Data to an Amazon Aurora MySQL DB Cluster in the Amazon Aurora User Guide.  This action only applies to Aurora DB clusters.</p>
+                        <p>Creates an Amazon Aurora DB cluster from MySQL data stored in an Amazon S3 bucket. Amazon RDS must be authorized to access the Amazon S3 bucket and the data must be created using the Percona XtraBackup utility as described in  Migrating Data from MySQL by Using an Amazon S3 Bucket in the Amazon Aurora User Guide.  This action only restores the DB cluster, not the DB instances for that DB cluster. You must invoke the CreateDBInstance action to create DB instances for the restored DB cluster, specifying the identifier of the restored DB cluster in DBClusterIdentifier. You can create DB instances only after the RestoreDBClusterFromS3 action has completed and the DB cluster is available.  For more information on Amazon Aurora, see  What Is Amazon Aurora? in the Amazon Aurora User Guide.   This action only applies to Aurora DB clusters. The source DB engine must be MySQL.</p>
 
                       </div>
                       <div class="declaration">
@@ -4092,7 +4125,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Creates a new DB cluster from a DB snapshot or DB cluster snapshot. This action only applies to Aurora DB clusters. The target DB cluster is created from the source snapshot with a default configuration. If you don&rsquo;t specify a security group, the new DB cluster is associated with the default security group.  This action only restores the DB cluster, not the DB instances for that DB cluster. You must invoke the CreateDBInstance action to create DB instances for the restored DB cluster, specifying the identifier of the restored DB cluster in DBClusterIdentifier. You can create DB instances only after the RestoreDBClusterFromSnapshot action has completed and the DB cluster is available.  For more information on Amazon Aurora, see  What Is Amazon Aurora? in the Amazon Aurora User Guide.</p>
+                        <p>Creates a new DB cluster from a DB snapshot or DB cluster snapshot. This action only applies to Aurora DB clusters. The target DB cluster is created from the source snapshot with a default configuration. If you don&rsquo;t specify a security group, the new DB cluster is associated with the default security group.  This action only restores the DB cluster, not the DB instances for that DB cluster. You must invoke the CreateDBInstance action to create DB instances for the restored DB cluster, specifying the identifier of the restored DB cluster in DBClusterIdentifier. You can create DB instances only after the RestoreDBClusterFromSnapshot action has completed and the DB cluster is available.  For more information on Amazon Aurora, see  What Is Amazon Aurora? in the Amazon Aurora User Guide.   This action only applies to Aurora DB clusters.</p>
 
                       </div>
                       <div class="declaration">
@@ -4444,6 +4477,33 @@
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/s:3RDSAAV29describeCertificatesPaginator_6onPage3NIO15EventLoopFutureCyytGAB08DescribeC7MessageV_AGySbGAB011CertificateL0V_AE0hI0_ptctF"></a>
+                    <a name="//apple_ref/swift/Method/describeCertificatesPaginator(_:onPage:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3RDSAAV29describeCertificatesPaginator_6onPage3NIO15EventLoopFutureCyytGAB08DescribeC7MessageV_AGySbGAB011CertificateL0V_AE0hI0_ptctF">describeCertificatesPaginator(_:onPage:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Lists the set of CA certificates provided by Amazon RDS for this AWS account.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">describeCertificatesPaginator</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/RDS/DescribeCertificatesMessage.html">DescribeCertificatesMessage</a></span><span class="p">,</span> <span class="nv">onPage</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/RDS/CertificateMessage.html">CertificateMessage</a></span><span class="p">,</span> <span class="kt">EventLoop</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Bool</span><span class="o">&gt;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Void</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/s:3RDSAAV40describeCustomAvailabilityZonesPaginator_6onPage3NIO15EventLoopFutureCyytGAB08DescribecdE7MessageV_AGySbGAB0cd4ZoneN0V_AE0jK0_ptctF"></a>
                     <a name="//apple_ref/swift/Method/describeCustomAvailabilityZonesPaginator(_:onPage:)" class="dashAnchor"></a>
                     <a class="token" href="#/s:3RDSAAV40describeCustomAvailabilityZonesPaginator_6onPage3NIO15EventLoopFutureCyytGAB08DescribecdE7MessageV_AGySbGAB0cd4ZoneN0V_AE0jK0_ptctF">describeCustomAvailabilityZonesPaginator(_:onPage:)</a>
@@ -4462,6 +4522,141 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">describeCustomAvailabilityZonesPaginator</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/RDS/DescribeCustomAvailabilityZonesMessage.html">DescribeCustomAvailabilityZonesMessage</a></span><span class="p">,</span> <span class="nv">onPage</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/RDS/CustomAvailabilityZoneMessage.html">CustomAvailabilityZoneMessage</a></span><span class="p">,</span> <span class="kt">EventLoop</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Bool</span><span class="o">&gt;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Void</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:3RDSAAV36describeDBClusterBacktracksPaginator_6onPage3NIO15EventLoopFutureCyytGAB08DescribecD7MessageV_AGySbGAB0c9BacktrackM0V_AE0iJ0_ptctF"></a>
+                    <a name="//apple_ref/swift/Method/describeDBClusterBacktracksPaginator(_:onPage:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3RDSAAV36describeDBClusterBacktracksPaginator_6onPage3NIO15EventLoopFutureCyytGAB08DescribecD7MessageV_AGySbGAB0c9BacktrackM0V_AE0iJ0_ptctF">describeDBClusterBacktracksPaginator(_:onPage:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns information about backtracks for a DB cluster. For more information on Amazon Aurora, see  What Is Amazon Aurora? in the Amazon Aurora User Guide.   This action only applies to Aurora MySQL DB clusters.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">describeDBClusterBacktracksPaginator</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/RDS/DescribeDBClusterBacktracksMessage.html">DescribeDBClusterBacktracksMessage</a></span><span class="p">,</span> <span class="nv">onPage</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/RDS/DBClusterBacktrackMessage.html">DBClusterBacktrackMessage</a></span><span class="p">,</span> <span class="kt">EventLoop</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Bool</span><span class="o">&gt;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Void</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:3RDSAAV35describeDBClusterEndpointsPaginator_6onPage3NIO15EventLoopFutureCyytGAB08DescribecD7MessageV_AGySbGAB0c8EndpointM0V_AE0iJ0_ptctF"></a>
+                    <a name="//apple_ref/swift/Method/describeDBClusterEndpointsPaginator(_:onPage:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3RDSAAV35describeDBClusterEndpointsPaginator_6onPage3NIO15EventLoopFutureCyytGAB08DescribecD7MessageV_AGySbGAB0c8EndpointM0V_AE0iJ0_ptctF">describeDBClusterEndpointsPaginator(_:onPage:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns information about endpoints for an Amazon Aurora DB cluster.  This action only applies to Aurora DB clusters.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">describeDBClusterEndpointsPaginator</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/RDS/DescribeDBClusterEndpointsMessage.html">DescribeDBClusterEndpointsMessage</a></span><span class="p">,</span> <span class="nv">onPage</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/RDS/DBClusterEndpointMessage.html">DBClusterEndpointMessage</a></span><span class="p">,</span> <span class="kt">EventLoop</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Bool</span><span class="o">&gt;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Void</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:3RDSAAV41describeDBClusterParameterGroupsPaginator_6onPage3NIO15EventLoopFutureCyytGAB08DescribecdE7MessageV_AGySbGAB0cdeN0V_AE0jK0_ptctF"></a>
+                    <a name="//apple_ref/swift/Method/describeDBClusterParameterGroupsPaginator(_:onPage:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3RDSAAV41describeDBClusterParameterGroupsPaginator_6onPage3NIO15EventLoopFutureCyytGAB08DescribecdE7MessageV_AGySbGAB0cdeN0V_AE0jK0_ptctF">describeDBClusterParameterGroupsPaginator(_:onPage:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns a list of DBClusterParameterGroup descriptions. If a DBClusterParameterGroupName parameter is specified, the list will contain only the description of the specified DB cluster parameter group.  For more information on Amazon Aurora, see  What Is Amazon Aurora? in the Amazon Aurora User Guide.   This action only applies to Aurora DB clusters.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">describeDBClusterParameterGroupsPaginator</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/RDS/DescribeDBClusterParameterGroupsMessage.html">DescribeDBClusterParameterGroupsMessage</a></span><span class="p">,</span> <span class="nv">onPage</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/RDS/DBClusterParameterGroupsMessage.html">DBClusterParameterGroupsMessage</a></span><span class="p">,</span> <span class="kt">EventLoop</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Bool</span><span class="o">&gt;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Void</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:3RDSAAV36describeDBClusterParametersPaginator_6onPage3NIO15EventLoopFutureCyytGAB08DescribecD7MessageV_AGySbGAB0C21ParameterGroupDetailsV_AE0iJ0_ptctF"></a>
+                    <a name="//apple_ref/swift/Method/describeDBClusterParametersPaginator(_:onPage:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3RDSAAV36describeDBClusterParametersPaginator_6onPage3NIO15EventLoopFutureCyytGAB08DescribecD7MessageV_AGySbGAB0C21ParameterGroupDetailsV_AE0iJ0_ptctF">describeDBClusterParametersPaginator(_:onPage:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the detailed parameter list for a particular DB cluster parameter group. For more information on Amazon Aurora, see  What Is Amazon Aurora? in the Amazon Aurora User Guide.   This action only applies to Aurora DB clusters.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">describeDBClusterParametersPaginator</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/RDS/DescribeDBClusterParametersMessage.html">DescribeDBClusterParametersMessage</a></span><span class="p">,</span> <span class="nv">onPage</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/RDS/DBClusterParameterGroupDetails.html">DBClusterParameterGroupDetails</a></span><span class="p">,</span> <span class="kt">EventLoop</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Bool</span><span class="o">&gt;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Void</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:3RDSAAV35describeDBClusterSnapshotsPaginator_6onPage3NIO15EventLoopFutureCyytGAB08DescribecD7MessageV_AGySbGAB0c8SnapshotM0V_AE0iJ0_ptctF"></a>
+                    <a name="//apple_ref/swift/Method/describeDBClusterSnapshotsPaginator(_:onPage:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3RDSAAV35describeDBClusterSnapshotsPaginator_6onPage3NIO15EventLoopFutureCyytGAB08DescribecD7MessageV_AGySbGAB0c8SnapshotM0V_AE0iJ0_ptctF">describeDBClusterSnapshotsPaginator(_:onPage:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns information about DB cluster snapshots. This API action supports pagination. For more information on Amazon Aurora, see  What Is Amazon Aurora? in the Amazon Aurora User Guide.   This action only applies to Aurora DB clusters.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">describeDBClusterSnapshotsPaginator</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/RDS/DescribeDBClusterSnapshotsMessage.html">DescribeDBClusterSnapshotsMessage</a></span><span class="p">,</span> <span class="nv">onPage</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/RDS/DBClusterSnapshotMessage.html">DBClusterSnapshotMessage</a></span><span class="p">,</span> <span class="kt">EventLoop</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Bool</span><span class="o">&gt;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Void</span><span class="o">&gt;</span></code></pre>
 
                         </div>
                       </div>
@@ -4670,7 +4865,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>This is prerelease documentation for the RDS Database Proxy feature in preview release. It is subject to change.  Returns information about DB proxies.</p>
+                        <p>Returns information about DB proxies.</p>
 
                       </div>
                       <div class="declaration">
@@ -4697,7 +4892,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>This is prerelease documentation for the RDS Database Proxy feature in preview release. It is subject to change.  Returns information about DB proxy target groups, represented by DBProxyTargetGroup data structures.</p>
+                        <p>Returns information about DB proxy target groups, represented by DBProxyTargetGroup data structures.</p>
 
                       </div>
                       <div class="declaration">
@@ -4724,7 +4919,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>This is prerelease documentation for the RDS Database Proxy feature in preview release. It is subject to change.  Returns information about DBProxyTarget objects. This API supports pagination.</p>
+                        <p>Returns information about DBProxyTarget objects. This API supports pagination.</p>
 
                       </div>
                       <div class="declaration">
@@ -4886,7 +5081,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Returns events related to DB instances, DB security groups, DB snapshots, and DB parameter groups for the past 14 days. Events specific to a particular DB instance, DB security group, database snapshot, or DB parameter group can be obtained by providing the name as a parameter. By default, the past hour of events are returned.</p>
+                        <p>Returns events related to DB instances, DB clusters, DB parameter groups, DB security groups, DB snapshots, and DB cluster snapshots for the past 14 days. Events specific to a particular DB instances, DB clusters, DB parameter groups, DB security groups, DB snapshots, and DB cluster snapshots group can be obtained by providing the name as a parameter. By default, the past hour of events are returned.</p>
 
                       </div>
                       <div class="declaration">
@@ -5065,6 +5260,33 @@
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/s:3RDSAAV42describePendingMaintenanceActionsPaginator_6onPage3NIO15EventLoopFutureCyytGAB08DescribecdE7MessageV_AGySbGAB0cdeN0V_AE0jK0_ptctF"></a>
+                    <a name="//apple_ref/swift/Method/describePendingMaintenanceActionsPaginator(_:onPage:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3RDSAAV42describePendingMaintenanceActionsPaginator_6onPage3NIO15EventLoopFutureCyytGAB08DescribecdE7MessageV_AGySbGAB0cdeN0V_AE0jK0_ptctF">describePendingMaintenanceActionsPaginator(_:onPage:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns a list of resources (for example, DB instances) that have at least one pending maintenance action.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">describePendingMaintenanceActionsPaginator</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/RDS/DescribePendingMaintenanceActionsMessage.html">DescribePendingMaintenanceActionsMessage</a></span><span class="p">,</span> <span class="nv">onPage</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/RDS/PendingMaintenanceActionsMessage.html">PendingMaintenanceActionsMessage</a></span><span class="p">,</span> <span class="kt">EventLoop</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Bool</span><span class="o">&gt;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Void</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/s:3RDSAAV36describeReservedDBInstancesPaginator_6onPage3NIO15EventLoopFutureCyytGAB08DescribecD7MessageV_AGySbGAB0c10DBInstanceM0V_AE0iJ0_ptctF"></a>
                     <a name="//apple_ref/swift/Method/describeReservedDBInstancesPaginator(_:onPage:)" class="dashAnchor"></a>
                     <a class="token" href="#/s:3RDSAAV36describeReservedDBInstancesPaginator_6onPage3NIO15EventLoopFutureCyytGAB08DescribecD7MessageV_AGySbGAB0c10DBInstanceM0V_AE0iJ0_ptctF">describeReservedDBInstancesPaginator(_:onPage:)</a>
@@ -5119,6 +5341,33 @@
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/s:3RDSAAV30describeSourceRegionsPaginator_6onPage3NIO15EventLoopFutureCyytGAB08DescribecD7MessageV_AGySbGAB0c6RegionM0V_AE0iJ0_ptctF"></a>
+                    <a name="//apple_ref/swift/Method/describeSourceRegionsPaginator(_:onPage:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3RDSAAV30describeSourceRegionsPaginator_6onPage3NIO15EventLoopFutureCyytGAB08DescribecD7MessageV_AGySbGAB0c6RegionM0V_AE0iJ0_ptctF">describeSourceRegionsPaginator(_:onPage:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns a list of the source AWS Regions where the current AWS Region can create a read replica or copy a DB snapshot from. This API action supports pagination.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">describeSourceRegionsPaginator</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/RDS/DescribeSourceRegionsMessage.html">DescribeSourceRegionsMessage</a></span><span class="p">,</span> <span class="nv">onPage</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/RDS/SourceRegionMessage.html">SourceRegionMessage</a></span><span class="p">,</span> <span class="kt">EventLoop</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Bool</span><span class="o">&gt;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Void</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/s:3RDSAAV33downloadDBLogFilePortionPaginator_6onPage3NIO15EventLoopFutureCyytGAB08DownloadcdE7MessageV_AGySbGAB0mcdE7DetailsV_AE0jK0_ptctF"></a>
                     <a name="//apple_ref/swift/Method/downloadDBLogFilePortionPaginator(_:onPage:)" class="dashAnchor"></a>
                     <a class="token" href="#/s:3RDSAAV33downloadDBLogFilePortionPaginator_6onPage3NIO15EventLoopFutureCyytGAB08DownloadcdE7MessageV_AGySbGAB0mcdE7DetailsV_AE0jK0_ptctF">downloadDBLogFilePortionPaginator(_:onPage:)</a>
@@ -5157,6 +5406,35 @@
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/s:3RDSAAV27DescribeCertificatesMessageV"></a>
+                    <a name="//apple_ref/swift/Struct/DescribeCertificatesMessage" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3RDSAAV27DescribeCertificatesMessageV">DescribeCertificatesMessage</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/RDS/DescribeCertificatesMessage.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DescribeCertificatesMessage</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt"><a href="../Structs/RDS.html">RDS</a></span><span class="o">.</span><span class="kt">DescribeCertificatesMessage</span><span class="p">:</span> <span class="kt"><a href="../Protocols/AWSPaginateStringToken.html">AWSPaginateStringToken</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/s:3RDSAAV38DescribeCustomAvailabilityZonesMessageV"></a>
                     <a name="//apple_ref/swift/Struct/DescribeCustomAvailabilityZonesMessage" class="dashAnchor"></a>
                     <a class="token" href="#/s:3RDSAAV38DescribeCustomAvailabilityZonesMessageV">DescribeCustomAvailabilityZonesMessage</a>
@@ -5177,6 +5455,151 @@
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DescribeCustomAvailabilityZonesMessage</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
 <pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt"><a href="../Structs/RDS.html">RDS</a></span><span class="o">.</span><span class="kt">DescribeCustomAvailabilityZonesMessage</span><span class="p">:</span> <span class="kt"><a href="../Protocols/AWSPaginateStringToken.html">AWSPaginateStringToken</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:3RDSAAV34DescribeDBClusterBacktracksMessageV"></a>
+                    <a name="//apple_ref/swift/Struct/DescribeDBClusterBacktracksMessage" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3RDSAAV34DescribeDBClusterBacktracksMessageV">DescribeDBClusterBacktracksMessage</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/RDS/DescribeDBClusterBacktracksMessage.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DescribeDBClusterBacktracksMessage</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt"><a href="../Structs/RDS.html">RDS</a></span><span class="o">.</span><span class="kt">DescribeDBClusterBacktracksMessage</span><span class="p">:</span> <span class="kt"><a href="../Protocols/AWSPaginateStringToken.html">AWSPaginateStringToken</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:3RDSAAV33DescribeDBClusterEndpointsMessageV"></a>
+                    <a name="//apple_ref/swift/Struct/DescribeDBClusterEndpointsMessage" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3RDSAAV33DescribeDBClusterEndpointsMessageV">DescribeDBClusterEndpointsMessage</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/RDS/DescribeDBClusterEndpointsMessage.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DescribeDBClusterEndpointsMessage</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt"><a href="../Structs/RDS.html">RDS</a></span><span class="o">.</span><span class="kt">DescribeDBClusterEndpointsMessage</span><span class="p">:</span> <span class="kt"><a href="../Protocols/AWSPaginateStringToken.html">AWSPaginateStringToken</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:3RDSAAV39DescribeDBClusterParameterGroupsMessageV"></a>
+                    <a name="//apple_ref/swift/Struct/DescribeDBClusterParameterGroupsMessage" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3RDSAAV39DescribeDBClusterParameterGroupsMessageV">DescribeDBClusterParameterGroupsMessage</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/RDS/DescribeDBClusterParameterGroupsMessage.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DescribeDBClusterParameterGroupsMessage</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt"><a href="../Structs/RDS.html">RDS</a></span><span class="o">.</span><span class="kt">DescribeDBClusterParameterGroupsMessage</span><span class="p">:</span> <span class="kt"><a href="../Protocols/AWSPaginateStringToken.html">AWSPaginateStringToken</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:3RDSAAV34DescribeDBClusterParametersMessageV"></a>
+                    <a name="//apple_ref/swift/Struct/DescribeDBClusterParametersMessage" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3RDSAAV34DescribeDBClusterParametersMessageV">DescribeDBClusterParametersMessage</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/RDS/DescribeDBClusterParametersMessage.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DescribeDBClusterParametersMessage</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt"><a href="../Structs/RDS.html">RDS</a></span><span class="o">.</span><span class="kt">DescribeDBClusterParametersMessage</span><span class="p">:</span> <span class="kt"><a href="../Protocols/AWSPaginateStringToken.html">AWSPaginateStringToken</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:3RDSAAV33DescribeDBClusterSnapshotsMessageV"></a>
+                    <a name="//apple_ref/swift/Struct/DescribeDBClusterSnapshotsMessage" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3RDSAAV33DescribeDBClusterSnapshotsMessageV">DescribeDBClusterSnapshotsMessage</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/RDS/DescribeDBClusterSnapshotsMessage.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DescribeDBClusterSnapshotsMessage</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt"><a href="../Structs/RDS.html">RDS</a></span><span class="o">.</span><span class="kt">DescribeDBClusterSnapshotsMessage</span><span class="p">:</span> <span class="kt"><a href="../Protocols/AWSPaginateStringToken.html">AWSPaginateStringToken</a></span></code></pre>
 
                         </div>
                       </div>
@@ -5824,6 +6247,35 @@
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/s:3RDSAAV40DescribePendingMaintenanceActionsMessageV"></a>
+                    <a name="//apple_ref/swift/Struct/DescribePendingMaintenanceActionsMessage" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3RDSAAV40DescribePendingMaintenanceActionsMessageV">DescribePendingMaintenanceActionsMessage</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/RDS/DescribePendingMaintenanceActionsMessage.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DescribePendingMaintenanceActionsMessage</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt"><a href="../Structs/RDS.html">RDS</a></span><span class="o">.</span><span class="kt">DescribePendingMaintenanceActionsMessage</span><span class="p">:</span> <span class="kt"><a href="../Protocols/AWSPaginateStringToken.html">AWSPaginateStringToken</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/s:3RDSAAV34DescribeReservedDBInstancesMessageV"></a>
                     <a name="//apple_ref/swift/Struct/DescribeReservedDBInstancesMessage" class="dashAnchor"></a>
                     <a class="token" href="#/s:3RDSAAV34DescribeReservedDBInstancesMessageV">DescribeReservedDBInstancesMessage</a>
@@ -5873,6 +6325,35 @@
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DescribeReservedDBInstancesOfferingsMessage</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
 <pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt"><a href="../Structs/RDS.html">RDS</a></span><span class="o">.</span><span class="kt">DescribeReservedDBInstancesOfferingsMessage</span><span class="p">:</span> <span class="kt"><a href="../Protocols/AWSPaginateStringToken.html">AWSPaginateStringToken</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:3RDSAAV28DescribeSourceRegionsMessageV"></a>
+                    <a name="//apple_ref/swift/Struct/DescribeSourceRegionsMessage" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3RDSAAV28DescribeSourceRegionsMessageV">DescribeSourceRegionsMessage</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/RDS/DescribeSourceRegionsMessage.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DescribeSourceRegionsMessage</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt"><a href="../Structs/RDS.html">RDS</a></span><span class="o">.</span><span class="kt">DescribeSourceRegionsMessage</span><span class="p">:</span> <span class="kt"><a href="../Protocols/AWSPaginateStringToken.html">AWSPaginateStringToken</a></span></code></pre>
 
                         </div>
                       </div>
@@ -9635,146 +10116,6 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:3RDSAAV27DescribeCertificatesMessageV"></a>
-                    <a name="//apple_ref/swift/Struct/DescribeCertificatesMessage" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3RDSAAV27DescribeCertificatesMessageV">DescribeCertificatesMessage</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Undocumented</p>
-
-                        <a href="../Structs/RDS/DescribeCertificatesMessage.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DescribeCertificatesMessage</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:3RDSAAV34DescribeDBClusterBacktracksMessageV"></a>
-                    <a name="//apple_ref/swift/Struct/DescribeDBClusterBacktracksMessage" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3RDSAAV34DescribeDBClusterBacktracksMessageV">DescribeDBClusterBacktracksMessage</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Undocumented</p>
-
-                        <a href="../Structs/RDS/DescribeDBClusterBacktracksMessage.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DescribeDBClusterBacktracksMessage</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:3RDSAAV33DescribeDBClusterEndpointsMessageV"></a>
-                    <a name="//apple_ref/swift/Struct/DescribeDBClusterEndpointsMessage" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3RDSAAV33DescribeDBClusterEndpointsMessageV">DescribeDBClusterEndpointsMessage</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Undocumented</p>
-
-                        <a href="../Structs/RDS/DescribeDBClusterEndpointsMessage.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DescribeDBClusterEndpointsMessage</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:3RDSAAV39DescribeDBClusterParameterGroupsMessageV"></a>
-                    <a name="//apple_ref/swift/Struct/DescribeDBClusterParameterGroupsMessage" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3RDSAAV39DescribeDBClusterParameterGroupsMessageV">DescribeDBClusterParameterGroupsMessage</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Undocumented</p>
-
-                        <a href="../Structs/RDS/DescribeDBClusterParameterGroupsMessage.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DescribeDBClusterParameterGroupsMessage</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:3RDSAAV34DescribeDBClusterParametersMessageV"></a>
-                    <a name="//apple_ref/swift/Struct/DescribeDBClusterParametersMessage" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3RDSAAV34DescribeDBClusterParametersMessageV">DescribeDBClusterParametersMessage</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Undocumented</p>
-
-                        <a href="../Structs/RDS/DescribeDBClusterParametersMessage.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DescribeDBClusterParametersMessage</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
                     <a name="/s:3RDSAAV42DescribeDBClusterSnapshotAttributesMessageV"></a>
                     <a name="//apple_ref/swift/Struct/DescribeDBClusterSnapshotAttributesMessage" class="dashAnchor"></a>
                     <a class="token" href="#/s:3RDSAAV42DescribeDBClusterSnapshotAttributesMessageV">DescribeDBClusterSnapshotAttributesMessage</a>
@@ -9822,34 +10163,6 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DescribeDBClusterSnapshotAttributesResult</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:3RDSAAV33DescribeDBClusterSnapshotsMessageV"></a>
-                    <a name="//apple_ref/swift/Struct/DescribeDBClusterSnapshotsMessage" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3RDSAAV33DescribeDBClusterSnapshotsMessageV">DescribeDBClusterSnapshotsMessage</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Undocumented</p>
-
-                        <a href="../Structs/RDS/DescribeDBClusterSnapshotsMessage.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DescribeDBClusterSnapshotsMessage</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
 
                         </div>
                       </div>
@@ -10158,62 +10471,6 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DescribeEventCategoriesMessage</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:3RDSAAV40DescribePendingMaintenanceActionsMessageV"></a>
-                    <a name="//apple_ref/swift/Struct/DescribePendingMaintenanceActionsMessage" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3RDSAAV40DescribePendingMaintenanceActionsMessageV">DescribePendingMaintenanceActionsMessage</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Undocumented</p>
-
-                        <a href="../Structs/RDS/DescribePendingMaintenanceActionsMessage.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DescribePendingMaintenanceActionsMessage</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:3RDSAAV28DescribeSourceRegionsMessageV"></a>
-                    <a name="//apple_ref/swift/Struct/DescribeSourceRegionsMessage" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3RDSAAV28DescribeSourceRegionsMessageV">DescribeSourceRegionsMessage</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Undocumented</p>
-
-                        <a href="../Structs/RDS/DescribeSourceRegionsMessage.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DescribeSourceRegionsMessage</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
 
                         </div>
                       </div>
@@ -12155,6 +12412,34 @@
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/s:3RDSAAV7OutpostV"></a>
+                    <a name="//apple_ref/swift/Struct/Outpost" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3RDSAAV7OutpostV">Outpost</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/RDS/Outpost.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Outpost</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/s:3RDSAAV9ParameterV"></a>
                     <a name="//apple_ref/swift/Struct/Parameter" class="dashAnchor"></a>
                     <a class="token" href="#/s:3RDSAAV9ParameterV">Parameter</a>
@@ -14031,6 +14316,34 @@
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/s:3RDSAAV12TargetHealthV"></a>
+                    <a name="//apple_ref/swift/Struct/TargetHealth" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3RDSAAV12TargetHealthV">TargetHealth</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/RDS/TargetHealth.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">TargetHealth</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/s:3RDSAAV8TimezoneV"></a>
                     <a name="//apple_ref/swift/Struct/Timezone" class="dashAnchor"></a>
                     <a class="token" href="#/s:3RDSAAV8TimezoneV">Timezone</a>
@@ -14462,6 +14775,34 @@
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/s:3RDSAAV11ReplicaModeO"></a>
+                    <a name="//apple_ref/swift/Enum/ReplicaMode" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3RDSAAV11ReplicaModeO">ReplicaMode</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/RDS/ReplicaMode.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">ReplicaMode</span> <span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="kt">CustomStringConvertible</span><span class="p">,</span> <span class="kt">Codable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/s:3RDSAAV10SourceTypeO"></a>
                     <a name="//apple_ref/swift/Enum/SourceType" class="dashAnchor"></a>
                     <a class="token" href="#/s:3RDSAAV10SourceTypeO">SourceType</a>
@@ -14490,6 +14831,62 @@
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/s:3RDSAAV18TargetHealthReasonO"></a>
+                    <a name="//apple_ref/swift/Enum/TargetHealthReason" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3RDSAAV18TargetHealthReasonO">TargetHealthReason</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/RDS/TargetHealthReason.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">TargetHealthReason</span> <span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="kt">CustomStringConvertible</span><span class="p">,</span> <span class="kt">Codable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:3RDSAAV11TargetStateO"></a>
+                    <a name="//apple_ref/swift/Enum/TargetState" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3RDSAAV11TargetStateO">TargetState</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/RDS/TargetState.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">TargetState</span> <span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="kt">CustomStringConvertible</span><span class="p">,</span> <span class="kt">Codable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/s:3RDSAAV10TargetTypeO"></a>
                     <a name="//apple_ref/swift/Enum/TargetType" class="dashAnchor"></a>
                     <a class="token" href="#/s:3RDSAAV10TargetTypeO">TargetType</a>
@@ -14509,6 +14906,34 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">TargetType</span> <span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="kt">CustomStringConvertible</span><span class="p">,</span> <span class="kt">Codable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:3RDSAAV21WriteForwardingStatusO"></a>
+                    <a name="//apple_ref/swift/Enum/WriteForwardingStatus" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3RDSAAV21WriteForwardingStatusO">WriteForwardingStatus</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/RDS/WriteForwardingStatus.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">WriteForwardingStatus</span> <span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="kt">CustomStringConvertible</span><span class="p">,</span> <span class="kt">Codable</span></code></pre>
 
                         </div>
                       </div>

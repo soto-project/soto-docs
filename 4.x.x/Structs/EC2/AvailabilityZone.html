@@ -14,7 +14,7 @@
     <a title="AvailabilityZone Structure Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../../index.html"> Docs</a> (60% documented)</p>
+        <p><a href="../../index.html"> Docs</a> (59% documented)</p>
         <p class="header-right"><a href="https://github.com/swift-aws/aws-sdk-swift"><img src="../../img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
@@ -74,6 +74,9 @@
             <a href="../../AppSync.html">AppSync</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../Appflow.html">Appflow</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../ApplicationAutoScaling.html">ApplicationAutoScaling</a>
           </li>
           <li class="nav-group-name">
@@ -96,6 +99,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../Batch.html">Batch</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../Braket.html">Braket</a>
           </li>
           <li class="nav-group-name">
             <a href="../../Budgets.html">Budgets</a>
@@ -138,6 +144,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../CloudWatchLogs.html">CloudWatchLogs</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../CodeArtifact.html">CodeArtifact</a>
           </li>
           <li class="nav-group-name">
             <a href="../../CodeBuild.html">CodeBuild</a>
@@ -326,7 +335,16 @@
             <a href="../../Health.html">Health</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../Honeycode.html">Honeycode</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../IAM.html">IAM</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../IVS.html">IVS</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../IdentityStore.html">IdentityStore</a>
           </li>
           <li class="nav-group-name">
             <a href="../../Imagebuilder.html">Imagebuilder</a>
@@ -363,6 +381,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../IoTSecureTunneling.html">IoTSecureTunneling</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../IoTSiteWise.html">IoTSiteWise</a>
           </li>
           <li class="nav-group-name">
             <a href="../../IoTThingsGraph.html">IoTThingsGraph</a>
@@ -426,6 +447,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../Macie.html">Macie</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../Macie2.html">Macie2</a>
           </li>
           <li class="nav-group-name">
             <a href="../../ManagedBlockchain.html">ManagedBlockchain</a>
@@ -545,6 +569,9 @@
             <a href="../../Redshift.html">Redshift</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../RedshiftDataAPIService.html">RedshiftDataAPIService</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../Rekognition.html">Rekognition</a>
           </li>
           <li class="nav-group-name">
@@ -594,6 +621,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../SSO.html">SSO</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../SSOAdmin.html">SSOAdmin</a>
           </li>
           <li class="nav-group-name">
             <a href="../../SSOOIDC.html">SSOOIDC</a>
@@ -651,6 +681,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../Support.html">Support</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../Synthetics.html">Synthetics</a>
           </li>
           <li class="nav-group-name">
             <a href="../../Textract.html">Textract</a>
@@ -772,7 +805,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>For Availability Zones, this parameter has the same value as the Region name. For Local Zones, the name of the associated group, for example us-west-2-lax-1.</p>
+                        <p>For Availability Zones, this parameter has the same value as the Region name. For Local Zones, the name of the associated group, for example us-west-2-lax-1. For Wavelength Zones, the name of the associated group, for example us-east-1-wl1-bos-wlz-1.</p>
 
                       </div>
                       <div class="declaration">
@@ -799,7 +832,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Any messages about the Availability Zone or Local Zone.</p>
+                        <p>Any messages about the Availability Zone, Local Zone, or Wavelength Zone.</p>
 
                       </div>
                       <div class="declaration">
@@ -826,7 +859,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The name of the location from which the address is advertised.</p>
+                        <p>The name of the network border group.</p>
 
                       </div>
                       <div class="declaration">
@@ -853,7 +886,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>For Availability Zones, this parameter always has the value of opt-in-not-required. For Local Zones, this parameter is the opt in status. The possible values are opted-in, and not-opted-in.</p>
+                        <p>For Availability Zones, this parameter always has the value of opt-in-not-required. For Local Zones and Wavelength Zones, this parameter is the opt-in status. The possible values are opted-in, and not-opted-in.</p>
 
                       </div>
                       <div class="declaration">
@@ -861,6 +894,60 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">optInStatus</span><span class="p">:</span> <span class="kt"><a href="../../Structs/EC2/AvailabilityZoneOptInStatus.html">AvailabilityZoneOptInStatus</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:3EC2AAV16AvailabilityZoneV06parentC2IdSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/parentZoneId" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3EC2AAV16AvailabilityZoneV06parentC2IdSSSgvp">parentZoneId</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The ID of the zone that handles some of the Local Zone or Wavelength Zone control plane operations, such as API calls.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">parentZoneId</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:3EC2AAV16AvailabilityZoneV06parentC4NameSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/parentZoneName" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3EC2AAV16AvailabilityZoneV06parentC4NameSSSgvp">parentZoneName</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The name of the zone that handles some of the Local Zone or Wavelength Zone control plane operations, such as API calls.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">parentZoneName</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
 
                         </div>
                       </div>
@@ -907,7 +994,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The state of the Availability Zone or Local Zone.</p>
+                        <p>The state of the Availability Zone, Local Zone, or Wavelength Zone.</p>
 
                       </div>
                       <div class="declaration">
@@ -934,7 +1021,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The ID of the Availability Zone or Local Zone.</p>
+                        <p>The ID of the Availability Zone, Local Zone, or Wavelength Zone.</p>
 
                       </div>
                       <div class="declaration">
@@ -961,7 +1048,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The name of the Availability Zone or Local Zone.</p>
+                        <p>The name of the Availability Zone, Local Zone, or Wavelength Zone.</p>
 
                       </div>
                       <div class="declaration">
@@ -978,9 +1065,36 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:3EC2AAV16AvailabilityZoneV9groupName8messages18networkBorderGroup11optInStatus06regionE05state6zoneId0oE0ADSSSg_SayAB0bC7MessageVGSgAmB0bc3OptkL0OSgAmB0bC5StateOSgA2Mtcfc"></a>
-                    <a name="//apple_ref/swift/Method/init(groupName:messages:networkBorderGroup:optInStatus:regionName:state:zoneId:zoneName:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3EC2AAV16AvailabilityZoneV9groupName8messages18networkBorderGroup11optInStatus06regionE05state6zoneId0oE0ADSSSg_SayAB0bC7MessageVGSgAmB0bc3OptkL0OSgAmB0bC5StateOSgA2Mtcfc">init(groupName:messages:networkBorderGroup:optInStatus:regionName:state:zoneId:zoneName:)</a>
+                    <a name="/s:3EC2AAV16AvailabilityZoneV8zoneTypeSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/zoneType" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3EC2AAV16AvailabilityZoneV8zoneTypeSSSgvp">zoneType</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The type of zone. The valid values are availability-zone, local-zone, and wavelength-zone.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">zoneType</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:3EC2AAV16AvailabilityZoneV9groupName8messages18networkBorderGroup11optInStatus06parentC2Id0mcE006regionE05state04zoneN00qE00Q4TypeADSSSg_SayAB0bC7MessageVGSgApB0bc3OptkL0OSgA3pB0bC5StateOSgA3Ptcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(groupName:messages:networkBorderGroup:optInStatus:parentZoneId:parentZoneName:regionName:state:zoneId:zoneName:zoneType:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3EC2AAV16AvailabilityZoneV9groupName8messages18networkBorderGroup11optInStatus06parentC2Id0mcE006regionE05state04zoneN00qE00Q4TypeADSSSg_SayAB0bC7MessageVGSgApB0bc3OptkL0OSgA3pB0bC5StateOSgA3Ptcfc">init(groupName:messages:networkBorderGroup:optInStatus:parentZoneId:parentZoneName:regionName:state:zoneId:zoneName:zoneType:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -995,7 +1109,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">groupName</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">messages</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../../Structs/EC2/AvailabilityZoneMessage.html">AvailabilityZoneMessage</a></span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">networkBorderGroup</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">optInStatus</span><span class="p">:</span> <span class="kt"><a href="../../Structs/EC2/AvailabilityZoneOptInStatus.html">AvailabilityZoneOptInStatus</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">regionName</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">state</span><span class="p">:</span> <span class="kt"><a href="../../Structs/EC2/AvailabilityZoneState.html">AvailabilityZoneState</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">zoneId</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">zoneName</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">groupName</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">messages</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../../Structs/EC2/AvailabilityZoneMessage.html">AvailabilityZoneMessage</a></span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">networkBorderGroup</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">optInStatus</span><span class="p">:</span> <span class="kt"><a href="../../Structs/EC2/AvailabilityZoneOptInStatus.html">AvailabilityZoneOptInStatus</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">parentZoneId</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">parentZoneName</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">regionName</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">state</span><span class="p">:</span> <span class="kt"><a href="../../Structs/EC2/AvailabilityZoneState.html">AvailabilityZoneState</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">zoneId</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">zoneName</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">zoneType</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>

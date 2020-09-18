@@ -14,7 +14,7 @@
     <a title="GameServer Structure Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../../index.html"> Docs</a> (60% documented)</p>
+        <p><a href="../../index.html"> Docs</a> (59% documented)</p>
         <p class="header-right"><a href="https://github.com/swift-aws/aws-sdk-swift"><img src="../../img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
@@ -74,6 +74,9 @@
             <a href="../../AppSync.html">AppSync</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../Appflow.html">Appflow</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../ApplicationAutoScaling.html">ApplicationAutoScaling</a>
           </li>
           <li class="nav-group-name">
@@ -96,6 +99,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../Batch.html">Batch</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../Braket.html">Braket</a>
           </li>
           <li class="nav-group-name">
             <a href="../../Budgets.html">Budgets</a>
@@ -138,6 +144,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../CloudWatchLogs.html">CloudWatchLogs</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../CodeArtifact.html">CodeArtifact</a>
           </li>
           <li class="nav-group-name">
             <a href="../../CodeBuild.html">CodeBuild</a>
@@ -326,7 +335,16 @@
             <a href="../../Health.html">Health</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../Honeycode.html">Honeycode</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../IAM.html">IAM</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../IVS.html">IVS</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../IdentityStore.html">IdentityStore</a>
           </li>
           <li class="nav-group-name">
             <a href="../../Imagebuilder.html">Imagebuilder</a>
@@ -363,6 +381,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../IoTSecureTunneling.html">IoTSecureTunneling</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../IoTSiteWise.html">IoTSiteWise</a>
           </li>
           <li class="nav-group-name">
             <a href="../../IoTThingsGraph.html">IoTThingsGraph</a>
@@ -426,6 +447,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../Macie.html">Macie</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../Macie2.html">Macie2</a>
           </li>
           <li class="nav-group-name">
             <a href="../../ManagedBlockchain.html">ManagedBlockchain</a>
@@ -545,6 +569,9 @@
             <a href="../../Redshift.html">Redshift</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../RedshiftDataAPIService.html">RedshiftDataAPIService</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../Rekognition.html">Rekognition</a>
           </li>
           <li class="nav-group-name">
@@ -594,6 +621,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../SSO.html">SSO</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../SSOAdmin.html">SSOAdmin</a>
           </li>
           <li class="nav-group-name">
             <a href="../../SSOOIDC.html">SSOOIDC</a>
@@ -651,6 +681,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../Support.html">Support</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../Synthetics.html">Synthetics</a>
           </li>
           <li class="nav-group-name">
             <a href="../../Textract.html">Textract</a>
@@ -772,7 +805,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Indicates when an available game server has been reserved but has not yet started hosting a game. Once it is claimed, game server remains in CLAIMED status for a maximum of one minute. During this time, game clients must connect to the game server and start the game, which triggers the game server to update its utilization status. After one minute, the game server claim status reverts to null.</p>
+                        <p>Indicates when an available game server has been reserved for gameplay but has not yet started hosting a game. Once it is claimed, the game server remains in CLAIMED status for a maximum of one minute. During this time, game clients connect to the game server to start the game and trigger the game server to update its utilization status. After one minute, the game server claim status reverts to null.</p>
 
                       </div>
                       <div class="declaration">
@@ -816,33 +849,6 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:8GameLiftAAV0A6ServerV13customSortKeySSSgvp"></a>
-                    <a name="//apple_ref/swift/Property/customSortKey" class="dashAnchor"></a>
-                    <a class="token" href="#/s:8GameLiftAAV0A6ServerV13customSortKeySSSgvp">customSortKey</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>A game server tag that can be used to request sorted lists of game servers when calling ListGameServers. Custom sort keys are developer-defined. This property can be updated using UpdateGameServer.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">customSortKey</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
                     <a name="/s:8GameLiftAAV0A6ServerV04gameC4DataSSSgvp"></a>
                     <a name="//apple_ref/swift/Property/gameServerData" class="dashAnchor"></a>
                     <a class="token" href="#/s:8GameLiftAAV0A6ServerV04gameC4DataSSSgvp">gameServerData</a>
@@ -853,7 +859,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>A set of custom game server properties, formatted as a single string value. This data is passed to a game client or service in response to requests ListGameServers or ClaimGameServer. This property can be updated using UpdateGameServer.</p>
+                        <p>A set of custom game server properties, formatted as a single string value. This data is passed to a game client or service when it requests information on game servers using ListGameServers or ClaimGameServer.</p>
 
                       </div>
                       <div class="declaration">
@@ -907,7 +913,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The name identifier for the game server group where the game server is located.</p>
+                        <p>A unique identifier for the game server group where the game server is running. Use either the GameServerGroup name or ARN value.</p>
 
                       </div>
                       <div class="declaration">
@@ -961,7 +967,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The unique identifier for the instance where the game server is located.</p>
+                        <p>The unique identifier for the instance where the game server is running. This ID is available in the instance metadata. EC2 instance IDs use a 17-character format, for example: i-1234567890abcdef0.</p>
 
                       </div>
                       <div class="declaration">
@@ -988,7 +994,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Time stamp indicating the last time the game server was claimed with a ClaimGameServer request. Format is a number expressed in Unix time as milliseconds (for example &ldquo;1469498468.057&rdquo;). This value is used to calculate when the game server&rsquo;s claim status.</p>
+                        <p>Timestamp that indicates the last time the game server was claimed with a ClaimGameServer request. The format is a number expressed in Unix time as milliseconds (for example &ldquo;1469498468.057&rdquo;). This value is used to calculate when a claimed game server&rsquo;s status should revert to null.</p>
 
                       </div>
                       <div class="declaration">
@@ -1015,7 +1021,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Time stamp indicating the last time the game server was updated with health status using an UpdateGameServer request. Format is a number expressed in Unix time as milliseconds (for example &ldquo;1469498468.057&rdquo;). After game server registration, this property is only changed when a game server update specifies a health check value.</p>
+                        <p>Timestamp that indicates the last time the game server was updated with health status using an UpdateGameServer request. The format is a number expressed in Unix time as milliseconds (for example &ldquo;1469498468.057&rdquo;). After game server registration, this property is only changed when a game server update specifies a health check value.</p>
 
                       </div>
                       <div class="declaration">
@@ -1042,7 +1048,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Time stamp indicating when the game server resource was created with a RegisterGameServer request. Format is a number expressed in Unix time as milliseconds (for example &ldquo;1469498468.057&rdquo;).</p>
+                        <p>Timestamp that indicates when the game server was created with a RegisterGameServer request. The format is a number expressed in Unix time as milliseconds (for example &ldquo;1469498468.057&rdquo;).</p>
 
                       </div>
                       <div class="declaration">
@@ -1069,7 +1075,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Indicates whether the game server is currently available for new games or is busy. Possible statuses include:   AVAILABLE - The game server is available to be claimed. A game server that has been claimed remains in this status until it reports game hosting activity.    IN_USE - The game server is currently hosting a game session with players.</p>
+                        <p>Indicates whether the game server is currently available for new games or is busy. Possible statuses include:    AVAILABLE - The game server is available to be claimed. A game server that has been claimed remains in this status until it reports game hosting activity.     UTILIZED - The game server is currently hosting a game session with players.</p>
 
                       </div>
                       <div class="declaration">
@@ -1086,9 +1092,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:8GameLiftAAV0A6ServerV11claimStatus14connectionInfo13customSortKey04gameC4Data0kC8GroupArn0kcM4Name0kC2Id08instanceP013lastClaimTime0r11HealthCheckT0012registrationT0011utilizationE0AdB0acsE0OSg_SSSgA6T15AWSSDKSwiftCore0T5StampVSgA2xB0ac11UtilizationE0OSgtcfc"></a>
-                    <a name="//apple_ref/swift/Method/init(claimStatus:connectionInfo:customSortKey:gameServerData:gameServerGroupArn:gameServerGroupName:gameServerId:instanceId:lastClaimTime:lastHealthCheckTime:registrationTime:utilizationStatus:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:8GameLiftAAV0A6ServerV11claimStatus14connectionInfo13customSortKey04gameC4Data0kC8GroupArn0kcM4Name0kC2Id08instanceP013lastClaimTime0r11HealthCheckT0012registrationT0011utilizationE0AdB0acsE0OSg_SSSgA6T15AWSSDKSwiftCore0T5StampVSgA2xB0ac11UtilizationE0OSgtcfc">init(claimStatus:connectionInfo:customSortKey:gameServerData:gameServerGroupArn:gameServerGroupName:gameServerId:instanceId:lastClaimTime:lastHealthCheckTime:registrationTime:utilizationStatus:)</a>
+                    <a name="/s:8GameLiftAAV0A6ServerV11claimStatus14connectionInfo04gameC4Data0hC8GroupArn0hcJ4Name0hC2Id08instanceM013lastClaimTime0o11HealthCheckQ0012registrationQ0011utilizationE0AdB0acpE0OSg_SSSgA5S15AWSSDKSwiftCore0Q5StampVSgA2wB0ac11UtilizationE0OSgtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(claimStatus:connectionInfo:gameServerData:gameServerGroupArn:gameServerGroupName:gameServerId:instanceId:lastClaimTime:lastHealthCheckTime:registrationTime:utilizationStatus:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8GameLiftAAV0A6ServerV11claimStatus14connectionInfo04gameC4Data0hC8GroupArn0hcJ4Name0hC2Id08instanceM013lastClaimTime0o11HealthCheckQ0012registrationQ0011utilizationE0AdB0acpE0OSg_SSSgA5S15AWSSDKSwiftCore0Q5StampVSgA2wB0ac11UtilizationE0OSgtcfc">init(claimStatus:connectionInfo:gameServerData:gameServerGroupArn:gameServerGroupName:gameServerId:instanceId:lastClaimTime:lastHealthCheckTime:registrationTime:utilizationStatus:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1103,7 +1109,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">claimStatus</span><span class="p">:</span> <span class="kt"><a href="../../Structs/GameLift/GameServerClaimStatus.html">GameServerClaimStatus</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">connectionInfo</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">customSortKey</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">gameServerData</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">gameServerGroupArn</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">gameServerGroupName</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">gameServerId</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">instanceId</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">lastClaimTime</span><span class="p">:</span> <span class="kt"><a href="../../Structs/TimeStamp.html">TimeStamp</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">lastHealthCheckTime</span><span class="p">:</span> <span class="kt"><a href="../../Structs/TimeStamp.html">TimeStamp</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">registrationTime</span><span class="p">:</span> <span class="kt"><a href="../../Structs/TimeStamp.html">TimeStamp</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">utilizationStatus</span><span class="p">:</span> <span class="kt"><a href="../../Structs/GameLift/GameServerUtilizationStatus.html">GameServerUtilizationStatus</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">claimStatus</span><span class="p">:</span> <span class="kt"><a href="../../Structs/GameLift/GameServerClaimStatus.html">GameServerClaimStatus</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">connectionInfo</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">gameServerData</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">gameServerGroupArn</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">gameServerGroupName</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">gameServerId</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">instanceId</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">lastClaimTime</span><span class="p">:</span> <span class="kt"><a href="../../Structs/TimeStamp.html">TimeStamp</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">lastHealthCheckTime</span><span class="p">:</span> <span class="kt"><a href="../../Structs/TimeStamp.html">TimeStamp</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">registrationTime</span><span class="p">:</span> <span class="kt"><a href="../../Structs/TimeStamp.html">TimeStamp</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">utilizationStatus</span><span class="p">:</span> <span class="kt"><a href="../../Structs/GameLift/GameServerUtilizationStatus.html">GameServerUtilizationStatus</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>

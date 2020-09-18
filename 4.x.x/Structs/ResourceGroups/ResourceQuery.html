@@ -14,7 +14,7 @@
     <a title="ResourceQuery Structure Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../../index.html"> Docs</a> (60% documented)</p>
+        <p><a href="../../index.html"> Docs</a> (59% documented)</p>
         <p class="header-right"><a href="https://github.com/swift-aws/aws-sdk-swift"><img src="../../img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
@@ -74,6 +74,9 @@
             <a href="../../AppSync.html">AppSync</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../Appflow.html">Appflow</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../ApplicationAutoScaling.html">ApplicationAutoScaling</a>
           </li>
           <li class="nav-group-name">
@@ -96,6 +99,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../Batch.html">Batch</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../Braket.html">Braket</a>
           </li>
           <li class="nav-group-name">
             <a href="../../Budgets.html">Budgets</a>
@@ -138,6 +144,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../CloudWatchLogs.html">CloudWatchLogs</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../CodeArtifact.html">CodeArtifact</a>
           </li>
           <li class="nav-group-name">
             <a href="../../CodeBuild.html">CodeBuild</a>
@@ -326,7 +335,16 @@
             <a href="../../Health.html">Health</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../Honeycode.html">Honeycode</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../IAM.html">IAM</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../IVS.html">IVS</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../IdentityStore.html">IdentityStore</a>
           </li>
           <li class="nav-group-name">
             <a href="../../Imagebuilder.html">Imagebuilder</a>
@@ -363,6 +381,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../IoTSecureTunneling.html">IoTSecureTunneling</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../IoTSiteWise.html">IoTSiteWise</a>
           </li>
           <li class="nav-group-name">
             <a href="../../IoTThingsGraph.html">IoTThingsGraph</a>
@@ -426,6 +447,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../Macie.html">Macie</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../Macie2.html">Macie2</a>
           </li>
           <li class="nav-group-name">
             <a href="../../ManagedBlockchain.html">ManagedBlockchain</a>
@@ -545,6 +569,9 @@
             <a href="../../Redshift.html">Redshift</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../RedshiftDataAPIService.html">RedshiftDataAPIService</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../Rekognition.html">Rekognition</a>
           </li>
           <li class="nav-group-name">
@@ -594,6 +621,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../SSO.html">SSO</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../SSOAdmin.html">SSOAdmin</a>
           </li>
           <li class="nav-group-name">
             <a href="../../SSOOIDC.html">SSOOIDC</a>
@@ -651,6 +681,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../Support.html">Support</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../Synthetics.html">Synthetics</a>
           </li>
           <li class="nav-group-name">
             <a href="../../Textract.html">Textract</a>
@@ -799,7 +832,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The type of the query. The valid values in this release are TAG_FILTERS_1_0 and CLOUDFORMATION_STACK_1_0.   TAG_FILTERS_1_0:  A JSON syntax that lets you specify a collection of simple tag filters for resource types and tags, as supported by the AWS Tagging API GetResources operation. If you specify more than one tag key, only resources that match all tag keys, and at least one value of each specified tag key, are returned in your query. If you specify more than one value for a tag key, a resource matches the filter if it has a tag key value that matches any of the specified values. For example, consider the following sample query for resources that have two tags, Stage and Version, with two values each. ([{&ldquo;Key&rdquo;:&ldquo;Stage&rdquo;,&ldquo;Values&rdquo;:[&ldquo;Test&rdquo;,&ldquo;Deploy&rdquo;]},{&ldquo;Key&rdquo;:&ldquo;Version&rdquo;,&ldquo;Values&rdquo;:[&ldquo;1&rdquo;,&ldquo;2&rdquo;]}]) The results of this query might include the following.   An EC2 instance that has the following two tags: {&ldquo;Key&rdquo;:&ldquo;Stage&rdquo;,&ldquo;Value&rdquo;:&ldquo;Deploy&rdquo;}, and {&ldquo;Key&rdquo;:&ldquo;Version&rdquo;,&ldquo;Value&rdquo;:&ldquo;2&rdquo;}    An S3 bucket that has the following two tags: {&ldquo;Key&rdquo;:&ldquo;Stage&rdquo;,&ldquo;Value&rdquo;:&ldquo;Test&rdquo;}, and {&ldquo;Key&rdquo;:&ldquo;Version&rdquo;,&ldquo;Value&rdquo;:&ldquo;1&rdquo;}   The query would not return the following results, however. The following EC2 instance does not have all tag keys specified in the filter, so it is rejected. The RDS database has all of the tag keys, but no values that match at least one of the specified tag key values in the filter.   An EC2 instance that has only the following tag: {&ldquo;Key&rdquo;:&ldquo;Stage&rdquo;,&ldquo;Value&rdquo;:&ldquo;Deploy&rdquo;}.   An RDS database that has the following two tags: {&ldquo;Key&rdquo;:&ldquo;Stage&rdquo;,&ldquo;Value&rdquo;:&ldquo;Archived&rdquo;}, and {&ldquo;Key&rdquo;:&ldquo;Version&rdquo;,&ldquo;Value&rdquo;:&ldquo;4&rdquo;}      CLOUDFORMATION_STACK_1_0:  A JSON syntax that lets you specify a CloudFormation stack ARN.</p>
+                        <p>The type of the query. You can use the following values:     CLOUDFORMATION_STACK_1_0:  A JSON syntax that lets you specify a CloudFormation stack ARN.     TAG_FILTERS_1_0:  A JSON syntax that lets you specify a collection of simple tag filters for resource types and tags, as supported by the AWS Tagging API  ResourceTypeFilters parameter of the tagging:GetResources  operation. If you specify more than one tag key, only resources that match all tag keys, and at least one value of each specified tag key, are returned in your query. If you specify more than one value for a tag key, a resource matches the filter if it has a tag key value that matches any of the specified values. For example, consider the following sample query for resources that have two tags, Stage and Version, with two values each:  [{&ldquo;Key&rdquo;:&ldquo;Stage&rdquo;,&ldquo;Values&rdquo;:[&ldquo;Test&rdquo;,&ldquo;Deploy&rdquo;]},{&ldquo;Key&rdquo;:&ldquo;Version&rdquo;,&ldquo;Values&rdquo;:[&ldquo;1&rdquo;,&ldquo;2&rdquo;]}]  The results of this query could include the following.   An EC2 instance that has the following two tags: {&ldquo;Key&rdquo;:&ldquo;Stage&rdquo;,&ldquo;Value&rdquo;:&ldquo;Deploy&rdquo;}, and {&ldquo;Key&rdquo;:&ldquo;Version&rdquo;,&ldquo;Value&rdquo;:&ldquo;2&rdquo;}    An S3 bucket that has the following two tags: {&ldquo;Key&rdquo;:&ldquo;Stage&rdquo;,&ldquo;Value&rdquo;:&ldquo;Test&rdquo;}, and {&ldquo;Key&rdquo;:&ldquo;Version&rdquo;,&ldquo;Value&rdquo;:&ldquo;1&rdquo;}    The query would not include the following items in the results, however.    An EC2 instance that has only the following tag: {&ldquo;Key&rdquo;:&ldquo;Stage&rdquo;,&ldquo;Value&rdquo;:&ldquo;Deploy&rdquo;}. The instance does not have all of the tag keys specified in the filter, so it is excluded from the results.   An RDS database that has the following two tags: {&ldquo;Key&rdquo;:&ldquo;Stage&rdquo;,&ldquo;Value&rdquo;:&ldquo;Archived&rdquo;}, and {&ldquo;Key&rdquo;:&ldquo;Version&rdquo;,&ldquo;Value&rdquo;:&ldquo;4&rdquo;}  The database has all of the tag keys, but none of those keys has an associated value that matches at least one of the specified values in the filter.</p>
 
                       </div>
                       <div class="declaration">

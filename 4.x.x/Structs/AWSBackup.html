@@ -14,7 +14,7 @@
     <a title="AWSBackup Structure Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html"> Docs</a> (60% documented)</p>
+        <p><a href="../index.html"> Docs</a> (59% documented)</p>
         <p class="header-right"><a href="https://github.com/swift-aws/aws-sdk-swift"><img src="../img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
@@ -74,6 +74,9 @@
             <a href="../AppSync.html">AppSync</a>
           </li>
           <li class="nav-group-name">
+            <a href="../Appflow.html">Appflow</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../ApplicationAutoScaling.html">ApplicationAutoScaling</a>
           </li>
           <li class="nav-group-name">
@@ -96,6 +99,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../Batch.html">Batch</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Braket.html">Braket</a>
           </li>
           <li class="nav-group-name">
             <a href="../Budgets.html">Budgets</a>
@@ -138,6 +144,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../CloudWatchLogs.html">CloudWatchLogs</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../CodeArtifact.html">CodeArtifact</a>
           </li>
           <li class="nav-group-name">
             <a href="../CodeBuild.html">CodeBuild</a>
@@ -326,7 +335,16 @@
             <a href="../Health.html">Health</a>
           </li>
           <li class="nav-group-name">
+            <a href="../Honeycode.html">Honeycode</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../IAM.html">IAM</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../IVS.html">IVS</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../IdentityStore.html">IdentityStore</a>
           </li>
           <li class="nav-group-name">
             <a href="../Imagebuilder.html">Imagebuilder</a>
@@ -363,6 +381,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../IoTSecureTunneling.html">IoTSecureTunneling</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../IoTSiteWise.html">IoTSiteWise</a>
           </li>
           <li class="nav-group-name">
             <a href="../IoTThingsGraph.html">IoTThingsGraph</a>
@@ -426,6 +447,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../Macie.html">Macie</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Macie2.html">Macie2</a>
           </li>
           <li class="nav-group-name">
             <a href="../ManagedBlockchain.html">ManagedBlockchain</a>
@@ -545,6 +569,9 @@
             <a href="../Redshift.html">Redshift</a>
           </li>
           <li class="nav-group-name">
+            <a href="../RedshiftDataAPIService.html">RedshiftDataAPIService</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../Rekognition.html">Rekognition</a>
           </li>
           <li class="nav-group-name">
@@ -594,6 +621,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../SSO.html">SSO</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../SSOAdmin.html">SSOAdmin</a>
           </li>
           <li class="nav-group-name">
             <a href="../SSOOIDC.html">SSOOIDC</a>
@@ -651,6 +681,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../Support.html">Support</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Synthetics.html">Synthetics</a>
           </li>
           <li class="nav-group-name">
             <a href="../Textract.html">Textract</a>
@@ -949,7 +982,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Creates a JSON document that specifies a set of resources to assign to a backup plan. Resources can be included by specifying patterns for a ListOfTags and selected Resources.  For example, consider the following patterns:    Resources: &ldquo;arn:aws:ec2:region:account-id:volume/volume-id&rdquo;     ConditionKey:&ldquo;department&rdquo;   ConditionValue:&ldquo;finance&rdquo;   ConditionType:&ldquo;STRINGEQUALS&rdquo;     ConditionKey:&ldquo;importance&rdquo;   ConditionValue:&ldquo;critical&rdquo;   ConditionType:&ldquo;STRINGEQUALS&rdquo;    Using these patterns would back up all Amazon Elastic Block Store (Amazon EBS) volumes that are tagged as &ldquo;department=finance&rdquo;, &ldquo;importance=critical&rdquo;, in addition to an EBS volume with the specified volume Id. Resources and conditions are additive in that all resources that match the pattern are selected. This shouldn&rsquo;t be confused with a logical AND, where all conditions must match. The matching patterns are logically &lsquo;put together using the OR operator. In other words, all patterns that match are selected for backup.</p>
+                        <p>Creates a JSON document that specifies a set of resources to assign to a backup plan. Resources can be included by specifying patterns for a ListOfTags and selected Resources.  For example, consider the following patterns:    Resources: &ldquo;arn:aws:ec2:region:account-id:volume/volume-id&rdquo;     ConditionKey:&ldquo;department&rdquo;   ConditionValue:&ldquo;finance&rdquo;   ConditionType:&ldquo;StringEquals&rdquo;     ConditionKey:&ldquo;importance&rdquo;   ConditionValue:&ldquo;critical&rdquo;   ConditionType:&ldquo;StringEquals&rdquo;    Using these patterns would back up all Amazon Elastic Block Store (Amazon EBS) volumes that are tagged as &ldquo;department=finance&rdquo;, &ldquo;importance=critical&rdquo;, in addition to an EBS volume with the specified volume Id. Resources and conditions are additive in that all resources that match the pattern are selected. This shouldn&rsquo;t be confused with a logical AND, where all conditions must match. The matching patterns are logically &lsquo;put together using the OR operator. In other words, all patterns that match are selected for backup.</p>
 
                       </div>
                       <div class="declaration">
@@ -1251,7 +1284,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Returns information about a saved resource, including the last time it was backed-up, its Amazon Resource Name (ARN), and the AWS service type of the saved resource.</p>
+                        <p>Returns information about a saved resource, including the last time it was backed up, its Amazon Resource Name (ARN), and the AWS service type of the saved resource.</p>
 
                       </div>
                       <div class="declaration">
@@ -1286,6 +1319,33 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">describeRecoveryPoint</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/AWSBackup/DescribeRecoveryPointInput.html">DescribeRecoveryPointInput</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/AWSBackup/DescribeRecoveryPointOutput.html">DescribeRecoveryPointOutput</a></span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9AWSBackupAAV22describeRegionSettingsy3NIO15EventLoopFutureCyAB08DescribecD6OutputVGAB0icD5InputVF"></a>
+                    <a name="//apple_ref/swift/Method/describeRegionSettings(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9AWSBackupAAV22describeRegionSettingsy3NIO15EventLoopFutureCyAB08DescribecD6OutputVGAB0icD5InputVF">describeRegionSettings(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the current service opt-in settings for the Region. If the service has a value set to true, AWS Backup attempts to protect that service&rsquo;s resources in this Region, when included in an on-demand backup or scheduled backup plan. If the value is set to false for a service, AWS Backup does not attempt to protect that service&rsquo;s resources in this Region.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">describeRegionSettings</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/AWSBackup/DescribeRegionSettingsInput.html">DescribeRegionSettingsInput</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/AWSBackup/DescribeRegionSettingsOutput.html">DescribeRegionSettingsOutput</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
                       </div>
@@ -1872,7 +1932,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Returns a list of key-value pairs assigned to a target recovery point, backup plan, or backup vault.</p>
+                        <p>Returns a list of key-value pairs assigned to a target recovery point, backup plan, or backup vault.   ListTags are currently only supported with Amazon EFS backups.</p>
 
                       </div>
                       <div class="declaration">
@@ -2155,6 +2215,34 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">updateRecoveryPointLifecycle</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/AWSBackup/UpdateRecoveryPointLifecycleInput.html">UpdateRecoveryPointLifecycleInput</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/AWSBackup/UpdateRecoveryPointLifecycleOutput.html">UpdateRecoveryPointLifecycleOutput</a></span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9AWSBackupAAV20updateRegionSettingsy3NIO15EventLoopFutureCyytGAB06UpdatecD5InputVF"></a>
+                    <a name="//apple_ref/swift/Method/updateRegionSettings(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9AWSBackupAAV20updateRegionSettingsy3NIO15EventLoopFutureCyytGAB06UpdatecD5InputVF">updateRegionSettings(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Updates the current service opt-in settings for the Region. If the service has a value set to true, AWS Backup attempts to protect that service&rsquo;s resources in this Region, when included in an on-demand backup or scheduled backup plan. If the value is set to false for a service, AWS Backup does not attempt to protect that service&rsquo;s resources in this Region.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">updateRegionSettings</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/AWSBackup/UpdateRegionSettingsInput.html">UpdateRegionSettingsInput</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Void</span><span class="o">&gt;</span></code></pre>
 
                         </div>
                       </div>
@@ -2482,7 +2570,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Returns a list of key-value pairs assigned to a target recovery point, backup plan, or backup vault.</p>
+                        <p>Returns a list of key-value pairs assigned to a target recovery point, backup plan, or backup vault.   ListTags are currently only supported with Amazon EFS backups.</p>
 
                       </div>
                       <div class="declaration">
@@ -3885,6 +3973,62 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DescribeRecoveryPointOutput</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9AWSBackupAAV27DescribeRegionSettingsInputV"></a>
+                    <a name="//apple_ref/swift/Struct/DescribeRegionSettingsInput" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9AWSBackupAAV27DescribeRegionSettingsInputV">DescribeRegionSettingsInput</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/AWSBackup/DescribeRegionSettingsInput.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DescribeRegionSettingsInput</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9AWSBackupAAV28DescribeRegionSettingsOutputV"></a>
+                    <a name="//apple_ref/swift/Struct/DescribeRegionSettingsOutput" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9AWSBackupAAV28DescribeRegionSettingsOutputV">DescribeRegionSettingsOutput</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/AWSBackup/DescribeRegionSettingsOutput.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DescribeRegionSettingsOutput</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
 
                         </div>
                       </div>
@@ -5341,6 +5485,34 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">UpdateRecoveryPointLifecycleOutput</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9AWSBackupAAV25UpdateRegionSettingsInputV"></a>
+                    <a name="//apple_ref/swift/Struct/UpdateRegionSettingsInput" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9AWSBackupAAV25UpdateRegionSettingsInputV">UpdateRegionSettingsInput</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/AWSBackup/UpdateRegionSettingsInput.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">UpdateRegionSettingsInput</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
 
                         </div>
                       </div>

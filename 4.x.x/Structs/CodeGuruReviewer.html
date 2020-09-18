@@ -14,7 +14,7 @@
     <a title="CodeGuruReviewer Structure Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html"> Docs</a> (60% documented)</p>
+        <p><a href="../index.html"> Docs</a> (59% documented)</p>
         <p class="header-right"><a href="https://github.com/swift-aws/aws-sdk-swift"><img src="../img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
@@ -74,6 +74,9 @@
             <a href="../AppSync.html">AppSync</a>
           </li>
           <li class="nav-group-name">
+            <a href="../Appflow.html">Appflow</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../ApplicationAutoScaling.html">ApplicationAutoScaling</a>
           </li>
           <li class="nav-group-name">
@@ -96,6 +99,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../Batch.html">Batch</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Braket.html">Braket</a>
           </li>
           <li class="nav-group-name">
             <a href="../Budgets.html">Budgets</a>
@@ -138,6 +144,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../CloudWatchLogs.html">CloudWatchLogs</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../CodeArtifact.html">CodeArtifact</a>
           </li>
           <li class="nav-group-name">
             <a href="../CodeBuild.html">CodeBuild</a>
@@ -326,7 +335,16 @@
             <a href="../Health.html">Health</a>
           </li>
           <li class="nav-group-name">
+            <a href="../Honeycode.html">Honeycode</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../IAM.html">IAM</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../IVS.html">IVS</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../IdentityStore.html">IdentityStore</a>
           </li>
           <li class="nav-group-name">
             <a href="../Imagebuilder.html">Imagebuilder</a>
@@ -363,6 +381,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../IoTSecureTunneling.html">IoTSecureTunneling</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../IoTSiteWise.html">IoTSiteWise</a>
           </li>
           <li class="nav-group-name">
             <a href="../IoTThingsGraph.html">IoTThingsGraph</a>
@@ -426,6 +447,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../Macie.html">Macie</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Macie2.html">Macie2</a>
           </li>
           <li class="nav-group-name">
             <a href="../ManagedBlockchain.html">ManagedBlockchain</a>
@@ -545,6 +569,9 @@
             <a href="../Redshift.html">Redshift</a>
           </li>
           <li class="nav-group-name">
+            <a href="../RedshiftDataAPIService.html">RedshiftDataAPIService</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../Rekognition.html">Rekognition</a>
           </li>
           <li class="nav-group-name">
@@ -594,6 +621,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../SSO.html">SSO</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../SSOAdmin.html">SSOAdmin</a>
           </li>
           <li class="nav-group-name">
             <a href="../SSOOIDC.html">SSOOIDC</a>
@@ -651,6 +681,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../Support.html">Support</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Synthetics.html">Synthetics</a>
           </li>
           <li class="nav-group-name">
             <a href="../Textract.html">Textract</a>
@@ -729,7 +762,7 @@
               </div>
             <p>Client object for interacting with AWS CodeGuruReviewer service.</p>
 
-<p>This section provides documentation for the Amazon CodeGuru Reviewer API operations.</p>
+<p>This section provides documentation for the Amazon CodeGuru Reviewer API operations. CodeGuru Reviewer is a service that uses program analysis and machine learning to detect potential defects that are difficult for developers to find and recommends fixes in your Java code. By proactively detecting and providing recommendations for addressing code defects and implementing best practices, CodeGuru Reviewer improves the overall quality and maintainability of your code base during the code review stage. For more information about CodeGuru Reviewer, see the  Amazon CodeGuru Reviewer User Guide.</p>
 
           </section>
           <section class="section task-group-section">
@@ -922,7 +955,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Associates an AWS CodeCommit repository with Amazon CodeGuru Reviewer. When you associate an AWS CodeCommit repository with Amazon CodeGuru Reviewer, Amazon CodeGuru Reviewer will provide recommendations for each pull request. You can view recommendations in the AWS CodeCommit repository. You can associate a GitHub repository using the Amazon CodeGuru Reviewer console.</p>
+                        <p>Use to associate an AWS CodeCommit repository or a repostory managed by AWS CodeStar Connections with Amazon CodeGuru Reviewer. When you associate a repository, CodeGuru Reviewer reviews source code changes in the repository&rsquo;s pull requests and provides automatic recommendations. You can view recommendations using the CodeGuru Reviewer console. For more information, see Recommendations in Amazon CodeGuru Reviewer in the Amazon CodeGuru Reviewer User Guide.  If you associate a CodeCommit repository, it must be in the same AWS Region and AWS account where its CodeGuru Reviewer code reviews are configured. Bitbucket and GitHub Enterprise Server repositories are managed by AWS CodeStar Connections to connect to CodeGuru Reviewer. For more information, see Connect to a repository source provider in the Amazon CodeGuru Reviewer User Guide.    You cannot use the CodeGuru Reviewer SDK or the AWS CLI to associate a GitHub repository with Amazon CodeGuru Reviewer. To associate a GitHub repository, use the console. For more information, see Getting started with CodeGuru Reviewer in the CodeGuru Reviewer User Guide.</p>
 
                       </div>
                       <div class="declaration">
@@ -930,6 +963,87 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">associateRepository</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/CodeGuruReviewer/AssociateRepositoryRequest.html">AssociateRepositoryRequest</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/CodeGuruReviewer/AssociateRepositoryResponse.html">AssociateRepositoryResponse</a></span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16CodeGuruReviewerAAV06createA6Reviewy3NIO15EventLoopFutureCyAB06CreateaE8ResponseVGAB0jaE7RequestVF"></a>
+                    <a name="//apple_ref/swift/Method/createCodeReview(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16CodeGuruReviewerAAV06createA6Reviewy3NIO15EventLoopFutureCyAB06CreateaE8ResponseVGAB0jaE7RequestVF">createCodeReview(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Use to create a code review for a repository analysis.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">createCodeReview</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/CodeGuruReviewer/CreateCodeReviewRequest.html">CreateCodeReviewRequest</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/CodeGuruReviewer/CreateCodeReviewResponse.html">CreateCodeReviewResponse</a></span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16CodeGuruReviewerAAV08describeA6Reviewy3NIO15EventLoopFutureCyAB08DescribeaE8ResponseVGAB0jaE7RequestVF"></a>
+                    <a name="//apple_ref/swift/Method/describeCodeReview(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16CodeGuruReviewerAAV08describeA6Reviewy3NIO15EventLoopFutureCyAB08DescribeaE8ResponseVGAB0jaE7RequestVF">describeCodeReview(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the metadata associated with the code review along with its status.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">describeCodeReview</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/CodeGuruReviewer/DescribeCodeReviewRequest.html">DescribeCodeReviewRequest</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/CodeGuruReviewer/DescribeCodeReviewResponse.html">DescribeCodeReviewResponse</a></span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16CodeGuruReviewerAAV30describeRecommendationFeedbacky3NIO15EventLoopFutureCyAB08DescribeeF8ResponseVGAB0keF7RequestVF"></a>
+                    <a name="//apple_ref/swift/Method/describeRecommendationFeedback(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16CodeGuruReviewerAAV30describeRecommendationFeedbacky3NIO15EventLoopFutureCyAB08DescribeeF8ResponseVGAB0keF7RequestVF">describeRecommendationFeedback(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Describes the customer feedback for a CodeGuru Reviewer recommendation.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">describeRecommendationFeedback</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/CodeGuruReviewer/DescribeRecommendationFeedbackRequest.html">DescribeRecommendationFeedbackRequest</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/CodeGuruReviewer/DescribeRecommendationFeedbackResponse.html">DescribeRecommendationFeedbackResponse</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
                       </div>
@@ -949,7 +1063,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Describes a repository association.</p>
+                        <p>Returns a  RepositoryAssociation  object that contains information about the requested repository association.</p>
 
                       </div>
                       <div class="declaration">
@@ -993,6 +1107,87 @@
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/s:16CodeGuruReviewerAAV04listA7Reviewsy3NIO15EventLoopFutureCyAB04ListaE8ResponseVGAB0jaE7RequestVF"></a>
+                    <a name="//apple_ref/swift/Method/listCodeReviews(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16CodeGuruReviewerAAV04listA7Reviewsy3NIO15EventLoopFutureCyAB04ListaE8ResponseVGAB0jaE7RequestVF">listCodeReviews(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Lists all the code reviews that the customer has created in the past 90 days.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">listCodeReviews</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/CodeGuruReviewer/ListCodeReviewsRequest.html">ListCodeReviewsRequest</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/CodeGuruReviewer/ListCodeReviewsResponse.html">ListCodeReviewsResponse</a></span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16CodeGuruReviewerAAV26listRecommendationFeedbacky3NIO15EventLoopFutureCyAB04ListeF8ResponseVGAB0keF7RequestVF"></a>
+                    <a name="//apple_ref/swift/Method/listRecommendationFeedback(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16CodeGuruReviewerAAV26listRecommendationFeedbacky3NIO15EventLoopFutureCyAB04ListeF8ResponseVGAB0keF7RequestVF">listRecommendationFeedback(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns a list of  RecommendationFeedbackSummary  objects that contain customer recommendation feedback for all CodeGuru Reviewer users.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">listRecommendationFeedback</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/CodeGuruReviewer/ListRecommendationFeedbackRequest.html">ListRecommendationFeedbackRequest</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/CodeGuruReviewer/ListRecommendationFeedbackResponse.html">ListRecommendationFeedbackResponse</a></span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16CodeGuruReviewerAAV19listRecommendationsy3NIO15EventLoopFutureCyAB04ListE8ResponseVGAB0jE7RequestVF"></a>
+                    <a name="//apple_ref/swift/Method/listRecommendations(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16CodeGuruReviewerAAV19listRecommendationsy3NIO15EventLoopFutureCyAB04ListE8ResponseVGAB0jE7RequestVF">listRecommendations(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the list of all recommendations for a completed code review.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">listRecommendations</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/CodeGuruReviewer/ListRecommendationsRequest.html">ListRecommendationsRequest</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/CodeGuruReviewer/ListRecommendationsResponse.html">ListRecommendationsResponse</a></span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/s:16CodeGuruReviewerAAV26listRepositoryAssociationsy3NIO15EventLoopFutureCyAB04ListeF8ResponseVGAB0keF7RequestVF"></a>
                     <a name="//apple_ref/swift/Method/listRepositoryAssociations(_:)" class="dashAnchor"></a>
                     <a class="token" href="#/s:16CodeGuruReviewerAAV26listRepositoryAssociationsy3NIO15EventLoopFutureCyAB04ListeF8ResponseVGAB0keF7RequestVF">listRepositoryAssociations(_:)</a>
@@ -1003,7 +1198,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Lists repository associations. You can optionally filter on one or more of the following recommendation properties: provider types, states, names, and owners.</p>
+                        <p>Returns a list of  RepositoryAssociationSummary  objects that contain summary information about a repository association. You can filter the returned list by  ProviderType ,  Name ,  State , and  Owner .</p>
 
                       </div>
                       <div class="declaration">
@@ -1011,6 +1206,33 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">listRepositoryAssociations</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/CodeGuruReviewer/ListRepositoryAssociationsRequest.html">ListRepositoryAssociationsRequest</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/CodeGuruReviewer/ListRepositoryAssociationsResponse.html">ListRepositoryAssociationsResponse</a></span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16CodeGuruReviewerAAV25putRecommendationFeedbacky3NIO15EventLoopFutureCyAB03PuteF8ResponseVGAB0keF7RequestVF"></a>
+                    <a name="//apple_ref/swift/Method/putRecommendationFeedback(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16CodeGuruReviewerAAV25putRecommendationFeedbacky3NIO15EventLoopFutureCyAB03PuteF8ResponseVGAB0keF7RequestVF">putRecommendationFeedback(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Stores customer feedback for a CodeGuru Reviewer recommendation. When this API is called again with different reactions the previous feedback is overwritten.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">putRecommendationFeedback</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/CodeGuruReviewer/PutRecommendationFeedbackRequest.html">PutRecommendationFeedbackRequest</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/CodeGuruReviewer/PutRecommendationFeedbackResponse.html">PutRecommendationFeedbackResponse</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
                       </div>
@@ -1031,6 +1253,87 @@
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/s:16CodeGuruReviewerAAV04listA16ReviewsPaginator_6onPage3NIO15EventLoopFutureCyytGAB04ListaE7RequestV_AGySbGAB0maE8ResponseV_AE0jK0_ptctF"></a>
+                    <a name="//apple_ref/swift/Method/listCodeReviewsPaginator(_:onPage:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16CodeGuruReviewerAAV04listA16ReviewsPaginator_6onPage3NIO15EventLoopFutureCyytGAB04ListaE7RequestV_AGySbGAB0maE8ResponseV_AE0jK0_ptctF">listCodeReviewsPaginator(_:onPage:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Lists all the code reviews that the customer has created in the past 90 days.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">listCodeReviewsPaginator</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/CodeGuruReviewer/ListCodeReviewsRequest.html">ListCodeReviewsRequest</a></span><span class="p">,</span> <span class="nv">onPage</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/CodeGuruReviewer/ListCodeReviewsResponse.html">ListCodeReviewsResponse</a></span><span class="p">,</span> <span class="kt">EventLoop</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Bool</span><span class="o">&gt;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Void</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16CodeGuruReviewerAAV35listRecommendationFeedbackPaginator_6onPage3NIO15EventLoopFutureCyytGAB04ListeF7RequestV_AGySbGAB0neF8ResponseV_AE0kL0_ptctF"></a>
+                    <a name="//apple_ref/swift/Method/listRecommendationFeedbackPaginator(_:onPage:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16CodeGuruReviewerAAV35listRecommendationFeedbackPaginator_6onPage3NIO15EventLoopFutureCyytGAB04ListeF7RequestV_AGySbGAB0neF8ResponseV_AE0kL0_ptctF">listRecommendationFeedbackPaginator(_:onPage:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns a list of  RecommendationFeedbackSummary  objects that contain customer recommendation feedback for all CodeGuru Reviewer users.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">listRecommendationFeedbackPaginator</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/CodeGuruReviewer/ListRecommendationFeedbackRequest.html">ListRecommendationFeedbackRequest</a></span><span class="p">,</span> <span class="nv">onPage</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/CodeGuruReviewer/ListRecommendationFeedbackResponse.html">ListRecommendationFeedbackResponse</a></span><span class="p">,</span> <span class="kt">EventLoop</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Bool</span><span class="o">&gt;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Void</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16CodeGuruReviewerAAV28listRecommendationsPaginator_6onPage3NIO15EventLoopFutureCyytGAB04ListE7RequestV_AGySbGAB0mE8ResponseV_AE0jK0_ptctF"></a>
+                    <a name="//apple_ref/swift/Method/listRecommendationsPaginator(_:onPage:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16CodeGuruReviewerAAV28listRecommendationsPaginator_6onPage3NIO15EventLoopFutureCyytGAB04ListE7RequestV_AGySbGAB0mE8ResponseV_AE0jK0_ptctF">listRecommendationsPaginator(_:onPage:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the list of all recommendations for a completed code review.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">listRecommendationsPaginator</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/CodeGuruReviewer/ListRecommendationsRequest.html">ListRecommendationsRequest</a></span><span class="p">,</span> <span class="nv">onPage</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/CodeGuruReviewer/ListRecommendationsResponse.html">ListRecommendationsResponse</a></span><span class="p">,</span> <span class="kt">EventLoop</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Bool</span><span class="o">&gt;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Void</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/s:16CodeGuruReviewerAAV35listRepositoryAssociationsPaginator_6onPage3NIO15EventLoopFutureCyytGAB04ListeF7RequestV_AGySbGAB0neF8ResponseV_AE0kL0_ptctF"></a>
                     <a name="//apple_ref/swift/Method/listRepositoryAssociationsPaginator(_:onPage:)" class="dashAnchor"></a>
                     <a class="token" href="#/s:16CodeGuruReviewerAAV35listRepositoryAssociationsPaginator_6onPage3NIO15EventLoopFutureCyytGAB04ListeF7RequestV_AGySbGAB0neF8ResponseV_AE0kL0_ptctF">listRepositoryAssociationsPaginator(_:onPage:)</a>
@@ -1041,7 +1344,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Lists repository associations. You can optionally filter on one or more of the following recommendation properties: provider types, states, names, and owners.</p>
+                        <p>Returns a list of  RepositoryAssociationSummary  objects that contain summary information about a repository association. You can filter the returned list by  ProviderType ,  Name ,  State , and  Owner .</p>
 
                       </div>
                       <div class="declaration">
@@ -1066,6 +1369,93 @@
                 </a>
               </div>
               <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16CodeGuruReviewerAAV04ListA14ReviewsRequestV"></a>
+                    <a name="//apple_ref/swift/Struct/ListCodeReviewsRequest" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16CodeGuruReviewerAAV04ListA14ReviewsRequestV">ListCodeReviewsRequest</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/CodeGuruReviewer/ListCodeReviewsRequest.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ListCodeReviewsRequest</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt"><a href="../Structs/CodeGuruReviewer.html">CodeGuruReviewer</a></span><span class="o">.</span><span class="kt">ListCodeReviewsRequest</span><span class="p">:</span> <span class="kt"><a href="../Protocols/AWSPaginateStringToken.html">AWSPaginateStringToken</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16CodeGuruReviewerAAV33ListRecommendationFeedbackRequestV"></a>
+                    <a name="//apple_ref/swift/Struct/ListRecommendationFeedbackRequest" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16CodeGuruReviewerAAV33ListRecommendationFeedbackRequestV">ListRecommendationFeedbackRequest</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/CodeGuruReviewer/ListRecommendationFeedbackRequest.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ListRecommendationFeedbackRequest</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt"><a href="../Structs/CodeGuruReviewer.html">CodeGuruReviewer</a></span><span class="o">.</span><span class="kt">ListRecommendationFeedbackRequest</span><span class="p">:</span> <span class="kt"><a href="../Protocols/AWSPaginateStringToken.html">AWSPaginateStringToken</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16CodeGuruReviewerAAV26ListRecommendationsRequestV"></a>
+                    <a name="//apple_ref/swift/Struct/ListRecommendationsRequest" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16CodeGuruReviewerAAV26ListRecommendationsRequestV">ListRecommendationsRequest</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/CodeGuruReviewer/ListRecommendationsRequest.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ListRecommendationsRequest</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt"><a href="../Structs/CodeGuruReviewer.html">CodeGuruReviewer</a></span><span class="o">.</span><span class="kt">ListRecommendationsRequest</span><span class="p">:</span> <span class="kt"><a href="../Protocols/AWSPaginateStringToken.html">AWSPaginateStringToken</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
                 <li class="item">
                   <div>
                     <code>
@@ -1173,6 +1563,286 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">CodeCommitRepository</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16CodeGuruReviewerAAV0A6ReviewV"></a>
+                    <a name="//apple_ref/swift/Struct/CodeReview" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16CodeGuruReviewerAAV0A6ReviewV">CodeReview</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/CodeGuruReviewer/CodeReview.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">CodeReview</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16CodeGuruReviewerAAV0A13ReviewSummaryV"></a>
+                    <a name="//apple_ref/swift/Struct/CodeReviewSummary" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16CodeGuruReviewerAAV0A13ReviewSummaryV">CodeReviewSummary</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/CodeGuruReviewer/CodeReviewSummary.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">CodeReviewSummary</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16CodeGuruReviewerAAV0A10ReviewTypeV"></a>
+                    <a name="//apple_ref/swift/Struct/CodeReviewType" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16CodeGuruReviewerAAV0A10ReviewTypeV">CodeReviewType</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/CodeGuruReviewer/CodeReviewType.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">CodeReviewType</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16CodeGuruReviewerAAV016CommitDiffSourceA4TypeV"></a>
+                    <a name="//apple_ref/swift/Struct/CommitDiffSourceCodeType" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16CodeGuruReviewerAAV016CommitDiffSourceA4TypeV">CommitDiffSourceCodeType</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/CodeGuruReviewer/CommitDiffSourceCodeType.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">CommitDiffSourceCodeType</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16CodeGuruReviewerAAV06CreateA13ReviewRequestV"></a>
+                    <a name="//apple_ref/swift/Struct/CreateCodeReviewRequest" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16CodeGuruReviewerAAV06CreateA13ReviewRequestV">CreateCodeReviewRequest</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/CodeGuruReviewer/CreateCodeReviewRequest.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">CreateCodeReviewRequest</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16CodeGuruReviewerAAV06CreateA14ReviewResponseV"></a>
+                    <a name="//apple_ref/swift/Struct/CreateCodeReviewResponse" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16CodeGuruReviewerAAV06CreateA14ReviewResponseV">CreateCodeReviewResponse</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/CodeGuruReviewer/CreateCodeReviewResponse.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">CreateCodeReviewResponse</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16CodeGuruReviewerAAV08DescribeA13ReviewRequestV"></a>
+                    <a name="//apple_ref/swift/Struct/DescribeCodeReviewRequest" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16CodeGuruReviewerAAV08DescribeA13ReviewRequestV">DescribeCodeReviewRequest</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/CodeGuruReviewer/DescribeCodeReviewRequest.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DescribeCodeReviewRequest</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16CodeGuruReviewerAAV08DescribeA14ReviewResponseV"></a>
+                    <a name="//apple_ref/swift/Struct/DescribeCodeReviewResponse" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16CodeGuruReviewerAAV08DescribeA14ReviewResponseV">DescribeCodeReviewResponse</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/CodeGuruReviewer/DescribeCodeReviewResponse.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DescribeCodeReviewResponse</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16CodeGuruReviewerAAV37DescribeRecommendationFeedbackRequestV"></a>
+                    <a name="//apple_ref/swift/Struct/DescribeRecommendationFeedbackRequest" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16CodeGuruReviewerAAV37DescribeRecommendationFeedbackRequestV">DescribeRecommendationFeedbackRequest</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/CodeGuruReviewer/DescribeRecommendationFeedbackRequest.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DescribeRecommendationFeedbackRequest</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16CodeGuruReviewerAAV38DescribeRecommendationFeedbackResponseV"></a>
+                    <a name="//apple_ref/swift/Struct/DescribeRecommendationFeedbackResponse" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16CodeGuruReviewerAAV38DescribeRecommendationFeedbackResponseV">DescribeRecommendationFeedbackResponse</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/CodeGuruReviewer/DescribeRecommendationFeedbackResponse.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DescribeRecommendationFeedbackResponse</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
 
                         </div>
                       </div>
@@ -1294,6 +1964,90 @@
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/s:16CodeGuruReviewerAAV04ListA15ReviewsResponseV"></a>
+                    <a name="//apple_ref/swift/Struct/ListCodeReviewsResponse" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16CodeGuruReviewerAAV04ListA15ReviewsResponseV">ListCodeReviewsResponse</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/CodeGuruReviewer/ListCodeReviewsResponse.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ListCodeReviewsResponse</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16CodeGuruReviewerAAV34ListRecommendationFeedbackResponseV"></a>
+                    <a name="//apple_ref/swift/Struct/ListRecommendationFeedbackResponse" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16CodeGuruReviewerAAV34ListRecommendationFeedbackResponseV">ListRecommendationFeedbackResponse</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/CodeGuruReviewer/ListRecommendationFeedbackResponse.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ListRecommendationFeedbackResponse</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16CodeGuruReviewerAAV27ListRecommendationsResponseV"></a>
+                    <a name="//apple_ref/swift/Struct/ListRecommendationsResponse" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16CodeGuruReviewerAAV27ListRecommendationsResponseV">ListRecommendationsResponse</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/CodeGuruReviewer/ListRecommendationsResponse.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ListRecommendationsResponse</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/s:16CodeGuruReviewerAAV34ListRepositoryAssociationsResponseV"></a>
                     <a name="//apple_ref/swift/Struct/ListRepositoryAssociationsResponse" class="dashAnchor"></a>
                     <a class="token" href="#/s:16CodeGuruReviewerAAV34ListRepositoryAssociationsResponseV">ListRepositoryAssociationsResponse</a>
@@ -1322,6 +2076,202 @@
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/s:16CodeGuruReviewerAAV7MetricsV"></a>
+                    <a name="//apple_ref/swift/Struct/Metrics" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16CodeGuruReviewerAAV7MetricsV">Metrics</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/CodeGuruReviewer/Metrics.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Metrics</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16CodeGuruReviewerAAV14MetricsSummaryV"></a>
+                    <a name="//apple_ref/swift/Struct/MetricsSummary" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16CodeGuruReviewerAAV14MetricsSummaryV">MetricsSummary</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/CodeGuruReviewer/MetricsSummary.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">MetricsSummary</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16CodeGuruReviewerAAV32PutRecommendationFeedbackRequestV"></a>
+                    <a name="//apple_ref/swift/Struct/PutRecommendationFeedbackRequest" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16CodeGuruReviewerAAV32PutRecommendationFeedbackRequestV">PutRecommendationFeedbackRequest</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/CodeGuruReviewer/PutRecommendationFeedbackRequest.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">PutRecommendationFeedbackRequest</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16CodeGuruReviewerAAV33PutRecommendationFeedbackResponseV"></a>
+                    <a name="//apple_ref/swift/Struct/PutRecommendationFeedbackResponse" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16CodeGuruReviewerAAV33PutRecommendationFeedbackResponseV">PutRecommendationFeedbackResponse</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/CodeGuruReviewer/PutRecommendationFeedbackResponse.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">PutRecommendationFeedbackResponse</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16CodeGuruReviewerAAV22RecommendationFeedbackV"></a>
+                    <a name="//apple_ref/swift/Struct/RecommendationFeedback" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16CodeGuruReviewerAAV22RecommendationFeedbackV">RecommendationFeedback</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/CodeGuruReviewer/RecommendationFeedback.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">RecommendationFeedback</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16CodeGuruReviewerAAV29RecommendationFeedbackSummaryV"></a>
+                    <a name="//apple_ref/swift/Struct/RecommendationFeedbackSummary" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16CodeGuruReviewerAAV29RecommendationFeedbackSummaryV">RecommendationFeedbackSummary</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/CodeGuruReviewer/RecommendationFeedbackSummary.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">RecommendationFeedbackSummary</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16CodeGuruReviewerAAV21RecommendationSummaryV"></a>
+                    <a name="//apple_ref/swift/Struct/RecommendationSummary" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16CodeGuruReviewerAAV21RecommendationSummaryV">RecommendationSummary</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/CodeGuruReviewer/RecommendationSummary.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">RecommendationSummary</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/s:16CodeGuruReviewerAAV10RepositoryV"></a>
                     <a name="//apple_ref/swift/Struct/Repository" class="dashAnchor"></a>
                     <a class="token" href="#/s:16CodeGuruReviewerAAV10RepositoryV">Repository</a>
@@ -1341,6 +2291,34 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Repository</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16CodeGuruReviewerAAV18RepositoryAnalysisV"></a>
+                    <a name="//apple_ref/swift/Struct/RepositoryAnalysis" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16CodeGuruReviewerAAV18RepositoryAnalysisV">RepositoryAnalysis</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/CodeGuruReviewer/RepositoryAnalysis.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">RepositoryAnalysis</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
 
                         </div>
                       </div>
@@ -1403,6 +2381,90 @@
                     </section>
                   </div>
                 </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16CodeGuruReviewerAAV020RepositoryHeadSourceA4TypeV"></a>
+                    <a name="//apple_ref/swift/Struct/RepositoryHeadSourceCodeType" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16CodeGuruReviewerAAV020RepositoryHeadSourceA4TypeV">RepositoryHeadSourceCodeType</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/CodeGuruReviewer/RepositoryHeadSourceCodeType.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">RepositoryHeadSourceCodeType</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16CodeGuruReviewerAAV06SourceA4TypeV"></a>
+                    <a name="//apple_ref/swift/Struct/SourceCodeType" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16CodeGuruReviewerAAV06SourceA4TypeV">SourceCodeType</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/CodeGuruReviewer/SourceCodeType.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">SourceCodeType</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16CodeGuruReviewerAAV26ThirdPartySourceRepositoryV"></a>
+                    <a name="//apple_ref/swift/Struct/ThirdPartySourceRepository" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16CodeGuruReviewerAAV26ThirdPartySourceRepositoryV">ThirdPartySourceRepository</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/CodeGuruReviewer/ThirdPartySourceRepository.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ThirdPartySourceRepository</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
               </ul>
             </div>
             <div class="task-group">
@@ -1414,6 +2476,34 @@
                 </a>
               </div>
               <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16CodeGuruReviewerAAV8JobStateO"></a>
+                    <a name="//apple_ref/swift/Enum/JobState" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16CodeGuruReviewerAAV8JobStateO">JobState</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/CodeGuruReviewer/JobState.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">JobState</span> <span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="kt">CustomStringConvertible</span><span class="p">,</span> <span class="kt">Codable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
                 <li class="item">
                   <div>
                     <code>
@@ -1445,6 +2535,34 @@
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/s:16CodeGuruReviewerAAV8ReactionO"></a>
+                    <a name="//apple_ref/swift/Enum/Reaction" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16CodeGuruReviewerAAV8ReactionO">Reaction</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/CodeGuruReviewer/Reaction.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">Reaction</span> <span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="kt">CustomStringConvertible</span><span class="p">,</span> <span class="kt">Codable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/s:16CodeGuruReviewerAAV26RepositoryAssociationStateO"></a>
                     <a name="//apple_ref/swift/Enum/RepositoryAssociationState" class="dashAnchor"></a>
                     <a class="token" href="#/s:16CodeGuruReviewerAAV26RepositoryAssociationStateO">RepositoryAssociationState</a>
@@ -1464,6 +2582,34 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">RepositoryAssociationState</span> <span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="kt">CustomStringConvertible</span><span class="p">,</span> <span class="kt">Codable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16CodeGuruReviewerAAV4TypeO"></a>
+                    <a name="//apple_ref/swift/Enum/Type" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16CodeGuruReviewerAAV4TypeO">Type</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/CodeGuruReviewer/Type.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="p">`</span><span class="nv">Type</span><span class="p">`</span> <span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="kt">CustomStringConvertible</span><span class="p">,</span> <span class="kt">Codable</span></code></pre>
 
                         </div>
                       </div>

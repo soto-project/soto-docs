@@ -14,7 +14,7 @@
     <a title="SearchTablesRequest Structure Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../../index.html"> Docs</a> (60% documented)</p>
+        <p><a href="../../index.html"> Docs</a> (59% documented)</p>
         <p class="header-right"><a href="https://github.com/swift-aws/aws-sdk-swift"><img src="../../img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
@@ -74,6 +74,9 @@
             <a href="../../AppSync.html">AppSync</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../Appflow.html">Appflow</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../ApplicationAutoScaling.html">ApplicationAutoScaling</a>
           </li>
           <li class="nav-group-name">
@@ -96,6 +99,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../Batch.html">Batch</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../Braket.html">Braket</a>
           </li>
           <li class="nav-group-name">
             <a href="../../Budgets.html">Budgets</a>
@@ -138,6 +144,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../CloudWatchLogs.html">CloudWatchLogs</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../CodeArtifact.html">CodeArtifact</a>
           </li>
           <li class="nav-group-name">
             <a href="../../CodeBuild.html">CodeBuild</a>
@@ -326,7 +335,16 @@
             <a href="../../Health.html">Health</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../Honeycode.html">Honeycode</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../IAM.html">IAM</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../IVS.html">IVS</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../IdentityStore.html">IdentityStore</a>
           </li>
           <li class="nav-group-name">
             <a href="../../Imagebuilder.html">Imagebuilder</a>
@@ -363,6 +381,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../IoTSecureTunneling.html">IoTSecureTunneling</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../IoTSiteWise.html">IoTSiteWise</a>
           </li>
           <li class="nav-group-name">
             <a href="../../IoTThingsGraph.html">IoTThingsGraph</a>
@@ -426,6 +447,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../Macie.html">Macie</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../Macie2.html">Macie2</a>
           </li>
           <li class="nav-group-name">
             <a href="../../ManagedBlockchain.html">ManagedBlockchain</a>
@@ -545,6 +569,9 @@
             <a href="../../Redshift.html">Redshift</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../RedshiftDataAPIService.html">RedshiftDataAPIService</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../Rekognition.html">Rekognition</a>
           </li>
           <li class="nav-group-name">
@@ -594,6 +621,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../SSO.html">SSO</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../SSOAdmin.html">SSOAdmin</a>
           </li>
           <li class="nav-group-name">
             <a href="../../SSOOIDC.html">SSOOIDC</a>
@@ -651,6 +681,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../Support.html">Support</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../Synthetics.html">Synthetics</a>
           </li>
           <li class="nav-group-name">
             <a href="../../Textract.html">Textract</a>
@@ -773,7 +806,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>A unique identifier, consisting of  account_id/datalake.</p>
+                        <p>A unique identifier, consisting of  account_id .</p>
 
                       </div>
                       <div class="declaration">
@@ -800,7 +833,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>A list of key-value pairs, and a comparator used to filter the search results. Returns all entities matching the predicate.</p>
+                        <p>A list of key-value pairs, and a comparator used to filter the search results. Returns all entities matching the predicate. The Comparator member of the PropertyPredicate struct is used only for time fields, and can be omitted for other field types. Also, when comparing string values, such as when Key=Name, a fuzzy match algorithm is used. The Key field (for example, the value of the Name field) is split on certain punctuation characters, for example, -, :, #, etc. into tokens. Then each token is exact-match compared with the Value member of PropertyPredicate. For example, if Key=Name and Value=link, tables named customer-link and xx-link-yy are returned, but xxlinkyy is not returned.</p>
 
                       </div>
                       <div class="declaration">
@@ -871,6 +904,33 @@
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/s:4GlueAAV19SearchTablesRequestV17resourceShareTypeAB08ResourcefG0OSgvp"></a>
+                    <a name="//apple_ref/swift/Property/resourceShareType" class="dashAnchor"></a>
+                    <a class="token" href="#/s:4GlueAAV19SearchTablesRequestV17resourceShareTypeAB08ResourcefG0OSgvp">resourceShareType</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Allows you to specify that you want to search the tables shared with your account. The allowable values are FOREIGN or ALL.    If set to FOREIGN, will search the tables shared with your account.    If set to ALL, will search the tables shared with your account, as well as the tables in yor local account.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">resourceShareType</span><span class="p">:</span> <span class="kt"><a href="../../Structs/Glue/ResourceShareType.html">ResourceShareType</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/s:4GlueAAV19SearchTablesRequestV10searchTextSSSgvp"></a>
                     <a name="//apple_ref/swift/Property/searchText" class="dashAnchor"></a>
                     <a class="token" href="#/s:4GlueAAV19SearchTablesRequestV10searchTextSSSgvp">searchText</a>
@@ -925,9 +985,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:4GlueAAV19SearchTablesRequestV9catalogId7filters10maxResults9nextToken10searchText12sortCriteriaADSSSg_SayAB17PropertyPredicateVGSgSiSgA2KSayAB13SortCriterionVGSgtcfc"></a>
-                    <a name="//apple_ref/swift/Method/init(catalogId:filters:maxResults:nextToken:searchText:sortCriteria:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:4GlueAAV19SearchTablesRequestV9catalogId7filters10maxResults9nextToken10searchText12sortCriteriaADSSSg_SayAB17PropertyPredicateVGSgSiSgA2KSayAB13SortCriterionVGSgtcfc">init(catalogId:filters:maxResults:nextToken:searchText:sortCriteria:)</a>
+                    <a name="/s:4GlueAAV19SearchTablesRequestV9catalogId7filters10maxResults9nextToken17resourceShareType10searchText12sortCriteriaADSSSg_SayAB17PropertyPredicateVGSgSiSgAlB08ResourcemN0OSgALSayAB13SortCriterionVGSgtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(catalogId:filters:maxResults:nextToken:resourceShareType:searchText:sortCriteria:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:4GlueAAV19SearchTablesRequestV9catalogId7filters10maxResults9nextToken17resourceShareType10searchText12sortCriteriaADSSSg_SayAB17PropertyPredicateVGSgSiSgAlB08ResourcemN0OSgALSayAB13SortCriterionVGSgtcfc">init(catalogId:filters:maxResults:nextToken:resourceShareType:searchText:sortCriteria:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -942,7 +1002,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">catalogId</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">filters</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../../Structs/Glue/PropertyPredicate.html">PropertyPredicate</a></span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">maxResults</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">nextToken</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">searchText</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">sortCriteria</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../../Structs/Glue/SortCriterion.html">SortCriterion</a></span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">catalogId</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">filters</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../../Structs/Glue/PropertyPredicate.html">PropertyPredicate</a></span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">maxResults</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">nextToken</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">resourceShareType</span><span class="p">:</span> <span class="kt"><a href="../../Structs/Glue/ResourceShareType.html">ResourceShareType</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">searchText</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">sortCriteria</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../../Structs/Glue/SortCriterion.html">SortCriterion</a></span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>

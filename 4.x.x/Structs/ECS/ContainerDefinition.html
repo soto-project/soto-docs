@@ -14,7 +14,7 @@
     <a title="ContainerDefinition Structure Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../../index.html"> Docs</a> (60% documented)</p>
+        <p><a href="../../index.html"> Docs</a> (59% documented)</p>
         <p class="header-right"><a href="https://github.com/swift-aws/aws-sdk-swift"><img src="../../img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
@@ -74,6 +74,9 @@
             <a href="../../AppSync.html">AppSync</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../Appflow.html">Appflow</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../ApplicationAutoScaling.html">ApplicationAutoScaling</a>
           </li>
           <li class="nav-group-name">
@@ -96,6 +99,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../Batch.html">Batch</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../Braket.html">Braket</a>
           </li>
           <li class="nav-group-name">
             <a href="../../Budgets.html">Budgets</a>
@@ -138,6 +144,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../CloudWatchLogs.html">CloudWatchLogs</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../CodeArtifact.html">CodeArtifact</a>
           </li>
           <li class="nav-group-name">
             <a href="../../CodeBuild.html">CodeBuild</a>
@@ -326,7 +335,16 @@
             <a href="../../Health.html">Health</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../Honeycode.html">Honeycode</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../IAM.html">IAM</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../IVS.html">IVS</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../IdentityStore.html">IdentityStore</a>
           </li>
           <li class="nav-group-name">
             <a href="../../Imagebuilder.html">Imagebuilder</a>
@@ -363,6 +381,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../IoTSecureTunneling.html">IoTSecureTunneling</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../IoTSiteWise.html">IoTSiteWise</a>
           </li>
           <li class="nav-group-name">
             <a href="../../IoTThingsGraph.html">IoTThingsGraph</a>
@@ -426,6 +447,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../Macie.html">Macie</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../Macie2.html">Macie2</a>
           </li>
           <li class="nav-group-name">
             <a href="../../ManagedBlockchain.html">ManagedBlockchain</a>
@@ -545,6 +569,9 @@
             <a href="../../Redshift.html">Redshift</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../RedshiftDataAPIService.html">RedshiftDataAPIService</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../Rekognition.html">Rekognition</a>
           </li>
           <li class="nav-group-name">
@@ -594,6 +621,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../SSO.html">SSO</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../SSOAdmin.html">SSOAdmin</a>
           </li>
           <li class="nav-group-name">
             <a href="../../SSOOIDC.html">SSOOIDC</a>
@@ -651,6 +681,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../Support.html">Support</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../Synthetics.html">Synthetics</a>
           </li>
           <li class="nav-group-name">
             <a href="../../Textract.html">Textract</a>
@@ -1023,6 +1056,33 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">environment</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../../Structs/ECS/KeyValuePair.html">KeyValuePair</a></span><span class="p">]?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:3ECSAAV19ContainerDefinitionV16environmentFilesSayAB15EnvironmentFileVGSgvp"></a>
+                    <a name="//apple_ref/swift/Property/environmentFiles" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3ECSAAV19ContainerDefinitionV16environmentFilesSayAB15EnvironmentFileVGSgvp">environmentFiles</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A list of files containing the environment variables to pass to a container. This parameter maps to the &ndash;env-file option to docker run. You can specify up to ten environment files. The file must have a .env file extension. Each line in an environment file should contain an environment variable in VARIABLE=VALUE format. Lines beginning with # are treated as comments and are ignored. For more information on the environment variable file syntax, see Declare default environment variables in file. If there are environment variables specified using the environment parameter in a container definition, they take precedence over the variables contained within an environment file. If multiple environment files are specified that contain the same variable, they are processed from the top down. It is recommended to use unique variable names. For more information, see Specifying Environment Variables in the Amazon Elastic Container Service Developer Guide. This field is not valid for containers in tasks using the Fargate launch type.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">environmentFiles</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../../Structs/ECS/EnvironmentFile.html">EnvironmentFile</a></span><span class="p">]?</span></code></pre>
 
                         </div>
                       </div>
@@ -1690,7 +1750,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>A list of ulimits to set in the container. This parameter maps to Ulimits in the Create a container section of the Docker Remote API and the &ndash;ulimit option to docker run. Valid naming values are displayed in the Ulimit data type. This parameter requires version 1.18 of the Docker Remote API or greater on your container instance. To check the Docker Remote API version on your container instance, log in to your container instance and run the following command: sudo docker version &ndash;format &lsquo;{{.Server.APIVersion}}&rsquo;   This parameter is not supported for Windows containers.</p>
+                        <p>A list of ulimits to set in the container. If a ulimit value is specified in a task definition, it will override the default values set by Docker. This parameter maps to Ulimits in the Create a container section of the Docker Remote API and the &ndash;ulimit option to docker run. Valid naming values are displayed in the Ulimit data type. This parameter requires version 1.18 of the Docker Remote API or greater on your container instance. To check the Docker Remote API version on your container instance, log in to your container instance and run the following command: sudo docker version &ndash;format &lsquo;{{.Server.APIVersion}}&rsquo;   This parameter is not supported for Windows containers.</p>
 
                       </div>
                       <div class="declaration">
@@ -1788,9 +1848,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:3ECSAAV19ContainerDefinitionV7command3cpu9dependsOn17disableNetworking16dnsSearchDomains0J7Servers12dockerLabels0N15SecurityOptions10entryPoint11environment9essential10extraHosts21firelensConfiguration11healthCheck8hostname5image11interactive5links15linuxParameters03logY06memory17memoryReservation11mountPoints4name12portMappings10privileged14pseudoTerminal22readonlyRootFilesystem21repositoryCredentials20resourceRequirements7secrets12startTimeout11stopTimeout14systemControls7ulimits4user11volumesFrom16workingDirectoryADSaySSGSg_SiSgSayAB0B10DependencyVGSgSbSgA16_A16_SDyS2SGSgA16_A16_SayAB12KeyValuePairVGSgA22_SayAB9HostEntryVGSgAB08FirelensY0VSgAB11HealthCheckVSgSSSgA39_A22_A16_AB15LinuxParametersVSgAB03LogY0VSgA17_A17_SayAB05MountS0VGSgA39_SayAB11PortMappingVGSgA22_A22_A22_AB21RepositoryCredentialsVSgSayAB19ResourceRequirementVGSgSayAB6SecretVGSgA17_A17_SayAB13SystemControlVGSgSayAB6UlimitVGSgA39_SayAB10VolumeFromVGSgA39_tcfc"></a>
-                    <a name="//apple_ref/swift/Method/init(command:cpu:dependsOn:disableNetworking:dnsSearchDomains:dnsServers:dockerLabels:dockerSecurityOptions:entryPoint:environment:essential:extraHosts:firelensConfiguration:healthCheck:hostname:image:interactive:links:linuxParameters:logConfiguration:memory:memoryReservation:mountPoints:name:portMappings:privileged:pseudoTerminal:readonlyRootFilesystem:repositoryCredentials:resourceRequirements:secrets:startTimeout:stopTimeout:systemControls:ulimits:user:volumesFrom:workingDirectory:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3ECSAAV19ContainerDefinitionV7command3cpu9dependsOn17disableNetworking16dnsSearchDomains0J7Servers12dockerLabels0N15SecurityOptions10entryPoint11environment9essential10extraHosts21firelensConfiguration11healthCheck8hostname5image11interactive5links15linuxParameters03logY06memory17memoryReservation11mountPoints4name12portMappings10privileged14pseudoTerminal22readonlyRootFilesystem21repositoryCredentials20resourceRequirements7secrets12startTimeout11stopTimeout14systemControls7ulimits4user11volumesFrom16workingDirectoryADSaySSGSg_SiSgSayAB0B10DependencyVGSgSbSgA16_A16_SDyS2SGSgA16_A16_SayAB12KeyValuePairVGSgA22_SayAB9HostEntryVGSgAB08FirelensY0VSgAB11HealthCheckVSgSSSgA39_A22_A16_AB15LinuxParametersVSgAB03LogY0VSgA17_A17_SayAB05MountS0VGSgA39_SayAB11PortMappingVGSgA22_A22_A22_AB21RepositoryCredentialsVSgSayAB19ResourceRequirementVGSgSayAB6SecretVGSgA17_A17_SayAB13SystemControlVGSgSayAB6UlimitVGSgA39_SayAB10VolumeFromVGSgA39_tcfc">init(command:cpu:dependsOn:disableNetworking:dnsSearchDomains:dnsServers:dockerLabels:dockerSecurityOptions:entryPoint:environment:essential:extraHosts:firelensConfiguration:healthCheck:hostname:image:interactive:links:linuxParameters:logConfiguration:memory:memoryReservation:mountPoints:name:portMappings:privileged:pseudoTerminal:readonlyRootFilesystem:repositoryCredentials:resourceRequirements:secrets:startTimeout:stopTimeout:systemControls:ulimits:user:volumesFrom:workingDirectory:)</a>
+                    <a name="/s:3ECSAAV19ContainerDefinitionV7command3cpu9dependsOn17disableNetworking16dnsSearchDomains0J7Servers12dockerLabels0N15SecurityOptions10entryPoint11environment0T5Files9essential10extraHosts21firelensConfiguration11healthCheck8hostname5image11interactive5links15linuxParameters03logZ06memory17memoryReservation11mountPoints4name12portMappings10privileged14pseudoTerminal22readonlyRootFilesystem21repositoryCredentials20resourceRequirements7secrets12startTimeout11stopTimeout14systemControls7ulimits4user11volumesFrom16workingDirectoryADSaySSGSg_SiSgSayAB0B10DependencyVGSgSbSgA17_A17_SDyS2SGSgA17_A17_SayAB12KeyValuePairVGSgSayAB15EnvironmentFileVGSgA23_SayAB9HostEntryVGSgAB08FirelensZ0VSgAB11HealthCheckVSgSSSgA44_A23_A17_AB15LinuxParametersVSgAB03LogZ0VSgA18_A18_SayAB05MountS0VGSgA44_SayAB11PortMappingVGSgA23_A23_A23_AB21RepositoryCredentialsVSgSayAB19ResourceRequirementVGSgSayAB6SecretVGSgA18_A18_SayAB13SystemControlVGSgSayAB6UlimitVGSgA44_SayAB10VolumeFromVGSgA44_tcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(command:cpu:dependsOn:disableNetworking:dnsSearchDomains:dnsServers:dockerLabels:dockerSecurityOptions:entryPoint:environment:environmentFiles:essential:extraHosts:firelensConfiguration:healthCheck:hostname:image:interactive:links:linuxParameters:logConfiguration:memory:memoryReservation:mountPoints:name:portMappings:privileged:pseudoTerminal:readonlyRootFilesystem:repositoryCredentials:resourceRequirements:secrets:startTimeout:stopTimeout:systemControls:ulimits:user:volumesFrom:workingDirectory:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3ECSAAV19ContainerDefinitionV7command3cpu9dependsOn17disableNetworking16dnsSearchDomains0J7Servers12dockerLabels0N15SecurityOptions10entryPoint11environment0T5Files9essential10extraHosts21firelensConfiguration11healthCheck8hostname5image11interactive5links15linuxParameters03logZ06memory17memoryReservation11mountPoints4name12portMappings10privileged14pseudoTerminal22readonlyRootFilesystem21repositoryCredentials20resourceRequirements7secrets12startTimeout11stopTimeout14systemControls7ulimits4user11volumesFrom16workingDirectoryADSaySSGSg_SiSgSayAB0B10DependencyVGSgSbSgA17_A17_SDyS2SGSgA17_A17_SayAB12KeyValuePairVGSgSayAB15EnvironmentFileVGSgA23_SayAB9HostEntryVGSgAB08FirelensZ0VSgAB11HealthCheckVSgSSSgA44_A23_A17_AB15LinuxParametersVSgAB03LogZ0VSgA18_A18_SayAB05MountS0VGSgA44_SayAB11PortMappingVGSgA23_A23_A23_AB21RepositoryCredentialsVSgSayAB19ResourceRequirementVGSgSayAB6SecretVGSgA18_A18_SayAB13SystemControlVGSgSayAB6UlimitVGSgA44_SayAB10VolumeFromVGSgA44_tcfc">init(command:cpu:dependsOn:disableNetworking:dnsSearchDomains:dnsServers:dockerLabels:dockerSecurityOptions:entryPoint:environment:environmentFiles:essential:extraHosts:firelensConfiguration:healthCheck:hostname:image:interactive:links:linuxParameters:logConfiguration:memory:memoryReservation:mountPoints:name:portMappings:privileged:pseudoTerminal:readonlyRootFilesystem:repositoryCredentials:resourceRequirements:secrets:startTimeout:stopTimeout:systemControls:ulimits:user:volumesFrom:workingDirectory:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1805,7 +1865,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">command</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">cpu</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">dependsOn</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../../Structs/ECS/ContainerDependency.html">ContainerDependency</a></span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">disableNetworking</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">dnsSearchDomains</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">dnsServers</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">dockerLabels</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt">String</span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">dockerSecurityOptions</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">entryPoint</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">environment</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../../Structs/ECS/KeyValuePair.html">KeyValuePair</a></span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">essential</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">extraHosts</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../../Structs/ECS/HostEntry.html">HostEntry</a></span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">firelensConfiguration</span><span class="p">:</span> <span class="kt"><a href="../../Structs/ECS/FirelensConfiguration.html">FirelensConfiguration</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">healthCheck</span><span class="p">:</span> <span class="kt"><a href="../../Structs/ECS/HealthCheck.html">HealthCheck</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">hostname</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">image</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">interactive</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">links</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">linuxParameters</span><span class="p">:</span> <span class="kt"><a href="../../Structs/ECS/LinuxParameters.html">LinuxParameters</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">logConfiguration</span><span class="p">:</span> <span class="kt"><a href="../../Structs/ECS/LogConfiguration.html">LogConfiguration</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">memory</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">memoryReservation</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">mountPoints</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../../Structs/ECS/MountPoint.html">MountPoint</a></span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">name</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">portMappings</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../../Structs/ECS/PortMapping.html">PortMapping</a></span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">privileged</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">pseudoTerminal</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">readonlyRootFilesystem</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">repositoryCredentials</span><span class="p">:</span> <span class="kt"><a href="../../Structs/ECS/RepositoryCredentials.html">RepositoryCredentials</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">resourceRequirements</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../../Structs/ECS/ResourceRequirement.html">ResourceRequirement</a></span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">secrets</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../../Structs/ECS/Secret.html">Secret</a></span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">startTimeout</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">stopTimeout</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">systemControls</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../../Structs/ECS/SystemControl.html">SystemControl</a></span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">ulimits</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../../Structs/ECS/Ulimit.html">Ulimit</a></span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">user</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">volumesFrom</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../../Structs/ECS/VolumeFrom.html">VolumeFrom</a></span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">workingDirectory</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">command</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">cpu</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">dependsOn</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../../Structs/ECS/ContainerDependency.html">ContainerDependency</a></span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">disableNetworking</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">dnsSearchDomains</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">dnsServers</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">dockerLabels</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt">String</span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">dockerSecurityOptions</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">entryPoint</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">environment</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../../Structs/ECS/KeyValuePair.html">KeyValuePair</a></span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">environmentFiles</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../../Structs/ECS/EnvironmentFile.html">EnvironmentFile</a></span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">essential</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">extraHosts</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../../Structs/ECS/HostEntry.html">HostEntry</a></span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">firelensConfiguration</span><span class="p">:</span> <span class="kt"><a href="../../Structs/ECS/FirelensConfiguration.html">FirelensConfiguration</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">healthCheck</span><span class="p">:</span> <span class="kt"><a href="../../Structs/ECS/HealthCheck.html">HealthCheck</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">hostname</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">image</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">interactive</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">links</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">linuxParameters</span><span class="p">:</span> <span class="kt"><a href="../../Structs/ECS/LinuxParameters.html">LinuxParameters</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">logConfiguration</span><span class="p">:</span> <span class="kt"><a href="../../Structs/ECS/LogConfiguration.html">LogConfiguration</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">memory</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">memoryReservation</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">mountPoints</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../../Structs/ECS/MountPoint.html">MountPoint</a></span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">name</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">portMappings</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../../Structs/ECS/PortMapping.html">PortMapping</a></span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">privileged</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">pseudoTerminal</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">readonlyRootFilesystem</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">repositoryCredentials</span><span class="p">:</span> <span class="kt"><a href="../../Structs/ECS/RepositoryCredentials.html">RepositoryCredentials</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">resourceRequirements</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../../Structs/ECS/ResourceRequirement.html">ResourceRequirement</a></span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">secrets</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../../Structs/ECS/Secret.html">Secret</a></span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">startTimeout</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">stopTimeout</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">systemControls</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../../Structs/ECS/SystemControl.html">SystemControl</a></span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">ulimits</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../../Structs/ECS/Ulimit.html">Ulimit</a></span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">user</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">volumesFrom</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../../Structs/ECS/VolumeFrom.html">VolumeFrom</a></span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">workingDirectory</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>

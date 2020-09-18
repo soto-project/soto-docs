@@ -14,7 +14,7 @@
     <a title="Nodegroup Structure Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../../index.html"> Docs</a> (60% documented)</p>
+        <p><a href="../../index.html"> Docs</a> (59% documented)</p>
         <p class="header-right"><a href="https://github.com/swift-aws/aws-sdk-swift"><img src="../../img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
@@ -74,6 +74,9 @@
             <a href="../../AppSync.html">AppSync</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../Appflow.html">Appflow</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../ApplicationAutoScaling.html">ApplicationAutoScaling</a>
           </li>
           <li class="nav-group-name">
@@ -96,6 +99,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../Batch.html">Batch</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../Braket.html">Braket</a>
           </li>
           <li class="nav-group-name">
             <a href="../../Budgets.html">Budgets</a>
@@ -138,6 +144,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../CloudWatchLogs.html">CloudWatchLogs</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../CodeArtifact.html">CodeArtifact</a>
           </li>
           <li class="nav-group-name">
             <a href="../../CodeBuild.html">CodeBuild</a>
@@ -326,7 +335,16 @@
             <a href="../../Health.html">Health</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../Honeycode.html">Honeycode</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../IAM.html">IAM</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../IVS.html">IVS</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../IdentityStore.html">IdentityStore</a>
           </li>
           <li class="nav-group-name">
             <a href="../../Imagebuilder.html">Imagebuilder</a>
@@ -363,6 +381,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../IoTSecureTunneling.html">IoTSecureTunneling</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../IoTSiteWise.html">IoTSiteWise</a>
           </li>
           <li class="nav-group-name">
             <a href="../../IoTThingsGraph.html">IoTThingsGraph</a>
@@ -426,6 +447,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../Macie.html">Macie</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../Macie2.html">Macie2</a>
           </li>
           <li class="nav-group-name">
             <a href="../../ManagedBlockchain.html">ManagedBlockchain</a>
@@ -545,6 +569,9 @@
             <a href="../../Redshift.html">Redshift</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../RedshiftDataAPIService.html">RedshiftDataAPIService</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../Rekognition.html">Rekognition</a>
           </li>
           <li class="nav-group-name">
@@ -594,6 +621,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../SSO.html">SSO</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../SSOAdmin.html">SSOAdmin</a>
           </li>
           <li class="nav-group-name">
             <a href="../../SSOOIDC.html">SSOOIDC</a>
@@ -651,6 +681,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../Support.html">Support</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../Synthetics.html">Synthetics</a>
           </li>
           <li class="nav-group-name">
             <a href="../../Textract.html">Textract</a>
@@ -772,7 +805,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The AMI type associated with your node group. GPU instance types should use the AL2_x86_64_GPU AMI type, which uses the Amazon EKS-optimized Linux AMI with GPU support. Non-GPU instances should use the AL2_x86_64 AMI type, which uses the Amazon EKS-optimized Linux AMI.</p>
+                        <p>If the node group was deployed using a launch template with a custom AMI, then this is CUSTOM. For node groups that weren&rsquo;t deployed using a launch template, this is the AMI type that was specified in the node group configuration.</p>
 
                       </div>
                       <div class="declaration">
@@ -853,7 +886,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The root device disk size (in GiB) for your node group instances. The default disk size is 20 GiB.</p>
+                        <p>If the node group wasn&rsquo;t deployed with a launch template, then this is the disk size in the node group configuration. If the node group was deployed with a launch template, then diskSize is null.</p>
 
                       </div>
                       <div class="declaration">
@@ -907,7 +940,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The instance types associated with your node group.</p>
+                        <p>If the node group wasn&rsquo;t deployed with a launch template, then this is the instance type that is associated with the node group. If the node group was deployed with a launch template, then instanceTypes is null.</p>
 
                       </div>
                       <div class="declaration">
@@ -942,6 +975,33 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">labels</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt">String</span><span class="p">]?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:3EKSAAV9NodegroupV14launchTemplateAB06LaunchD13SpecificationVSgvp"></a>
+                    <a name="//apple_ref/swift/Property/launchTemplate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3EKSAAV9NodegroupV14launchTemplateAB06LaunchD13SpecificationVSgvp">launchTemplate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>If a launch template was used to create the node group, then this is the launch template that was used.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">launchTemplate</span><span class="p">:</span> <span class="kt"><a href="../../Structs/EKS/LaunchTemplateSpecification.html">LaunchTemplateSpecification</a></span><span class="p">?</span></code></pre>
 
                         </div>
                       </div>
@@ -1042,7 +1102,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The IAM role associated with your node group. The Amazon EKS worker node kubelet daemon makes calls to AWS APIs on your behalf. Worker nodes receive permissions for these API calls through an IAM instance profile and associated policies. Before you can launch worker nodes and register them into a cluster, you must create an IAM role for those worker nodes to use when they are launched. For more information, see Amazon EKS Worker Node IAM Role in the  Amazon EKS User Guide .</p>
+                        <p>The IAM role associated with your node group. The Amazon EKS worker node kubelet daemon makes calls to AWS APIs on your behalf. Worker nodes receive permissions for these API calls through an IAM instance profile and associated policies.</p>
 
                       </div>
                       <div class="declaration">
@@ -1069,7 +1129,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The AMI version of the managed node group. For more information, see Amazon EKS-Optimized Linux AMI Versions  in the Amazon EKS User Guide.</p>
+                        <p>If the node group was deployed using a launch template with a custom AMI, then this is the AMI ID that was specified in the launch template. For node groups that weren&rsquo;t deployed using a launch template, this is the version of the Amazon EKS-optimized AMI that the node group was deployed with.</p>
 
                       </div>
                       <div class="declaration">
@@ -1096,7 +1156,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The remote access (SSH) configuration that is associated with the node group.</p>
+                        <p>If the node group wasn&rsquo;t deployed with a launch template, then this is the remote access configuration that is associated with the node group. If the node group was deployed with a launch template, then remoteAccess is null.</p>
 
                       </div>
                       <div class="declaration">
@@ -1204,7 +1264,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The subnets allowed for the Auto Scaling group that is associated with your node group. These subnets must have the following tag: kubernetes.io/cluster/CLUSTER_NAME, where CLUSTER_NAME is replaced with the name of your cluster.</p>
+                        <p>The subnets that were specified for the Auto Scaling group that is associated with your node group.</p>
 
                       </div>
                       <div class="declaration">
@@ -1275,9 +1335,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:3EKSAAV9NodegroupV7amiType11clusterName9createdAt8diskSize6health13instanceTypes6labels08modifiedH012nodegroupArn0pF08nodeRole14releaseVersion12remoteAccess9resources13scalingConfig6status7subnets4tags7versionAdB8AMITypesOSg_SSSg15AWSSDKSwiftCore9TimeStampVSgSiSgAB0B6HealthVSgSaySSGSgSDyS2SGSgA3_A_A_A_A_AB06RemotewZ0VSgAB0B9ResourcesVSgAB0b7ScalingZ0VSgAB0B6StatusOSgA9_A11_A_tcfc"></a>
-                    <a name="//apple_ref/swift/Method/init(amiType:clusterName:createdAt:diskSize:health:instanceTypes:labels:modifiedAt:nodegroupArn:nodegroupName:nodeRole:releaseVersion:remoteAccess:resources:scalingConfig:status:subnets:tags:version:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3EKSAAV9NodegroupV7amiType11clusterName9createdAt8diskSize6health13instanceTypes6labels08modifiedH012nodegroupArn0pF08nodeRole14releaseVersion12remoteAccess9resources13scalingConfig6status7subnets4tags7versionAdB8AMITypesOSg_SSSg15AWSSDKSwiftCore9TimeStampVSgSiSgAB0B6HealthVSgSaySSGSgSDyS2SGSgA3_A_A_A_A_AB06RemotewZ0VSgAB0B9ResourcesVSgAB0b7ScalingZ0VSgAB0B6StatusOSgA9_A11_A_tcfc">init(amiType:clusterName:createdAt:diskSize:health:instanceTypes:labels:modifiedAt:nodegroupArn:nodegroupName:nodeRole:releaseVersion:remoteAccess:resources:scalingConfig:status:subnets:tags:version:)</a>
+                    <a name="/s:3EKSAAV9NodegroupV7amiType11clusterName9createdAt8diskSize6health13instanceTypes6labels14launchTemplate08modifiedH012nodegroupArn0rF08nodeRole14releaseVersion12remoteAccess9resources13scalingConfig6status7subnets4tags7versionAdB8AMITypesOSg_SSSg15AWSSDKSwiftCore9TimeStampVSgSiSgAB0B6HealthVSgSaySSGSgSDyS2SGSgAB06LaunchP13SpecificationVSgA4_A0_A0_A0_A0_AB06RemoteY6ConfigVSgAB0B9ResourcesVSgAB0B13ScalingConfigVSgAB0B6StatusOSgA10_A12_A0_tcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(amiType:clusterName:createdAt:diskSize:health:instanceTypes:labels:launchTemplate:modifiedAt:nodegroupArn:nodegroupName:nodeRole:releaseVersion:remoteAccess:resources:scalingConfig:status:subnets:tags:version:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3EKSAAV9NodegroupV7amiType11clusterName9createdAt8diskSize6health13instanceTypes6labels14launchTemplate08modifiedH012nodegroupArn0rF08nodeRole14releaseVersion12remoteAccess9resources13scalingConfig6status7subnets4tags7versionAdB8AMITypesOSg_SSSg15AWSSDKSwiftCore9TimeStampVSgSiSgAB0B6HealthVSgSaySSGSgSDyS2SGSgAB06LaunchP13SpecificationVSgA4_A0_A0_A0_A0_AB06RemoteY6ConfigVSgAB0B9ResourcesVSgAB0B13ScalingConfigVSgAB0B6StatusOSgA10_A12_A0_tcfc">init(amiType:clusterName:createdAt:diskSize:health:instanceTypes:labels:launchTemplate:modifiedAt:nodegroupArn:nodegroupName:nodeRole:releaseVersion:remoteAccess:resources:scalingConfig:status:subnets:tags:version:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1292,7 +1352,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">amiType</span><span class="p">:</span> <span class="kt"><a href="../../Structs/EKS/AMITypes.html">AMITypes</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">clusterName</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">createdAt</span><span class="p">:</span> <span class="kt"><a href="../../Structs/TimeStamp.html">TimeStamp</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">diskSize</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">health</span><span class="p">:</span> <span class="kt"><a href="../../Structs/EKS/NodegroupHealth.html">NodegroupHealth</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">instanceTypes</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">labels</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt">String</span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">modifiedAt</span><span class="p">:</span> <span class="kt"><a href="../../Structs/TimeStamp.html">TimeStamp</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">nodegroupArn</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">nodegroupName</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">nodeRole</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">releaseVersion</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">remoteAccess</span><span class="p">:</span> <span class="kt"><a href="../../Structs/EKS/RemoteAccessConfig.html">RemoteAccessConfig</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">resources</span><span class="p">:</span> <span class="kt"><a href="../../Structs/EKS/NodegroupResources.html">NodegroupResources</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">scalingConfig</span><span class="p">:</span> <span class="kt"><a href="../../Structs/EKS/NodegroupScalingConfig.html">NodegroupScalingConfig</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">status</span><span class="p">:</span> <span class="kt"><a href="../../Structs/EKS/NodegroupStatus.html">NodegroupStatus</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">subnets</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">tags</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt">String</span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">version</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">amiType</span><span class="p">:</span> <span class="kt"><a href="../../Structs/EKS/AMITypes.html">AMITypes</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">clusterName</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">createdAt</span><span class="p">:</span> <span class="kt"><a href="../../Structs/TimeStamp.html">TimeStamp</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">diskSize</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">health</span><span class="p">:</span> <span class="kt"><a href="../../Structs/EKS/NodegroupHealth.html">NodegroupHealth</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">instanceTypes</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">labels</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt">String</span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">launchTemplate</span><span class="p">:</span> <span class="kt"><a href="../../Structs/EKS/LaunchTemplateSpecification.html">LaunchTemplateSpecification</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">modifiedAt</span><span class="p">:</span> <span class="kt"><a href="../../Structs/TimeStamp.html">TimeStamp</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">nodegroupArn</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">nodegroupName</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">nodeRole</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">releaseVersion</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">remoteAccess</span><span class="p">:</span> <span class="kt"><a href="../../Structs/EKS/RemoteAccessConfig.html">RemoteAccessConfig</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">resources</span><span class="p">:</span> <span class="kt"><a href="../../Structs/EKS/NodegroupResources.html">NodegroupResources</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">scalingConfig</span><span class="p">:</span> <span class="kt"><a href="../../Structs/EKS/NodegroupScalingConfig.html">NodegroupScalingConfig</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">status</span><span class="p">:</span> <span class="kt"><a href="../../Structs/EKS/NodegroupStatus.html">NodegroupStatus</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">subnets</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">tags</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt">String</span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">version</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>

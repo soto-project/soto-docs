@@ -14,7 +14,7 @@
     <a title="UpdateSMBFileShareInput Structure Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../../index.html"> Docs</a> (60% documented)</p>
+        <p><a href="../../index.html"> Docs</a> (59% documented)</p>
         <p class="header-right"><a href="https://github.com/swift-aws/aws-sdk-swift"><img src="../../img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
@@ -74,6 +74,9 @@
             <a href="../../AppSync.html">AppSync</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../Appflow.html">Appflow</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../ApplicationAutoScaling.html">ApplicationAutoScaling</a>
           </li>
           <li class="nav-group-name">
@@ -96,6 +99,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../Batch.html">Batch</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../Braket.html">Braket</a>
           </li>
           <li class="nav-group-name">
             <a href="../../Budgets.html">Budgets</a>
@@ -138,6 +144,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../CloudWatchLogs.html">CloudWatchLogs</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../CodeArtifact.html">CodeArtifact</a>
           </li>
           <li class="nav-group-name">
             <a href="../../CodeBuild.html">CodeBuild</a>
@@ -326,7 +335,16 @@
             <a href="../../Health.html">Health</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../Honeycode.html">Honeycode</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../IAM.html">IAM</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../IVS.html">IVS</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../IdentityStore.html">IdentityStore</a>
           </li>
           <li class="nav-group-name">
             <a href="../../Imagebuilder.html">Imagebuilder</a>
@@ -363,6 +381,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../IoTSecureTunneling.html">IoTSecureTunneling</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../IoTSiteWise.html">IoTSiteWise</a>
           </li>
           <li class="nav-group-name">
             <a href="../../IoTThingsGraph.html">IoTThingsGraph</a>
@@ -426,6 +447,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../Macie.html">Macie</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../Macie2.html">Macie2</a>
           </li>
           <li class="nav-group-name">
             <a href="../../ManagedBlockchain.html">ManagedBlockchain</a>
@@ -545,6 +569,9 @@
             <a href="../../Redshift.html">Redshift</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../RedshiftDataAPIService.html">RedshiftDataAPIService</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../Rekognition.html">Rekognition</a>
           </li>
           <li class="nav-group-name">
@@ -594,6 +621,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../SSO.html">SSO</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../SSOAdmin.html">SSOAdmin</a>
           </li>
           <li class="nav-group-name">
             <a href="../../SSOOIDC.html">SSOOIDC</a>
@@ -651,6 +681,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../Support.html">Support</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../Synthetics.html">Synthetics</a>
           </li>
           <li class="nav-group-name">
             <a href="../../Textract.html">Textract</a>
@@ -772,7 +805,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>A list of users in the Active Directory that have administrator rights to the file share. A group must be prefixed with the @ character. For example @group1. Can only be set if Authentication is set to ActiveDirectory.</p>
+                        <p>A list of users or groups in the Active Directory that have administrator rights to the file share. A group must be prefixed with the @ character. Acceptable formats include: DOMAIN\User1, user1, @group1, and @DOMAIN\group1. Can only be set if Authentication is set to ActiveDirectory.</p>
 
                       </div>
                       <div class="declaration">
@@ -816,6 +849,60 @@
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/s:14StorageGatewayAAV23UpdateSMBFileShareInputV15cacheAttributesAB05CacheH0VSgvp"></a>
+                    <a name="//apple_ref/swift/Property/cacheAttributes" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14StorageGatewayAAV23UpdateSMBFileShareInputV15cacheAttributesAB05CacheH0VSgvp">cacheAttributes</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Refresh cache information.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">cacheAttributes</span><span class="p">:</span> <span class="kt"><a href="../../Structs/StorageGateway/CacheAttributes.html">CacheAttributes</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14StorageGatewayAAV23UpdateSMBFileShareInputV15caseSensitivityAB04CaseH0OSgvp"></a>
+                    <a name="//apple_ref/swift/Property/caseSensitivity" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14StorageGatewayAAV23UpdateSMBFileShareInputV15caseSensitivityAB04CaseH0OSgvp">caseSensitivity</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The case of an object name in an Amazon S3 bucket. For ClientSpecified, the client determines the case sensitivity. For CaseSensitive, the gateway determines the case sensitivity. The default value is ClientSpecified.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">caseSensitivity</span><span class="p">:</span> <span class="kt"><a href="../../Structs/StorageGateway/CaseSensitivity.html">CaseSensitivity</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/s:14StorageGatewayAAV23UpdateSMBFileShareInputV07defaultA5ClassSSSgvp"></a>
                     <a name="//apple_ref/swift/Property/defaultStorageClass" class="dashAnchor"></a>
                     <a class="token" href="#/s:14StorageGatewayAAV23UpdateSMBFileShareInputV07defaultA5ClassSSSgvp">defaultStorageClass</a>
@@ -826,7 +913,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The default storage class for objects put into an Amazon S3 bucket by the file gateway. Possible values are S3_STANDARD, S3_STANDARD_IA, or S3_ONEZONE_IA. If this field is not populated, the default value S3_STANDARD is used. Optional.</p>
+                        <p>The default storage class for objects put into an Amazon S3 bucket by the file gateway. The default value is S3_INTELLIGENT_TIERING. Optional. Valid Values: S3_STANDARD | S3_INTELLIGENT_TIERING | S3_STANDARD_IA | S3_ONEZONE_IA</p>
 
                       </div>
                       <div class="declaration">
@@ -870,6 +957,33 @@
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/s:14StorageGatewayAAV23UpdateSMBFileShareInputV04fileE4NameSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/fileShareName" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14StorageGatewayAAV23UpdateSMBFileShareInputV04fileE4NameSSSgvp">fileShareName</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The name of the file share. Optional.   FileShareName must be set if an S3 prefix name is set in LocationARN.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">fileShareName</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/s:14StorageGatewayAAV23UpdateSMBFileShareInputV20guessMIMETypeEnabledSbSgvp"></a>
                     <a name="//apple_ref/swift/Property/guessMIMETypeEnabled" class="dashAnchor"></a>
                     <a class="token" href="#/s:14StorageGatewayAAV23UpdateSMBFileShareInputV20guessMIMETypeEnabledSbSgvp">guessMIMETypeEnabled</a>
@@ -880,7 +994,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>A value that enables guessing of the MIME type for uploaded objects based on file extensions. Set this value to true to enable MIME type guessing, and otherwise to false. The default value is true.</p>
+                        <p>A value that enables guessing of the MIME type for uploaded objects based on file extensions. Set this value to true to enable MIME type guessing, otherwise set to false. The default value is true. Valid Values: true | false</p>
 
                       </div>
                       <div class="declaration">
@@ -907,7 +1021,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>A list of users or groups in the Active Directory that are not allowed to access the file share. A group must be prefixed with the @ character. For example @group1. Can only be set if Authentication is set to ActiveDirectory.</p>
+                        <p>A list of users or groups in the Active Directory that are not allowed to access the file share. A group must be prefixed with the @ character. Acceptable formats include: DOMAIN\User1, user1, @group1, and @DOMAIN\group1. Can only be set if Authentication is set to ActiveDirectory.</p>
 
                       </div>
                       <div class="declaration">
@@ -934,7 +1048,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>True to use Amazon S3 server side encryption with your own AWS KMS key, or false to use a key managed by Amazon S3. Optional.</p>
+                        <p>Set to true to use Amazon S3 server-side encryption with your own AWS KMS key, or false to use a key managed by Amazon S3. Optional. Valid Values: true | false</p>
 
                       </div>
                       <div class="declaration">
@@ -961,7 +1075,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The Amazon Resource Name (ARN) of the AWS KMS key used for Amazon S3 server side encryption. This value can only be set when KMSEncrypted is true. Optional.</p>
+                        <p>The Amazon Resource Name (ARN) of a symmetric customer master key (CMK) used for Amazon S3 server-side encryption. Storage Gateway does not support asymmetric CMKs. This value can only be set when KMSEncrypted is true. Optional.</p>
 
                       </div>
                       <div class="declaration">
@@ -988,7 +1102,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>A value that sets the access control list permission for objects in the S3 bucket that a file gateway puts objects into. The default value is &ldquo;private&rdquo;.</p>
+                        <p>A value that sets the access control list (ACL) permission for objects in the S3 bucket that a file gateway puts objects into. The default value is private.</p>
 
                       </div>
                       <div class="declaration">
@@ -1015,7 +1129,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>A value that sets the write status of a file share. This value is true if the write status is read-only, and otherwise false.</p>
+                        <p>A value that sets the write status of a file share. Set this value to true to set write status to read-only, otherwise set to false. Valid Values: true | false</p>
 
                       </div>
                       <div class="declaration">
@@ -1042,7 +1156,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>A value that sets who pays the cost of the request and the cost associated with data download from the S3 bucket. If this value is set to true, the requester pays the costs. Otherwise the S3 bucket owner pays. However, the S3 bucket owner always pays the cost of storing data.   RequesterPays is a configuration for the S3 bucket that backs the file share, so make sure that the configuration on the file share is the same as the S3 bucket configuration.</p>
+                        <p>A value that sets who pays the cost of the request and the cost associated with data download from the S3 bucket. If this value is set to true, the requester pays the costs; otherwise, the S3 bucket owner pays. However, the S3 bucket owner always pays the cost of storing data.   RequesterPays is a configuration for the S3 bucket that backs the file share, so make sure that the configuration on the file share is the same as the S3 bucket configuration.  Valid Values: true | false</p>
 
                       </div>
                       <div class="declaration">
@@ -1069,7 +1183,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Set this value to &ldquo;true to enable ACL (access control list) on the SMB file share. Set it to &quot;false&rdquo; to map file and directory permissions to the POSIX permissions. For more information, see <a href="https://docs.aws.amazon.com/storagegateway/latest/userguide/smb-acl.htmlin">https://docs.aws.amazon.com/storagegateway/latest/userguide/smb-acl.htmlin</a> the Storage Gateway User Guide.</p>
+                        <p>Set this value to true to enable access control list (ACL) on the SMB file share. Set it to false to map file and directory permissions to the POSIX permissions. For more information, see Using Microsoft Windows ACLs to control access to an SMB file share in the AWS Storage Gateway User Guide. Valid Values: true | false</p>
 
                       </div>
                       <div class="declaration">
@@ -1096,7 +1210,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>A list of users or groups in the Active Directory that are allowed to access the file share. A group must be prefixed with the @ character. For example @group1. Can only be set if Authentication is set to ActiveDirectory.</p>
+                        <p>A list of users or groups in the Active Directory that are allowed to access the file share. A group must be prefixed with the @ character. Acceptable formats include: DOMAIN\User1, user1, @group1, and @DOMAIN\group1. Can only be set if Authentication is set to ActiveDirectory.</p>
 
                       </div>
                       <div class="declaration">
@@ -1113,9 +1227,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:14StorageGatewayAAV23UpdateSMBFileShareInputV13adminUserList19auditDestinationARN07defaultA5Class04fileeL020guessMIMETypeEnabled07invalidhI012kMSEncrypted6kMSKey9objectACL8readOnly13requesterPays13sMBACLEnabled05validhI0ADSaySSGSg_SSSgATSSSbSgAsutB06ObjectW0OSgA3uStcfc"></a>
-                    <a name="//apple_ref/swift/Method/init(adminUserList:auditDestinationARN:defaultStorageClass:fileShareARN:guessMIMETypeEnabled:invalidUserList:kMSEncrypted:kMSKey:objectACL:readOnly:requesterPays:sMBACLEnabled:validUserList:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:14StorageGatewayAAV23UpdateSMBFileShareInputV13adminUserList19auditDestinationARN07defaultA5Class04fileeL020guessMIMETypeEnabled07invalidhI012kMSEncrypted6kMSKey9objectACL8readOnly13requesterPays13sMBACLEnabled05validhI0ADSaySSGSg_SSSgATSSSbSgAsutB06ObjectW0OSgA3uStcfc">init(adminUserList:auditDestinationARN:defaultStorageClass:fileShareARN:guessMIMETypeEnabled:invalidUserList:kMSEncrypted:kMSKey:objectACL:readOnly:requesterPays:sMBACLEnabled:validUserList:)</a>
+                    <a name="/s:14StorageGatewayAAV23UpdateSMBFileShareInputV13adminUserList19auditDestinationARN15cacheAttributes15caseSensitivity07defaultA5Class04fileeL00sE4Name20guessMIMETypeEnabled07invalidhI012kMSEncrypted6kMSKey9objectACL8readOnly13requesterPays13sMBACLEnabled05validhI0ADSaySSGSg_SSSgAB05CacheN0VSgAB04CaseP0OSgAWSSAWSbSgAVA2_AwB9ObjectACLOSgA2_A2_A2_AVtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(adminUserList:auditDestinationARN:cacheAttributes:caseSensitivity:defaultStorageClass:fileShareARN:fileShareName:guessMIMETypeEnabled:invalidUserList:kMSEncrypted:kMSKey:objectACL:readOnly:requesterPays:sMBACLEnabled:validUserList:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14StorageGatewayAAV23UpdateSMBFileShareInputV13adminUserList19auditDestinationARN15cacheAttributes15caseSensitivity07defaultA5Class04fileeL00sE4Name20guessMIMETypeEnabled07invalidhI012kMSEncrypted6kMSKey9objectACL8readOnly13requesterPays13sMBACLEnabled05validhI0ADSaySSGSg_SSSgAB05CacheN0VSgAB04CaseP0OSgAWSSAWSbSgAVA2_AwB9ObjectACLOSgA2_A2_A2_AVtcfc">init(adminUserList:auditDestinationARN:cacheAttributes:caseSensitivity:defaultStorageClass:fileShareARN:fileShareName:guessMIMETypeEnabled:invalidUserList:kMSEncrypted:kMSKey:objectACL:readOnly:requesterPays:sMBACLEnabled:validUserList:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1130,7 +1244,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">adminUserList</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">auditDestinationARN</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="n"><a href="../../Structs/StorageGateway/UpdateSMBFileShareInput.html#/s:14StorageGatewayAAV23UpdateSMBFileShareInputV07defaultA5ClassSSSgvp">defaultStorageClass</a></span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">fileShareARN</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">guessMIMETypeEnabled</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">invalidUserList</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">kMSEncrypted</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">kMSKey</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">objectACL</span><span class="p">:</span> <span class="kt"><a href="../../Structs/StorageGateway/ObjectACL.html">ObjectACL</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">readOnly</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">requesterPays</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">sMBACLEnabled</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">validUserList</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">adminUserList</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">auditDestinationARN</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">cacheAttributes</span><span class="p">:</span> <span class="kt"><a href="../../Structs/StorageGateway/CacheAttributes.html">CacheAttributes</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">caseSensitivity</span><span class="p">:</span> <span class="kt"><a href="../../Structs/StorageGateway/CaseSensitivity.html">CaseSensitivity</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="n"><a href="../../Structs/StorageGateway/UpdateSMBFileShareInput.html#/s:14StorageGatewayAAV23UpdateSMBFileShareInputV07defaultA5ClassSSSgvp">defaultStorageClass</a></span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">fileShareARN</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">fileShareName</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">guessMIMETypeEnabled</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">invalidUserList</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">kMSEncrypted</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">kMSKey</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">objectACL</span><span class="p">:</span> <span class="kt"><a href="../../Structs/StorageGateway/ObjectACL.html">ObjectACL</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">readOnly</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">requesterPays</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">sMBACLEnabled</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">validUserList</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>

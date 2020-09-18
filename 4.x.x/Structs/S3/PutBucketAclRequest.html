@@ -14,7 +14,7 @@
     <a title="PutBucketAclRequest Structure Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../../index.html"> Docs</a> (60% documented)</p>
+        <p><a href="../../index.html"> Docs</a> (59% documented)</p>
         <p class="header-right"><a href="https://github.com/swift-aws/aws-sdk-swift"><img src="../../img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
@@ -74,6 +74,9 @@
             <a href="../../AppSync.html">AppSync</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../Appflow.html">Appflow</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../ApplicationAutoScaling.html">ApplicationAutoScaling</a>
           </li>
           <li class="nav-group-name">
@@ -96,6 +99,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../Batch.html">Batch</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../Braket.html">Braket</a>
           </li>
           <li class="nav-group-name">
             <a href="../../Budgets.html">Budgets</a>
@@ -138,6 +144,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../CloudWatchLogs.html">CloudWatchLogs</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../CodeArtifact.html">CodeArtifact</a>
           </li>
           <li class="nav-group-name">
             <a href="../../CodeBuild.html">CodeBuild</a>
@@ -326,7 +335,16 @@
             <a href="../../Health.html">Health</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../Honeycode.html">Honeycode</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../IAM.html">IAM</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../IVS.html">IVS</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../IdentityStore.html">IdentityStore</a>
           </li>
           <li class="nav-group-name">
             <a href="../../Imagebuilder.html">Imagebuilder</a>
@@ -363,6 +381,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../IoTSecureTunneling.html">IoTSecureTunneling</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../IoTSiteWise.html">IoTSiteWise</a>
           </li>
           <li class="nav-group-name">
             <a href="../../IoTThingsGraph.html">IoTThingsGraph</a>
@@ -426,6 +447,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../Macie.html">Macie</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../Macie2.html">Macie2</a>
           </li>
           <li class="nav-group-name">
             <a href="../../ManagedBlockchain.html">ManagedBlockchain</a>
@@ -545,6 +569,9 @@
             <a href="../../Redshift.html">Redshift</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../RedshiftDataAPIService.html">RedshiftDataAPIService</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../Rekognition.html">Rekognition</a>
           </li>
           <li class="nav-group-name">
@@ -594,6 +621,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../SSO.html">SSO</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../SSOAdmin.html">SSOAdmin</a>
           </li>
           <li class="nav-group-name">
             <a href="../../SSOOIDC.html">SSOOIDC</a>
@@ -651,6 +681,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../Support.html">Support</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../Synthetics.html">Synthetics</a>
           </li>
           <li class="nav-group-name">
             <a href="../../Textract.html">Textract</a>
@@ -896,9 +929,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:2S3AAV19PutBucketAclRequestV10contentMD5SSSgvp"></a>
-                    <a name="//apple_ref/swift/Property/contentMD5" class="dashAnchor"></a>
-                    <a class="token" href="#/s:2S3AAV19PutBucketAclRequestV10contentMD5SSSgvp">contentMD5</a>
+                    <a name="/s:2S3AAV19PutBucketAclRequestV08expectedC5OwnerSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/expectedBucketOwner" class="dashAnchor"></a>
+                    <a class="token" href="#/s:2S3AAV19PutBucketAclRequestV08expectedC5OwnerSSSgvp">expectedBucketOwner</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -906,14 +939,14 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The base64-encoded 128-bit MD5 digest of the data. This header must be used as a message integrity check to verify that the request body was not corrupted in transit. For more information, go to RFC 1864.</p>
+                        <p>The account id of the expected bucket owner. If the bucket is owned by a different account, the request will fail with an HTTP 403 (Access Denied) error.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">contentMD5</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">expectedBucketOwner</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
 
                         </div>
                       </div>
@@ -1058,9 +1091,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:2S3AAV19PutBucketAclRequestV19accessControlPolicy3acl6bucket10contentMD509grantFullG00M4Read0mO3ACP0M5Write0mqP0AdB06AccessgH0VSg_AB0C9CannedACLOSgS2SSgA5Ttcfc"></a>
-                    <a name="//apple_ref/swift/Method/init(accessControlPolicy:acl:bucket:contentMD5:grantFullControl:grantRead:grantReadACP:grantWrite:grantWriteACP:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:2S3AAV19PutBucketAclRequestV19accessControlPolicy3acl6bucket10contentMD509grantFullG00M4Read0mO3ACP0M5Write0mqP0AdB06AccessgH0VSg_AB0C9CannedACLOSgS2SSgA5Ttcfc">init(accessControlPolicy:acl:bucket:contentMD5:grantFullControl:grantRead:grantReadACP:grantWrite:grantWriteACP:)</a>
+                    <a name="/s:2S3AAV19PutBucketAclRequestV19accessControlPolicy3acl6bucket08expectedC5Owner09grantFullG00M4Read0mO3ACP0M5Write0mqP0AdB06AccessgH0VSg_AB0C9CannedACLOSgS2SSgA5Ttcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(accessControlPolicy:acl:bucket:expectedBucketOwner:grantFullControl:grantRead:grantReadACP:grantWrite:grantWriteACP:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:2S3AAV19PutBucketAclRequestV19accessControlPolicy3acl6bucket08expectedC5Owner09grantFullG00M4Read0mO3ACP0M5Write0mqP0AdB06AccessgH0VSg_AB0C9CannedACLOSgS2SSgA5Ttcfc">init(accessControlPolicy:acl:bucket:expectedBucketOwner:grantFullControl:grantRead:grantReadACP:grantWrite:grantWriteACP:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1075,7 +1108,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">accessControlPolicy</span><span class="p">:</span> <span class="kt"><a href="../../Structs/S3/AccessControlPolicy.html">AccessControlPolicy</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">acl</span><span class="p">:</span> <span class="kt"><a href="../../Structs/S3/BucketCannedACL.html">BucketCannedACL</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">bucket</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">contentMD5</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">grantFullControl</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">grantRead</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">grantReadACP</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">grantWrite</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">grantWriteACP</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">accessControlPolicy</span><span class="p">:</span> <span class="kt"><a href="../../Structs/S3/AccessControlPolicy.html">AccessControlPolicy</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">acl</span><span class="p">:</span> <span class="kt"><a href="../../Structs/S3/BucketCannedACL.html">BucketCannedACL</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">bucket</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">expectedBucketOwner</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">grantFullControl</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">grantRead</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">grantReadACP</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">grantWrite</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">grantWriteACP</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>

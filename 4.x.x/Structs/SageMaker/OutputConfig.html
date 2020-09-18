@@ -14,7 +14,7 @@
     <a title="OutputConfig Structure Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../../index.html"> Docs</a> (60% documented)</p>
+        <p><a href="../../index.html"> Docs</a> (59% documented)</p>
         <p class="header-right"><a href="https://github.com/swift-aws/aws-sdk-swift"><img src="../../img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
@@ -74,6 +74,9 @@
             <a href="../../AppSync.html">AppSync</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../Appflow.html">Appflow</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../ApplicationAutoScaling.html">ApplicationAutoScaling</a>
           </li>
           <li class="nav-group-name">
@@ -96,6 +99,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../Batch.html">Batch</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../Braket.html">Braket</a>
           </li>
           <li class="nav-group-name">
             <a href="../../Budgets.html">Budgets</a>
@@ -138,6 +144,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../CloudWatchLogs.html">CloudWatchLogs</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../CodeArtifact.html">CodeArtifact</a>
           </li>
           <li class="nav-group-name">
             <a href="../../CodeBuild.html">CodeBuild</a>
@@ -326,7 +335,16 @@
             <a href="../../Health.html">Health</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../Honeycode.html">Honeycode</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../IAM.html">IAM</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../IVS.html">IVS</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../IdentityStore.html">IdentityStore</a>
           </li>
           <li class="nav-group-name">
             <a href="../../Imagebuilder.html">Imagebuilder</a>
@@ -363,6 +381,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../IoTSecureTunneling.html">IoTSecureTunneling</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../IoTSiteWise.html">IoTSiteWise</a>
           </li>
           <li class="nav-group-name">
             <a href="../../IoTThingsGraph.html">IoTThingsGraph</a>
@@ -426,6 +447,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../Macie.html">Macie</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../Macie2.html">Macie2</a>
           </li>
           <li class="nav-group-name">
             <a href="../../ManagedBlockchain.html">ManagedBlockchain</a>
@@ -545,6 +569,9 @@
             <a href="../../Redshift.html">Redshift</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../RedshiftDataAPIService.html">RedshiftDataAPIService</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../Rekognition.html">Rekognition</a>
           </li>
           <li class="nav-group-name">
@@ -594,6 +621,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../SSO.html">SSO</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../SSOAdmin.html">SSOAdmin</a>
           </li>
           <li class="nav-group-name">
             <a href="../../SSOOIDC.html">SSOOIDC</a>
@@ -651,6 +681,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../Support.html">Support</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../Synthetics.html">Synthetics</a>
           </li>
           <li class="nav-group-name">
             <a href="../../Textract.html">Textract</a>
@@ -762,6 +795,33 @@
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/s:9SageMakerAAV12OutputConfigV15compilerOptionsSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/compilerOptions" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9SageMakerAAV12OutputConfigV15compilerOptionsSSSgvp">compilerOptions</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Specifies additional parameters for compiler options in JSON format. The compiler options are TargetPlatform specific. It is required for NVIDIA accelerators and highly recommended for CPU compliations. For any other cases, it is optional to specify CompilerOptions.     CPU: Compilation for CPU supports the following compiler options.    mcpu: CPU micro-architecture. For example, {&lsquo;mcpu&rsquo;: &lsquo;skylake-avx512&rsquo;}     mattr: CPU flags. For example, {&lsquo;mattr&rsquo;: [&lsquo;+neon&rsquo;, &lsquo;+vfpv4&rsquo;]}       ARM: Details of ARM CPU compilations.    NEON: NEON is an implementation of the Advanced SIMD extension used in ARMv7 processors. For example, add {&lsquo;mattr&rsquo;: [&lsquo;+neon&rsquo;]} to the compiler options if compiling for ARM 32-bit platform with the NEON support.      NVIDIA: Compilation for NVIDIA GPU supports the following compiler options.    gpu_code: Specifies the targeted architecture.    trt-ver: Specifies the TensorRT versions in x.y.z. format.    cuda-ver: Specifies the CUDA version in x.y format.   For example, {&lsquo;gpu-code&rsquo;: &lsquo;sm_72&rsquo;, &lsquo;trt-ver&rsquo;: &lsquo;6.0.1&rsquo;, &lsquo;cuda-ver&rsquo;: &lsquo;10.1&rsquo;}     ANDROID: Compilation for the Android OS supports the following compiler options:    ANDROID_PLATFORM: Specifies the Android API levels. Available levels range from 21 to 29. For example, {&lsquo;ANDROID_PLATFORM&rsquo;: 28}.    mattr: Add {&lsquo;mattr&rsquo;: [&lsquo;+neon&rsquo;]} to compiler options if compiling for ARM 32-bit platform with NEON support.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">compilerOptions</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/s:9SageMakerAAV12OutputConfigV02s3C8LocationSSvp"></a>
                     <a name="//apple_ref/swift/Property/s3OutputLocation" class="dashAnchor"></a>
                     <a class="token" href="#/s:9SageMakerAAV12OutputConfigV02s3C8LocationSSvp">s3OutputLocation</a>
@@ -772,7 +832,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Identifies the S3 path where you want Amazon SageMaker to store the model artifacts. For example, s3://bucket-name/key-name-prefix.</p>
+                        <p>Identifies the S3 bucket where you want Amazon SageMaker to store the model artifacts. For example, s3://bucket-name/key-name-prefix.</p>
 
                       </div>
                       <div class="declaration">
@@ -789,9 +849,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9SageMakerAAV12OutputConfigV12targetDeviceAB06TargetF0Ovp"></a>
+                    <a name="/s:9SageMakerAAV12OutputConfigV12targetDeviceAB06TargetF0OSgvp"></a>
                     <a name="//apple_ref/swift/Property/targetDevice" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9SageMakerAAV12OutputConfigV12targetDeviceAB06TargetF0Ovp">targetDevice</a>
+                    <a class="token" href="#/s:9SageMakerAAV12OutputConfigV12targetDeviceAB06TargetF0OSgvp">targetDevice</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -799,14 +859,14 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Identifies the device that you want to run your model on after it has been compiled. For example: ml_c5.</p>
+                        <p>Identifies the target device or the machine learning instance that you want to run your model on after the compilation has completed. Alternatively, you can specify OS, architecture, and accelerator using TargetPlatform fields. It can be used instead of TargetPlatform.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">targetDevice</span><span class="p">:</span> <span class="kt"><a href="../../Structs/SageMaker/TargetDevice.html">TargetDevice</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">targetDevice</span><span class="p">:</span> <span class="kt"><a href="../../Structs/SageMaker/TargetDevice.html">TargetDevice</a></span><span class="p">?</span></code></pre>
 
                         </div>
                       </div>
@@ -816,9 +876,36 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9SageMakerAAV12OutputConfigV02s3C8Location12targetDeviceADSS_AB06TargetH0Otcfc"></a>
-                    <a name="//apple_ref/swift/Method/init(s3OutputLocation:targetDevice:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9SageMakerAAV12OutputConfigV02s3C8Location12targetDeviceADSS_AB06TargetH0Otcfc">init(s3OutputLocation:targetDevice:)</a>
+                    <a name="/s:9SageMakerAAV12OutputConfigV14targetPlatformAB06TargetF0VSgvp"></a>
+                    <a name="//apple_ref/swift/Property/targetPlatform" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9SageMakerAAV12OutputConfigV14targetPlatformAB06TargetF0VSgvp">targetPlatform</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Contains information about a target platform that you want your model to run on, such as OS, architecture, and accelerators. It is an alternative of TargetDevice. The following examples show how to configure the TargetPlatform and CompilerOptions JSON strings for popular target platforms:    Raspberry Pi 3 Model B+  &ldquo;TargetPlatform&rdquo;: {&ldquo;Os&rdquo;: &ldquo;LINUX&rdquo;, &ldquo;Arch&rdquo;: &ldquo;ARM_EABIHF&rdquo;},    &ldquo;CompilerOptions&rdquo;: {&lsquo;mattr&rsquo;: [&lsquo;+neon&rsquo;]}    Jetson TX2  &ldquo;TargetPlatform&rdquo;: {&ldquo;Os&rdquo;: &ldquo;LINUX&rdquo;, &ldquo;Arch&rdquo;: &ldquo;ARM64&rdquo;, &ldquo;Accelerator&rdquo;: &ldquo;NVIDIA&rdquo;},    &ldquo;CompilerOptions&rdquo;: {&lsquo;gpu-code&rsquo;: &lsquo;sm_62&rsquo;, &lsquo;trt-ver&rsquo;: &lsquo;6.0.1&rsquo;, &lsquo;cuda-ver&rsquo;: &lsquo;10.0&rsquo;}    EC2 m5.2xlarge instance OS  &ldquo;TargetPlatform&rdquo;: {&ldquo;Os&rdquo;: &ldquo;LINUX&rdquo;, &ldquo;Arch&rdquo;: &ldquo;X86_64&rdquo;, &ldquo;Accelerator&rdquo;: &ldquo;NVIDIA&rdquo;},    &ldquo;CompilerOptions&rdquo;: {&lsquo;mcpu&rsquo;: &lsquo;skylake-avx512&rsquo;}    RK3399  &ldquo;TargetPlatform&rdquo;: {&ldquo;Os&rdquo;: &ldquo;LINUX&rdquo;, &ldquo;Arch&rdquo;: &ldquo;ARM64&rdquo;, &ldquo;Accelerator&rdquo;: &ldquo;MALI&rdquo;}    ARMv7 phone (CPU)  &ldquo;TargetPlatform&rdquo;: {&ldquo;Os&rdquo;: &ldquo;ANDROID&rdquo;, &ldquo;Arch&rdquo;: &ldquo;ARM_EABI&rdquo;},    &ldquo;CompilerOptions&rdquo;: {&lsquo;ANDROID_PLATFORM&rsquo;: 25, &lsquo;mattr&rsquo;: [&lsquo;+neon&rsquo;]}    ARMv8 phone (CPU)  &ldquo;TargetPlatform&rdquo;: {&ldquo;Os&rdquo;: &ldquo;ANDROID&rdquo;, &ldquo;Arch&rdquo;: &ldquo;ARM64&rdquo;},    &ldquo;CompilerOptions&rdquo;: {&lsquo;ANDROID_PLATFORM&rsquo;: 29}</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">targetPlatform</span><span class="p">:</span> <span class="kt"><a href="../../Structs/SageMaker/TargetPlatform.html">TargetPlatform</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9SageMakerAAV12OutputConfigV15compilerOptions02s3C8Location12targetDevice0I8PlatformADSSSg_SSAB06TargetJ0OSgAB0lK0VSgtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(compilerOptions:s3OutputLocation:targetDevice:targetPlatform:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9SageMakerAAV12OutputConfigV15compilerOptions02s3C8Location12targetDevice0I8PlatformADSSSg_SSAB06TargetJ0OSgAB0lK0VSgtcfc">init(compilerOptions:s3OutputLocation:targetDevice:targetPlatform:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -833,7 +920,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">s3OutputLocation</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">targetDevice</span><span class="p">:</span> <span class="kt"><a href="../../Structs/SageMaker/TargetDevice.html">TargetDevice</a></span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">compilerOptions</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">s3OutputLocation</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">targetDevice</span><span class="p">:</span> <span class="kt"><a href="../../Structs/SageMaker/TargetDevice.html">TargetDevice</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">targetPlatform</span><span class="p">:</span> <span class="kt"><a href="../../Structs/SageMaker/TargetPlatform.html">TargetPlatform</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>

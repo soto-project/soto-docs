@@ -14,7 +14,7 @@
     <a title="Route53Resolver Structure Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html"> Docs</a> (60% documented)</p>
+        <p><a href="../index.html"> Docs</a> (59% documented)</p>
         <p class="header-right"><a href="https://github.com/swift-aws/aws-sdk-swift"><img src="../img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
@@ -74,6 +74,9 @@
             <a href="../AppSync.html">AppSync</a>
           </li>
           <li class="nav-group-name">
+            <a href="../Appflow.html">Appflow</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../ApplicationAutoScaling.html">ApplicationAutoScaling</a>
           </li>
           <li class="nav-group-name">
@@ -96,6 +99,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../Batch.html">Batch</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Braket.html">Braket</a>
           </li>
           <li class="nav-group-name">
             <a href="../Budgets.html">Budgets</a>
@@ -138,6 +144,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../CloudWatchLogs.html">CloudWatchLogs</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../CodeArtifact.html">CodeArtifact</a>
           </li>
           <li class="nav-group-name">
             <a href="../CodeBuild.html">CodeBuild</a>
@@ -326,7 +335,16 @@
             <a href="../Health.html">Health</a>
           </li>
           <li class="nav-group-name">
+            <a href="../Honeycode.html">Honeycode</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../IAM.html">IAM</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../IVS.html">IVS</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../IdentityStore.html">IdentityStore</a>
           </li>
           <li class="nav-group-name">
             <a href="../Imagebuilder.html">Imagebuilder</a>
@@ -363,6 +381,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../IoTSecureTunneling.html">IoTSecureTunneling</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../IoTSiteWise.html">IoTSiteWise</a>
           </li>
           <li class="nav-group-name">
             <a href="../IoTThingsGraph.html">IoTThingsGraph</a>
@@ -426,6 +447,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../Macie.html">Macie</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Macie2.html">Macie2</a>
           </li>
           <li class="nav-group-name">
             <a href="../ManagedBlockchain.html">ManagedBlockchain</a>
@@ -545,6 +569,9 @@
             <a href="../Redshift.html">Redshift</a>
           </li>
           <li class="nav-group-name">
+            <a href="../RedshiftDataAPIService.html">RedshiftDataAPIService</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../Rekognition.html">Rekognition</a>
           </li>
           <li class="nav-group-name">
@@ -594,6 +621,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../SSO.html">SSO</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../SSOAdmin.html">SSOAdmin</a>
           </li>
           <li class="nav-group-name">
             <a href="../SSOOIDC.html">SSOOIDC</a>
@@ -651,6 +681,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../Support.html">Support</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Synthetics.html">Synthetics</a>
           </li>
           <li class="nav-group-name">
             <a href="../Textract.html">Textract</a>
@@ -729,7 +762,7 @@
               </div>
             <p>Client object for interacting with AWS Route53Resolver service.</p>
 
-<p>Here&rsquo;s how you set up to query an Amazon Route 53 private hosted zone from your network:   Connect your network to a VPC using AWS Direct Connect or a VPN.   Run the following AWS CLI command to create a Resolver endpoint:  create-resolver-endpoint &ndash;name [endpoint_name] &ndash;direction INBOUND &ndash;creator-request-id [unique_string] &ndash;security-group-ids [security_group_with_inbound_rules] &ndash;ip-addresses SubnetId=[subnet_id] SubnetId=[subnet_id_in_different_AZ]  Note the resolver endpoint ID that appears in the response. You&rsquo;ll use it in step 3.   Get the IP addresses for the Resolver endpoints:  get-resolver-endpoint &ndash;resolver-endpoint-id [resolver_endpoint_id]    In your network configuration, define the IP addresses that you got in step 3 as DNS servers. You can now query instance names in your VPCs and the names of records in your private hosted zone.   You can also perform the following operations using the AWS CLI:    list-resolver-endpoints: List all endpoints. The syntax includes options for pagination and filtering.    update-resolver-endpoints: Add IP addresses to an endpoint or remove IP addresses from an endpoint.    To delete an endpoint, use the following AWS CLI command:  delete-resolver-endpoint &ndash;resolver-endpoint-id [resolver_endpoint_id]</p>
+<p>When you create a VPC using Amazon VPC, you automatically get DNS resolution within the VPC from Route 53 Resolver. By default, Resolver answers DNS queries for VPC domain names such as domain names for EC2 instances or ELB load balancers. Resolver performs recursive lookups against public name servers for all other domain names. You can also configure DNS resolution between your VPC and your network over a Direct Connect or VPN connection:  Forward DNS queries from resolvers on your network to Route 53 Resolver  DNS resolvers on your network can forward DNS queries to Resolver in a specified VPC. This allows your DNS resolvers to easily resolve domain names for AWS resources such as EC2 instances or records in a Route 53 private hosted zone. For more information, see How DNS Resolvers on Your Network Forward DNS Queries to Route 53 Resolver in the Amazon Route 53 Developer Guide.  Conditionally forward queries from a VPC to resolvers on your network  You can configure Resolver to forward queries that it receives from EC2 instances in your VPCs to DNS resolvers on your network. To forward selected queries, you create Resolver rules that specify the domain names for the DNS queries that you want to forward (such as example.com), and the IP addresses of the DNS resolvers on your network that you want to forward the queries to. If a query matches multiple rules (example.com, acme.example.com), Resolver chooses the rule with the most specific match (acme.example.com) and forwards the query to the IP addresses that you specified in that rule. For more information, see How Route 53 Resolver Forwards DNS Queries from Your VPCs to Your Network in the Amazon Route 53 Developer Guide. Like Amazon VPC, Resolver is regional. In each region where you have VPCs, you can choose whether to forward queries from your VPCs to your network (outbound queries), from your network to your VPCs (inbound queries), or both.</p>
 
           </section>
           <section class="section task-group-section">
@@ -922,7 +955,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Adds IP addresses to an inbound or an outbound resolver endpoint. If you want to adding more than one IP address, submit one AssociateResolverEndpointIpAddress request for each IP address. To remove an IP address from an endpoint, see DisassociateResolverEndpointIpAddress.</p>
+                        <p>Adds IP addresses to an inbound or an outbound Resolver endpoint. If you want to add more than one IP address, submit one AssociateResolverEndpointIpAddress request for each IP address. To remove an IP address from an endpoint, see DisassociateResolverEndpointIpAddress.</p>
 
                       </div>
                       <div class="declaration">
@@ -930,6 +963,33 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">associateResolverEndpointIpAddress</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/Route53Resolver/AssociateResolverEndpointIpAddressRequest.html">AssociateResolverEndpointIpAddressRequest</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/Route53Resolver/AssociateResolverEndpointIpAddressResponse.html">AssociateResolverEndpointIpAddressResponse</a></span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:15Route53ResolverAAV09associateB14QueryLogConfigy3NIO15EventLoopFutureCyAB09AssociatebdeF8ResponseVGAB0kbdeF7RequestVF"></a>
+                    <a name="//apple_ref/swift/Method/associateResolverQueryLogConfig(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15Route53ResolverAAV09associateB14QueryLogConfigy3NIO15EventLoopFutureCyAB09AssociatebdeF8ResponseVGAB0kbdeF7RequestVF">associateResolverQueryLogConfig(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Associates an Amazon VPC with a specified query logging configuration. Route 53 Resolver logs DNS queries that originate in all of the Amazon VPCs that are associated with a specified query logging configuration. To associate more than one VPC with a configuration, submit one AssociateResolverQueryLogConfig request for each VPC.  The VPCs that you associate with a query logging configuration must be in the same Region as the configuration.  To remove a VPC from a query logging configuration, see DisassociateResolverQueryLogConfig.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">associateResolverQueryLogConfig</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/Route53Resolver/AssociateResolverQueryLogConfigRequest.html">AssociateResolverQueryLogConfigRequest</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/Route53Resolver/AssociateResolverQueryLogConfigResponse.html">AssociateResolverQueryLogConfigResponse</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
                       </div>
@@ -949,7 +1009,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Associates a resolver rule with a VPC. When you associate a rule with a VPC, Resolver forwards all DNS queries for the domain name that is specified in the rule and that originate in the VPC. The queries are forwarded to the IP addresses for the DNS resolvers that are specified in the rule. For more information about rules, see CreateResolverRule.</p>
+                        <p>Associates a Resolver rule with a VPC. When you associate a rule with a VPC, Resolver forwards all DNS queries for the domain name that is specified in the rule and that originate in the VPC. The queries are forwarded to the IP addresses for the DNS resolvers that are specified in the rule. For more information about rules, see CreateResolverRule.</p>
 
                       </div>
                       <div class="declaration">
@@ -976,7 +1036,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Creates a resolver endpoint. There are two types of resolver endpoints, inbound and outbound:   An inbound resolver endpoint forwards DNS queries to the DNS service for a VPC from your network or another VPC.   An outbound resolver endpoint forwards DNS queries from the DNS service for a VPC to your network or another VPC.</p>
+                        <p>Creates a Resolver endpoint. There are two types of Resolver endpoints, inbound and outbound:   An inbound Resolver endpoint forwards DNS queries to the DNS service for a VPC from your network.   An outbound Resolver endpoint forwards DNS queries from the DNS service for a VPC to your network.</p>
 
                       </div>
                       <div class="declaration">
@@ -984,6 +1044,33 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">createResolverEndpoint</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/Route53Resolver/CreateResolverEndpointRequest.html">CreateResolverEndpointRequest</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/Route53Resolver/CreateResolverEndpointResponse.html">CreateResolverEndpointResponse</a></span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:15Route53ResolverAAV06createB14QueryLogConfigy3NIO15EventLoopFutureCyAB06CreatebdeF8ResponseVGAB0kbdeF7RequestVF"></a>
+                    <a name="//apple_ref/swift/Method/createResolverQueryLogConfig(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15Route53ResolverAAV06createB14QueryLogConfigy3NIO15EventLoopFutureCyAB06CreatebdeF8ResponseVGAB0kbdeF7RequestVF">createResolverQueryLogConfig(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a Resolver query logging configuration, which defines where you want Resolver to save DNS query logs that originate in your VPCs. Resolver can log queries only for VPCs that are in the same Region as the query logging configuration. To specify which VPCs you want to log queries for, you use AssociateResolverQueryLogConfig. For more information, see AssociateResolverQueryLogConfig.  You can optionally use AWS Resource Access Manager (AWS RAM) to share a query logging configuration with other AWS accounts. The other accounts can then associate VPCs with the configuration. The query logs that Resolver creates for a configuration include all DNS queries that originate in all VPCs that are associated with the configuration.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">createResolverQueryLogConfig</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/Route53Resolver/CreateResolverQueryLogConfigRequest.html">CreateResolverQueryLogConfigRequest</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/Route53Resolver/CreateResolverQueryLogConfigResponse.html">CreateResolverQueryLogConfigResponse</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
                       </div>
@@ -1003,7 +1090,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>For DNS queries that originate in your VPCs, specifies which resolver endpoint the queries pass through, one domain name that you want to forward to your network, and the IP addresses of the DNS resolvers in your network.</p>
+                        <p>For DNS queries that originate in your VPCs, specifies which Resolver endpoint the queries pass through, one domain name that you want to forward to your network, and the IP addresses of the DNS resolvers in your network.</p>
 
                       </div>
                       <div class="declaration">
@@ -1030,7 +1117,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Deletes a resolver endpoint. The effect of deleting a resolver endpoint depends on whether it&rsquo;s an inbound or an outbound resolver endpoint:    Inbound: DNS queries from your network or another VPC are no longer routed to the DNS service for the specified VPC.    Outbound: DNS queries from a VPC are no longer routed to your network or to another VPC.</p>
+                        <p>Deletes a Resolver endpoint. The effect of deleting a Resolver endpoint depends on whether it&rsquo;s an inbound or an outbound Resolver endpoint:    Inbound: DNS queries from your network are no longer routed to the DNS service for the specified VPC.    Outbound: DNS queries from a VPC are no longer routed to your network.</p>
 
                       </div>
                       <div class="declaration">
@@ -1038,6 +1125,33 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">deleteResolverEndpoint</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/Route53Resolver/DeleteResolverEndpointRequest.html">DeleteResolverEndpointRequest</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/Route53Resolver/DeleteResolverEndpointResponse.html">DeleteResolverEndpointResponse</a></span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:15Route53ResolverAAV06deleteB14QueryLogConfigy3NIO15EventLoopFutureCyAB06DeletebdeF8ResponseVGAB0kbdeF7RequestVF"></a>
+                    <a name="//apple_ref/swift/Method/deleteResolverQueryLogConfig(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15Route53ResolverAAV06deleteB14QueryLogConfigy3NIO15EventLoopFutureCyAB06DeletebdeF8ResponseVGAB0kbdeF7RequestVF">deleteResolverQueryLogConfig(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Deletes a query logging configuration. When you delete a configuration, Resolver stops logging DNS queries for all of the Amazon VPCs that are associated with the configuration. This also applies if the query logging configuration is shared with other AWS accounts, and the other accounts have associated VPCs with the shared configuration. Before you can delete a query logging configuration, you must first disassociate all VPCs from the configuration. See DisassociateResolverQueryLogConfig. If you used Resource Access Manager (RAM) to share a query logging configuration with other accounts, you must stop sharing the configuration before you can delete a configuration. The accounts that you shared the configuration with can first disassociate VPCs that they associated with the configuration, but that&rsquo;s not necessary. If you stop sharing the configuration, those VPCs are automatically disassociated from the configuration.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">deleteResolverQueryLogConfig</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/Route53Resolver/DeleteResolverQueryLogConfigRequest.html">DeleteResolverQueryLogConfigRequest</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/Route53Resolver/DeleteResolverQueryLogConfigResponse.html">DeleteResolverQueryLogConfigResponse</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
                       </div>
@@ -1057,7 +1171,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Deletes a resolver rule. Before you can delete a resolver rule, you must disassociate it from all the VPCs that you associated the resolver rule with. For more infomation, see DisassociateResolverRule.</p>
+                        <p>Deletes a Resolver rule. Before you can delete a Resolver rule, you must disassociate it from all the VPCs that you associated the Resolver rule with. For more information, see DisassociateResolverRule.</p>
 
                       </div>
                       <div class="declaration">
@@ -1084,7 +1198,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Removes IP addresses from an inbound or an outbound resolver endpoint. If you want to remove more than one IP address, submit one DisassociateResolverEndpointIpAddress request for each IP address. To add an IP address to an endpoint, see AssociateResolverEndpointIpAddress.</p>
+                        <p>Removes IP addresses from an inbound or an outbound Resolver endpoint. If you want to remove more than one IP address, submit one DisassociateResolverEndpointIpAddress request for each IP address. To add an IP address to an endpoint, see AssociateResolverEndpointIpAddress.</p>
 
                       </div>
                       <div class="declaration">
@@ -1092,6 +1206,33 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">disassociateResolverEndpointIpAddress</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/Route53Resolver/DisassociateResolverEndpointIpAddressRequest.html">DisassociateResolverEndpointIpAddressRequest</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/Route53Resolver/DisassociateResolverEndpointIpAddressResponse.html">DisassociateResolverEndpointIpAddressResponse</a></span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:15Route53ResolverAAV012disassociateB14QueryLogConfigy3NIO15EventLoopFutureCyAB012DisassociatebdeF8ResponseVGAB0kbdeF7RequestVF"></a>
+                    <a name="//apple_ref/swift/Method/disassociateResolverQueryLogConfig(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15Route53ResolverAAV012disassociateB14QueryLogConfigy3NIO15EventLoopFutureCyAB012DisassociatebdeF8ResponseVGAB0kbdeF7RequestVF">disassociateResolverQueryLogConfig(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Disassociates a VPC from a query logging configuration.  Before you can delete a query logging configuration, you must first disassociate all VPCs from the configuration. If you used Resource Access Manager (RAM) to share a query logging configuration with other accounts, VPCs can be disassociated from the configuration in the following ways:   The accounts that you shared the configuration with can disassociate VPCs from the configuration.   You can stop sharing the configuration.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">disassociateResolverQueryLogConfig</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/Route53Resolver/DisassociateResolverQueryLogConfigRequest.html">DisassociateResolverQueryLogConfigRequest</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/Route53Resolver/DisassociateResolverQueryLogConfigResponse.html">DisassociateResolverQueryLogConfigResponse</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
                       </div>
@@ -1111,7 +1252,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Removes the association between a specified resolver rule and a specified VPC.  If you disassociate a resolver rule from a VPC, Resolver stops forwarding DNS queries for the domain name that you specified in the resolver rule.</p>
+                        <p>Removes the association between a specified Resolver rule and a specified VPC.  If you disassociate a Resolver rule from a VPC, Resolver stops forwarding DNS queries for the domain name that you specified in the Resolver rule.</p>
 
                       </div>
                       <div class="declaration">
@@ -1138,7 +1279,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Gets information about a specified resolver endpoint, such as whether it&rsquo;s an inbound or an outbound resolver endpoint, and the current status of the endpoint.</p>
+                        <p>Gets information about a specified Resolver endpoint, such as whether it&rsquo;s an inbound or an outbound Resolver endpoint, and the current status of the endpoint.</p>
 
                       </div>
                       <div class="declaration">
@@ -1146,6 +1287,87 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getResolverEndpoint</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/Route53Resolver/GetResolverEndpointRequest.html">GetResolverEndpointRequest</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/Route53Resolver/GetResolverEndpointResponse.html">GetResolverEndpointResponse</a></span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:15Route53ResolverAAV03getB14QueryLogConfigy3NIO15EventLoopFutureCyAB03GetbdeF8ResponseVGAB0kbdeF7RequestVF"></a>
+                    <a name="//apple_ref/swift/Method/getResolverQueryLogConfig(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15Route53ResolverAAV03getB14QueryLogConfigy3NIO15EventLoopFutureCyAB03GetbdeF8ResponseVGAB0kbdeF7RequestVF">getResolverQueryLogConfig(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Gets information about a specified Resolver query logging configuration, such as the number of VPCs that the configuration is logging queries for and the location that logs are sent to.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getResolverQueryLogConfig</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/Route53Resolver/GetResolverQueryLogConfigRequest.html">GetResolverQueryLogConfigRequest</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/Route53Resolver/GetResolverQueryLogConfigResponse.html">GetResolverQueryLogConfigResponse</a></span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:15Route53ResolverAAV03getB25QueryLogConfigAssociationy3NIO15EventLoopFutureCyAB03GetbdefG8ResponseVGAB0lbdefG7RequestVF"></a>
+                    <a name="//apple_ref/swift/Method/getResolverQueryLogConfigAssociation(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15Route53ResolverAAV03getB25QueryLogConfigAssociationy3NIO15EventLoopFutureCyAB03GetbdefG8ResponseVGAB0lbdefG7RequestVF">getResolverQueryLogConfigAssociation(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Gets information about a specified association between a Resolver query logging configuration and an Amazon VPC. When you associate a VPC with a query logging configuration, Resolver logs DNS queries that originate in that VPC.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getResolverQueryLogConfigAssociation</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/Route53Resolver/GetResolverQueryLogConfigAssociationRequest.html">GetResolverQueryLogConfigAssociationRequest</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/Route53Resolver/GetResolverQueryLogConfigAssociationResponse.html">GetResolverQueryLogConfigAssociationResponse</a></span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:15Route53ResolverAAV03getB20QueryLogConfigPolicyy3NIO15EventLoopFutureCyAB03GetbdefG8ResponseVGAB0lbdefG7RequestVF"></a>
+                    <a name="//apple_ref/swift/Method/getResolverQueryLogConfigPolicy(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15Route53ResolverAAV03getB20QueryLogConfigPolicyy3NIO15EventLoopFutureCyAB03GetbdefG8ResponseVGAB0lbdefG7RequestVF">getResolverQueryLogConfigPolicy(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Gets information about a query logging policy. A query logging policy specifies the Resolver query logging operations and resources that you want to allow another AWS account to be able to use.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getResolverQueryLogConfigPolicy</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/Route53Resolver/GetResolverQueryLogConfigPolicyRequest.html">GetResolverQueryLogConfigPolicyRequest</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/Route53Resolver/GetResolverQueryLogConfigPolicyResponse.html">GetResolverQueryLogConfigPolicyResponse</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
                       </div>
@@ -1165,7 +1387,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Gets information about a specified resolver rule, such as the domain name that the rule forwards DNS queries for and the ID of the outbound resolver endpoint that the rule is associated with.</p>
+                        <p>Gets information about a specified Resolver rule, such as the domain name that the rule forwards DNS queries for and the ID of the outbound Resolver endpoint that the rule is associated with.</p>
 
                       </div>
                       <div class="declaration">
@@ -1192,7 +1414,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Gets information about an association between a specified resolver rule and a VPC. You associate a resolver rule and a VPC using AssociateResolverRule.</p>
+                        <p>Gets information about an association between a specified Resolver rule and a VPC. You associate a Resolver rule and a VPC using AssociateResolverRule.</p>
 
                       </div>
                       <div class="declaration">
@@ -1219,7 +1441,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Gets information about a resolver rule policy. A resolver rule policy specifies the Resolver operations and resources that you want to allow another AWS account to be able to use.</p>
+                        <p>Gets information about a Resolver rule policy. A Resolver rule policy specifies the Resolver operations and resources that you want to allow another AWS account to be able to use.</p>
 
                       </div>
                       <div class="declaration">
@@ -1246,7 +1468,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Gets the IP addresses for a specified resolver endpoint.</p>
+                        <p>Gets the IP addresses for a specified Resolver endpoint.</p>
 
                       </div>
                       <div class="declaration">
@@ -1273,7 +1495,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Lists all the resolver endpoints that were created using the current AWS account.</p>
+                        <p>Lists all the Resolver endpoints that were created using the current AWS account.</p>
 
                       </div>
                       <div class="declaration">
@@ -1281,6 +1503,60 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">listResolverEndpoints</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/Route53Resolver/ListResolverEndpointsRequest.html">ListResolverEndpointsRequest</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/Route53Resolver/ListResolverEndpointsResponse.html">ListResolverEndpointsResponse</a></span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:15Route53ResolverAAV04listB26QueryLogConfigAssociationsy3NIO15EventLoopFutureCyAB04ListbdefG8ResponseVGAB0lbdefG7RequestVF"></a>
+                    <a name="//apple_ref/swift/Method/listResolverQueryLogConfigAssociations(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15Route53ResolverAAV04listB26QueryLogConfigAssociationsy3NIO15EventLoopFutureCyAB04ListbdefG8ResponseVGAB0lbdefG7RequestVF">listResolverQueryLogConfigAssociations(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Lists information about associations between Amazon VPCs and query logging configurations.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">listResolverQueryLogConfigAssociations</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/Route53Resolver/ListResolverQueryLogConfigAssociationsRequest.html">ListResolverQueryLogConfigAssociationsRequest</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/Route53Resolver/ListResolverQueryLogConfigAssociationsResponse.html">ListResolverQueryLogConfigAssociationsResponse</a></span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:15Route53ResolverAAV04listB15QueryLogConfigsy3NIO15EventLoopFutureCyAB04ListbdeF8ResponseVGAB0kbdeF7RequestVF"></a>
+                    <a name="//apple_ref/swift/Method/listResolverQueryLogConfigs(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15Route53ResolverAAV04listB15QueryLogConfigsy3NIO15EventLoopFutureCyAB04ListbdeF8ResponseVGAB0kbdeF7RequestVF">listResolverQueryLogConfigs(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Lists information about the specified query logging configurations. Each configuration defines where you want Resolver to save DNS query logs and specifies the VPCs that you want to log queries for.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">listResolverQueryLogConfigs</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/Route53Resolver/ListResolverQueryLogConfigsRequest.html">ListResolverQueryLogConfigsRequest</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/Route53Resolver/ListResolverQueryLogConfigsResponse.html">ListResolverQueryLogConfigsResponse</a></span><span class="o">&gt;</span></code></pre>
 
                         </div>
                       </div>
@@ -1300,7 +1576,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Lists the associations that were created between resolver rules and VPCs using the current AWS account.</p>
+                        <p>Lists the associations that were created between Resolver rules and VPCs using the current AWS account.</p>
 
                       </div>
                       <div class="declaration">
@@ -1327,7 +1603,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Lists the resolver rules that were created using the current AWS account.</p>
+                        <p>Lists the Resolver rules that were created using the current AWS account.</p>
 
                       </div>
                       <div class="declaration">
@@ -1371,6 +1647,33 @@
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/s:15Route53ResolverAAV03putB20QueryLogConfigPolicyy3NIO15EventLoopFutureCyAB03PutbdefG8ResponseVGAB0lbdefG7RequestVF"></a>
+                    <a name="//apple_ref/swift/Method/putResolverQueryLogConfigPolicy(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15Route53ResolverAAV03putB20QueryLogConfigPolicyy3NIO15EventLoopFutureCyAB03PutbdefG8ResponseVGAB0lbdefG7RequestVF">putResolverQueryLogConfigPolicy(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Specifies an AWS account that you want to share a query logging configuration with, the query logging configuration that you want to share, and the operations that you want the account to be able to perform on the configuration.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">putResolverQueryLogConfigPolicy</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/Route53Resolver/PutResolverQueryLogConfigPolicyRequest.html">PutResolverQueryLogConfigPolicyRequest</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/Route53Resolver/PutResolverQueryLogConfigPolicyResponse.html">PutResolverQueryLogConfigPolicyResponse</a></span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/s:15Route53ResolverAAV03putB10RulePolicyy3NIO15EventLoopFutureCyAB03PutbdE8ResponseVGAB0jbdE7RequestVF"></a>
                     <a name="//apple_ref/swift/Method/putResolverRulePolicy(_:)" class="dashAnchor"></a>
                     <a class="token" href="#/s:15Route53ResolverAAV03putB10RulePolicyy3NIO15EventLoopFutureCyAB03PutbdE8ResponseVGAB0jbdE7RequestVF">putResolverRulePolicy(_:)</a>
@@ -1381,7 +1684,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Specifies the Resolver operations and resources that you want to allow another AWS account to be able to use.</p>
+                        <p>Specifies an AWS account that you want to share rules with, the Resolver rules that you want to share, and the operations that you want the account to be able to perform on those rules.</p>
 
                       </div>
                       <div class="declaration">
@@ -1462,7 +1765,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Updates the name of an inbound or an outbound resolver endpoint.</p>
+                        <p>Updates the name of an inbound or an outbound Resolver endpoint.</p>
 
                       </div>
                       <div class="declaration">
@@ -1489,7 +1792,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Updates settings for a specified resolver rule. ResolverRuleId is required, and all other parameters are optional. If you don&rsquo;t specify a parameter, it retains its current value.</p>
+                        <p>Updates settings for a specified Resolver rule. ResolverRuleId is required, and all other parameters are optional. If you don&rsquo;t specify a parameter, it retains its current value.</p>
 
                       </div>
                       <div class="declaration">
@@ -1527,7 +1830,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Gets the IP addresses for a specified resolver endpoint.</p>
+                        <p>Gets the IP addresses for a specified Resolver endpoint.</p>
 
                       </div>
                       <div class="declaration">
@@ -1554,7 +1857,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Lists all the resolver endpoints that were created using the current AWS account.</p>
+                        <p>Lists all the Resolver endpoints that were created using the current AWS account.</p>
 
                       </div>
                       <div class="declaration">
@@ -1562,6 +1865,60 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">listResolverEndpointsPaginator</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/Route53Resolver/ListResolverEndpointsRequest.html">ListResolverEndpointsRequest</a></span><span class="p">,</span> <span class="nv">onPage</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/Route53Resolver/ListResolverEndpointsResponse.html">ListResolverEndpointsResponse</a></span><span class="p">,</span> <span class="kt">EventLoop</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Bool</span><span class="o">&gt;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Void</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:15Route53ResolverAAV04listB35QueryLogConfigAssociationsPaginator_6onPage3NIO15EventLoopFutureCyytGAB04ListbdefG7RequestV_AGySbGAB0obdefG8ResponseV_AE0lM0_ptctF"></a>
+                    <a name="//apple_ref/swift/Method/listResolverQueryLogConfigAssociationsPaginator(_:onPage:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15Route53ResolverAAV04listB35QueryLogConfigAssociationsPaginator_6onPage3NIO15EventLoopFutureCyytGAB04ListbdefG7RequestV_AGySbGAB0obdefG8ResponseV_AE0lM0_ptctF">listResolverQueryLogConfigAssociationsPaginator(_:onPage:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Lists information about associations between Amazon VPCs and query logging configurations.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">listResolverQueryLogConfigAssociationsPaginator</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/Route53Resolver/ListResolverQueryLogConfigAssociationsRequest.html">ListResolverQueryLogConfigAssociationsRequest</a></span><span class="p">,</span> <span class="nv">onPage</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/Route53Resolver/ListResolverQueryLogConfigAssociationsResponse.html">ListResolverQueryLogConfigAssociationsResponse</a></span><span class="p">,</span> <span class="kt">EventLoop</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Bool</span><span class="o">&gt;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Void</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:15Route53ResolverAAV04listB24QueryLogConfigsPaginator_6onPage3NIO15EventLoopFutureCyytGAB04ListbdeF7RequestV_AGySbGAB0nbdeF8ResponseV_AE0kL0_ptctF"></a>
+                    <a name="//apple_ref/swift/Method/listResolverQueryLogConfigsPaginator(_:onPage:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15Route53ResolverAAV04listB24QueryLogConfigsPaginator_6onPage3NIO15EventLoopFutureCyytGAB04ListbdeF7RequestV_AGySbGAB0nbdeF8ResponseV_AE0kL0_ptctF">listResolverQueryLogConfigsPaginator(_:onPage:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Lists information about the specified query logging configurations. Each configuration defines where you want Resolver to save DNS query logs and specifies the VPCs that you want to log queries for.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">listResolverQueryLogConfigsPaginator</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/Route53Resolver/ListResolverQueryLogConfigsRequest.html">ListResolverQueryLogConfigsRequest</a></span><span class="p">,</span> <span class="nv">onPage</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/Route53Resolver/ListResolverQueryLogConfigsResponse.html">ListResolverQueryLogConfigsResponse</a></span><span class="p">,</span> <span class="kt">EventLoop</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Bool</span><span class="o">&gt;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Void</span><span class="o">&gt;</span></code></pre>
 
                         </div>
                       </div>
@@ -1581,7 +1938,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Lists the associations that were created between resolver rules and VPCs using the current AWS account.</p>
+                        <p>Lists the associations that were created between Resolver rules and VPCs using the current AWS account.</p>
 
                       </div>
                       <div class="declaration">
@@ -1608,7 +1965,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Lists the resolver rules that were created using the current AWS account.</p>
+                        <p>Lists the Resolver rules that were created using the current AWS account.</p>
 
                       </div>
                       <div class="declaration">
@@ -1616,6 +1973,33 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">listResolverRulesPaginator</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/Route53Resolver/ListResolverRulesRequest.html">ListResolverRulesRequest</a></span><span class="p">,</span> <span class="nv">onPage</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/Route53Resolver/ListResolverRulesResponse.html">ListResolverRulesResponse</a></span><span class="p">,</span> <span class="kt">EventLoop</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Bool</span><span class="o">&gt;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Void</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:15Route53ResolverAAV28listTagsForResourcePaginator_6onPage3NIO15EventLoopFutureCyytGAB04ListdeF7RequestV_AGySbGAB0ndeF8ResponseV_AE0kL0_ptctF"></a>
+                    <a name="//apple_ref/swift/Method/listTagsForResourcePaginator(_:onPage:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15Route53ResolverAAV28listTagsForResourcePaginator_6onPage3NIO15EventLoopFutureCyytGAB04ListdeF7RequestV_AGySbGAB0ndeF8ResponseV_AE0kL0_ptctF">listTagsForResourcePaginator(_:onPage:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Lists the tags that you associated with the specified resource.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">listTagsForResourcePaginator</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/Route53Resolver/ListTagsForResourceRequest.html">ListTagsForResourceRequest</a></span><span class="p">,</span> <span class="nv">onPage</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/Route53Resolver/ListTagsForResourceResponse.html">ListTagsForResourceResponse</a></span><span class="p">,</span> <span class="kt">EventLoop</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Bool</span><span class="o">&gt;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Void</span><span class="o">&gt;</span></code></pre>
 
                         </div>
                       </div>
@@ -1694,6 +2078,64 @@
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/s:15Route53ResolverAAV04ListB33QueryLogConfigAssociationsRequestV"></a>
+                    <a name="//apple_ref/swift/Struct/ListResolverQueryLogConfigAssociationsRequest" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15Route53ResolverAAV04ListB33QueryLogConfigAssociationsRequestV">ListResolverQueryLogConfigAssociationsRequest</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/Route53Resolver/ListResolverQueryLogConfigAssociationsRequest.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ListResolverQueryLogConfigAssociationsRequest</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt"><a href="../Structs/Route53Resolver.html">Route53Resolver</a></span><span class="o">.</span><span class="kt">ListResolverQueryLogConfigAssociationsRequest</span><span class="p">:</span> <span class="kt"><a href="../Protocols/AWSPaginateStringToken.html">AWSPaginateStringToken</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:15Route53ResolverAAV04ListB22QueryLogConfigsRequestV"></a>
+                    <a name="//apple_ref/swift/Struct/ListResolverQueryLogConfigsRequest" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15Route53ResolverAAV04ListB22QueryLogConfigsRequestV">ListResolverQueryLogConfigsRequest</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/Route53Resolver/ListResolverQueryLogConfigsRequest.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ListResolverQueryLogConfigsRequest</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt"><a href="../Structs/Route53Resolver.html">Route53Resolver</a></span><span class="o">.</span><span class="kt">ListResolverQueryLogConfigsRequest</span><span class="p">:</span> <span class="kt"><a href="../Protocols/AWSPaginateStringToken.html">AWSPaginateStringToken</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/s:15Route53ResolverAAV04ListB23RuleAssociationsRequestV"></a>
                     <a name="//apple_ref/swift/Struct/ListResolverRuleAssociationsRequest" class="dashAnchor"></a>
                     <a class="token" href="#/s:15Route53ResolverAAV04ListB23RuleAssociationsRequestV">ListResolverRuleAssociationsRequest</a>
@@ -1752,6 +2194,35 @@
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/s:15Route53ResolverAAV26ListTagsForResourceRequestV"></a>
+                    <a name="//apple_ref/swift/Struct/ListTagsForResourceRequest" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15Route53ResolverAAV26ListTagsForResourceRequestV">ListTagsForResourceRequest</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/Route53Resolver/ListTagsForResourceRequest.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ListTagsForResourceRequest</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt"><a href="../Structs/Route53Resolver.html">Route53Resolver</a></span><span class="o">.</span><span class="kt">ListTagsForResourceRequest</span><span class="p">:</span> <span class="kt"><a href="../Protocols/AWSPaginateStringToken.html">AWSPaginateStringToken</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/s:15Route53ResolverAAV09AssociateB24EndpointIpAddressRequestV"></a>
                     <a name="//apple_ref/swift/Struct/AssociateResolverEndpointIpAddressRequest" class="dashAnchor"></a>
                     <a class="token" href="#/s:15Route53ResolverAAV09AssociateB24EndpointIpAddressRequestV">AssociateResolverEndpointIpAddressRequest</a>
@@ -1799,6 +2270,62 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">AssociateResolverEndpointIpAddressResponse</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:15Route53ResolverAAV09AssociateB21QueryLogConfigRequestV"></a>
+                    <a name="//apple_ref/swift/Struct/AssociateResolverQueryLogConfigRequest" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15Route53ResolverAAV09AssociateB21QueryLogConfigRequestV">AssociateResolverQueryLogConfigRequest</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/Route53Resolver/AssociateResolverQueryLogConfigRequest.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">AssociateResolverQueryLogConfigRequest</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:15Route53ResolverAAV09AssociateB22QueryLogConfigResponseV"></a>
+                    <a name="//apple_ref/swift/Struct/AssociateResolverQueryLogConfigResponse" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15Route53ResolverAAV09AssociateB22QueryLogConfigResponseV">AssociateResolverQueryLogConfigResponse</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/Route53Resolver/AssociateResolverQueryLogConfigResponse.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">AssociateResolverQueryLogConfigResponse</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
 
                         </div>
                       </div>
@@ -1920,6 +2447,62 @@
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/s:15Route53ResolverAAV06CreateB21QueryLogConfigRequestV"></a>
+                    <a name="//apple_ref/swift/Struct/CreateResolverQueryLogConfigRequest" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15Route53ResolverAAV06CreateB21QueryLogConfigRequestV">CreateResolverQueryLogConfigRequest</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/Route53Resolver/CreateResolverQueryLogConfigRequest.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">CreateResolverQueryLogConfigRequest</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:15Route53ResolverAAV06CreateB22QueryLogConfigResponseV"></a>
+                    <a name="//apple_ref/swift/Struct/CreateResolverQueryLogConfigResponse" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15Route53ResolverAAV06CreateB22QueryLogConfigResponseV">CreateResolverQueryLogConfigResponse</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/Route53Resolver/CreateResolverQueryLogConfigResponse.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">CreateResolverQueryLogConfigResponse</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/s:15Route53ResolverAAV06CreateB11RuleRequestV"></a>
                     <a name="//apple_ref/swift/Struct/CreateResolverRuleRequest" class="dashAnchor"></a>
                     <a class="token" href="#/s:15Route53ResolverAAV06CreateB11RuleRequestV">CreateResolverRuleRequest</a>
@@ -2032,6 +2615,62 @@
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/s:15Route53ResolverAAV06DeleteB21QueryLogConfigRequestV"></a>
+                    <a name="//apple_ref/swift/Struct/DeleteResolverQueryLogConfigRequest" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15Route53ResolverAAV06DeleteB21QueryLogConfigRequestV">DeleteResolverQueryLogConfigRequest</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/Route53Resolver/DeleteResolverQueryLogConfigRequest.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DeleteResolverQueryLogConfigRequest</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:15Route53ResolverAAV06DeleteB22QueryLogConfigResponseV"></a>
+                    <a name="//apple_ref/swift/Struct/DeleteResolverQueryLogConfigResponse" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15Route53ResolverAAV06DeleteB22QueryLogConfigResponseV">DeleteResolverQueryLogConfigResponse</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/Route53Resolver/DeleteResolverQueryLogConfigResponse.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DeleteResolverQueryLogConfigResponse</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/s:15Route53ResolverAAV06DeleteB11RuleRequestV"></a>
                     <a name="//apple_ref/swift/Struct/DeleteResolverRuleRequest" class="dashAnchor"></a>
                     <a class="token" href="#/s:15Route53ResolverAAV06DeleteB11RuleRequestV">DeleteResolverRuleRequest</a>
@@ -2135,6 +2774,62 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DisassociateResolverEndpointIpAddressResponse</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:15Route53ResolverAAV012DisassociateB21QueryLogConfigRequestV"></a>
+                    <a name="//apple_ref/swift/Struct/DisassociateResolverQueryLogConfigRequest" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15Route53ResolverAAV012DisassociateB21QueryLogConfigRequestV">DisassociateResolverQueryLogConfigRequest</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/Route53Resolver/DisassociateResolverQueryLogConfigRequest.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DisassociateResolverQueryLogConfigRequest</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:15Route53ResolverAAV012DisassociateB22QueryLogConfigResponseV"></a>
+                    <a name="//apple_ref/swift/Struct/DisassociateResolverQueryLogConfigResponse" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15Route53ResolverAAV012DisassociateB22QueryLogConfigResponseV">DisassociateResolverQueryLogConfigResponse</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/Route53Resolver/DisassociateResolverQueryLogConfigResponse.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DisassociateResolverQueryLogConfigResponse</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
 
                         </div>
                       </div>
@@ -2275,6 +2970,174 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">GetResolverEndpointResponse</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:15Route53ResolverAAV03GetB32QueryLogConfigAssociationRequestV"></a>
+                    <a name="//apple_ref/swift/Struct/GetResolverQueryLogConfigAssociationRequest" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15Route53ResolverAAV03GetB32QueryLogConfigAssociationRequestV">GetResolverQueryLogConfigAssociationRequest</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/Route53Resolver/GetResolverQueryLogConfigAssociationRequest.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">GetResolverQueryLogConfigAssociationRequest</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:15Route53ResolverAAV03GetB33QueryLogConfigAssociationResponseV"></a>
+                    <a name="//apple_ref/swift/Struct/GetResolverQueryLogConfigAssociationResponse" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15Route53ResolverAAV03GetB33QueryLogConfigAssociationResponseV">GetResolverQueryLogConfigAssociationResponse</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/Route53Resolver/GetResolverQueryLogConfigAssociationResponse.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">GetResolverQueryLogConfigAssociationResponse</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:15Route53ResolverAAV03GetB27QueryLogConfigPolicyRequestV"></a>
+                    <a name="//apple_ref/swift/Struct/GetResolverQueryLogConfigPolicyRequest" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15Route53ResolverAAV03GetB27QueryLogConfigPolicyRequestV">GetResolverQueryLogConfigPolicyRequest</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/Route53Resolver/GetResolverQueryLogConfigPolicyRequest.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">GetResolverQueryLogConfigPolicyRequest</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:15Route53ResolverAAV03GetB28QueryLogConfigPolicyResponseV"></a>
+                    <a name="//apple_ref/swift/Struct/GetResolverQueryLogConfigPolicyResponse" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15Route53ResolverAAV03GetB28QueryLogConfigPolicyResponseV">GetResolverQueryLogConfigPolicyResponse</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/Route53Resolver/GetResolverQueryLogConfigPolicyResponse.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">GetResolverQueryLogConfigPolicyResponse</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:15Route53ResolverAAV03GetB21QueryLogConfigRequestV"></a>
+                    <a name="//apple_ref/swift/Struct/GetResolverQueryLogConfigRequest" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15Route53ResolverAAV03GetB21QueryLogConfigRequestV">GetResolverQueryLogConfigRequest</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/Route53Resolver/GetResolverQueryLogConfigRequest.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">GetResolverQueryLogConfigRequest</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:15Route53ResolverAAV03GetB22QueryLogConfigResponseV"></a>
+                    <a name="//apple_ref/swift/Struct/GetResolverQueryLogConfigResponse" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15Route53ResolverAAV03GetB22QueryLogConfigResponseV">GetResolverQueryLogConfigResponse</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/Route53Resolver/GetResolverQueryLogConfigResponse.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">GetResolverQueryLogConfigResponse</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
 
                         </div>
                       </div>
@@ -2592,6 +3455,62 @@
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/s:15Route53ResolverAAV04ListB34QueryLogConfigAssociationsResponseV"></a>
+                    <a name="//apple_ref/swift/Struct/ListResolverQueryLogConfigAssociationsResponse" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15Route53ResolverAAV04ListB34QueryLogConfigAssociationsResponseV">ListResolverQueryLogConfigAssociationsResponse</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/Route53Resolver/ListResolverQueryLogConfigAssociationsResponse.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ListResolverQueryLogConfigAssociationsResponse</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:15Route53ResolverAAV04ListB23QueryLogConfigsResponseV"></a>
+                    <a name="//apple_ref/swift/Struct/ListResolverQueryLogConfigsResponse" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15Route53ResolverAAV04ListB23QueryLogConfigsResponseV">ListResolverQueryLogConfigsResponse</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/Route53Resolver/ListResolverQueryLogConfigsResponse.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ListResolverQueryLogConfigsResponse</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/s:15Route53ResolverAAV04ListB24RuleAssociationsResponseV"></a>
                     <a name="//apple_ref/swift/Struct/ListResolverRuleAssociationsResponse" class="dashAnchor"></a>
                     <a class="token" href="#/s:15Route53ResolverAAV04ListB24RuleAssociationsResponseV">ListResolverRuleAssociationsResponse</a>
@@ -2648,34 +3567,6 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:15Route53ResolverAAV26ListTagsForResourceRequestV"></a>
-                    <a name="//apple_ref/swift/Struct/ListTagsForResourceRequest" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15Route53ResolverAAV26ListTagsForResourceRequestV">ListTagsForResourceRequest</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Undocumented</p>
-
-                        <a href="../Structs/Route53Resolver/ListTagsForResourceRequest.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ListTagsForResourceRequest</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
                     <a name="/s:15Route53ResolverAAV27ListTagsForResourceResponseV"></a>
                     <a name="//apple_ref/swift/Struct/ListTagsForResourceResponse" class="dashAnchor"></a>
                     <a class="token" href="#/s:15Route53ResolverAAV27ListTagsForResourceResponseV">ListTagsForResourceResponse</a>
@@ -2695,6 +3586,62 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ListTagsForResourceResponse</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:15Route53ResolverAAV03PutB27QueryLogConfigPolicyRequestV"></a>
+                    <a name="//apple_ref/swift/Struct/PutResolverQueryLogConfigPolicyRequest" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15Route53ResolverAAV03PutB27QueryLogConfigPolicyRequestV">PutResolverQueryLogConfigPolicyRequest</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/Route53Resolver/PutResolverQueryLogConfigPolicyRequest.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">PutResolverQueryLogConfigPolicyRequest</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:15Route53ResolverAAV03PutB28QueryLogConfigPolicyResponseV"></a>
+                    <a name="//apple_ref/swift/Struct/PutResolverQueryLogConfigPolicyResponse" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15Route53ResolverAAV03PutB28QueryLogConfigPolicyResponseV">PutResolverQueryLogConfigPolicyResponse</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/Route53Resolver/PutResolverQueryLogConfigPolicyResponse.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">PutResolverQueryLogConfigPolicyResponse</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
 
                         </div>
                       </div>
@@ -2779,6 +3726,62 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ResolverEndpoint</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:15Route53ResolverAAV0B14QueryLogConfigV"></a>
+                    <a name="//apple_ref/swift/Struct/ResolverQueryLogConfig" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15Route53ResolverAAV0B14QueryLogConfigV">ResolverQueryLogConfig</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/Route53Resolver/ResolverQueryLogConfig.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ResolverQueryLogConfig</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:15Route53ResolverAAV0B25QueryLogConfigAssociationV"></a>
+                    <a name="//apple_ref/swift/Struct/ResolverQueryLogConfigAssociation" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15Route53ResolverAAV0B25QueryLogConfigAssociationV">ResolverQueryLogConfigAssociation</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/Route53Resolver/ResolverQueryLogConfigAssociation.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ResolverQueryLogConfigAssociation</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
 
                         </div>
                       </div>
@@ -3247,6 +4250,90 @@
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/s:15Route53ResolverAAV0B30QueryLogConfigAssociationErrorO"></a>
+                    <a name="//apple_ref/swift/Enum/ResolverQueryLogConfigAssociationError" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15Route53ResolverAAV0B30QueryLogConfigAssociationErrorO">ResolverQueryLogConfigAssociationError</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/Route53Resolver/ResolverQueryLogConfigAssociationError.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">ResolverQueryLogConfigAssociationError</span> <span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="kt">CustomStringConvertible</span><span class="p">,</span> <span class="kt">Codable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:15Route53ResolverAAV0B31QueryLogConfigAssociationStatusO"></a>
+                    <a name="//apple_ref/swift/Enum/ResolverQueryLogConfigAssociationStatus" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15Route53ResolverAAV0B31QueryLogConfigAssociationStatusO">ResolverQueryLogConfigAssociationStatus</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/Route53Resolver/ResolverQueryLogConfigAssociationStatus.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">ResolverQueryLogConfigAssociationStatus</span> <span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="kt">CustomStringConvertible</span><span class="p">,</span> <span class="kt">Codable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:15Route53ResolverAAV0B20QueryLogConfigStatusO"></a>
+                    <a name="//apple_ref/swift/Enum/ResolverQueryLogConfigStatus" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15Route53ResolverAAV0B20QueryLogConfigStatusO">ResolverQueryLogConfigStatus</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/Route53Resolver/ResolverQueryLogConfigStatus.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">ResolverQueryLogConfigStatus</span> <span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="kt">CustomStringConvertible</span><span class="p">,</span> <span class="kt">Codable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/s:15Route53ResolverAAV0B21RuleAssociationStatusO"></a>
                     <a name="//apple_ref/swift/Enum/ResolverRuleAssociationStatus" class="dashAnchor"></a>
                     <a class="token" href="#/s:15Route53ResolverAAV0B21RuleAssociationStatusO">ResolverRuleAssociationStatus</a>
@@ -3350,6 +4437,34 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">ShareStatus</span> <span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="kt">CustomStringConvertible</span><span class="p">,</span> <span class="kt">Codable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:15Route53ResolverAAV9SortOrderO"></a>
+                    <a name="//apple_ref/swift/Enum/SortOrder" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15Route53ResolverAAV9SortOrderO">SortOrder</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/Route53Resolver/SortOrder.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">SortOrder</span> <span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="kt">CustomStringConvertible</span><span class="p">,</span> <span class="kt">Codable</span></code></pre>
 
                         </div>
                       </div>

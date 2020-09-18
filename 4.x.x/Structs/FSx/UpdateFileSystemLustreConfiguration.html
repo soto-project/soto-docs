@@ -14,7 +14,7 @@
     <a title="UpdateFileSystemLustreConfiguration Structure Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../../index.html"> Docs</a> (60% documented)</p>
+        <p><a href="../../index.html"> Docs</a> (59% documented)</p>
         <p class="header-right"><a href="https://github.com/swift-aws/aws-sdk-swift"><img src="../../img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
@@ -74,6 +74,9 @@
             <a href="../../AppSync.html">AppSync</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../Appflow.html">Appflow</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../ApplicationAutoScaling.html">ApplicationAutoScaling</a>
           </li>
           <li class="nav-group-name">
@@ -96,6 +99,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../Batch.html">Batch</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../Braket.html">Braket</a>
           </li>
           <li class="nav-group-name">
             <a href="../../Budgets.html">Budgets</a>
@@ -138,6 +144,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../CloudWatchLogs.html">CloudWatchLogs</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../CodeArtifact.html">CodeArtifact</a>
           </li>
           <li class="nav-group-name">
             <a href="../../CodeBuild.html">CodeBuild</a>
@@ -326,7 +335,16 @@
             <a href="../../Health.html">Health</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../Honeycode.html">Honeycode</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../IAM.html">IAM</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../IVS.html">IVS</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../IdentityStore.html">IdentityStore</a>
           </li>
           <li class="nav-group-name">
             <a href="../../Imagebuilder.html">Imagebuilder</a>
@@ -363,6 +381,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../IoTSecureTunneling.html">IoTSecureTunneling</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../IoTSiteWise.html">IoTSiteWise</a>
           </li>
           <li class="nav-group-name">
             <a href="../../IoTThingsGraph.html">IoTThingsGraph</a>
@@ -426,6 +447,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../Macie.html">Macie</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../Macie2.html">Macie2</a>
           </li>
           <li class="nav-group-name">
             <a href="../../ManagedBlockchain.html">ManagedBlockchain</a>
@@ -545,6 +569,9 @@
             <a href="../../Redshift.html">Redshift</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../RedshiftDataAPIService.html">RedshiftDataAPIService</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../Rekognition.html">Rekognition</a>
           </li>
           <li class="nav-group-name">
@@ -594,6 +621,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../SSO.html">SSO</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../SSOAdmin.html">SSOAdmin</a>
           </li>
           <li class="nav-group-name">
             <a href="../../SSOOIDC.html">SSOOIDC</a>
@@ -651,6 +681,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../../Support.html">Support</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../Synthetics.html">Synthetics</a>
           </li>
           <li class="nav-group-name">
             <a href="../../Textract.html">Textract</a>
@@ -762,6 +795,87 @@
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/s:3FSxAAV35UpdateFileSystemLustreConfigurationV16autoImportPolicyAB04AutohI4TypeOSgvp"></a>
+                    <a name="//apple_ref/swift/Property/autoImportPolicy" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3FSxAAV35UpdateFileSystemLustreConfigurationV16autoImportPolicyAB04AutohI4TypeOSgvp">autoImportPolicy</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>(Optional) When you create your file system, your existing S3 objects appear as file and directory listings. Use this property to choose how Amazon FSx keeps your file and directory listing up to date as you add or modify objects in your linked S3 bucket. AutoImportPolicy can have the following values:    NONE - (Default) AutoImport is off. Amazon FSx only updates file and directory listings from the linked S3 bucket when the file system is created. FSx does not update the file and directory listing for any new or changed objects after choosing this option.    NEW - AutoImport is on. Amazon FSx automatically imports directory listings of any new objects added to the linked S3 bucket that do not currently exist in the FSx file system.     NEW_CHANGED - AutoImport is on. Amazon FSx automatically imports file and directory listings of any new objects added to the S3 bucket and any existing objects that are changed in the S3 bucket after you choose this option.    For more information, see Automatically import updates from your S3 bucket.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">autoImportPolicy</span><span class="p">:</span> <span class="kt"><a href="../../Structs/FSx/AutoImportPolicyType.html">AutoImportPolicyType</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:3FSxAAV35UpdateFileSystemLustreConfigurationV28automaticBackupRetentionDaysSiSgvp"></a>
+                    <a name="//apple_ref/swift/Property/automaticBackupRetentionDays" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3FSxAAV35UpdateFileSystemLustreConfigurationV28automaticBackupRetentionDaysSiSgvp">automaticBackupRetentionDays</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">automaticBackupRetentionDays</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:3FSxAAV35UpdateFileSystemLustreConfigurationV29dailyAutomaticBackupStartTimeSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/dailyAutomaticBackupStartTime" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3FSxAAV35UpdateFileSystemLustreConfigurationV29dailyAutomaticBackupStartTimeSSSgvp">dailyAutomaticBackupStartTime</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">dailyAutomaticBackupStartTime</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/s:3FSxAAV35UpdateFileSystemLustreConfigurationV26weeklyMaintenanceStartTimeSSSgvp"></a>
                     <a name="//apple_ref/swift/Property/weeklyMaintenanceStartTime" class="dashAnchor"></a>
                     <a class="token" href="#/s:3FSxAAV35UpdateFileSystemLustreConfigurationV26weeklyMaintenanceStartTimeSSSgvp">weeklyMaintenanceStartTime</a>
@@ -772,7 +886,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The preferred time to perform weekly maintenance, in the UTC time zone.</p>
+                        <p>(Optional) The preferred start time to perform weekly maintenance, formatted d:HH:MM in the UTC time zone. d is the weekday number, from 1 through 7, beginning with Monday and ending with Sunday.</p>
 
                       </div>
                       <div class="declaration">
@@ -789,9 +903,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:3FSxAAV35UpdateFileSystemLustreConfigurationV26weeklyMaintenanceStartTimeADSSSg_tcfc"></a>
-                    <a name="//apple_ref/swift/Method/init(weeklyMaintenanceStartTime:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3FSxAAV35UpdateFileSystemLustreConfigurationV26weeklyMaintenanceStartTimeADSSSg_tcfc">init(weeklyMaintenanceStartTime:)</a>
+                    <a name="/s:3FSxAAV35UpdateFileSystemLustreConfigurationV16autoImportPolicy28automaticBackupRetentionDays014dailyAutomaticK9StartTime017weeklyMaintenancepQ0AdB04AutohI4TypeOSg_SiSgSSSgAMtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(autoImportPolicy:automaticBackupRetentionDays:dailyAutomaticBackupStartTime:weeklyMaintenanceStartTime:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3FSxAAV35UpdateFileSystemLustreConfigurationV16autoImportPolicy28automaticBackupRetentionDays014dailyAutomaticK9StartTime017weeklyMaintenancepQ0AdB04AutohI4TypeOSg_SiSgSSSgAMtcfc">init(autoImportPolicy:automaticBackupRetentionDays:dailyAutomaticBackupStartTime:weeklyMaintenanceStartTime:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -806,7 +920,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">weeklyMaintenanceStartTime</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">autoImportPolicy</span><span class="p">:</span> <span class="kt"><a href="../../Structs/FSx/AutoImportPolicyType.html">AutoImportPolicyType</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">automaticBackupRetentionDays</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">dailyAutomaticBackupStartTime</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">weeklyMaintenanceStartTime</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>

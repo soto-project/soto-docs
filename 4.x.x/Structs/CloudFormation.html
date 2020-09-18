@@ -14,7 +14,7 @@
     <a title="CloudFormation Structure Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html"> Docs</a> (60% documented)</p>
+        <p><a href="../index.html"> Docs</a> (59% documented)</p>
         <p class="header-right"><a href="https://github.com/swift-aws/aws-sdk-swift"><img src="../img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
@@ -74,6 +74,9 @@
             <a href="../AppSync.html">AppSync</a>
           </li>
           <li class="nav-group-name">
+            <a href="../Appflow.html">Appflow</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../ApplicationAutoScaling.html">ApplicationAutoScaling</a>
           </li>
           <li class="nav-group-name">
@@ -96,6 +99,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../Batch.html">Batch</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Braket.html">Braket</a>
           </li>
           <li class="nav-group-name">
             <a href="../Budgets.html">Budgets</a>
@@ -138,6 +144,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../CloudWatchLogs.html">CloudWatchLogs</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../CodeArtifact.html">CodeArtifact</a>
           </li>
           <li class="nav-group-name">
             <a href="../CodeBuild.html">CodeBuild</a>
@@ -326,7 +335,16 @@
             <a href="../Health.html">Health</a>
           </li>
           <li class="nav-group-name">
+            <a href="../Honeycode.html">Honeycode</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../IAM.html">IAM</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../IVS.html">IVS</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../IdentityStore.html">IdentityStore</a>
           </li>
           <li class="nav-group-name">
             <a href="../Imagebuilder.html">Imagebuilder</a>
@@ -363,6 +381,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../IoTSecureTunneling.html">IoTSecureTunneling</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../IoTSiteWise.html">IoTSiteWise</a>
           </li>
           <li class="nav-group-name">
             <a href="../IoTThingsGraph.html">IoTThingsGraph</a>
@@ -426,6 +447,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../Macie.html">Macie</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Macie2.html">Macie2</a>
           </li>
           <li class="nav-group-name">
             <a href="../ManagedBlockchain.html">ManagedBlockchain</a>
@@ -545,6 +569,9 @@
             <a href="../Redshift.html">Redshift</a>
           </li>
           <li class="nav-group-name">
+            <a href="../RedshiftDataAPIService.html">RedshiftDataAPIService</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../Rekognition.html">Rekognition</a>
           </li>
           <li class="nav-group-name">
@@ -594,6 +621,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../SSO.html">SSO</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../SSOAdmin.html">SSOAdmin</a>
           </li>
           <li class="nav-group-name">
             <a href="../SSOOIDC.html">SSOOIDC</a>
@@ -651,6 +681,9 @@
           </li>
           <li class="nav-group-name">
             <a href="../Support.html">Support</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Synthetics.html">Synthetics</a>
           </li>
           <li class="nav-group-name">
             <a href="../Textract.html">Textract</a>
@@ -1869,7 +1902,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Returns summary information about stack instances that are associated with the specified stack set. You can filter for stack instances that are associated with a specific AWS account name or Region.</p>
+                        <p>Returns summary information about stack instances that are associated with the specified stack set. You can filter for stack instances that are associated with a specific AWS account name or Region, or that have a specific status.</p>
 
                       </div>
                       <div class="declaration">
@@ -2412,6 +2445,33 @@
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/s:14CloudFormationAAV30describeAccountLimitsPaginator_6onPage3NIO15EventLoopFutureCyytGAB08DescribedE5InputV_AGySbGAB0mdE6OutputV_AE0jK0_ptctF"></a>
+                    <a name="//apple_ref/swift/Method/describeAccountLimitsPaginator(_:onPage:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14CloudFormationAAV30describeAccountLimitsPaginator_6onPage3NIO15EventLoopFutureCyytGAB08DescribedE5InputV_AGySbGAB0mdE6OutputV_AE0jK0_ptctF">describeAccountLimitsPaginator(_:onPage:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Retrieves your account&rsquo;s AWS CloudFormation limits, such as the maximum number of stacks that you can create in your account. For more information about account limits, see AWS CloudFormation Limits in the AWS CloudFormation User Guide.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">describeAccountLimitsPaginator</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/CloudFormation/DescribeAccountLimitsInput.html">DescribeAccountLimitsInput</a></span><span class="p">,</span> <span class="nv">onPage</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/CloudFormation/DescribeAccountLimitsOutput.html">DescribeAccountLimitsOutput</a></span><span class="p">,</span> <span class="kt">EventLoop</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Bool</span><span class="o">&gt;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Void</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/s:14CloudFormationAAV28describeStackEventsPaginator_6onPage3NIO15EventLoopFutureCyytGAB08DescribedE5InputV_AGySbGAB0mdE6OutputV_AE0jK0_ptctF"></a>
                     <a name="//apple_ref/swift/Method/describeStackEventsPaginator(_:onPage:)" class="dashAnchor"></a>
                     <a class="token" href="#/s:14CloudFormationAAV28describeStackEventsPaginator_6onPage3NIO15EventLoopFutureCyytGAB08DescribedE5InputV_AGySbGAB0mdE6OutputV_AE0jK0_ptctF">describeStackEventsPaginator(_:onPage:)</a>
@@ -2493,6 +2553,33 @@
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/s:14CloudFormationAAV23listChangeSetsPaginator_6onPage3NIO15EventLoopFutureCyytGAB04ListdE5InputV_AGySbGAB0mdE6OutputV_AE0jK0_ptctF"></a>
+                    <a name="//apple_ref/swift/Method/listChangeSetsPaginator(_:onPage:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14CloudFormationAAV23listChangeSetsPaginator_6onPage3NIO15EventLoopFutureCyytGAB04ListdE5InputV_AGySbGAB0mdE6OutputV_AE0jK0_ptctF">listChangeSetsPaginator(_:onPage:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the ID and status of each active change set for a stack. For example, AWS CloudFormation lists change sets that are in the CREATE_IN_PROGRESS or CREATE_PENDING state.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">listChangeSetsPaginator</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/CloudFormation/ListChangeSetsInput.html">ListChangeSetsInput</a></span><span class="p">,</span> <span class="nv">onPage</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/CloudFormation/ListChangeSetsOutput.html">ListChangeSetsOutput</a></span><span class="p">,</span> <span class="kt">EventLoop</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Bool</span><span class="o">&gt;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Void</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/s:14CloudFormationAAV20listExportsPaginator_6onPage3NIO15EventLoopFutureCyytGAB04ListD5InputV_AGySbGAB0lD6OutputV_AE0iJ0_ptctF"></a>
                     <a name="//apple_ref/swift/Method/listExportsPaginator(_:onPage:)" class="dashAnchor"></a>
                     <a class="token" href="#/s:14CloudFormationAAV20listExportsPaginator_6onPage3NIO15EventLoopFutureCyytGAB04ListD5InputV_AGySbGAB0lD6OutputV_AE0iJ0_ptctF">listExportsPaginator(_:onPage:)</a>
@@ -2547,6 +2634,33 @@
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/s:14CloudFormationAAV27listStackInstancesPaginator_6onPage3NIO15EventLoopFutureCyytGAB04ListdE5InputV_AGySbGAB0mdE6OutputV_AE0jK0_ptctF"></a>
+                    <a name="//apple_ref/swift/Method/listStackInstancesPaginator(_:onPage:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14CloudFormationAAV27listStackInstancesPaginator_6onPage3NIO15EventLoopFutureCyytGAB04ListdE5InputV_AGySbGAB0mdE6OutputV_AE0jK0_ptctF">listStackInstancesPaginator(_:onPage:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns summary information about stack instances that are associated with the specified stack set. You can filter for stack instances that are associated with a specific AWS account name or Region, or that have a specific status.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">listStackInstancesPaginator</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/CloudFormation/ListStackInstancesInput.html">ListStackInstancesInput</a></span><span class="p">,</span> <span class="nv">onPage</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/CloudFormation/ListStackInstancesOutput.html">ListStackInstancesOutput</a></span><span class="p">,</span> <span class="kt">EventLoop</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Bool</span><span class="o">&gt;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Void</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/s:14CloudFormationAAV27listStackResourcesPaginator_6onPage3NIO15EventLoopFutureCyytGAB04ListdE5InputV_AGySbGAB0mdE6OutputV_AE0jK0_ptctF"></a>
                     <a name="//apple_ref/swift/Method/listStackResourcesPaginator(_:onPage:)" class="dashAnchor"></a>
                     <a class="token" href="#/s:14CloudFormationAAV27listStackResourcesPaginator_6onPage3NIO15EventLoopFutureCyytGAB04ListdE5InputV_AGySbGAB0mdE6OutputV_AE0jK0_ptctF">listStackResourcesPaginator(_:onPage:)</a>
@@ -2565,6 +2679,87 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">listStackResourcesPaginator</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/CloudFormation/ListStackResourcesInput.html">ListStackResourcesInput</a></span><span class="p">,</span> <span class="nv">onPage</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/CloudFormation/ListStackResourcesOutput.html">ListStackResourcesOutput</a></span><span class="p">,</span> <span class="kt">EventLoop</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Bool</span><span class="o">&gt;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Void</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14CloudFormationAAV37listStackSetOperationResultsPaginator_6onPage3NIO15EventLoopFutureCyytGAB04ListdefG5InputV_AGySbGAB0odefG6OutputV_AE0lM0_ptctF"></a>
+                    <a name="//apple_ref/swift/Method/listStackSetOperationResultsPaginator(_:onPage:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14CloudFormationAAV37listStackSetOperationResultsPaginator_6onPage3NIO15EventLoopFutureCyytGAB04ListdefG5InputV_AGySbGAB0odefG6OutputV_AE0lM0_ptctF">listStackSetOperationResultsPaginator(_:onPage:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns summary information about the results of a stack set operation.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">listStackSetOperationResultsPaginator</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/CloudFormation/ListStackSetOperationResultsInput.html">ListStackSetOperationResultsInput</a></span><span class="p">,</span> <span class="nv">onPage</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/CloudFormation/ListStackSetOperationResultsOutput.html">ListStackSetOperationResultsOutput</a></span><span class="p">,</span> <span class="kt">EventLoop</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Bool</span><span class="o">&gt;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Void</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14CloudFormationAAV31listStackSetOperationsPaginator_6onPage3NIO15EventLoopFutureCyytGAB04ListdeF5InputV_AGySbGAB0ndeF6OutputV_AE0kL0_ptctF"></a>
+                    <a name="//apple_ref/swift/Method/listStackSetOperationsPaginator(_:onPage:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14CloudFormationAAV31listStackSetOperationsPaginator_6onPage3NIO15EventLoopFutureCyytGAB04ListdeF5InputV_AGySbGAB0ndeF6OutputV_AE0kL0_ptctF">listStackSetOperationsPaginator(_:onPage:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns summary information about operations performed on a stack set.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">listStackSetOperationsPaginator</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/CloudFormation/ListStackSetOperationsInput.html">ListStackSetOperationsInput</a></span><span class="p">,</span> <span class="nv">onPage</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/CloudFormation/ListStackSetOperationsOutput.html">ListStackSetOperationsOutput</a></span><span class="p">,</span> <span class="kt">EventLoop</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Bool</span><span class="o">&gt;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Void</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14CloudFormationAAV22listStackSetsPaginator_6onPage3NIO15EventLoopFutureCyytGAB04ListdE5InputV_AGySbGAB0mdE6OutputV_AE0jK0_ptctF"></a>
+                    <a name="//apple_ref/swift/Method/listStackSetsPaginator(_:onPage:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14CloudFormationAAV22listStackSetsPaginator_6onPage3NIO15EventLoopFutureCyytGAB04ListdE5InputV_AGySbGAB0mdE6OutputV_AE0jK0_ptctF">listStackSetsPaginator(_:onPage:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns summary information about stack sets that are associated with the user.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">listStackSetsPaginator</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/CloudFormation/ListStackSetsInput.html">ListStackSetsInput</a></span><span class="p">,</span> <span class="nv">onPage</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Structs/CloudFormation/ListStackSetsOutput.html">ListStackSetsOutput</a></span><span class="p">,</span> <span class="kt">EventLoop</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Bool</span><span class="o">&gt;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Void</span><span class="o">&gt;</span></code></pre>
 
                         </div>
                       </div>
@@ -2693,6 +2888,35 @@
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/s:14CloudFormationAAV26DescribeAccountLimitsInputV"></a>
+                    <a name="//apple_ref/swift/Struct/DescribeAccountLimitsInput" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14CloudFormationAAV26DescribeAccountLimitsInputV">DescribeAccountLimitsInput</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/CloudFormation/DescribeAccountLimitsInput.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DescribeAccountLimitsInput</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt"><a href="../Structs/CloudFormation.html">CloudFormation</a></span><span class="o">.</span><span class="kt">DescribeAccountLimitsInput</span><span class="p">:</span> <span class="kt"><a href="../Protocols/AWSPaginateStringToken.html">AWSPaginateStringToken</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/s:14CloudFormationAAV24DescribeStackEventsInputV"></a>
                     <a name="//apple_ref/swift/Struct/DescribeStackEventsInput" class="dashAnchor"></a>
                     <a class="token" href="#/s:14CloudFormationAAV24DescribeStackEventsInputV">DescribeStackEventsInput</a>
@@ -2780,6 +3004,35 @@
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/s:14CloudFormationAAV19ListChangeSetsInputV"></a>
+                    <a name="//apple_ref/swift/Struct/ListChangeSetsInput" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14CloudFormationAAV19ListChangeSetsInputV">ListChangeSetsInput</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/CloudFormation/ListChangeSetsInput.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ListChangeSetsInput</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt"><a href="../Structs/CloudFormation.html">CloudFormation</a></span><span class="o">.</span><span class="kt">ListChangeSetsInput</span><span class="p">:</span> <span class="kt"><a href="../Protocols/AWSPaginateStringToken.html">AWSPaginateStringToken</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/s:14CloudFormationAAV16ListExportsInputV"></a>
                     <a name="//apple_ref/swift/Struct/ListExportsInput" class="dashAnchor"></a>
                     <a class="token" href="#/s:14CloudFormationAAV16ListExportsInputV">ListExportsInput</a>
@@ -2838,6 +3091,35 @@
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/s:14CloudFormationAAV23ListStackInstancesInputV"></a>
+                    <a name="//apple_ref/swift/Struct/ListStackInstancesInput" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14CloudFormationAAV23ListStackInstancesInputV">ListStackInstancesInput</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/CloudFormation/ListStackInstancesInput.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ListStackInstancesInput</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt"><a href="../Structs/CloudFormation.html">CloudFormation</a></span><span class="o">.</span><span class="kt">ListStackInstancesInput</span><span class="p">:</span> <span class="kt"><a href="../Protocols/AWSPaginateStringToken.html">AWSPaginateStringToken</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/s:14CloudFormationAAV23ListStackResourcesInputV"></a>
                     <a name="//apple_ref/swift/Struct/ListStackResourcesInput" class="dashAnchor"></a>
                     <a class="token" href="#/s:14CloudFormationAAV23ListStackResourcesInputV">ListStackResourcesInput</a>
@@ -2858,6 +3140,93 @@
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ListStackResourcesInput</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
 <pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt"><a href="../Structs/CloudFormation.html">CloudFormation</a></span><span class="o">.</span><span class="kt">ListStackResourcesInput</span><span class="p">:</span> <span class="kt"><a href="../Protocols/AWSPaginateStringToken.html">AWSPaginateStringToken</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14CloudFormationAAV33ListStackSetOperationResultsInputV"></a>
+                    <a name="//apple_ref/swift/Struct/ListStackSetOperationResultsInput" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14CloudFormationAAV33ListStackSetOperationResultsInputV">ListStackSetOperationResultsInput</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/CloudFormation/ListStackSetOperationResultsInput.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ListStackSetOperationResultsInput</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt"><a href="../Structs/CloudFormation.html">CloudFormation</a></span><span class="o">.</span><span class="kt">ListStackSetOperationResultsInput</span><span class="p">:</span> <span class="kt"><a href="../Protocols/AWSPaginateStringToken.html">AWSPaginateStringToken</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14CloudFormationAAV27ListStackSetOperationsInputV"></a>
+                    <a name="//apple_ref/swift/Struct/ListStackSetOperationsInput" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14CloudFormationAAV27ListStackSetOperationsInputV">ListStackSetOperationsInput</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/CloudFormation/ListStackSetOperationsInput.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ListStackSetOperationsInput</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt"><a href="../Structs/CloudFormation.html">CloudFormation</a></span><span class="o">.</span><span class="kt">ListStackSetOperationsInput</span><span class="p">:</span> <span class="kt"><a href="../Protocols/AWSPaginateStringToken.html">AWSPaginateStringToken</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14CloudFormationAAV18ListStackSetsInputV"></a>
+                    <a name="//apple_ref/swift/Struct/ListStackSetsInput" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14CloudFormationAAV18ListStackSetsInputV">ListStackSetsInput</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/CloudFormation/ListStackSetsInput.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ListStackSetsInput</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt"><a href="../Structs/CloudFormation.html">CloudFormation</a></span><span class="o">.</span><span class="kt">ListStackSetsInput</span><span class="p">:</span> <span class="kt"><a href="../Protocols/AWSPaginateStringToken.html">AWSPaginateStringToken</a></span></code></pre>
 
                         </div>
                       </div>
@@ -3702,34 +4071,6 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DeregisterTypeOutput</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:14CloudFormationAAV26DescribeAccountLimitsInputV"></a>
-                    <a name="//apple_ref/swift/Struct/DescribeAccountLimitsInput" class="dashAnchor"></a>
-                    <a class="token" href="#/s:14CloudFormationAAV26DescribeAccountLimitsInputV">DescribeAccountLimitsInput</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Undocumented</p>
-
-                        <a href="../Structs/CloudFormation/DescribeAccountLimitsInput.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DescribeAccountLimitsInput</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
 
                         </div>
                       </div>
@@ -4831,34 +5172,6 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:14CloudFormationAAV19ListChangeSetsInputV"></a>
-                    <a name="//apple_ref/swift/Struct/ListChangeSetsInput" class="dashAnchor"></a>
-                    <a class="token" href="#/s:14CloudFormationAAV19ListChangeSetsInputV">ListChangeSetsInput</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Undocumented</p>
-
-                        <a href="../Structs/CloudFormation/ListChangeSetsInput.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ListChangeSetsInput</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
                     <a name="/s:14CloudFormationAAV20ListChangeSetsOutputV"></a>
                     <a name="//apple_ref/swift/Struct/ListChangeSetsOutput" class="dashAnchor"></a>
                     <a class="token" href="#/s:14CloudFormationAAV20ListChangeSetsOutputV">ListChangeSetsOutput</a>
@@ -4943,34 +5256,6 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:14CloudFormationAAV23ListStackInstancesInputV"></a>
-                    <a name="//apple_ref/swift/Struct/ListStackInstancesInput" class="dashAnchor"></a>
-                    <a class="token" href="#/s:14CloudFormationAAV23ListStackInstancesInputV">ListStackInstancesInput</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Undocumented</p>
-
-                        <a href="../Structs/CloudFormation/ListStackInstancesInput.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ListStackInstancesInput</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
                     <a name="/s:14CloudFormationAAV24ListStackInstancesOutputV"></a>
                     <a name="//apple_ref/swift/Struct/ListStackInstancesOutput" class="dashAnchor"></a>
                     <a class="token" href="#/s:14CloudFormationAAV24ListStackInstancesOutputV">ListStackInstancesOutput</a>
@@ -5027,34 +5312,6 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:14CloudFormationAAV33ListStackSetOperationResultsInputV"></a>
-                    <a name="//apple_ref/swift/Struct/ListStackSetOperationResultsInput" class="dashAnchor"></a>
-                    <a class="token" href="#/s:14CloudFormationAAV33ListStackSetOperationResultsInputV">ListStackSetOperationResultsInput</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Undocumented</p>
-
-                        <a href="../Structs/CloudFormation/ListStackSetOperationResultsInput.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ListStackSetOperationResultsInput</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
                     <a name="/s:14CloudFormationAAV34ListStackSetOperationResultsOutputV"></a>
                     <a name="//apple_ref/swift/Struct/ListStackSetOperationResultsOutput" class="dashAnchor"></a>
                     <a class="token" href="#/s:14CloudFormationAAV34ListStackSetOperationResultsOutputV">ListStackSetOperationResultsOutput</a>
@@ -5083,34 +5340,6 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:14CloudFormationAAV27ListStackSetOperationsInputV"></a>
-                    <a name="//apple_ref/swift/Struct/ListStackSetOperationsInput" class="dashAnchor"></a>
-                    <a class="token" href="#/s:14CloudFormationAAV27ListStackSetOperationsInputV">ListStackSetOperationsInput</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Undocumented</p>
-
-                        <a href="../Structs/CloudFormation/ListStackSetOperationsInput.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ListStackSetOperationsInput</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
                     <a name="/s:14CloudFormationAAV28ListStackSetOperationsOutputV"></a>
                     <a name="//apple_ref/swift/Struct/ListStackSetOperationsOutput" class="dashAnchor"></a>
                     <a class="token" href="#/s:14CloudFormationAAV28ListStackSetOperationsOutputV">ListStackSetOperationsOutput</a>
@@ -5130,34 +5359,6 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ListStackSetOperationsOutput</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:14CloudFormationAAV18ListStackSetsInputV"></a>
-                    <a name="//apple_ref/swift/Struct/ListStackSetsInput" class="dashAnchor"></a>
-                    <a class="token" href="#/s:14CloudFormationAAV18ListStackSetsInputV">ListStackSetsInput</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Undocumented</p>
-
-                        <a href="../Structs/CloudFormation/ListStackSetsInput.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ListStackSetsInput</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
 
                         </div>
                       </div>
@@ -6054,6 +6255,62 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">StackInstance</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14CloudFormationAAV32StackInstanceComprehensiveStatusV"></a>
+                    <a name="//apple_ref/swift/Struct/StackInstanceComprehensiveStatus" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14CloudFormationAAV32StackInstanceComprehensiveStatusV">StackInstanceComprehensiveStatus</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/CloudFormation/StackInstanceComprehensiveStatus.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">StackInstanceComprehensiveStatus</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14CloudFormationAAV19StackInstanceFilterV"></a>
+                    <a name="//apple_ref/swift/Struct/StackInstanceFilter" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14CloudFormationAAV19StackInstanceFilterV">StackInstanceFilter</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/CloudFormation/StackInstanceFilter.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">StackInstanceFilter</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span></code></pre>
 
                         </div>
                       </div>
@@ -7633,6 +7890,62 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">StackDriftStatus</span> <span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="kt">CustomStringConvertible</span><span class="p">,</span> <span class="kt">Codable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14CloudFormationAAV27StackInstanceDetailedStatusO"></a>
+                    <a name="//apple_ref/swift/Enum/StackInstanceDetailedStatus" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14CloudFormationAAV27StackInstanceDetailedStatusO">StackInstanceDetailedStatus</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/CloudFormation/StackInstanceDetailedStatus.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">StackInstanceDetailedStatus</span> <span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="kt">CustomStringConvertible</span><span class="p">,</span> <span class="kt">Codable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14CloudFormationAAV23StackInstanceFilterNameO"></a>
+                    <a name="//apple_ref/swift/Enum/StackInstanceFilterName" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14CloudFormationAAV23StackInstanceFilterNameO">StackInstanceFilterName</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/CloudFormation/StackInstanceFilterName.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">StackInstanceFilterName</span> <span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="kt">CustomStringConvertible</span><span class="p">,</span> <span class="kt">Codable</span></code></pre>
 
                         </div>
                       </div>
