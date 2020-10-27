@@ -14,7 +14,7 @@
     <a title="ServiceConfiguration Structure Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../../index.html"> Docs</a> (54% documented)</p>
+        <p><a href="../../index.html"> Docs</a> (56% documented)</p>
         <p class="header-right"><a href="https://github.com/soto-project/soto"><img src="../../img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
@@ -29,10 +29,7 @@
       <nav class="sidebar">
         <ul class="nav-groups">
           <li class="nav-group-name">
-            <a href="../../User%20Guides.html">User Guides</a>
-          </li>
-          <li class="nav-group-name">
-            <a href="../../AWSSDKSwiftCore.html">AWSSDKSwiftCore</a>
+            <a href="../../SotoCore.html">SotoCore</a>
           </li>
           <li class="nav-group-name">
             <a href="../../ACM.html">ACM</a>
@@ -269,12 +266,6 @@
             <a href="../../EKS.html">EKS</a>
           </li>
           <li class="nav-group-name">
-            <a href="../../ELB.html">ELB</a>
-          </li>
-          <li class="nav-group-name">
-            <a href="../../ELBV2.html">ELBV2</a>
-          </li>
-          <li class="nav-group-name">
             <a href="../../EMR.html">EMR</a>
           </li>
           <li class="nav-group-name">
@@ -285,6 +276,12 @@
           </li>
           <li class="nav-group-name">
             <a href="../../ElasticInference.html">ElasticInference</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../ElasticLoadBalancing.html">ElasticLoadBalancing</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../ElasticLoadBalancingv2.html">ElasticLoadBalancingv2</a>
           </li>
           <li class="nav-group-name">
             <a href="../../ElasticTranscoder.html">ElasticTranscoder</a>
@@ -602,6 +599,9 @@
             <a href="../../S3Control.html">S3Control</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../S3Outposts.html">S3Outposts</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../SES.html">SES</a>
           </li>
           <li class="nav-group-name">
@@ -692,6 +692,12 @@
             <a href="../../Textract.html">Textract</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../TimestreamQuery.html">TimestreamQuery</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../TimestreamWrite.html">TimestreamWrite</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../TranscribeService.html">TranscribeService</a>
           </li>
           <li class="nav-group-name">
@@ -756,8 +762,7 @@
             <h1>ServiceConfiguration</h1>
               <div class="declaration">
                 <div class="language">
-                  
-                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ServiceConfiguration</span> <span class="p">:</span> <span class="kt"><a href="../../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ServiceConfiguration</span> <span class="p">:</span> <span class="kt"><a href="../../SotoCore.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                 </div>
               </div>
@@ -947,7 +952,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L30544">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L30643">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -972,13 +977,13 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@OptionalCoding</span>
+                          <pre class="highlight swift"><code><span class="kd">@OptionalCustomCoding</span>
 <span class="o">&lt;</span><span class="kt"><a href="../../Structs/EC2.html">EC2</a></span><span class="o">.</span><span class="kt"><a href="../../Structs/EC2/ArrayCoder.html">ArrayCoder</a></span><span class="o">&lt;</span><span class="kt"><a href="../../Structs/EC2.html">EC2</a></span><span class="o">.</span><span class="kt">ServiceConfiguration</span><span class="o">.</span><span class="n"><a href="../../Structs/EC2/ServiceConfiguration/_AvailabilityZonesEncoding.html">_AvailabilityZonesEncoding</a></span><span class="p">,</span> <span class="kt">String</span><span class="o">&gt;&gt;</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">availabilityZones</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L30547">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L30646">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1003,13 +1008,13 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@OptionalCoding</span>
+                          <pre class="highlight swift"><code><span class="kd">@OptionalCustomCoding</span>
 <span class="o">&lt;</span><span class="kt"><a href="../../Structs/EC2.html">EC2</a></span><span class="o">.</span><span class="kt"><a href="../../Structs/EC2/ArrayCoder.html">ArrayCoder</a></span><span class="o">&lt;</span><span class="kt"><a href="../../Structs/EC2.html">EC2</a></span><span class="o">.</span><span class="kt">ServiceConfiguration</span><span class="o">.</span><span class="n"><a href="../../Structs/EC2/ServiceConfiguration/_BaseEndpointDnsNamesEncoding.html">_BaseEndpointDnsNamesEncoding</a></span><span class="p">,</span> <span class="kt">String</span><span class="o">&gt;&gt;</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">baseEndpointDnsNames</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L30550">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L30649">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1039,7 +1044,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L30552">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L30651">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1064,13 +1069,13 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@OptionalCoding</span>
+                          <pre class="highlight swift"><code><span class="kd">@OptionalCustomCoding</span>
 <span class="o">&lt;</span><span class="kt"><a href="../../Structs/EC2.html">EC2</a></span><span class="o">.</span><span class="kt"><a href="../../Structs/EC2/ArrayCoder.html">ArrayCoder</a></span><span class="o">&lt;</span><span class="kt"><a href="../../Structs/EC2.html">EC2</a></span><span class="o">.</span><span class="kt">ServiceConfiguration</span><span class="o">.</span><span class="n"><a href="../../Structs/EC2/ServiceConfiguration/_NetworkLoadBalancerArnsEncoding.html">_NetworkLoadBalancerArnsEncoding</a></span><span class="p">,</span> <span class="kt">String</span><span class="o">&gt;&gt;</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">networkLoadBalancerArns</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L30555">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L30654">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1100,7 +1105,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L30557">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L30656">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1130,7 +1135,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L30559">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L30658">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1160,7 +1165,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L30561">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L30660">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1190,7 +1195,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L30563">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L30662">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1220,7 +1225,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L30565">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L30664">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1245,13 +1250,13 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@OptionalCoding</span>
+                          <pre class="highlight swift"><code><span class="kd">@OptionalCustomCoding</span>
 <span class="o">&lt;</span><span class="kt"><a href="../../Structs/EC2.html">EC2</a></span><span class="o">.</span><span class="kt"><a href="../../Structs/EC2/ArrayCoder.html">ArrayCoder</a></span><span class="o">&lt;</span><span class="kt"><a href="../../Structs/EC2.html">EC2</a></span><span class="o">.</span><span class="kt">ServiceConfiguration</span><span class="o">.</span><span class="n"><a href="../../Structs/EC2/ServiceConfiguration/_ServiceTypeEncoding.html">_ServiceTypeEncoding</a></span><span class="p">,</span> <span class="kt"><a href="../../Structs/EC2.html">EC2</a></span><span class="o">.</span><span class="kt"><a href="../../Structs/EC2/ServiceTypeDetail.html">ServiceTypeDetail</a></span><span class="o">&gt;&gt;</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">serviceType</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../../Structs/EC2/ServiceTypeDetail.html">ServiceTypeDetail</a></span><span class="p">]?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L30568">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L30667">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1276,13 +1281,13 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@OptionalCoding</span>
+                          <pre class="highlight swift"><code><span class="kd">@OptionalCustomCoding</span>
 <span class="o">&lt;</span><span class="kt"><a href="../../Structs/EC2.html">EC2</a></span><span class="o">.</span><span class="kt"><a href="../../Structs/EC2/ArrayCoder.html">ArrayCoder</a></span><span class="o">&lt;</span><span class="kt"><a href="../../Structs/EC2.html">EC2</a></span><span class="o">.</span><span class="kt">ServiceConfiguration</span><span class="o">.</span><span class="n"><a href="../../Structs/EC2/ServiceConfiguration/_TagsEncoding.html">_TagsEncoding</a></span><span class="p">,</span> <span class="kt"><a href="../../Structs/EC2.html">EC2</a></span><span class="o">.</span><span class="kt"><a href="../../Structs/EC2/Tag.html">Tag</a></span><span class="o">&gt;&gt;</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">tags</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../../Structs/EC2/Tag.html">Tag</a></span><span class="p">]?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L30571">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L30670">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1292,7 +1297,7 @@
                     <code>
                     <a name="/s:7SotoEC20B0V20ServiceConfigurationV18acceptanceRequired17availabilityZones20baseEndpointDnsNames19managesVpcEndpoints23networkLoadBalancerArns07privateK4Name0tkuD09serviceId0vU00V5State0V4Type4tagsAESbSg_SaySSGSgAtrTSSSgAC07PrivatekuD0VSgA2uC0cX0OSgSayAC0cY6DetailVGSgSayAC3TagVGSgtcfc"></a>
                     <a name="//apple_ref/swift/Method/init(acceptanceRequired:availabilityZones:baseEndpointDnsNames:managesVpcEndpoints:networkLoadBalancerArns:privateDnsName:privateDnsNameConfiguration:serviceId:serviceName:serviceState:serviceType:tags:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:7SotoEC20B0V20ServiceConfigurationV18acceptanceRequired17availabilityZones20baseEndpointDnsNames19managesVpcEndpoints23networkLoadBalancerArns07privateK4Name0tkuD09serviceId0vU00V5State0V4Type4tagsAESbSg_SaySSGSgAtrTSSSgAC07PrivatekuD0VSgA2uC0cX0OSgSayAC0cY6DetailVGSgSayAC3TagVGSgtcfc">init(acceptanceRequired:<wbr>availabilityZones:<wbr>baseEndpointDnsNames:<wbr>managesVpcEndpoints:<wbr>networkLoadBalancerArns:<wbr>privateDnsName:<wbr>privateDnsNameConfiguration:<wbr>serviceId:<wbr>serviceName:<wbr>serviceState:<wbr>serviceType:<wbr>tags:<wbr>)</a>
+                    <a class="token" href="#/s:7SotoEC20B0V20ServiceConfigurationV18acceptanceRequired17availabilityZones20baseEndpointDnsNames19managesVpcEndpoints23networkLoadBalancerArns07privateK4Name0tkuD09serviceId0vU00V5State0V4Type4tagsAESbSg_SaySSGSgAtrTSSSgAC07PrivatekuD0VSgA2uC0cX0OSgSayAC0cY6DetailVGSgSayAC3TagVGSgtcfc">init(acceptanceRequired:availabilityZones:baseEndpointDnsNames:managesVpcEndpoints:networkLoadBalancerArns:privateDnsName:privateDnsNameConfiguration:serviceId:serviceName:serviceState:serviceType:tags:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1312,7 +1317,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L30573-L30586">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L30672-L30685">Show on GitHub</a>
                       </div>
                     </section>
                   </div>

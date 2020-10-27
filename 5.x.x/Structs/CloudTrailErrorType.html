@@ -1,0 +1,2196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CloudTrailErrorType Structure Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Struct/CloudTrailErrorType" class="dashAnchor"></a>
+    <a title="CloudTrailErrorType Structure Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html"> Docs</a> (56% documented)</p>
+        <p class="header-right"><a href="https://github.com/soto-project/soto"><img src="../img/gh.png"/>View on GitHub</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html"> Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        CloudTrailErrorType Structure Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../SotoCore.html">SotoCore</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../ACM.html">ACM</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../ACMPCA.html">ACMPCA</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../APIGateway.html">APIGateway</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../AccessAnalyzer.html">AccessAnalyzer</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../AlexaForBusiness.html">AlexaForBusiness</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Amplify.html">Amplify</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../ApiGatewayManagementApi.html">ApiGatewayManagementApi</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../ApiGatewayV2.html">ApiGatewayV2</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../AppConfig.html">AppConfig</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../AppMesh.html">AppMesh</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../AppStream.html">AppStream</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../AppSync.html">AppSync</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Appflow.html">Appflow</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../ApplicationAutoScaling.html">ApplicationAutoScaling</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../ApplicationDiscoveryService.html">ApplicationDiscoveryService</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../ApplicationInsights.html">ApplicationInsights</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Athena.html">Athena</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../AugmentedAIRuntime.html">AugmentedAIRuntime</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../AutoScaling.html">AutoScaling</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../AutoScalingPlans.html">AutoScalingPlans</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Backup.html">Backup</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Batch.html">Batch</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Braket.html">Braket</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Budgets.html">Budgets</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Chime.html">Chime</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Cloud9.html">Cloud9</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../CloudDirectory.html">CloudDirectory</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../CloudFormation.html">CloudFormation</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../CloudFront.html">CloudFront</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../CloudHSM.html">CloudHSM</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../CloudHSMV2.html">CloudHSMV2</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../CloudSearch.html">CloudSearch</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../CloudSearchDomain.html">CloudSearchDomain</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../CloudTrail.html">CloudTrail</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../CloudWatch.html">CloudWatch</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../CloudWatchEvents.html">CloudWatchEvents</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../CloudWatchLogs.html">CloudWatchLogs</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../CodeArtifact.html">CodeArtifact</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../CodeBuild.html">CodeBuild</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../CodeCommit.html">CodeCommit</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../CodeDeploy.html">CodeDeploy</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../CodeGuruProfiler.html">CodeGuruProfiler</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../CodeGuruReviewer.html">CodeGuruReviewer</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../CodePipeline.html">CodePipeline</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../CodeStar.html">CodeStar</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../CodeStarNotifications.html">CodeStarNotifications</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../CodeStarconnections.html">CodeStarconnections</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../CognitoIdentity.html">CognitoIdentity</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../CognitoIdentityProvider.html">CognitoIdentityProvider</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../CognitoSync.html">CognitoSync</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Comprehend.html">Comprehend</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../ComprehendMedical.html">ComprehendMedical</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../ComputeOptimizer.html">ComputeOptimizer</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../ConfigService.html">ConfigService</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Connect.html">Connect</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../ConnectParticipant.html">ConnectParticipant</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../CostExplorer.html">CostExplorer</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../CostandUsageReportService.html">CostandUsageReportService</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../DAX.html">DAX</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../DLM.html">DLM</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../DataExchange.html">DataExchange</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../DataPipeline.html">DataPipeline</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../DataSync.html">DataSync</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../DatabaseMigrationService.html">DatabaseMigrationService</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Detective.html">Detective</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../DeviceFarm.html">DeviceFarm</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../DirectConnect.html">DirectConnect</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../DirectoryService.html">DirectoryService</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../DocDB.html">DocDB</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../DynamoDB.html">DynamoDB</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../DynamoDBStreams.html">DynamoDBStreams</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../EBS.html">EBS</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../EC2.html">EC2</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../EC2InstanceConnect.html">EC2InstanceConnect</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../ECR.html">ECR</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../ECS.html">ECS</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../EFS.html">EFS</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../EKS.html">EKS</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../EMR.html">EMR</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../ElastiCache.html">ElastiCache</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../ElasticBeanstalk.html">ElasticBeanstalk</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../ElasticInference.html">ElasticInference</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../ElasticLoadBalancing.html">ElasticLoadBalancing</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../ElasticLoadBalancingv2.html">ElasticLoadBalancingv2</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../ElasticTranscoder.html">ElasticTranscoder</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../ElasticsearchService.html">ElasticsearchService</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../EventBridge.html">EventBridge</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../FMS.html">FMS</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../FSx.html">FSx</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Firehose.html">Firehose</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../ForecastQueryService.html">ForecastQueryService</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../ForecastService.html">ForecastService</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../FraudDetector.html">FraudDetector</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../GameLift.html">GameLift</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Glacier.html">Glacier</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../GlobalAccelerator.html">GlobalAccelerator</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Glue.html">Glue</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Greengrass.html">Greengrass</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../GroundStation.html">GroundStation</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../GuardDuty.html">GuardDuty</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Health.html">Health</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Honeycode.html">Honeycode</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../IAM.html">IAM</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../IVS.html">IVS</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../IdentityStore.html">IdentityStore</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Imagebuilder.html">Imagebuilder</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../ImportExport.html">ImportExport</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Inspector.html">Inspector</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../IoT.html">IoT</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../IoT1ClickDevicesService.html">IoT1ClickDevicesService</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../IoT1ClickProjects.html">IoT1ClickProjects</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../IoTAnalytics.html">IoTAnalytics</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../IoTDataPlane.html">IoTDataPlane</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../IoTEvents.html">IoTEvents</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../IoTEventsData.html">IoTEventsData</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../IoTJobsDataPlane.html">IoTJobsDataPlane</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../IoTSecureTunneling.html">IoTSecureTunneling</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../IoTSiteWise.html">IoTSiteWise</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../IoTThingsGraph.html">IoTThingsGraph</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../KMS.html">KMS</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Kafka.html">Kafka</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Kendra.html">Kendra</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Kinesis.html">Kinesis</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../KinesisAnalytics.html">KinesisAnalytics</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../KinesisAnalyticsV2.html">KinesisAnalyticsV2</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../KinesisVideo.html">KinesisVideo</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../KinesisVideoArchivedMedia.html">KinesisVideoArchivedMedia</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../KinesisVideoMedia.html">KinesisVideoMedia</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../KinesisVideoSignalingChannels.html">KinesisVideoSignalingChannels</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../LakeFormation.html">LakeFormation</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Lambda.html">Lambda</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../LexModelBuildingService.html">LexModelBuildingService</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../LexRuntimeService.html">LexRuntimeService</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../LicenseManager.html">LicenseManager</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Lightsail.html">Lightsail</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../MQ.html">MQ</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../MTurk.html">MTurk</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../MachineLearning.html">MachineLearning</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Macie.html">Macie</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Macie2.html">Macie2</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../ManagedBlockchain.html">ManagedBlockchain</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../MarketplaceCatalog.html">MarketplaceCatalog</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../MarketplaceCommerceAnalytics.html">MarketplaceCommerceAnalytics</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../MarketplaceEntitlementService.html">MarketplaceEntitlementService</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../MarketplaceMetering.html">MarketplaceMetering</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../MediaConnect.html">MediaConnect</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../MediaConvert.html">MediaConvert</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../MediaLive.html">MediaLive</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../MediaPackage.html">MediaPackage</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../MediaPackageVod.html">MediaPackageVod</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../MediaStore.html">MediaStore</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../MediaStoreData.html">MediaStoreData</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../MediaTailor.html">MediaTailor</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../MigrationHub.html">MigrationHub</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../MigrationHubConfig.html">MigrationHubConfig</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Mobile.html">Mobile</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../MobileAnalytics.html">MobileAnalytics</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Neptune.html">Neptune</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../NetworkManager.html">NetworkManager</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../OpsWorks.html">OpsWorks</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../OpsWorksCM.html">OpsWorksCM</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Organizations.html">Organizations</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Outposts.html">Outposts</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../PI.html">PI</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Personalize.html">Personalize</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../PersonalizeEvents.html">PersonalizeEvents</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../PersonalizeRuntime.html">PersonalizeRuntime</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Pinpoint.html">Pinpoint</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../PinpointEmail.html">PinpointEmail</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../PinpointSMSVoice.html">PinpointSMSVoice</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Polly.html">Polly</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Pricing.html">Pricing</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../QLDB.html">QLDB</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../QLDBSession.html">QLDBSession</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../QuickSight.html">QuickSight</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../RAM.html">RAM</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../RDS.html">RDS</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../RDSDataService.html">RDSDataService</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Redshift.html">Redshift</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../RedshiftDataAPIService.html">RedshiftDataAPIService</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Rekognition.html">Rekognition</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../ResourceGroups.html">ResourceGroups</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../ResourceGroupsTaggingAPI.html">ResourceGroupsTaggingAPI</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../RoboMaker.html">RoboMaker</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Route53.html">Route53</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Route53Domains.html">Route53Domains</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Route53Resolver.html">Route53Resolver</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../S3.html">S3</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../S3Control.html">S3Control</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../S3Outposts.html">S3Outposts</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../SES.html">SES</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../SESV2.html">SESV2</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../SFN.html">SFN</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../SMS.html">SMS</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../SNS.html">SNS</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../SQS.html">SQS</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../SSM.html">SSM</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../SSO.html">SSO</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../SSOAdmin.html">SSOAdmin</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../SSOOIDC.html">SSOOIDC</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../STS.html">STS</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../SWF.html">SWF</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../SageMaker.html">SageMaker</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../SageMakerRuntime.html">SageMakerRuntime</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../SavingsPlans.html">SavingsPlans</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Schemas.html">Schemas</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../SecretsManager.html">SecretsManager</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../SecurityHub.html">SecurityHub</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../ServerlessApplicationRepository.html">ServerlessApplicationRepository</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../ServiceCatalog.html">ServiceCatalog</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../ServiceDiscovery.html">ServiceDiscovery</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../ServiceQuotas.html">ServiceQuotas</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Shield.html">Shield</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Signer.html">Signer</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../SimpleDB.html">SimpleDB</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Snowball.html">Snowball</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../StorageGateway.html">StorageGateway</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Support.html">Support</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Synthetics.html">Synthetics</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Textract.html">Textract</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../TimestreamQuery.html">TimestreamQuery</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../TimestreamWrite.html">TimestreamWrite</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../TranscribeService.html">TranscribeService</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../TranscribeStreamingService.html">TranscribeStreamingService</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Transfer.html">Transfer</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Translate.html">Translate</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../WAF.html">WAF</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../WAFRegional.html">WAFRegional</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../WAFV2.html">WAFV2</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../WorkDocs.html">WorkDocs</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../WorkLink.html">WorkLink</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../WorkMail.html">WorkMail</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../WorkMailMessageFlow.html">WorkMailMessageFlow</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../WorkSpaces.html">WorkSpaces</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../XRay.html">XRay</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Other%20Classes.html">Other Classes</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Other%20Enums.html">Other Enumerations</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Other%20Extensions.html">Other Extensions</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Other%20Protocols.html">Other Protocols</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Other%20Structs.html">Other Structures</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Other%20Typealiases.html">Other Type Aliases</a>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>CloudTrailErrorType</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">CloudTrailErrorType</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSErrorType.html">AWSErrorType</a></span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">CloudTrailErrorType</span><span class="p">:</span> <span class="kt">Equatable</span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">CloudTrailErrorType</span><span class="p">:</span> <span class="kt">CustomStringConvertible</span></code></pre>
+
+                </div>
+              </div>
+            <p>Error enum for CloudTrail</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8SotoCore12AWSErrorTypeP7contextAA0C7ContextVSgvp"></a>
+                    <a name="//apple_ref/swift/Property/context" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8SotoCore12AWSErrorTypeP7contextAA0C7ContextVSgvp">context</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">context</span><span class="p">:</span> <span class="kt"><a href="../Structs/AWSErrorContext.html">AWSErrorContext</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudTrail/CloudTrail_Error.swift#L24">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14SotoCloudTrail0bC9ErrorTypeV9errorCode7contextACSgSS_0A4Core15AWSErrorContextVtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(errorCode:context:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14SotoCloudTrail0bC9ErrorTypeV9errorCode7contextACSgSS_0A4Core15AWSErrorContextVtcfc">init(errorCode:context:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>initialize CloudTrail</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">?(</span><span class="nv">errorCode</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">context</span><span class="p">:</span> <span class="kt"><a href="../Structs/AWSErrorContext.html">AWSErrorContext</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudTrail/CloudTrail_Error.swift#L70-L74">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14SotoCloudTrail0bC9ErrorTypeV9errorCodeSSvp"></a>
+                    <a name="//apple_ref/swift/Property/errorCode" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14SotoCloudTrail0bC9ErrorTypeV9errorCodeSSvp">errorCode</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>return error code string</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">errorCode</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudTrail/CloudTrail_Error.swift#L82">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14SotoCloudTrail0bC9ErrorTypeV05cloudC19ARNInvalidExceptionACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/cloudTrailARNInvalidException" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14SotoCloudTrail0bC9ErrorTypeV05cloudC19ARNInvalidExceptionACvpZ">cloudTrailARNInvalidException</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This exception is thrown when an operation is called with an invalid trail ARN. The format of a trail ARN is:  arn:aws:cloudtrail:us-east-2:123456789012:trail/MyTrail</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">cloudTrailARNInvalidException</span><span class="p">:</span> <span class="p">`</span><span class="nv">Self</span><span class="p">`</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudTrail/CloudTrail_Error.swift#L85">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14SotoCloudTrail0bC9ErrorTypeV05cloudC25AccessNotEnabledExceptionACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/cloudTrailAccessNotEnabledException" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14SotoCloudTrail0bC9ErrorTypeV05cloudC25AccessNotEnabledExceptionACvpZ">cloudTrailAccessNotEnabledException</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This exception is thrown when trusted access has not been enabled between AWS CloudTrail and AWS Organizations. For more information, see Enabling Trusted Access with Other AWS Services and Prepare For Creating a Trail For Your Organization.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">cloudTrailAccessNotEnabledException</span><span class="p">:</span> <span class="p">`</span><span class="nv">Self</span><span class="p">`</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudTrail/CloudTrail_Error.swift#L87">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14SotoCloudTrail0bC9ErrorTypeV42cloudWatchLogsDeliveryUnavailableExceptionACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/cloudWatchLogsDeliveryUnavailableException" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14SotoCloudTrail0bC9ErrorTypeV42cloudWatchLogsDeliveryUnavailableExceptionACvpZ">cloudWatchLogsDeliveryUnavailableException</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Cannot set a CloudWatch Logs delivery for this region.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">cloudWatchLogsDeliveryUnavailableException</span><span class="p">:</span> <span class="p">`</span><span class="nv">Self</span><span class="p">`</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudTrail/CloudTrail_Error.swift#L89">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14SotoCloudTrail0bC9ErrorTypeV26insightNotEnabledExceptionACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/insightNotEnabledException" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14SotoCloudTrail0bC9ErrorTypeV26insightNotEnabledExceptionACvpZ">insightNotEnabledException</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>If you run GetInsightSelectors on a trail that does not have Insights events enabled, the operation throws the exception InsightNotEnabledException.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">insightNotEnabledException</span><span class="p">:</span> <span class="p">`</span><span class="nv">Self</span><span class="p">`</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudTrail/CloudTrail_Error.swift#L91">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14SotoCloudTrail0bC9ErrorTypeV54insufficientDependencyServiceAccessPermissionExceptionACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/insufficientDependencyServiceAccessPermissionException" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14SotoCloudTrail0bC9ErrorTypeV54insufficientDependencyServiceAccessPermissionExceptionACvpZ">insufficientDependencyServiceAccessPermissionException</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This exception is thrown when the IAM user or role that is used to create the organization trail is lacking one or more required permissions for creating an organization trail in a required service. For more information, see Prepare For Creating a Trail For Your Organization.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">insufficientDependencyServiceAccessPermissionException</span><span class="p">:</span> <span class="p">`</span><span class="nv">Self</span><span class="p">`</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudTrail/CloudTrail_Error.swift#L93">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14SotoCloudTrail0bC9ErrorTypeV37insufficientEncryptionPolicyExceptionACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/insufficientEncryptionPolicyException" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14SotoCloudTrail0bC9ErrorTypeV37insufficientEncryptionPolicyExceptionACvpZ">insufficientEncryptionPolicyException</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This exception is thrown when the policy on the S3 bucket or KMS key is not sufficient.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">insufficientEncryptionPolicyException</span><span class="p">:</span> <span class="p">`</span><span class="nv">Self</span><span class="p">`</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudTrail/CloudTrail_Error.swift#L95">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14SotoCloudTrail0bC9ErrorTypeV35insufficientS3BucketPolicyExceptionACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/insufficientS3BucketPolicyException" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14SotoCloudTrail0bC9ErrorTypeV35insufficientS3BucketPolicyExceptionACvpZ">insufficientS3BucketPolicyException</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This exception is thrown when the policy on the S3 bucket is not sufficient.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">insufficientS3BucketPolicyException</span><span class="p">:</span> <span class="p">`</span><span class="nv">Self</span><span class="p">`</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudTrail/CloudTrail_Error.swift#L97">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14SotoCloudTrail0bC9ErrorTypeV35insufficientSnsTopicPolicyExceptionACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/insufficientSnsTopicPolicyException" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14SotoCloudTrail0bC9ErrorTypeV35insufficientSnsTopicPolicyExceptionACvpZ">insufficientSnsTopicPolicyException</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This exception is thrown when the policy on the SNS topic is not sufficient.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">insufficientSnsTopicPolicyException</span><span class="p">:</span> <span class="p">`</span><span class="nv">Self</span><span class="p">`</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudTrail/CloudTrail_Error.swift#L99">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14SotoCloudTrail0bC9ErrorTypeV07invalidB29WatchLogsLogGroupArnExceptionACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/invalidCloudWatchLogsLogGroupArnException" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14SotoCloudTrail0bC9ErrorTypeV07invalidB29WatchLogsLogGroupArnExceptionACvpZ">invalidCloudWatchLogsLogGroupArnException</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This exception is thrown when the provided CloudWatch log group is not valid.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">invalidCloudWatchLogsLogGroupArnException</span><span class="p">:</span> <span class="p">`</span><span class="nv">Self</span><span class="p">`</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudTrail/CloudTrail_Error.swift#L101">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14SotoCloudTrail0bC9ErrorTypeV07invalidB25WatchLogsRoleArnExceptionACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/invalidCloudWatchLogsRoleArnException" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14SotoCloudTrail0bC9ErrorTypeV07invalidB25WatchLogsRoleArnExceptionACvpZ">invalidCloudWatchLogsRoleArnException</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This exception is thrown when the provided role is not valid.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">invalidCloudWatchLogsRoleArnException</span><span class="p">:</span> <span class="p">`</span><span class="nv">Self</span><span class="p">`</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudTrail/CloudTrail_Error.swift#L103">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14SotoCloudTrail0bC9ErrorTypeV29invalidEventCategoryExceptionACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/invalidEventCategoryException" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14SotoCloudTrail0bC9ErrorTypeV29invalidEventCategoryExceptionACvpZ">invalidEventCategoryException</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Occurs if an event category that is not valid is specified as a value of EventCategory.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">invalidEventCategoryException</span><span class="p">:</span> <span class="p">`</span><span class="nv">Self</span><span class="p">`</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudTrail/CloudTrail_Error.swift#L105">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14SotoCloudTrail0bC9ErrorTypeV30invalidEventSelectorsExceptionACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/invalidEventSelectorsException" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14SotoCloudTrail0bC9ErrorTypeV30invalidEventSelectorsExceptionACvpZ">invalidEventSelectorsException</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This exception is thrown when the PutEventSelectors operation is called with a number of event selectors or data resources that is not valid. The combination of event selectors and data resources is not valid. A trail can have up to 5 event selectors. A trail is limited to 250 data resources. These data resources can be distributed across event selectors, but the overall total cannot exceed 250. You can:   Specify a valid number of event selectors (1 to 5) for a trail.   Specify a valid number of data resources (1 to 250) for an event selector. The limit of number of resources on an individual event selector is configurable up to 250. However, this upper limit is allowed only if the total number of data resources does not exceed 250 across all event selectors for a trail.   Specify a valid value for a parameter. For example, specifying the ReadWriteType parameter with a value of read-only is invalid.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">invalidEventSelectorsException</span><span class="p">:</span> <span class="p">`</span><span class="nv">Self</span><span class="p">`</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudTrail/CloudTrail_Error.swift#L107">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14SotoCloudTrail0bC9ErrorTypeV26invalidHomeRegionExceptionACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/invalidHomeRegionException" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14SotoCloudTrail0bC9ErrorTypeV26invalidHomeRegionExceptionACvpZ">invalidHomeRegionException</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This exception is thrown when an operation is called on a trail from a region other than the region in which the trail was created.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">invalidHomeRegionException</span><span class="p">:</span> <span class="p">`</span><span class="nv">Self</span><span class="p">`</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudTrail/CloudTrail_Error.swift#L109">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14SotoCloudTrail0bC9ErrorTypeV32invalidInsightSelectorsExceptionACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/invalidInsightSelectorsException" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14SotoCloudTrail0bC9ErrorTypeV32invalidInsightSelectorsExceptionACvpZ">invalidInsightSelectorsException</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The formatting or syntax of the InsightSelectors JSON statement in your PutInsightSelectors or GetInsightSelectors request is not valid, or the specified insight type in the InsightSelectors statement is not a valid insight type.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">invalidInsightSelectorsException</span><span class="p">:</span> <span class="p">`</span><span class="nv">Self</span><span class="p">`</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudTrail/CloudTrail_Error.swift#L111">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14SotoCloudTrail0bC9ErrorTypeV24invalidKmsKeyIdExceptionACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/invalidKmsKeyIdException" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14SotoCloudTrail0bC9ErrorTypeV24invalidKmsKeyIdExceptionACvpZ">invalidKmsKeyIdException</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This exception is thrown when the KMS key ARN is invalid.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">invalidKmsKeyIdException</span><span class="p">:</span> <span class="p">`</span><span class="nv">Self</span><span class="p">`</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudTrail/CloudTrail_Error.swift#L113">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14SotoCloudTrail0bC9ErrorTypeV32invalidLookupAttributesExceptionACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/invalidLookupAttributesException" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14SotoCloudTrail0bC9ErrorTypeV32invalidLookupAttributesExceptionACvpZ">invalidLookupAttributesException</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Occurs when an invalid lookup attribute is specified.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">invalidLookupAttributesException</span><span class="p">:</span> <span class="p">`</span><span class="nv">Self</span><span class="p">`</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudTrail/CloudTrail_Error.swift#L115">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14SotoCloudTrail0bC9ErrorTypeV26invalidMaxResultsExceptionACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/invalidMaxResultsException" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14SotoCloudTrail0bC9ErrorTypeV26invalidMaxResultsExceptionACvpZ">invalidMaxResultsException</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This exception is thrown if the limit specified is invalid.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">invalidMaxResultsException</span><span class="p">:</span> <span class="p">`</span><span class="nv">Self</span><span class="p">`</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudTrail/CloudTrail_Error.swift#L117">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14SotoCloudTrail0bC9ErrorTypeV25invalidNextTokenExceptionACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/invalidNextTokenException" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14SotoCloudTrail0bC9ErrorTypeV25invalidNextTokenExceptionACvpZ">invalidNextTokenException</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Invalid token or token that was previously used in a request with different parameters. This exception is thrown if the token is invalid.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">invalidNextTokenException</span><span class="p">:</span> <span class="p">`</span><span class="nv">Self</span><span class="p">`</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudTrail/CloudTrail_Error.swift#L119">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14SotoCloudTrail0bC9ErrorTypeV36invalidParameterCombinationExceptionACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/invalidParameterCombinationException" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14SotoCloudTrail0bC9ErrorTypeV36invalidParameterCombinationExceptionACvpZ">invalidParameterCombinationException</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This exception is thrown when the combination of parameters provided is not valid.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">invalidParameterCombinationException</span><span class="p">:</span> <span class="p">`</span><span class="nv">Self</span><span class="p">`</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudTrail/CloudTrail_Error.swift#L121">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14SotoCloudTrail0bC9ErrorTypeV28invalidS3BucketNameExceptionACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/invalidS3BucketNameException" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14SotoCloudTrail0bC9ErrorTypeV28invalidS3BucketNameExceptionACvpZ">invalidS3BucketNameException</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This exception is thrown when the provided S3 bucket name is not valid.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">invalidS3BucketNameException</span><span class="p">:</span> <span class="p">`</span><span class="nv">Self</span><span class="p">`</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudTrail/CloudTrail_Error.swift#L123">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14SotoCloudTrail0bC9ErrorTypeV24invalidS3PrefixExceptionACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/invalidS3PrefixException" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14SotoCloudTrail0bC9ErrorTypeV24invalidS3PrefixExceptionACvpZ">invalidS3PrefixException</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This exception is thrown when the provided S3 prefix is not valid.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">invalidS3PrefixException</span><span class="p">:</span> <span class="p">`</span><span class="nv">Self</span><span class="p">`</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudTrail/CloudTrail_Error.swift#L125">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14SotoCloudTrail0bC9ErrorTypeV28invalidSnsTopicNameExceptionACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/invalidSnsTopicNameException" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14SotoCloudTrail0bC9ErrorTypeV28invalidSnsTopicNameExceptionACvpZ">invalidSnsTopicNameException</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This exception is thrown when the provided SNS topic name is not valid.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">invalidSnsTopicNameException</span><span class="p">:</span> <span class="p">`</span><span class="nv">Self</span><span class="p">`</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudTrail/CloudTrail_Error.swift#L127">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14SotoCloudTrail0bC9ErrorTypeV28invalidTagParameterExceptionACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/invalidTagParameterException" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14SotoCloudTrail0bC9ErrorTypeV28invalidTagParameterExceptionACvpZ">invalidTagParameterException</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This exception is thrown when the specified tag key or values are not valid. It can also occur if there are duplicate tags or too many tags on the resource.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">invalidTagParameterException</span><span class="p">:</span> <span class="p">`</span><span class="nv">Self</span><span class="p">`</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudTrail/CloudTrail_Error.swift#L129">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14SotoCloudTrail0bC9ErrorTypeV25invalidTimeRangeExceptionACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/invalidTimeRangeException" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14SotoCloudTrail0bC9ErrorTypeV25invalidTimeRangeExceptionACvpZ">invalidTimeRangeException</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Occurs if the timestamp values are invalid. Either the start time occurs after the end time or the time range is outside the range of possible values.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">invalidTimeRangeException</span><span class="p">:</span> <span class="p">`</span><span class="nv">Self</span><span class="p">`</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudTrail/CloudTrail_Error.swift#L131">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14SotoCloudTrail0bC9ErrorTypeV21invalidTokenExceptionACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/invalidTokenException" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14SotoCloudTrail0bC9ErrorTypeV21invalidTokenExceptionACvpZ">invalidTokenException</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Reserved for future use.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">invalidTokenException</span><span class="p">:</span> <span class="p">`</span><span class="nv">Self</span><span class="p">`</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudTrail/CloudTrail_Error.swift#L133">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14SotoCloudTrail0bC9ErrorTypeV07invalidC13NameExceptionACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/invalidTrailNameException" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14SotoCloudTrail0bC9ErrorTypeV07invalidC13NameExceptionACvpZ">invalidTrailNameException</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This exception is thrown when the provided trail name is not valid. Trail names must meet the following requirements:   Contain only ASCII letters (a-z, A-Z), numbers (0-9), periods (.), underscores (_), or dashes (-)   Start with a letter or number, and end with a letter or number   Be between 3 and 128 characters   Have no adjacent periods, underscores or dashes. Names like my-_namespace and my&ndash;namespace are invalid.   Not be in IP address format (for example, 192.168.5.4)</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">invalidTrailNameException</span><span class="p">:</span> <span class="p">`</span><span class="nv">Self</span><span class="p">`</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudTrail/CloudTrail_Error.swift#L135">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14SotoCloudTrail0bC9ErrorTypeV12kmsExceptionACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/kmsException" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14SotoCloudTrail0bC9ErrorTypeV12kmsExceptionACvpZ">kmsException</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This exception is thrown when there is an issue with the specified KMS key and the trail can’t be updated.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">kmsException</span><span class="p">:</span> <span class="p">`</span><span class="nv">Self</span><span class="p">`</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudTrail/CloudTrail_Error.swift#L137">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14SotoCloudTrail0bC9ErrorTypeV23kmsKeyDisabledExceptionACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/kmsKeyDisabledException" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14SotoCloudTrail0bC9ErrorTypeV23kmsKeyDisabledExceptionACvpZ">kmsKeyDisabledException</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This exception is no longer in use.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">kmsKeyDisabledException</span><span class="p">:</span> <span class="p">`</span><span class="nv">Self</span><span class="p">`</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudTrail/CloudTrail_Error.swift#L139">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14SotoCloudTrail0bC9ErrorTypeV23kmsKeyNotFoundExceptionACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/kmsKeyNotFoundException" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14SotoCloudTrail0bC9ErrorTypeV23kmsKeyNotFoundExceptionACvpZ">kmsKeyNotFoundException</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This exception is thrown when the KMS key does not exist, or when the S3 bucket and the KMS key are not in the same region.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">kmsKeyNotFoundException</span><span class="p">:</span> <span class="p">`</span><span class="nv">Self</span><span class="p">`</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudTrail/CloudTrail_Error.swift#L141">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14SotoCloudTrail0bC9ErrorTypeV38maximumNumberOfTrailsExceededExceptionACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/maximumNumberOfTrailsExceededException" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14SotoCloudTrail0bC9ErrorTypeV38maximumNumberOfTrailsExceededExceptionACvpZ">maximumNumberOfTrailsExceededException</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This exception is thrown when the maximum number of trails is reached.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">maximumNumberOfTrailsExceededException</span><span class="p">:</span> <span class="p">`</span><span class="nv">Self</span><span class="p">`</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudTrail/CloudTrail_Error.swift#L143">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14SotoCloudTrail0bC9ErrorTypeV37notOrganizationMasterAccountExceptionACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/notOrganizationMasterAccountException" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14SotoCloudTrail0bC9ErrorTypeV37notOrganizationMasterAccountExceptionACvpZ">notOrganizationMasterAccountException</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This exception is thrown when the AWS account making the request to create or update an organization trail is not the master account for an organization in AWS Organizations. For more information, see Prepare For Creating a Trail For Your Organization.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">notOrganizationMasterAccountException</span><span class="p">:</span> <span class="p">`</span><span class="nv">Self</span><span class="p">`</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudTrail/CloudTrail_Error.swift#L145">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14SotoCloudTrail0bC9ErrorTypeV30operationNotPermittedExceptionACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/operationNotPermittedException" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14SotoCloudTrail0bC9ErrorTypeV30operationNotPermittedExceptionACvpZ">operationNotPermittedException</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This exception is thrown when the requested operation is not permitted.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">operationNotPermittedException</span><span class="p">:</span> <span class="p">`</span><span class="nv">Self</span><span class="p">`</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudTrail/CloudTrail_Error.swift#L147">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14SotoCloudTrail0bC9ErrorTypeV41organizationNotInAllFeaturesModeExceptionACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/organizationNotInAllFeaturesModeException" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14SotoCloudTrail0bC9ErrorTypeV41organizationNotInAllFeaturesModeExceptionACvpZ">organizationNotInAllFeaturesModeException</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This exception is thrown when AWS Organizations is not configured to support all features. All features must be enabled in AWS Organization to support creating an organization trail. For more information, see Prepare For Creating a Trail For Your Organization.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">organizationNotInAllFeaturesModeException</span><span class="p">:</span> <span class="p">`</span><span class="nv">Self</span><span class="p">`</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudTrail/CloudTrail_Error.swift#L149">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14SotoCloudTrail0bC9ErrorTypeV30organizationsNotInUseExceptionACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/organizationsNotInUseException" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14SotoCloudTrail0bC9ErrorTypeV30organizationsNotInUseExceptionACvpZ">organizationsNotInUseException</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This exception is thrown when the request is made from an AWS account that is not a member of an organization. To make this request, sign in using the credentials of an account that belongs to an organization.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">organizationsNotInUseException</span><span class="p">:</span> <span class="p">`</span><span class="nv">Self</span><span class="p">`</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudTrail/CloudTrail_Error.swift#L151">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14SotoCloudTrail0bC9ErrorTypeV25resourceNotFoundExceptionACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/resourceNotFoundException" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14SotoCloudTrail0bC9ErrorTypeV25resourceNotFoundExceptionACvpZ">resourceNotFoundException</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This exception is thrown when the specified resource is not found.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">resourceNotFoundException</span><span class="p">:</span> <span class="p">`</span><span class="nv">Self</span><span class="p">`</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudTrail/CloudTrail_Error.swift#L153">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14SotoCloudTrail0bC9ErrorTypeV08resourceE21NotSupportedExceptionACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/resourceTypeNotSupportedException" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14SotoCloudTrail0bC9ErrorTypeV08resourceE21NotSupportedExceptionACvpZ">resourceTypeNotSupportedException</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This exception is thrown when the specified resource type is not supported by CloudTrail.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">resourceTypeNotSupportedException</span><span class="p">:</span> <span class="p">`</span><span class="nv">Self</span><span class="p">`</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudTrail/CloudTrail_Error.swift#L155">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14SotoCloudTrail0bC9ErrorTypeV29s3BucketDoesNotExistExceptionACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/s3BucketDoesNotExistException" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14SotoCloudTrail0bC9ErrorTypeV29s3BucketDoesNotExistExceptionACvpZ">s3BucketDoesNotExistException</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This exception is thrown when the specified S3 bucket does not exist.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">s3BucketDoesNotExistException</span><span class="p">:</span> <span class="p">`</span><span class="nv">Self</span><span class="p">`</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudTrail/CloudTrail_Error.swift#L157">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14SotoCloudTrail0bC9ErrorTypeV26tagsLimitExceededExceptionACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/tagsLimitExceededException" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14SotoCloudTrail0bC9ErrorTypeV26tagsLimitExceededExceptionACvpZ">tagsLimitExceededException</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The number of tags per trail has exceeded the permitted amount. Currently, the limit is 50.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">tagsLimitExceededException</span><span class="p">:</span> <span class="p">`</span><span class="nv">Self</span><span class="p">`</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudTrail/CloudTrail_Error.swift#L159">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14SotoCloudTrail0bC9ErrorTypeV27trailAlreadyExistsExceptionACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/trailAlreadyExistsException" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14SotoCloudTrail0bC9ErrorTypeV27trailAlreadyExistsExceptionACvpZ">trailAlreadyExistsException</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This exception is thrown when the specified trail already exists.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">trailAlreadyExistsException</span><span class="p">:</span> <span class="p">`</span><span class="nv">Self</span><span class="p">`</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudTrail/CloudTrail_Error.swift#L161">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14SotoCloudTrail0bC9ErrorTypeV22trailNotFoundExceptionACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/trailNotFoundException" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14SotoCloudTrail0bC9ErrorTypeV22trailNotFoundExceptionACvpZ">trailNotFoundException</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This exception is thrown when the trail with the given name is not found.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">trailNotFoundException</span><span class="p">:</span> <span class="p">`</span><span class="nv">Self</span><span class="p">`</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudTrail/CloudTrail_Error.swift#L163">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14SotoCloudTrail0bC9ErrorTypeV25trailNotProvidedExceptionACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/trailNotProvidedException" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14SotoCloudTrail0bC9ErrorTypeV25trailNotProvidedExceptionACvpZ">trailNotProvidedException</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This exception is no longer in use.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">trailNotProvidedException</span><span class="p">:</span> <span class="p">`</span><span class="nv">Self</span><span class="p">`</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudTrail/CloudTrail_Error.swift#L165">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14SotoCloudTrail0bC9ErrorTypeV29unsupportedOperationExceptionACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/unsupportedOperationException" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14SotoCloudTrail0bC9ErrorTypeV29unsupportedOperationExceptionACvpZ">unsupportedOperationException</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This exception is thrown when the requested operation is not supported.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">unsupportedOperationException</span><span class="p">:</span> <span class="p">`</span><span class="nv">Self</span><span class="p">`</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudTrail/CloudTrail_Error.swift#L167">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:SQ2eeoiySbx_xtFZ"></a>
+                    <a name="//apple_ref/swift/Method/==(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:SQ2eeoiySbx_xtFZ">==(_:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="o">==</span> <span class="p">(</span><span class="nv">lhs</span><span class="p">:</span> <span class="kt">CloudTrailErrorType</span><span class="p">,</span> <span class="nv">rhs</span><span class="p">:</span> <span class="kt">CloudTrailErrorType</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudTrail/CloudTrail_Error.swift#L171-L173">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:s23CustomStringConvertibleP11descriptionSSvp"></a>
+                    <a name="//apple_ref/swift/Property/description" class="dashAnchor"></a>
+                    <a class="token" href="#/s:s23CustomStringConvertibleP11descriptionSSvp">description</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">description</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudTrail/CloudTrail_Error.swift#L177-L179">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>© Copyright (c) 2020 Yuki Takei(noppoMan), Joe Smith(Yasumoto), Jonathan McAllister(jonnymacs), Adam Fowler(adam-fowler), Fabian Fett(fabianfett)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

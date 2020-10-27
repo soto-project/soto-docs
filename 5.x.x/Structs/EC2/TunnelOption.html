@@ -14,7 +14,7 @@
     <a title="TunnelOption Structure Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../../index.html"> Docs</a> (54% documented)</p>
+        <p><a href="../../index.html"> Docs</a> (56% documented)</p>
         <p class="header-right"><a href="https://github.com/soto-project/soto"><img src="../../img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
@@ -29,10 +29,7 @@
       <nav class="sidebar">
         <ul class="nav-groups">
           <li class="nav-group-name">
-            <a href="../../User%20Guides.html">User Guides</a>
-          </li>
-          <li class="nav-group-name">
-            <a href="../../AWSSDKSwiftCore.html">AWSSDKSwiftCore</a>
+            <a href="../../SotoCore.html">SotoCore</a>
           </li>
           <li class="nav-group-name">
             <a href="../../ACM.html">ACM</a>
@@ -269,12 +266,6 @@
             <a href="../../EKS.html">EKS</a>
           </li>
           <li class="nav-group-name">
-            <a href="../../ELB.html">ELB</a>
-          </li>
-          <li class="nav-group-name">
-            <a href="../../ELBV2.html">ELBV2</a>
-          </li>
-          <li class="nav-group-name">
             <a href="../../EMR.html">EMR</a>
           </li>
           <li class="nav-group-name">
@@ -285,6 +276,12 @@
           </li>
           <li class="nav-group-name">
             <a href="../../ElasticInference.html">ElasticInference</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../ElasticLoadBalancing.html">ElasticLoadBalancing</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../ElasticLoadBalancingv2.html">ElasticLoadBalancingv2</a>
           </li>
           <li class="nav-group-name">
             <a href="../../ElasticTranscoder.html">ElasticTranscoder</a>
@@ -602,6 +599,9 @@
             <a href="../../S3Control.html">S3Control</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../S3Outposts.html">S3Outposts</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../SES.html">SES</a>
           </li>
           <li class="nav-group-name">
@@ -692,6 +692,12 @@
             <a href="../../Textract.html">Textract</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../TimestreamQuery.html">TimestreamQuery</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../TimestreamWrite.html">TimestreamWrite</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../TranscribeService.html">TranscribeService</a>
           </li>
           <li class="nav-group-name">
@@ -756,8 +762,7 @@
             <h1>TunnelOption</h1>
               <div class="declaration">
                 <div class="language">
-                  
-                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">TunnelOption</span> <span class="p">:</span> <span class="kt"><a href="../../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">TunnelOption</span> <span class="p">:</span> <span class="kt"><a href="../../SotoCore.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                 </div>
               </div>
@@ -1009,7 +1014,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L33326">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L33425">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1039,7 +1044,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L33328">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L33427">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1064,13 +1069,13 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@OptionalCoding</span>
+                          <pre class="highlight swift"><code><span class="kd">@OptionalCustomCoding</span>
 <span class="o">&lt;</span><span class="kt"><a href="../../Structs/EC2.html">EC2</a></span><span class="o">.</span><span class="kt"><a href="../../Structs/EC2/ArrayCoder.html">ArrayCoder</a></span><span class="o">&lt;</span><span class="kt"><a href="../../Structs/EC2.html">EC2</a></span><span class="o">.</span><span class="kt">TunnelOption</span><span class="o">.</span><span class="n"><a href="../../Structs/EC2/TunnelOption/_IkeVersionsEncoding.html">_IkeVersionsEncoding</a></span><span class="p">,</span> <span class="kt"><a href="../../Structs/EC2.html">EC2</a></span><span class="o">.</span><span class="kt"><a href="../../Structs/EC2/IKEVersionsListValue.html">IKEVersionsListValue</a></span><span class="o">&gt;&gt;</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">ikeVersions</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../../Structs/EC2/IKEVersionsListValue.html">IKEVersionsListValue</a></span><span class="p">]?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L33331">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L33430">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1100,7 +1105,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L33333">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L33432">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1125,13 +1130,13 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@OptionalCoding</span>
+                          <pre class="highlight swift"><code><span class="kd">@OptionalCustomCoding</span>
 <span class="o">&lt;</span><span class="kt"><a href="../../Structs/EC2.html">EC2</a></span><span class="o">.</span><span class="kt"><a href="../../Structs/EC2/ArrayCoder.html">ArrayCoder</a></span><span class="o">&lt;</span><span class="kt"><a href="../../Structs/EC2.html">EC2</a></span><span class="o">.</span><span class="kt">TunnelOption</span><span class="o">.</span><span class="n"><a href="../../Structs/EC2/TunnelOption/_Phase1DHGroupNumbersEncoding.html">_Phase1DHGroupNumbersEncoding</a></span><span class="p">,</span> <span class="kt"><a href="../../Structs/EC2.html">EC2</a></span><span class="o">.</span><span class="kt"><a href="../../Structs/EC2/Phase1DHGroupNumbersListValue.html">Phase1DHGroupNumbersListValue</a></span><span class="o">&gt;&gt;</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">phase1DHGroupNumbers</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../../Structs/EC2/Phase1DHGroupNumbersListValue.html">Phase1DHGroupNumbersListValue</a></span><span class="p">]?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L33336">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L33435">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1156,13 +1161,13 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@OptionalCoding</span>
+                          <pre class="highlight swift"><code><span class="kd">@OptionalCustomCoding</span>
 <span class="o">&lt;</span><span class="kt"><a href="../../Structs/EC2.html">EC2</a></span><span class="o">.</span><span class="kt"><a href="../../Structs/EC2/ArrayCoder.html">ArrayCoder</a></span><span class="o">&lt;</span><span class="kt"><a href="../../Structs/EC2.html">EC2</a></span><span class="o">.</span><span class="kt">TunnelOption</span><span class="o">.</span><span class="n"><a href="../../Structs/EC2/TunnelOption/_Phase1EncryptionAlgorithmsEncoding.html">_Phase1EncryptionAlgorithmsEncoding</a></span><span class="p">,</span> <span class="kt"><a href="../../Structs/EC2.html">EC2</a></span><span class="o">.</span><span class="kt"><a href="../../Structs/EC2/Phase1EncryptionAlgorithmsListValue.html">Phase1EncryptionAlgorithmsListValue</a></span><span class="o">&gt;&gt;</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">phase1EncryptionAlgorithms</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../../Structs/EC2/Phase1EncryptionAlgorithmsListValue.html">Phase1EncryptionAlgorithmsListValue</a></span><span class="p">]?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L33339">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L33438">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1187,13 +1192,13 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@OptionalCoding</span>
+                          <pre class="highlight swift"><code><span class="kd">@OptionalCustomCoding</span>
 <span class="o">&lt;</span><span class="kt"><a href="../../Structs/EC2.html">EC2</a></span><span class="o">.</span><span class="kt"><a href="../../Structs/EC2/ArrayCoder.html">ArrayCoder</a></span><span class="o">&lt;</span><span class="kt"><a href="../../Structs/EC2.html">EC2</a></span><span class="o">.</span><span class="kt">TunnelOption</span><span class="o">.</span><span class="n"><a href="../../Structs/EC2/TunnelOption/_Phase1IntegrityAlgorithmsEncoding.html">_Phase1IntegrityAlgorithmsEncoding</a></span><span class="p">,</span> <span class="kt"><a href="../../Structs/EC2.html">EC2</a></span><span class="o">.</span><span class="kt"><a href="../../Structs/EC2/Phase1IntegrityAlgorithmsListValue.html">Phase1IntegrityAlgorithmsListValue</a></span><span class="o">&gt;&gt;</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">phase1IntegrityAlgorithms</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../../Structs/EC2/Phase1IntegrityAlgorithmsListValue.html">Phase1IntegrityAlgorithmsListValue</a></span><span class="p">]?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L33342">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L33441">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1223,7 +1228,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L33344">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L33443">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1248,13 +1253,13 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@OptionalCoding</span>
+                          <pre class="highlight swift"><code><span class="kd">@OptionalCustomCoding</span>
 <span class="o">&lt;</span><span class="kt"><a href="../../Structs/EC2.html">EC2</a></span><span class="o">.</span><span class="kt"><a href="../../Structs/EC2/ArrayCoder.html">ArrayCoder</a></span><span class="o">&lt;</span><span class="kt"><a href="../../Structs/EC2.html">EC2</a></span><span class="o">.</span><span class="kt">TunnelOption</span><span class="o">.</span><span class="n"><a href="../../Structs/EC2/TunnelOption/_Phase2DHGroupNumbersEncoding.html">_Phase2DHGroupNumbersEncoding</a></span><span class="p">,</span> <span class="kt"><a href="../../Structs/EC2.html">EC2</a></span><span class="o">.</span><span class="kt"><a href="../../Structs/EC2/Phase2DHGroupNumbersListValue.html">Phase2DHGroupNumbersListValue</a></span><span class="o">&gt;&gt;</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">phase2DHGroupNumbers</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../../Structs/EC2/Phase2DHGroupNumbersListValue.html">Phase2DHGroupNumbersListValue</a></span><span class="p">]?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L33347">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L33446">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1279,13 +1284,13 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@OptionalCoding</span>
+                          <pre class="highlight swift"><code><span class="kd">@OptionalCustomCoding</span>
 <span class="o">&lt;</span><span class="kt"><a href="../../Structs/EC2.html">EC2</a></span><span class="o">.</span><span class="kt"><a href="../../Structs/EC2/ArrayCoder.html">ArrayCoder</a></span><span class="o">&lt;</span><span class="kt"><a href="../../Structs/EC2.html">EC2</a></span><span class="o">.</span><span class="kt">TunnelOption</span><span class="o">.</span><span class="n"><a href="../../Structs/EC2/TunnelOption/_Phase2EncryptionAlgorithmsEncoding.html">_Phase2EncryptionAlgorithmsEncoding</a></span><span class="p">,</span> <span class="kt"><a href="../../Structs/EC2.html">EC2</a></span><span class="o">.</span><span class="kt"><a href="../../Structs/EC2/Phase2EncryptionAlgorithmsListValue.html">Phase2EncryptionAlgorithmsListValue</a></span><span class="o">&gt;&gt;</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">phase2EncryptionAlgorithms</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../../Structs/EC2/Phase2EncryptionAlgorithmsListValue.html">Phase2EncryptionAlgorithmsListValue</a></span><span class="p">]?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L33350">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L33449">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1310,13 +1315,13 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@OptionalCoding</span>
+                          <pre class="highlight swift"><code><span class="kd">@OptionalCustomCoding</span>
 <span class="o">&lt;</span><span class="kt"><a href="../../Structs/EC2.html">EC2</a></span><span class="o">.</span><span class="kt"><a href="../../Structs/EC2/ArrayCoder.html">ArrayCoder</a></span><span class="o">&lt;</span><span class="kt"><a href="../../Structs/EC2.html">EC2</a></span><span class="o">.</span><span class="kt">TunnelOption</span><span class="o">.</span><span class="n"><a href="../../Structs/EC2/TunnelOption/_Phase2IntegrityAlgorithmsEncoding.html">_Phase2IntegrityAlgorithmsEncoding</a></span><span class="p">,</span> <span class="kt"><a href="../../Structs/EC2.html">EC2</a></span><span class="o">.</span><span class="kt"><a href="../../Structs/EC2/Phase2IntegrityAlgorithmsListValue.html">Phase2IntegrityAlgorithmsListValue</a></span><span class="o">&gt;&gt;</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">phase2IntegrityAlgorithms</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../../Structs/EC2/Phase2IntegrityAlgorithmsListValue.html">Phase2IntegrityAlgorithmsListValue</a></span><span class="p">]?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L33353">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L33452">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1346,7 +1351,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L33355">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L33454">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1376,7 +1381,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L33357">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L33456">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1406,7 +1411,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L33359">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L33458">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1436,7 +1441,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L33361">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L33460">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1466,7 +1471,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L33363">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L33462">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1496,7 +1501,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L33365">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L33464">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1526,7 +1531,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L33367">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L33466">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1556,7 +1561,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L33369">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L33468">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1566,7 +1571,7 @@
                     <code>
                     <a name="/s:7SotoEC20B0V12TunnelOptionV16dpdTimeoutAction0eF7Seconds11ikeVersions16outsideIpAddress20phase1DHGroupNumbers0N20EncryptionAlgorithms0n9IntegrityR00n8LifetimeH006phase2oP00uqR00usR00utH012preSharedKey19rekeyFuzzPercentage0y10MarginTimeH016replayWindowSize07startupG016tunnelInsideCidr20tunnelInsideIpv6CidrAESSSg_SiSgSayAC20IKEVersionsListValueVGSgAYSayAC06Phase1oP9ListValueVGSgSayAC06Phase1qR9ListValueVGSgSayAC06Phase1sR9ListValueVGSgAZSayAC06Phase2oP9ListValueVGSgSayAC06Phase2qR9ListValueVGSgSayAC06Phase2sR9ListValueVGSgAzy3z3Ytcfc"></a>
                     <a name="//apple_ref/swift/Method/init(dpdTimeoutAction:dpdTimeoutSeconds:ikeVersions:outsideIpAddress:phase1DHGroupNumbers:phase1EncryptionAlgorithms:phase1IntegrityAlgorithms:phase1LifetimeSeconds:phase2DHGroupNumbers:phase2EncryptionAlgorithms:phase2IntegrityAlgorithms:phase2LifetimeSeconds:preSharedKey:rekeyFuzzPercentage:rekeyMarginTimeSeconds:replayWindowSize:startupAction:tunnelInsideCidr:tunnelInsideIpv6Cidr:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:7SotoEC20B0V12TunnelOptionV16dpdTimeoutAction0eF7Seconds11ikeVersions16outsideIpAddress20phase1DHGroupNumbers0N20EncryptionAlgorithms0n9IntegrityR00n8LifetimeH006phase2oP00uqR00usR00utH012preSharedKey19rekeyFuzzPercentage0y10MarginTimeH016replayWindowSize07startupG016tunnelInsideCidr20tunnelInsideIpv6CidrAESSSg_SiSgSayAC20IKEVersionsListValueVGSgAYSayAC06Phase1oP9ListValueVGSgSayAC06Phase1qR9ListValueVGSgSayAC06Phase1sR9ListValueVGSgAZSayAC06Phase2oP9ListValueVGSgSayAC06Phase2qR9ListValueVGSgSayAC06Phase2sR9ListValueVGSgAzy3z3Ytcfc">init(dpdTimeoutAction:<wbr>dpdTimeoutSeconds:<wbr>ikeVersions:<wbr>outsideIpAddress:<wbr>phase1DHGroupNumbers:<wbr>phase1EncryptionAlgorithms:<wbr>phase1IntegrityAlgorithms:<wbr>phase1LifetimeSeconds:<wbr>phase2DHGroupNumbers:<wbr>phase2EncryptionAlgorithms:<wbr>phase2IntegrityAlgorithms:<wbr>phase2LifetimeSeconds:<wbr>preSharedKey:<wbr>rekeyFuzzPercentage:<wbr>rekeyMarginTimeSeconds:<wbr>replayWindowSize:<wbr>startupAction:<wbr>tunnelInsideCidr:<wbr>tunnelInsideIpv6Cidr:<wbr>)</a>
+                    <a class="token" href="#/s:7SotoEC20B0V12TunnelOptionV16dpdTimeoutAction0eF7Seconds11ikeVersions16outsideIpAddress20phase1DHGroupNumbers0N20EncryptionAlgorithms0n9IntegrityR00n8LifetimeH006phase2oP00uqR00usR00utH012preSharedKey19rekeyFuzzPercentage0y10MarginTimeH016replayWindowSize07startupG016tunnelInsideCidr20tunnelInsideIpv6CidrAESSSg_SiSgSayAC20IKEVersionsListValueVGSgAYSayAC06Phase1oP9ListValueVGSgSayAC06Phase1qR9ListValueVGSgSayAC06Phase1sR9ListValueVGSgAZSayAC06Phase2oP9ListValueVGSgSayAC06Phase2qR9ListValueVGSgSayAC06Phase2sR9ListValueVGSgAzy3z3Ytcfc">init(dpdTimeoutAction:dpdTimeoutSeconds:ikeVersions:outsideIpAddress:phase1DHGroupNumbers:phase1EncryptionAlgorithms:phase1IntegrityAlgorithms:phase1LifetimeSeconds:phase2DHGroupNumbers:phase2EncryptionAlgorithms:phase2IntegrityAlgorithms:phase2LifetimeSeconds:preSharedKey:rekeyFuzzPercentage:rekeyMarginTimeSeconds:replayWindowSize:startupAction:tunnelInsideCidr:tunnelInsideIpv6Cidr:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1586,7 +1591,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L33371-L33391">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L33470-L33490">Show on GitHub</a>
                       </div>
                     </section>
                   </div>

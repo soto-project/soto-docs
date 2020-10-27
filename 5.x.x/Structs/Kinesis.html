@@ -14,7 +14,7 @@
     <a title="Kinesis Structure Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html"> Docs</a> (54% documented)</p>
+        <p><a href="../index.html"> Docs</a> (56% documented)</p>
         <p class="header-right"><a href="https://github.com/soto-project/soto"><img src="../img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
@@ -29,10 +29,7 @@
       <nav class="sidebar">
         <ul class="nav-groups">
           <li class="nav-group-name">
-            <a href="../User%20Guides.html">User Guides</a>
-          </li>
-          <li class="nav-group-name">
-            <a href="../AWSSDKSwiftCore.html">AWSSDKSwiftCore</a>
+            <a href="../SotoCore.html">SotoCore</a>
           </li>
           <li class="nav-group-name">
             <a href="../ACM.html">ACM</a>
@@ -269,12 +266,6 @@
             <a href="../EKS.html">EKS</a>
           </li>
           <li class="nav-group-name">
-            <a href="../ELB.html">ELB</a>
-          </li>
-          <li class="nav-group-name">
-            <a href="../ELBV2.html">ELBV2</a>
-          </li>
-          <li class="nav-group-name">
             <a href="../EMR.html">EMR</a>
           </li>
           <li class="nav-group-name">
@@ -285,6 +276,12 @@
           </li>
           <li class="nav-group-name">
             <a href="../ElasticInference.html">ElasticInference</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../ElasticLoadBalancing.html">ElasticLoadBalancing</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../ElasticLoadBalancingv2.html">ElasticLoadBalancingv2</a>
           </li>
           <li class="nav-group-name">
             <a href="../ElasticTranscoder.html">ElasticTranscoder</a>
@@ -602,6 +599,9 @@
             <a href="../S3Control.html">S3Control</a>
           </li>
           <li class="nav-group-name">
+            <a href="../S3Outposts.html">S3Outposts</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../SES.html">SES</a>
           </li>
           <li class="nav-group-name">
@@ -692,6 +692,12 @@
             <a href="../Textract.html">Textract</a>
           </li>
           <li class="nav-group-name">
+            <a href="../TimestreamQuery.html">TimestreamQuery</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../TimestreamWrite.html">TimestreamWrite</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../TranscribeService.html">TranscribeService</a>
           </li>
           <li class="nav-group-name">
@@ -756,7 +762,6 @@
             <h1>Kinesis</h1>
               <div class="declaration">
                 <div class="language">
-                  
                   <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Kinesis</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSService.html">AWSService</a></span></code></pre>
 
                 </div>
@@ -769,11 +774,9 @@
               <div class="task-name-container">
                 <a name="/Member%20variables"></a>
                 <a name="//apple_ref/swift/Section/Member variables" class="dashAnchor"></a>
-                <div class="section-name-container">
-                  <a class="section-name-link" href="#/Member%20variables"></a>
-                  <h3 class="section-name"><p>Member variables</p>
-</h3>
-                </div>
+                <a href="#/Member%20variables">
+                  <h3 class="section-name">Member variables</h3>
+                </a>
               </div>
               <ul>
                 <li class="item">
@@ -800,7 +803,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Kinesis/Kinesis_API.swift#L19">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Kinesis/Kinesis_API.swift#L20">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -829,7 +832,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Kinesis/Kinesis_API.swift#L21">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Kinesis/Kinesis_API.swift#L22">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -840,11 +843,9 @@
               <div class="task-name-container">
                 <a name="/Initialization"></a>
                 <a name="//apple_ref/swift/Section/Initialization" class="dashAnchor"></a>
-                <div class="section-name-container">
-                  <a class="section-name-link" href="#/Initialization"></a>
-                  <h3 class="section-name"><p>Initialization</p>
-</h3>
-                </div>
+                <a href="#/Initialization">
+                  <h3 class="section-name">Initialization</h3>
+                </a>
               </div>
               <ul>
                 <li class="item">
@@ -852,7 +853,7 @@
                     <code>
                     <a name="/s:11SotoKinesis0B0V6client6region9partition8endpoint7timeout19byteBufferAllocator7optionsAC0A4Core9AWSClientC_AK6RegionVSgAK12AWSPartitionVSSSg3NIO10TimeAmountVSgAT04ByteiJ0VAK16AWSServiceConfigC7OptionsVtcfc"></a>
                     <a name="//apple_ref/swift/Method/init(client:region:partition:endpoint:timeout:byteBufferAllocator:options:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11SotoKinesis0B0V6client6region9partition8endpoint7timeout19byteBufferAllocator7optionsAC0A4Core9AWSClientC_AK6RegionVSgAK12AWSPartitionVSSSg3NIO10TimeAmountVSgAT04ByteiJ0VAK16AWSServiceConfigC7OptionsVtcfc">init(client:<wbr>region:<wbr>partition:<wbr>endpoint:<wbr>timeout:<wbr>byteBufferAllocator:<wbr>options:<wbr>)</a>
+                    <a class="token" href="#/s:11SotoKinesis0B0V6client6region9partition8endpoint7timeout19byteBufferAllocator7optionsAC0A4Core9AWSClientC_AK6RegionVSgAK12AWSPartitionVSSSg3NIO10TimeAmountVSgAT04ByteiJ0VAK16AWSServiceConfigC7OptionsVtcfc">init(client:region:partition:endpoint:timeout:byteBufferAllocator:options:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -958,11 +959,9 @@
               <div class="task-name-container">
                 <a name="/API%20Calls"></a>
                 <a name="//apple_ref/swift/Section/API Calls" class="dashAnchor"></a>
-                <div class="section-name-container">
-                  <a class="section-name-link" href="#/API%20Calls"></a>
-                  <h3 class="section-name"><p>API Calls</p>
-</h3>
-                </div>
+                <a href="#/API%20Calls">
+                  <h3 class="section-name">API Calls</h3>
+                </a>
               </div>
               <ul>
                 <li class="item">
@@ -970,7 +969,7 @@
                     <code>
                     <a name="/s:11SotoKinesis0B0V15addTagsToStream_2on6logger3NIO15EventLoopFutureCyytGAC03AdddeF5InputV_AG0jK0_pSg7Logging6LoggerVtF"></a>
                     <a name="//apple_ref/swift/Method/addTagsToStream(_:on:logger:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11SotoKinesis0B0V15addTagsToStream_2on6logger3NIO15EventLoopFutureCyytGAC03AdddeF5InputV_AG0jK0_pSg7Logging6LoggerVtF">addTagsToStream(_:<wbr>on:<wbr>logger:<wbr>)</a>
+                    <a class="token" href="#/s:11SotoKinesis0B0V15addTagsToStream_2on6logger3NIO15EventLoopFutureCyytGAC03AdddeF5InputV_AG0jK0_pSg7Logging6LoggerVtF">addTagsToStream(_:on:logger:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1001,7 +1000,7 @@
                     <code>
                     <a name="/s:11SotoKinesis0B0V12createStream_2on6logger3NIO15EventLoopFutureCyytGAC06CreateD5InputV_AG0hI0_pSg7Logging6LoggerVtF"></a>
                     <a name="//apple_ref/swift/Method/createStream(_:on:logger:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11SotoKinesis0B0V12createStream_2on6logger3NIO15EventLoopFutureCyytGAC06CreateD5InputV_AG0hI0_pSg7Logging6LoggerVtF">createStream(_:<wbr>on:<wbr>logger:<wbr>)</a>
+                    <a class="token" href="#/s:11SotoKinesis0B0V12createStream_2on6logger3NIO15EventLoopFutureCyytGAC06CreateD5InputV_AG0hI0_pSg7Logging6LoggerVtF">createStream(_:on:logger:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1032,7 +1031,7 @@
                     <code>
                     <a name="/s:11SotoKinesis0B0V29decreaseStreamRetentionPeriod_2on6logger3NIO15EventLoopFutureCyytGAC08DecreasedeF5InputV_AG0jK0_pSg7Logging6LoggerVtF"></a>
                     <a name="//apple_ref/swift/Method/decreaseStreamRetentionPeriod(_:on:logger:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11SotoKinesis0B0V29decreaseStreamRetentionPeriod_2on6logger3NIO15EventLoopFutureCyytGAC08DecreasedeF5InputV_AG0jK0_pSg7Logging6LoggerVtF">decreaseStreamRetentionPeriod(_:<wbr>on:<wbr>logger:<wbr>)</a>
+                    <a class="token" href="#/s:11SotoKinesis0B0V29decreaseStreamRetentionPeriod_2on6logger3NIO15EventLoopFutureCyytGAC08DecreasedeF5InputV_AG0jK0_pSg7Logging6LoggerVtF">decreaseStreamRetentionPeriod(_:on:logger:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1063,7 +1062,7 @@
                     <code>
                     <a name="/s:11SotoKinesis0B0V12deleteStream_2on6logger3NIO15EventLoopFutureCyytGAC06DeleteD5InputV_AG0hI0_pSg7Logging6LoggerVtF"></a>
                     <a name="//apple_ref/swift/Method/deleteStream(_:on:logger:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11SotoKinesis0B0V12deleteStream_2on6logger3NIO15EventLoopFutureCyytGAC06DeleteD5InputV_AG0hI0_pSg7Logging6LoggerVtF">deleteStream(_:<wbr>on:<wbr>logger:<wbr>)</a>
+                    <a class="token" href="#/s:11SotoKinesis0B0V12deleteStream_2on6logger3NIO15EventLoopFutureCyytGAC06DeleteD5InputV_AG0hI0_pSg7Logging6LoggerVtF">deleteStream(_:on:logger:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1094,7 +1093,7 @@
                     <code>
                     <a name="/s:11SotoKinesis0B0V24deregisterStreamConsumer_2on6logger3NIO15EventLoopFutureCyytGAC010DeregisterdE5InputV_AG0iJ0_pSg7Logging6LoggerVtF"></a>
                     <a name="//apple_ref/swift/Method/deregisterStreamConsumer(_:on:logger:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11SotoKinesis0B0V24deregisterStreamConsumer_2on6logger3NIO15EventLoopFutureCyytGAC010DeregisterdE5InputV_AG0iJ0_pSg7Logging6LoggerVtF">deregisterStreamConsumer(_:<wbr>on:<wbr>logger:<wbr>)</a>
+                    <a class="token" href="#/s:11SotoKinesis0B0V24deregisterStreamConsumer_2on6logger3NIO15EventLoopFutureCyytGAC010DeregisterdE5InputV_AG0iJ0_pSg7Logging6LoggerVtF">deregisterStreamConsumer(_:on:logger:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1125,7 +1124,7 @@
                     <code>
                     <a name="/s:11SotoKinesis0B0V14describeLimits_2on6logger3NIO15EventLoopFutureCyAC08DescribeD6OutputVGAC0kD5InputV_AG0hI0_pSg7Logging6LoggerVtF"></a>
                     <a name="//apple_ref/swift/Method/describeLimits(_:on:logger:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11SotoKinesis0B0V14describeLimits_2on6logger3NIO15EventLoopFutureCyAC08DescribeD6OutputVGAC0kD5InputV_AG0hI0_pSg7Logging6LoggerVtF">describeLimits(_:<wbr>on:<wbr>logger:<wbr>)</a>
+                    <a class="token" href="#/s:11SotoKinesis0B0V14describeLimits_2on6logger3NIO15EventLoopFutureCyAC08DescribeD6OutputVGAC0kD5InputV_AG0hI0_pSg7Logging6LoggerVtF">describeLimits(_:on:logger:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1155,7 +1154,7 @@
                     <code>
                     <a name="/s:11SotoKinesis0B0V14describeStream_2on6logger3NIO15EventLoopFutureCyAC08DescribeD6OutputVGAC0kD5InputV_AG0hI0_pSg7Logging6LoggerVtF"></a>
                     <a name="//apple_ref/swift/Method/describeStream(_:on:logger:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11SotoKinesis0B0V14describeStream_2on6logger3NIO15EventLoopFutureCyAC08DescribeD6OutputVGAC0kD5InputV_AG0hI0_pSg7Logging6LoggerVtF">describeStream(_:<wbr>on:<wbr>logger:<wbr>)</a>
+                    <a class="token" href="#/s:11SotoKinesis0B0V14describeStream_2on6logger3NIO15EventLoopFutureCyAC08DescribeD6OutputVGAC0kD5InputV_AG0hI0_pSg7Logging6LoggerVtF">describeStream(_:on:logger:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1185,7 +1184,7 @@
                     <code>
                     <a name="/s:11SotoKinesis0B0V22describeStreamConsumer_2on6logger3NIO15EventLoopFutureCyAC08DescribedE6OutputVGAC0ldE5InputV_AG0iJ0_pSg7Logging6LoggerVtF"></a>
                     <a name="//apple_ref/swift/Method/describeStreamConsumer(_:on:logger:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11SotoKinesis0B0V22describeStreamConsumer_2on6logger3NIO15EventLoopFutureCyAC08DescribedE6OutputVGAC0ldE5InputV_AG0iJ0_pSg7Logging6LoggerVtF">describeStreamConsumer(_:<wbr>on:<wbr>logger:<wbr>)</a>
+                    <a class="token" href="#/s:11SotoKinesis0B0V22describeStreamConsumer_2on6logger3NIO15EventLoopFutureCyAC08DescribedE6OutputVGAC0ldE5InputV_AG0iJ0_pSg7Logging6LoggerVtF">describeStreamConsumer(_:on:logger:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1215,7 +1214,7 @@
                     <code>
                     <a name="/s:11SotoKinesis0B0V21describeStreamSummary_2on6logger3NIO15EventLoopFutureCyAC08DescribedE6OutputVGAC0ldE5InputV_AG0iJ0_pSg7Logging6LoggerVtF"></a>
                     <a name="//apple_ref/swift/Method/describeStreamSummary(_:on:logger:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11SotoKinesis0B0V21describeStreamSummary_2on6logger3NIO15EventLoopFutureCyAC08DescribedE6OutputVGAC0ldE5InputV_AG0iJ0_pSg7Logging6LoggerVtF">describeStreamSummary(_:<wbr>on:<wbr>logger:<wbr>)</a>
+                    <a class="token" href="#/s:11SotoKinesis0B0V21describeStreamSummary_2on6logger3NIO15EventLoopFutureCyAC08DescribedE6OutputVGAC0ldE5InputV_AG0iJ0_pSg7Logging6LoggerVtF">describeStreamSummary(_:on:logger:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1245,7 +1244,7 @@
                     <code>
                     <a name="/s:11SotoKinesis0B0V25disableEnhancedMonitoring_2on6logger3NIO15EventLoopFutureCyAC0dE6OutputVGAC07DisabledE5InputV_AG0iJ0_pSg7Logging6LoggerVtF"></a>
                     <a name="//apple_ref/swift/Method/disableEnhancedMonitoring(_:on:logger:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11SotoKinesis0B0V25disableEnhancedMonitoring_2on6logger3NIO15EventLoopFutureCyAC0dE6OutputVGAC07DisabledE5InputV_AG0iJ0_pSg7Logging6LoggerVtF">disableEnhancedMonitoring(_:<wbr>on:<wbr>logger:<wbr>)</a>
+                    <a class="token" href="#/s:11SotoKinesis0B0V25disableEnhancedMonitoring_2on6logger3NIO15EventLoopFutureCyAC0dE6OutputVGAC07DisabledE5InputV_AG0iJ0_pSg7Logging6LoggerVtF">disableEnhancedMonitoring(_:on:logger:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1275,7 +1274,7 @@
                     <code>
                     <a name="/s:11SotoKinesis0B0V24enableEnhancedMonitoring_2on6logger3NIO15EventLoopFutureCyAC0dE6OutputVGAC06EnabledE5InputV_AG0iJ0_pSg7Logging6LoggerVtF"></a>
                     <a name="//apple_ref/swift/Method/enableEnhancedMonitoring(_:on:logger:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11SotoKinesis0B0V24enableEnhancedMonitoring_2on6logger3NIO15EventLoopFutureCyAC0dE6OutputVGAC06EnabledE5InputV_AG0iJ0_pSg7Logging6LoggerVtF">enableEnhancedMonitoring(_:<wbr>on:<wbr>logger:<wbr>)</a>
+                    <a class="token" href="#/s:11SotoKinesis0B0V24enableEnhancedMonitoring_2on6logger3NIO15EventLoopFutureCyAC0dE6OutputVGAC06EnabledE5InputV_AG0iJ0_pSg7Logging6LoggerVtF">enableEnhancedMonitoring(_:on:logger:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1305,7 +1304,7 @@
                     <code>
                     <a name="/s:11SotoKinesis0B0V10getRecords_2on6logger3NIO15EventLoopFutureCyAC03GetD6OutputVGAC0kD5InputV_AG0hI0_pSg7Logging6LoggerVtF"></a>
                     <a name="//apple_ref/swift/Method/getRecords(_:on:logger:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11SotoKinesis0B0V10getRecords_2on6logger3NIO15EventLoopFutureCyAC03GetD6OutputVGAC0kD5InputV_AG0hI0_pSg7Logging6LoggerVtF">getRecords(_:<wbr>on:<wbr>logger:<wbr>)</a>
+                    <a class="token" href="#/s:11SotoKinesis0B0V10getRecords_2on6logger3NIO15EventLoopFutureCyAC03GetD6OutputVGAC0kD5InputV_AG0hI0_pSg7Logging6LoggerVtF">getRecords(_:on:logger:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1335,7 +1334,7 @@
                     <code>
                     <a name="/s:11SotoKinesis0B0V16getShardIterator_2on6logger3NIO15EventLoopFutureCyAC03GetdE6OutputVGAC0ldE5InputV_AG0iJ0_pSg7Logging6LoggerVtF"></a>
                     <a name="//apple_ref/swift/Method/getShardIterator(_:on:logger:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11SotoKinesis0B0V16getShardIterator_2on6logger3NIO15EventLoopFutureCyAC03GetdE6OutputVGAC0ldE5InputV_AG0iJ0_pSg7Logging6LoggerVtF">getShardIterator(_:<wbr>on:<wbr>logger:<wbr>)</a>
+                    <a class="token" href="#/s:11SotoKinesis0B0V16getShardIterator_2on6logger3NIO15EventLoopFutureCyAC03GetdE6OutputVGAC0ldE5InputV_AG0iJ0_pSg7Logging6LoggerVtF">getShardIterator(_:on:logger:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1365,7 +1364,7 @@
                     <code>
                     <a name="/s:11SotoKinesis0B0V29increaseStreamRetentionPeriod_2on6logger3NIO15EventLoopFutureCyytGAC08IncreasedeF5InputV_AG0jK0_pSg7Logging6LoggerVtF"></a>
                     <a name="//apple_ref/swift/Method/increaseStreamRetentionPeriod(_:on:logger:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11SotoKinesis0B0V29increaseStreamRetentionPeriod_2on6logger3NIO15EventLoopFutureCyytGAC08IncreasedeF5InputV_AG0jK0_pSg7Logging6LoggerVtF">increaseStreamRetentionPeriod(_:<wbr>on:<wbr>logger:<wbr>)</a>
+                    <a class="token" href="#/s:11SotoKinesis0B0V29increaseStreamRetentionPeriod_2on6logger3NIO15EventLoopFutureCyytGAC08IncreasedeF5InputV_AG0jK0_pSg7Logging6LoggerVtF">increaseStreamRetentionPeriod(_:on:logger:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1396,7 +1395,7 @@
                     <code>
                     <a name="/s:11SotoKinesis0B0V10listShards_2on6logger3NIO15EventLoopFutureCyAC04ListD6OutputVGAC0kD5InputV_AG0hI0_pSg7Logging6LoggerVtF"></a>
                     <a name="//apple_ref/swift/Method/listShards(_:on:logger:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11SotoKinesis0B0V10listShards_2on6logger3NIO15EventLoopFutureCyAC04ListD6OutputVGAC0kD5InputV_AG0hI0_pSg7Logging6LoggerVtF">listShards(_:<wbr>on:<wbr>logger:<wbr>)</a>
+                    <a class="token" href="#/s:11SotoKinesis0B0V10listShards_2on6logger3NIO15EventLoopFutureCyAC04ListD6OutputVGAC0kD5InputV_AG0hI0_pSg7Logging6LoggerVtF">listShards(_:on:logger:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1426,7 +1425,7 @@
                     <code>
                     <a name="/s:11SotoKinesis0B0V19listStreamConsumers_2on6logger3NIO15EventLoopFutureCyAC04ListdE6OutputVGAC0ldE5InputV_AG0iJ0_pSg7Logging6LoggerVtF"></a>
                     <a name="//apple_ref/swift/Method/listStreamConsumers(_:on:logger:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11SotoKinesis0B0V19listStreamConsumers_2on6logger3NIO15EventLoopFutureCyAC04ListdE6OutputVGAC0ldE5InputV_AG0iJ0_pSg7Logging6LoggerVtF">listStreamConsumers(_:<wbr>on:<wbr>logger:<wbr>)</a>
+                    <a class="token" href="#/s:11SotoKinesis0B0V19listStreamConsumers_2on6logger3NIO15EventLoopFutureCyAC04ListdE6OutputVGAC0ldE5InputV_AG0iJ0_pSg7Logging6LoggerVtF">listStreamConsumers(_:on:logger:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1456,7 +1455,7 @@
                     <code>
                     <a name="/s:11SotoKinesis0B0V11listStreams_2on6logger3NIO15EventLoopFutureCyAC04ListD6OutputVGAC0kD5InputV_AG0hI0_pSg7Logging6LoggerVtF"></a>
                     <a name="//apple_ref/swift/Method/listStreams(_:on:logger:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11SotoKinesis0B0V11listStreams_2on6logger3NIO15EventLoopFutureCyAC04ListD6OutputVGAC0kD5InputV_AG0hI0_pSg7Logging6LoggerVtF">listStreams(_:<wbr>on:<wbr>logger:<wbr>)</a>
+                    <a class="token" href="#/s:11SotoKinesis0B0V11listStreams_2on6logger3NIO15EventLoopFutureCyAC04ListD6OutputVGAC0kD5InputV_AG0hI0_pSg7Logging6LoggerVtF">listStreams(_:on:logger:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1486,7 +1485,7 @@
                     <code>
                     <a name="/s:11SotoKinesis0B0V17listTagsForStream_2on6logger3NIO15EventLoopFutureCyAC04ListdeF6OutputVGAC0mdeF5InputV_AG0jK0_pSg7Logging6LoggerVtF"></a>
                     <a name="//apple_ref/swift/Method/listTagsForStream(_:on:logger:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11SotoKinesis0B0V17listTagsForStream_2on6logger3NIO15EventLoopFutureCyAC04ListdeF6OutputVGAC0mdeF5InputV_AG0jK0_pSg7Logging6LoggerVtF">listTagsForStream(_:<wbr>on:<wbr>logger:<wbr>)</a>
+                    <a class="token" href="#/s:11SotoKinesis0B0V17listTagsForStream_2on6logger3NIO15EventLoopFutureCyAC04ListdeF6OutputVGAC0mdeF5InputV_AG0jK0_pSg7Logging6LoggerVtF">listTagsForStream(_:on:logger:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1516,7 +1515,7 @@
                     <code>
                     <a name="/s:11SotoKinesis0B0V11mergeShards_2on6logger3NIO15EventLoopFutureCyytGAC05MergeD5InputV_AG0hI0_pSg7Logging6LoggerVtF"></a>
                     <a name="//apple_ref/swift/Method/mergeShards(_:on:logger:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11SotoKinesis0B0V11mergeShards_2on6logger3NIO15EventLoopFutureCyytGAC05MergeD5InputV_AG0hI0_pSg7Logging6LoggerVtF">mergeShards(_:<wbr>on:<wbr>logger:<wbr>)</a>
+                    <a class="token" href="#/s:11SotoKinesis0B0V11mergeShards_2on6logger3NIO15EventLoopFutureCyytGAC05MergeD5InputV_AG0hI0_pSg7Logging6LoggerVtF">mergeShards(_:on:logger:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1547,7 +1546,7 @@
                     <code>
                     <a name="/s:11SotoKinesis0B0V9putRecord_2on6logger3NIO15EventLoopFutureCyAC03PutD6OutputVGAC0kD5InputV_AG0hI0_pSg7Logging6LoggerVtF"></a>
                     <a name="//apple_ref/swift/Method/putRecord(_:on:logger:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11SotoKinesis0B0V9putRecord_2on6logger3NIO15EventLoopFutureCyAC03PutD6OutputVGAC0kD5InputV_AG0hI0_pSg7Logging6LoggerVtF">putRecord(_:<wbr>on:<wbr>logger:<wbr>)</a>
+                    <a class="token" href="#/s:11SotoKinesis0B0V9putRecord_2on6logger3NIO15EventLoopFutureCyAC03PutD6OutputVGAC0kD5InputV_AG0hI0_pSg7Logging6LoggerVtF">putRecord(_:on:logger:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1577,7 +1576,7 @@
                     <code>
                     <a name="/s:11SotoKinesis0B0V10putRecords_2on6logger3NIO15EventLoopFutureCyAC03PutD6OutputVGAC0kD5InputV_AG0hI0_pSg7Logging6LoggerVtF"></a>
                     <a name="//apple_ref/swift/Method/putRecords(_:on:logger:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11SotoKinesis0B0V10putRecords_2on6logger3NIO15EventLoopFutureCyAC03PutD6OutputVGAC0kD5InputV_AG0hI0_pSg7Logging6LoggerVtF">putRecords(_:<wbr>on:<wbr>logger:<wbr>)</a>
+                    <a class="token" href="#/s:11SotoKinesis0B0V10putRecords_2on6logger3NIO15EventLoopFutureCyAC03PutD6OutputVGAC0kD5InputV_AG0hI0_pSg7Logging6LoggerVtF">putRecords(_:on:logger:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1607,7 +1606,7 @@
                     <code>
                     <a name="/s:11SotoKinesis0B0V22registerStreamConsumer_2on6logger3NIO15EventLoopFutureCyAC08RegisterdE6OutputVGAC0ldE5InputV_AG0iJ0_pSg7Logging6LoggerVtF"></a>
                     <a name="//apple_ref/swift/Method/registerStreamConsumer(_:on:logger:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11SotoKinesis0B0V22registerStreamConsumer_2on6logger3NIO15EventLoopFutureCyAC08RegisterdE6OutputVGAC0ldE5InputV_AG0iJ0_pSg7Logging6LoggerVtF">registerStreamConsumer(_:<wbr>on:<wbr>logger:<wbr>)</a>
+                    <a class="token" href="#/s:11SotoKinesis0B0V22registerStreamConsumer_2on6logger3NIO15EventLoopFutureCyAC08RegisterdE6OutputVGAC0ldE5InputV_AG0iJ0_pSg7Logging6LoggerVtF">registerStreamConsumer(_:on:logger:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1637,7 +1636,7 @@
                     <code>
                     <a name="/s:11SotoKinesis0B0V20removeTagsFromStream_2on6logger3NIO15EventLoopFutureCyytGAC06RemovedeF5InputV_AG0jK0_pSg7Logging6LoggerVtF"></a>
                     <a name="//apple_ref/swift/Method/removeTagsFromStream(_:on:logger:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11SotoKinesis0B0V20removeTagsFromStream_2on6logger3NIO15EventLoopFutureCyytGAC06RemovedeF5InputV_AG0jK0_pSg7Logging6LoggerVtF">removeTagsFromStream(_:<wbr>on:<wbr>logger:<wbr>)</a>
+                    <a class="token" href="#/s:11SotoKinesis0B0V20removeTagsFromStream_2on6logger3NIO15EventLoopFutureCyytGAC06RemovedeF5InputV_AG0jK0_pSg7Logging6LoggerVtF">removeTagsFromStream(_:on:logger:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1668,7 +1667,7 @@
                     <code>
                     <a name="/s:11SotoKinesis0B0V10splitShard_2on6logger3NIO15EventLoopFutureCyytGAC05SplitD5InputV_AG0hI0_pSg7Logging6LoggerVtF"></a>
                     <a name="//apple_ref/swift/Method/splitShard(_:on:logger:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11SotoKinesis0B0V10splitShard_2on6logger3NIO15EventLoopFutureCyytGAC05SplitD5InputV_AG0hI0_pSg7Logging6LoggerVtF">splitShard(_:<wbr>on:<wbr>logger:<wbr>)</a>
+                    <a class="token" href="#/s:11SotoKinesis0B0V10splitShard_2on6logger3NIO15EventLoopFutureCyytGAC05SplitD5InputV_AG0hI0_pSg7Logging6LoggerVtF">splitShard(_:on:logger:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1699,7 +1698,7 @@
                     <code>
                     <a name="/s:11SotoKinesis0B0V21startStreamEncryption_2on6logger3NIO15EventLoopFutureCyytGAC05StartdE5InputV_AG0iJ0_pSg7Logging6LoggerVtF"></a>
                     <a name="//apple_ref/swift/Method/startStreamEncryption(_:on:logger:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11SotoKinesis0B0V21startStreamEncryption_2on6logger3NIO15EventLoopFutureCyytGAC05StartdE5InputV_AG0iJ0_pSg7Logging6LoggerVtF">startStreamEncryption(_:<wbr>on:<wbr>logger:<wbr>)</a>
+                    <a class="token" href="#/s:11SotoKinesis0B0V21startStreamEncryption_2on6logger3NIO15EventLoopFutureCyytGAC05StartdE5InputV_AG0iJ0_pSg7Logging6LoggerVtF">startStreamEncryption(_:on:logger:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1730,7 +1729,7 @@
                     <code>
                     <a name="/s:11SotoKinesis0B0V20stopStreamEncryption_2on6logger3NIO15EventLoopFutureCyytGAC04StopdE5InputV_AG0iJ0_pSg7Logging6LoggerVtF"></a>
                     <a name="//apple_ref/swift/Method/stopStreamEncryption(_:on:logger:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11SotoKinesis0B0V20stopStreamEncryption_2on6logger3NIO15EventLoopFutureCyytGAC04StopdE5InputV_AG0iJ0_pSg7Logging6LoggerVtF">stopStreamEncryption(_:<wbr>on:<wbr>logger:<wbr>)</a>
+                    <a class="token" href="#/s:11SotoKinesis0B0V20stopStreamEncryption_2on6logger3NIO15EventLoopFutureCyytGAC04StopdE5InputV_AG0iJ0_pSg7Logging6LoggerVtF">stopStreamEncryption(_:on:logger:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1761,7 +1760,7 @@
                     <code>
                     <a name="/s:11SotoKinesis0B0V16subscribeToShard_2on6logger3NIO15EventLoopFutureCyAC09SubscribedE6OutputVGAC0ldE5InputV_AG0iJ0_pSg7Logging6LoggerVtF"></a>
                     <a name="//apple_ref/swift/Method/subscribeToShard(_:on:logger:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11SotoKinesis0B0V16subscribeToShard_2on6logger3NIO15EventLoopFutureCyAC09SubscribedE6OutputVGAC0ldE5InputV_AG0iJ0_pSg7Logging6LoggerVtF">subscribeToShard(_:<wbr>on:<wbr>logger:<wbr>)</a>
+                    <a class="token" href="#/s:11SotoKinesis0B0V16subscribeToShard_2on6logger3NIO15EventLoopFutureCyAC09SubscribedE6OutputVGAC0ldE5InputV_AG0iJ0_pSg7Logging6LoggerVtF">subscribeToShard(_:on:logger:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1791,7 +1790,7 @@
                     <code>
                     <a name="/s:11SotoKinesis0B0V16updateShardCount_2on6logger3NIO15EventLoopFutureCyAC06UpdatedE6OutputVGAC0ldE5InputV_AG0iJ0_pSg7Logging6LoggerVtF"></a>
                     <a name="//apple_ref/swift/Method/updateShardCount(_:on:logger:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11SotoKinesis0B0V16updateShardCount_2on6logger3NIO15EventLoopFutureCyAC06UpdatedE6OutputVGAC0ldE5InputV_AG0iJ0_pSg7Logging6LoggerVtF">updateShardCount(_:<wbr>on:<wbr>logger:<wbr>)</a>
+                    <a class="token" href="#/s:11SotoKinesis0B0V16updateShardCount_2on6logger3NIO15EventLoopFutureCyAC06UpdatedE6OutputVGAC0ldE5InputV_AG0iJ0_pSg7Logging6LoggerVtF">updateShardCount(_:on:logger:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1816,25 +1815,54 @@
                     </section>
                   </div>
                 </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11SotoKinesis0B0V4from5patchA2C_0A4Core16AWSServiceConfigC5PatchVtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(from:patch:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11SotoKinesis0B0V4from5patchA2C_0A4Core16AWSServiceConfigC5PatchVtcfc">init(from:patch:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Initializer required by <code>AWSService.with(middlewares:timeout:byteBufferAllocator:options)</code>. You are not able to use this initializer directly as there are no public
+initializers for <code><a href="../Classes/AWSServiceConfig.html#/s:8SotoCore16AWSServiceConfigC5PatchV">AWSServiceConfig.Patch</a></code>. Please use <code>AWSService.with(middlewares:timeout:byteBufferAllocator:options)</code> instead.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">from</span><span class="p">:</span> <span class="kt">Kinesis</span><span class="p">,</span> <span class="nv">patch</span><span class="p">:</span> <span class="kt"><a href="../Classes/AWSServiceConfig.html">AWSServiceConfig</a></span><span class="o">.</span><span class="kt">Patch</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Kinesis/Kinesis_API.swift#L211-L214">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
               </ul>
             </div>
             <div class="task-group">
               <div class="task-name-container">
                 <a name="/Paginators"></a>
                 <a name="//apple_ref/swift/Section/Paginators" class="dashAnchor"></a>
-                <div class="section-name-container">
-                  <a class="section-name-link" href="#/Paginators"></a>
-                  <h3 class="section-name"><p>Paginators</p>
-</h3>
-                </div>
+                <a href="#/Paginators">
+                  <h3 class="section-name">Paginators</h3>
+                </a>
               </div>
               <ul>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:11SotoKinesis0B0V23describeStreamPaginator_2on6logger0F4Page3NIO15EventLoopFutureCyytGAC08DescribeD5InputV_AH0jK0_pSg7Logging6LoggerVAJySbGAC0mD6OutputV_AhN_ptctF"></a>
-                    <a name="//apple_ref/swift/Method/describeStreamPaginator(_:on:logger:onPage:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11SotoKinesis0B0V23describeStreamPaginator_2on6logger0F4Page3NIO15EventLoopFutureCyytGAC08DescribeD5InputV_AH0jK0_pSg7Logging6LoggerVAJySbGAC0mD6OutputV_AhN_ptctF">describeStreamPaginator(_:<wbr>on:<wbr>logger:<wbr>onPage:<wbr>)</a>
+                    <a name="/s:11SotoKinesis0B0V23describeStreamPaginator__2on6logger0F4Page3NIO15EventLoopFutureCyxGAC08DescribeD5InputV_xAH0jK0_pSg7Logging6LoggerVAJySb_xtGx_AC0mD6OutputVAhN_ptctlF"></a>
+                    <a name="//apple_ref/swift/Method/describeStreamPaginator(_:_:on:logger:onPage:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11SotoKinesis0B0V23describeStreamPaginator__2on6logger0F4Page3NIO15EventLoopFutureCyxGAC08DescribeD5InputV_xAH0jK0_pSg7Logging6LoggerVAJySb_xtGx_AC0mD6OutputVAhN_ptctlF">describeStreamPaginator(_:_:on:logger:onPage:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1843,6 +1871,56 @@
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>Describes the specified Kinesis data stream. The information returned includes the stream name, Amazon Resource Name (ARN), creation time, enhanced metric configuration, and shard map. The shard map is an array of shard objects. For each shard object, there is the hash key and sequence number ranges that the shard spans, and the IDs of any earlier shards that played in a role in creating the shard. Every record ingested in the stream is identified by a sequence number, which is assigned when the record is put into the stream. You can limit the number of shards returned by each call. For more information, see Retrieving Shards from a Stream in the Amazon Kinesis Data Streams Developer Guide. There are no guarantees about the chronological order shards returned. To process shards in chronological order, use the ID of the parent shard to track the lineage to the oldest shard. This operation has a limit of 10 transactions per second per account.</p>
+
+<p>Provide paginated results to closure <code>onPage</code> for it to combine them into one result.
+This works in a similar manner to <code>Array.reduce&lt;Result&gt;(_:_:) -&gt; Result</code>.</p>
+
+<p>Parameters:</p>
+
+<ul>
+<li>input: Input for request</li>
+<li>initialValue: The value to use as the initial accumulating value. <code>initialValue</code> is passed to <code>onPage</code> the first time it is called.</li>
+<li>eventLoop: EventLoop to run this process on</li>
+<li>logger: Logger used flot logging</li>
+<li>onPage: closure called with each paginated response. It combines an accumulating result with the contents of response. This combined result is then returned
+    along with a boolean indicating if the paginate operation should continue.</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">describeStreamPaginator</span><span class="o">&lt;</span><span class="kt">Result</span><span class="o">&gt;</span><span class="p">(</span>
+    <span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/Kinesis/DescribeStreamInput.html">DescribeStreamInput</a></span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">initialValue</span><span class="p">:</span> <span class="kt">Result</span><span class="p">,</span>
+    <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="nv">logger</span><span class="p">:</span> <span class="kt">Logger</span> <span class="o">=</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="o">.</span><span class="n">loggingDisabled</span><span class="p">,</span>
+    <span class="nv">onPage</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">Result</span><span class="p">,</span> <span class="kt"><a href="../Structs/Kinesis/DescribeStreamOutput.html">DescribeStreamOutput</a></span><span class="p">,</span> <span class="kt">EventLoop</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="p">(</span><span class="kt">Bool</span><span class="p">,</span> <span class="kt">Result</span><span class="p">)</span><span class="o">&gt;</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Result</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Kinesis/Kinesis_Paginator.swift#L34-L50">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11SotoKinesis0B0V23describeStreamPaginator_2on6logger0F4Page3NIO15EventLoopFutureCyytGAC08DescribeD5InputV_AH0jK0_pSg7Logging6LoggerVAJySbGAC0mD6OutputV_AhN_ptctF"></a>
+                    <a name="//apple_ref/swift/Method/describeStreamPaginator(_:on:logger:onPage:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11SotoKinesis0B0V23describeStreamPaginator_2on6logger0F4Page3NIO15EventLoopFutureCyytGAC08DescribeD5InputV_AH0jK0_pSg7Logging6LoggerVAJySbGAC0mD6OutputV_AhN_ptctF">describeStreamPaginator(_:on:logger:onPage:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Provide paginated results to closure <code>onPage</code>.</p>
 
                       </div>
                       <div class="declaration">
@@ -1858,8 +1936,113 @@
 
                         </div>
                       </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>input</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Input for request</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>eventLoop</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>EventLoop to run this process on</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>logger</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Logger used flot logging</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>onPage</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>closure called with each block of entries. Returns boolean indicating whether we should continue.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Kinesis/Kinesis_Paginator.swift#L23-L37">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Kinesis/Kinesis_Paginator.swift#L59-L73">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11SotoKinesis0B0V28listStreamConsumersPaginator__2on6logger0G4Page3NIO15EventLoopFutureCyxGAC04ListdE5InputV_xAH0kL0_pSg7Logging6LoggerVAJySb_xtGx_AC0ndE6OutputVAhN_ptctlF"></a>
+                    <a name="//apple_ref/swift/Method/listStreamConsumersPaginator(_:_:on:logger:onPage:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11SotoKinesis0B0V28listStreamConsumersPaginator__2on6logger0G4Page3NIO15EventLoopFutureCyxGAC04ListdE5InputV_xAH0kL0_pSg7Logging6LoggerVAJySb_xtGx_AC0ndE6OutputVAhN_ptctlF">listStreamConsumersPaginator(_:_:on:logger:onPage:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Lists the consumers registered to receive data from a stream using enhanced fan-out, and provides information about each consumer. This operation has a limit of 5 transactions per second per stream.</p>
+
+<p>Provide paginated results to closure <code>onPage</code> for it to combine them into one result.
+This works in a similar manner to <code>Array.reduce&lt;Result&gt;(_:_:) -&gt; Result</code>.</p>
+
+<p>Parameters:</p>
+
+<ul>
+<li>input: Input for request</li>
+<li>initialValue: The value to use as the initial accumulating value. <code>initialValue</code> is passed to <code>onPage</code> the first time it is called.</li>
+<li>eventLoop: EventLoop to run this process on</li>
+<li>logger: Logger used flot logging</li>
+<li>onPage: closure called with each paginated response. It combines an accumulating result with the contents of response. This combined result is then returned
+    along with a boolean indicating if the paginate operation should continue.</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">listStreamConsumersPaginator</span><span class="o">&lt;</span><span class="kt">Result</span><span class="o">&gt;</span><span class="p">(</span>
+    <span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/Kinesis/ListStreamConsumersInput.html">ListStreamConsumersInput</a></span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">initialValue</span><span class="p">:</span> <span class="kt">Result</span><span class="p">,</span>
+    <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="nv">logger</span><span class="p">:</span> <span class="kt">Logger</span> <span class="o">=</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="o">.</span><span class="n">loggingDisabled</span><span class="p">,</span>
+    <span class="nv">onPage</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">Result</span><span class="p">,</span> <span class="kt"><a href="../Structs/Kinesis/ListStreamConsumersOutput.html">ListStreamConsumersOutput</a></span><span class="p">,</span> <span class="kt">EventLoop</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="p">(</span><span class="kt">Bool</span><span class="p">,</span> <span class="kt">Result</span><span class="p">)</span><span class="o">&gt;</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Result</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Kinesis/Kinesis_Paginator.swift#L87-L102">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1869,7 +2052,7 @@
                     <code>
                     <a name="/s:11SotoKinesis0B0V28listStreamConsumersPaginator_2on6logger0G4Page3NIO15EventLoopFutureCyytGAC04ListdE5InputV_AH0kL0_pSg7Logging6LoggerVAJySbGAC0ndE6OutputV_AhN_ptctF"></a>
                     <a name="//apple_ref/swift/Method/listStreamConsumersPaginator(_:on:logger:onPage:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11SotoKinesis0B0V28listStreamConsumersPaginator_2on6logger0G4Page3NIO15EventLoopFutureCyytGAC04ListdE5InputV_AH0kL0_pSg7Logging6LoggerVAJySbGAC0ndE6OutputV_AhN_ptctF">listStreamConsumersPaginator(_:<wbr>on:<wbr>logger:<wbr>onPage:<wbr>)</a>
+                    <a class="token" href="#/s:11SotoKinesis0B0V28listStreamConsumersPaginator_2on6logger0G4Page3NIO15EventLoopFutureCyytGAC04ListdE5InputV_AH0kL0_pSg7Logging6LoggerVAJySbGAC0ndE6OutputV_AhN_ptctF">listStreamConsumersPaginator(_:on:logger:onPage:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1877,7 +2060,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Lists the consumers registered to receive data from a stream using enhanced fan-out, and provides information about each consumer. This operation has a limit of 5 transactions per second per stream.</p>
+                        <p>Provide paginated results to closure <code>onPage</code>.</p>
 
                       </div>
                       <div class="declaration">
@@ -1893,8 +2076,113 @@
 
                         </div>
                       </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>input</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Input for request</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>eventLoop</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>EventLoop to run this process on</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>logger</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Logger used flot logging</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>onPage</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>closure called with each block of entries. Returns boolean indicating whether we should continue.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Kinesis/Kinesis_Paginator.swift#L40-L53">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Kinesis/Kinesis_Paginator.swift#L111-L124">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11SotoKinesis0B0V20listStreamsPaginator__2on6logger0F4Page3NIO15EventLoopFutureCyxGAC04ListD5InputV_xAH0jK0_pSg7Logging6LoggerVAJySb_xtGx_AC0mD6OutputVAhN_ptctlF"></a>
+                    <a name="//apple_ref/swift/Method/listStreamsPaginator(_:_:on:logger:onPage:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11SotoKinesis0B0V20listStreamsPaginator__2on6logger0F4Page3NIO15EventLoopFutureCyxGAC04ListD5InputV_xAH0jK0_pSg7Logging6LoggerVAJySb_xtGx_AC0mD6OutputVAhN_ptctlF">listStreamsPaginator(_:_:on:logger:onPage:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Lists your Kinesis data streams. The number of streams may be too large to return from a single call to ListStreams. You can limit the number of returned streams using the Limit parameter. If you do not specify a value for the Limit parameter, Kinesis Data Streams uses the default limit, which is currently 10. You can detect if there are more streams available to list by using the HasMoreStreams flag from the returned output. If there are more streams available, you can request more streams by using the name of the last stream returned by the ListStreams request in the ExclusiveStartStreamName parameter in a subsequent request to ListStreams. The group of stream names returned by the subsequent request is then added to the list. You can continue this process until all the stream names have been collected in the list.   ListStreams has a limit of five transactions per second per account.</p>
+
+<p>Provide paginated results to closure <code>onPage</code> for it to combine them into one result.
+This works in a similar manner to <code>Array.reduce&lt;Result&gt;(_:_:) -&gt; Result</code>.</p>
+
+<p>Parameters:</p>
+
+<ul>
+<li>input: Input for request</li>
+<li>initialValue: The value to use as the initial accumulating value. <code>initialValue</code> is passed to <code>onPage</code> the first time it is called.</li>
+<li>eventLoop: EventLoop to run this process on</li>
+<li>logger: Logger used flot logging</li>
+<li>onPage: closure called with each paginated response. It combines an accumulating result with the contents of response. This combined result is then returned
+    along with a boolean indicating if the paginate operation should continue.</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">listStreamsPaginator</span><span class="o">&lt;</span><span class="kt">Result</span><span class="o">&gt;</span><span class="p">(</span>
+    <span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Structs/Kinesis/ListStreamsInput.html">ListStreamsInput</a></span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">initialValue</span><span class="p">:</span> <span class="kt">Result</span><span class="p">,</span>
+    <span class="n">on</span> <span class="nv">eventLoop</span><span class="p">:</span> <span class="kt">EventLoop</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="nv">logger</span><span class="p">:</span> <span class="kt">Logger</span> <span class="o">=</span> <span class="kt"><a href="../Classes/AWSClient.html">AWSClient</a></span><span class="o">.</span><span class="n">loggingDisabled</span><span class="p">,</span>
+    <span class="nv">onPage</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">Result</span><span class="p">,</span> <span class="kt"><a href="../Structs/Kinesis/ListStreamsOutput.html">ListStreamsOutput</a></span><span class="p">,</span> <span class="kt">EventLoop</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="p">(</span><span class="kt">Bool</span><span class="p">,</span> <span class="kt">Result</span><span class="p">)</span><span class="o">&gt;</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">Result</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Kinesis/Kinesis_Paginator.swift#L138-L154">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1904,7 +2192,7 @@
                     <code>
                     <a name="/s:11SotoKinesis0B0V20listStreamsPaginator_2on6logger0F4Page3NIO15EventLoopFutureCyytGAC04ListD5InputV_AH0jK0_pSg7Logging6LoggerVAJySbGAC0mD6OutputV_AhN_ptctF"></a>
                     <a name="//apple_ref/swift/Method/listStreamsPaginator(_:on:logger:onPage:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:11SotoKinesis0B0V20listStreamsPaginator_2on6logger0F4Page3NIO15EventLoopFutureCyytGAC04ListD5InputV_AH0jK0_pSg7Logging6LoggerVAJySbGAC0mD6OutputV_AhN_ptctF">listStreamsPaginator(_:<wbr>on:<wbr>logger:<wbr>onPage:<wbr>)</a>
+                    <a class="token" href="#/s:11SotoKinesis0B0V20listStreamsPaginator_2on6logger0F4Page3NIO15EventLoopFutureCyytGAC04ListD5InputV_AH0jK0_pSg7Logging6LoggerVAJySbGAC0mD6OutputV_AhN_ptctF">listStreamsPaginator(_:on:logger:onPage:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1912,7 +2200,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Lists your Kinesis data streams. The number of streams may be too large to return from a single call to ListStreams. You can limit the number of returned streams using the Limit parameter. If you do not specify a value for the Limit parameter, Kinesis Data Streams uses the default limit, which is currently 10. You can detect if there are more streams available to list by using the HasMoreStreams flag from the returned output. If there are more streams available, you can request more streams by using the name of the last stream returned by the ListStreams request in the ExclusiveStartStreamName parameter in a subsequent request to ListStreams. The group of stream names returned by the subsequent request is then added to the list. You can continue this process until all the stream names have been collected in the list.   ListStreams has a limit of five transactions per second per account.</p>
+                        <p>Provide paginated results to closure <code>onPage</code>.</p>
 
                       </div>
                       <div class="declaration">
@@ -1928,8 +2216,63 @@
 
                         </div>
                       </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>input</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Input for request</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>eventLoop</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>EventLoop to run this process on</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>logger</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Logger used flot logging</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>onPage</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>closure called with each block of entries. Returns boolean indicating whether we should continue.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Kinesis/Kinesis_Paginator.swift#L56-L70">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Kinesis/Kinesis_Paginator.swift#L163-L177">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1940,11 +2283,9 @@
               <div class="task-name-container">
                 <a name="/Shapes"></a>
                 <a name="//apple_ref/swift/Section/Shapes" class="dashAnchor"></a>
-                <div class="section-name-container">
-                  <a class="section-name-link" href="#/Shapes"></a>
-                  <h3 class="section-name"><p>Shapes</p>
-</h3>
-                </div>
+                <a href="#/Shapes">
+                  <h3 class="section-name">Shapes</h3>
+                </a>
               </div>
               <ul>
                 <li class="item">
@@ -2095,7 +2436,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ChildShard</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ChildShard</span> <span class="p">:</span> <span class="kt"><a href="../SotoCore.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
                       </div>
@@ -2126,7 +2467,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Consumer</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Consumer</span> <span class="p">:</span> <span class="kt"><a href="../SotoCore.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
                       </div>
@@ -2157,7 +2498,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ConsumerDescription</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ConsumerDescription</span> <span class="p">:</span> <span class="kt"><a href="../SotoCore.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
                       </div>
@@ -2343,7 +2684,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DescribeLimitsOutput</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DescribeLimitsOutput</span> <span class="p">:</span> <span class="kt"><a href="../SotoCore.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
                       </div>
@@ -2405,7 +2746,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DescribeStreamConsumerOutput</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DescribeStreamConsumerOutput</span> <span class="p">:</span> <span class="kt"><a href="../SotoCore.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
                       </div>
@@ -2436,7 +2777,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DescribeStreamOutput</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DescribeStreamOutput</span> <span class="p">:</span> <span class="kt"><a href="../SotoCore.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
                       </div>
@@ -2498,7 +2839,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DescribeStreamSummaryOutput</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DescribeStreamSummaryOutput</span> <span class="p">:</span> <span class="kt"><a href="../SotoCore.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
                       </div>
@@ -2591,7 +2932,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">EnhancedMetrics</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">EnhancedMetrics</span> <span class="p">:</span> <span class="kt"><a href="../SotoCore.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
                       </div>
@@ -2622,7 +2963,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">EnhancedMonitoringOutput</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">EnhancedMonitoringOutput</span> <span class="p">:</span> <span class="kt"><a href="../SotoCore.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
                       </div>
@@ -2684,7 +3025,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">GetRecordsOutput</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">GetRecordsOutput</span> <span class="p">:</span> <span class="kt"><a href="../SotoCore.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
                       </div>
@@ -2746,7 +3087,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">GetShardIteratorOutput</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">GetShardIteratorOutput</span> <span class="p">:</span> <span class="kt"><a href="../SotoCore.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
                       </div>
@@ -2777,7 +3118,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">HashKeyRange</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">HashKeyRange</span> <span class="p">:</span> <span class="kt"><a href="../SotoCore.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
                       </div>
@@ -2839,7 +3180,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">InternalFailureException</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">InternalFailureException</span> <span class="p">:</span> <span class="kt"><a href="../SotoCore.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
                       </div>
@@ -2870,7 +3211,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">KMSAccessDeniedException</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">KMSAccessDeniedException</span> <span class="p">:</span> <span class="kt"><a href="../SotoCore.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
                       </div>
@@ -2901,7 +3242,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">KMSDisabledException</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">KMSDisabledException</span> <span class="p">:</span> <span class="kt"><a href="../SotoCore.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
                       </div>
@@ -2932,7 +3273,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">KMSInvalidStateException</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">KMSInvalidStateException</span> <span class="p">:</span> <span class="kt"><a href="../SotoCore.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
                       </div>
@@ -2963,7 +3304,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">KMSNotFoundException</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">KMSNotFoundException</span> <span class="p">:</span> <span class="kt"><a href="../SotoCore.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
                       </div>
@@ -2994,7 +3335,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">KMSOptInRequired</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">KMSOptInRequired</span> <span class="p">:</span> <span class="kt"><a href="../SotoCore.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
                       </div>
@@ -3025,7 +3366,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">KMSThrottlingException</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">KMSThrottlingException</span> <span class="p">:</span> <span class="kt"><a href="../SotoCore.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
                       </div>
@@ -3087,7 +3428,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ListShardsOutput</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ListShardsOutput</span> <span class="p">:</span> <span class="kt"><a href="../SotoCore.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
                       </div>
@@ -3118,7 +3459,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ListStreamConsumersOutput</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ListStreamConsumersOutput</span> <span class="p">:</span> <span class="kt"><a href="../SotoCore.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
                       </div>
@@ -3149,7 +3490,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ListStreamsOutput</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ListStreamsOutput</span> <span class="p">:</span> <span class="kt"><a href="../SotoCore.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
                       </div>
@@ -3211,7 +3552,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ListTagsForStreamOutput</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ListTagsForStreamOutput</span> <span class="p">:</span> <span class="kt"><a href="../SotoCore.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
                       </div>
@@ -3304,7 +3645,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">PutRecordOutput</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">PutRecordOutput</span> <span class="p">:</span> <span class="kt"><a href="../SotoCore.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
                       </div>
@@ -3366,7 +3707,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">PutRecordsOutput</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">PutRecordsOutput</span> <span class="p">:</span> <span class="kt"><a href="../SotoCore.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
                       </div>
@@ -3428,7 +3769,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">PutRecordsResultEntry</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">PutRecordsResultEntry</span> <span class="p">:</span> <span class="kt"><a href="../SotoCore.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
                       </div>
@@ -3459,7 +3800,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Record</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Record</span> <span class="p">:</span> <span class="kt"><a href="../SotoCore.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
                       </div>
@@ -3521,7 +3862,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">RegisterStreamConsumerOutput</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">RegisterStreamConsumerOutput</span> <span class="p">:</span> <span class="kt"><a href="../SotoCore.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
                       </div>
@@ -3583,7 +3924,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ResourceInUseException</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ResourceInUseException</span> <span class="p">:</span> <span class="kt"><a href="../SotoCore.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
                       </div>
@@ -3614,7 +3955,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ResourceNotFoundException</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ResourceNotFoundException</span> <span class="p">:</span> <span class="kt"><a href="../SotoCore.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
                       </div>
@@ -3645,7 +3986,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">SequenceNumberRange</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">SequenceNumberRange</span> <span class="p">:</span> <span class="kt"><a href="../SotoCore.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
                       </div>
@@ -3676,7 +4017,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Shard</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Shard</span> <span class="p">:</span> <span class="kt"><a href="../SotoCore.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
                       </div>
@@ -3862,7 +4203,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">StreamDescription</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">StreamDescription</span> <span class="p">:</span> <span class="kt"><a href="../SotoCore.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
                       </div>
@@ -3893,7 +4234,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">StreamDescriptionSummary</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">StreamDescriptionSummary</span> <span class="p">:</span> <span class="kt"><a href="../SotoCore.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
                       </div>
@@ -3924,7 +4265,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">SubscribeToShardEvent</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">SubscribeToShardEvent</span> <span class="p">:</span> <span class="kt"><a href="../SotoCore.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
                       </div>
@@ -3955,7 +4296,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">SubscribeToShardEventStream</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">SubscribeToShardEventStream</span> <span class="p">:</span> <span class="kt"><a href="../SotoCore.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
                       </div>
@@ -4017,7 +4358,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">SubscribeToShardOutput</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">SubscribeToShardOutput</span> <span class="p">:</span> <span class="kt"><a href="../SotoCore.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
                       </div>
@@ -4048,7 +4389,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Tag</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Tag</span> <span class="p">:</span> <span class="kt"><a href="../SotoCore.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
                       </div>
@@ -4110,7 +4451,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">UpdateShardCountOutput</span> <span class="p">:</span> <span class="kt"><a href="../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">UpdateShardCountOutput</span> <span class="p">:</span> <span class="kt"><a href="../SotoCore.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                         </div>
                       </div>
@@ -4126,11 +4467,9 @@
               <div class="task-name-container">
                 <a name="/Enums"></a>
                 <a name="//apple_ref/swift/Section/Enums" class="dashAnchor"></a>
-                <div class="section-name-container">
-                  <a class="section-name-link" href="#/Enums"></a>
-                  <h3 class="section-name"><p>Enums</p>
-</h3>
-                </div>
+                <a href="#/Enums">
+                  <h3 class="section-name">Enums</h3>
+                </a>
               </div>
               <ul>
                 <li class="item">

@@ -14,7 +14,7 @@
     <a title="RedshiftSettings Structure Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../../index.html"> Docs</a> (54% documented)</p>
+        <p><a href="../../index.html"> Docs</a> (56% documented)</p>
         <p class="header-right"><a href="https://github.com/soto-project/soto"><img src="../../img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
@@ -29,10 +29,7 @@
       <nav class="sidebar">
         <ul class="nav-groups">
           <li class="nav-group-name">
-            <a href="../../User%20Guides.html">User Guides</a>
-          </li>
-          <li class="nav-group-name">
-            <a href="../../AWSSDKSwiftCore.html">AWSSDKSwiftCore</a>
+            <a href="../../SotoCore.html">SotoCore</a>
           </li>
           <li class="nav-group-name">
             <a href="../../ACM.html">ACM</a>
@@ -269,12 +266,6 @@
             <a href="../../EKS.html">EKS</a>
           </li>
           <li class="nav-group-name">
-            <a href="../../ELB.html">ELB</a>
-          </li>
-          <li class="nav-group-name">
-            <a href="../../ELBV2.html">ELBV2</a>
-          </li>
-          <li class="nav-group-name">
             <a href="../../EMR.html">EMR</a>
           </li>
           <li class="nav-group-name">
@@ -285,6 +276,12 @@
           </li>
           <li class="nav-group-name">
             <a href="../../ElasticInference.html">ElasticInference</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../ElasticLoadBalancing.html">ElasticLoadBalancing</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../ElasticLoadBalancingv2.html">ElasticLoadBalancingv2</a>
           </li>
           <li class="nav-group-name">
             <a href="../../ElasticTranscoder.html">ElasticTranscoder</a>
@@ -602,6 +599,9 @@
             <a href="../../S3Control.html">S3Control</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../S3Outposts.html">S3Outposts</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../SES.html">SES</a>
           </li>
           <li class="nav-group-name">
@@ -692,6 +692,12 @@
             <a href="../../Textract.html">Textract</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../TimestreamQuery.html">TimestreamQuery</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../TimestreamWrite.html">TimestreamWrite</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../TranscribeService.html">TranscribeService</a>
           </li>
           <li class="nav-group-name">
@@ -756,8 +762,7 @@
             <h1>RedshiftSettings</h1>
               <div class="declaration">
                 <div class="language">
-                  
-                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">RedshiftSettings</span> <span class="p">:</span> <span class="kt"><a href="../../Protocols/AWSEncodableShape.html">AWSEncodableShape</a></span> <span class="o">&amp;</span> <span class="kt"><a href="../../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">RedshiftSettings</span> <span class="p">:</span> <span class="kt"><a href="../../Protocols/AWSEncodableShape.html">AWSEncodableShape</a></span> <span class="o">&amp;</span> <span class="kt"><a href="../../SotoCore.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                 </div>
               </div>
@@ -792,7 +797,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/DatabaseMigrationService/DatabaseMigrationService_Shapes.swift#L2897">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/DatabaseMigrationService/DatabaseMigrationService_Shapes.swift#L3110">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -822,7 +827,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/DatabaseMigrationService/DatabaseMigrationService_Shapes.swift#L2899">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/DatabaseMigrationService/DatabaseMigrationService_Shapes.swift#L3112">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -840,7 +845,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The location where the comma-separated value (.csv) files are stored before being uploaded to the S3 bucket.</p>
+                        <p>An S3 folder where the comma-separated-value (.csv) files are stored before being uploaded to the target Redshift cluster.  For full load mode, AWS DMS converts source records into .csv files and loads them to the BucketFolder/TableID path. AWS DMS uses the Redshift COPY command to upload the .csv files to the target table. The files are deleted once the COPY operation has finished. For more information, see Amazon Redshift Database Developer Guide  For change-data-capture (CDC) mode, AWS DMS creates a NetChanges table, and loads the .csv files to this BucketFolder/NetChangesTableID path.</p>
 
                       </div>
                       <div class="declaration">
@@ -852,7 +857,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/DatabaseMigrationService/DatabaseMigrationService_Shapes.swift#L2901">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/DatabaseMigrationService/DatabaseMigrationService_Shapes.swift#L3114">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -870,7 +875,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The name of the S3 bucket you want to use</p>
+                        <p>The name of the intermediate S3 bucket used to store .csv files before uploading data to Redshift.</p>
 
                       </div>
                       <div class="declaration">
@@ -882,7 +887,67 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/DatabaseMigrationService/DatabaseMigrationService_Shapes.swift#L2903">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/DatabaseMigrationService/DatabaseMigrationService_Shapes.swift#L3116">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:28SotoDatabaseMigrationService0bcD0V16RedshiftSettingsV18caseSensitiveNamesSbSgvp"></a>
+                    <a name="//apple_ref/swift/Property/caseSensitiveNames" class="dashAnchor"></a>
+                    <a class="token" href="#/s:28SotoDatabaseMigrationService0bcD0V16RedshiftSettingsV18caseSensitiveNamesSbSgvp">caseSensitiveNames</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>If Amazon Redshift is configured to support case sensitive schema names, set CaseSensitiveNames to true. The default is false.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">caseSensitiveNames</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/DatabaseMigrationService/DatabaseMigrationService_Shapes.swift#L3118">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:28SotoDatabaseMigrationService0bcD0V16RedshiftSettingsV10compUpdateSbSgvp"></a>
+                    <a name="//apple_ref/swift/Property/compUpdate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:28SotoDatabaseMigrationService0bcD0V16RedshiftSettingsV10compUpdateSbSgvp">compUpdate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>If you set CompUpdate to true Amazon Redshift applies automatic compression if the table is empty. This applies even if the table columns already have encodings other than RAW. If you set CompUpdate to false, automatic compression is disabled and existing column encodings aren&rsquo;t changed. The default is true.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">compUpdate</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/DatabaseMigrationService/DatabaseMigrationService_Shapes.swift#L3120">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -912,7 +977,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/DatabaseMigrationService/DatabaseMigrationService_Shapes.swift#L2905">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/DatabaseMigrationService/DatabaseMigrationService_Shapes.swift#L3122">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -942,7 +1007,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/DatabaseMigrationService/DatabaseMigrationService_Shapes.swift#L2907">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/DatabaseMigrationService/DatabaseMigrationService_Shapes.swift#L3124">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -972,7 +1037,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/DatabaseMigrationService/DatabaseMigrationService_Shapes.swift#L2909">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/DatabaseMigrationService/DatabaseMigrationService_Shapes.swift#L3126">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1002,7 +1067,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/DatabaseMigrationService/DatabaseMigrationService_Shapes.swift#L2911">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/DatabaseMigrationService/DatabaseMigrationService_Shapes.swift#L3128">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1032,7 +1097,37 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/DatabaseMigrationService/DatabaseMigrationService_Shapes.swift#L2913">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/DatabaseMigrationService/DatabaseMigrationService_Shapes.swift#L3130">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:28SotoDatabaseMigrationService0bcD0V16RedshiftSettingsV11explicitIdsSbSgvp"></a>
+                    <a name="//apple_ref/swift/Property/explicitIds" class="dashAnchor"></a>
+                    <a class="token" href="#/s:28SotoDatabaseMigrationService0bcD0V16RedshiftSettingsV11explicitIdsSbSgvp">explicitIds</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This setting is only valid for a full-load migration task. Set ExplicitIds to true to have tables with IDENTITY columns override their auto-generated values with explicit values loaded from the source data files used to populate the tables. The default is false.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">explicitIds</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/DatabaseMigrationService/DatabaseMigrationService_Shapes.swift#L3132">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1050,7 +1145,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The number of threads used to upload a single file. This parameter accepts a value from 1 through 64. It defaults to 10.</p>
+                        <p>The number of threads used to upload a single file. This parameter accepts a value from 1 through 64. It defaults to 10. The number of parallel streams used to upload a single .csv file to an S3 bucket using S3 Multipart Upload. For more information, see Multipart upload overview.   FileTransferUploadStreams accepts a value from 1 through 64. It defaults to 10.</p>
 
                       </div>
                       <div class="declaration">
@@ -1062,7 +1157,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/DatabaseMigrationService/DatabaseMigrationService_Shapes.swift#L2915">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/DatabaseMigrationService/DatabaseMigrationService_Shapes.swift#L3134">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1080,7 +1175,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The amount of time to wait (in milliseconds) before timing out, beginning from when you begin loading.</p>
+                        <p>The amount of time to wait (in milliseconds) before timing out of operations performed by AWS DMS on a Redshift cluster, such as Redshift COPY, INSERT, DELETE, and UPDATE.</p>
 
                       </div>
                       <div class="declaration">
@@ -1092,7 +1187,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/DatabaseMigrationService/DatabaseMigrationService_Shapes.swift#L2917">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/DatabaseMigrationService/DatabaseMigrationService_Shapes.swift#L3136">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1110,7 +1205,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The maximum size (in KB) of any .csv file used to transfer data to Amazon Redshift. This accepts a value from 1 through 1,048,576. It defaults to 32,768 KB (32 MB).</p>
+                        <p>The maximum size (in KB) of any .csv file used to load data on an S3 bucket and transfer data to Amazon Redshift. It defaults to 1048576KB (1 GB).</p>
 
                       </div>
                       <div class="declaration">
@@ -1122,7 +1217,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/DatabaseMigrationService/DatabaseMigrationService_Shapes.swift#L2919">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/DatabaseMigrationService/DatabaseMigrationService_Shapes.swift#L3138">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1152,7 +1247,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/DatabaseMigrationService/DatabaseMigrationService_Shapes.swift#L2921">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/DatabaseMigrationService/DatabaseMigrationService_Shapes.swift#L3140">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1182,7 +1277,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/DatabaseMigrationService/DatabaseMigrationService_Shapes.swift#L2923">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/DatabaseMigrationService/DatabaseMigrationService_Shapes.swift#L3142">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1212,7 +1307,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/DatabaseMigrationService/DatabaseMigrationService_Shapes.swift#L2925">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/DatabaseMigrationService/DatabaseMigrationService_Shapes.swift#L3144">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1242,7 +1337,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/DatabaseMigrationService/DatabaseMigrationService_Shapes.swift#L2927">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/DatabaseMigrationService/DatabaseMigrationService_Shapes.swift#L3146">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1272,7 +1367,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/DatabaseMigrationService/DatabaseMigrationService_Shapes.swift#L2929">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/DatabaseMigrationService/DatabaseMigrationService_Shapes.swift#L3148">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1302,7 +1397,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/DatabaseMigrationService/DatabaseMigrationService_Shapes.swift#L2931">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/DatabaseMigrationService/DatabaseMigrationService_Shapes.swift#L3150">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1332,7 +1427,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/DatabaseMigrationService/DatabaseMigrationService_Shapes.swift#L2933">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/DatabaseMigrationService/DatabaseMigrationService_Shapes.swift#L3152">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1362,7 +1457,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/DatabaseMigrationService/DatabaseMigrationService_Shapes.swift#L2935">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/DatabaseMigrationService/DatabaseMigrationService_Shapes.swift#L3154">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1392,7 +1487,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/DatabaseMigrationService/DatabaseMigrationService_Shapes.swift#L2937">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/DatabaseMigrationService/DatabaseMigrationService_Shapes.swift#L3156">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1422,7 +1517,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/DatabaseMigrationService/DatabaseMigrationService_Shapes.swift#L2939">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/DatabaseMigrationService/DatabaseMigrationService_Shapes.swift#L3158">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1452,7 +1547,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/DatabaseMigrationService/DatabaseMigrationService_Shapes.swift#L2941">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/DatabaseMigrationService/DatabaseMigrationService_Shapes.swift#L3160">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1482,7 +1577,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/DatabaseMigrationService/DatabaseMigrationService_Shapes.swift#L2943">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/DatabaseMigrationService/DatabaseMigrationService_Shapes.swift#L3162">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1500,7 +1595,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The size of the write buffer to use in rows. Valid values range from 1 through 2,048. The default is 1,024. Use this setting to tune performance.</p>
+                        <p>The size (in KB) of the in-memory file write buffer used when generating .csv files on the local disk at the DMS replication instance. The default value is 1000 (buffer size is 1000KB).</p>
 
                       </div>
                       <div class="declaration">
@@ -1512,7 +1607,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/DatabaseMigrationService/DatabaseMigrationService_Shapes.swift#L2945">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/DatabaseMigrationService/DatabaseMigrationService_Shapes.swift#L3164">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1520,9 +1615,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:28SotoDatabaseMigrationService0bcD0V16RedshiftSettingsV13acceptAnyDate18afterConnectScript12bucketFolder0M4Name17connectionTimeout08databaseO010dateFormat11emptyAsNull14encryptionMode25fileTransferUploadStreams04loadQ011maxFileSize8password4port12removeQuotes12replaceChars19replaceInvalidChars06serverO028serverSideEncryptionKmsKeyId20serviceAccessRoleArn04timeT010trimBlanks15truncateColumns8username15writeBufferSizeAESbSg_SSSgA4_A4_SiSgA4_A4_A3_AC010EncryptionY5ValueOSgA5_A5_A5_A4_A5_A3_A4_A4_A4_A4_A4_A4_A3_A3_A4_A5_tcfc"></a>
-                    <a name="//apple_ref/swift/Method/init(acceptAnyDate:afterConnectScript:bucketFolder:bucketName:connectionTimeout:databaseName:dateFormat:emptyAsNull:encryptionMode:fileTransferUploadStreams:loadTimeout:maxFileSize:password:port:removeQuotes:replaceChars:replaceInvalidChars:serverName:serverSideEncryptionKmsKeyId:serviceAccessRoleArn:timeFormat:trimBlanks:truncateColumns:username:writeBufferSize:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:28SotoDatabaseMigrationService0bcD0V16RedshiftSettingsV13acceptAnyDate18afterConnectScript12bucketFolder0M4Name17connectionTimeout08databaseO010dateFormat11emptyAsNull14encryptionMode25fileTransferUploadStreams04loadQ011maxFileSize8password4port12removeQuotes12replaceChars19replaceInvalidChars06serverO028serverSideEncryptionKmsKeyId20serviceAccessRoleArn04timeT010trimBlanks15truncateColumns8username15writeBufferSizeAESbSg_SSSgA4_A4_SiSgA4_A4_A3_AC010EncryptionY5ValueOSgA5_A5_A5_A4_A5_A3_A4_A4_A4_A4_A4_A4_A3_A3_A4_A5_tcfc">init(acceptAnyDate:<wbr>afterConnectScript:<wbr>bucketFolder:<wbr>bucketName:<wbr>connectionTimeout:<wbr>databaseName:<wbr>dateFormat:<wbr>emptyAsNull:<wbr>encryptionMode:<wbr>fileTransferUploadStreams:<wbr>loadTimeout:<wbr>maxFileSize:<wbr>password:<wbr>port:<wbr>removeQuotes:<wbr>replaceChars:<wbr>replaceInvalidChars:<wbr>serverName:<wbr>serverSideEncryptionKmsKeyId:<wbr>serviceAccessRoleArn:<wbr>timeFormat:<wbr>trimBlanks:<wbr>truncateColumns:<wbr>username:<wbr>writeBufferSize:<wbr>)</a>
+                    <a name="/s:28SotoDatabaseMigrationService0bcD0V16RedshiftSettingsV13acceptAnyDate18afterConnectScript12bucketFolder0M4Name18caseSensitiveNames10compUpdate17connectionTimeout08databaseO010dateFormat11emptyAsNull14encryptionMode11explicitIds25fileTransferUploadStreams04loadV011maxFileSize8password4port12removeQuotes12replaceChars19replaceInvalidChars06serverO028serverSideEncryptionKmsKeyId20serviceAccessRoleArn04timeY010trimBlanks15truncateColumns8username15writeBufferSizeAESbSg_SSSgA7_A7_A6_A6_SiSgA7_A7_A6_AC19EncryptionModeValueOSgA6_A8_A8_A8_A7_A8_A6_A7_A7_A7_A7_A7_A7_A6_A6_A7_A8_tcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(acceptAnyDate:afterConnectScript:bucketFolder:bucketName:caseSensitiveNames:compUpdate:connectionTimeout:databaseName:dateFormat:emptyAsNull:encryptionMode:explicitIds:fileTransferUploadStreams:loadTimeout:maxFileSize:password:port:removeQuotes:replaceChars:replaceInvalidChars:serverName:serverSideEncryptionKmsKeyId:serviceAccessRoleArn:timeFormat:trimBlanks:truncateColumns:username:writeBufferSize:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:28SotoDatabaseMigrationService0bcD0V16RedshiftSettingsV13acceptAnyDate18afterConnectScript12bucketFolder0M4Name18caseSensitiveNames10compUpdate17connectionTimeout08databaseO010dateFormat11emptyAsNull14encryptionMode11explicitIds25fileTransferUploadStreams04loadV011maxFileSize8password4port12removeQuotes12replaceChars19replaceInvalidChars06serverO028serverSideEncryptionKmsKeyId20serviceAccessRoleArn04timeY010trimBlanks15truncateColumns8username15writeBufferSizeAESbSg_SSSgA7_A7_A6_A6_SiSgA7_A7_A6_AC19EncryptionModeValueOSgA6_A8_A8_A8_A7_A8_A6_A7_A7_A7_A7_A7_A7_A6_A6_A7_A8_tcfc">init(acceptAnyDate:afterConnectScript:bucketFolder:bucketName:caseSensitiveNames:compUpdate:connectionTimeout:databaseName:dateFormat:emptyAsNull:encryptionMode:explicitIds:fileTransferUploadStreams:loadTimeout:maxFileSize:password:port:removeQuotes:replaceChars:replaceInvalidChars:serverName:serverSideEncryptionKmsKeyId:serviceAccessRoleArn:timeFormat:trimBlanks:truncateColumns:username:writeBufferSize:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1537,12 +1632,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">acceptAnyDate</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">afterConnectScript</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">bucketFolder</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">bucketName</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">connectionTimeout</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">databaseName</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">dateFormat</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">emptyAsNull</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">encryptionMode</span><span class="p">:</span> <span class="kt"><a href="../../Structs/DatabaseMigrationService/EncryptionModeValue.html">EncryptionModeValue</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">fileTransferUploadStreams</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">loadTimeout</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">maxFileSize</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">password</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">port</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">removeQuotes</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">replaceChars</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">replaceInvalidChars</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">serverName</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">serverSideEncryptionKmsKeyId</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">serviceAccessRoleArn</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">timeFormat</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">trimBlanks</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">truncateColumns</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">username</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">writeBufferSize</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">acceptAnyDate</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">afterConnectScript</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">bucketFolder</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">bucketName</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">caseSensitiveNames</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">compUpdate</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">connectionTimeout</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">databaseName</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">dateFormat</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">emptyAsNull</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">encryptionMode</span><span class="p">:</span> <span class="kt"><a href="../../Structs/DatabaseMigrationService/EncryptionModeValue.html">EncryptionModeValue</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">explicitIds</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">fileTransferUploadStreams</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">loadTimeout</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">maxFileSize</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">password</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">port</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">removeQuotes</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">replaceChars</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">replaceInvalidChars</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">serverName</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">serverSideEncryptionKmsKeyId</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">serviceAccessRoleArn</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">timeFormat</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">trimBlanks</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">truncateColumns</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">username</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">writeBufferSize</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/DatabaseMigrationService/DatabaseMigrationService_Shapes.swift#L2947-L2973">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/DatabaseMigrationService/DatabaseMigrationService_Shapes.swift#L3166-L3195">Show on GitHub</a>
                       </div>
                     </section>
                   </div>

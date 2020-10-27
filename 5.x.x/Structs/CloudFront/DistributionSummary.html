@@ -14,7 +14,7 @@
     <a title="DistributionSummary Structure Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../../index.html"> Docs</a> (54% documented)</p>
+        <p><a href="../../index.html"> Docs</a> (56% documented)</p>
         <p class="header-right"><a href="https://github.com/soto-project/soto"><img src="../../img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
@@ -29,10 +29,7 @@
       <nav class="sidebar">
         <ul class="nav-groups">
           <li class="nav-group-name">
-            <a href="../../User%20Guides.html">User Guides</a>
-          </li>
-          <li class="nav-group-name">
-            <a href="../../AWSSDKSwiftCore.html">AWSSDKSwiftCore</a>
+            <a href="../../SotoCore.html">SotoCore</a>
           </li>
           <li class="nav-group-name">
             <a href="../../ACM.html">ACM</a>
@@ -269,12 +266,6 @@
             <a href="../../EKS.html">EKS</a>
           </li>
           <li class="nav-group-name">
-            <a href="../../ELB.html">ELB</a>
-          </li>
-          <li class="nav-group-name">
-            <a href="../../ELBV2.html">ELBV2</a>
-          </li>
-          <li class="nav-group-name">
             <a href="../../EMR.html">EMR</a>
           </li>
           <li class="nav-group-name">
@@ -285,6 +276,12 @@
           </li>
           <li class="nav-group-name">
             <a href="../../ElasticInference.html">ElasticInference</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../ElasticLoadBalancing.html">ElasticLoadBalancing</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../ElasticLoadBalancingv2.html">ElasticLoadBalancingv2</a>
           </li>
           <li class="nav-group-name">
             <a href="../../ElasticTranscoder.html">ElasticTranscoder</a>
@@ -602,6 +599,9 @@
             <a href="../../S3Control.html">S3Control</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../S3Outposts.html">S3Outposts</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../SES.html">SES</a>
           </li>
           <li class="nav-group-name">
@@ -692,6 +692,12 @@
             <a href="../../Textract.html">Textract</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../TimestreamQuery.html">TimestreamQuery</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../TimestreamWrite.html">TimestreamWrite</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../TranscribeService.html">TranscribeService</a>
           </li>
           <li class="nav-group-name">
@@ -756,8 +762,7 @@
             <h1>DistributionSummary</h1>
               <div class="declaration">
                 <div class="language">
-                  
-                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DistributionSummary</span> <span class="p">:</span> <span class="kt"><a href="../../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DistributionSummary</span> <span class="p">:</span> <span class="kt"><a href="../../SotoCore.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                 </div>
               </div>
@@ -823,7 +828,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudFront/CloudFront_Shapes.swift#L1878">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudFront/CloudFront_Shapes.swift#L1981">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -848,13 +853,13 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@OptionalCoding</span>
+                          <pre class="highlight swift"><code><span class="kd">@OptionalCustomCoding</span>
 <span class="o">&lt;</span><span class="kt"><a href="../../Structs/ArrayCoder.html">ArrayCoder</a></span><span class="o">&lt;</span><span class="kt"><a href="../../Structs/CloudFront.html">CloudFront</a></span><span class="o">.</span><span class="kt">DistributionSummary</span><span class="o">.</span><span class="n"><a href="../../Structs/CloudFront/DistributionSummary/_AliasICPRecordalsEncoding.html">_AliasICPRecordalsEncoding</a></span><span class="p">,</span> <span class="kt"><a href="../../Structs/CloudFront.html">CloudFront</a></span><span class="o">.</span><span class="kt"><a href="../../Structs/CloudFront/AliasICPRecordal.html">AliasICPRecordal</a></span><span class="o">&gt;&gt;</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">aliasICPRecordals</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../../Structs/CloudFront/AliasICPRecordal.html">AliasICPRecordal</a></span><span class="p">]?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudFront/CloudFront_Shapes.swift#L1881">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudFront/CloudFront_Shapes.swift#L1984">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -884,7 +889,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudFront/CloudFront_Shapes.swift#L1883">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudFront/CloudFront_Shapes.swift#L1986">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -914,7 +919,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudFront/CloudFront_Shapes.swift#L1885">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudFront/CloudFront_Shapes.swift#L1988">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -944,7 +949,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudFront/CloudFront_Shapes.swift#L1887">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudFront/CloudFront_Shapes.swift#L1990">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -974,7 +979,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudFront/CloudFront_Shapes.swift#L1889">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudFront/CloudFront_Shapes.swift#L1992">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1004,7 +1009,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudFront/CloudFront_Shapes.swift#L1891">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudFront/CloudFront_Shapes.swift#L1994">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1034,7 +1039,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudFront/CloudFront_Shapes.swift#L1893">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudFront/CloudFront_Shapes.swift#L1996">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1064,7 +1069,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudFront/CloudFront_Shapes.swift#L1895">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudFront/CloudFront_Shapes.swift#L1998">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1094,7 +1099,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudFront/CloudFront_Shapes.swift#L1897">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudFront/CloudFront_Shapes.swift#L2000">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1124,7 +1129,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudFront/CloudFront_Shapes.swift#L1899">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudFront/CloudFront_Shapes.swift#L2002">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1154,7 +1159,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudFront/CloudFront_Shapes.swift#L1901">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudFront/CloudFront_Shapes.swift#L2004">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1162,9 +1167,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:14SotoCloudFront0bC0V19DistributionSummaryV16lastModifiedTime0A4Core0H5StampVvp"></a>
+                    <a name="/s:14SotoCloudFront0bC0V19DistributionSummaryV16lastModifiedTime10Foundation4DateVvp"></a>
                     <a name="//apple_ref/swift/Property/lastModifiedTime" class="dashAnchor"></a>
-                    <a class="token" href="#/s:14SotoCloudFront0bC0V19DistributionSummaryV16lastModifiedTime0A4Core0H5StampVvp">lastModifiedTime</a>
+                    <a class="token" href="#/s:14SotoCloudFront0bC0V19DistributionSummaryV16lastModifiedTime10Foundation4DateVvp">lastModifiedTime</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1179,12 +1184,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">lastModifiedTime</span><span class="p">:</span> <span class="kt"><a href="../../Structs/TimeStamp.html">TimeStamp</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">lastModifiedTime</span><span class="p">:</span> <span class="kt">Date</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudFront/CloudFront_Shapes.swift#L1903">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudFront/CloudFront_Shapes.swift#L2006">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1214,7 +1219,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudFront/CloudFront_Shapes.swift#L1905">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudFront/CloudFront_Shapes.swift#L2008">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1244,7 +1249,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudFront/CloudFront_Shapes.swift#L1907">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudFront/CloudFront_Shapes.swift#L2010">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1274,7 +1279,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudFront/CloudFront_Shapes.swift#L1909">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudFront/CloudFront_Shapes.swift#L2012">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1304,7 +1309,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudFront/CloudFront_Shapes.swift#L1911">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudFront/CloudFront_Shapes.swift#L2014">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1334,7 +1339,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudFront/CloudFront_Shapes.swift#L1913">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudFront/CloudFront_Shapes.swift#L2016">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1364,7 +1369,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudFront/CloudFront_Shapes.swift#L1915">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudFront/CloudFront_Shapes.swift#L2018">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1394,7 +1399,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudFront/CloudFront_Shapes.swift#L1917">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudFront/CloudFront_Shapes.swift#L2020">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1402,9 +1407,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:14SotoCloudFront0bC0V19DistributionSummaryV7aliases17aliasICPRecordals3arn14cacheBehaviors7comment20customErrorResponses20defaultCacheBehavior10domainName7enabled11httpVersion2id13isIPV6Enabled16lastModifiedTime12originGroups7origins10priceClass12restrictions6status17viewerCertificate8webACLIdAeC7AliasesV_SayAC16AliasICPRecordalVGSgSSAC0qK0VSSAC06CustomnO0VAC07DefaultqR0VSSSbAC04HttpW0OSSSb0A4Core9TimeStampVAC12OriginGroupsVSgAC7OriginsVAC10PriceClassOAC12RestrictionsVSSAC17ViewerCertificateVSStcfc"></a>
+                    <a name="/s:14SotoCloudFront0bC0V19DistributionSummaryV7aliases17aliasICPRecordals3arn14cacheBehaviors7comment20customErrorResponses20defaultCacheBehavior10domainName7enabled11httpVersion2id13isIPV6Enabled16lastModifiedTime12originGroups7origins10priceClass12restrictions6status17viewerCertificate8webACLIdAeC7AliasesV_SayAC16AliasICPRecordalVGSgSSAC0qK0VSSAC06CustomnO0VAC07DefaultqR0VSSSbAC04HttpW0OSSSb10Foundation4DateVAC12OriginGroupsVSgAC7OriginsVAC10PriceClassOAC12RestrictionsVSSAC17ViewerCertificateVSStcfc"></a>
                     <a name="//apple_ref/swift/Method/init(aliases:aliasICPRecordals:arn:cacheBehaviors:comment:customErrorResponses:defaultCacheBehavior:domainName:enabled:httpVersion:id:isIPV6Enabled:lastModifiedTime:originGroups:origins:priceClass:restrictions:status:viewerCertificate:webACLId:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:14SotoCloudFront0bC0V19DistributionSummaryV7aliases17aliasICPRecordals3arn14cacheBehaviors7comment20customErrorResponses20defaultCacheBehavior10domainName7enabled11httpVersion2id13isIPV6Enabled16lastModifiedTime12originGroups7origins10priceClass12restrictions6status17viewerCertificate8webACLIdAeC7AliasesV_SayAC16AliasICPRecordalVGSgSSAC0qK0VSSAC06CustomnO0VAC07DefaultqR0VSSSbAC04HttpW0OSSSb0A4Core9TimeStampVAC12OriginGroupsVSgAC7OriginsVAC10PriceClassOAC12RestrictionsVSSAC17ViewerCertificateVSStcfc">init(aliases:<wbr>aliasICPRecordals:<wbr>arn:<wbr>cacheBehaviors:<wbr>comment:<wbr>customErrorResponses:<wbr>defaultCacheBehavior:<wbr>domainName:<wbr>enabled:<wbr>httpVersion:<wbr>id:<wbr>isIPV6Enabled:<wbr>lastModifiedTime:<wbr>originGroups:<wbr>origins:<wbr>priceClass:<wbr>restrictions:<wbr>status:<wbr>viewerCertificate:<wbr>webACLId:<wbr>)</a>
+                    <a class="token" href="#/s:14SotoCloudFront0bC0V19DistributionSummaryV7aliases17aliasICPRecordals3arn14cacheBehaviors7comment20customErrorResponses20defaultCacheBehavior10domainName7enabled11httpVersion2id13isIPV6Enabled16lastModifiedTime12originGroups7origins10priceClass12restrictions6status17viewerCertificate8webACLIdAeC7AliasesV_SayAC16AliasICPRecordalVGSgSSAC0qK0VSSAC06CustomnO0VAC07DefaultqR0VSSSbAC04HttpW0OSSSb10Foundation4DateVAC12OriginGroupsVSgAC7OriginsVAC10PriceClassOAC12RestrictionsVSSAC17ViewerCertificateVSStcfc">init(aliases:aliasICPRecordals:arn:cacheBehaviors:comment:customErrorResponses:defaultCacheBehavior:domainName:enabled:httpVersion:id:isIPV6Enabled:lastModifiedTime:originGroups:origins:priceClass:restrictions:status:viewerCertificate:webACLId:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1419,12 +1424,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">aliases</span><span class="p">:</span> <span class="kt"><a href="../../Structs/CloudFront/Aliases.html">Aliases</a></span><span class="p">,</span> <span class="nv">aliasICPRecordals</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../../Structs/CloudFront/AliasICPRecordal.html">AliasICPRecordal</a></span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">arn</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">cacheBehaviors</span><span class="p">:</span> <span class="kt"><a href="../../Structs/CloudFront/CacheBehaviors.html">CacheBehaviors</a></span><span class="p">,</span> <span class="nv">comment</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">customErrorResponses</span><span class="p">:</span> <span class="kt"><a href="../../Structs/CloudFront/CustomErrorResponses.html">CustomErrorResponses</a></span><span class="p">,</span> <span class="n"><a href="../../Structs/CloudFront/DistributionSummary.html#/s:14SotoCloudFront0bC0V19DistributionSummaryV20defaultCacheBehaviorAC07DefaultgH0Vvp">defaultCacheBehavior</a></span><span class="p">:</span> <span class="kt"><a href="../../Structs/CloudFront/DefaultCacheBehavior.html">DefaultCacheBehavior</a></span><span class="p">,</span> <span class="nv">domainName</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">enabled</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span> <span class="nv">httpVersion</span><span class="p">:</span> <span class="kt"><a href="../../Structs/CloudFront/HttpVersion.html">HttpVersion</a></span><span class="p">,</span> <span class="nv">id</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">isIPV6Enabled</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span> <span class="nv">lastModifiedTime</span><span class="p">:</span> <span class="kt"><a href="../../Structs/TimeStamp.html">TimeStamp</a></span><span class="p">,</span> <span class="nv">originGroups</span><span class="p">:</span> <span class="kt"><a href="../../Structs/CloudFront/OriginGroups.html">OriginGroups</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">origins</span><span class="p">:</span> <span class="kt"><a href="../../Structs/CloudFront/Origins.html">Origins</a></span><span class="p">,</span> <span class="nv">priceClass</span><span class="p">:</span> <span class="kt"><a href="../../Structs/CloudFront/PriceClass.html">PriceClass</a></span><span class="p">,</span> <span class="nv">restrictions</span><span class="p">:</span> <span class="kt"><a href="../../Structs/CloudFront/Restrictions.html">Restrictions</a></span><span class="p">,</span> <span class="nv">status</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">viewerCertificate</span><span class="p">:</span> <span class="kt"><a href="../../Structs/CloudFront/ViewerCertificate.html">ViewerCertificate</a></span><span class="p">,</span> <span class="nv">webACLId</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">aliases</span><span class="p">:</span> <span class="kt"><a href="../../Structs/CloudFront/Aliases.html">Aliases</a></span><span class="p">,</span> <span class="nv">aliasICPRecordals</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../../Structs/CloudFront/AliasICPRecordal.html">AliasICPRecordal</a></span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">arn</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">cacheBehaviors</span><span class="p">:</span> <span class="kt"><a href="../../Structs/CloudFront/CacheBehaviors.html">CacheBehaviors</a></span><span class="p">,</span> <span class="nv">comment</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">customErrorResponses</span><span class="p">:</span> <span class="kt"><a href="../../Structs/CloudFront/CustomErrorResponses.html">CustomErrorResponses</a></span><span class="p">,</span> <span class="n"><a href="../../Structs/CloudFront/DistributionSummary.html#/s:14SotoCloudFront0bC0V19DistributionSummaryV20defaultCacheBehaviorAC07DefaultgH0Vvp">defaultCacheBehavior</a></span><span class="p">:</span> <span class="kt"><a href="../../Structs/CloudFront/DefaultCacheBehavior.html">DefaultCacheBehavior</a></span><span class="p">,</span> <span class="nv">domainName</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">enabled</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span> <span class="nv">httpVersion</span><span class="p">:</span> <span class="kt"><a href="../../Structs/CloudFront/HttpVersion.html">HttpVersion</a></span><span class="p">,</span> <span class="nv">id</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">isIPV6Enabled</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span> <span class="nv">lastModifiedTime</span><span class="p">:</span> <span class="kt">Date</span><span class="p">,</span> <span class="nv">originGroups</span><span class="p">:</span> <span class="kt"><a href="../../Structs/CloudFront/OriginGroups.html">OriginGroups</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">origins</span><span class="p">:</span> <span class="kt"><a href="../../Structs/CloudFront/Origins.html">Origins</a></span><span class="p">,</span> <span class="nv">priceClass</span><span class="p">:</span> <span class="kt"><a href="../../Structs/CloudFront/PriceClass.html">PriceClass</a></span><span class="p">,</span> <span class="nv">restrictions</span><span class="p">:</span> <span class="kt"><a href="../../Structs/CloudFront/Restrictions.html">Restrictions</a></span><span class="p">,</span> <span class="nv">status</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">viewerCertificate</span><span class="p">:</span> <span class="kt"><a href="../../Structs/CloudFront/ViewerCertificate.html">ViewerCertificate</a></span><span class="p">,</span> <span class="nv">webACLId</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudFront/CloudFront_Shapes.swift#L1919-L1940">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudFront/CloudFront_Shapes.swift#L2022-L2043">Show on GitHub</a>
                       </div>
                     </section>
                   </div>

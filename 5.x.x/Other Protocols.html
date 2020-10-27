@@ -14,7 +14,7 @@
     <a title="Other Protocols  Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="index.html"> Docs</a> (54% documented)</p>
+        <p><a href="index.html"> Docs</a> (56% documented)</p>
         <p class="header-right"><a href="https://github.com/soto-project/soto"><img src="img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
@@ -29,10 +29,7 @@
       <nav class="sidebar">
         <ul class="nav-groups">
           <li class="nav-group-name">
-            <a href="User%20Guides.html">User Guides</a>
-          </li>
-          <li class="nav-group-name">
-            <a href="AWSSDKSwiftCore.html">AWSSDKSwiftCore</a>
+            <a href="SotoCore.html">SotoCore</a>
           </li>
           <li class="nav-group-name">
             <a href="ACM.html">ACM</a>
@@ -269,12 +266,6 @@
             <a href="EKS.html">EKS</a>
           </li>
           <li class="nav-group-name">
-            <a href="ELB.html">ELB</a>
-          </li>
-          <li class="nav-group-name">
-            <a href="ELBV2.html">ELBV2</a>
-          </li>
-          <li class="nav-group-name">
             <a href="EMR.html">EMR</a>
           </li>
           <li class="nav-group-name">
@@ -285,6 +276,12 @@
           </li>
           <li class="nav-group-name">
             <a href="ElasticInference.html">ElasticInference</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="ElasticLoadBalancing.html">ElasticLoadBalancing</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="ElasticLoadBalancingv2.html">ElasticLoadBalancingv2</a>
           </li>
           <li class="nav-group-name">
             <a href="ElasticTranscoder.html">ElasticTranscoder</a>
@@ -602,6 +599,9 @@
             <a href="S3Control.html">S3Control</a>
           </li>
           <li class="nav-group-name">
+            <a href="S3Outposts.html">S3Outposts</a>
+          </li>
+          <li class="nav-group-name">
             <a href="SES.html">SES</a>
           </li>
           <li class="nav-group-name">
@@ -690,6 +690,12 @@
           </li>
           <li class="nav-group-name">
             <a href="Textract.html">Textract</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="TimestreamQuery.html">TimestreamQuery</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="TimestreamWrite.html">TimestreamWrite</a>
           </li>
           <li class="nav-group-name">
             <a href="TranscribeService.html">TranscribeService</a>
@@ -818,7 +824,38 @@ Adds an initialiser that does a copy but inserts a new integer based pagination 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/.build/checkouts/soto-core/Sources/SotoCore/AWSService.swift#L17-L22">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/.build/checkouts/soto-core/Sources/SotoCore/AWSService.swift#L18-L25">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8SotoCore18CredentialProviderP"></a>
+                    <a name="//apple_ref/swift/Protocol/CredentialProvider" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8SotoCore18CredentialProviderP">CredentialProvider</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Protocol providing future holding a credential</p>
+
+                        <a href="Protocols/CredentialProvider.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">CredentialProvider</span> <span class="p">:</span> <span class="kt">CustomStringConvertible</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/.build/checkouts/soto-core/Sources/SotoCore/Credential/CredentialProvider.swift#L21-L24">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -850,129 +887,6 @@ Adds an initialiser that does a copy but inserts a new integer based pagination 
                       </div>
                       <div class="slightly-smaller">
                         <a href="https://github.com/soto-project/soto/.build/checkouts/soto-core/Sources/SotoCore/Credential/ExpiringCredential.swift#L18-L20">Show on GitHub</a>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:8SotoCore8AWSShapeP"></a>
-                    <a name="//apple_ref/swift/Protocol/AWSShape" class="dashAnchor"></a>
-                    <a class="token" href="#/s:8SotoCore8AWSShapeP">AWSShape</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Protocol for the input and output objects for all AWS service commands. They need to be Codable so they can be serialized. They also need to provide details on how their container classes are coded when serializing XML.</p>
-
-                        <a href="Protocols/AWSShape.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">AWSShape</span></code></pre>
-
-                        </div>
-                      </div>
-                      <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/.build/checkouts/soto-core/Sources/SotoCore/Doc/AWSShape.swift#L21-L24">Show on GitHub</a>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:8SotoCore17AWSEncodableShapeP"></a>
-                    <a name="//apple_ref/swift/Protocol/AWSEncodableShape" class="dashAnchor"></a>
-                    <a class="token" href="#/s:8SotoCore17AWSEncodableShapeP">AWSEncodableShape</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>AWSShape that can be encoded</p>
-
-                        <a href="Protocols/AWSEncodableShape.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">AWSEncodableShape</span> <span class="p">:</span> <span class="kt"><a href="Protocols/AWSShape.html">AWSShape</a></span><span class="p">,</span> <span class="kt">Encodable</span></code></pre>
-
-                        </div>
-                      </div>
-                      <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/.build/checkouts/soto-core/Sources/SotoCore/Doc/AWSShape.swift#L68-L74">Show on GitHub</a>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:8SotoCore17AWSDecodableShapeP"></a>
-                    <a name="//apple_ref/swift/Protocol/AWSDecodableShape" class="dashAnchor"></a>
-                    <a class="token" href="#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>AWSShape that can be decoded</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">AWSDecodableShape</span> <span class="p">:</span> <span class="kt"><a href="Protocols/AWSShape.html">AWSShape</a></span><span class="p">,</span> <span class="kt">Decodable</span></code></pre>
-
-                        </div>
-                      </div>
-                      <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/.build/checkouts/soto-core/Sources/SotoCore/Doc/AWSShape.swift#L183">Show on GitHub</a>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:8SotoCore19AWSShapeWithPayloadP"></a>
-                    <a name="//apple_ref/swift/Protocol/AWSShapeWithPayload" class="dashAnchor"></a>
-                    <a class="token" href="#/s:8SotoCore19AWSShapeWithPayloadP">AWSShapeWithPayload</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Root AWSShape which include a payload</p>
-
-                        <a href="Protocols/AWSShapeWithPayload.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">AWSShapeWithPayload</span></code></pre>
-
-                        </div>
-                      </div>
-                      <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/.build/checkouts/soto-core/Sources/SotoCore/Doc/AWSShape.swift#L199-L203">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1073,9 +987,9 @@ Adds an initialiser that does a copy but inserts a new integer based pagination 
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:8SotoCore21OptionalCodingWrapperP"></a>
-                    <a name="//apple_ref/swift/Protocol/OptionalCodingWrapper" class="dashAnchor"></a>
-                    <a class="token" href="#/s:8SotoCore21OptionalCodingWrapperP">OptionalCodingWrapper</a>
+                    <a name="/s:8SotoCore27OptionalCustomCodingWrapperP"></a>
+                    <a name="//apple_ref/swift/Protocol/OptionalCustomCodingWrapper" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8SotoCore27OptionalCustomCodingWrapperP">OptionalCustomCodingWrapper</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1083,15 +997,15 @@ Adds an initialiser that does a copy but inserts a new integer based pagination 
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Protocol for a PropertyWrapper to properly handle Coding when the wrappedValue is Optional</p>
+                        <p>Protocol for a PropertyWrapper to properly handle CustomCoding when the wrappedValue is Optional</p>
 
-                        <a href="Protocols/OptionalCodingWrapper.html" class="slightly-smaller">See more</a>
+                        <a href="Protocols/OptionalCustomCodingWrapper.html" class="slightly-smaller">See more</a>
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">OptionalCodingWrapper</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">OptionalCustomCodingWrapper</span></code></pre>
 
                         </div>
                       </div>
@@ -1107,11 +1021,9 @@ Adds an initialiser that does a copy but inserts a new integer based pagination 
               <div class="task-name-container">
                 <a name="/Collection%20Coders"></a>
                 <a name="//apple_ref/swift/Section/Collection Coders" class="dashAnchor"></a>
-                <div class="section-name-container">
-                  <a class="section-name-link" href="#/Collection%20Coders"></a>
-                  <h3 class="section-name"><p>Collection Coders</p>
-</h3>
-                </div>
+                <a href="#/Collection%20Coders">
+                  <h3 class="section-name">Collection Coders</h3>
+                </a>
               </div>
               <ul>
                 <li class="item">
@@ -1176,50 +1088,6 @@ Adds an initialiser that does a copy but inserts a new integer based pagination 
                     </section>
                   </div>
                 </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <div class="task-name-container">
-                <a name="/TimeStamp%20Coders"></a>
-                <a name="//apple_ref/swift/Section/TimeStamp Coders" class="dashAnchor"></a>
-                <div class="section-name-container">
-                  <a class="section-name-link" href="#/TimeStamp%20Coders"></a>
-                  <h3 class="section-name"><p>TimeStamp Coders</p>
-</h3>
-                </div>
-              </div>
-              <ul>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:8SotoCore23TimeStampFormatterCoderP"></a>
-                    <a name="//apple_ref/swift/Protocol/TimeStampFormatterCoder" class="dashAnchor"></a>
-                    <a class="token" href="#/s:8SotoCore23TimeStampFormatterCoderP">TimeStampFormatterCoder</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Protocol for time stamp coders that use a DateFormatter. Use this to enforce the timestamp format we require, or to set the timestamp format output</p>
-
-                        <a href="Protocols/TimeStampFormatterCoder.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">TimeStampFormatterCoder</span> <span class="p">:</span> <span class="kt"><a href="Protocols/CustomDecoder.html">CustomDecoder</a></span><span class="p">,</span> <span class="kt"><a href="Protocols/CustomEncoder.html">CustomEncoder</a></span> <span class="k">where</span> <span class="k">Self</span><span class="o">.</span><span class="kt">CodableValue</span> <span class="o">==</span> <span class="kt"><a href="Structs/TimeStamp.html">TimeStamp</a></span></code></pre>
-
-                        </div>
-                      </div>
-                      <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/.build/checkouts/soto-core/Sources/SotoCore/Encoder/CodableProperties/TimeStampCoder.swift#L23-L28">Show on GitHub</a>
-                      </div>
-                    </section>
-                  </div>
-                </li>
                 <li class="item">
                   <div>
                     <code>
@@ -1278,6 +1146,37 @@ Adds an initialiser that does a copy but inserts a new integer based pagination 
                       </div>
                       <div class="slightly-smaller">
                         <a href="https://github.com/soto-project/soto/.build/checkouts/soto-core/Sources/SotoCore/HTTP/AWSHTTPClient.swift#L43-L57">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8SotoCore11RetryPolicyP"></a>
+                    <a name="//apple_ref/swift/Protocol/RetryPolicy" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8SotoCore11RetryPolicyP">RetryPolicy</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Protocol for Retry strategy. Has function returning amount of time before the next retry after an HTTP error</p>
+
+                        <a href="Protocols/RetryPolicy.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">RetryPolicy</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/.build/checkouts/soto-core/Sources/SotoCore/RetryPolicy.swift#L48-L54">Show on GitHub</a>
                       </div>
                     </section>
                   </div>

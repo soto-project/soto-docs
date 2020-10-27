@@ -13,7 +13,7 @@
     <a title="  Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="index.html"> Docs</a> (54% documented)</p>
+        <p><a href="index.html"> Docs</a> (56% documented)</p>
         <p class="header-right"><a href="https://github.com/soto-project/soto"><img src="img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
@@ -28,10 +28,7 @@
       <nav class="sidebar">
         <ul class="nav-groups">
           <li class="nav-group-name">
-            <a href="User%20Guides.html">User Guides</a>
-          </li>
-          <li class="nav-group-name">
-            <a href="AWSSDKSwiftCore.html">AWSSDKSwiftCore</a>
+            <a href="SotoCore.html">SotoCore</a>
           </li>
           <li class="nav-group-name">
             <a href="ACM.html">ACM</a>
@@ -268,12 +265,6 @@
             <a href="EKS.html">EKS</a>
           </li>
           <li class="nav-group-name">
-            <a href="ELB.html">ELB</a>
-          </li>
-          <li class="nav-group-name">
-            <a href="ELBV2.html">ELBV2</a>
-          </li>
-          <li class="nav-group-name">
             <a href="EMR.html">EMR</a>
           </li>
           <li class="nav-group-name">
@@ -284,6 +275,12 @@
           </li>
           <li class="nav-group-name">
             <a href="ElasticInference.html">ElasticInference</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="ElasticLoadBalancing.html">ElasticLoadBalancing</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="ElasticLoadBalancingv2.html">ElasticLoadBalancingv2</a>
           </li>
           <li class="nav-group-name">
             <a href="ElasticTranscoder.html">ElasticTranscoder</a>
@@ -601,6 +598,9 @@
             <a href="S3Control.html">S3Control</a>
           </li>
           <li class="nav-group-name">
+            <a href="S3Outposts.html">S3Outposts</a>
+          </li>
+          <li class="nav-group-name">
             <a href="SES.html">SES</a>
           </li>
           <li class="nav-group-name">
@@ -691,6 +691,12 @@
             <a href="Textract.html">Textract</a>
           </li>
           <li class="nav-group-name">
+            <a href="TimestreamQuery.html">TimestreamQuery</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="TimestreamWrite.html">TimestreamWrite</a>
+          </li>
+          <li class="nav-group-name">
             <a href="TranscribeService.html">TranscribeService</a>
           </li>
           <li class="nav-group-name">
@@ -753,31 +759,12 @@
         <section>
           <section class="section">
             
-            <p>Soto is the new name for AWS SDK Swift. Amazon have asked that we don&rsquo;t use the name AWS SDK Swift. They are protecting their trademark and want to avoid confusing their customers who might think we are affiliated or are being sponsored by them, which we aren&rsquo;t.</p>
-<h1 id='soto-for-aws' class='heading'>Soto for AWS</h1>
+            <h1 id='soto-for-aws' class='heading'>Soto for AWS</h1>
 
 <p><a href="https://swift.org"><img src="http://img.shields.io/badge/swift-5.1-brightgreen.svg" alt="Swift 5.1" /></a>
 <a href="https://github.com/soto-project/soto/actions?query=workflow%3ACI"><img src="https://github.com/soto-project/soto/workflows/CI/badge.svg" /></a></p>
 
-<p>Soto is a Swift language SDK for AWS services working on Linux, macOS and iOS. This library provides access to all AWS services. The service APIs it provides are a direct mapping of the REST APIs Amazon publishes for each of its services.</p>
-<h2 id='table-of-contents' class='heading'>Table of Contents</h2>
-
-<ul>
-<li><a href="#structure">Structure</a></li>
-<li><a href="#swift-package-manager">Swift Package Manager</a></li>
-<li><a href="#compatibility">Compatibility</a></li>
-<li><a href="#configuring-credentials">Configuring Credentials</a></li>
-<li><a href="#using-soto">Using Soto</a></li>
-<li><a href="#documentation">Documentation</a>
-
-<ul>
-<li><a href="#api-reference">API Reference</a></li>
-<li><a href="#user-guides">User guides</a></li>
-</ul></li>
-<li><a href="#contributing">Contributing</a></li>
-<li><a href="#license">License</a></li>
-</ul>
-<h2 id='structure' class='heading'>Structure</h2>
+<p>Soto is a Swift language SDK for Amazon Web Services (AWS), working on Linux, macOS and iOS. This library provides access to all AWS services. The service APIs it provides are a direct mapping of the REST APIs Amazon publishes for each of its services. Soto is a community supported project and is in no way affiliated with AWS.</p>
 
 <p>The library consists of three parts</p>
 
@@ -786,29 +773,35 @@
 <li>The service <a href="https://github.com/soto-project/soto/tree/main/Sources/Soto/Services">api files</a> which define the individual AWS services and their commands with their input and output structures.</li>
 <li>The <a href="https://github.com/soto-project/soto/tree/main/CodeGenerator">CodeGenerator</a> which builds the service api files from the <a href="https://github.com/soto-project/soto/tree/main/models/apis">JSON model</a> files supplied by Amazon.</li>
 </ol>
-<h2 id='swift-package-manager' class='heading'>Swift Package Manager</h2>
+<h2 id='version-5-documentation' class='heading'>Version 5 documentation</h2>
+
+<p>If you are looking for documentation for the version 5 beta of Soto. You will find it <a href="https://github.com/soto-project/soto/blob/5.x.x-docs/README.md">here</a>.</p>
+<h2 id='installation' class='heading'>Installation</h2>
+<h3 id='swift-package-manager' class='heading'>Swift Package Manager</h3>
 
 <p>Soto uses the Swift Package Manager to manage its code dependencies. To use Soto in your codebase it is recommended you do the same. Add a dependency to the package in your own Package.swift dependencies.</p>
 <pre class="highlight swift"><code>    <span class="nv">dependencies</span><span class="p">:</span> <span class="p">[</span>
-        <span class="o">.</span><span class="nf">package</span><span class="p">(</span><span class="nv">url</span><span class="p">:</span> <span class="s">"https://github.com/soto-project/soto.git"</span><span class="p">,</span> <span class="nv">from</span><span class="p">:</span> <span class="s">"5.0.0-alpha"</span><span class="p">)</span>
+        <span class="o">.</span><span class="nf">package</span><span class="p">(</span><span class="nv">name</span><span class="p">:</span> <span class="s">"AWSSDKSwift"</span><span class="p">,</span> <span class="nv">url</span><span class="p">:</span> <span class="s">"https://github.com/soto-project/soto.git"</span><span class="p">,</span> <span class="nv">from</span><span class="p">:</span> <span class="s">"4.0.0"</span><span class="p">)</span>
     <span class="p">],</span>
 </code></pre>
 
 <p>Then add target dependencies for each of the Soto targets you want to use.</p>
 <pre class="highlight swift"><code>    <span class="nv">targets</span><span class="p">:</span> <span class="p">[</span>
         <span class="o">.</span><span class="nf">target</span><span class="p">(</span><span class="nv">name</span><span class="p">:</span> <span class="s">"MyAWSApp"</span><span class="p">,</span> <span class="nv">dependencies</span><span class="p">:</span> <span class="p">[</span>
-            <span class="o">.</span><span class="nf">product</span><span class="p">(</span><span class="nv">name</span><span class="p">:</span> <span class="s">"AWSS3"</span><span class="p">,</span> <span class="nv">package</span><span class="p">:</span> <span class="s">"soto"</span><span class="p">),</span>
-            <span class="o">.</span><span class="nf">product</span><span class="p">(</span><span class="nv">name</span><span class="p">:</span> <span class="s">"AWSSES"</span><span class="p">,</span> <span class="nv">package</span><span class="p">:</span> <span class="s">"soto"</span><span class="p">),</span>
-            <span class="o">.</span><span class="nf">product</span><span class="p">(</span><span class="nv">name</span><span class="p">:</span> <span class="s">"AWSIAM"</span><span class="p">,</span> <span class="nv">package</span><span class="p">:</span> <span class="s">"soto"</span><span class="p">)</span>
+            <span class="o">.</span><span class="nf">product</span><span class="p">(</span><span class="nv">name</span><span class="p">:</span> <span class="s">"S3"</span><span class="p">,</span> <span class="nv">package</span><span class="p">:</span> <span class="s">"AWSSDKSwift"</span><span class="p">),</span>
+            <span class="o">.</span><span class="nf">product</span><span class="p">(</span><span class="nv">name</span><span class="p">:</span> <span class="s">"SES"</span><span class="p">,</span> <span class="nv">package</span><span class="p">:</span> <span class="s">"AWSSDKSwift"</span><span class="p">),</span>
+            <span class="o">.</span><span class="nf">product</span><span class="p">(</span><span class="nv">name</span><span class="p">:</span> <span class="s">"IAM"</span><span class="p">,</span> <span class="nv">package</span><span class="p">:</span> <span class="s">"AWSSDKSwift"</span><span class="p">)</span>
         <span class="p">]),</span>
     <span class="p">]</span>
 <span class="p">)</span>
 </code></pre>
 
-<p>Alternatively if you are using Xcode 11 or later you can use the Swift Package Manager integration and add a dependency to Soto through that.</p>
+<p>If you are using one of the v5.0.0 pre-releases then the <code>name</code> parameter in the package dependencies is unnecessary, the <code>package</code> parameter of the target dependencies is <code>soto</code> instead of <code>AWSSDKSwift</code> and also all the target names are prefixed with <code>Soto</code>.</p>
+
+<p>Alternatively if you are using Xcode 11+ you can use the Swift Package integration and add a dependency to Soto through that.</p>
 <h2 id='compatibility' class='heading'>Compatibility</h2>
 
-<p>Soto works on Linux, macOS and iOS. Version 4 and later is dependent on version 2 of <a href="https://github.com/apple/swift-nio">swift-nio</a>. Libraries/frameworks that are dependent on an earlier version of swift-nio will not work with version 4 or later of Soto. In this case Version 3 can be used. For example Vapor 3 uses swift-nio 1.13 so you can only use versions 3.x of Soto with Vapor 3. Below is a compatibility table for versions 3 and 4 of Soto.</p>
+<p>Soto works on Linux, macOS and iOS. Version 4 is dependent on version 2 of <a href="https://github.com/apple/swift-nio">swift-nio</a>. Libraries/frameworks that are dependent on an earlier version of swift-nio will not work with version 4 of Soto. In this case Version 3 can be used. For example Vapor 3 uses swift-nio 1.13 so you can only use versions 3.x of Soto with Vapor 3. Below is a compatibility table for versions 3 and 4 of Soto.</p>
 
 <table><thead>
 <tr>
@@ -836,44 +829,56 @@
 <td>Ubuntu 14.04-18.04</td>
 <td>4.0</td>
 </tr>
-<tr>
-<td>5.x</td>
-<td>5.1 -</td>
-<td>✓</td>
-<td>12.0 -</td>
-<td>Ubuntu 14.04-18.04</td>
-<td>4.0</td>
-</tr>
 </tbody></table>
 <h2 id='configuring-credentials' class='heading'>Configuring Credentials</h2>
 
 <p>Before using the SDK, you will need AWS credentials to sign all your requests. Credentials can be provided to the library in the following ways.</p>
+<h3 id='via-ec2-instance-profile' class='heading'>Via EC2 Instance Profile</h3>
 
-<ul>
-<li>Environment variables <code>AWS_ACCESS_KEY_ID</code> and <code>AWS_SECRET_ACCESS_KEY</code></li>
-<li>ECS container IAM policy</li>
-<li>EC2 IAM instance profile</li>
-<li>Shared credentials file in your home directory</li>
-<li>Static credentials provided at runtime</li>
-</ul>
+<p>If you are running your code on an AWS EC2 instance, you <a href="https://docs.aws.amazon.com/codedeploy/latest/userguide/getting-started-create-iam-instance-profile.html">can setup an IAM role</a> as the server&rsquo;s Instance Profile to automatically grant credentials via the metadata service.</p>
 
-<p>You can find out more about credential providers <a href="documentation/Credential%20Providers.md">here</a></p>
+<p>There are no code changes or configurations to specify in the code, it will automatically pull and use the credentials.</p>
+<h3 id='via-ecs-container-credentials' class='heading'>Via ECS Container credentials</h3>
+
+<p>If you are running your code as an AWS ECS container task, you <a href="https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task-iam-roles.html#create_task_iam_policy_and_role">can setup an IAM role</a> for your container task to automatically grant credentials via the metadata service.</p>
+
+<p>Similar to the EC2 setup there are no code changes or configurations to specify in the code, it will automatically pull and use the credentials.</p>
+<h3 id='load-credentials-from-shared-credential-file' class='heading'>Load Credentials from shared credential file.</h3>
+
+<p>You can <a href="https://docs.aws.amazon.com/ses/latest/DeveloperGuide/create-shared-credentials-file.html">set shared credentials</a> in the home directory for the user running the app, in the file ~/.aws/credentials,</p>
+<pre class="highlight ini"><code><span class="nn">[default]</span>
+<span class="py">aws_access_key_id</span> <span class="p">=</span> <span class="s">YOUR_AWS_ACCESS_KEY_ID</span>
+<span class="py">aws_secret_access_key</span> <span class="p">=</span> <span class="s">YOUR_AWS_SECRET_ACCESS_KEY</span>
+</code></pre>
+<h3 id='load-credentials-from-environment-variable' class='heading'>Load Credentials from Environment Variable</h3>
+
+<p>Alternatively, you can set the following environment variables:</p>
+<pre class="highlight shell"><code><span class="nv">AWS_ACCESS_KEY_ID</span><span class="o">=</span>YOUR_AWS_ACCESS_KEY_ID
+<span class="nv">AWS_SECRET_ACCESS_KEY</span><span class="o">=</span>YOUR_AWS_SECRET_ACCESS_KEY
+</code></pre>
+<h3 id='pass-the-credentials-to-the-aws-service-struct-directly' class='heading'>Pass the Credentials to the AWS Service struct directly</h3>
+
+<p>All of the AWS Services&rsquo;s initializers accept <code>accessKeyId</code> and <code>secretAccessKey</code></p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">ec2</span> <span class="o">=</span> <span class="kt">EC2</span><span class="p">(</span>
+    <span class="nv">accessKeyId</span><span class="p">:</span> <span class="s">"YOUR_AWS_ACCESS_KEY_ID"</span><span class="p">,</span>
+    <span class="nv">secretAccessKey</span><span class="p">:</span> <span class="s">"YOUR_AWS_SECRET_ACCESS_KEY"</span>
+<span class="p">)</span>
+</code></pre>
+<h3 id='without-credentials' class='heading'>Without Credentials</h3>
+
+<p>Some services like CognitoIdentityProvider don&rsquo;t require credentials to access some of their functionality. In this case explicitly set <code>accessKeyId</code> and <code>secretAccessKey</code> to &ldquo;&rdquo;. This will disable all other credential access functions and send requests unsigned.</p>
 <h2 id='using-soto' class='heading'>Using Soto</h2>
 
-<p>Soto modules can be imported into any swift project. Each module provides a service struct that can be initialized with a <code><a href="Classes/AWSClient.html">AWSClient</a></code>, AWS region, and some configuration options. This struct contains the instance methods that correspond to the AWS service REST apis. See <a href="#documentation">documentation</a> for details on specific services. More can be found out about <code><a href="Classes/AWSClient.html">AWSClient</a></code> and the service objects <a href="documentation/AWSClient%20and%20Services.md">here</a>.</p>
+<p>Soto modules can be imported into any swift project. Each module provides a service struct that can be initialized with AWS credentials, if required, AWS region, and some configuration options. This struct contains the instance methods that correspond to the AWS service REST apis. See <a href="#documentation">documentation</a> for details on specific services.</p>
 
 <p>Each Soto command returns a <a href="https://github.com/apple/swift-nio">swift-nio</a> <code>EventLoopFuture</code>. An <code>EventLoopFuture</code> <em>is not</em> the response of the command, but rather a container object that will be populated with the response sometime later. In this manner calls to AWS do not block the main thread. It is recommended you familiarise yourself with the swift-nio <a href="https://apple.github.io/swift-nio/docs/current/NIO/">documentation</a>, specifically <a href="https://apple.github.io/swift-nio/docs/current/NIO/Classes/EventLoopFuture.html">EventLoopFuture</a> if you want to take full advantage of Soto.</p>
 
 <p>The recommended manner to interact with <code>EventLoopFutures</code> is chaining. The following function returns an <code>EventLoopFuture</code> that creates an S3 bucket, puts a file in the bucket, reads the file back from the bucket and finally prints the contents of the file. Each of these operations are chained together. The output of one being the input of the next.</p>
-<pre class="highlight swift"><code><span class="kd">import</span> <span class="kt">SotoS3</span> <span class="c1">//ensure this module is specified as a dependency in your package.swift</span>
+<pre class="highlight swift"><code><span class="kd">import</span> <span class="kt">S3</span> <span class="c1">//ensure this module is specified as a dependency in your package.swift</span>
 
 <span class="k">let</span> <span class="nv">bucket</span> <span class="o">=</span> <span class="s">"my-bucket"</span>
 
-<span class="k">let</span> <span class="nv">client</span> <span class="o">=</span> <span class="kt">AWSClient</span><span class="p">(</span>
-    <span class="nv">credentialProvider</span><span class="p">:</span> <span class="o">.</span><span class="nf">static</span><span class="p">(</span><span class="nv">accessKeyId</span><span class="p">:</span> <span class="s">"Your-Access-Key"</span><span class="p">,</span> <span class="nv">secretAccessKey</span><span class="p">:</span> <span class="s">"Your-Secret-Key"</span><span class="p">),</span>
-    <span class="nv">httpClientProvider</span><span class="p">:</span> <span class="o">.</span><span class="n">createNew</span>
-<span class="p">)</span>
-<span class="k">let</span> <span class="nv">s3</span> <span class="o">=</span> <span class="kt">S3</span><span class="p">(</span><span class="nv">client</span><span class="p">:</span> <span class="n">client</span><span class="p">,</span> <span class="nv">region</span><span class="p">:</span> <span class="o">.</span><span class="n">uswest2</span><span class="p">)</span>
+<span class="k">let</span> <span class="nv">s3</span> <span class="o">=</span> <span class="kt">S3</span><span class="p">(</span><span class="nv">accessKeyId</span><span class="p">:</span> <span class="s">"Your-Access-Key"</span><span class="p">,</span> <span class="nv">secretAccessKey</span><span class="p">:</span> <span class="s">"Your-Secret-Key"</span><span class="p">,</span> <span class="nv">region</span><span class="p">:</span> <span class="o">.</span><span class="n">uswest2</span><span class="p">)</span>
 
 <span class="kd">func</span> <span class="nf">createBucketPutGetObject</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">S3</span><span class="o">.</span><span class="kt">GetObjectOutput</span><span class="o">&gt;</span> <span class="p">{</span>
     <span class="c1">// Create Bucket, Put an Object, Get the Object</span>
@@ -883,12 +888,7 @@
         <span class="o">.</span><span class="n">flatMap</span> <span class="p">{</span> <span class="n">response</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">S3</span><span class="o">.</span><span class="kt">PutObjectOutput</span><span class="o">&gt;</span> <span class="k">in</span>
             <span class="c1">// Upload text file to the s3</span>
             <span class="k">let</span> <span class="nv">bodyData</span> <span class="o">=</span> <span class="s">"hello world"</span><span class="o">.</span><span class="nf">data</span><span class="p">(</span><span class="nv">using</span><span class="p">:</span> <span class="o">.</span><span class="n">utf8</span><span class="p">)</span><span class="o">!</span>
-            <span class="k">let</span> <span class="nv">putObjectRequest</span> <span class="o">=</span> <span class="kt">S3</span><span class="o">.</span><span class="kt">PutObjectRequest</span><span class="p">(</span>
-                <span class="nv">acl</span><span class="p">:</span> <span class="o">.</span><span class="n">publicRead</span><span class="p">,</span>
-                <span class="nv">body</span><span class="p">:</span> <span class="n">bodyData</span><span class="p">,</span>
-                <span class="nv">bucket</span><span class="p">:</span> <span class="n">bucket</span><span class="p">,</span>
-                <span class="nv">key</span><span class="p">:</span> <span class="s">"hello.txt"</span>
-            <span class="p">)</span>
+            <span class="k">let</span> <span class="nv">putObjectRequest</span> <span class="o">=</span> <span class="kt">S3</span><span class="o">.</span><span class="kt">PutObjectRequest</span><span class="p">(</span><span class="nv">acl</span><span class="p">:</span> <span class="o">.</span><span class="n">publicRead</span><span class="p">,</span> <span class="nv">body</span><span class="p">:</span> <span class="n">bodyData</span><span class="p">,</span> <span class="nv">bucket</span><span class="p">:</span> <span class="n">bucket</span><span class="p">,</span> <span class="nv">contentLength</span><span class="p">:</span> <span class="kt">Int64</span><span class="p">(</span><span class="n">bodyData</span><span class="o">.</span><span class="n">count</span><span class="p">),</span> <span class="nv">key</span><span class="p">:</span> <span class="s">"hello.txt"</span><span class="p">)</span>
             <span class="k">return</span> <span class="n">s3</span><span class="o">.</span><span class="nf">putObject</span><span class="p">(</span><span class="n">putObjectRequest</span><span class="p">)</span>
         <span class="p">}</span>
         <span class="o">.</span><span class="n">flatMap</span> <span class="p">{</span> <span class="n">response</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">S3</span><span class="o">.</span><span class="kt">GetObjectOutput</span><span class="o">&gt;</span> <span class="k">in</span>
@@ -902,24 +902,60 @@
     <span class="p">}</span>
 <span class="p">}</span>
 </code></pre>
+<h2 id='http-client-v5-x-x' class='heading'>HTTP client (v5.x.x)</h2>
+
+<p>Soto sets up its own HTTP client for communication with AWS but you are also able to provide your own as long as it conforms to the protocol <code><a href="Protocols/AWSHTTPClient.html">AWSHTTPClient</a></code>. If you don&rsquo;t provide a client the SDK uses one of two different HTTP clients depending on what platform you are running on. We have <a href="https://github.com/soto-project/soto-core/blob/main/Sources/SotoCore/HTTP/AsyncHTTPClient.swift">extended</a> the swift server <a href="https://github.com/swift-server/async-http-client">AsyncHTTPClient</a> so it conforms with <code><a href="Protocols/AWSHTTPClient.html">AWSHTTPClient</a></code>. This is the default client if you are running on Linux or macOS 10.14 and earlier. <code>AsyncHTTPClient</code> is not available on iOS. We have also supplied are own client <code>NIOTSHTTPClient</code> which uses <a href="https://github.com/apple/swift-nio-transport-services">NIO Transport Services</a> and the Apple Network framework. This is the default client if you are running on iOS or macOS 10.15 and later. <code>NIOTSHTTPClient</code> is not available on Linux or versions of macOS earlier than 10.15.</p>
+
+<p>You can provide your own HTTP client as follows</p>
+<pre class="highlight plaintext"><code>let s3 = S3(region:.uswest2, httpClientProvider: .shared(myHTTPClient))
+</code></pre>
+
+<p>Reasons you might want to provide your own client.</p>
+
+<ul>
+<li>You have one HTTP client you want to use across all your systems.</li>
+<li>You want to provide a client that is using a global <code>EventLoopGroup</code>.</li>
+<li>On macOS you want to force the usage of the swift server <a href="https://github.com/swift-server/async-http-client">AsyncHTTPClient</a> regardless of OS version.</li>
+<li>You want to change the configuration for the HTTP client used.</li>
+<li>You want to provide your own custom built HTTP client.</li>
+</ul>
+<h2 id='using-soto-with-vapor' class='heading'>Using Soto with Vapor</h2>
+
+<p>Integration with Vapor is pretty straight forward. Although be sure you use the correct version of Soto. See the <a href="#compatibility">compatibility</a> section for details. Below is a simple Vapor 3 example that extracts an email address, subject and message from a request and then sends an email using these details. Take note of the <code>hopTo(eventLoop:)</code> call. If Soto is not working off the same <code>EventLoopGroup</code> as the Vapor <code>Request</code> this is a requirement.</p>
+<pre class="highlight swift"><code><span class="kd">import</span> <span class="kt">Vapor</span>
+<span class="kd">import</span> <span class="kt">HTTP</span>
+<span class="kd">import</span> <span class="kt">SES</span>
+
+<span class="k">let</span> <span class="nv">client</span> <span class="o">=</span> <span class="kt">SES</span><span class="p">(</span><span class="nv">region</span><span class="p">:</span> <span class="o">.</span><span class="n">uswest1</span><span class="p">)</span>
+
+<span class="kd">final</span> <span class="kd">class</span> <span class="kt">MyController</span> <span class="p">{</span>
+    <span class="kd">struct</span> <span class="kt">EmailData</span><span class="p">:</span> <span class="kt">Content</span> <span class="p">{</span>
+        <span class="k">let</span> <span class="nv">address</span><span class="p">:</span> <span class="kt">String</span>
+        <span class="k">let</span> <span class="nv">subject</span><span class="p">:</span> <span class="kt">String</span>
+        <span class="k">let</span> <span class="nv">message</span><span class="p">:</span> <span class="kt">String</span>
+    <span class="p">}</span>
+    <span class="kd">func</span> <span class="nf">sendUserEmailFromJSON</span><span class="p">(</span><span class="n">_</span> <span class="nv">req</span><span class="p">:</span> <span class="kt">Request</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">HTTPStatus</span><span class="o">&gt;</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="k">try</span> <span class="n">req</span><span class="o">.</span><span class="n">content</span><span class="o">.</span><span class="nf">decode</span><span class="p">(</span><span class="kt">EmailData</span><span class="o">.</span><span class="k">self</span><span class="p">)</span>
+            <span class="o">.</span><span class="n">flatMap</span> <span class="p">{</span> <span class="p">(</span><span class="n">emailData</span><span class="p">)</span><span class="o">-&gt;</span><span class="kt">EventLoopFuture</span><span class="o">&lt;</span><span class="kt">SES</span><span class="o">.</span><span class="kt">SendEmailResponse</span><span class="o">&gt;</span> <span class="k">in</span>
+                <span class="k">let</span> <span class="nv">destination</span> <span class="o">=</span> <span class="kt">SES</span><span class="o">.</span><span class="kt">Destination</span><span class="p">(</span><span class="nv">toAddresses</span><span class="p">:</span> <span class="p">[</span><span class="n">emailData</span><span class="o">.</span><span class="n">address</span><span class="p">])</span>
+                <span class="k">let</span> <span class="nv">message</span> <span class="o">=</span> <span class="kt">SES</span><span class="o">.</span><span class="kt">Message</span><span class="p">(</span><span class="nv">body</span><span class="p">:</span><span class="kt">SES</span><span class="o">.</span><span class="kt">Body</span><span class="p">(</span><span class="nv">text</span><span class="p">:</span><span class="kt">SES</span><span class="o">.</span><span class="kt">Content</span><span class="p">(</span><span class="nv">data</span><span class="p">:</span><span class="n">emailData</span><span class="o">.</span><span class="n">message</span><span class="p">)),</span> <span class="nv">subject</span><span class="p">:</span><span class="kt">SES</span><span class="o">.</span><span class="kt">Content</span><span class="p">(</span><span class="nv">data</span><span class="p">:</span><span class="n">emailData</span><span class="o">.</span><span class="n">subject</span><span class="p">))</span>
+                <span class="k">let</span> <span class="nv">sendEmailRequest</span> <span class="o">=</span> <span class="kt">SES</span><span class="o">.</span><span class="kt">SendEmailRequest</span><span class="p">(</span><span class="nv">destination</span><span class="p">:</span> <span class="n">destination</span><span class="p">,</span> <span class="nv">message</span><span class="p">:</span> <span class="n">message</span><span class="p">,</span> <span class="nv">source</span><span class="p">:</span><span class="s">"awssdkswift@me.com"</span><span class="p">)</span>
+
+                <span class="k">return</span> <span class="n">client</span><span class="o">.</span><span class="nf">sendEmail</span><span class="p">(</span><span class="n">sendEmailRequest</span><span class="p">)</span>
+            <span class="p">}</span>
+            <span class="o">.</span><span class="nf">hopTo</span><span class="p">(</span><span class="nv">eventLoop</span><span class="p">:</span> <span class="n">req</span><span class="o">.</span><span class="n">eventLoop</span><span class="p">)</span>
+            <span class="o">.</span><span class="n">map</span> <span class="p">{</span> <span class="n">response</span> <span class="o">-&gt;</span> <span class="kt">HTTPResponseStatus</span> <span class="k">in</span>
+                <span class="k">return</span> <span class="kt">HTTPStatus</span><span class="o">.</span><span class="n">ok</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
 <h2 id='documentation' class='heading'>Documentation</h2>
 
 <p>Visit the Soto <a href="https://soto-project.github.io/soto/index.html">documentation</a> to browse the api reference. As there is a one-to-one correspondence with AWS REST api calls and the Soto api calls, you can also use the official AWS <a href="https://docs.aws.amazon.com/">documentation</a> for more detailed information about AWS commands.</p>
-<h3 id='user-guides' class='heading'>User guides</h3>
+<h2 id='upgrading-from-lt-3-0-x' class='heading'>upgrading from &lt;3.0.x</h2>
 
-<p>Additional user guides for specific elements of Soto are available</p>
-
-<ul>
-<li><a href="documentation/AWSClient%20and%20Services.md">AWSClient and Service Objects</a></li>
-<li><a href="documentation/Credential%20Providers.md">Credential Providers</a></li>
-<li><a href="documentation/Streaming%20Payloads.md">Streaming Payloads</a></li>
-<li><a href="documentation/DynamoDB%20and%20Codable.md">DynamoDB and Codable</a></li>
-<li><a href="documentation/S3%20Multipart%20Upload.md">S3 Multipart Upload</a></li>
-<li><a href="documentation/Using%20Soto%20with%20Vapor.md">Using Soto with Vapor 4</a></li>
-</ul>
-<h2 id='contributing' class='heading'>Contributing</h2>
-
-<p>We welcome and encourage contributions from all developers. Please read <a href="CONTRIBUTING.md">CONTRIBUTING.md</a> for our contributing guidelines.</p>
+<p>The simplest way to upgrade from an existing 1.0 or 2.0 implementation is to call <code>.wait()</code> on existing synchronous calls. However it is recommend to rewrite your synchronous code to work with the returned future objects. It is no longer necessary to use a DispatchQueue.</p>
 <h2 id='license' class='heading'>License</h2>
 
 <p>Soto is released under the <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache License, Version 2.0</a>. See LICENSE for details.</p>

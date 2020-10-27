@@ -14,7 +14,7 @@
     <a title="AWSEncodableShape Protocol Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html"> Docs</a> (54% documented)</p>
+        <p><a href="../index.html"> Docs</a> (56% documented)</p>
         <p class="header-right"><a href="https://github.com/soto-project/soto"><img src="../img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
@@ -29,10 +29,7 @@
       <nav class="sidebar">
         <ul class="nav-groups">
           <li class="nav-group-name">
-            <a href="../User%20Guides.html">User Guides</a>
-          </li>
-          <li class="nav-group-name">
-            <a href="../AWSSDKSwiftCore.html">AWSSDKSwiftCore</a>
+            <a href="../SotoCore.html">SotoCore</a>
           </li>
           <li class="nav-group-name">
             <a href="../ACM.html">ACM</a>
@@ -269,12 +266,6 @@
             <a href="../EKS.html">EKS</a>
           </li>
           <li class="nav-group-name">
-            <a href="../ELB.html">ELB</a>
-          </li>
-          <li class="nav-group-name">
-            <a href="../ELBV2.html">ELBV2</a>
-          </li>
-          <li class="nav-group-name">
             <a href="../EMR.html">EMR</a>
           </li>
           <li class="nav-group-name">
@@ -285,6 +276,12 @@
           </li>
           <li class="nav-group-name">
             <a href="../ElasticInference.html">ElasticInference</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../ElasticLoadBalancing.html">ElasticLoadBalancing</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../ElasticLoadBalancingv2.html">ElasticLoadBalancingv2</a>
           </li>
           <li class="nav-group-name">
             <a href="../ElasticTranscoder.html">ElasticTranscoder</a>
@@ -602,6 +599,9 @@
             <a href="../S3Control.html">S3Control</a>
           </li>
           <li class="nav-group-name">
+            <a href="../S3Outposts.html">S3Outposts</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../SES.html">SES</a>
           </li>
           <li class="nav-group-name">
@@ -692,6 +692,12 @@
             <a href="../Textract.html">Textract</a>
           </li>
           <li class="nav-group-name">
+            <a href="../TimestreamQuery.html">TimestreamQuery</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../TimestreamWrite.html">TimestreamWrite</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../TranscribeService.html">TranscribeService</a>
           </li>
           <li class="nav-group-name">
@@ -756,7 +762,6 @@
             <h1>AWSEncodableShape</h1>
               <div class="declaration">
                 <div class="language">
-                  
                   <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">AWSEncodableShape</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSShape.html">AWSShape</a></span><span class="p">,</span> <span class="kt">Encodable</span></code></pre>
 
                 </div>
@@ -809,7 +814,7 @@
                     <code>
                     <a name="/s:8SotoCore17AWSEncodableShapeP8validate4nameySS_tKF"></a>
                     <a name="//apple_ref/swift/Method/validate(name:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:8SotoCore17AWSEncodableShapeP8validate4nameySS_tKF">validate(name:<wbr>)</a>
+                    <a class="token" href="#/s:8SotoCore17AWSEncodableShapeP8validate4nameySS_tKF">validate(name:)</a>
                     </code>
                       <span class="declaration-note">
                         Default implementation
@@ -878,9 +883,42 @@
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/s:8SotoCore17AWSEncodableShapePAAE15validationErrorys0F0_pSSFZ"></a>
+                    <a name="//apple_ref/swift/Method/validationError(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8SotoCore17AWSEncodableShapePAAE15validationErrorys0F0_pSSFZ">validationError(_:)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="kd">func</span> <span class="nf">validationError</span><span class="p">(</span><span class="n">_</span> <span class="nv">message</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Error</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/.build/checkouts/soto-core/Sources/SotoCore/Doc/AWSShape.swift#L89-L91">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/s:8SotoCore17AWSEncodableShapePAAE8validate_4name6parent3minyqd___S2Sqd__tKSzRd__lF"></a>
                     <a name="//apple_ref/swift/Method/validate(_:name:parent:min:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:8SotoCore17AWSEncodableShapePAAE8validate_4name6parent3minyqd___S2Sqd__tKSzRd__lF">validate(_:<wbr>name:<wbr>parent:<wbr>min:<wbr>)</a>
+                    <a class="token" href="#/s:8SotoCore17AWSEncodableShapePAAE8validate_4name6parent3minyqd___S2Sqd__tKSzRd__lF">validate(_:name:parent:min:)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -903,7 +941,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/.build/checkouts/soto-core/Sources/SotoCore/Doc/AWSShape.swift#L89-L91">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/.build/checkouts/soto-core/Sources/SotoCore/Doc/AWSShape.swift#L93-L95">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -913,7 +951,7 @@
                     <code>
                     <a name="/s:8SotoCore17AWSEncodableShapePAAE8validate_4name6parent3maxyqd___S2Sqd__tKSzRd__lF"></a>
                     <a name="//apple_ref/swift/Method/validate(_:name:parent:max:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:8SotoCore17AWSEncodableShapePAAE8validate_4name6parent3maxyqd___S2Sqd__tKSzRd__lF">validate(_:<wbr>name:<wbr>parent:<wbr>max:<wbr>)</a>
+                    <a class="token" href="#/s:8SotoCore17AWSEncodableShapePAAE8validate_4name6parent3maxyqd___S2Sqd__tKSzRd__lF">validate(_:name:parent:max:)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -936,7 +974,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/.build/checkouts/soto-core/Sources/SotoCore/Doc/AWSShape.swift#L93-L95">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/.build/checkouts/soto-core/Sources/SotoCore/Doc/AWSShape.swift#L97-L99">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -946,7 +984,7 @@
                     <code>
                     <a name="/s:8SotoCore17AWSEncodableShapePAAE8validate_4name6parent3minyqd___S2Sqd__tKSFRd__lF"></a>
                     <a name="//apple_ref/swift/Method/validate(_:name:parent:min:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:8SotoCore17AWSEncodableShapePAAE8validate_4name6parent3minyqd___S2Sqd__tKSFRd__lF">validate(_:<wbr>name:<wbr>parent:<wbr>min:<wbr>)</a>
+                    <a class="token" href="#/s:8SotoCore17AWSEncodableShapePAAE8validate_4name6parent3minyqd___S2Sqd__tKSFRd__lF">validate(_:name:parent:min:)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -969,7 +1007,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/.build/checkouts/soto-core/Sources/SotoCore/Doc/AWSShape.swift#L97-L99">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/.build/checkouts/soto-core/Sources/SotoCore/Doc/AWSShape.swift#L101-L103">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -979,7 +1017,7 @@
                     <code>
                     <a name="/s:8SotoCore17AWSEncodableShapePAAE8validate_4name6parent3maxyqd___S2Sqd__tKSFRd__lF"></a>
                     <a name="//apple_ref/swift/Method/validate(_:name:parent:max:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:8SotoCore17AWSEncodableShapePAAE8validate_4name6parent3maxyqd___S2Sqd__tKSFRd__lF">validate(_:<wbr>name:<wbr>parent:<wbr>max:<wbr>)</a>
+                    <a class="token" href="#/s:8SotoCore17AWSEncodableShapePAAE8validate_4name6parent3maxyqd___S2Sqd__tKSFRd__lF">validate(_:name:parent:max:)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -1002,7 +1040,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/.build/checkouts/soto-core/Sources/SotoCore/Doc/AWSShape.swift#L101-L103">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/.build/checkouts/soto-core/Sources/SotoCore/Doc/AWSShape.swift#L105-L107">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1012,7 +1050,7 @@
                     <code>
                     <a name="/s:8SotoCore17AWSEncodableShapePAAE8validate_4name6parent3minyqd___S2SSitKSlRd__lF"></a>
                     <a name="//apple_ref/swift/Method/validate(_:name:parent:min:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:8SotoCore17AWSEncodableShapePAAE8validate_4name6parent3minyqd___S2SSitKSlRd__lF">validate(_:<wbr>name:<wbr>parent:<wbr>min:<wbr>)</a>
+                    <a class="token" href="#/s:8SotoCore17AWSEncodableShapePAAE8validate_4name6parent3minyqd___S2SSitKSlRd__lF">validate(_:name:parent:min:)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -1035,7 +1073,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/.build/checkouts/soto-core/Sources/SotoCore/Doc/AWSShape.swift#L105-L107">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/.build/checkouts/soto-core/Sources/SotoCore/Doc/AWSShape.swift#L109-L111">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1045,7 +1083,7 @@
                     <code>
                     <a name="/s:8SotoCore17AWSEncodableShapePAAE8validate_4name6parent3maxyqd___S2SSitKSlRd__lF"></a>
                     <a name="//apple_ref/swift/Method/validate(_:name:parent:max:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:8SotoCore17AWSEncodableShapePAAE8validate_4name6parent3maxyqd___S2SSitKSlRd__lF">validate(_:<wbr>name:<wbr>parent:<wbr>max:<wbr>)</a>
+                    <a class="token" href="#/s:8SotoCore17AWSEncodableShapePAAE8validate_4name6parent3maxyqd___S2SSitKSlRd__lF">validate(_:name:parent:max:)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -1068,7 +1106,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/.build/checkouts/soto-core/Sources/SotoCore/Doc/AWSShape.swift#L109-L111">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/.build/checkouts/soto-core/Sources/SotoCore/Doc/AWSShape.swift#L113-L115">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1078,7 +1116,7 @@
                     <code>
                     <a name="/s:8SotoCore17AWSEncodableShapePAAE8validate_4name6parent3minyAA10AWSPayloadV_S2SSitKF"></a>
                     <a name="//apple_ref/swift/Method/validate(_:name:parent:min:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:8SotoCore17AWSEncodableShapePAAE8validate_4name6parent3minyAA10AWSPayloadV_S2SSitKF">validate(_:<wbr>name:<wbr>parent:<wbr>min:<wbr>)</a>
+                    <a class="token" href="#/s:8SotoCore17AWSEncodableShapePAAE8validate_4name6parent3minyAA10AWSPayloadV_S2SSitKF">validate(_:name:parent:min:)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -1101,7 +1139,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/.build/checkouts/soto-core/Sources/SotoCore/Doc/AWSShape.swift#L113-L119">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/.build/checkouts/soto-core/Sources/SotoCore/Doc/AWSShape.swift#L117-L123">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1111,7 +1149,7 @@
                     <code>
                     <a name="/s:8SotoCore17AWSEncodableShapePAAE8validate_4name6parent3maxyAA10AWSPayloadV_S2SSitKF"></a>
                     <a name="//apple_ref/swift/Method/validate(_:name:parent:max:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:8SotoCore17AWSEncodableShapePAAE8validate_4name6parent3maxyAA10AWSPayloadV_S2SSitKF">validate(_:<wbr>name:<wbr>parent:<wbr>max:<wbr>)</a>
+                    <a class="token" href="#/s:8SotoCore17AWSEncodableShapePAAE8validate_4name6parent3maxyAA10AWSPayloadV_S2SSitKF">validate(_:name:parent:max:)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -1134,7 +1172,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/.build/checkouts/soto-core/Sources/SotoCore/Doc/AWSShape.swift#L121-L127">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/.build/checkouts/soto-core/Sources/SotoCore/Doc/AWSShape.swift#L125-L131">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1144,7 +1182,7 @@
                     <code>
                     <a name="/s:8SotoCore17AWSEncodableShapePAAE8validate_4name6parent7patternySS_S3StKF"></a>
                     <a name="//apple_ref/swift/Method/validate(_:name:parent:pattern:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:8SotoCore17AWSEncodableShapePAAE8validate_4name6parent7patternySS_S3StKF">validate(_:<wbr>name:<wbr>parent:<wbr>pattern:<wbr>)</a>
+                    <a class="token" href="#/s:8SotoCore17AWSEncodableShapePAAE8validate_4name6parent7patternySS_S3StKF">validate(_:name:parent:pattern:)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -1167,7 +1205,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/.build/checkouts/soto-core/Sources/SotoCore/Doc/AWSShape.swift#L129-L133">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/.build/checkouts/soto-core/Sources/SotoCore/Doc/AWSShape.swift#L133-L137">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1177,7 +1215,7 @@
                     <code>
                     <a name="/s:8SotoCore17AWSEncodableShapePAAE8validate_4name6parent3minyqd__Sg_S2Sqd__tKSzRd__lF"></a>
                     <a name="//apple_ref/swift/Method/validate(_:name:parent:min:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:8SotoCore17AWSEncodableShapePAAE8validate_4name6parent3minyqd__Sg_S2Sqd__tKSzRd__lF">validate(_:<wbr>name:<wbr>parent:<wbr>min:<wbr>)</a>
+                    <a class="token" href="#/s:8SotoCore17AWSEncodableShapePAAE8validate_4name6parent3minyqd__Sg_S2Sqd__tKSzRd__lF">validate(_:name:parent:min:)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -1200,7 +1238,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/.build/checkouts/soto-core/Sources/SotoCore/Doc/AWSShape.swift#L136-L139">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/.build/checkouts/soto-core/Sources/SotoCore/Doc/AWSShape.swift#L140-L143">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1210,7 +1248,7 @@
                     <code>
                     <a name="/s:8SotoCore17AWSEncodableShapePAAE8validate_4name6parent3maxyqd__Sg_S2Sqd__tKSzRd__lF"></a>
                     <a name="//apple_ref/swift/Method/validate(_:name:parent:max:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:8SotoCore17AWSEncodableShapePAAE8validate_4name6parent3maxyqd__Sg_S2Sqd__tKSzRd__lF">validate(_:<wbr>name:<wbr>parent:<wbr>max:<wbr>)</a>
+                    <a class="token" href="#/s:8SotoCore17AWSEncodableShapePAAE8validate_4name6parent3maxyqd__Sg_S2Sqd__tKSzRd__lF">validate(_:name:parent:max:)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -1233,7 +1271,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/.build/checkouts/soto-core/Sources/SotoCore/Doc/AWSShape.swift#L141-L144">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/.build/checkouts/soto-core/Sources/SotoCore/Doc/AWSShape.swift#L145-L148">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1243,7 +1281,7 @@
                     <code>
                     <a name="/s:8SotoCore17AWSEncodableShapePAAE8validate_4name6parent3minyqd__Sg_S2Sqd__tKSFRd__lF"></a>
                     <a name="//apple_ref/swift/Method/validate(_:name:parent:min:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:8SotoCore17AWSEncodableShapePAAE8validate_4name6parent3minyqd__Sg_S2Sqd__tKSFRd__lF">validate(_:<wbr>name:<wbr>parent:<wbr>min:<wbr>)</a>
+                    <a class="token" href="#/s:8SotoCore17AWSEncodableShapePAAE8validate_4name6parent3minyqd__Sg_S2Sqd__tKSFRd__lF">validate(_:name:parent:min:)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -1266,7 +1304,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/.build/checkouts/soto-core/Sources/SotoCore/Doc/AWSShape.swift#L146-L149">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/.build/checkouts/soto-core/Sources/SotoCore/Doc/AWSShape.swift#L150-L153">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1276,7 +1314,7 @@
                     <code>
                     <a name="/s:8SotoCore17AWSEncodableShapePAAE8validate_4name6parent3maxyqd__Sg_S2Sqd__tKSFRd__lF"></a>
                     <a name="//apple_ref/swift/Method/validate(_:name:parent:max:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:8SotoCore17AWSEncodableShapePAAE8validate_4name6parent3maxyqd__Sg_S2Sqd__tKSFRd__lF">validate(_:<wbr>name:<wbr>parent:<wbr>max:<wbr>)</a>
+                    <a class="token" href="#/s:8SotoCore17AWSEncodableShapePAAE8validate_4name6parent3maxyqd__Sg_S2Sqd__tKSFRd__lF">validate(_:name:parent:max:)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -1299,7 +1337,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/.build/checkouts/soto-core/Sources/SotoCore/Doc/AWSShape.swift#L151-L154">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/.build/checkouts/soto-core/Sources/SotoCore/Doc/AWSShape.swift#L155-L158">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1309,7 +1347,7 @@
                     <code>
                     <a name="/s:8SotoCore17AWSEncodableShapePAAE8validate_4name6parent3minyqd__Sg_S2SSitKSlRd__lF"></a>
                     <a name="//apple_ref/swift/Method/validate(_:name:parent:min:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:8SotoCore17AWSEncodableShapePAAE8validate_4name6parent3minyqd__Sg_S2SSitKSlRd__lF">validate(_:<wbr>name:<wbr>parent:<wbr>min:<wbr>)</a>
+                    <a class="token" href="#/s:8SotoCore17AWSEncodableShapePAAE8validate_4name6parent3minyqd__Sg_S2SSitKSlRd__lF">validate(_:name:parent:min:)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -1332,7 +1370,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/.build/checkouts/soto-core/Sources/SotoCore/Doc/AWSShape.swift#L156-L159">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/.build/checkouts/soto-core/Sources/SotoCore/Doc/AWSShape.swift#L160-L163">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1342,7 +1380,7 @@
                     <code>
                     <a name="/s:8SotoCore17AWSEncodableShapePAAE8validate_4name6parent3maxyqd__Sg_S2SSitKSlRd__lF"></a>
                     <a name="//apple_ref/swift/Method/validate(_:name:parent:max:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:8SotoCore17AWSEncodableShapePAAE8validate_4name6parent3maxyqd__Sg_S2SSitKSlRd__lF">validate(_:<wbr>name:<wbr>parent:<wbr>max:<wbr>)</a>
+                    <a class="token" href="#/s:8SotoCore17AWSEncodableShapePAAE8validate_4name6parent3maxyqd__Sg_S2SSitKSlRd__lF">validate(_:name:parent:max:)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -1365,7 +1403,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/.build/checkouts/soto-core/Sources/SotoCore/Doc/AWSShape.swift#L161-L164">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/.build/checkouts/soto-core/Sources/SotoCore/Doc/AWSShape.swift#L165-L168">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1375,7 +1413,7 @@
                     <code>
                     <a name="/s:8SotoCore17AWSEncodableShapePAAE8validate_4name6parent3minyAA10AWSPayloadVSg_S2SSitKF"></a>
                     <a name="//apple_ref/swift/Method/validate(_:name:parent:min:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:8SotoCore17AWSEncodableShapePAAE8validate_4name6parent3minyAA10AWSPayloadVSg_S2SSitKF">validate(_:<wbr>name:<wbr>parent:<wbr>min:<wbr>)</a>
+                    <a class="token" href="#/s:8SotoCore17AWSEncodableShapePAAE8validate_4name6parent3minyAA10AWSPayloadVSg_S2SSitKF">validate(_:name:parent:min:)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -1398,7 +1436,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/.build/checkouts/soto-core/Sources/SotoCore/Doc/AWSShape.swift#L166-L169">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/.build/checkouts/soto-core/Sources/SotoCore/Doc/AWSShape.swift#L170-L173">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1408,7 +1446,7 @@
                     <code>
                     <a name="/s:8SotoCore17AWSEncodableShapePAAE8validate_4name6parent3maxyAA10AWSPayloadVSg_S2SSitKF"></a>
                     <a name="//apple_ref/swift/Method/validate(_:name:parent:max:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:8SotoCore17AWSEncodableShapePAAE8validate_4name6parent3maxyAA10AWSPayloadVSg_S2SSitKF">validate(_:<wbr>name:<wbr>parent:<wbr>max:<wbr>)</a>
+                    <a class="token" href="#/s:8SotoCore17AWSEncodableShapePAAE8validate_4name6parent3maxyAA10AWSPayloadVSg_S2SSitKF">validate(_:name:parent:max:)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -1431,7 +1469,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/.build/checkouts/soto-core/Sources/SotoCore/Doc/AWSShape.swift#L171-L174">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/.build/checkouts/soto-core/Sources/SotoCore/Doc/AWSShape.swift#L175-L178">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1441,7 +1479,7 @@
                     <code>
                     <a name="/s:8SotoCore17AWSEncodableShapePAAE8validate_4name6parent7patternySSSg_S3StKF"></a>
                     <a name="//apple_ref/swift/Method/validate(_:name:parent:pattern:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:8SotoCore17AWSEncodableShapePAAE8validate_4name6parent7patternySSSg_S3StKF">validate(_:<wbr>name:<wbr>parent:<wbr>pattern:<wbr>)</a>
+                    <a class="token" href="#/s:8SotoCore17AWSEncodableShapePAAE8validate_4name6parent7patternySSSg_S3StKF">validate(_:name:parent:pattern:)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -1464,7 +1502,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/.build/checkouts/soto-core/Sources/SotoCore/Doc/AWSShape.swift#L176-L179">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/.build/checkouts/soto-core/Sources/SotoCore/Doc/AWSShape.swift#L180-L183">Show on GitHub</a>
                       </div>
                     </section>
                   </div>

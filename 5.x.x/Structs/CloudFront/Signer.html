@@ -14,7 +14,7 @@
     <a title="Signer Structure Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../../index.html"> Docs</a> (54% documented)</p>
+        <p><a href="../../index.html"> Docs</a> (56% documented)</p>
         <p class="header-right"><a href="https://github.com/soto-project/soto"><img src="../../img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
@@ -29,10 +29,7 @@
       <nav class="sidebar">
         <ul class="nav-groups">
           <li class="nav-group-name">
-            <a href="../../User%20Guides.html">User Guides</a>
-          </li>
-          <li class="nav-group-name">
-            <a href="../../AWSSDKSwiftCore.html">AWSSDKSwiftCore</a>
+            <a href="../../SotoCore.html">SotoCore</a>
           </li>
           <li class="nav-group-name">
             <a href="../../ACM.html">ACM</a>
@@ -269,12 +266,6 @@
             <a href="../../EKS.html">EKS</a>
           </li>
           <li class="nav-group-name">
-            <a href="../../ELB.html">ELB</a>
-          </li>
-          <li class="nav-group-name">
-            <a href="../../ELBV2.html">ELBV2</a>
-          </li>
-          <li class="nav-group-name">
             <a href="../../EMR.html">EMR</a>
           </li>
           <li class="nav-group-name">
@@ -285,6 +276,12 @@
           </li>
           <li class="nav-group-name">
             <a href="../../ElasticInference.html">ElasticInference</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../ElasticLoadBalancing.html">ElasticLoadBalancing</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../ElasticLoadBalancingv2.html">ElasticLoadBalancingv2</a>
           </li>
           <li class="nav-group-name">
             <a href="../../ElasticTranscoder.html">ElasticTranscoder</a>
@@ -602,6 +599,9 @@
             <a href="../../S3Control.html">S3Control</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../S3Outposts.html">S3Outposts</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../SES.html">SES</a>
           </li>
           <li class="nav-group-name">
@@ -692,6 +692,12 @@
             <a href="../../Textract.html">Textract</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../TimestreamQuery.html">TimestreamQuery</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../TimestreamWrite.html">TimestreamWrite</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../TranscribeService.html">TranscribeService</a>
           </li>
           <li class="nav-group-name">
@@ -756,8 +762,7 @@
             <h1>Signer</h1>
               <div class="declaration">
                 <div class="language">
-                  
-                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Signer</span> <span class="p">:</span> <span class="kt"><a href="../../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Signer</span> <span class="p">:</span> <span class="kt"><a href="../../SotoCore.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                 </div>
               </div>
@@ -780,7 +785,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>An AWS account that is included in the TrustedSigners complex type for this distribution. Valid values include:    self, which is the AWS account used to create the distribution.   An AWS account number.</p>
+                        <p>An AWS account number that contains active CloudFront key pairs that CloudFront can use to verify the signatures of signed URLs and signed cookies. If the AWS account that owns the key pairs is the same account that owns the CloudFront distribution, the value of this field is self.</p>
 
                       </div>
                       <div class="declaration">
@@ -792,7 +797,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudFront/CloudFront_Shapes.swift#L4550">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudFront/CloudFront_Shapes.swift#L4947">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -810,7 +815,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>A complex type that lists the active CloudFront key pairs, if any, that are associated with AwsAccountNumber.</p>
+                        <p>A list of CloudFront key pair identifiers.</p>
 
                       </div>
                       <div class="declaration">
@@ -822,7 +827,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudFront/CloudFront_Shapes.swift#L4552">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudFront/CloudFront_Shapes.swift#L4949">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -832,7 +837,7 @@
                     <code>
                     <a name="/s:14SotoCloudFront0bC0V6SignerV16awsAccountNumber10keyPairIdsAESSSg_AC03KeyiJ0VSgtcfc"></a>
                     <a name="//apple_ref/swift/Method/init(awsAccountNumber:keyPairIds:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:14SotoCloudFront0bC0V6SignerV16awsAccountNumber10keyPairIdsAESSSg_AC03KeyiJ0VSgtcfc">init(awsAccountNumber:<wbr>keyPairIds:<wbr>)</a>
+                    <a class="token" href="#/s:14SotoCloudFront0bC0V6SignerV16awsAccountNumber10keyPairIdsAESSSg_AC03KeyiJ0VSgtcfc">init(awsAccountNumber:keyPairIds:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -852,7 +857,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudFront/CloudFront_Shapes.swift#L4554-L4557">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/CloudFront/CloudFront_Shapes.swift#L4951-L4954">Show on GitHub</a>
                       </div>
                     </section>
                   </div>

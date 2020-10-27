@@ -14,7 +14,7 @@
     <a title="ListCopyJobsInput Structure Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../../index.html"> Docs</a> (54% documented)</p>
+        <p><a href="../../index.html"> Docs</a> (56% documented)</p>
         <p class="header-right"><a href="https://github.com/soto-project/soto"><img src="../../img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
@@ -29,10 +29,7 @@
       <nav class="sidebar">
         <ul class="nav-groups">
           <li class="nav-group-name">
-            <a href="../../User%20Guides.html">User Guides</a>
-          </li>
-          <li class="nav-group-name">
-            <a href="../../AWSSDKSwiftCore.html">AWSSDKSwiftCore</a>
+            <a href="../../SotoCore.html">SotoCore</a>
           </li>
           <li class="nav-group-name">
             <a href="../../ACM.html">ACM</a>
@@ -269,12 +266,6 @@
             <a href="../../EKS.html">EKS</a>
           </li>
           <li class="nav-group-name">
-            <a href="../../ELB.html">ELB</a>
-          </li>
-          <li class="nav-group-name">
-            <a href="../../ELBV2.html">ELBV2</a>
-          </li>
-          <li class="nav-group-name">
             <a href="../../EMR.html">EMR</a>
           </li>
           <li class="nav-group-name">
@@ -285,6 +276,12 @@
           </li>
           <li class="nav-group-name">
             <a href="../../ElasticInference.html">ElasticInference</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../ElasticLoadBalancing.html">ElasticLoadBalancing</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../ElasticLoadBalancingv2.html">ElasticLoadBalancingv2</a>
           </li>
           <li class="nav-group-name">
             <a href="../../ElasticTranscoder.html">ElasticTranscoder</a>
@@ -602,6 +599,9 @@
             <a href="../../S3Control.html">S3Control</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../S3Outposts.html">S3Outposts</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../SES.html">SES</a>
           </li>
           <li class="nav-group-name">
@@ -692,6 +692,12 @@
             <a href="../../Textract.html">Textract</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../TimestreamQuery.html">TimestreamQuery</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../TimestreamWrite.html">TimestreamWrite</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../TranscribeService.html">TranscribeService</a>
           </li>
           <li class="nav-group-name">
@@ -756,7 +762,6 @@
             <h1>ListCopyJobsInput</h1>
               <div class="declaration">
                 <div class="language">
-                  
                   <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ListCopyJobsInput</span> <span class="p">:</span> <span class="kt"><a href="../../Protocols/AWSEncodableShape.html">AWSEncodableShape</a></span></code></pre>
 <pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt"><a href="../../Structs/Backup.html">Backup</a></span><span class="o">.</span><span class="kt">ListCopyJobsInput</span><span class="p">:</span> <span class="kt"><a href="../../Protocols/AWSPaginateToken.html">AWSPaginateToken</a></span></code></pre>
 
@@ -822,7 +827,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Backup/Backup_Shapes.swift#L1919">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Backup/Backup_Shapes.swift#L1983">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -830,9 +835,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:10SotoBackup0B0V17ListCopyJobsInputV14byCreatedAfter0A4Core9TimeStampVSgvp"></a>
+                    <a name="/s:10SotoBackup0B0V17ListCopyJobsInputV14byCreatedAfter10Foundation4DateVSgvp"></a>
                     <a name="//apple_ref/swift/Property/byCreatedAfter" class="dashAnchor"></a>
-                    <a class="token" href="#/s:10SotoBackup0B0V17ListCopyJobsInputV14byCreatedAfter0A4Core9TimeStampVSgvp">byCreatedAfter</a>
+                    <a class="token" href="#/s:10SotoBackup0B0V17ListCopyJobsInputV14byCreatedAfter10Foundation4DateVSgvp">byCreatedAfter</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -847,12 +852,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">byCreatedAfter</span><span class="p">:</span> <span class="kt"><a href="../../Structs/TimeStamp.html">TimeStamp</a></span><span class="p">?</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">byCreatedAfter</span><span class="p">:</span> <span class="kt">Date</span><span class="p">?</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Backup/Backup_Shapes.swift#L1921">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Backup/Backup_Shapes.swift#L1985">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -860,9 +865,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:10SotoBackup0B0V17ListCopyJobsInputV15byCreatedBefore0A4Core9TimeStampVSgvp"></a>
+                    <a name="/s:10SotoBackup0B0V17ListCopyJobsInputV15byCreatedBefore10Foundation4DateVSgvp"></a>
                     <a name="//apple_ref/swift/Property/byCreatedBefore" class="dashAnchor"></a>
-                    <a class="token" href="#/s:10SotoBackup0B0V17ListCopyJobsInputV15byCreatedBefore0A4Core9TimeStampVSgvp">byCreatedBefore</a>
+                    <a class="token" href="#/s:10SotoBackup0B0V17ListCopyJobsInputV15byCreatedBefore10Foundation4DateVSgvp">byCreatedBefore</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -877,12 +882,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">byCreatedBefore</span><span class="p">:</span> <span class="kt"><a href="../../Structs/TimeStamp.html">TimeStamp</a></span><span class="p">?</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">byCreatedBefore</span><span class="p">:</span> <span class="kt">Date</span><span class="p">?</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Backup/Backup_Shapes.swift#L1923">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Backup/Backup_Shapes.swift#L1987">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -912,7 +917,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Backup/Backup_Shapes.swift#L1925">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Backup/Backup_Shapes.swift#L1989">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -942,7 +947,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Backup/Backup_Shapes.swift#L1927">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Backup/Backup_Shapes.swift#L1991">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -972,7 +977,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Backup/Backup_Shapes.swift#L1929">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Backup/Backup_Shapes.swift#L1993">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1002,7 +1007,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Backup/Backup_Shapes.swift#L1931">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Backup/Backup_Shapes.swift#L1995">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1032,7 +1037,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Backup/Backup_Shapes.swift#L1933">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Backup/Backup_Shapes.swift#L1997">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1062,7 +1067,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Backup/Backup_Shapes.swift#L1935">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Backup/Backup_Shapes.swift#L1999">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1070,9 +1075,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:10SotoBackup0B0V17ListCopyJobsInputV11byAccountId0G12CreatedAfter0gJ6Before0G19DestinationVaultArn0g8ResourceO00gP4Type0G5State10maxResults9nextTokenAESSSg_0A4Core9TimeStampVSgAs3oC0d3JobR0OSgSiSgAOtcfc"></a>
+                    <a name="/s:10SotoBackup0B0V17ListCopyJobsInputV11byAccountId0G12CreatedAfter0gJ6Before0G19DestinationVaultArn0g8ResourceO00gP4Type0G5State10maxResults9nextTokenAESSSg_10Foundation4DateVSgAs3oC0d3JobR0OSgSiSgAOtcfc"></a>
                     <a name="//apple_ref/swift/Method/init(byAccountId:byCreatedAfter:byCreatedBefore:byDestinationVaultArn:byResourceArn:byResourceType:byState:maxResults:nextToken:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:10SotoBackup0B0V17ListCopyJobsInputV11byAccountId0G12CreatedAfter0gJ6Before0G19DestinationVaultArn0g8ResourceO00gP4Type0G5State10maxResults9nextTokenAESSSg_0A4Core9TimeStampVSgAs3oC0d3JobR0OSgSiSgAOtcfc">init(byAccountId:<wbr>byCreatedAfter:<wbr>byCreatedBefore:<wbr>byDestinationVaultArn:<wbr>byResourceArn:<wbr>byResourceType:<wbr>byState:<wbr>maxResults:<wbr>nextToken:<wbr>)</a>
+                    <a class="token" href="#/s:10SotoBackup0B0V17ListCopyJobsInputV11byAccountId0G12CreatedAfter0gJ6Before0G19DestinationVaultArn0g8ResourceO00gP4Type0G5State10maxResults9nextTokenAESSSg_10Foundation4DateVSgAs3oC0d3JobR0OSgSiSgAOtcfc">init(byAccountId:byCreatedAfter:byCreatedBefore:byDestinationVaultArn:byResourceArn:byResourceType:byState:maxResults:nextToken:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1087,12 +1092,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">byAccountId</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">byCreatedAfter</span><span class="p">:</span> <span class="kt"><a href="../../Structs/TimeStamp.html">TimeStamp</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">byCreatedBefore</span><span class="p">:</span> <span class="kt"><a href="../../Structs/TimeStamp.html">TimeStamp</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">byDestinationVaultArn</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">byResourceArn</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">byResourceType</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">byState</span><span class="p">:</span> <span class="kt"><a href="../../Structs/Backup/CopyJobState.html">CopyJobState</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">maxResults</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">nextToken</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">byAccountId</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">byCreatedAfter</span><span class="p">:</span> <span class="kt">Date</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">byCreatedBefore</span><span class="p">:</span> <span class="kt">Date</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">byDestinationVaultArn</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">byResourceArn</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">byResourceType</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">byState</span><span class="p">:</span> <span class="kt"><a href="../../Structs/Backup/CopyJobState.html">CopyJobState</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">maxResults</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">nextToken</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Backup/Backup_Shapes.swift#L1937-L1947">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Backup/Backup_Shapes.swift#L2001-L2011">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1102,7 +1107,7 @@
                     <code>
                     <a name="/s:8SotoCore17AWSEncodableShapeP8validate4nameySS_tKF"></a>
                     <a name="//apple_ref/swift/Method/validate(name:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:8SotoCore17AWSEncodableShapeP8validate4nameySS_tKF">validate(name:<wbr>)</a>
+                    <a class="token" href="#/s:8SotoCore17AWSEncodableShapeP8validate4nameySS_tKF">validate(name:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1121,7 +1126,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Backup/Backup_Shapes.swift#L1949-L1954">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Backup/Backup_Shapes.swift#L2013-L2018">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1132,11 +1137,9 @@
               <div class="task-name-container">
                 <a name="/Paginators"></a>
                 <a name="//apple_ref/swift/Section/Paginators" class="dashAnchor"></a>
-                <div class="section-name-container">
-                  <a class="section-name-link" href="#/Paginators"></a>
-                  <h3 class="section-name"><p>Paginators</p>
-</h3>
-                </div>
+                <a href="#/Paginators">
+                  <h3 class="section-name">Paginators</h3>
+                </a>
               </div>
               <ul>
                 <li class="item">
@@ -1144,7 +1147,7 @@
                     <code>
                     <a name="/s:10SotoBackup0B0V17ListCopyJobsInputV20usingPaginationTokenyAESSF"></a>
                     <a name="//apple_ref/swift/Method/usingPaginationToken(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:10SotoBackup0B0V17ListCopyJobsInputV20usingPaginationTokenyAESSF">usingPaginationToken(_:<wbr>)</a>
+                    <a class="token" href="#/s:10SotoBackup0B0V17ListCopyJobsInputV20usingPaginationTokenyAESSF">usingPaginationToken(_:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1164,7 +1167,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Backup/Backup_Paginator.swift#L280-L292">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Backup/Backup_Paginator.swift#L700-L712">Show on GitHub</a>
                       </div>
                     </section>
                   </div>

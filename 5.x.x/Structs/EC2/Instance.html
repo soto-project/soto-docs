@@ -14,7 +14,7 @@
     <a title="Instance Structure Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../../index.html"> Docs</a> (54% documented)</p>
+        <p><a href="../../index.html"> Docs</a> (56% documented)</p>
         <p class="header-right"><a href="https://github.com/soto-project/soto"><img src="../../img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
@@ -29,10 +29,7 @@
       <nav class="sidebar">
         <ul class="nav-groups">
           <li class="nav-group-name">
-            <a href="../../User%20Guides.html">User Guides</a>
-          </li>
-          <li class="nav-group-name">
-            <a href="../../AWSSDKSwiftCore.html">AWSSDKSwiftCore</a>
+            <a href="../../SotoCore.html">SotoCore</a>
           </li>
           <li class="nav-group-name">
             <a href="../../ACM.html">ACM</a>
@@ -269,12 +266,6 @@
             <a href="../../EKS.html">EKS</a>
           </li>
           <li class="nav-group-name">
-            <a href="../../ELB.html">ELB</a>
-          </li>
-          <li class="nav-group-name">
-            <a href="../../ELBV2.html">ELBV2</a>
-          </li>
-          <li class="nav-group-name">
             <a href="../../EMR.html">EMR</a>
           </li>
           <li class="nav-group-name">
@@ -285,6 +276,12 @@
           </li>
           <li class="nav-group-name">
             <a href="../../ElasticInference.html">ElasticInference</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../ElasticLoadBalancing.html">ElasticLoadBalancing</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../ElasticLoadBalancingv2.html">ElasticLoadBalancingv2</a>
           </li>
           <li class="nav-group-name">
             <a href="../../ElasticTranscoder.html">ElasticTranscoder</a>
@@ -602,6 +599,9 @@
             <a href="../../S3Control.html">S3Control</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../S3Outposts.html">S3Outposts</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../SES.html">SES</a>
           </li>
           <li class="nav-group-name">
@@ -692,6 +692,12 @@
             <a href="../../Textract.html">Textract</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../TimestreamQuery.html">TimestreamQuery</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../TimestreamWrite.html">TimestreamWrite</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../TranscribeService.html">TranscribeService</a>
           </li>
           <li class="nav-group-name">
@@ -756,8 +762,7 @@
             <h1>Instance</h1>
               <div class="declaration">
                 <div class="language">
-                  
-                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Instance</span> <span class="p">:</span> <span class="kt"><a href="../../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Instance</span> <span class="p">:</span> <span class="kt"><a href="../../SotoCore.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                 </div>
               </div>
@@ -1040,7 +1045,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L20771">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L20786">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1070,7 +1075,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L20773">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L20788">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1095,13 +1100,13 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@OptionalCoding</span>
+                          <pre class="highlight swift"><code><span class="kd">@OptionalCustomCoding</span>
 <span class="o">&lt;</span><span class="kt"><a href="../../Structs/EC2.html">EC2</a></span><span class="o">.</span><span class="kt"><a href="../../Structs/EC2/ArrayCoder.html">ArrayCoder</a></span><span class="o">&lt;</span><span class="kt"><a href="../../Structs/EC2.html">EC2</a></span><span class="o">.</span><span class="kt">Instance</span><span class="o">.</span><span class="n"><a href="../../Structs/EC2/Instance/_BlockDeviceMappingsEncoding.html">_BlockDeviceMappingsEncoding</a></span><span class="p">,</span> <span class="kt"><a href="../../Structs/EC2.html">EC2</a></span><span class="o">.</span><span class="kt"><a href="../../Structs/EC2/InstanceBlockDeviceMapping.html">InstanceBlockDeviceMapping</a></span><span class="o">&gt;&gt;</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">blockDeviceMappings</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../../Structs/EC2/InstanceBlockDeviceMapping.html">InstanceBlockDeviceMapping</a></span><span class="p">]?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L20776">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L20791">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1131,7 +1136,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L20778">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L20793">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1161,7 +1166,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L20780">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L20795">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1191,7 +1196,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L20782">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L20797">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1221,7 +1226,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L20784">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L20799">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1251,7 +1256,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L20786">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L20801">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1276,13 +1281,13 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@OptionalCoding</span>
+                          <pre class="highlight swift"><code><span class="kd">@OptionalCustomCoding</span>
 <span class="o">&lt;</span><span class="kt"><a href="../../Structs/EC2.html">EC2</a></span><span class="o">.</span><span class="kt"><a href="../../Structs/EC2/ArrayCoder.html">ArrayCoder</a></span><span class="o">&lt;</span><span class="kt"><a href="../../Structs/EC2.html">EC2</a></span><span class="o">.</span><span class="kt">Instance</span><span class="o">.</span><span class="n"><a href="../../Structs/EC2/Instance/_ElasticGpuAssociationsEncoding.html">_ElasticGpuAssociationsEncoding</a></span><span class="p">,</span> <span class="kt"><a href="../../Structs/EC2.html">EC2</a></span><span class="o">.</span><span class="kt"><a href="../../Structs/EC2/ElasticGpuAssociation.html">ElasticGpuAssociation</a></span><span class="o">&gt;&gt;</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">elasticGpuAssociations</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../../Structs/EC2/ElasticGpuAssociation.html">ElasticGpuAssociation</a></span><span class="p">]?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L20789">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L20804">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1307,13 +1312,13 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@OptionalCoding</span>
+                          <pre class="highlight swift"><code><span class="kd">@OptionalCustomCoding</span>
 <span class="o">&lt;</span><span class="kt"><a href="../../Structs/EC2.html">EC2</a></span><span class="o">.</span><span class="kt"><a href="../../Structs/EC2/ArrayCoder.html">ArrayCoder</a></span><span class="o">&lt;</span><span class="kt"><a href="../../Structs/EC2.html">EC2</a></span><span class="o">.</span><span class="kt">Instance</span><span class="o">.</span><span class="n"><a href="../../Structs/EC2/Instance/_ElasticInferenceAcceleratorAssociationsEncoding.html">_ElasticInferenceAcceleratorAssociationsEncoding</a></span><span class="p">,</span> <span class="kt"><a href="../../Structs/EC2.html">EC2</a></span><span class="o">.</span><span class="kt"><a href="../../Structs/EC2/ElasticInferenceAcceleratorAssociation.html">ElasticInferenceAcceleratorAssociation</a></span><span class="o">&gt;&gt;</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">elasticInferenceAcceleratorAssociations</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../../Structs/EC2/ElasticInferenceAcceleratorAssociation.html">ElasticInferenceAcceleratorAssociation</a></span><span class="p">]?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L20792">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L20807">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1343,7 +1348,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L20794">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L20809">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1373,7 +1378,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L20796">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L20811">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1403,7 +1408,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L20798">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L20813">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1433,7 +1438,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L20800">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L20815">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1463,7 +1468,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L20802">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L20817">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1493,7 +1498,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L20804">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L20819">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1523,7 +1528,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L20806">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L20821">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1553,7 +1558,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L20808">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L20823">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1583,7 +1588,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L20810">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L20825">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1613,7 +1618,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L20812">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L20827">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1621,9 +1626,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:7SotoEC20B0V8InstanceV10launchTime0A4Core0E5StampVSgvp"></a>
+                    <a name="/s:7SotoEC20B0V8InstanceV10launchTime10Foundation4DateVSgvp"></a>
                     <a name="//apple_ref/swift/Property/launchTime" class="dashAnchor"></a>
-                    <a class="token" href="#/s:7SotoEC20B0V8InstanceV10launchTime0A4Core0E5StampVSgvp">launchTime</a>
+                    <a class="token" href="#/s:7SotoEC20B0V8InstanceV10launchTime10Foundation4DateVSgvp">launchTime</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1638,12 +1643,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">launchTime</span><span class="p">:</span> <span class="kt"><a href="../../Structs/TimeStamp.html">TimeStamp</a></span><span class="p">?</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">launchTime</span><span class="p">:</span> <span class="kt">Date</span><span class="p">?</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L20814">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L20829">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1668,13 +1673,13 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@OptionalCoding</span>
+                          <pre class="highlight swift"><code><span class="kd">@OptionalCustomCoding</span>
 <span class="o">&lt;</span><span class="kt"><a href="../../Structs/EC2.html">EC2</a></span><span class="o">.</span><span class="kt"><a href="../../Structs/EC2/ArrayCoder.html">ArrayCoder</a></span><span class="o">&lt;</span><span class="kt"><a href="../../Structs/EC2.html">EC2</a></span><span class="o">.</span><span class="kt">Instance</span><span class="o">.</span><span class="n"><a href="../../Structs/EC2/Instance/_LicensesEncoding.html">_LicensesEncoding</a></span><span class="p">,</span> <span class="kt"><a href="../../Structs/EC2.html">EC2</a></span><span class="o">.</span><span class="kt"><a href="../../Structs/EC2/LicenseConfiguration.html">LicenseConfiguration</a></span><span class="o">&gt;&gt;</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">licenses</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../../Structs/EC2/LicenseConfiguration.html">LicenseConfiguration</a></span><span class="p">]?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L20817">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L20832">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1704,7 +1709,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L20819">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L20834">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1734,7 +1739,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L20821">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L20836">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1759,13 +1764,13 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@OptionalCoding</span>
+                          <pre class="highlight swift"><code><span class="kd">@OptionalCustomCoding</span>
 <span class="o">&lt;</span><span class="kt"><a href="../../Structs/EC2.html">EC2</a></span><span class="o">.</span><span class="kt"><a href="../../Structs/EC2/ArrayCoder.html">ArrayCoder</a></span><span class="o">&lt;</span><span class="kt"><a href="../../Structs/EC2.html">EC2</a></span><span class="o">.</span><span class="kt">Instance</span><span class="o">.</span><span class="n"><a href="../../Structs/EC2/Instance/_NetworkInterfacesEncoding.html">_NetworkInterfacesEncoding</a></span><span class="p">,</span> <span class="kt"><a href="../../Structs/EC2.html">EC2</a></span><span class="o">.</span><span class="kt"><a href="../../Structs/EC2/InstanceNetworkInterface.html">InstanceNetworkInterface</a></span><span class="o">&gt;&gt;</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">networkInterfaces</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../../Structs/EC2/InstanceNetworkInterface.html">InstanceNetworkInterface</a></span><span class="p">]?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L20824">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L20839">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1795,7 +1800,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L20826">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L20841">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1825,7 +1830,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L20828">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L20843">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1855,7 +1860,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L20830">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L20845">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1885,7 +1890,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L20832">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L20847">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1915,7 +1920,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L20834">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L20849">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1940,13 +1945,13 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@OptionalCoding</span>
+                          <pre class="highlight swift"><code><span class="kd">@OptionalCustomCoding</span>
 <span class="o">&lt;</span><span class="kt"><a href="../../Structs/EC2.html">EC2</a></span><span class="o">.</span><span class="kt"><a href="../../Structs/EC2/ArrayCoder.html">ArrayCoder</a></span><span class="o">&lt;</span><span class="kt"><a href="../../Structs/EC2.html">EC2</a></span><span class="o">.</span><span class="kt">Instance</span><span class="o">.</span><span class="n"><a href="../../Structs/EC2/Instance/_ProductCodesEncoding.html">_ProductCodesEncoding</a></span><span class="p">,</span> <span class="kt"><a href="../../Structs/EC2.html">EC2</a></span><span class="o">.</span><span class="kt"><a href="../../Structs/EC2/ProductCode.html">ProductCode</a></span><span class="o">&gt;&gt;</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">productCodes</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../../Structs/EC2/ProductCode.html">ProductCode</a></span><span class="p">]?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L20837">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L20852">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1976,7 +1981,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L20839">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L20854">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -2006,7 +2011,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L20841">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L20856">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -2036,7 +2041,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L20843">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L20858">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -2066,7 +2071,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L20845">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L20860">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -2096,7 +2101,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L20847">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L20862">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -2121,13 +2126,13 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@OptionalCoding</span>
+                          <pre class="highlight swift"><code><span class="kd">@OptionalCustomCoding</span>
 <span class="o">&lt;</span><span class="kt"><a href="../../Structs/EC2.html">EC2</a></span><span class="o">.</span><span class="kt"><a href="../../Structs/EC2/ArrayCoder.html">ArrayCoder</a></span><span class="o">&lt;</span><span class="kt"><a href="../../Structs/EC2.html">EC2</a></span><span class="o">.</span><span class="kt">Instance</span><span class="o">.</span><span class="n"><a href="../../Structs/EC2/Instance/_SecurityGroupsEncoding.html">_SecurityGroupsEncoding</a></span><span class="p">,</span> <span class="kt"><a href="../../Structs/EC2.html">EC2</a></span><span class="o">.</span><span class="kt"><a href="../../Structs/EC2/GroupIdentifier.html">GroupIdentifier</a></span><span class="o">&gt;&gt;</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">securityGroups</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../../Structs/EC2/GroupIdentifier.html">GroupIdentifier</a></span><span class="p">]?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L20850">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L20865">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -2157,7 +2162,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L20852">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L20867">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -2187,7 +2192,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L20854">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L20869">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -2217,7 +2222,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L20856">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L20871">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -2247,7 +2252,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L20858">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L20873">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -2277,7 +2282,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L20860">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L20875">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -2307,7 +2312,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L20862">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L20877">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -2337,7 +2342,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L20864">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L20879">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -2362,13 +2367,13 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@OptionalCoding</span>
+                          <pre class="highlight swift"><code><span class="kd">@OptionalCustomCoding</span>
 <span class="o">&lt;</span><span class="kt"><a href="../../Structs/EC2.html">EC2</a></span><span class="o">.</span><span class="kt"><a href="../../Structs/EC2/ArrayCoder.html">ArrayCoder</a></span><span class="o">&lt;</span><span class="kt"><a href="../../Structs/EC2.html">EC2</a></span><span class="o">.</span><span class="kt">Instance</span><span class="o">.</span><span class="n"><a href="../../Structs/EC2/Instance/_TagsEncoding.html">_TagsEncoding</a></span><span class="p">,</span> <span class="kt"><a href="../../Structs/EC2.html">EC2</a></span><span class="o">.</span><span class="kt"><a href="../../Structs/EC2/Tag.html">Tag</a></span><span class="o">&gt;&gt;</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">tags</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../../Structs/EC2/Tag.html">Tag</a></span><span class="p">]?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L20867">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L20882">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -2398,7 +2403,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L20869">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L20884">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -2428,7 +2433,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L20871">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L20886">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -2436,9 +2441,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:7SotoEC20B0V8InstanceV14amiLaunchIndex12architecture19blockDeviceMappings21capacityReservationId0kL13Specification11clientToken10cpuOptions12ebsOptimized22elasticGpuAssociations0u20InferenceAcceleratorW010enaSupport011hibernationR010hypervisor03iamC7Profile05imageM008instanceM017instanceLifecycle12instanceType06kernelM07keyName10launchTime8licenses08metadataR010monitoring17networkInterfaces10outpostArn9placement8platform14privateDnsName16privateIpAddress12productCodes13publicDnsName15publicIpAddress07ramdiskM004rootI4Name04rootI4Type14securityGroups15sourceDestCheck04spotc7RequestM015sriovNetSupport5state11stateReason21stateTransitionReason06subnetM04tags18virtualizationType03vpcM0AESiSg_AC18ArchitectureValuesOSgSayAC0c5BlockI7MappingVGSgSSSgAC08CapacitylN8ResponseVSgA33_AC03CpuR0VSgSbSgSayAC07ElasticV11AssociationVGSgSayAC07ElasticxY11AssociationVGSgA40_AC011HibernationR0VSgAC14HypervisorTypeOSgAC03IamC7ProfileVSgA33_A33_AC0C13LifecycleTypeOSgAC0C4TypeOSgA33_A33_0A4Core9TimeStampVSgSayAC20LicenseConfigurationVGSgAC0c8MetadataR8ResponseVSgAC10MonitoringVSgSayAC0C16NetworkInterfaceVGSgA33_AC9PlacementVSgAC14PlatformValuesOSgA33_A33_SayAC11ProductCodeVGSgA33_A33_A33_A33_AC0I4TypeOSgSayAC15GroupIdentifierVGSgA40_A33_A33_AC0C5StateVSgAC11StateReasonVSgA33_A33_SayAC3TagVGSgAC18VirtualizationTypeOSgA33_tcfc"></a>
+                    <a name="/s:7SotoEC20B0V8InstanceV14amiLaunchIndex12architecture19blockDeviceMappings21capacityReservationId0kL13Specification11clientToken10cpuOptions12ebsOptimized22elasticGpuAssociations0u20InferenceAcceleratorW010enaSupport011hibernationR010hypervisor03iamC7Profile05imageM008instanceM017instanceLifecycle12instanceType06kernelM07keyName10launchTime8licenses08metadataR010monitoring17networkInterfaces10outpostArn9placement8platform14privateDnsName16privateIpAddress12productCodes13publicDnsName15publicIpAddress07ramdiskM004rootI4Name04rootI4Type14securityGroups15sourceDestCheck04spotc7RequestM015sriovNetSupport5state11stateReason21stateTransitionReason06subnetM04tags18virtualizationType03vpcM0AESiSg_AC18ArchitectureValuesOSgSayAC0c5BlockI7MappingVGSgSSSgAC08CapacitylN8ResponseVSgA33_AC03CpuR0VSgSbSgSayAC07ElasticV11AssociationVGSgSayAC07ElasticxY11AssociationVGSgA40_AC011HibernationR0VSgAC14HypervisorTypeOSgAC03IamC7ProfileVSgA33_A33_AC0C13LifecycleTypeOSgAC0C4TypeOSgA33_A33_10Foundation4DateVSgSayAC20LicenseConfigurationVGSgAC0c8MetadataR8ResponseVSgAC10MonitoringVSgSayAC0C16NetworkInterfaceVGSgA33_AC9PlacementVSgAC14PlatformValuesOSgA33_A33_SayAC11ProductCodeVGSgA33_A33_A33_A33_AC0I4TypeOSgSayAC15GroupIdentifierVGSgA40_A33_A33_AC0C5StateVSgAC11StateReasonVSgA33_A33_SayAC3TagVGSgAC18VirtualizationTypeOSgA33_tcfc"></a>
                     <a name="//apple_ref/swift/Method/init(amiLaunchIndex:architecture:blockDeviceMappings:capacityReservationId:capacityReservationSpecification:clientToken:cpuOptions:ebsOptimized:elasticGpuAssociations:elasticInferenceAcceleratorAssociations:enaSupport:hibernationOptions:hypervisor:iamInstanceProfile:imageId:instanceId:instanceLifecycle:instanceType:kernelId:keyName:launchTime:licenses:metadataOptions:monitoring:networkInterfaces:outpostArn:placement:platform:privateDnsName:privateIpAddress:productCodes:publicDnsName:publicIpAddress:ramdiskId:rootDeviceName:rootDeviceType:securityGroups:sourceDestCheck:spotInstanceRequestId:sriovNetSupport:state:stateReason:stateTransitionReason:subnetId:tags:virtualizationType:vpcId:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:7SotoEC20B0V8InstanceV14amiLaunchIndex12architecture19blockDeviceMappings21capacityReservationId0kL13Specification11clientToken10cpuOptions12ebsOptimized22elasticGpuAssociations0u20InferenceAcceleratorW010enaSupport011hibernationR010hypervisor03iamC7Profile05imageM008instanceM017instanceLifecycle12instanceType06kernelM07keyName10launchTime8licenses08metadataR010monitoring17networkInterfaces10outpostArn9placement8platform14privateDnsName16privateIpAddress12productCodes13publicDnsName15publicIpAddress07ramdiskM004rootI4Name04rootI4Type14securityGroups15sourceDestCheck04spotc7RequestM015sriovNetSupport5state11stateReason21stateTransitionReason06subnetM04tags18virtualizationType03vpcM0AESiSg_AC18ArchitectureValuesOSgSayAC0c5BlockI7MappingVGSgSSSgAC08CapacitylN8ResponseVSgA33_AC03CpuR0VSgSbSgSayAC07ElasticV11AssociationVGSgSayAC07ElasticxY11AssociationVGSgA40_AC011HibernationR0VSgAC14HypervisorTypeOSgAC03IamC7ProfileVSgA33_A33_AC0C13LifecycleTypeOSgAC0C4TypeOSgA33_A33_0A4Core9TimeStampVSgSayAC20LicenseConfigurationVGSgAC0c8MetadataR8ResponseVSgAC10MonitoringVSgSayAC0C16NetworkInterfaceVGSgA33_AC9PlacementVSgAC14PlatformValuesOSgA33_A33_SayAC11ProductCodeVGSgA33_A33_A33_A33_AC0I4TypeOSgSayAC15GroupIdentifierVGSgA40_A33_A33_AC0C5StateVSgAC11StateReasonVSgA33_A33_SayAC3TagVGSgAC18VirtualizationTypeOSgA33_tcfc">init(amiLaunchIndex:<wbr>architecture:<wbr>blockDeviceMappings:<wbr>capacityReservationId:<wbr>capacityReservationSpecification:<wbr>clientToken:<wbr>cpuOptions:<wbr>ebsOptimized:<wbr>elasticGpuAssociations:<wbr>elasticInferenceAcceleratorAssociations:<wbr>enaSupport:<wbr>hibernationOptions:<wbr>hypervisor:<wbr>iamInstanceProfile:<wbr>imageId:<wbr>instanceId:<wbr>instanceLifecycle:<wbr>instanceType:<wbr>kernelId:<wbr>keyName:<wbr>launchTime:<wbr>licenses:<wbr>metadataOptions:<wbr>monitoring:<wbr>networkInterfaces:<wbr>outpostArn:<wbr>placement:<wbr>platform:<wbr>privateDnsName:<wbr>privateIpAddress:<wbr>productCodes:<wbr>publicDnsName:<wbr>publicIpAddress:<wbr>ramdiskId:<wbr>rootDeviceName:<wbr>rootDeviceType:<wbr>securityGroups:<wbr>sourceDestCheck:<wbr>spotInstanceRequestId:<wbr>sriovNetSupport:<wbr>state:<wbr>stateReason:<wbr>stateTransitionReason:<wbr>subnetId:<wbr>tags:<wbr>virtualizationType:<wbr>vpcId:<wbr>)</a>
+                    <a class="token" href="#/s:7SotoEC20B0V8InstanceV14amiLaunchIndex12architecture19blockDeviceMappings21capacityReservationId0kL13Specification11clientToken10cpuOptions12ebsOptimized22elasticGpuAssociations0u20InferenceAcceleratorW010enaSupport011hibernationR010hypervisor03iamC7Profile05imageM008instanceM017instanceLifecycle12instanceType06kernelM07keyName10launchTime8licenses08metadataR010monitoring17networkInterfaces10outpostArn9placement8platform14privateDnsName16privateIpAddress12productCodes13publicDnsName15publicIpAddress07ramdiskM004rootI4Name04rootI4Type14securityGroups15sourceDestCheck04spotc7RequestM015sriovNetSupport5state11stateReason21stateTransitionReason06subnetM04tags18virtualizationType03vpcM0AESiSg_AC18ArchitectureValuesOSgSayAC0c5BlockI7MappingVGSgSSSgAC08CapacitylN8ResponseVSgA33_AC03CpuR0VSgSbSgSayAC07ElasticV11AssociationVGSgSayAC07ElasticxY11AssociationVGSgA40_AC011HibernationR0VSgAC14HypervisorTypeOSgAC03IamC7ProfileVSgA33_A33_AC0C13LifecycleTypeOSgAC0C4TypeOSgA33_A33_10Foundation4DateVSgSayAC20LicenseConfigurationVGSgAC0c8MetadataR8ResponseVSgAC10MonitoringVSgSayAC0C16NetworkInterfaceVGSgA33_AC9PlacementVSgAC14PlatformValuesOSgA33_A33_SayAC11ProductCodeVGSgA33_A33_A33_A33_AC0I4TypeOSgSayAC15GroupIdentifierVGSgA40_A33_A33_AC0C5StateVSgAC11StateReasonVSgA33_A33_SayAC3TagVGSgAC18VirtualizationTypeOSgA33_tcfc">init(amiLaunchIndex:architecture:blockDeviceMappings:capacityReservationId:capacityReservationSpecification:clientToken:cpuOptions:ebsOptimized:elasticGpuAssociations:elasticInferenceAcceleratorAssociations:enaSupport:hibernationOptions:hypervisor:iamInstanceProfile:imageId:instanceId:instanceLifecycle:instanceType:kernelId:keyName:launchTime:licenses:metadataOptions:monitoring:networkInterfaces:outpostArn:placement:platform:privateDnsName:privateIpAddress:productCodes:publicDnsName:publicIpAddress:ramdiskId:rootDeviceName:rootDeviceType:securityGroups:sourceDestCheck:spotInstanceRequestId:sriovNetSupport:state:stateReason:stateTransitionReason:subnetId:tags:virtualizationType:vpcId:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2453,12 +2458,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">amiLaunchIndex</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">architecture</span><span class="p">:</span> <span class="kt"><a href="../../Structs/EC2/ArchitectureValues.html">ArchitectureValues</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">blockDeviceMappings</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../../Structs/EC2/InstanceBlockDeviceMapping.html">InstanceBlockDeviceMapping</a></span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">capacityReservationId</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">capacityReservationSpecification</span><span class="p">:</span> <span class="kt"><a href="../../Structs/EC2/CapacityReservationSpecificationResponse.html">CapacityReservationSpecificationResponse</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">clientToken</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">cpuOptions</span><span class="p">:</span> <span class="kt"><a href="../../Structs/EC2/CpuOptions.html">CpuOptions</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">ebsOptimized</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">elasticGpuAssociations</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../../Structs/EC2/ElasticGpuAssociation.html">ElasticGpuAssociation</a></span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">elasticInferenceAcceleratorAssociations</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../../Structs/EC2/ElasticInferenceAcceleratorAssociation.html">ElasticInferenceAcceleratorAssociation</a></span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">enaSupport</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">hibernationOptions</span><span class="p">:</span> <span class="kt"><a href="../../Structs/EC2/HibernationOptions.html">HibernationOptions</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">hypervisor</span><span class="p">:</span> <span class="kt"><a href="../../Structs/EC2/HypervisorType.html">HypervisorType</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">iamInstanceProfile</span><span class="p">:</span> <span class="kt"><a href="../../Structs/EC2/IamInstanceProfile.html">IamInstanceProfile</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">imageId</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">instanceId</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">instanceLifecycle</span><span class="p">:</span> <span class="kt"><a href="../../Structs/EC2/InstanceLifecycleType.html">InstanceLifecycleType</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">instanceType</span><span class="p">:</span> <span class="kt"><a href="../../Structs/EC2/InstanceType.html">InstanceType</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">kernelId</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">keyName</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">launchTime</span><span class="p">:</span> <span class="kt"><a href="../../Structs/TimeStamp.html">TimeStamp</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">licenses</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../../Structs/EC2/LicenseConfiguration.html">LicenseConfiguration</a></span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">metadataOptions</span><span class="p">:</span> <span class="kt"><a href="../../Structs/EC2/InstanceMetadataOptionsResponse.html">InstanceMetadataOptionsResponse</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">monitoring</span><span class="p">:</span> <span class="kt"><a href="../../Structs/EC2/Monitoring.html">Monitoring</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">networkInterfaces</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../../Structs/EC2/InstanceNetworkInterface.html">InstanceNetworkInterface</a></span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">outpostArn</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">placement</span><span class="p">:</span> <span class="kt"><a href="../../Structs/EC2/Placement.html">Placement</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">platform</span><span class="p">:</span> <span class="kt"><a href="../../Structs/EC2/PlatformValues.html">PlatformValues</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">privateDnsName</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">privateIpAddress</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">productCodes</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../../Structs/EC2/ProductCode.html">ProductCode</a></span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">publicDnsName</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">publicIpAddress</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">ramdiskId</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">rootDeviceName</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">rootDeviceType</span><span class="p">:</span> <span class="kt"><a href="../../Structs/EC2/DeviceType.html">DeviceType</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">securityGroups</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../../Structs/EC2/GroupIdentifier.html">GroupIdentifier</a></span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">sourceDestCheck</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">spotInstanceRequestId</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">sriovNetSupport</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">state</span><span class="p">:</span> <span class="kt"><a href="../../Structs/EC2/InstanceState.html">InstanceState</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">stateReason</span><span class="p">:</span> <span class="kt"><a href="../../Structs/EC2/StateReason.html">StateReason</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">stateTransitionReason</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">subnetId</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">tags</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../../Structs/EC2/Tag.html">Tag</a></span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">virtualizationType</span><span class="p">:</span> <span class="kt"><a href="../../Structs/EC2/VirtualizationType.html">VirtualizationType</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">vpcId</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">amiLaunchIndex</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">architecture</span><span class="p">:</span> <span class="kt"><a href="../../Structs/EC2/ArchitectureValues.html">ArchitectureValues</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">blockDeviceMappings</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../../Structs/EC2/InstanceBlockDeviceMapping.html">InstanceBlockDeviceMapping</a></span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">capacityReservationId</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">capacityReservationSpecification</span><span class="p">:</span> <span class="kt"><a href="../../Structs/EC2/CapacityReservationSpecificationResponse.html">CapacityReservationSpecificationResponse</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">clientToken</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">cpuOptions</span><span class="p">:</span> <span class="kt"><a href="../../Structs/EC2/CpuOptions.html">CpuOptions</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">ebsOptimized</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">elasticGpuAssociations</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../../Structs/EC2/ElasticGpuAssociation.html">ElasticGpuAssociation</a></span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">elasticInferenceAcceleratorAssociations</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../../Structs/EC2/ElasticInferenceAcceleratorAssociation.html">ElasticInferenceAcceleratorAssociation</a></span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">enaSupport</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">hibernationOptions</span><span class="p">:</span> <span class="kt"><a href="../../Structs/EC2/HibernationOptions.html">HibernationOptions</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">hypervisor</span><span class="p">:</span> <span class="kt"><a href="../../Structs/EC2/HypervisorType.html">HypervisorType</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">iamInstanceProfile</span><span class="p">:</span> <span class="kt"><a href="../../Structs/EC2/IamInstanceProfile.html">IamInstanceProfile</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">imageId</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">instanceId</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">instanceLifecycle</span><span class="p">:</span> <span class="kt"><a href="../../Structs/EC2/InstanceLifecycleType.html">InstanceLifecycleType</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">instanceType</span><span class="p">:</span> <span class="kt"><a href="../../Structs/EC2/InstanceType.html">InstanceType</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">kernelId</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">keyName</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">launchTime</span><span class="p">:</span> <span class="kt">Date</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">licenses</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../../Structs/EC2/LicenseConfiguration.html">LicenseConfiguration</a></span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">metadataOptions</span><span class="p">:</span> <span class="kt"><a href="../../Structs/EC2/InstanceMetadataOptionsResponse.html">InstanceMetadataOptionsResponse</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">monitoring</span><span class="p">:</span> <span class="kt"><a href="../../Structs/EC2/Monitoring.html">Monitoring</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">networkInterfaces</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../../Structs/EC2/InstanceNetworkInterface.html">InstanceNetworkInterface</a></span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">outpostArn</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">placement</span><span class="p">:</span> <span class="kt"><a href="../../Structs/EC2/Placement.html">Placement</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">platform</span><span class="p">:</span> <span class="kt"><a href="../../Structs/EC2/PlatformValues.html">PlatformValues</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">privateDnsName</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">privateIpAddress</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">productCodes</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../../Structs/EC2/ProductCode.html">ProductCode</a></span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">publicDnsName</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">publicIpAddress</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">ramdiskId</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">rootDeviceName</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">rootDeviceType</span><span class="p">:</span> <span class="kt"><a href="../../Structs/EC2/DeviceType.html">DeviceType</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">securityGroups</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../../Structs/EC2/GroupIdentifier.html">GroupIdentifier</a></span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">sourceDestCheck</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">spotInstanceRequestId</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">sriovNetSupport</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">state</span><span class="p">:</span> <span class="kt"><a href="../../Structs/EC2/InstanceState.html">InstanceState</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">stateReason</span><span class="p">:</span> <span class="kt"><a href="../../Structs/EC2/StateReason.html">StateReason</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">stateTransitionReason</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">subnetId</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">tags</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../../Structs/EC2/Tag.html">Tag</a></span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">virtualizationType</span><span class="p">:</span> <span class="kt"><a href="../../Structs/EC2/VirtualizationType.html">VirtualizationType</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">vpcId</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L20873-L20921">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/EC2/EC2_Shapes.swift#L20888-L20936">Show on GitHub</a>
                       </div>
                     </section>
                   </div>

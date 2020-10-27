@@ -14,7 +14,7 @@
     <a title="NotebookInstanceSummary Structure Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../../index.html"> Docs</a> (54% documented)</p>
+        <p><a href="../../index.html"> Docs</a> (56% documented)</p>
         <p class="header-right"><a href="https://github.com/soto-project/soto"><img src="../../img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
@@ -29,10 +29,7 @@
       <nav class="sidebar">
         <ul class="nav-groups">
           <li class="nav-group-name">
-            <a href="../../User%20Guides.html">User Guides</a>
-          </li>
-          <li class="nav-group-name">
-            <a href="../../AWSSDKSwiftCore.html">AWSSDKSwiftCore</a>
+            <a href="../../SotoCore.html">SotoCore</a>
           </li>
           <li class="nav-group-name">
             <a href="../../ACM.html">ACM</a>
@@ -269,12 +266,6 @@
             <a href="../../EKS.html">EKS</a>
           </li>
           <li class="nav-group-name">
-            <a href="../../ELB.html">ELB</a>
-          </li>
-          <li class="nav-group-name">
-            <a href="../../ELBV2.html">ELBV2</a>
-          </li>
-          <li class="nav-group-name">
             <a href="../../EMR.html">EMR</a>
           </li>
           <li class="nav-group-name">
@@ -285,6 +276,12 @@
           </li>
           <li class="nav-group-name">
             <a href="../../ElasticInference.html">ElasticInference</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../ElasticLoadBalancing.html">ElasticLoadBalancing</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../ElasticLoadBalancingv2.html">ElasticLoadBalancingv2</a>
           </li>
           <li class="nav-group-name">
             <a href="../../ElasticTranscoder.html">ElasticTranscoder</a>
@@ -602,6 +599,9 @@
             <a href="../../S3Control.html">S3Control</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../S3Outposts.html">S3Outposts</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../SES.html">SES</a>
           </li>
           <li class="nav-group-name">
@@ -692,6 +692,12 @@
             <a href="../../Textract.html">Textract</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../TimestreamQuery.html">TimestreamQuery</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../TimestreamWrite.html">TimestreamWrite</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../TranscribeService.html">TranscribeService</a>
           </li>
           <li class="nav-group-name">
@@ -756,8 +762,7 @@
             <h1>NotebookInstanceSummary</h1>
               <div class="declaration">
                 <div class="language">
-                  
-                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">NotebookInstanceSummary</span> <span class="p">:</span> <span class="kt"><a href="../../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">NotebookInstanceSummary</span> <span class="p">:</span> <span class="kt"><a href="../../SotoCore.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                 </div>
               </div>
@@ -792,7 +797,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/SageMaker/SageMaker_Shapes.swift#L11449">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/SageMaker/SageMaker_Shapes.swift#L11493">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -800,9 +805,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:13SotoSageMaker0bC0V23NotebookInstanceSummaryV12creationTime0A4Core0H5StampVSgvp"></a>
+                    <a name="/s:13SotoSageMaker0bC0V23NotebookInstanceSummaryV12creationTime10Foundation4DateVSgvp"></a>
                     <a name="//apple_ref/swift/Property/creationTime" class="dashAnchor"></a>
-                    <a class="token" href="#/s:13SotoSageMaker0bC0V23NotebookInstanceSummaryV12creationTime0A4Core0H5StampVSgvp">creationTime</a>
+                    <a class="token" href="#/s:13SotoSageMaker0bC0V23NotebookInstanceSummaryV12creationTime10Foundation4DateVSgvp">creationTime</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -817,12 +822,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">creationTime</span><span class="p">:</span> <span class="kt"><a href="../../Structs/TimeStamp.html">TimeStamp</a></span><span class="p">?</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">creationTime</span><span class="p">:</span> <span class="kt">Date</span><span class="p">?</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/SageMaker/SageMaker_Shapes.swift#L11451">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/SageMaker/SageMaker_Shapes.swift#L11495">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -852,7 +857,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/SageMaker/SageMaker_Shapes.swift#L11453">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/SageMaker/SageMaker_Shapes.swift#L11497">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -882,7 +887,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/SageMaker/SageMaker_Shapes.swift#L11455">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/SageMaker/SageMaker_Shapes.swift#L11499">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -890,9 +895,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:13SotoSageMaker0bC0V23NotebookInstanceSummaryV16lastModifiedTime0A4Core0I5StampVSgvp"></a>
+                    <a name="/s:13SotoSageMaker0bC0V23NotebookInstanceSummaryV16lastModifiedTime10Foundation4DateVSgvp"></a>
                     <a name="//apple_ref/swift/Property/lastModifiedTime" class="dashAnchor"></a>
-                    <a class="token" href="#/s:13SotoSageMaker0bC0V23NotebookInstanceSummaryV16lastModifiedTime0A4Core0I5StampVSgvp">lastModifiedTime</a>
+                    <a class="token" href="#/s:13SotoSageMaker0bC0V23NotebookInstanceSummaryV16lastModifiedTime10Foundation4DateVSgvp">lastModifiedTime</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -907,12 +912,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">lastModifiedTime</span><span class="p">:</span> <span class="kt"><a href="../../Structs/TimeStamp.html">TimeStamp</a></span><span class="p">?</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">lastModifiedTime</span><span class="p">:</span> <span class="kt">Date</span><span class="p">?</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/SageMaker/SageMaker_Shapes.swift#L11457">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/SageMaker/SageMaker_Shapes.swift#L11501">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -942,7 +947,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/SageMaker/SageMaker_Shapes.swift#L11459">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/SageMaker/SageMaker_Shapes.swift#L11503">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -972,7 +977,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/SageMaker/SageMaker_Shapes.swift#L11461">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/SageMaker/SageMaker_Shapes.swift#L11505">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1002,7 +1007,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/SageMaker/SageMaker_Shapes.swift#L11463">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/SageMaker/SageMaker_Shapes.swift#L11507">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1032,7 +1037,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/SageMaker/SageMaker_Shapes.swift#L11465">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/SageMaker/SageMaker_Shapes.swift#L11509">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1062,7 +1067,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/SageMaker/SageMaker_Shapes.swift#L11467">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/SageMaker/SageMaker_Shapes.swift#L11511">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1070,9 +1075,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:13SotoSageMaker0bC0V23NotebookInstanceSummaryV26additionalCodeRepositories12creationTime07defaultH10Repository12instanceType012lastModifiedK008notebookE3Arn0rE19LifecycleConfigName0reV00rE6Status3urlAESaySSGSg_0A4Core0K5StampVSgSSSgAC0eO0OSgAUSSAVSSAC0deW0OSgAVtcfc"></a>
+                    <a name="/s:13SotoSageMaker0bC0V23NotebookInstanceSummaryV26additionalCodeRepositories12creationTime07defaultH10Repository12instanceType012lastModifiedK008notebookE3Arn0rE19LifecycleConfigName0reV00rE6Status3urlAESaySSGSg_10Foundation4DateVSgSSSgAC0eO0OSgAUSSAVSSAC0deW0OSgAVtcfc"></a>
                     <a name="//apple_ref/swift/Method/init(additionalCodeRepositories:creationTime:defaultCodeRepository:instanceType:lastModifiedTime:notebookInstanceArn:notebookInstanceLifecycleConfigName:notebookInstanceName:notebookInstanceStatus:url:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:13SotoSageMaker0bC0V23NotebookInstanceSummaryV26additionalCodeRepositories12creationTime07defaultH10Repository12instanceType012lastModifiedK008notebookE3Arn0rE19LifecycleConfigName0reV00rE6Status3urlAESaySSGSg_0A4Core0K5StampVSgSSSgAC0eO0OSgAUSSAVSSAC0deW0OSgAVtcfc">init(additionalCodeRepositories:<wbr>creationTime:<wbr>defaultCodeRepository:<wbr>instanceType:<wbr>lastModifiedTime:<wbr>notebookInstanceArn:<wbr>notebookInstanceLifecycleConfigName:<wbr>notebookInstanceName:<wbr>notebookInstanceStatus:<wbr>url:<wbr>)</a>
+                    <a class="token" href="#/s:13SotoSageMaker0bC0V23NotebookInstanceSummaryV26additionalCodeRepositories12creationTime07defaultH10Repository12instanceType012lastModifiedK008notebookE3Arn0rE19LifecycleConfigName0reV00rE6Status3urlAESaySSGSg_10Foundation4DateVSgSSSgAC0eO0OSgAUSSAVSSAC0deW0OSgAVtcfc">init(additionalCodeRepositories:creationTime:defaultCodeRepository:instanceType:lastModifiedTime:notebookInstanceArn:notebookInstanceLifecycleConfigName:notebookInstanceName:notebookInstanceStatus:url:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1087,12 +1092,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">additionalCodeRepositories</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">creationTime</span><span class="p">:</span> <span class="kt"><a href="../../Structs/TimeStamp.html">TimeStamp</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="n"><a href="../../Structs/SageMaker/NotebookInstanceSummary.html#/s:13SotoSageMaker0bC0V23NotebookInstanceSummaryV21defaultCodeRepositorySSSgvp">defaultCodeRepository</a></span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">instanceType</span><span class="p">:</span> <span class="kt"><a href="../../Structs/SageMaker/InstanceType.html">InstanceType</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">lastModifiedTime</span><span class="p">:</span> <span class="kt"><a href="../../Structs/TimeStamp.html">TimeStamp</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">notebookInstanceArn</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">notebookInstanceLifecycleConfigName</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">notebookInstanceName</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">notebookInstanceStatus</span><span class="p">:</span> <span class="kt"><a href="../../Structs/SageMaker/NotebookInstanceStatus.html">NotebookInstanceStatus</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">url</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">additionalCodeRepositories</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">creationTime</span><span class="p">:</span> <span class="kt">Date</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="n"><a href="../../Structs/SageMaker/NotebookInstanceSummary.html#/s:13SotoSageMaker0bC0V23NotebookInstanceSummaryV21defaultCodeRepositorySSSgvp">defaultCodeRepository</a></span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">instanceType</span><span class="p">:</span> <span class="kt"><a href="../../Structs/SageMaker/InstanceType.html">InstanceType</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">lastModifiedTime</span><span class="p">:</span> <span class="kt">Date</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">notebookInstanceArn</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">notebookInstanceLifecycleConfigName</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">notebookInstanceName</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">notebookInstanceStatus</span><span class="p">:</span> <span class="kt"><a href="../../Structs/SageMaker/NotebookInstanceStatus.html">NotebookInstanceStatus</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">url</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/SageMaker/SageMaker_Shapes.swift#L11469-L11480">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/SageMaker/SageMaker_Shapes.swift#L11513-L11524">Show on GitHub</a>
                       </div>
                     </section>
                   </div>

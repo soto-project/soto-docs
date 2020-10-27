@@ -14,7 +14,7 @@
     <a title="MySQLSettings Structure Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../../index.html"> Docs</a> (54% documented)</p>
+        <p><a href="../../index.html"> Docs</a> (56% documented)</p>
         <p class="header-right"><a href="https://github.com/soto-project/soto"><img src="../../img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
@@ -29,10 +29,7 @@
       <nav class="sidebar">
         <ul class="nav-groups">
           <li class="nav-group-name">
-            <a href="../../User%20Guides.html">User Guides</a>
-          </li>
-          <li class="nav-group-name">
-            <a href="../../AWSSDKSwiftCore.html">AWSSDKSwiftCore</a>
+            <a href="../../SotoCore.html">SotoCore</a>
           </li>
           <li class="nav-group-name">
             <a href="../../ACM.html">ACM</a>
@@ -269,12 +266,6 @@
             <a href="../../EKS.html">EKS</a>
           </li>
           <li class="nav-group-name">
-            <a href="../../ELB.html">ELB</a>
-          </li>
-          <li class="nav-group-name">
-            <a href="../../ELBV2.html">ELBV2</a>
-          </li>
-          <li class="nav-group-name">
             <a href="../../EMR.html">EMR</a>
           </li>
           <li class="nav-group-name">
@@ -285,6 +276,12 @@
           </li>
           <li class="nav-group-name">
             <a href="../../ElasticInference.html">ElasticInference</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../ElasticLoadBalancing.html">ElasticLoadBalancing</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../ElasticLoadBalancingv2.html">ElasticLoadBalancingv2</a>
           </li>
           <li class="nav-group-name">
             <a href="../../ElasticTranscoder.html">ElasticTranscoder</a>
@@ -602,6 +599,9 @@
             <a href="../../S3Control.html">S3Control</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../S3Outposts.html">S3Outposts</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../SES.html">SES</a>
           </li>
           <li class="nav-group-name">
@@ -692,6 +692,12 @@
             <a href="../../Textract.html">Textract</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../TimestreamQuery.html">TimestreamQuery</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../TimestreamWrite.html">TimestreamWrite</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../TranscribeService.html">TranscribeService</a>
           </li>
           <li class="nav-group-name">
@@ -756,8 +762,7 @@
             <h1>MySQLSettings</h1>
               <div class="declaration">
                 <div class="language">
-                  
-                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">MySQLSettings</span> <span class="p">:</span> <span class="kt"><a href="../../Protocols/AWSEncodableShape.html">AWSEncodableShape</a></span> <span class="o">&amp;</span> <span class="kt"><a href="../../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">MySQLSettings</span> <span class="p">:</span> <span class="kt"><a href="../../Protocols/AWSEncodableShape.html">AWSEncodableShape</a></span> <span class="o">&amp;</span> <span class="kt"><a href="../../SotoCore.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                 </div>
               </div>
@@ -767,6 +772,36 @@
           <section class="section task-group-section">
             <div class="task-group">
               <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:28SotoDatabaseMigrationService0bcD0V13MySQLSettingsV18afterConnectScriptSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/afterConnectScript" class="dashAnchor"></a>
+                    <a class="token" href="#/s:28SotoDatabaseMigrationService0bcD0V13MySQLSettingsV18afterConnectScriptSSSgvp">afterConnectScript</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Specifies a script to run immediately after AWS DMS connects to the endpoint. The migration task continues running regardless if the SQL statement succeeds or fails.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">afterConnectScript</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/DatabaseMigrationService/DatabaseMigrationService_Shapes.swift#L2726">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
                 <li class="item">
                   <div>
                     <code>
@@ -792,7 +827,97 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/DatabaseMigrationService/DatabaseMigrationService_Shapes.swift#L2645">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/DatabaseMigrationService/DatabaseMigrationService_Shapes.swift#L2728">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:28SotoDatabaseMigrationService0bcD0V13MySQLSettingsV18eventsPollIntervalSiSgvp"></a>
+                    <a name="//apple_ref/swift/Property/eventsPollInterval" class="dashAnchor"></a>
+                    <a class="token" href="#/s:28SotoDatabaseMigrationService0bcD0V13MySQLSettingsV18eventsPollIntervalSiSgvp">eventsPollInterval</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Specifies how often to check the binary log for new changes/events when the database is idle. Example: eventsPollInterval=5;  In the example, AWS DMS checks for changes in the binary logs every five seconds.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">eventsPollInterval</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/DatabaseMigrationService/DatabaseMigrationService_Shapes.swift#L2730">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:28SotoDatabaseMigrationService0bcD0V13MySQLSettingsV11maxFileSizeSiSgvp"></a>
+                    <a name="//apple_ref/swift/Property/maxFileSize" class="dashAnchor"></a>
+                    <a class="token" href="#/s:28SotoDatabaseMigrationService0bcD0V13MySQLSettingsV11maxFileSizeSiSgvp">maxFileSize</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Specifies the maximum size (in KB) of any .csv file used to transfer data to a MySQL-compatible database. Example: maxFileSize=512</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">maxFileSize</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/DatabaseMigrationService/DatabaseMigrationService_Shapes.swift#L2732">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:28SotoDatabaseMigrationService0bcD0V13MySQLSettingsV19parallelLoadThreadsSiSgvp"></a>
+                    <a name="//apple_ref/swift/Property/parallelLoadThreads" class="dashAnchor"></a>
+                    <a class="token" href="#/s:28SotoDatabaseMigrationService0bcD0V13MySQLSettingsV19parallelLoadThreadsSiSgvp">parallelLoadThreads</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Improves performance when loading data into the MySQLcompatible target database. Specifies how many threads to use to load the data into the MySQL-compatible target database. Setting a large number of threads can have an adverse effect on database performance, because a separate connection is required for each thread. Example: parallelLoadThreads=1</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">parallelLoadThreads</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/DatabaseMigrationService/DatabaseMigrationService_Shapes.swift#L2734">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -822,7 +947,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/DatabaseMigrationService/DatabaseMigrationService_Shapes.swift#L2647">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/DatabaseMigrationService/DatabaseMigrationService_Shapes.swift#L2736">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -852,7 +977,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/DatabaseMigrationService/DatabaseMigrationService_Shapes.swift#L2649">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/DatabaseMigrationService/DatabaseMigrationService_Shapes.swift#L2738">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -882,7 +1007,67 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/DatabaseMigrationService/DatabaseMigrationService_Shapes.swift#L2651">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/DatabaseMigrationService/DatabaseMigrationService_Shapes.swift#L2740">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:28SotoDatabaseMigrationService0bcD0V13MySQLSettingsV14serverTimezoneSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/serverTimezone" class="dashAnchor"></a>
+                    <a class="token" href="#/s:28SotoDatabaseMigrationService0bcD0V13MySQLSettingsV14serverTimezoneSSSgvp">serverTimezone</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Specifies the time zone for the source MySQL database. Example: serverTimezone=US/Pacific;  Note: Do not enclose time zones in single quotes.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">serverTimezone</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/DatabaseMigrationService/DatabaseMigrationService_Shapes.swift#L2742">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:28SotoDatabaseMigrationService0bcD0V13MySQLSettingsV12targetDbTypeAC06TargethI0OSgvp"></a>
+                    <a name="//apple_ref/swift/Property/targetDbType" class="dashAnchor"></a>
+                    <a class="token" href="#/s:28SotoDatabaseMigrationService0bcD0V13MySQLSettingsV12targetDbTypeAC06TargethI0OSgvp">targetDbType</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Specifies where to migrate source tables on the target, either to a single database or multiple databases. Example: targetDbType=MULTIPLE_DATABASES</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">targetDbType</span><span class="p">:</span> <span class="kt"><a href="../../Structs/DatabaseMigrationService/TargetDbType.html">TargetDbType</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/DatabaseMigrationService/DatabaseMigrationService_Shapes.swift#L2744">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -912,7 +1097,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/DatabaseMigrationService/DatabaseMigrationService_Shapes.swift#L2653">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/DatabaseMigrationService/DatabaseMigrationService_Shapes.swift#L2746">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -920,9 +1105,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:28SotoDatabaseMigrationService0bcD0V13MySQLSettingsV12databaseName8password4port06serverH08usernameAESSSg_AKSiSgA2Ktcfc"></a>
-                    <a name="//apple_ref/swift/Method/init(databaseName:password:port:serverName:username:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:28SotoDatabaseMigrationService0bcD0V13MySQLSettingsV12databaseName8password4port06serverH08usernameAESSSg_AKSiSgA2Ktcfc">init(databaseName:<wbr>password:<wbr>port:<wbr>serverName:<wbr>username:<wbr>)</a>
+                    <a name="/s:28SotoDatabaseMigrationService0bcD0V13MySQLSettingsV18afterConnectScript12databaseName18eventsPollInterval11maxFileSize19parallelLoadThreads8password4port06serverK00W8Timezone12targetDbType8usernameAESSSg_AQSiSgA2rqr2qC06TargetZ4TypeOSgAQtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(afterConnectScript:databaseName:eventsPollInterval:maxFileSize:parallelLoadThreads:password:port:serverName:serverTimezone:targetDbType:username:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:28SotoDatabaseMigrationService0bcD0V13MySQLSettingsV18afterConnectScript12databaseName18eventsPollInterval11maxFileSize19parallelLoadThreads8password4port06serverK00W8Timezone12targetDbType8usernameAESSSg_AQSiSgA2rqr2qC06TargetZ4TypeOSgAQtcfc">init(afterConnectScript:databaseName:eventsPollInterval:maxFileSize:parallelLoadThreads:password:port:serverName:serverTimezone:targetDbType:username:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -937,12 +1122,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">databaseName</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">password</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">port</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">serverName</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">username</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">afterConnectScript</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">databaseName</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">eventsPollInterval</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">maxFileSize</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">parallelLoadThreads</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">password</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">port</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">serverName</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">serverTimezone</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">targetDbType</span><span class="p">:</span> <span class="kt"><a href="../../Structs/DatabaseMigrationService/TargetDbType.html">TargetDbType</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">username</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/DatabaseMigrationService/DatabaseMigrationService_Shapes.swift#L2655-L2661">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/DatabaseMigrationService/DatabaseMigrationService_Shapes.swift#L2748-L2760">Show on GitHub</a>
                       </div>
                     </section>
                   </div>

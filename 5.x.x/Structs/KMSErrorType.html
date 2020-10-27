@@ -1,0 +1,1926 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>KMSErrorType Structure Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Struct/KMSErrorType" class="dashAnchor"></a>
+    <a title="KMSErrorType Structure Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html"> Docs</a> (56% documented)</p>
+        <p class="header-right"><a href="https://github.com/soto-project/soto"><img src="../img/gh.png"/>View on GitHub</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html"> Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        KMSErrorType Structure Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../SotoCore.html">SotoCore</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../ACM.html">ACM</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../ACMPCA.html">ACMPCA</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../APIGateway.html">APIGateway</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../AccessAnalyzer.html">AccessAnalyzer</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../AlexaForBusiness.html">AlexaForBusiness</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Amplify.html">Amplify</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../ApiGatewayManagementApi.html">ApiGatewayManagementApi</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../ApiGatewayV2.html">ApiGatewayV2</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../AppConfig.html">AppConfig</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../AppMesh.html">AppMesh</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../AppStream.html">AppStream</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../AppSync.html">AppSync</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Appflow.html">Appflow</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../ApplicationAutoScaling.html">ApplicationAutoScaling</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../ApplicationDiscoveryService.html">ApplicationDiscoveryService</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../ApplicationInsights.html">ApplicationInsights</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Athena.html">Athena</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../AugmentedAIRuntime.html">AugmentedAIRuntime</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../AutoScaling.html">AutoScaling</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../AutoScalingPlans.html">AutoScalingPlans</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Backup.html">Backup</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Batch.html">Batch</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Braket.html">Braket</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Budgets.html">Budgets</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Chime.html">Chime</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Cloud9.html">Cloud9</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../CloudDirectory.html">CloudDirectory</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../CloudFormation.html">CloudFormation</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../CloudFront.html">CloudFront</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../CloudHSM.html">CloudHSM</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../CloudHSMV2.html">CloudHSMV2</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../CloudSearch.html">CloudSearch</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../CloudSearchDomain.html">CloudSearchDomain</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../CloudTrail.html">CloudTrail</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../CloudWatch.html">CloudWatch</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../CloudWatchEvents.html">CloudWatchEvents</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../CloudWatchLogs.html">CloudWatchLogs</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../CodeArtifact.html">CodeArtifact</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../CodeBuild.html">CodeBuild</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../CodeCommit.html">CodeCommit</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../CodeDeploy.html">CodeDeploy</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../CodeGuruProfiler.html">CodeGuruProfiler</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../CodeGuruReviewer.html">CodeGuruReviewer</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../CodePipeline.html">CodePipeline</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../CodeStar.html">CodeStar</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../CodeStarNotifications.html">CodeStarNotifications</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../CodeStarconnections.html">CodeStarconnections</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../CognitoIdentity.html">CognitoIdentity</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../CognitoIdentityProvider.html">CognitoIdentityProvider</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../CognitoSync.html">CognitoSync</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Comprehend.html">Comprehend</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../ComprehendMedical.html">ComprehendMedical</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../ComputeOptimizer.html">ComputeOptimizer</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../ConfigService.html">ConfigService</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Connect.html">Connect</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../ConnectParticipant.html">ConnectParticipant</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../CostExplorer.html">CostExplorer</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../CostandUsageReportService.html">CostandUsageReportService</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../DAX.html">DAX</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../DLM.html">DLM</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../DataExchange.html">DataExchange</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../DataPipeline.html">DataPipeline</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../DataSync.html">DataSync</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../DatabaseMigrationService.html">DatabaseMigrationService</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Detective.html">Detective</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../DeviceFarm.html">DeviceFarm</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../DirectConnect.html">DirectConnect</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../DirectoryService.html">DirectoryService</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../DocDB.html">DocDB</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../DynamoDB.html">DynamoDB</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../DynamoDBStreams.html">DynamoDBStreams</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../EBS.html">EBS</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../EC2.html">EC2</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../EC2InstanceConnect.html">EC2InstanceConnect</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../ECR.html">ECR</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../ECS.html">ECS</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../EFS.html">EFS</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../EKS.html">EKS</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../EMR.html">EMR</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../ElastiCache.html">ElastiCache</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../ElasticBeanstalk.html">ElasticBeanstalk</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../ElasticInference.html">ElasticInference</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../ElasticLoadBalancing.html">ElasticLoadBalancing</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../ElasticLoadBalancingv2.html">ElasticLoadBalancingv2</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../ElasticTranscoder.html">ElasticTranscoder</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../ElasticsearchService.html">ElasticsearchService</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../EventBridge.html">EventBridge</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../FMS.html">FMS</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../FSx.html">FSx</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Firehose.html">Firehose</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../ForecastQueryService.html">ForecastQueryService</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../ForecastService.html">ForecastService</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../FraudDetector.html">FraudDetector</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../GameLift.html">GameLift</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Glacier.html">Glacier</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../GlobalAccelerator.html">GlobalAccelerator</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Glue.html">Glue</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Greengrass.html">Greengrass</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../GroundStation.html">GroundStation</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../GuardDuty.html">GuardDuty</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Health.html">Health</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Honeycode.html">Honeycode</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../IAM.html">IAM</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../IVS.html">IVS</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../IdentityStore.html">IdentityStore</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Imagebuilder.html">Imagebuilder</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../ImportExport.html">ImportExport</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Inspector.html">Inspector</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../IoT.html">IoT</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../IoT1ClickDevicesService.html">IoT1ClickDevicesService</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../IoT1ClickProjects.html">IoT1ClickProjects</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../IoTAnalytics.html">IoTAnalytics</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../IoTDataPlane.html">IoTDataPlane</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../IoTEvents.html">IoTEvents</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../IoTEventsData.html">IoTEventsData</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../IoTJobsDataPlane.html">IoTJobsDataPlane</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../IoTSecureTunneling.html">IoTSecureTunneling</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../IoTSiteWise.html">IoTSiteWise</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../IoTThingsGraph.html">IoTThingsGraph</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../KMS.html">KMS</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Kafka.html">Kafka</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Kendra.html">Kendra</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Kinesis.html">Kinesis</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../KinesisAnalytics.html">KinesisAnalytics</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../KinesisAnalyticsV2.html">KinesisAnalyticsV2</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../KinesisVideo.html">KinesisVideo</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../KinesisVideoArchivedMedia.html">KinesisVideoArchivedMedia</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../KinesisVideoMedia.html">KinesisVideoMedia</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../KinesisVideoSignalingChannels.html">KinesisVideoSignalingChannels</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../LakeFormation.html">LakeFormation</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Lambda.html">Lambda</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../LexModelBuildingService.html">LexModelBuildingService</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../LexRuntimeService.html">LexRuntimeService</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../LicenseManager.html">LicenseManager</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Lightsail.html">Lightsail</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../MQ.html">MQ</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../MTurk.html">MTurk</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../MachineLearning.html">MachineLearning</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Macie.html">Macie</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Macie2.html">Macie2</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../ManagedBlockchain.html">ManagedBlockchain</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../MarketplaceCatalog.html">MarketplaceCatalog</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../MarketplaceCommerceAnalytics.html">MarketplaceCommerceAnalytics</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../MarketplaceEntitlementService.html">MarketplaceEntitlementService</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../MarketplaceMetering.html">MarketplaceMetering</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../MediaConnect.html">MediaConnect</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../MediaConvert.html">MediaConvert</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../MediaLive.html">MediaLive</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../MediaPackage.html">MediaPackage</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../MediaPackageVod.html">MediaPackageVod</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../MediaStore.html">MediaStore</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../MediaStoreData.html">MediaStoreData</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../MediaTailor.html">MediaTailor</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../MigrationHub.html">MigrationHub</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../MigrationHubConfig.html">MigrationHubConfig</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Mobile.html">Mobile</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../MobileAnalytics.html">MobileAnalytics</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Neptune.html">Neptune</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../NetworkManager.html">NetworkManager</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../OpsWorks.html">OpsWorks</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../OpsWorksCM.html">OpsWorksCM</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Organizations.html">Organizations</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Outposts.html">Outposts</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../PI.html">PI</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Personalize.html">Personalize</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../PersonalizeEvents.html">PersonalizeEvents</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../PersonalizeRuntime.html">PersonalizeRuntime</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Pinpoint.html">Pinpoint</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../PinpointEmail.html">PinpointEmail</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../PinpointSMSVoice.html">PinpointSMSVoice</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Polly.html">Polly</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Pricing.html">Pricing</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../QLDB.html">QLDB</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../QLDBSession.html">QLDBSession</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../QuickSight.html">QuickSight</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../RAM.html">RAM</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../RDS.html">RDS</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../RDSDataService.html">RDSDataService</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Redshift.html">Redshift</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../RedshiftDataAPIService.html">RedshiftDataAPIService</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Rekognition.html">Rekognition</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../ResourceGroups.html">ResourceGroups</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../ResourceGroupsTaggingAPI.html">ResourceGroupsTaggingAPI</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../RoboMaker.html">RoboMaker</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Route53.html">Route53</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Route53Domains.html">Route53Domains</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Route53Resolver.html">Route53Resolver</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../S3.html">S3</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../S3Control.html">S3Control</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../S3Outposts.html">S3Outposts</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../SES.html">SES</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../SESV2.html">SESV2</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../SFN.html">SFN</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../SMS.html">SMS</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../SNS.html">SNS</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../SQS.html">SQS</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../SSM.html">SSM</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../SSO.html">SSO</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../SSOAdmin.html">SSOAdmin</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../SSOOIDC.html">SSOOIDC</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../STS.html">STS</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../SWF.html">SWF</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../SageMaker.html">SageMaker</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../SageMakerRuntime.html">SageMakerRuntime</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../SavingsPlans.html">SavingsPlans</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Schemas.html">Schemas</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../SecretsManager.html">SecretsManager</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../SecurityHub.html">SecurityHub</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../ServerlessApplicationRepository.html">ServerlessApplicationRepository</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../ServiceCatalog.html">ServiceCatalog</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../ServiceDiscovery.html">ServiceDiscovery</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../ServiceQuotas.html">ServiceQuotas</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Shield.html">Shield</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Signer.html">Signer</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../SimpleDB.html">SimpleDB</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Snowball.html">Snowball</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../StorageGateway.html">StorageGateway</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Support.html">Support</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Synthetics.html">Synthetics</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Textract.html">Textract</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../TimestreamQuery.html">TimestreamQuery</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../TimestreamWrite.html">TimestreamWrite</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../TranscribeService.html">TranscribeService</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../TranscribeStreamingService.html">TranscribeStreamingService</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Transfer.html">Transfer</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Translate.html">Translate</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../WAF.html">WAF</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../WAFRegional.html">WAFRegional</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../WAFV2.html">WAFV2</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../WorkDocs.html">WorkDocs</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../WorkLink.html">WorkLink</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../WorkMail.html">WorkMail</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../WorkMailMessageFlow.html">WorkMailMessageFlow</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../WorkSpaces.html">WorkSpaces</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../XRay.html">XRay</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Other%20Classes.html">Other Classes</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Other%20Enums.html">Other Enumerations</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Other%20Extensions.html">Other Extensions</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Other%20Protocols.html">Other Protocols</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Other%20Structs.html">Other Structures</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Other%20Typealiases.html">Other Type Aliases</a>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>KMSErrorType</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">KMSErrorType</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AWSErrorType.html">AWSErrorType</a></span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">KMSErrorType</span><span class="p">:</span> <span class="kt">Equatable</span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">KMSErrorType</span><span class="p">:</span> <span class="kt">CustomStringConvertible</span></code></pre>
+
+                </div>
+              </div>
+            <p>Error enum for KMS</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8SotoCore12AWSErrorTypeP7contextAA0C7ContextVSgvp"></a>
+                    <a name="//apple_ref/swift/Property/context" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8SotoCore12AWSErrorTypeP7contextAA0C7ContextVSgvp">context</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">context</span><span class="p">:</span> <span class="kt"><a href="../Structs/AWSErrorContext.html">AWSErrorContext</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/KMS/KMS_Error.swift#L24">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7SotoKMS12KMSErrorTypeV9errorCode7contextACSgSS_0A4Core15AWSErrorContextVtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(errorCode:context:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7SotoKMS12KMSErrorTypeV9errorCode7contextACSgSS_0A4Core15AWSErrorContextVtcfc">init(errorCode:context:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>initialize KMS</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">?(</span><span class="nv">errorCode</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">context</span><span class="p">:</span> <span class="kt"><a href="../Structs/AWSErrorContext.html">AWSErrorContext</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/KMS/KMS_Error.swift#L61-L65">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7SotoKMS12KMSErrorTypeV9errorCodeSSvp"></a>
+                    <a name="//apple_ref/swift/Property/errorCode" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7SotoKMS12KMSErrorTypeV9errorCodeSSvp">errorCode</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>return error code string</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">errorCode</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/KMS/KMS_Error.swift#L73">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7SotoKMS12KMSErrorTypeV22alreadyExistsExceptionACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/alreadyExistsException" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7SotoKMS12KMSErrorTypeV22alreadyExistsExceptionACvpZ">alreadyExistsException</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The request was rejected because it attempted to create a resource that already exists.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">alreadyExistsException</span><span class="p">:</span> <span class="p">`</span><span class="nv">Self</span><span class="p">`</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/KMS/KMS_Error.swift#L76">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7SotoKMS12KMSErrorTypeV29cloudHsmClusterInUseExceptionACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/cloudHsmClusterInUseException" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7SotoKMS12KMSErrorTypeV29cloudHsmClusterInUseExceptionACvpZ">cloudHsmClusterInUseException</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The request was rejected because the specified AWS CloudHSM cluster is already associated with a custom key store or it shares a backup history with a cluster that is associated with a custom key store. Each custom key store must be associated with a different AWS CloudHSM cluster. Clusters that share a backup history have the same cluster certificate. To view the cluster certificate of a cluster, use the DescribeClusters operation.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">cloudHsmClusterInUseException</span><span class="p">:</span> <span class="p">`</span><span class="nv">Self</span><span class="p">`</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/KMS/KMS_Error.swift#L78">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7SotoKMS12KMSErrorTypeV44cloudHsmClusterInvalidConfigurationExceptionACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/cloudHsmClusterInvalidConfigurationException" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7SotoKMS12KMSErrorTypeV44cloudHsmClusterInvalidConfigurationExceptionACvpZ">cloudHsmClusterInvalidConfigurationException</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The request was rejected because the associated AWS CloudHSM cluster did not meet the configuration requirements for a custom key store.   The cluster must be configured with private subnets in at least two different Availability Zones in the Region.   The security group for the cluster (cloudhsm-cluster-&lt;cluster-id&gt;-sg) must include inbound rules and outbound rules that allow TCP traffic on ports 2223-2225. The Source in the inbound rules and the Destination in the outbound rules must match the security group ID. These rules are set by default when you create the cluster. Do not delete or change them. To get information about a particular security group, use the DescribeSecurityGroups operation.   The cluster must contain at least as many HSMs as the operation requires. To add HSMs, use the AWS CloudHSM CreateHsm operation. For the CreateCustomKeyStore, UpdateCustomKeyStore, and CreateKey operations, the AWS CloudHSM cluster must have at least two active HSMs, each in a different Availability Zone. For the ConnectCustomKeyStore operation, the AWS CloudHSM must contain at least one active HSM.   For information about the requirements for an AWS CloudHSM cluster that is associated with a custom key store, see Assemble the Prerequisites in the AWS Key Management Service Developer Guide. For information about creating a private subnet for an AWS CloudHSM cluster, see Create a Private Subnet in the AWS CloudHSM User Guide. For information about cluster security groups, see Configure a Default Security Group in the  AWS CloudHSM User Guide .</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">cloudHsmClusterInvalidConfigurationException</span><span class="p">:</span> <span class="p">`</span><span class="nv">Self</span><span class="p">`</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/KMS/KMS_Error.swift#L80">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7SotoKMS12KMSErrorTypeV33cloudHsmClusterNotActiveExceptionACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/cloudHsmClusterNotActiveException" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7SotoKMS12KMSErrorTypeV33cloudHsmClusterNotActiveExceptionACvpZ">cloudHsmClusterNotActiveException</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The request was rejected because the AWS CloudHSM cluster that is associated with the custom key store is not active. Initialize and activate the cluster and try the command again. For detailed instructions, see Getting Started in the AWS CloudHSM User Guide.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">cloudHsmClusterNotActiveException</span><span class="p">:</span> <span class="p">`</span><span class="nv">Self</span><span class="p">`</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/KMS/KMS_Error.swift#L82">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7SotoKMS12KMSErrorTypeV32cloudHsmClusterNotFoundExceptionACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/cloudHsmClusterNotFoundException" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7SotoKMS12KMSErrorTypeV32cloudHsmClusterNotFoundExceptionACvpZ">cloudHsmClusterNotFoundException</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The request was rejected because AWS KMS cannot find the AWS CloudHSM cluster with the specified cluster ID. Retry the request with a different cluster ID.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">cloudHsmClusterNotFoundException</span><span class="p">:</span> <span class="p">`</span><span class="nv">Self</span><span class="p">`</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/KMS/KMS_Error.swift#L84">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7SotoKMS12KMSErrorTypeV34cloudHsmClusterNotRelatedExceptionACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/cloudHsmClusterNotRelatedException" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7SotoKMS12KMSErrorTypeV34cloudHsmClusterNotRelatedExceptionACvpZ">cloudHsmClusterNotRelatedException</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The request was rejected because the specified AWS CloudHSM cluster has a different cluster certificate than the original cluster. You cannot use the operation to specify an unrelated cluster. Specify a cluster that shares a backup history with the original cluster. This includes clusters that were created from a backup of the current cluster, and clusters that were created from the same backup that produced the current cluster. Clusters that share a backup history have the same cluster certificate. To view the cluster certificate of a cluster, use the DescribeClusters operation.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">cloudHsmClusterNotRelatedException</span><span class="p">:</span> <span class="p">`</span><span class="nv">Self</span><span class="p">`</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/KMS/KMS_Error.swift#L86">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7SotoKMS12KMSErrorTypeV30customKeyStoreHasCMKsExceptionACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/customKeyStoreHasCMKsException" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7SotoKMS12KMSErrorTypeV30customKeyStoreHasCMKsExceptionACvpZ">customKeyStoreHasCMKsException</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The request was rejected because the custom key store contains AWS KMS customer master keys (CMKs). After verifying that you do not need to use the CMKs, use the ScheduleKeyDeletion operation to delete the CMKs. After they are deleted, you can delete the custom key store.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">customKeyStoreHasCMKsException</span><span class="p">:</span> <span class="p">`</span><span class="nv">Self</span><span class="p">`</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/KMS/KMS_Error.swift#L88">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7SotoKMS12KMSErrorTypeV35customKeyStoreInvalidStateExceptionACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/customKeyStoreInvalidStateException" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7SotoKMS12KMSErrorTypeV35customKeyStoreInvalidStateExceptionACvpZ">customKeyStoreInvalidStateException</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The request was rejected because of the ConnectionState of the custom key store. To get the ConnectionState of a custom key store, use the DescribeCustomKeyStores operation. This exception is thrown under the following conditions:   You requested the CreateKey or GenerateRandom operation in a custom key store that is not connected. These operations are valid only when the custom key store ConnectionState is CONNECTED.   You requested the UpdateCustomKeyStore or DeleteCustomKeyStore operation on a custom key store that is not disconnected. This operation is valid only when the custom key store ConnectionState is DISCONNECTED.   You requested the ConnectCustomKeyStore operation on a custom key store with a ConnectionState of DISCONNECTING or FAILED. This operation is valid for all other ConnectionState values.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">customKeyStoreInvalidStateException</span><span class="p">:</span> <span class="p">`</span><span class="nv">Self</span><span class="p">`</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/KMS/KMS_Error.swift#L90">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7SotoKMS12KMSErrorTypeV32customKeyStoreNameInUseExceptionACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/customKeyStoreNameInUseException" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7SotoKMS12KMSErrorTypeV32customKeyStoreNameInUseExceptionACvpZ">customKeyStoreNameInUseException</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The request was rejected because the specified custom key store name is already assigned to another custom key store in the account. Try again with a custom key store name that is unique in the account.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">customKeyStoreNameInUseException</span><span class="p">:</span> <span class="p">`</span><span class="nv">Self</span><span class="p">`</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/KMS/KMS_Error.swift#L92">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7SotoKMS12KMSErrorTypeV31customKeyStoreNotFoundExceptionACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/customKeyStoreNotFoundException" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7SotoKMS12KMSErrorTypeV31customKeyStoreNotFoundExceptionACvpZ">customKeyStoreNotFoundException</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The request was rejected because AWS KMS cannot find a custom key store with the specified key store name or ID.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">customKeyStoreNotFoundException</span><span class="p">:</span> <span class="p">`</span><span class="nv">Self</span><span class="p">`</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/KMS/KMS_Error.swift#L94">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7SotoKMS12KMSErrorTypeV26dependencyTimeoutExceptionACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/dependencyTimeoutException" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7SotoKMS12KMSErrorTypeV26dependencyTimeoutExceptionACvpZ">dependencyTimeoutException</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The system timed out while trying to fulfill the request. The request can be retried.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">dependencyTimeoutException</span><span class="p">:</span> <span class="p">`</span><span class="nv">Self</span><span class="p">`</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/KMS/KMS_Error.swift#L96">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7SotoKMS12KMSErrorTypeV17disabledExceptionACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/disabledException" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7SotoKMS12KMSErrorTypeV17disabledExceptionACvpZ">disabledException</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The request was rejected because the specified CMK is not enabled.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">disabledException</span><span class="p">:</span> <span class="p">`</span><span class="nv">Self</span><span class="p">`</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/KMS/KMS_Error.swift#L98">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7SotoKMS12KMSErrorTypeV27expiredImportTokenExceptionACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/expiredImportTokenException" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7SotoKMS12KMSErrorTypeV27expiredImportTokenExceptionACvpZ">expiredImportTokenException</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The request was rejected because the specified import token is expired. Use GetParametersForImport to get a new import token and public key, use the new public key to encrypt the key material, and then try the request again.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">expiredImportTokenException</span><span class="p">:</span> <span class="p">`</span><span class="nv">Self</span><span class="p">`</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/KMS/KMS_Error.swift#L100">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7SotoKMS12KMSErrorTypeV21incorrectKeyExceptionACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/incorrectKeyException" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7SotoKMS12KMSErrorTypeV21incorrectKeyExceptionACvpZ">incorrectKeyException</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The request was rejected because the specified CMK cannot decrypt the data. The KeyId in a Decrypt request and the SourceKeyId in a ReEncrypt request must identify the same CMK that was used to encrypt the ciphertext.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">incorrectKeyException</span><span class="p">:</span> <span class="p">`</span><span class="nv">Self</span><span class="p">`</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/KMS/KMS_Error.swift#L102">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7SotoKMS12KMSErrorTypeV29incorrectKeyMaterialExceptionACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/incorrectKeyMaterialException" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7SotoKMS12KMSErrorTypeV29incorrectKeyMaterialExceptionACvpZ">incorrectKeyMaterialException</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The request was rejected because the key material in the request is, expired, invalid, or is not the same key material that was previously imported into this customer master key (CMK).</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">incorrectKeyMaterialException</span><span class="p">:</span> <span class="p">`</span><span class="nv">Self</span><span class="p">`</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/KMS/KMS_Error.swift#L104">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7SotoKMS12KMSErrorTypeV29incorrectTrustAnchorExceptionACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/incorrectTrustAnchorException" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7SotoKMS12KMSErrorTypeV29incorrectTrustAnchorExceptionACvpZ">incorrectTrustAnchorException</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The request was rejected because the trust anchor certificate in the request is not the trust anchor certificate for the specified AWS CloudHSM cluster. When you initialize the cluster, you create the trust anchor certificate and save it in the customerCA.crt file.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">incorrectTrustAnchorException</span><span class="p">:</span> <span class="p">`</span><span class="nv">Self</span><span class="p">`</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/KMS/KMS_Error.swift#L106">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7SotoKMS12KMSErrorTypeV25invalidAliasNameExceptionACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/invalidAliasNameException" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7SotoKMS12KMSErrorTypeV25invalidAliasNameExceptionACvpZ">invalidAliasNameException</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The request was rejected because the specified alias name is not valid.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">invalidAliasNameException</span><span class="p">:</span> <span class="p">`</span><span class="nv">Self</span><span class="p">`</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/KMS/KMS_Error.swift#L108">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7SotoKMS12KMSErrorTypeV19invalidArnExceptionACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/invalidArnException" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7SotoKMS12KMSErrorTypeV19invalidArnExceptionACvpZ">invalidArnException</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The request was rejected because a specified ARN, or an ARN in a key policy, is not valid.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">invalidArnException</span><span class="p">:</span> <span class="p">`</span><span class="nv">Self</span><span class="p">`</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/KMS/KMS_Error.swift#L110">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7SotoKMS12KMSErrorTypeV26invalidCiphertextExceptionACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/invalidCiphertextException" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7SotoKMS12KMSErrorTypeV26invalidCiphertextExceptionACvpZ">invalidCiphertextException</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>From the Decrypt or ReEncrypt operation, the request was rejected because the specified ciphertext, or additional authenticated data incorporated into the ciphertext, such as the encryption context, is corrupted, missing, or otherwise invalid. From the ImportKeyMaterial operation, the request was rejected because AWS KMS could not decrypt the encrypted (wrapped) key material.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">invalidCiphertextException</span><span class="p">:</span> <span class="p">`</span><span class="nv">Self</span><span class="p">`</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/KMS/KMS_Error.swift#L112">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7SotoKMS12KMSErrorTypeV23invalidGrantIdExceptionACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/invalidGrantIdException" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7SotoKMS12KMSErrorTypeV23invalidGrantIdExceptionACvpZ">invalidGrantIdException</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The request was rejected because the specified GrantId is not valid.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">invalidGrantIdException</span><span class="p">:</span> <span class="p">`</span><span class="nv">Self</span><span class="p">`</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/KMS/KMS_Error.swift#L114">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7SotoKMS12KMSErrorTypeV26invalidGrantTokenExceptionACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/invalidGrantTokenException" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7SotoKMS12KMSErrorTypeV26invalidGrantTokenExceptionACvpZ">invalidGrantTokenException</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The request was rejected because the specified grant token is not valid.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">invalidGrantTokenException</span><span class="p">:</span> <span class="p">`</span><span class="nv">Self</span><span class="p">`</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/KMS/KMS_Error.swift#L116">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7SotoKMS12KMSErrorTypeV27invalidImportTokenExceptionACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/invalidImportTokenException" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7SotoKMS12KMSErrorTypeV27invalidImportTokenExceptionACvpZ">invalidImportTokenException</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The request was rejected because the provided import token is invalid or is associated with a different customer master key (CMK).</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">invalidImportTokenException</span><span class="p">:</span> <span class="p">`</span><span class="nv">Self</span><span class="p">`</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/KMS/KMS_Error.swift#L118">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7SotoKMS12KMSErrorTypeV24invalidKeyUsageExceptionACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/invalidKeyUsageException" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7SotoKMS12KMSErrorTypeV24invalidKeyUsageExceptionACvpZ">invalidKeyUsageException</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The request was rejected for one of the following reasons:    The KeyUsage value of the CMK is incompatible with the API operation.   The encryption algorithm or signing algorithm specified for the operation is incompatible with the type of key material in the CMK (CustomerMasterKeySpec).   For encrypting, decrypting, re-encrypting, and generating data keys, the KeyUsage must be ENCRYPT_DECRYPT. For signing and verifying, the KeyUsage must be SIGN_VERIFY. To find the KeyUsage of a CMK, use the DescribeKey operation. To find the encryption or signing algorithms supported for a particular CMK, use the DescribeKey operation.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">invalidKeyUsageException</span><span class="p">:</span> <span class="p">`</span><span class="nv">Self</span><span class="p">`</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/KMS/KMS_Error.swift#L120">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7SotoKMS12KMSErrorTypeV22invalidMarkerExceptionACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/invalidMarkerException" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7SotoKMS12KMSErrorTypeV22invalidMarkerExceptionACvpZ">invalidMarkerException</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The request was rejected because the marker that specifies where pagination should next begin is not valid.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">invalidMarkerException</span><span class="p">:</span> <span class="p">`</span><span class="nv">Self</span><span class="p">`</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/KMS/KMS_Error.swift#L122">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7SotoKMS12KMSErrorTypeV20kMSInternalExceptionACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/kMSInternalException" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7SotoKMS12KMSErrorTypeV20kMSInternalExceptionACvpZ">kMSInternalException</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The request was rejected because an internal exception occurred. The request can be retried.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">kMSInternalException</span><span class="p">:</span> <span class="p">`</span><span class="nv">Self</span><span class="p">`</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/KMS/KMS_Error.swift#L124">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7SotoKMS12KMSErrorTypeV28kMSInvalidSignatureExceptionACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/kMSInvalidSignatureException" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7SotoKMS12KMSErrorTypeV28kMSInvalidSignatureExceptionACvpZ">kMSInvalidSignatureException</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The request was rejected because the signature verification failed. Signature verification fails when it cannot confirm that signature was produced by signing the specified message with the specified CMK and signing algorithm.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">kMSInvalidSignatureException</span><span class="p">:</span> <span class="p">`</span><span class="nv">Self</span><span class="p">`</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/KMS/KMS_Error.swift#L126">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7SotoKMS12KMSErrorTypeV24kMSInvalidStateExceptionACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/kMSInvalidStateException" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7SotoKMS12KMSErrorTypeV24kMSInvalidStateExceptionACvpZ">kMSInvalidStateException</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The request was rejected because the state of the specified resource is not valid for this request. For more information about how key state affects the use of a CMK, see How Key State Affects Use of a Customer Master Key in the  AWS Key Management Service Developer Guide .</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">kMSInvalidStateException</span><span class="p">:</span> <span class="p">`</span><span class="nv">Self</span><span class="p">`</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/KMS/KMS_Error.swift#L128">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7SotoKMS12KMSErrorTypeV23keyUnavailableExceptionACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/keyUnavailableException" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7SotoKMS12KMSErrorTypeV23keyUnavailableExceptionACvpZ">keyUnavailableException</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The request was rejected because the specified CMK was not available. You can retry the request.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">keyUnavailableException</span><span class="p">:</span> <span class="p">`</span><span class="nv">Self</span><span class="p">`</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/KMS/KMS_Error.swift#L130">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7SotoKMS12KMSErrorTypeV22limitExceededExceptionACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/limitExceededException" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7SotoKMS12KMSErrorTypeV22limitExceededExceptionACvpZ">limitExceededException</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The request was rejected because a quota was exceeded. For more information, see Quotas in the AWS Key Management Service Developer Guide.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">limitExceededException</span><span class="p">:</span> <span class="p">`</span><span class="nv">Self</span><span class="p">`</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/KMS/KMS_Error.swift#L132">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7SotoKMS12KMSErrorTypeV32malformedPolicyDocumentExceptionACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/malformedPolicyDocumentException" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7SotoKMS12KMSErrorTypeV32malformedPolicyDocumentExceptionACvpZ">malformedPolicyDocumentException</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The request was rejected because the specified policy is not syntactically or semantically correct.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">malformedPolicyDocumentException</span><span class="p">:</span> <span class="p">`</span><span class="nv">Self</span><span class="p">`</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/KMS/KMS_Error.swift#L134">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7SotoKMS12KMSErrorTypeV17notFoundExceptionACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/notFoundException" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7SotoKMS12KMSErrorTypeV17notFoundExceptionACvpZ">notFoundException</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The request was rejected because the specified entity or resource could not be found.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">notFoundException</span><span class="p">:</span> <span class="p">`</span><span class="nv">Self</span><span class="p">`</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/KMS/KMS_Error.swift#L136">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7SotoKMS12KMSErrorTypeV12tagExceptionACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/tagException" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7SotoKMS12KMSErrorTypeV12tagExceptionACvpZ">tagException</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The request was rejected because one or more tags are not valid.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">tagException</span><span class="p">:</span> <span class="p">`</span><span class="nv">Self</span><span class="p">`</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/KMS/KMS_Error.swift#L138">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7SotoKMS12KMSErrorTypeV29unsupportedOperationExceptionACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/unsupportedOperationException" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7SotoKMS12KMSErrorTypeV29unsupportedOperationExceptionACvpZ">unsupportedOperationException</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The request was rejected because a specified parameter is not supported or a specified resource is not valid for this operation.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">unsupportedOperationException</span><span class="p">:</span> <span class="p">`</span><span class="nv">Self</span><span class="p">`</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/KMS/KMS_Error.swift#L140">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:SQ2eeoiySbx_xtFZ"></a>
+                    <a name="//apple_ref/swift/Method/==(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:SQ2eeoiySbx_xtFZ">==(_:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="o">==</span> <span class="p">(</span><span class="nv">lhs</span><span class="p">:</span> <span class="kt">KMSErrorType</span><span class="p">,</span> <span class="nv">rhs</span><span class="p">:</span> <span class="kt">KMSErrorType</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/KMS/KMS_Error.swift#L144-L146">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:s23CustomStringConvertibleP11descriptionSSvp"></a>
+                    <a name="//apple_ref/swift/Property/description" class="dashAnchor"></a>
+                    <a class="token" href="#/s:s23CustomStringConvertibleP11descriptionSSvp">description</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">description</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/KMS/KMS_Error.swift#L150-L152">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>© Copyright (c) 2020 Yuki Takei(noppoMan), Joe Smith(Yasumoto), Jonathan McAllister(jonnymacs), Adam Fowler(adam-fowler), Fabian Fett(fabianfett)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

@@ -14,7 +14,7 @@
     <a title="User Structure Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../../index.html"> Docs</a> (54% documented)</p>
+        <p><a href="../../index.html"> Docs</a> (56% documented)</p>
         <p class="header-right"><a href="https://github.com/soto-project/soto"><img src="../../img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
@@ -29,10 +29,7 @@
       <nav class="sidebar">
         <ul class="nav-groups">
           <li class="nav-group-name">
-            <a href="../../User%20Guides.html">User Guides</a>
-          </li>
-          <li class="nav-group-name">
-            <a href="../../AWSSDKSwiftCore.html">AWSSDKSwiftCore</a>
+            <a href="../../SotoCore.html">SotoCore</a>
           </li>
           <li class="nav-group-name">
             <a href="../../ACM.html">ACM</a>
@@ -269,12 +266,6 @@
             <a href="../../EKS.html">EKS</a>
           </li>
           <li class="nav-group-name">
-            <a href="../../ELB.html">ELB</a>
-          </li>
-          <li class="nav-group-name">
-            <a href="../../ELBV2.html">ELBV2</a>
-          </li>
-          <li class="nav-group-name">
             <a href="../../EMR.html">EMR</a>
           </li>
           <li class="nav-group-name">
@@ -285,6 +276,12 @@
           </li>
           <li class="nav-group-name">
             <a href="../../ElasticInference.html">ElasticInference</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../ElasticLoadBalancing.html">ElasticLoadBalancing</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../ElasticLoadBalancingv2.html">ElasticLoadBalancingv2</a>
           </li>
           <li class="nav-group-name">
             <a href="../../ElasticTranscoder.html">ElasticTranscoder</a>
@@ -602,6 +599,9 @@
             <a href="../../S3Control.html">S3Control</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../S3Outposts.html">S3Outposts</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../SES.html">SES</a>
           </li>
           <li class="nav-group-name">
@@ -692,6 +692,12 @@
             <a href="../../Textract.html">Textract</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../TimestreamQuery.html">TimestreamQuery</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../TimestreamWrite.html">TimestreamWrite</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../TranscribeService.html">TranscribeService</a>
           </li>
           <li class="nav-group-name">
@@ -756,8 +762,7 @@
             <h1>User</h1>
               <div class="declaration">
                 <div class="language">
-                  
-                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">User</span> <span class="p">:</span> <span class="kt"><a href="../../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">User</span> <span class="p">:</span> <span class="kt"><a href="../../SotoCore.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                 </div>
               </div>
@@ -860,9 +865,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9SotoChime0B0V4UserV9invitedOn0A4Core9TimeStampVSgvp"></a>
+                    <a name="/s:9SotoChime0B0V4UserV9invitedOn10Foundation4DateVSgvp"></a>
                     <a name="//apple_ref/swift/Property/invitedOn" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9SotoChime0B0V4UserV9invitedOn0A4Core9TimeStampVSgvp">invitedOn</a>
+                    <a class="token" href="#/s:9SotoChime0B0V4UserV9invitedOn10Foundation4DateVSgvp">invitedOn</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -877,8 +882,8 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@OptionalCoding</span>
-<span class="o">&lt;</span><span class="kt"><a href="../../Structs/ISO8601TimeStampCoder.html">ISO8601TimeStampCoder</a></span><span class="o">&gt;</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">invitedOn</span><span class="p">:</span> <span class="kt"><a href="../../Structs/TimeStamp.html">TimeStamp</a></span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">@OptionalCustomCoding</span>
+<span class="o">&lt;</span><span class="kt"><a href="../../Structs/ISO8601DateCoder.html">ISO8601DateCoder</a></span><span class="o">&gt;</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">invitedOn</span><span class="p">:</span> <span class="kt">Date</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
@@ -1011,9 +1016,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9SotoChime0B0V4UserV12registeredOn0A4Core9TimeStampVSgvp"></a>
+                    <a name="/s:9SotoChime0B0V4UserV12registeredOn10Foundation4DateVSgvp"></a>
                     <a name="//apple_ref/swift/Property/registeredOn" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9SotoChime0B0V4UserV12registeredOn0A4Core9TimeStampVSgvp">registeredOn</a>
+                    <a class="token" href="#/s:9SotoChime0B0V4UserV12registeredOn10Foundation4DateVSgvp">registeredOn</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1028,8 +1033,8 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@OptionalCoding</span>
-<span class="o">&lt;</span><span class="kt"><a href="../../Structs/ISO8601TimeStampCoder.html">ISO8601TimeStampCoder</a></span><span class="o">&gt;</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">registeredOn</span><span class="p">:</span> <span class="kt"><a href="../../Structs/TimeStamp.html">TimeStamp</a></span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">@OptionalCustomCoding</span>
+<span class="o">&lt;</span><span class="kt"><a href="../../Structs/ISO8601DateCoder.html">ISO8601DateCoder</a></span><span class="o">&gt;</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">registeredOn</span><span class="p">:</span> <span class="kt">Date</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
@@ -1162,9 +1167,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9SotoChime0B0V4UserV9accountId24alexaForBusinessMetadata11displayName9invitedOn11licenseType11personalPIN12primaryEmail0R17ProvisionedNumber010registeredM004userE00W16InvitationStatus0w12RegistrationY00wO0AESSSg_AC05AlexaghI0VSgAS0A4Core9TimeStampVSgAC7LicenseOSgA3sZSSAC06InviteY0OSgAC0zY0OSgAC0cO0OSgtcfc"></a>
+                    <a name="/s:9SotoChime0B0V4UserV9accountId24alexaForBusinessMetadata11displayName9invitedOn11licenseType11personalPIN12primaryEmail0R17ProvisionedNumber010registeredM004userE00W16InvitationStatus0w12RegistrationY00wO0AESSSg_AC05AlexaghI0VSgAS10Foundation4DateVSgAC7LicenseOSgA3sZSSAC06InviteY0OSgAC0zY0OSgAC0cO0OSgtcfc"></a>
                     <a name="//apple_ref/swift/Method/init(accountId:alexaForBusinessMetadata:displayName:invitedOn:licenseType:personalPIN:primaryEmail:primaryProvisionedNumber:registeredOn:userId:userInvitationStatus:userRegistrationStatus:userType:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9SotoChime0B0V4UserV9accountId24alexaForBusinessMetadata11displayName9invitedOn11licenseType11personalPIN12primaryEmail0R17ProvisionedNumber010registeredM004userE00W16InvitationStatus0w12RegistrationY00wO0AESSSg_AC05AlexaghI0VSgAS0A4Core9TimeStampVSgAC7LicenseOSgA3sZSSAC06InviteY0OSgAC0zY0OSgAC0cO0OSgtcfc">init(accountId:<wbr>alexaForBusinessMetadata:<wbr>displayName:<wbr>invitedOn:<wbr>licenseType:<wbr>personalPIN:<wbr>primaryEmail:<wbr>primaryProvisionedNumber:<wbr>registeredOn:<wbr>userId:<wbr>userInvitationStatus:<wbr>userRegistrationStatus:<wbr>userType:<wbr>)</a>
+                    <a class="token" href="#/s:9SotoChime0B0V4UserV9accountId24alexaForBusinessMetadata11displayName9invitedOn11licenseType11personalPIN12primaryEmail0R17ProvisionedNumber010registeredM004userE00W16InvitationStatus0w12RegistrationY00wO0AESSSg_AC05AlexaghI0VSgAS10Foundation4DateVSgAC7LicenseOSgA3sZSSAC06InviteY0OSgAC0zY0OSgAC0cO0OSgtcfc">init(accountId:alexaForBusinessMetadata:displayName:invitedOn:licenseType:personalPIN:primaryEmail:primaryProvisionedNumber:registeredOn:userId:userInvitationStatus:userRegistrationStatus:userType:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1179,7 +1184,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">accountId</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">alexaForBusinessMetadata</span><span class="p">:</span> <span class="kt"><a href="../../Structs/Chime/AlexaForBusinessMetadata.html">AlexaForBusinessMetadata</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">displayName</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">invitedOn</span><span class="p">:</span> <span class="kt"><a href="../../Structs/TimeStamp.html">TimeStamp</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">licenseType</span><span class="p">:</span> <span class="kt"><a href="../../Structs/Chime/License.html">License</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">personalPIN</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">primaryEmail</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">primaryProvisionedNumber</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">registeredOn</span><span class="p">:</span> <span class="kt"><a href="../../Structs/TimeStamp.html">TimeStamp</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">userId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">userInvitationStatus</span><span class="p">:</span> <span class="kt"><a href="../../Structs/Chime/InviteStatus.html">InviteStatus</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">userRegistrationStatus</span><span class="p">:</span> <span class="kt"><a href="../../Structs/Chime/RegistrationStatus.html">RegistrationStatus</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">userType</span><span class="p">:</span> <span class="kt"><a href="../../Structs/Chime/UserType.html">UserType</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">accountId</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">alexaForBusinessMetadata</span><span class="p">:</span> <span class="kt"><a href="../../Structs/Chime/AlexaForBusinessMetadata.html">AlexaForBusinessMetadata</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">displayName</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">invitedOn</span><span class="p">:</span> <span class="kt">Date</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">licenseType</span><span class="p">:</span> <span class="kt"><a href="../../Structs/Chime/License.html">License</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">personalPIN</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">primaryEmail</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">primaryProvisionedNumber</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">registeredOn</span><span class="p">:</span> <span class="kt">Date</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">userId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">userInvitationStatus</span><span class="p">:</span> <span class="kt"><a href="../../Structs/Chime/InviteStatus.html">InviteStatus</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">userRegistrationStatus</span><span class="p">:</span> <span class="kt"><a href="../../Structs/Chime/RegistrationStatus.html">RegistrationStatus</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">userType</span><span class="p">:</span> <span class="kt"><a href="../../Structs/Chime/UserType.html">UserType</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>

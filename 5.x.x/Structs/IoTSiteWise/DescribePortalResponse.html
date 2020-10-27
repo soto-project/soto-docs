@@ -14,7 +14,7 @@
     <a title="DescribePortalResponse Structure Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../../index.html"> Docs</a> (54% documented)</p>
+        <p><a href="../../index.html"> Docs</a> (56% documented)</p>
         <p class="header-right"><a href="https://github.com/soto-project/soto"><img src="../../img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
@@ -29,10 +29,7 @@
       <nav class="sidebar">
         <ul class="nav-groups">
           <li class="nav-group-name">
-            <a href="../../User%20Guides.html">User Guides</a>
-          </li>
-          <li class="nav-group-name">
-            <a href="../../AWSSDKSwiftCore.html">AWSSDKSwiftCore</a>
+            <a href="../../SotoCore.html">SotoCore</a>
           </li>
           <li class="nav-group-name">
             <a href="../../ACM.html">ACM</a>
@@ -269,12 +266,6 @@
             <a href="../../EKS.html">EKS</a>
           </li>
           <li class="nav-group-name">
-            <a href="../../ELB.html">ELB</a>
-          </li>
-          <li class="nav-group-name">
-            <a href="../../ELBV2.html">ELBV2</a>
-          </li>
-          <li class="nav-group-name">
             <a href="../../EMR.html">EMR</a>
           </li>
           <li class="nav-group-name">
@@ -285,6 +276,12 @@
           </li>
           <li class="nav-group-name">
             <a href="../../ElasticInference.html">ElasticInference</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../ElasticLoadBalancing.html">ElasticLoadBalancing</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../ElasticLoadBalancingv2.html">ElasticLoadBalancingv2</a>
           </li>
           <li class="nav-group-name">
             <a href="../../ElasticTranscoder.html">ElasticTranscoder</a>
@@ -602,6 +599,9 @@
             <a href="../../S3Control.html">S3Control</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../S3Outposts.html">S3Outposts</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../SES.html">SES</a>
           </li>
           <li class="nav-group-name">
@@ -692,6 +692,12 @@
             <a href="../../Textract.html">Textract</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../TimestreamQuery.html">TimestreamQuery</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../TimestreamWrite.html">TimestreamWrite</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../TranscribeService.html">TranscribeService</a>
           </li>
           <li class="nav-group-name">
@@ -756,8 +762,7 @@
             <h1>DescribePortalResponse</h1>
               <div class="declaration">
                 <div class="language">
-                  
-                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DescribePortalResponse</span> <span class="p">:</span> <span class="kt"><a href="../../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DescribePortalResponse</span> <span class="p">:</span> <span class="kt"><a href="../../SotoCore.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                 </div>
               </div>
@@ -792,7 +797,37 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/IoTSiteWise/IoTSiteWise_Shapes.swift#L2091">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/IoTSiteWise/IoTSiteWise_Shapes.swift#L2142">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:15SotoIoTSiteWise0bcD0V22DescribePortalResponseV14portalAuthModeAC0iJ0OSgvp"></a>
+                    <a name="//apple_ref/swift/Property/portalAuthMode" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15SotoIoTSiteWise0bcD0V22DescribePortalResponseV14portalAuthModeAC0iJ0OSgvp">portalAuthMode</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The service to use to authenticate users to the portal.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">portalAuthMode</span><span class="p">:</span> <span class="kt"><a href="../../Structs/IoTSiteWise/AuthMode.html">AuthMode</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/IoTSiteWise/IoTSiteWise_Shapes.swift#L2144">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -810,7 +845,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The AWS SSO application generated client ID (used with AWS SSO APIs).</p>
+                        <p>The AWS SSO application generated client ID (used with AWS SSO APIs). AWS IoT SiteWise includes portalClientId for only portals that use AWS SSO to authenticate users.</p>
 
                       </div>
                       <div class="declaration">
@@ -822,7 +857,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/IoTSiteWise/IoTSiteWise_Shapes.swift#L2093">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/IoTSiteWise/IoTSiteWise_Shapes.swift#L2146">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -852,7 +887,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/IoTSiteWise/IoTSiteWise_Shapes.swift#L2095">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/IoTSiteWise/IoTSiteWise_Shapes.swift#L2148">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -860,9 +895,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:15SotoIoTSiteWise0bcD0V22DescribePortalResponseV18portalCreationDate0A4Core9TimeStampVvp"></a>
+                    <a name="/s:15SotoIoTSiteWise0bcD0V22DescribePortalResponseV18portalCreationDate10Foundation0J0Vvp"></a>
                     <a name="//apple_ref/swift/Property/portalCreationDate" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15SotoIoTSiteWise0bcD0V22DescribePortalResponseV18portalCreationDate0A4Core9TimeStampVvp">portalCreationDate</a>
+                    <a class="token" href="#/s:15SotoIoTSiteWise0bcD0V22DescribePortalResponseV18portalCreationDate10Foundation0J0Vvp">portalCreationDate</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -877,12 +912,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">portalCreationDate</span><span class="p">:</span> <span class="kt"><a href="../../Structs/TimeStamp.html">TimeStamp</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">portalCreationDate</span><span class="p">:</span> <span class="kt">Date</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/IoTSiteWise/IoTSiteWise_Shapes.swift#L2097">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/IoTSiteWise/IoTSiteWise_Shapes.swift#L2150">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -912,7 +947,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/IoTSiteWise/IoTSiteWise_Shapes.swift#L2099">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/IoTSiteWise/IoTSiteWise_Shapes.swift#L2152">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -942,7 +977,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/IoTSiteWise/IoTSiteWise_Shapes.swift#L2101">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/IoTSiteWise/IoTSiteWise_Shapes.swift#L2154">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -950,9 +985,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:15SotoIoTSiteWise0bcD0V22DescribePortalResponseV20portalLastUpdateDate0A4Core9TimeStampVvp"></a>
+                    <a name="/s:15SotoIoTSiteWise0bcD0V22DescribePortalResponseV20portalLastUpdateDate10Foundation0K0Vvp"></a>
                     <a name="//apple_ref/swift/Property/portalLastUpdateDate" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15SotoIoTSiteWise0bcD0V22DescribePortalResponseV20portalLastUpdateDate0A4Core9TimeStampVvp">portalLastUpdateDate</a>
+                    <a class="token" href="#/s:15SotoIoTSiteWise0bcD0V22DescribePortalResponseV20portalLastUpdateDate10Foundation0K0Vvp">portalLastUpdateDate</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -967,12 +1002,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">portalLastUpdateDate</span><span class="p">:</span> <span class="kt"><a href="../../Structs/TimeStamp.html">TimeStamp</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">portalLastUpdateDate</span><span class="p">:</span> <span class="kt">Date</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/IoTSiteWise/IoTSiteWise_Shapes.swift#L2103">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/IoTSiteWise/IoTSiteWise_Shapes.swift#L2156">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1002,7 +1037,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/IoTSiteWise/IoTSiteWise_Shapes.swift#L2105">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/IoTSiteWise/IoTSiteWise_Shapes.swift#L2158">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1032,7 +1067,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/IoTSiteWise/IoTSiteWise_Shapes.swift#L2107">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/IoTSiteWise/IoTSiteWise_Shapes.swift#L2160">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1050,7 +1085,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The public root URL for the AWS IoT AWS IoT SiteWise Monitor application portal.</p>
+                        <p>The URL for the AWS IoT SiteWise Monitor portal. You can use this URL to access portals that use AWS SSO for authentication. For portals that use IAM for authentication, you must use the CreatePresignedPortalUrl operation to create a URL that you can use to access the portal.</p>
 
                       </div>
                       <div class="declaration">
@@ -1062,7 +1097,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/IoTSiteWise/IoTSiteWise_Shapes.swift#L2109">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/IoTSiteWise/IoTSiteWise_Shapes.swift#L2162">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1092,7 +1127,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/IoTSiteWise/IoTSiteWise_Shapes.swift#L2111">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/IoTSiteWise/IoTSiteWise_Shapes.swift#L2164">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1122,7 +1157,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/IoTSiteWise/IoTSiteWise_Shapes.swift#L2113">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/IoTSiteWise/IoTSiteWise_Shapes.swift#L2166">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1130,9 +1165,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:15SotoIoTSiteWise0bcD0V22DescribePortalResponseV9portalArn0H8ClientId0H12ContactEmail0H12CreationDate0H11Description0hK00h10LastUpdateO00H17LogoImageLocation0H4Name0H8StartUrl0H6Status04roleI0AESS_S2S0A4Core9TimeStampVSSSgSSAtC0tU0VSgS2SAC0fY0VAUtcfc"></a>
-                    <a name="//apple_ref/swift/Method/init(portalArn:portalClientId:portalContactEmail:portalCreationDate:portalDescription:portalId:portalLastUpdateDate:portalLogoImageLocation:portalName:portalStartUrl:portalStatus:roleArn:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15SotoIoTSiteWise0bcD0V22DescribePortalResponseV9portalArn0H8ClientId0H12ContactEmail0H12CreationDate0H11Description0hK00h10LastUpdateO00H17LogoImageLocation0H4Name0H8StartUrl0H6Status04roleI0AESS_S2S0A4Core9TimeStampVSSSgSSAtC0tU0VSgS2SAC0fY0VAUtcfc">init(portalArn:<wbr>portalClientId:<wbr>portalContactEmail:<wbr>portalCreationDate:<wbr>portalDescription:<wbr>portalId:<wbr>portalLastUpdateDate:<wbr>portalLogoImageLocation:<wbr>portalName:<wbr>portalStartUrl:<wbr>portalStatus:<wbr>roleArn:<wbr>)</a>
+                    <a name="/s:15SotoIoTSiteWise0bcD0V22DescribePortalResponseV9portalArn0H8AuthMode0H8ClientId0H12ContactEmail0H12CreationDate0H11Description0hM00h10LastUpdateQ00H17LogoImageLocation0H4Name0H8StartUrl0H6Status04roleI0AESS_AC0jK0OSgS2S10Foundation0Q0VSSSgSSAxC0vW0VSgS2SAC0F6StatusVAYtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(portalArn:portalAuthMode:portalClientId:portalContactEmail:portalCreationDate:portalDescription:portalId:portalLastUpdateDate:portalLogoImageLocation:portalName:portalStartUrl:portalStatus:roleArn:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15SotoIoTSiteWise0bcD0V22DescribePortalResponseV9portalArn0H8AuthMode0H8ClientId0H12ContactEmail0H12CreationDate0H11Description0hM00h10LastUpdateQ00H17LogoImageLocation0H4Name0H8StartUrl0H6Status04roleI0AESS_AC0jK0OSgS2S10Foundation0Q0VSSSgSSAxC0vW0VSgS2SAC0F6StatusVAYtcfc">init(portalArn:portalAuthMode:portalClientId:portalContactEmail:portalCreationDate:portalDescription:portalId:portalLastUpdateDate:portalLogoImageLocation:portalName:portalStartUrl:portalStatus:roleArn:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1147,12 +1182,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">portalArn</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">portalClientId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">portalContactEmail</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">portalCreationDate</span><span class="p">:</span> <span class="kt"><a href="../../Structs/TimeStamp.html">TimeStamp</a></span><span class="p">,</span> <span class="nv">portalDescription</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">portalId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">portalLastUpdateDate</span><span class="p">:</span> <span class="kt"><a href="../../Structs/TimeStamp.html">TimeStamp</a></span><span class="p">,</span> <span class="nv">portalLogoImageLocation</span><span class="p">:</span> <span class="kt"><a href="../../Structs/IoTSiteWise/ImageLocation.html">ImageLocation</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">portalName</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">portalStartUrl</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">portalStatus</span><span class="p">:</span> <span class="kt"><a href="../../Structs/IoTSiteWise/PortalStatus.html">PortalStatus</a></span><span class="p">,</span> <span class="nv">roleArn</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">portalArn</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">portalAuthMode</span><span class="p">:</span> <span class="kt"><a href="../../Structs/IoTSiteWise/AuthMode.html">AuthMode</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">portalClientId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">portalContactEmail</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">portalCreationDate</span><span class="p">:</span> <span class="kt">Date</span><span class="p">,</span> <span class="nv">portalDescription</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">portalId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">portalLastUpdateDate</span><span class="p">:</span> <span class="kt">Date</span><span class="p">,</span> <span class="nv">portalLogoImageLocation</span><span class="p">:</span> <span class="kt"><a href="../../Structs/IoTSiteWise/ImageLocation.html">ImageLocation</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">portalName</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">portalStartUrl</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">portalStatus</span><span class="p">:</span> <span class="kt"><a href="../../Structs/IoTSiteWise/PortalStatus.html">PortalStatus</a></span><span class="p">,</span> <span class="nv">roleArn</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/IoTSiteWise/IoTSiteWise_Shapes.swift#L2115-L2128">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/IoTSiteWise/IoTSiteWise_Shapes.swift#L2168-L2182">Show on GitHub</a>
                       </div>
                     </section>
                   </div>

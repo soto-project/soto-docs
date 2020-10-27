@@ -14,7 +14,7 @@
     <a title="Node Structure Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../../index.html"> Docs</a> (54% documented)</p>
+        <p><a href="../../index.html"> Docs</a> (56% documented)</p>
         <p class="header-right"><a href="https://github.com/soto-project/soto"><img src="../../img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
@@ -29,10 +29,7 @@
       <nav class="sidebar">
         <ul class="nav-groups">
           <li class="nav-group-name">
-            <a href="../../User%20Guides.html">User Guides</a>
-          </li>
-          <li class="nav-group-name">
-            <a href="../../AWSSDKSwiftCore.html">AWSSDKSwiftCore</a>
+            <a href="../../SotoCore.html">SotoCore</a>
           </li>
           <li class="nav-group-name">
             <a href="../../ACM.html">ACM</a>
@@ -269,12 +266,6 @@
             <a href="../../EKS.html">EKS</a>
           </li>
           <li class="nav-group-name">
-            <a href="../../ELB.html">ELB</a>
-          </li>
-          <li class="nav-group-name">
-            <a href="../../ELBV2.html">ELBV2</a>
-          </li>
-          <li class="nav-group-name">
             <a href="../../EMR.html">EMR</a>
           </li>
           <li class="nav-group-name">
@@ -285,6 +276,12 @@
           </li>
           <li class="nav-group-name">
             <a href="../../ElasticInference.html">ElasticInference</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../ElasticLoadBalancing.html">ElasticLoadBalancing</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../ElasticLoadBalancingv2.html">ElasticLoadBalancingv2</a>
           </li>
           <li class="nav-group-name">
             <a href="../../ElasticTranscoder.html">ElasticTranscoder</a>
@@ -602,6 +599,9 @@
             <a href="../../S3Control.html">S3Control</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../S3Outposts.html">S3Outposts</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../SES.html">SES</a>
           </li>
           <li class="nav-group-name">
@@ -692,6 +692,12 @@
             <a href="../../Textract.html">Textract</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../TimestreamQuery.html">TimestreamQuery</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../TimestreamWrite.html">TimestreamWrite</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../TranscribeService.html">TranscribeService</a>
           </li>
           <li class="nav-group-name">
@@ -756,8 +762,7 @@
             <h1>Node</h1>
               <div class="declaration">
                 <div class="language">
-                  
-                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Node</span> <span class="p">:</span> <span class="kt"><a href="../../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Node</span> <span class="p">:</span> <span class="kt"><a href="../../SotoCore.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                 </div>
               </div>
@@ -792,7 +797,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ManagedBlockchain/ManagedBlockchain_Shapes.swift#L1312">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ManagedBlockchain/ManagedBlockchain_Shapes.swift#L1319">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -800,9 +805,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:21SotoManagedBlockchain0bC0V4NodeV12creationDate0A4Core9TimeStampVSgvp"></a>
+                    <a name="/s:21SotoManagedBlockchain0bC0V4NodeV12creationDate10Foundation0F0VSgvp"></a>
                     <a name="//apple_ref/swift/Property/creationDate" class="dashAnchor"></a>
-                    <a class="token" href="#/s:21SotoManagedBlockchain0bC0V4NodeV12creationDate0A4Core9TimeStampVSgvp">creationDate</a>
+                    <a class="token" href="#/s:21SotoManagedBlockchain0bC0V4NodeV12creationDate10Foundation0F0VSgvp">creationDate</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -817,13 +822,13 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@OptionalCoding</span>
-<span class="o">&lt;</span><span class="kt"><a href="../../Structs/ISO8601TimeStampCoder.html">ISO8601TimeStampCoder</a></span><span class="o">&gt;</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">creationDate</span><span class="p">:</span> <span class="kt"><a href="../../Structs/TimeStamp.html">TimeStamp</a></span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">@OptionalCustomCoding</span>
+<span class="o">&lt;</span><span class="kt"><a href="../../Structs/ISO8601DateCoder.html">ISO8601DateCoder</a></span><span class="o">&gt;</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">creationDate</span><span class="p">:</span> <span class="kt">Date</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ManagedBlockchain/ManagedBlockchain_Shapes.swift#L1315">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ManagedBlockchain/ManagedBlockchain_Shapes.swift#L1322">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -853,7 +858,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ManagedBlockchain/ManagedBlockchain_Shapes.swift#L1317">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ManagedBlockchain/ManagedBlockchain_Shapes.swift#L1324">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -883,7 +888,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ManagedBlockchain/ManagedBlockchain_Shapes.swift#L1319">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ManagedBlockchain/ManagedBlockchain_Shapes.swift#L1326">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -913,7 +918,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ManagedBlockchain/ManagedBlockchain_Shapes.swift#L1321">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ManagedBlockchain/ManagedBlockchain_Shapes.swift#L1328">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -931,7 +936,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Configuration properties for logging events associated with a peer node owned by a member in a Managed Blockchain network.</p>
 
                       </div>
                       <div class="declaration">
@@ -943,7 +948,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ManagedBlockchain/ManagedBlockchain_Shapes.swift#L">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ManagedBlockchain/ManagedBlockchain_Shapes.swift#L1330">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -973,7 +978,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ManagedBlockchain/ManagedBlockchain_Shapes.swift#L1324">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ManagedBlockchain/ManagedBlockchain_Shapes.swift#L1332">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1003,7 +1008,37 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ManagedBlockchain/ManagedBlockchain_Shapes.swift#L1326">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ManagedBlockchain/ManagedBlockchain_Shapes.swift#L1334">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21SotoManagedBlockchain0bC0V4NodeV7stateDBAC11StateDBTypeOSgvp"></a>
+                    <a name="//apple_ref/swift/Property/stateDB" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21SotoManagedBlockchain0bC0V4NodeV7stateDBAC11StateDBTypeOSgvp">stateDB</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The state database that the node uses. Values are LevelDB or CouchDB.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">stateDB</span><span class="p">:</span> <span class="kt"><a href="../../Structs/ManagedBlockchain/StateDBType.html">StateDBType</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ManagedBlockchain/ManagedBlockchain_Shapes.swift#L1336">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1033,7 +1068,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ManagedBlockchain/ManagedBlockchain_Shapes.swift#L1328">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ManagedBlockchain/ManagedBlockchain_Shapes.swift#L1338">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1041,9 +1076,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:21SotoManagedBlockchain0bC0V4NodeV16availabilityZone12creationDate19frameworkAttributes2id12instanceType26logPublishingConfiguration8memberId07networkR06statusAESSSg_0A4Core9TimeStampVSgAC0d9FrameworkJ0VSgA2oC0d3LogoP0VSgA2oC0D6StatusOSgtcfc"></a>
-                    <a name="//apple_ref/swift/Method/init(availabilityZone:creationDate:frameworkAttributes:id:instanceType:logPublishingConfiguration:memberId:networkId:status:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:21SotoManagedBlockchain0bC0V4NodeV16availabilityZone12creationDate19frameworkAttributes2id12instanceType26logPublishingConfiguration8memberId07networkR06statusAESSSg_0A4Core9TimeStampVSgAC0d9FrameworkJ0VSgA2oC0d3LogoP0VSgA2oC0D6StatusOSgtcfc">init(availabilityZone:<wbr>creationDate:<wbr>frameworkAttributes:<wbr>id:<wbr>instanceType:<wbr>logPublishingConfiguration:<wbr>memberId:<wbr>networkId:<wbr>status:<wbr>)</a>
+                    <a name="/s:21SotoManagedBlockchain0bC0V4NodeV16availabilityZone12creationDate19frameworkAttributes2id12instanceType26logPublishingConfiguration8memberId07networkR07stateDB6statusAESSSg_10Foundation0H0VSgAC0d9FrameworkJ0VSgA2pC0d3LogoP0VSgA2pC11StateDBTypeOSgAC0D6StatusOSgtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(availabilityZone:creationDate:frameworkAttributes:id:instanceType:logPublishingConfiguration:memberId:networkId:stateDB:status:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21SotoManagedBlockchain0bC0V4NodeV16availabilityZone12creationDate19frameworkAttributes2id12instanceType26logPublishingConfiguration8memberId07networkR07stateDB6statusAESSSg_10Foundation0H0VSgAC0d9FrameworkJ0VSgA2pC0d3LogoP0VSgA2pC11StateDBTypeOSgAC0D6StatusOSgtcfc">init(availabilityZone:creationDate:frameworkAttributes:id:instanceType:logPublishingConfiguration:memberId:networkId:stateDB:status:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1058,12 +1093,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">availabilityZone</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">creationDate</span><span class="p">:</span> <span class="kt"><a href="../../Structs/TimeStamp.html">TimeStamp</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">frameworkAttributes</span><span class="p">:</span> <span class="kt"><a href="../../Structs/ManagedBlockchain/NodeFrameworkAttributes.html">NodeFrameworkAttributes</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">id</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">instanceType</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">logPublishingConfiguration</span><span class="p">:</span> <span class="kt"><a href="../../Structs/ManagedBlockchain/NodeLogPublishingConfiguration.html">NodeLogPublishingConfiguration</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">memberId</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">networkId</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">status</span><span class="p">:</span> <span class="kt"><a href="../../Structs/ManagedBlockchain/NodeStatus.html">NodeStatus</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">availabilityZone</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">creationDate</span><span class="p">:</span> <span class="kt">Date</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">frameworkAttributes</span><span class="p">:</span> <span class="kt"><a href="../../Structs/ManagedBlockchain/NodeFrameworkAttributes.html">NodeFrameworkAttributes</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">id</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">instanceType</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">logPublishingConfiguration</span><span class="p">:</span> <span class="kt"><a href="../../Structs/ManagedBlockchain/NodeLogPublishingConfiguration.html">NodeLogPublishingConfiguration</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">memberId</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">networkId</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">stateDB</span><span class="p">:</span> <span class="kt"><a href="../../Structs/ManagedBlockchain/StateDBType.html">StateDBType</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">status</span><span class="p">:</span> <span class="kt"><a href="../../Structs/ManagedBlockchain/NodeStatus.html">NodeStatus</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ManagedBlockchain/ManagedBlockchain_Shapes.swift#L1330-L1340">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/ManagedBlockchain/ManagedBlockchain_Shapes.swift#L1340-L1351">Show on GitHub</a>
                       </div>
                     </section>
                   </div>

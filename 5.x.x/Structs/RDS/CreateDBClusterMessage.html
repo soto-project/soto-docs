@@ -14,7 +14,7 @@
     <a title="CreateDBClusterMessage Structure Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../../index.html"> Docs</a> (54% documented)</p>
+        <p><a href="../../index.html"> Docs</a> (56% documented)</p>
         <p class="header-right"><a href="https://github.com/soto-project/soto"><img src="../../img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
@@ -29,10 +29,7 @@
       <nav class="sidebar">
         <ul class="nav-groups">
           <li class="nav-group-name">
-            <a href="../../User%20Guides.html">User Guides</a>
-          </li>
-          <li class="nav-group-name">
-            <a href="../../AWSSDKSwiftCore.html">AWSSDKSwiftCore</a>
+            <a href="../../SotoCore.html">SotoCore</a>
           </li>
           <li class="nav-group-name">
             <a href="../../ACM.html">ACM</a>
@@ -269,12 +266,6 @@
             <a href="../../EKS.html">EKS</a>
           </li>
           <li class="nav-group-name">
-            <a href="../../ELB.html">ELB</a>
-          </li>
-          <li class="nav-group-name">
-            <a href="../../ELBV2.html">ELBV2</a>
-          </li>
-          <li class="nav-group-name">
             <a href="../../EMR.html">EMR</a>
           </li>
           <li class="nav-group-name">
@@ -285,6 +276,12 @@
           </li>
           <li class="nav-group-name">
             <a href="../../ElasticInference.html">ElasticInference</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../ElasticLoadBalancing.html">ElasticLoadBalancing</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../ElasticLoadBalancingv2.html">ElasticLoadBalancingv2</a>
           </li>
           <li class="nav-group-name">
             <a href="../../ElasticTranscoder.html">ElasticTranscoder</a>
@@ -602,6 +599,9 @@
             <a href="../../S3Control.html">S3Control</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../S3Outposts.html">S3Outposts</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../SES.html">SES</a>
           </li>
           <li class="nav-group-name">
@@ -692,6 +692,12 @@
             <a href="../../Textract.html">Textract</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../TimestreamQuery.html">TimestreamQuery</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../TimestreamWrite.html">TimestreamWrite</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../TranscribeService.html">TranscribeService</a>
           </li>
           <li class="nav-group-name">
@@ -756,7 +762,6 @@
             <h1>CreateDBClusterMessage</h1>
               <div class="declaration">
                 <div class="language">
-                  
                   <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">CreateDBClusterMessage</span> <span class="p">:</span> <span class="kt"><a href="../../Protocols/AWSEncodableShape.html">AWSEncodableShape</a></span></code></pre>
 
                 </div>
@@ -880,7 +885,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@OptionalCoding</span>
+                          <pre class="highlight swift"><code><span class="kd">@OptionalCustomCoding</span>
 <span class="o">&lt;</span><span class="kt"><a href="../../Structs/ArrayCoder.html">ArrayCoder</a></span><span class="o">&lt;</span><span class="kt"><a href="../../Structs/RDS.html">RDS</a></span><span class="o">.</span><span class="kt">CreateDBClusterMessage</span><span class="o">.</span><span class="n"><a href="../../Structs/RDS/CreateDBClusterMessage/_AvailabilityZonesEncoding.html">_AvailabilityZonesEncoding</a></span><span class="p">,</span> <span class="kt">String</span><span class="o">&gt;&gt;</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">availabilityZones</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
 
                         </div>
@@ -1234,15 +1239,15 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The list of log types that need to be enabled for exporting to CloudWatch Logs. The values in the list depend on the DB engine being used. For more information, see Publishing Database Logs to Amazon CloudWatch Logs in the Amazon Aurora User Guide.</p>
+                        <p>The list of log types that need to be enabled for exporting to CloudWatch Logs. The values in the list depend on the DB engine being used. For more information, see Publishing Database Logs to Amazon CloudWatch Logs in the Amazon Aurora User Guide.  Aurora MySQL  Possible values are audit, error, general, and slowquery.   Aurora PostgreSQL  Possible values are postgresql and upgrade.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@OptionalCoding</span>
-<span class="o">&lt;</span><span class="kt"><a href="../../Other%20Typealiases.html#/s:8SotoCore17DefaultArrayCodera">DefaultArrayCoder</a></span><span class="o">&gt;</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">enableCloudwatchLogsExports</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">@OptionalCustomCoding</span>
+<span class="o">&lt;</span><span class="kt"><a href="../../Other%20Typealiases.html#/s:8SotoCore18StandardArrayCodera">StandardArrayCoder</a></span><span class="o">&gt;</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">enableCloudwatchLogsExports</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
@@ -1385,7 +1390,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The DB engine mode of the DB cluster, either provisioned, serverless, parallelquery, global, or multimaster.   global engine mode only applies for global database clusters created with Aurora MySQL version 5.6.10a. For higher Aurora MySQL versions, the clusters in a global database use provisioned engine mode.   Limitations and requirements apply to some DB engine modes. For more information, see the following sections in the Amazon Aurora User Guide:     Limitations of Aurora Serverless      Limitations of Parallel Query      Requirements for Aurora Global Databases      Limitations of Multi-Master Clusters</p>
+                        <p>The DB engine mode of the DB cluster, either provisioned serverless, parallelquery, global, or multimaster. The parallelquery engine mode isn&rsquo;t required for Aurora MySQL version 1.23 and higher 1.x versions, and version 2.09 and higher 2.x versions. The global engine mode isn&rsquo;t required for Aurora MySQL version 1.22 and higher 1.x versions, and global engine mode isn&rsquo;t required for any 2.x versions. The multimaster engine mode only applies for DB clusters created with Aurora MySQL version 5.6.10a. For Aurora PostgreSQL, the global engine mode isn&rsquo;t required, and both the parallelquery and the multimaster engine modes currently aren&rsquo;t supported. Limitations and requirements apply to some DB engine modes. For more information, see the following sections in the Amazon Aurora User Guide:     Limitations of Aurora Serverless      Limitations of Parallel Query      Limitations of Aurora Global Databases      Limitations of Multi-Master Clusters</p>
 
                       </div>
                       <div class="declaration">
@@ -1812,7 +1817,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@OptionalCoding</span>
+                          <pre class="highlight swift"><code><span class="kd">@OptionalCustomCoding</span>
 <span class="o">&lt;</span><span class="kt"><a href="../../Structs/ArrayCoder.html">ArrayCoder</a></span><span class="o">&lt;</span><span class="kt"><a href="../../Structs/RDS.html">RDS</a></span><span class="o">.</span><span class="kt">CreateDBClusterMessage</span><span class="o">.</span><span class="n"><a href="../../Structs/RDS/CreateDBClusterMessage/_TagsEncoding.html">_TagsEncoding</a></span><span class="p">,</span> <span class="kt"><a href="../../Structs/RDS.html">RDS</a></span><span class="o">.</span><span class="kt"><a href="../../Structs/RDS/Tag.html">Tag</a></span><span class="o">&gt;&gt;</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">tags</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../../Structs/RDS/Tag.html">Tag</a></span><span class="p">]?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
 
                         </div>
@@ -1843,7 +1848,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@OptionalCoding</span>
+                          <pre class="highlight swift"><code><span class="kd">@OptionalCustomCoding</span>
 <span class="o">&lt;</span><span class="kt"><a href="../../Structs/ArrayCoder.html">ArrayCoder</a></span><span class="o">&lt;</span><span class="kt"><a href="../../Structs/RDS.html">RDS</a></span><span class="o">.</span><span class="kt">CreateDBClusterMessage</span><span class="o">.</span><span class="n"><a href="../../Structs/RDS/CreateDBClusterMessage/_VpcSecurityGroupIdsEncoding.html">_VpcSecurityGroupIdsEncoding</a></span><span class="p">,</span> <span class="kt">String</span><span class="o">&gt;&gt;</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">vpcSecurityGroupIds</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
 
                         </div>
@@ -1859,7 +1864,7 @@
                     <code>
                     <a name="/s:7SotoRDS0B0V22CreateDBClusterMessageV17availabilityZones15backtrackWindow21backupRetentionPeriod16characterSetName18copyTagsToSnapshot08databaseO019dBClusterIdentifier01du14ParameterGroupO008dBSubnetxO018deletionProtection6domain013domainIAMRoleO027enableCloudwatchLogsExports27enableGlobalWriteForwarding18enableHttpEndpoint31enableIAMDatabaseAuthentication6engine10engineMode13engineVersion013globalClusterV08kmsKeyId14masterUsername18masterUserPassword06optionxO04port015preferredBackupI0020preferredMaintenanceI012preSignedUrl017replicationSourceV020scalingConfiguration16storageEncrypted4tags011vpcSecurityX3IdsAESaySSGSg_s5Int64VSgSiSgSSSgSbSgA17_SSA17_A17_A18_A17_A17_A12_A18_A18_A18_SSA17_A17_A17_A17_A17_A17_A17_A16_A17_A17_A17_A17_AC20ScalingConfigurationVSgA18_SayAC3TagVGSgA12_tcfc"></a>
                     <a name="//apple_ref/swift/Method/init(availabilityZones:backtrackWindow:backupRetentionPeriod:characterSetName:copyTagsToSnapshot:databaseName:dBClusterIdentifier:dBClusterParameterGroupName:dBSubnetGroupName:deletionProtection:domain:domainIAMRoleName:enableCloudwatchLogsExports:enableGlobalWriteForwarding:enableHttpEndpoint:enableIAMDatabaseAuthentication:engine:engineMode:engineVersion:globalClusterIdentifier:kmsKeyId:masterUsername:masterUserPassword:optionGroupName:port:preferredBackupWindow:preferredMaintenanceWindow:preSignedUrl:replicationSourceIdentifier:scalingConfiguration:storageEncrypted:tags:vpcSecurityGroupIds:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:7SotoRDS0B0V22CreateDBClusterMessageV17availabilityZones15backtrackWindow21backupRetentionPeriod16characterSetName18copyTagsToSnapshot08databaseO019dBClusterIdentifier01du14ParameterGroupO008dBSubnetxO018deletionProtection6domain013domainIAMRoleO027enableCloudwatchLogsExports27enableGlobalWriteForwarding18enableHttpEndpoint31enableIAMDatabaseAuthentication6engine10engineMode13engineVersion013globalClusterV08kmsKeyId14masterUsername18masterUserPassword06optionxO04port015preferredBackupI0020preferredMaintenanceI012preSignedUrl017replicationSourceV020scalingConfiguration16storageEncrypted4tags011vpcSecurityX3IdsAESaySSGSg_s5Int64VSgSiSgSSSgSbSgA17_SSA17_A17_A18_A17_A17_A12_A18_A18_A18_SSA17_A17_A17_A17_A17_A17_A17_A16_A17_A17_A17_A17_AC20ScalingConfigurationVSgA18_SayAC3TagVGSgA12_tcfc">init(availabilityZones:<wbr>backtrackWindow:<wbr>backupRetentionPeriod:<wbr>characterSetName:<wbr>copyTagsToSnapshot:<wbr>databaseName:<wbr>dBClusterIdentifier:<wbr>dBClusterParameterGroupName:<wbr>dBSubnetGroupName:<wbr>deletionProtection:<wbr>domain:<wbr>domainIAMRoleName:<wbr>enableCloudwatchLogsExports:<wbr>enableGlobalWriteForwarding:<wbr>enableHttpEndpoint:<wbr>enableIAMDatabaseAuthentication:<wbr>engine:<wbr>engineMode:<wbr>engineVersion:<wbr>globalClusterIdentifier:<wbr>kmsKeyId:<wbr>masterUsername:<wbr>masterUserPassword:<wbr>optionGroupName:<wbr>port:<wbr>preferredBackupWindow:<wbr>preferredMaintenanceWindow:<wbr>preSignedUrl:<wbr>replicationSourceIdentifier:<wbr>scalingConfiguration:<wbr>storageEncrypted:<wbr>tags:<wbr>vpcSecurityGroupIds:<wbr>)</a>
+                    <a class="token" href="#/s:7SotoRDS0B0V22CreateDBClusterMessageV17availabilityZones15backtrackWindow21backupRetentionPeriod16characterSetName18copyTagsToSnapshot08databaseO019dBClusterIdentifier01du14ParameterGroupO008dBSubnetxO018deletionProtection6domain013domainIAMRoleO027enableCloudwatchLogsExports27enableGlobalWriteForwarding18enableHttpEndpoint31enableIAMDatabaseAuthentication6engine10engineMode13engineVersion013globalClusterV08kmsKeyId14masterUsername18masterUserPassword06optionxO04port015preferredBackupI0020preferredMaintenanceI012preSignedUrl017replicationSourceV020scalingConfiguration16storageEncrypted4tags011vpcSecurityX3IdsAESaySSGSg_s5Int64VSgSiSgSSSgSbSgA17_SSA17_A17_A18_A17_A17_A12_A18_A18_A18_SSA17_A17_A17_A17_A17_A17_A17_A16_A17_A17_A17_A17_AC20ScalingConfigurationVSgA18_SayAC3TagVGSgA12_tcfc">init(availabilityZones:backtrackWindow:backupRetentionPeriod:characterSetName:copyTagsToSnapshot:databaseName:dBClusterIdentifier:dBClusterParameterGroupName:dBSubnetGroupName:deletionProtection:domain:domainIAMRoleName:enableCloudwatchLogsExports:enableGlobalWriteForwarding:enableHttpEndpoint:enableIAMDatabaseAuthentication:engine:engineMode:engineVersion:globalClusterIdentifier:kmsKeyId:masterUsername:masterUserPassword:optionGroupName:port:preferredBackupWindow:preferredMaintenanceWindow:preSignedUrl:replicationSourceIdentifier:scalingConfiguration:storageEncrypted:tags:vpcSecurityGroupIds:)</a>
                     </code>
                   </div>
                   <div class="height-container">

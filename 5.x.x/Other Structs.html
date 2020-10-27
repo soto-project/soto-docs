@@ -14,7 +14,7 @@
     <a title="Other Structures  Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="index.html"> Docs</a> (54% documented)</p>
+        <p><a href="index.html"> Docs</a> (56% documented)</p>
         <p class="header-right"><a href="https://github.com/soto-project/soto"><img src="img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
@@ -29,10 +29,7 @@
       <nav class="sidebar">
         <ul class="nav-groups">
           <li class="nav-group-name">
-            <a href="User%20Guides.html">User Guides</a>
-          </li>
-          <li class="nav-group-name">
-            <a href="AWSSDKSwiftCore.html">AWSSDKSwiftCore</a>
+            <a href="SotoCore.html">SotoCore</a>
           </li>
           <li class="nav-group-name">
             <a href="ACM.html">ACM</a>
@@ -269,12 +266,6 @@
             <a href="EKS.html">EKS</a>
           </li>
           <li class="nav-group-name">
-            <a href="ELB.html">ELB</a>
-          </li>
-          <li class="nav-group-name">
-            <a href="ELBV2.html">ELBV2</a>
-          </li>
-          <li class="nav-group-name">
             <a href="EMR.html">EMR</a>
           </li>
           <li class="nav-group-name">
@@ -285,6 +276,12 @@
           </li>
           <li class="nav-group-name">
             <a href="ElasticInference.html">ElasticInference</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="ElasticLoadBalancing.html">ElasticLoadBalancing</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="ElasticLoadBalancingv2.html">ElasticLoadBalancingv2</a>
           </li>
           <li class="nav-group-name">
             <a href="ElasticTranscoder.html">ElasticTranscoder</a>
@@ -602,6 +599,9 @@
             <a href="S3Control.html">S3Control</a>
           </li>
           <li class="nav-group-name">
+            <a href="S3Outposts.html">S3Outposts</a>
+          </li>
+          <li class="nav-group-name">
             <a href="SES.html">SES</a>
           </li>
           <li class="nav-group-name">
@@ -692,6 +692,12 @@
             <a href="Textract.html">Textract</a>
           </li>
           <li class="nav-group-name">
+            <a href="TimestreamQuery.html">TimestreamQuery</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="TimestreamWrite.html">TimestreamWrite</a>
+          </li>
+          <li class="nav-group-name">
             <a href="TranscribeService.html">TranscribeService</a>
           </li>
           <li class="nav-group-name">
@@ -763,9 +769,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:8SotoCore9TimeStampV"></a>
-                    <a name="//apple_ref/swift/Struct/TimeStamp" class="dashAnchor"></a>
-                    <a class="token" href="#/s:8SotoCore9TimeStampV">TimeStamp</a>
+                    <a name="/s:8SotoCore25CredentialProviderFactoryV"></a>
+                    <a name="//apple_ref/swift/Struct/CredentialProviderFactory" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8SotoCore25CredentialProviderFactoryV">CredentialProviderFactory</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -773,21 +779,20 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Time stamp object that can encoded to ISO8601 format and decoded from ISO8601, HTTP date format and UNIX epoch seconds</p>
+                        <p>A helper struct to defer the creation of a <code><a href="Protocols/CredentialProvider.html">CredentialProvider</a></code> until after the AWSClient has been created.</p>
 
-                        <a href="Structs/TimeStamp.html" class="slightly-smaller">See more</a>
+                        <a href="Structs/CredentialProviderFactory.html" class="slightly-smaller">See more</a>
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">TimeStamp</span></code></pre>
-<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">TimeStamp</span><span class="p">:</span> <span class="kt">Codable</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">CredentialProviderFactory</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/.build/checkouts/soto-core/Sources/SotoCore/AWSShapes/TimeStamp.swift#L21-L85">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/.build/checkouts/soto-core/Sources/SotoCore/Credential/CredentialProvider.swift#L35-L55">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -912,38 +917,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/.build/checkouts/soto-core/Sources/SotoCore/Doc/AWSShape.swift#L186-L196">Show on GitHub</a>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:8SotoCore6RegionV"></a>
-                    <a name="//apple_ref/swift/Struct/Region" class="dashAnchor"></a>
-                    <a class="token" href="#/s:8SotoCore6RegionV">Region</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Undocumented</p>
-
-                        <a href="Structs/Region.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Region</span> <span class="p">:</span> <span class="kt">RawRepresentable</span><span class="p">,</span> <span class="kt">Equatable</span></code></pre>
-
-                        </div>
-                      </div>
-                      <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/.build/checkouts/soto-core/Sources/SotoCore/Doc/Region.swift#L17-L80">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/.build/checkouts/soto-core/Sources/SotoCore/Doc/AWSShape.swift#L190-L200">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -961,7 +935,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Enumeration for all AWS partitions</p>
 
                         <a href="Structs/AWSPartition.html" class="slightly-smaller">See more</a>
                       </div>
@@ -974,7 +948,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/.build/checkouts/soto-core/Sources/SotoCore/Doc/Region.swift#L117-L149">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/.build/checkouts/soto-core/Sources/SotoCore/Doc/Region.swift#L125-L157">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -982,9 +956,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:8SotoCore6CodingV"></a>
-                    <a name="//apple_ref/swift/Struct/Coding" class="dashAnchor"></a>
-                    <a class="token" href="#/s:8SotoCore6CodingV">Coding</a>
+                    <a name="/s:8SotoCore12CustomCodingV"></a>
+                    <a name="//apple_ref/swift/Struct/CustomCoding" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8SotoCore12CustomCodingV">CustomCoding</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -994,16 +968,16 @@
                       <div class="abstract">
                         <p>Property wrapper that applies a custom encoder and decoder to its wrapped value</p>
 
-                        <a href="Structs/Coding.html" class="slightly-smaller">See more</a>
+                        <a href="Structs/CustomCoding.html" class="slightly-smaller">See more</a>
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">@propertyWrapper</span>
-<span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Coding</span><span class="o">&lt;</span><span class="kt">Coder</span><span class="o">&gt;</span> <span class="k">where</span> <span class="kt">Coder</span> <span class="p">:</span> <span class="kt"><a href="Protocols/CustomCoder.html">CustomCoder</a></span></code></pre>
-<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">Coding</span><span class="p">:</span> <span class="kt">Decodable</span> <span class="k">where</span> <span class="kt">Coder</span><span class="p">:</span> <span class="kt"><a href="Protocols/CustomDecoder.html">CustomDecoder</a></span></code></pre>
-<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">Coding</span><span class="p">:</span> <span class="kt">Encodable</span> <span class="k">where</span> <span class="kt">Coder</span><span class="p">:</span> <span class="kt"><a href="Protocols/CustomEncoder.html">CustomEncoder</a></span></code></pre>
+<span class="kd">public</span> <span class="kd">struct</span> <span class="kt">CustomCoding</span><span class="o">&lt;</span><span class="kt">Coder</span><span class="o">&gt;</span> <span class="k">where</span> <span class="kt">Coder</span> <span class="p">:</span> <span class="kt"><a href="Protocols/CustomCoder.html">CustomCoder</a></span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">CustomCoding</span><span class="p">:</span> <span class="kt">Decodable</span> <span class="k">where</span> <span class="kt">Coder</span><span class="p">:</span> <span class="kt"><a href="Protocols/CustomDecoder.html">CustomDecoder</a></span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">CustomCoding</span><span class="p">:</span> <span class="kt">Encodable</span> <span class="k">where</span> <span class="kt">Coder</span><span class="p">:</span> <span class="kt"><a href="Protocols/CustomEncoder.html">CustomEncoder</a></span></code></pre>
 
                         </div>
                       </div>
@@ -1016,9 +990,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:8SotoCore14OptionalCodingV"></a>
-                    <a name="//apple_ref/swift/Struct/OptionalCoding" class="dashAnchor"></a>
-                    <a class="token" href="#/s:8SotoCore14OptionalCodingV">OptionalCoding</a>
+                    <a name="/s:8SotoCore20OptionalCustomCodingV"></a>
+                    <a name="//apple_ref/swift/Struct/OptionalCustomCoding" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8SotoCore20OptionalCustomCodingV">OptionalCustomCoding</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1028,17 +1002,17 @@
                       <div class="abstract">
                         <p>Property wrapper that applies a custom encoder and decoder to its wrapped optional value</p>
 
-                        <a href="Structs/OptionalCoding.html" class="slightly-smaller">See more</a>
+                        <a href="Structs/OptionalCustomCoding.html" class="slightly-smaller">See more</a>
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">@propertyWrapper</span>
-<span class="kd">public</span> <span class="kd">struct</span> <span class="kt">OptionalCoding</span><span class="o">&lt;</span><span class="kt">Coder</span><span class="o">&gt;</span> <span class="k">where</span> <span class="kt">Coder</span> <span class="p">:</span> <span class="kt"><a href="Protocols/CustomCoder.html">CustomCoder</a></span></code></pre>
-<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">OptionalCoding</span><span class="p">:</span> <span class="kt"><a href="Protocols/OptionalCodingWrapper.html">OptionalCodingWrapper</a></span></code></pre>
-<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">OptionalCoding</span><span class="p">:</span> <span class="kt">Decodable</span> <span class="k">where</span> <span class="kt">Coder</span><span class="p">:</span> <span class="kt"><a href="Protocols/CustomDecoder.html">CustomDecoder</a></span></code></pre>
-<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">OptionalCoding</span><span class="p">:</span> <span class="kt">Encodable</span> <span class="k">where</span> <span class="kt">Coder</span><span class="p">:</span> <span class="kt"><a href="Protocols/CustomEncoder.html">CustomEncoder</a></span></code></pre>
+<span class="kd">public</span> <span class="kd">struct</span> <span class="kt">OptionalCustomCoding</span><span class="o">&lt;</span><span class="kt">Coder</span><span class="o">&gt;</span> <span class="k">where</span> <span class="kt">Coder</span> <span class="p">:</span> <span class="kt"><a href="Protocols/CustomCoder.html">CustomCoder</a></span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">OptionalCustomCoding</span><span class="p">:</span> <span class="kt"><a href="Protocols/OptionalCustomCodingWrapper.html">OptionalCustomCodingWrapper</a></span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">OptionalCustomCoding</span><span class="p">:</span> <span class="kt">Decodable</span> <span class="k">where</span> <span class="kt">Coder</span><span class="p">:</span> <span class="kt"><a href="Protocols/CustomDecoder.html">CustomDecoder</a></span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">OptionalCustomCoding</span><span class="p">:</span> <span class="kt">Encodable</span> <span class="k">where</span> <span class="kt">Coder</span><span class="p">:</span> <span class="kt"><a href="Protocols/CustomEncoder.html">CustomEncoder</a></span></code></pre>
 
                         </div>
                       </div>
@@ -1054,11 +1028,9 @@
               <div class="task-name-container">
                 <a name="/Collection%20Coders"></a>
                 <a name="//apple_ref/swift/Section/Collection Coders" class="dashAnchor"></a>
-                <div class="section-name-container">
-                  <a class="section-name-link" href="#/Collection%20Coders"></a>
-                  <h3 class="section-name"><p>Collection Coders</p>
-</h3>
-                </div>
+                <a href="#/Collection%20Coders">
+                  <h3 class="section-name">Collection Coders</h3>
+                </a>
               </div>
               <ul>
                 <li class="item">
@@ -1130,9 +1102,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:8SotoCore27DefaultArrayCoderPropertiesV"></a>
-                    <a name="//apple_ref/swift/Struct/DefaultArrayCoderProperties" class="dashAnchor"></a>
-                    <a class="token" href="#/s:8SotoCore27DefaultArrayCoderPropertiesV">DefaultArrayCoderProperties</a>
+                    <a name="/s:8SotoCore28StandardArrayCoderPropertiesV"></a>
+                    <a name="//apple_ref/swift/Struct/StandardArrayCoderProperties" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8SotoCore28StandardArrayCoderPropertiesV">StandardArrayCoderProperties</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1142,13 +1114,13 @@
                       <div class="abstract">
                         <p>The most common array encoding property is an element name &ldquo;member&rdquo;</p>
 
-                        <a href="Structs/DefaultArrayCoderProperties.html" class="slightly-smaller">See more</a>
+                        <a href="Structs/StandardArrayCoderProperties.html" class="slightly-smaller">See more</a>
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DefaultArrayCoderProperties</span> <span class="p">:</span> <span class="kt"><a href="Protocols/ArrayCoderProperties.html">ArrayCoderProperties</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">StandardArrayCoderProperties</span> <span class="p">:</span> <span class="kt"><a href="Protocols/ArrayCoderProperties.html">ArrayCoderProperties</a></span></code></pre>
 
                         </div>
                       </div>
@@ -1161,9 +1133,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:8SotoCore32DefaultDictionaryCoderPropertiesV"></a>
-                    <a name="//apple_ref/swift/Struct/DefaultDictionaryCoderProperties" class="dashAnchor"></a>
-                    <a class="token" href="#/s:8SotoCore32DefaultDictionaryCoderPropertiesV">DefaultDictionaryCoderProperties</a>
+                    <a name="/s:8SotoCore33StandardDictionaryCoderPropertiesV"></a>
+                    <a name="//apple_ref/swift/Struct/StandardDictionaryCoderProperties" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8SotoCore33StandardDictionaryCoderPropertiesV">StandardDictionaryCoderProperties</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1173,13 +1145,13 @@
                       <div class="abstract">
                         <p>The most common dictionary encoding properties are element name &ldquo;entry&rdquo;, key name &ldquo;key&rdquo;, value name &ldquo;value&rdquo;</p>
 
-                        <a href="Structs/DefaultDictionaryCoderProperties.html" class="slightly-smaller">See more</a>
+                        <a href="Structs/StandardDictionaryCoderProperties.html" class="slightly-smaller">See more</a>
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DefaultDictionaryCoderProperties</span> <span class="p">:</span> <span class="kt"><a href="Protocols/DictionaryCoderProperties.html">DictionaryCoderProperties</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">StandardDictionaryCoderProperties</span> <span class="p">:</span> <span class="kt"><a href="Protocols/DictionaryCoderProperties.html">DictionaryCoderProperties</a></span></code></pre>
 
                         </div>
                       </div>
@@ -1195,19 +1167,17 @@
               <div class="task-name-container">
                 <a name="/TimeStamp%20Coders"></a>
                 <a name="//apple_ref/swift/Section/TimeStamp Coders" class="dashAnchor"></a>
-                <div class="section-name-container">
-                  <a class="section-name-link" href="#/TimeStamp%20Coders"></a>
-                  <h3 class="section-name"><p>TimeStamp Coders</p>
-</h3>
-                </div>
+                <a href="#/TimeStamp%20Coders">
+                  <h3 class="section-name">TimeStamp Coders</h3>
+                </a>
               </div>
               <ul>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:8SotoCore21ISO8601TimeStampCoderV"></a>
-                    <a name="//apple_ref/swift/Struct/ISO8601TimeStampCoder" class="dashAnchor"></a>
-                    <a class="token" href="#/s:8SotoCore21ISO8601TimeStampCoderV">ISO8601TimeStampCoder</a>
+                    <a name="/s:8SotoCore16ISO8601DateCoderV"></a>
+                    <a name="//apple_ref/swift/Struct/ISO8601DateCoder" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8SotoCore16ISO8601DateCoderV">ISO8601DateCoder</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1217,18 +1187,18 @@
                       <div class="abstract">
                         <p>Date coder for ISO8601 format</p>
 
-                        <a href="Structs/ISO8601TimeStampCoder.html" class="slightly-smaller">See more</a>
+                        <a href="Structs/ISO8601DateCoder.html" class="slightly-smaller">See more</a>
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ISO8601TimeStampCoder</span> <span class="p">:</span> <span class="kt"><a href="Protocols/TimeStampFormatterCoder.html">TimeStampFormatterCoder</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ISO8601DateCoder</span> <span class="p">:</span> <span class="kt">DateFormatCoder</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/.build/checkouts/soto-core/Sources/SotoCore/Encoder/CodableProperties/TimeStampCoder.swift#L58-L61">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/.build/checkouts/soto-core/Sources/SotoCore/Encoder/CodableProperties/DateCoders.swift#L65-L68">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1236,9 +1206,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:8SotoCore24HTTPHeaderTimeStampCoderV"></a>
-                    <a name="//apple_ref/swift/Struct/HTTPHeaderTimeStampCoder" class="dashAnchor"></a>
-                    <a class="token" href="#/s:8SotoCore24HTTPHeaderTimeStampCoderV">HTTPHeaderTimeStampCoder</a>
+                    <a name="/s:8SotoCore19HTTPHeaderDateCoderV"></a>
+                    <a name="//apple_ref/swift/Struct/HTTPHeaderDateCoder" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8SotoCore19HTTPHeaderDateCoderV">HTTPHeaderDateCoder</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1248,18 +1218,18 @@
                       <div class="abstract">
                         <p>Date coder for HTTP header format</p>
 
-                        <a href="Structs/HTTPHeaderTimeStampCoder.html" class="slightly-smaller">See more</a>
+                        <a href="Structs/HTTPHeaderDateCoder.html" class="slightly-smaller">See more</a>
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">HTTPHeaderTimeStampCoder</span> <span class="p">:</span> <span class="kt"><a href="Protocols/TimeStampFormatterCoder.html">TimeStampFormatterCoder</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">HTTPHeaderDateCoder</span> <span class="p">:</span> <span class="kt">DateFormatCoder</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/.build/checkouts/soto-core/Sources/SotoCore/Encoder/CodableProperties/TimeStampCoder.swift#L64-L67">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/.build/checkouts/soto-core/Sources/SotoCore/Encoder/CodableProperties/DateCoders.swift#L71-L74">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1267,9 +1237,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:8SotoCore23UnixEpochTimeStampCoderV"></a>
-                    <a name="//apple_ref/swift/Struct/UnixEpochTimeStampCoder" class="dashAnchor"></a>
-                    <a class="token" href="#/s:8SotoCore23UnixEpochTimeStampCoderV">UnixEpochTimeStampCoder</a>
+                    <a name="/s:8SotoCore18UnixEpochDateCoderV"></a>
+                    <a name="//apple_ref/swift/Struct/UnixEpochDateCoder" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8SotoCore18UnixEpochDateCoderV">UnixEpochDateCoder</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1279,18 +1249,49 @@
                       <div class="abstract">
                         <p>Unix Epoch Date coder</p>
 
-                        <a href="Structs/UnixEpochTimeStampCoder.html" class="slightly-smaller">See more</a>
+                        <a href="Structs/UnixEpochDateCoder.html" class="slightly-smaller">See more</a>
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">UnixEpochTimeStampCoder</span> <span class="p">:</span> <span class="kt"><a href="Protocols/CustomDecoder.html">CustomDecoder</a></span><span class="p">,</span> <span class="kt"><a href="Protocols/CustomEncoder.html">CustomEncoder</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">UnixEpochDateCoder</span> <span class="p">:</span> <span class="kt"><a href="Protocols/CustomDecoder.html">CustomDecoder</a></span><span class="p">,</span> <span class="kt"><a href="Protocols/CustomEncoder.html">CustomEncoder</a></span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/.build/checkouts/soto-core/Sources/SotoCore/Encoder/CodableProperties/TimeStampCoder.swift#L70-L83">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/.build/checkouts/soto-core/Sources/SotoCore/Encoder/CodableProperties/DateCoders.swift#L77-L90">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8SotoCore12QueryEncoderV"></a>
+                    <a name="//apple_ref/swift/Struct/QueryEncoder" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8SotoCore12QueryEncoderV">QueryEncoder</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The wrapper struct for encoding Codable classes to Query dictionary</p>
+
+                        <a href="Structs/QueryEncoder.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">QueryEncoder</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/.build/checkouts/soto-core/Sources/SotoCore/Encoder/QueryEncoder.swift#L23-L105">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1323,7 +1324,38 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/.build/checkouts/soto-core/Sources/SotoCore/Errors/ClientErrors.swift#L17-L85">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/.build/checkouts/soto-core/Sources/SotoCore/Errors/ClientErrors.swift#L19-L91">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8SotoCore15AWSErrorContextV"></a>
+                    <a name="//apple_ref/swift/Struct/AWSErrorContext" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8SotoCore15AWSErrorContextV">AWSErrorContext</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Additional information about error</p>
+
+                        <a href="Structs/AWSErrorContext.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">AWSErrorContext</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/soto-project/soto/.build/checkouts/soto-core/Sources/SotoCore/Errors/Error.swift#L38-L48">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1341,7 +1373,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Standard Response Error type returned by Soto. If the error is unrecognised then this is returned</p>
+                        <p>Standard Response Error type returned by Soto. If the error code is unrecognised then this is returned</p>
 
                         <a href="Structs/AWSResponseError.html" class="slightly-smaller">See more</a>
                       </div>
@@ -1354,7 +1386,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/.build/checkouts/soto-core/Sources/SotoCore/Errors/Error.swift#L29-L41">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/.build/checkouts/soto-core/Sources/SotoCore/Errors/Error.swift#L51-L63">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1362,9 +1394,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:8SotoCore8AWSErrorV"></a>
-                    <a name="//apple_ref/swift/Struct/AWSError" class="dashAnchor"></a>
-                    <a class="token" href="#/s:8SotoCore8AWSErrorV">AWSError</a>
+                    <a name="/s:8SotoCore11AWSRawErrorV"></a>
+                    <a name="//apple_ref/swift/Struct/AWSRawError" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8SotoCore11AWSRawErrorV">AWSRawError</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1372,20 +1404,20 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Unrecognised error. Used when we cannot recognise the error code from the AWS response</p>
+                        <p>Unrecognised error. Used when we cannot extract an error code from the AWS response. Returns full body of error response</p>
 
-                        <a href="Structs/AWSError.html" class="slightly-smaller">See more</a>
+                        <a href="Structs/AWSRawError.html" class="slightly-smaller">See more</a>
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">AWSError</span> <span class="p">:</span> <span class="kt">Error</span><span class="p">,</span> <span class="kt">CustomStringConvertible</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">AWSRawError</span> <span class="p">:</span> <span class="kt">Error</span><span class="p">,</span> <span class="kt">CustomStringConvertible</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/.build/checkouts/soto-core/Sources/SotoCore/Errors/Error.swift#L44-L58">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/.build/checkouts/soto-core/Sources/SotoCore/Errors/Error.swift#L66-L78">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1418,7 +1450,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/.build/checkouts/soto-core/Sources/SotoCore/Errors/ServerErrors.swift#L17-L46">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/.build/checkouts/soto-core/Sources/SotoCore/Errors/ServerErrors.swift#L19-L52">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1604,7 +1636,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Extensions/S3/S3RequestMiddleware.swift#L21-L143">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Extensions/S3/S3RequestMiddleware.swift#L21-L150">Show on GitHub</a>
                       </div>
                     </section>
                   </div>

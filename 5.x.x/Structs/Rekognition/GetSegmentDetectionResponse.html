@@ -14,7 +14,7 @@
     <a title="GetSegmentDetectionResponse Structure Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../../index.html"> Docs</a> (54% documented)</p>
+        <p><a href="../../index.html"> Docs</a> (56% documented)</p>
         <p class="header-right"><a href="https://github.com/soto-project/soto"><img src="../../img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
@@ -29,10 +29,7 @@
       <nav class="sidebar">
         <ul class="nav-groups">
           <li class="nav-group-name">
-            <a href="../../User%20Guides.html">User Guides</a>
-          </li>
-          <li class="nav-group-name">
-            <a href="../../AWSSDKSwiftCore.html">AWSSDKSwiftCore</a>
+            <a href="../../SotoCore.html">SotoCore</a>
           </li>
           <li class="nav-group-name">
             <a href="../../ACM.html">ACM</a>
@@ -269,12 +266,6 @@
             <a href="../../EKS.html">EKS</a>
           </li>
           <li class="nav-group-name">
-            <a href="../../ELB.html">ELB</a>
-          </li>
-          <li class="nav-group-name">
-            <a href="../../ELBV2.html">ELBV2</a>
-          </li>
-          <li class="nav-group-name">
             <a href="../../EMR.html">EMR</a>
           </li>
           <li class="nav-group-name">
@@ -285,6 +276,12 @@
           </li>
           <li class="nav-group-name">
             <a href="../../ElasticInference.html">ElasticInference</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../ElasticLoadBalancing.html">ElasticLoadBalancing</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../ElasticLoadBalancingv2.html">ElasticLoadBalancingv2</a>
           </li>
           <li class="nav-group-name">
             <a href="../../ElasticTranscoder.html">ElasticTranscoder</a>
@@ -602,6 +599,9 @@
             <a href="../../S3Control.html">S3Control</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../S3Outposts.html">S3Outposts</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../SES.html">SES</a>
           </li>
           <li class="nav-group-name">
@@ -692,6 +692,12 @@
             <a href="../../Textract.html">Textract</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../TimestreamQuery.html">TimestreamQuery</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../TimestreamWrite.html">TimestreamWrite</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../TranscribeService.html">TranscribeService</a>
           </li>
           <li class="nav-group-name">
@@ -756,8 +762,7 @@
             <h1>GetSegmentDetectionResponse</h1>
               <div class="declaration">
                 <div class="language">
-                  
-                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">GetSegmentDetectionResponse</span> <span class="p">:</span> <span class="kt"><a href="../../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">GetSegmentDetectionResponse</span> <span class="p">:</span> <span class="kt"><a href="../../SotoCore.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                 </div>
               </div>
@@ -792,7 +797,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Rekognition/Rekognition_Shapes.swift#L2089">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Rekognition/Rekognition_Shapes.swift#L2189">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -822,7 +827,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Rekognition/Rekognition_Shapes.swift#L2091">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Rekognition/Rekognition_Shapes.swift#L2191">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -852,7 +857,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Rekognition/Rekognition_Shapes.swift#L2093">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Rekognition/Rekognition_Shapes.swift#L2193">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -870,7 +875,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>An array of segments detected in a video.</p>
+                        <p>An array of segments detected in a video. The array is sorted by the segment types (TECHNICAL_CUE or SHOT) specified in the SegmentTypes input parameter of StartSegmentDetection. Within each segment type the array is sorted by timestamp values.</p>
 
                       </div>
                       <div class="declaration">
@@ -882,7 +887,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Rekognition/Rekognition_Shapes.swift#L2095">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Rekognition/Rekognition_Shapes.swift#L2195">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -912,7 +917,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Rekognition/Rekognition_Shapes.swift#L2097">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Rekognition/Rekognition_Shapes.swift#L2197">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -942,7 +947,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Rekognition/Rekognition_Shapes.swift#L2099">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Rekognition/Rekognition_Shapes.swift#L2199">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -972,7 +977,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Rekognition/Rekognition_Shapes.swift#L2101">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Rekognition/Rekognition_Shapes.swift#L2201">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -982,7 +987,7 @@
                     <code>
                     <a name="/s:15SotoRekognition0B0V27GetSegmentDetectionResponseV13audioMetadata9jobStatus9nextToken8segments08selectedD5Types13statusMessage05videoH0AESayAC05AudioH0VGSg_AC08VideoJobJ0OSgSSSgSayAC0dE0VGSgSayAC0D8TypeInfoVGSgATSayAC0tH0VGSgtcfc"></a>
                     <a name="//apple_ref/swift/Method/init(audioMetadata:jobStatus:nextToken:segments:selectedSegmentTypes:statusMessage:videoMetadata:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15SotoRekognition0B0V27GetSegmentDetectionResponseV13audioMetadata9jobStatus9nextToken8segments08selectedD5Types13statusMessage05videoH0AESayAC05AudioH0VGSg_AC08VideoJobJ0OSgSSSgSayAC0dE0VGSgSayAC0D8TypeInfoVGSgATSayAC0tH0VGSgtcfc">init(audioMetadata:<wbr>jobStatus:<wbr>nextToken:<wbr>segments:<wbr>selectedSegmentTypes:<wbr>statusMessage:<wbr>videoMetadata:<wbr>)</a>
+                    <a class="token" href="#/s:15SotoRekognition0B0V27GetSegmentDetectionResponseV13audioMetadata9jobStatus9nextToken8segments08selectedD5Types13statusMessage05videoH0AESayAC05AudioH0VGSg_AC08VideoJobJ0OSgSSSgSayAC0dE0VGSgSayAC0D8TypeInfoVGSgATSayAC0tH0VGSgtcfc">init(audioMetadata:jobStatus:nextToken:segments:selectedSegmentTypes:statusMessage:videoMetadata:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1002,7 +1007,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Rekognition/Rekognition_Shapes.swift#L2103-L2111">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/Rekognition/Rekognition_Shapes.swift#L2203-L2211">Show on GitHub</a>
                       </div>
                     </section>
                   </div>

@@ -14,7 +14,7 @@
     <a title="ArrayCoder Structure Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../../index.html"> Docs</a> (54% documented)</p>
+        <p><a href="../../index.html"> Docs</a> (56% documented)</p>
         <p class="header-right"><a href="https://github.com/soto-project/soto"><img src="../../img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
@@ -29,10 +29,7 @@
       <nav class="sidebar">
         <ul class="nav-groups">
           <li class="nav-group-name">
-            <a href="../../User%20Guides.html">User Guides</a>
-          </li>
-          <li class="nav-group-name">
-            <a href="../../AWSSDKSwiftCore.html">AWSSDKSwiftCore</a>
+            <a href="../../SotoCore.html">SotoCore</a>
           </li>
           <li class="nav-group-name">
             <a href="../../ACM.html">ACM</a>
@@ -269,12 +266,6 @@
             <a href="../../EKS.html">EKS</a>
           </li>
           <li class="nav-group-name">
-            <a href="../../ELB.html">ELB</a>
-          </li>
-          <li class="nav-group-name">
-            <a href="../../ELBV2.html">ELBV2</a>
-          </li>
-          <li class="nav-group-name">
             <a href="../../EMR.html">EMR</a>
           </li>
           <li class="nav-group-name">
@@ -285,6 +276,12 @@
           </li>
           <li class="nav-group-name">
             <a href="../../ElasticInference.html">ElasticInference</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../ElasticLoadBalancing.html">ElasticLoadBalancing</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../ElasticLoadBalancingv2.html">ElasticLoadBalancingv2</a>
           </li>
           <li class="nav-group-name">
             <a href="../../ElasticTranscoder.html">ElasticTranscoder</a>
@@ -602,6 +599,9 @@
             <a href="../../S3Control.html">S3Control</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../S3Outposts.html">S3Outposts</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../SES.html">SES</a>
           </li>
           <li class="nav-group-name">
@@ -692,6 +692,12 @@
             <a href="../../Textract.html">Textract</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../TimestreamQuery.html">TimestreamQuery</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../TimestreamWrite.html">TimestreamWrite</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../TranscribeService.html">TranscribeService</a>
           </li>
           <li class="nav-group-name">
@@ -756,7 +762,6 @@
             <h1>ArrayCoder</h1>
               <div class="declaration">
                 <div class="language">
-                  
                   <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ArrayCoder</span><span class="o">&lt;</span><span class="kt">Properties</span><span class="p">,</span> <span class="kt">Element</span><span class="o">&gt;</span> <span class="p">:</span> <span class="kt"><a href="../../Protocols/CustomCoder.html">CustomCoder</a></span> <span class="k">where</span> <span class="kt">Properties</span> <span class="p">:</span> <span class="kt"><a href="../../Protocols/ArrayCoderProperties.html">ArrayCoderProperties</a></span></code></pre>
 <pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt"><a href="../../Structs/EC2.html">EC2</a></span><span class="o">.</span><span class="kt">ArrayCoder</span><span class="p">:</span> <span class="kt"><a href="../../Protocols/CustomDecoder.html">CustomDecoder</a></span> <span class="k">where</span> <span class="kt">Element</span><span class="p">:</span> <span class="kt">Decodable</span></code></pre>
 <pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt"><a href="../../Structs/EC2.html">EC2</a></span><span class="o">.</span><span class="kt">ArrayCoder</span><span class="p">:</span> <span class="kt"><a href="../../Protocols/CustomEncoder.html">CustomEncoder</a></span> <span class="k">where</span> <span class="kt">Element</span><span class="p">:</span> <span class="kt">Encodable</span></code></pre>
@@ -805,11 +810,9 @@
               <div class="task-name-container">
                 <a name="/Available%20where%20%60Element%60:%20%60Decodable%60"></a>
                 <a name="//apple_ref/swift/Section/Available where `Element`: `Decodable`" class="dashAnchor"></a>
-                <div class="section-name-container">
-                  <a class="section-name-link" href="#/Available%20where%20%60Element%60:%20%60Decodable%60"></a>
-                  <h3 class="section-name"><p>Available where <code>Element</code>: <code>Decodable</code></p>
-</h3>
-                </div>
+                <a href="#/Available%20where%20%60Element%60:%20%60Decodable%60">
+                  <h3 class="section-name">Available where `Element`: `Decodable`</h3>
+                </a>
               </div>
               <ul>
                 <li class="item">
@@ -817,7 +820,7 @@
                     <code>
                     <a name="/s:7SotoEC20B0V10ArrayCoderVAASeR_rlE6decode4fromSayq_Gs7Decoder_p_tKFZ"></a>
                     <a name="//apple_ref/swift/Method/decode(from:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:7SotoEC20B0V10ArrayCoderVAASeR_rlE6decode4fromSayq_Gs7Decoder_p_tKFZ">decode(from:<wbr>)</a>
+                    <a class="token" href="#/s:7SotoEC20B0V10ArrayCoderVAASeR_rlE6decode4fromSayq_Gs7Decoder_p_tKFZ">decode(from:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -848,11 +851,9 @@
               <div class="task-name-container">
                 <a name="/Available%20where%20%60Element%60:%20%60Encodable%60"></a>
                 <a name="//apple_ref/swift/Section/Available where `Element`: `Encodable`" class="dashAnchor"></a>
-                <div class="section-name-container">
-                  <a class="section-name-link" href="#/Available%20where%20%60Element%60:%20%60Encodable%60"></a>
-                  <h3 class="section-name"><p>Available where <code>Element</code>: <code>Encodable</code></p>
-</h3>
-                </div>
+                <a href="#/Available%20where%20%60Element%60:%20%60Encodable%60">
+                  <h3 class="section-name">Available where `Element`: `Encodable`</h3>
+                </a>
               </div>
               <ul>
                 <li class="item">
@@ -860,7 +861,7 @@
                     <code>
                     <a name="/s:7SotoEC20B0V10ArrayCoderVAASER_rlE6encode5value2toySayq_G_s7Encoder_ptKFZ"></a>
                     <a name="//apple_ref/swift/Method/encode(value:to:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:7SotoEC20B0V10ArrayCoderVAASER_rlE6encode5value2toySayq_G_s7Encoder_ptKFZ">encode(value:<wbr>to:<wbr>)</a>
+                    <a class="token" href="#/s:7SotoEC20B0V10ArrayCoderVAASER_rlE6encode5value2toySayq_G_s7Encoder_ptKFZ">encode(value:to:)</a>
                     </code>
                   </div>
                   <div class="height-container">

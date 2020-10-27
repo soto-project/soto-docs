@@ -14,7 +14,7 @@
     <a title="Preset Structure Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../../index.html"> Docs</a> (54% documented)</p>
+        <p><a href="../../index.html"> Docs</a> (56% documented)</p>
         <p class="header-right"><a href="https://github.com/soto-project/soto"><img src="../../img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
@@ -29,10 +29,7 @@
       <nav class="sidebar">
         <ul class="nav-groups">
           <li class="nav-group-name">
-            <a href="../../User%20Guides.html">User Guides</a>
-          </li>
-          <li class="nav-group-name">
-            <a href="../../AWSSDKSwiftCore.html">AWSSDKSwiftCore</a>
+            <a href="../../SotoCore.html">SotoCore</a>
           </li>
           <li class="nav-group-name">
             <a href="../../ACM.html">ACM</a>
@@ -269,12 +266,6 @@
             <a href="../../EKS.html">EKS</a>
           </li>
           <li class="nav-group-name">
-            <a href="../../ELB.html">ELB</a>
-          </li>
-          <li class="nav-group-name">
-            <a href="../../ELBV2.html">ELBV2</a>
-          </li>
-          <li class="nav-group-name">
             <a href="../../EMR.html">EMR</a>
           </li>
           <li class="nav-group-name">
@@ -285,6 +276,12 @@
           </li>
           <li class="nav-group-name">
             <a href="../../ElasticInference.html">ElasticInference</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../ElasticLoadBalancing.html">ElasticLoadBalancing</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../ElasticLoadBalancingv2.html">ElasticLoadBalancingv2</a>
           </li>
           <li class="nav-group-name">
             <a href="../../ElasticTranscoder.html">ElasticTranscoder</a>
@@ -602,6 +599,9 @@
             <a href="../../S3Control.html">S3Control</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../S3Outposts.html">S3Outposts</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../SES.html">SES</a>
           </li>
           <li class="nav-group-name">
@@ -692,6 +692,12 @@
             <a href="../../Textract.html">Textract</a>
           </li>
           <li class="nav-group-name">
+            <a href="../../TimestreamQuery.html">TimestreamQuery</a>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../TimestreamWrite.html">TimestreamWrite</a>
+          </li>
+          <li class="nav-group-name">
             <a href="../../TranscribeService.html">TranscribeService</a>
           </li>
           <li class="nav-group-name">
@@ -756,8 +762,7 @@
             <h1>Preset</h1>
               <div class="declaration">
                 <div class="language">
-                  
-                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Preset</span> <span class="p">:</span> <span class="kt"><a href="../../Other%20Protocols.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Preset</span> <span class="p">:</span> <span class="kt"><a href="../../SotoCore.html#/s:8SotoCore17AWSDecodableShapeP">AWSDecodableShape</a></span></code></pre>
 
                 </div>
               </div>
@@ -792,7 +797,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/MediaConvert/MediaConvert_Shapes.swift#L7722">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/MediaConvert/MediaConvert_Shapes.swift#L7976">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -822,7 +827,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/MediaConvert/MediaConvert_Shapes.swift#L7724">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/MediaConvert/MediaConvert_Shapes.swift#L7978">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -830,9 +835,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:16SotoMediaConvert0bC0V6PresetV9createdAt0A4Core9TimeStampVSgvp"></a>
+                    <a name="/s:16SotoMediaConvert0bC0V6PresetV9createdAt10Foundation4DateVSgvp"></a>
                     <a name="//apple_ref/swift/Property/createdAt" class="dashAnchor"></a>
-                    <a class="token" href="#/s:16SotoMediaConvert0bC0V6PresetV9createdAt0A4Core9TimeStampVSgvp">createdAt</a>
+                    <a class="token" href="#/s:16SotoMediaConvert0bC0V6PresetV9createdAt10Foundation4DateVSgvp">createdAt</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -847,13 +852,13 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@OptionalCoding</span>
-<span class="o">&lt;</span><span class="kt"><a href="../../Structs/UnixEpochTimeStampCoder.html">UnixEpochTimeStampCoder</a></span><span class="o">&gt;</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">createdAt</span><span class="p">:</span> <span class="kt"><a href="../../Structs/TimeStamp.html">TimeStamp</a></span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">@OptionalCustomCoding</span>
+<span class="o">&lt;</span><span class="kt"><a href="../../Structs/UnixEpochDateCoder.html">UnixEpochDateCoder</a></span><span class="o">&gt;</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">createdAt</span><span class="p">:</span> <span class="kt">Date</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/MediaConvert/MediaConvert_Shapes.swift#L7727">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/MediaConvert/MediaConvert_Shapes.swift#L7981">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -883,7 +888,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/MediaConvert/MediaConvert_Shapes.swift#L7729">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/MediaConvert/MediaConvert_Shapes.swift#L7983">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -891,9 +896,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:16SotoMediaConvert0bC0V6PresetV11lastUpdated0A4Core9TimeStampVSgvp"></a>
+                    <a name="/s:16SotoMediaConvert0bC0V6PresetV11lastUpdated10Foundation4DateVSgvp"></a>
                     <a name="//apple_ref/swift/Property/lastUpdated" class="dashAnchor"></a>
-                    <a class="token" href="#/s:16SotoMediaConvert0bC0V6PresetV11lastUpdated0A4Core9TimeStampVSgvp">lastUpdated</a>
+                    <a class="token" href="#/s:16SotoMediaConvert0bC0V6PresetV11lastUpdated10Foundation4DateVSgvp">lastUpdated</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -908,13 +913,13 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@OptionalCoding</span>
-<span class="o">&lt;</span><span class="kt"><a href="../../Structs/UnixEpochTimeStampCoder.html">UnixEpochTimeStampCoder</a></span><span class="o">&gt;</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">lastUpdated</span><span class="p">:</span> <span class="kt"><a href="../../Structs/TimeStamp.html">TimeStamp</a></span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">@OptionalCustomCoding</span>
+<span class="o">&lt;</span><span class="kt"><a href="../../Structs/UnixEpochDateCoder.html">UnixEpochDateCoder</a></span><span class="o">&gt;</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">lastUpdated</span><span class="p">:</span> <span class="kt">Date</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/MediaConvert/MediaConvert_Shapes.swift#L7732">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/MediaConvert/MediaConvert_Shapes.swift#L7986">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -944,7 +949,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/MediaConvert/MediaConvert_Shapes.swift#L7734">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/MediaConvert/MediaConvert_Shapes.swift#L7988">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -974,7 +979,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/MediaConvert/MediaConvert_Shapes.swift#L7736">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/MediaConvert/MediaConvert_Shapes.swift#L7990">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1004,7 +1009,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/MediaConvert/MediaConvert_Shapes.swift#L7738">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/MediaConvert/MediaConvert_Shapes.swift#L7992">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -1012,9 +1017,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:16SotoMediaConvert0bC0V6PresetV3arn8category9createdAt11description11lastUpdated4name8settings4typeAESSSg_AN0A4Core9TimeStampVSgAnRSSAC0D8SettingsVAC4TypeOSgtcfc"></a>
+                    <a name="/s:16SotoMediaConvert0bC0V6PresetV3arn8category9createdAt11description11lastUpdated4name8settings4typeAESSSg_AN10Foundation4DateVSgAnRSSAC0D8SettingsVAC4TypeOSgtcfc"></a>
                     <a name="//apple_ref/swift/Method/init(arn:category:createdAt:description:lastUpdated:name:settings:type:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:16SotoMediaConvert0bC0V6PresetV3arn8category9createdAt11description11lastUpdated4name8settings4typeAESSSg_AN0A4Core9TimeStampVSgAnRSSAC0D8SettingsVAC4TypeOSgtcfc">init(arn:<wbr>category:<wbr>createdAt:<wbr>description:<wbr>lastUpdated:<wbr>name:<wbr>settings:<wbr>type:<wbr>)</a>
+                    <a class="token" href="#/s:16SotoMediaConvert0bC0V6PresetV3arn8category9createdAt11description11lastUpdated4name8settings4typeAESSSg_AN10Foundation4DateVSgAnRSSAC0D8SettingsVAC4TypeOSgtcfc">init(arn:category:createdAt:description:lastUpdated:name:settings:type:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1029,12 +1034,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">arn</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">category</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">createdAt</span><span class="p">:</span> <span class="kt"><a href="../../Structs/TimeStamp.html">TimeStamp</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">description</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">lastUpdated</span><span class="p">:</span> <span class="kt"><a href="../../Structs/TimeStamp.html">TimeStamp</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">name</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">settings</span><span class="p">:</span> <span class="kt"><a href="../../Structs/MediaConvert/PresetSettings.html">PresetSettings</a></span><span class="p">,</span> <span class="nv">type</span><span class="p">:</span> <span class="k">Type</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">arn</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">category</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">createdAt</span><span class="p">:</span> <span class="kt">Date</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">description</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">lastUpdated</span><span class="p">:</span> <span class="kt">Date</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">name</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">settings</span><span class="p">:</span> <span class="kt"><a href="../../Structs/MediaConvert/PresetSettings.html">PresetSettings</a></span><span class="p">,</span> <span class="nv">type</span><span class="p">:</span> <span class="k">Type</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/MediaConvert/MediaConvert_Shapes.swift#L7740-L7749">Show on GitHub</a>
+                        <a href="https://github.com/soto-project/soto/Sources/Soto/Services/MediaConvert/MediaConvert_Shapes.swift#L7994-L8003">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
